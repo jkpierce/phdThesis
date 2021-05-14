@@ -19,5 +19,5 @@ rm -f ch4simul/ch4simul.aux
 rm -f diss.blg
 rm -f diss.bbl
 rm -f diss.synctex.gz
-rm -f /ch1intro/ch1intro.aux
+rm -f ch1intro/ch1intro.aux
 rm -f diss.out
