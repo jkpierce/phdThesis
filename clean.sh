@@ -21,3 +21,4 @@ rm -f diss.bbl
 rm -f diss.synctex.gz
 rm -f ch1intro/ch1intro.aux
 rm -f diss.out
+rm -f glos/glos.aux
