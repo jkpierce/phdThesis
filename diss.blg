@@ -1,58 +1,64 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: diss.aux
-A level-1 auxiliary file: ./abs/abs.aux
-A level-1 auxiliary file: ./laySum/laySum.aux
-A level-1 auxiliary file: ./pref/pref.aux
-A level-1 auxiliary file: ./ack/ack.aux
-A level-1 auxiliary file: ./ch1intro/ch1intro.aux
-A level-1 auxiliary file: ./ch2flipFlop/ch2flipFlop.aux
-A level-1 auxiliary file: ./ch3bedEle/ch3bedEle.aux
-A level-1 auxiliary file: ./ch4downDiff/ch4downDiff.aux
-A level-1 auxiliary file: ./ch5conc/ch5conc.aux
-The style file: abbrvnat.bst
+A level-1 auxiliary file: abs.aux
+A level-1 auxiliary file: laySum.aux
+A level-1 auxiliary file: pref.aux
+A level-1 auxiliary file: ack.aux
+A level-1 auxiliary file: ch1intro.aux
+A level-1 auxiliary file: ch2flipFlop.aux
+A level-1 auxiliary file: ch3bedEle.aux
+A level-1 auxiliary file: ch4downDiff.aux
+A level-1 auxiliary file: ch5conc.aux
+The style file: ./agu.bst
 A level-1 auxiliary file: appendix.aux
-I found no \citation commands---while reading file diss.aux
-Database file #1: ./biblio/biblio.bib
-You've used 0 entries,
-            2773 wiz_defined-function locations,
-            606 strings with 4875 characters,
-and the built_in function-call counts, 33 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 10
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
-int.to.chr$ -- 1
+Database file #1: biblio.bib
+Warning--I didn't find a database entry for "Ettema2014"
+Warning--I didn't find a database entry for "Cundall1979"
+Warning--I didn't find a database entry for "Lajeunesse2018"
+Warning--I didn't find a database entry for "Nakagawa1980"
+Warning--I didn't find a database entry for "Pierce2020"
+Warning--can't use both volume and number fields in Temme1996
+Warning--empty publisher in Yano1969
+You've used 75 entries,
+            2789 wiz_defined-function locations,
+            1508 strings with 21718 characters,
+and the built_in function-call counts, 70729 in all, are:
+= -- 9318
+> -- 2483
+< -- 42
++ -- 1429
+- -- 595
+* -- 4567
+:= -- 6597
+add.period$ -- 75
+call.type$ -- 75
+change.case$ -- 420
+chr.to.int$ -- 74
+cite$ -- 227
+duplicate$ -- 6509
+empty$ -- 3217
+format.name$ -- 826
+if$ -- 14218
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 78
+newline$ -- 229
+num.names$ -- 302
+pop$ -- 2515
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 347
 quote$ -- 0
-skip$ -- 1
+skip$ -- 5274
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 3547
+swap$ -- 5829
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 663
+warning$ -- 2
+while$ -- 431
 width$ -- 0
-write$ -- 7
-(There was 1 error message)
+write$ -- 830
+(There were 7 warnings)

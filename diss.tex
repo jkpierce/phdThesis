@@ -60,6 +60,21 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CUSTOM MATH SYMBOLS
+\newcommand\be{\begin{equation}}
+\newcommand\ee{\end{equation}} 
+\newcommand\bra{\langle}
+\newcommand\ket{\rangle}
+\newcommand\om{\omega}
+\newcommand\tom{\tilde{\omega}}
+\newcommand\tg{\tilde{g}}
+\newcommand\tp{\tilde{p}}
+\newcommand\tG{\tilde{G}}
+\newcommand\El{\mathcal{L}}
+
 %% The pifont package provides access to the elements in the dingbat font.   
 %% Use \ding{##} for a particular dingbat (see p7 of psnfss2e.pdf)
 %%   Useful:
@@ -148,8 +163,9 @@
 %% \citet{} to produce an author-and-reference citation,
 %% \citep{} to produce a parenthetical citation.
 %% We use \citeeg{} to provide examples
-\usepackage[numbers,sort&compress]{natbib}
-\newcommand{\citeeg}[1]{\citep[e.g.,][]{#1}}
+%\usepackage[numbers,sort&compress]{natbib}
+%\newcommand{\citeeg}[1]{\citep[e.g.,][]{#1}}
+\usepackage[sort&compress]{natbib}
 
 %% The titlesec package provides commands to vary how chapter and
 %% section titles are typeset.  The following uses more compact
@@ -332,13 +348,13 @@
 
 \makecommitteepage
 
-\include{./abs/abs}
+\include{abs}
 \cleardoublepage
 
-\include{./laySum/laySum}
+\include{laySum}
 \cleardoublepage
 
-\include{./pref/pref}
+\include{pref}
 \cleardoublepage
 
 \tableofcontents
@@ -352,7 +368,7 @@
 
 \textspacing		% begin one-half or double spacing
 
-\include{./ack/ack}
+\include{ack}
 
 % Body of Thesis (not all sections may apply)
 \mainmatter
@@ -360,17 +376,17 @@
 \acresetall	% reset all acronyms used so far
 
 % CHAPTERS
-\include{./ch1intro/ch1intro}
-\include{./ch2flipFlop/ch2flipFlop}
-\include{./ch3bedEle/ch3bedEle}
-\include{./ch4downDiff/ch4downDiff}
-\include{./ch5conc/ch5conc}
+\include{ch1intro}
+\include{ch2flipFlop}
+\include{ch3bedEle}
+\include{ch4downDiff}
+\include{ch5conc}
 
 % BIBLIOGRAPHY
 \begin{singlespace}
 \raggedright
-\bibliographystyle{abbrvnat}
-\bibliography{./biblio/biblio}
+\bibliographystyle{./agu}
+\bibliography{biblio}
 \end{singlespace}
 \appendix
 

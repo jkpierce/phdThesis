@@ -1,0 +1,63 @@
+
+\subsection{The waiting time between emigration events: Bedload flux from waiting time statistics} 
+
+These studies are concerned with linking the birth-death formulation, which in the original interpretation deals with transport characteristics within an observation window \citep{Ancey2008}, to the transport characteristics at a point -- the number of particles crossing a plane perpendicular to the flow direction. 
+
+\citet{Heyman2013} was concerned with the statistics of the time interval between successive emigration events, while \citet{Ma2014b} focused on actually counting the number of emigration events in a unit time: that is, they computed the bedload flux over the downstream boundary of the control volume \citet{Ancey2008}. 
+
+The waiting time between successive transport events is significant in a broad range of transport studies. 
+First, there are probabilistic transport rate formulations which use the waiting time distribution as their input \citep{Turowski2010}. 
+Second, the waiting time between successive transport events, as we shall show, reflects back on the underlying entrainment and deposition characteristics, so it provides fundamental information into the somewhat mysterious physics of bedload transport.
+
+The original \citet{Einstein1937,Einstein1950} approach reveals that the waiting time between successive transport events should be an exponentially distributed random variable. 
+However, Heyman et al (2013) demonstrates that the inclusion of collective entrainment due to \citet{Ancey2008} modifies the waiting time distribution in a non-trivial way. 
+The waiting time between successive entrainment events has contributions at two different scales: first, there is a shorter timescale of individual entrainment events, controlled by fluid turbulence and essentially recognized within the \citet{Einstein1937} formalism, and second, there is a longer timescale due to collective entrainment.
+These authors showed that within the \citet{Ancey2008} birth-death model, at low transport rates, when entrainment and motion are highly intermittent, the short timescale and the long timescale are well separated. 
+While at higher transport rates, these two timescales blend together as individual and collective entrainment contributions become indistinguishable. 
+
+I'll now sketch the \citet{Heyman2013} derivation of the statistics of the waiting time between successive emigration events, and show how the two different timescales due to individual and collective entrainment arise. 
+For \citet{Heyman2013} the variable of interest is $S_k = \sum_{i=0}^k T-i$: $S_k$ is the time when the $k$th emigration event occurs. $T_1, T_2, \dots $ are the waiting times: the time from $t=0$ to the first emigration event is $T_1$. The time from $T_1$ to the second emigration event is $T_2$, and so on. 
+For a Markov process such as the \citet{Ancey2008} model, the waiting times are independant and identically distributed. 
+Within the Einstein model we have already seen that the waiting time probability distribution is expoential. 
+However, in the \citet{Ancey2008} formalism there is no reason to expect an exponential distribution. 
+
+Heyman et al define $F_n(t)$ as the probability that there are $n$ particles in motion and no emigration event occurred in time t: 
+\be F_n(t) = Pr(T>t,N(t)=n).\ee
+By extension, the probability that there are any number of particles and no emigration event occurred in time $t$ is 
+\be F(t) = Pr(T>t) = \sum_{n=0}^\infty F_n(t) .\ee 
+
+Now $F(t+\Delta t)$ is equivalent to the probability that any other event but emigration occurs in $\Delta t$. 
+Therefore we can write a master equation for $F(t)$: 
+\be F_n(t+\Delta t) = F_n(t)[1-(\lambda + n(\sigma+\mu+\gamma))\Delta t] + F_{n+1}(t) \sigma(n+1)\Delta t + F_{n-1}(t)\lambda + \mu(n-1)\Delta t + o(\Delta t).\ee
+This equation holds for $n\geq 1$. At $n=0$ deposition and collective entrainment processes are not possible, therefore 
+\be F_0(t+\Delta t) = F_0(t) [ 1-\lambda \Delta t] + F_1(t) \sigma \Delta t + o(\Delta t) \ee 
+Again dividing by $\Delta t$ and taking $\Delta t \rightarrow 0$ gives the differential difference equations
+\begin{align} 
+F_0'(t) &= \lambda F_0(t) + \sigma F_1(t) \\
+F_n'(t) &= -(\lambda + n(\sigma + \mu + \gamma))F_n(t) + \sigma(n+1)F_{n+1}(t) + [\lambda + \mu(n-1)]F_{n-1}(t) \text{ if } n\geq 1 \end{align} 
+for the waiting time distribution. 
+
+Summing all of the terms gives the simple equation 
+\be \sum_{n=0}^\infty F_n'(t) = -\gamma \sum_{n=0}^\infty nF_n(t), \ee
+which, denoting the pdf of waiting times $T$ as $f_T(t)$ gives the simple relationship: 
+\be f_T(t) = -F'(t) = \gamma\bra F_n(t)\ket. \ee
+Therefore the probability distribution function of waiting times between emigration events, $f_T(t)$, is an average of the probability that there are $n$ particles and no emigration event occurred in $t$ over all $n$. 
+
+The general solution of $F_n(t)$ can be obtained from the differential equations with a generating function: 
+\be G(z,t) = \sum_{n=0}^\infty F_n(t) z^n. \ee
+Multipling the differential equation by $z^n$ and summing over all $n$ gives
+\be \frac{\partial G}{\partial t} = (\sigma + \mu z^2 - z(\alpha + \mu) ) \frac{\partial G}{\partial t} + (z-1)\lambda G, \ee
+where the shorthand $\alpha = \gamma + \sigma $ has been introduced. 
+
+This equation can be solved with the method of characteristics, giving a closed form solution for $G(z,t)$. A useful property of generating functions (and the source of their name) is $\bra F_n \ket = \partial G(z,t) /\partial t |_{z=1}$, therefore the probability distribution of waiting times between emigration events in the \citet{Ancey2008} birth-death model of bedload flux is 
+\be f_T(t) = \gamma(z_1-z_2)^{\lambda/\mu} \big( \frac{\alpha-\mu}{A(t)-B(t)} \big)^{\lambda/\mu + 1} e^{-\lambda (1-z_2)t}\big( \frac{\lambda/\mu+1)B(t)}{A(t)-B(t)} [(1-z_2)e^{-(z_1-z_2)t}+z_1-1]+e^{-\mu(z_1-z_2)t}-1 \big)  \ee 
+When collective entrainment is turned off ($\mu=0$), the probability distribution becomes $f_T(t) = \frac{\alpha}{\lambda \gamma} e^{-\alpha t/(\lambda \gamma)}$: the exponential waiting time between emigration events is recovered. 
+
+This probability distribution for waiting times between emigration events in the \citet{Ancey2008} model has, in general, contributions from two timescales. The relatively common individual entrainment process imparts a 'fast' timescale to the probability distribution of emigration waiting time, while the relatively rare collective entrainment process imparts a 'slower' timescale. 
+When collective entrainment is turned off, only the fast timescale is present in the pdf. When the entrainment rate is relatively low, the fast timescale is much shorter than the slow timescale, so that the timescales are well separated and the waiting time distribution is not well approximated by any common distribution in the literature (Gamma, exponential): the behavior of the \citet{Ancey2008} model at low transport rates has defied prediction by any other framework. 
+
+The most significant point of the \citet{Heyman2013} paper is that the probability distribution function of waiting times between emigration events can be used to calibrate the \citet{Ancey2008} birth death model to flume experiments. 
+This is because short emigration times control $\alpha-\mu$ and long emigration times control $\lambda$. 
+The evaluation of waiting times between emigration events supports a calibration of the stochastic birth-death model of \citet{Ancey2008} on flume studies where the transport rate is measured at the outlet of the flume, but the erosion, deposition, or emigration rates are not necessarily measured. 
+In contrast to \citet{Ma2014b} the mathematics are not much beyond the original formulation of the \citet{Ancey2008} model, so this work may be more readily accepted by the research community. 
+

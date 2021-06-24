@@ -1,0 +1,1263 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  12 APR 2020 22:06
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**rwdiffu.tex
+(./rwdiffu.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(./agujournal2018.cls
+Document Class: agujournal2018 08/23/2018
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (./trackchanges.sty
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 f
+     %%
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no f in font nullfont!
+Package: trackchanges 2009/04/22 v0.7.0 TrackChanges file 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--214
+[]
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count79
+\calc@Bcount=\count80
+\calc@Adimen=\dimen104
+\calc@Bdimen=\dimen105
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count81
+\calc@Cskip=\skip43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks15
+\SOUL@lasttoken=\toks16
+\SOUL@cmds=\toks17
+\SOUL@buffer=\toks18
+\SOUL@token=\toks19
+\SOUL@spaceskip=\skip44
+\SOUL@ttwidth=\dimen106
+\SOUL@uldp=\dimen107
+\SOUL@ulht=\dimen108
+)
+(/usr/share/texlive/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package morefloats Info: Maximum number of possible floats asked for: 36
+(morefloats)             (i.e. 18 more floats).
+(morefloats)             LaTeX might run out of memory before this
+(morefloats)             (in which case it will notify you).
+)
+\c@userid=\count82
+\c@changenumber=\count83
+\c@storefootnote=\count84
+\c@numeditors=\count85
+\c@maxeditors=\count86
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count87
+\output=\toks20
+\linenoprevgraf=\count88
+\linenumbersep=\dimen109
+\linenumberwidth=\dimen110
+\c@linenumber=\count89
+\c@pagewiselinenumber=\count90
+\c@LN@truepage=\count91
+\c@internallinenumber=\count92
+\c@internallinenumbers=\count93
+\quotelinenumbersep=\dimen111
+\bframerule=\dimen112
+\bframesep=\dimen113
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip45
+\RaggedLeftLeftskip=\skip46
+\RaggedRightLeftskip=\skip47
+\CenteringRightskip=\skip48
+\RaggedLeftRightskip=\skip49
+\RaggedRightRightskip=\skip50
+\CenteringParfillskip=\skip51
+\RaggedLeftParfillskip=\skip52
+\RaggedRightParfillskip=\skip53
+\JustifyingParfillskip=\skip54
+\CenteringParindent=\skip55
+\RaggedLeftParindent=\skip56
+\RaggedRightParindent=\skip57
+\JustifyingParindent=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count94
+\rotFPtop=\skip59
+\rotFPbot=\skip60
+\rot@float@box=\box27
+\rot@mess@toks=\toks21
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box28
+\UL@hyphenbox=\box29
+\UL@skip=\skip61
+\UL@hook=\toks22
+\UL@height=\dimen114
+\UL@pe=\count95
+\UL@pixel=\dimen115
+\ULC@box=\box30
+Package: ulem 2012/05/18
+\ULdepth=\dimen116
+)
+\draftskip=\count96
+\c@section=\count97
+\c@subsection=\count98
+\c@subsubsection=\count99
+\c@paragraph=\count100
+\c@subparagraph=\count101
+\c@figure=\count102
+\c@table=\count103
+\abovecaptionskip=\skip62
+\belowcaptionskip=\skip63
+\c@appendnum=\count104
+\bibindent=\dimen117
+
+(/usr/share/texlive/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count105
+\bibleftmargin=\skip64
+\bibindent=\skip65
+\bibparsep=\skip66
+\bibitemsep=\skip67
+\biblabelsep=\skip68
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip69
+\bibsep=\skip70
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count106
+)
+LaTeX Info: Redefining \BBA on input line 1149.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen118
+\WF@size=\dimen119
+\c@WF@wrappedlines=\count107
+\WF@box=\box31
+\WF@everypar=\toks23
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip71
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks24
+\ex@=\dimen120
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen121
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count108
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count109
+\leftroot@=\count110
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count111
+\DOTSCASE@=\count112
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen122
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
+\dotsspace@=\muskip11
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
+\tag@help=\toks25
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
+\andhelp@=\toks26
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
+\@envbody=\toks27
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
+\thm@preskip=\skip74
+\thm@postskip=\skip75
+\thm@headsep=\skip76
+\dth@everypar=\toks34
+)
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen129
+\lightrulewidth=\dimen130
+\cmidrulewidth=\dimen131
+\belowrulesep=\dimen132
+\belowbottomsep=\dimen133
+\aboverulesep=\dimen134
+\abovetopsep=\dimen135
+\cmidrulesep=\dimen136
+\cmidrulekern=\dimen137
+\defaultaddspace=\dimen138
+\@cmidla=\count120
+\@cmidlb=\count121
+\@aboverulesep=\dimen139
+\@belowrulesep=\dimen140
+\@thisruleclass=\count122
+\@lastruleclass=\count123
+\@thisrulewidth=\dimen141
+)
+
+LaTeX Warning: Unused global option(s):
+    [grl].
+
+(./rwdiffu.aux)
+\openout1 = `rwdiffu.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count124
+\scratchdimen=\dimen142
+\scratchbox=\box34
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen143
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks36
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+
+Package trackchanges Warning: TrackChanges is not compatable with the 
+(trackchanges)                'ulem' package.
+(trackchanges)                Use the 'soul' package instead.
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 58.
+\c@maskedRefs=\count130
+
+(/usr/share/texlive/texmf-dist/tex/latex/apacite/english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 78.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 78.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+! Misplaced alignment tab character &.
+l.125 ... by exponential distributions $\psi_2(t)&
+                                                  =k_2e^{-k_2 t}$ and $\psi_...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.125 ...psi_2(t)&=k_2e^{-k_2 t}$ and $\psi_1(t) &
+                                                  = k_1e^{-k_1t}$, since num...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[4]
+<pdf-plot.png, id=32, 385.9218pt x 164.5347pt>
+File: pdf-plot.png Graphic file (type png)
+<use pdf-plot.png>
+Package pdftex.def Info: pdf-plot.png  used on input line 168.
+(pdftex.def)             Requested size: 397.48499pt x 169.4701pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]\OT1/cmr/bx/n/9 Figure  1. \OT1/cmr/m/n/9 Joint dis-tri-bu-tions for a grain 
+to be at po-si-tion $\OML/cmm/m/it/9 x$ \OT1/cmr/m/n/9 at time $\OML/cmm/m/it/9
+ t$ \OT1/cmr/m/n/9 are dis-played for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\OT1/cmr/m/n/9 The solid lines are the an-a-lyt-i-cal dis-tri-bu-tion in equa-t
+ion (5[]), while the points are nu-mer-i-cally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\OT1/cmr/m/n/9 sim-u-lated, show-ing the cor-rect-ness of our deriva-tions. Col
+-ors per-tain to dif-fer-ent times. Units are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\OT1/cmr/m/n/9 un-spec-i-fied, since we aim to demon-strate the gen-eral char-a
+c-ter-is-tics of $\OML/cmm/m/it/9 p\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x; t\OT1/cmr
+/m/n/9 )$. Panel (a) shows
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 170--170
+\OT1/cmr/m/n/9 the case $\OML/cmm/m/it/9 ^^T \OT1/cmr/m/n/9 = 0$ -- no burial. 
+In this case, the joint dis-tri-bu-tion tends to-ward Gaus-sian at large
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\OT1/cmr/m/n/9 to be-come buried while rest-ing. Be-cause of burial, the joint 
+dis-tri-bu-tion tends to-ward a more
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]\OT1/cmr/bx/n/9 Table 1. \OT1/cmr/m/n/9 Ab-bre-vi-a-tions used in the ex-pres
+-sions of the mean (6[]), sec-ond mo-ment (7[]) and vari-
+ []
+
+[6 <./pdf-plot.png>]
+<diffusion.png, id=46, 380.98335pt x 308.71335pt>
+File: diffusion.png Graphic file (type png)
+<use diffusion.png>
+Package pdftex.def Info: diffusion.png  used on input line 225.
+(pdftex.def)             Requested size: 397.48499pt x 322.09534pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+[]\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 Panel (a) sketches con-cep-tual tra
+-jec-to-ries of three grains, while panel (b) de-picts
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 the vari-ance (8[]) with mean mo-tion time $1\OML/cmm/m/it/9 :\O
+T1/cmr/m/n/9 5$ s, rest-ing time $30\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 0$ s, and m
+ove-ment ve-loc-ity $0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 1$ m/s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 -- val-ues com-pa-ra-ble to lab-o-ra-tory ex-per-i-ments trans-p
+ort-ing small ($5$ mm) grav-els (La-je-unesse
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 et al.[], 2010; Mar-tin et al.[], 2012). The burial timescale is
+ $7200\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 0$s (two hours), and grains start
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 (b) demon-strates four dis-tinct scal-ing ranges of $\OML/cmm/m/
+it/9 ^^[[]$\OT1/cmr/m/n/9 : lo-cal, in-ter-me-di-ate, global, and ge-o-mor-phic
+.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 The first three are dif-fu-sive. Three crossover times $\OML/cmm
+/m/it/9 ^^\[]$\OT1/cmr/m/n/9 , $\OML/cmm/m/it/9 ^^\[]$\OT1/cmr/m/n/9 , and $\OM
+L/cmm/m/it/9 ^^\[]$ \OT1/cmr/m/n/9 di-vide the ranges. Within
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 mix-tures of mo-tion, rest, and burial states gen-er-ate the ran
+ges. At lo-cal timescales, grains usu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 ally ei-ther rest or move; at in-ter-me-di-ate timescales, they 
+tran-si-tion be-tween rest and mo-tion; at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 global timescales, they tran-si-tion be-tween rest, mo-tion, and
+ burial; and at ge-o-mor-phic timescales,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 all grains bury. Ad-di-tional slope keys in the lo-cal and globa
+l ranges of panel (b) il-lus-trate the ef-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 fect of ini-tial con-di-tions and rest/burial timescales on the 
+dif-fu-sion, while the ad-di-tional slope key
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\OT1/cmr/m/n/9 within the ge-o-mor-phic range demon-strates the ex-pected scal-
+ing when burial is not per-ma-nent, as
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8 <./diffusion.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+(./rwdiffu.bbl
+Underfull \hbox (badness 3792) in paragraph at lines 17--35
+\OT1/cmr/m/n/10 i-ment trans-port ex-per-i-ments.  \OT1/cmr/m/it/10 Phys-i-cal 
+Re-view E - Sta-tis-ti-cal, Non-lin-ear, and 
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 74--91
+[]\OT1/cmr/m/n/10 Barik, D., Ghosh, P. K., & Ray, D. S.  (2006).  Langevin dy-n
+am-ics with di-choto- 
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 106--125
+[]\OT1/cmr/m/n/10 Bialik, R. J., Nikora, V. I., Karpi^^Snski, M., & Rowi^^Snski
+, P. M.  (2015).  Dif-fu-sion 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--125
+\OT1/cmr/m/n/10 of bed-load par-ti-cles in open-channel flows: dis-tri-bu-tion 
+of travel times and 
+ []
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 139--155
+[]\OT1/cmr/m/n/10 Bialik, R. J., Nikora, V. I., & Rowi^^Snski, P. M.  (2012).  
+3D La-grangian mod-elling 
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 167--182
+[]\OT1/cmr/m/n/10 Bradley, D. N.  (2017).  Di-rect Ob-ser-va-tion of Heavy-Tail
+ed Stor-age Times of Bed 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--182
+\OT1/cmr/m/n/10 Load Tracer Par-ti-cles Caus-ing Anoma-lous Su-perdif-fu-sion. 
+ \OT1/cmr/m/it/10 Geo-phys-i-cal Re- 
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 196--214
+[]\OT1/cmr/m/n/10 Bradley, D. N., Tucker, G. E., & Ben-son, D. A.  (2010).  Fra
+c-tional dis-per-sion in a 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--246
+[]\OT1/cmr/m/n/10 Cundall, P. A., & Strack, O. D.  (1979).  A dis-crete nu-mer-
+i-cal model for gran- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--246
+\OT1/cmr/m/n/10 u-lar as-sem-blies.  \OT1/cmr/m/it/10 Geotech-nique\OT1/cmr/m/n
+/10 , \OT1/cmr/m/it/10 29\OT1/cmr/m/n/10 (1), 47--65.  Re-trieved from $\OT1/cm
+tt/m/n/10 http :// 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--246
+\OT1/cmtt/m/n/10 www [] .icevirtuallibrary [] .com / doi / 10 [] .1680 / geot [
+] .1979 [] .29 [] .1 [] .47$   \OT1/cmr/m/n/10 doi: 
+ []
+
+
+Underfull \vbox (badness 2134) has occurred while \output is active []
+
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 258--270
+\OT1/cmr/m/n/10 la-tion by W. W. Sayre, in Sed-i-men-ta-tion, edited by H. W. S
+hen, Ap-pendix C, 
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 316--331
+[]\OT1/cmr/m/n/10 Ettema, R., & Mu-tel, C. F.  (2014).  \OT1/cmr/m/it/10 Hans A
+l-bert Ein-stein: his life as a pi-o-neer-ing 
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 343--358
+[]\OT1/cmr/m/n/10 Fa, K. S.  (2014).  Un-cou-pled continuous-time ran-dom walk 
+model: An-a-lyt-i-cal and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--394
+\OT1/cmr/m/n/10 a semimech-a-nis-tic episodic Langevin model for bed load trans
+-port: Emer-gence 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--394
+\OT1/cmr/m/n/10 of nor-mal and anoma-lous ad-vec-tion and dif-fu-sion regimes. 
+ \OT1/cmr/m/it/10 Wa-ter Re-sources 
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 408--425
+\OT1/cmr/m/n/10 dif-fu-sive be-hav-ior of bed-load sed-i-ment par-ti-cles.  \OT
+1/cmr/m/it/10 Earth Sur-face Pro-cesses and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--456
+[]\OT1/cmr/m/n/10 Fathel, S. L., Fur-bish, D. J., & Schmeeckle, M. W.  (2015). 
+ Ex-per-i-men-tal ev-i- 
+ []
+
+
+Underfull \hbox (badness 7722) in paragraph at lines 439--456
+\OT1/cmr/m/n/10 dence of sta-tis-ti-cal en-sem-ble be-hav-ior in bed load sed-i
+-ment trans-port.  \OT1/cmr/m/it/10 Jour- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--456
+\OT1/cmr/m/it/10 nal of Geo-phys-i-cal Re-search F: Earth Sur-face\OT1/cmr/m/n/
+10 , \OT1/cmr/m/it/10 120\OT1/cmr/m/n/10 (11), 2298--2317.  doi: 
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 471--488
+\OT1/cmr/m/n/10 tracer peb-bles over dif-fer-ent timescales.  \OT1/cmr/m/it/10 
+Wa-ter Re-sources Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 38\OT1/cmr/m/n/10
+ (5), 3-- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 502--518
+\OT1/cmr/m/n/10 Generic mod-els and im-pli-ca-tions for in-ter-pret-ing short-t
+erm tracer stud-ies. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--580
+[]\OT1/cmr/m/n/10 Furbish, D. J., Ball, A. E., & Schmeeckle, M. W.  (2012).  A 
+prob-a-bilis-tic de- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--580
+\OT1/cmr/m/n/10 scrip-tion of the bed load sed-i-ment flux: 4. Fick-ian dif-fu-
+sion at low trans-port 
+ []
+
+
+Underfull \hbox (badness 5622) in paragraph at lines 562--580
+\OT1/cmr/m/n/10 rates.  \OT1/cmr/m/it/10 Jour-nal of Geo-phys-i-cal Re-search: 
+Earth Sur-face\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 117\OT1/cmr/m/n/10 (3), 1--13.
+  doi: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 596--615
+[]\OT1/cmr/m/n/10 Furbish, D. J., Fa-thel, S. L., Schmeeckle, M. W., Jerol-mack
+, D. J., & Schumer, 
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 596--615
+\OT1/cmr/m/n/10 R.  (2017).  The el-e-ments and rich-ness of par-ti-cle dif-fu-
+sion dur-ing sed-i-ment 
+ []
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 630--649
+[]\OT1/cmr/m/n/10 Gaeuman, D., Stew-art, R., Schmandt, B., & Pryor, C.  (2017).
+  Ge-o-mor-phic re- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 630--649
+\OT1/cmr/m/n/10 sponse to gravel aug-men-ta-tion and high-flow dam re-lease in 
+the Trin-ity River, 
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ê in font cmr10!
+
+Underfull \hbox (badness 1442) in paragraph at lines 663--679
+[]\OT1/cmr/m/n/10 Gordon, R., Carmichael, J. B., & Isack-son, F. J.  (1972).  S
+alta-tion of plas-tic balls 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--708
+[]\OT1/cmr/m/n/10 Haschenburger, J. K.  (2013).  Trac-ing river grav-els: In-si
+ghts into dis-per-sion 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--708
+\OT1/cmr/m/n/10 from a long-term field ex-per-i-ment.  \OT1/cmr/m/it/10 Ge-o-mo
+r-phol-ogy\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 200\OT1/cmr/m/n/10 , 121--131.  Re
+- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--708
+\OT1/cmr/m/n/10 trieved from $\OT1/cmtt/m/n/10 http :// dx [] .doi [] .org / 10
+ [] .1016 / j [] .geomorph [] .2013 [] .03 [] .033$   \OT1/cmr/m/n/10 doi: 
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 722--741
+[]\OT1/cmr/m/n/10 Hassan, M. A., & Bradley, D. N.  (2017).  Ge-o-mor-phic con-t
+rols on tracer par-ti-cle 
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 755--770
+[]\OT1/cmr/m/n/10 Hassan, M. A., & Church, M.  (1994).  Ver-ti-cal mix-ing of c
+oarse par-ti-cles in gravel 
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 755--770
+\OT1/cmr/m/n/10 bed rivers: A kine-matic model.  \OT1/cmr/m/it/10 Wa-ter Re-sou
+rces Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 30\OT1/cmr/m/n/10 (4), 1173--1
+185. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 784--800
+\OT1/cmr/m/n/10 par-ti-cles in gravel bed streams.  \OT1/cmr/m/it/10 Wa-ter Re-
+sources Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 27\OT1/cmr/m/n/10 (4), 503-
+-511. 
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 816--835
+\OT1/cmr/m/n/10 place-ment char-ac-ter-is-tics of coarse flu-vial bed sed-i-men
+t.  \OT1/cmr/m/it/10 Jour-nal of Geo-phys-i- 
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 849--867
+[]\OT1/cmr/m/n/10 Heyman, J., Bo-horquez, P., & An-cey, C.  (2016).  En-train-m
+ent, mo-tion, and de-po- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--900
+[]\OT1/cmr/m/n/10 Heyman, J., Ma, H. B., Met-tra, F., & An-cey, C.  (2014).  Sp
+a-tial cor-re-la-tions 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--900
+\OT1/cmr/m/n/10 in bed load trans-port: Ev-i-dence , im-por-tance , and mod-el-
+ing.  \OT1/cmr/m/it/10 Jour-nal 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--900
+\OT1/cmr/m/it/10 of Geo-phys-i-cal Re-search : Earth Sur-face\OT1/cmr/m/n/10 , 
+\OT1/cmr/m/it/10 119\OT1/cmr/m/n/10 , 1751--1767.  doi: $10 [] .1002 / 
+ []
+
+
+Underfull \hbox (badness 7540) in paragraph at lines 938--955
+[]\OT1/cmr/m/n/10 Kraichnan, R. H.  (1970).  Dif-fu-sion by a Ran-dom Ve-loc-it
+y Field.  \OT1/cmr/m/it/10 Physics of 
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 969--984
+[]\OT1/cmr/m/n/10 Lajeunesse, E., De-vauchelle, O., & James, F.  (2018).  Ad-ve
+c-tion and dis-per-sion of 
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 969--984
+\OT1/cmr/m/n/10 bed load trac-ers.  \OT1/cmr/m/it/10 Earth Sur-face Dy-nam-ics\
+OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 6\OT1/cmr/m/n/10 (November), 389--399.  doi: 
+$10 [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1072
+[]\OT1/cmr/m/n/10 Lisle, I. G., Rose, C. W., Hog-a-rth, W. L., Hair-sine, P. B.
+, Sander, G. C., & Par- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1104
+[]\OT1/cmr/m/n/10 Liu, M. X., Pelosi, A., & Guala, M.  (2019).  A Sta-tis-ti-ca
+l De-scrip-tion of Par-ti- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1104
+\OT1/cmr/m/n/10 cle Mo-tion and Rest Regimes in Open-Channel Flows Un-der Low B
+ed-load 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1116--1136
+[]\OT1/cmr/m/n/10 Macklin, M. G., Brewer, P. A., Hudson-Edwards, K. A., Bird, G
+., Coulthard, T. J., 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1161
+[]\OT1/cmr/m/n/10 Marcum, J. I.  (1960).  A Sta-tis-ti-cal The-ory of Tar-get D
+e-tec-tion By Pulsed 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1161
+\OT1/cmr/m/n/10 Radar.  \OT1/cmr/m/it/10 IRE Trans-ac-tions on In-for-ma-tion T
+he-ory\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 6\OT1/cmr/m/n/10 (2), 59--267.  doi: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1175--1192
+[]\OT1/cmr/m/n/10 Martin, R. L., Jerol-mack, D. J., & Schumer, R.  (2012).  The
+ phys-i-cal ba-sis for 
+ []
+
+
+Underfull \hbox (badness 7256) in paragraph at lines 1175--1192
+\OT1/cmr/m/n/10 anoma-lous dif-fu-sion in bed load trans-port.  \OT1/cmr/m/it/1
+0 Jour-nal of Geo-phys-i-cal Re-search: 
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 1234--1248
+[]\OT1/cmr/m/n/10 Masoliver, J.  (2016).  Frac-tional tele-g-ra-pher's equa-tio
+n from frac-tional per-sis-tent 
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 1234--1248
+\OT1/cmr/m/n/10 ran-dom walks.  \OT1/cmr/m/it/10 Phys-i-cal Re-view E\OT1/cmr/m
+/n/10 , \OT1/cmr/m/it/10 93\OT1/cmr/m/n/10 (5), 1--10.  doi: $10 [] .1103 / Phy
+sRevE [] .93 [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 1291--1311
+\OT1/cmr/m/n/10 mod-els and their prop-er-ties: Non-stationarity, non-ergodicit
+y, and age-ing at 
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 1354--1368
+[]\OT1/cmr/m/n/10 Montroll, E. W., & Weiss, G. H.  (1965).  Ran-dom walks on la
+t-tices.  \OT1/cmr/m/it/10 Jour-nal of 
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 1382--1401
+[]\OT1/cmr/m/n/10 Nakagawa, H., & Tsu-ji-moto, T.  (1976).  On prob-a-bilis-tic
+ char-ac-ter-is-tics of mo-tion 
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 1382--1401
+\OT1/cmr/m/n/10 of in-di-vid-ual sed-i-ment par-ti-cles on stream beds.  In \OT
+1/cmr/m/it/10 Hy-draulic prob-lems solved 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1401
+\OT1/cmr/m/it/10 by stochas-tic meth-ods: Sec-ond in-ter-na-tional iahr sym-po-
+sium on stochas-tic 
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 1442--1462
+[]\OT1/cmr/m/n/10 Nikora, V., Haber-sack, H., Hu-ber, T., & McE-wan, I.  (2002)
+.  On bed par-ti-cle dif- 
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 1442--1462
+\OT1/cmr/m/it/10 search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 38\OT1/cmr/m/n/10 (6)
+, 17--1--17--9.  Re-trieved from $\OT1/cmtt/m/n/10 http :// doi [] .wiley [] .c
+om / 10 [] .1029 / 
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 1509--1526
+[]\OT1/cmr/m/n/10 Olinde, L., & John-son, J. P. L.  (2015).  Us-ing RFID and ac
+celerometer-embedded 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1509--1526
+\OT1/cmr/m/n/10 trac-ers to mea-sure prob-a-bil-i-ties of bed load trans-port, 
+step lengths, and rest 
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 1538--1551
+[]\OT1/cmr/m/n/10 Paintal, A. S.  (1971).  A stochas-tic model of bed load tran
+s-port.  \OT1/cmr/m/it/10 Jour-nal of Hy- 
+ []
+
+
+Underfull \hbox (badness 7869) in paragraph at lines 1565--1582
+\OT1/cmr/m/n/10 mo-bil-ity and dis-per-sion of bed sed-i-ment in a small gravel
+-bed stream.  \OT1/cmr/m/it/10 Earth 
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 1596--1611
+\OT1/cmr/m/n/10 able bed-load step length.  \OT1/cmr/m/it/10 Earth Sur-face Dy-
+nam-ics\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 2\OT1/cmr/m/n/10 (1), 243--253.  doi:
+ $10 [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1626--1646
+\OT1/cmr/m/n/10 slow-down of tracer peb-bles in rivers: Im-ple-men-ta-tion of E
+xner-Based Mas-ter 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1626--1646
+\OT1/cmr/m/n/10 Equa-tion for co-e-volv-ing stream-wise and ver-ti-cal dis-per-
+sion.  \OT1/cmr/m/it/10 Jour-nal of Geo- 
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 1660--1676
+[]\OT1/cmr/m/n/10 Phillips, C. B., Mar-tin, R. L., & Jerol-mack, D. J.  (2013).
+  Im-pulse frame-work for 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1719--1737
+[]\OT1/cmr/m/n/10 Prudnikov, A. P., Brychov, Y. A., Marichev, O. I., Brychkov, 
+Y. A., Marichev, O. I., 
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 1719--1737
+\OT1/cmr/m/n/10 & Romer, R. H.  (1986).  \OT1/cmr/m/it/10 In-te-grals and Se-ri
+es \OT1/cmr/m/n/10 (Vol.[] 5) (No.[] 10).  New York: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1751--1768
+[]\OT1/cmr/m/n/10 Roseberry, J. C., Schmeeckle, M. W., & Fur-bish, D. J.  (2012
+).  A prob-a-bilis- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1751--1768
+\OT1/cmr/m/n/10 tic de-scrip-tion of the bed load sed-i-ment flux: 2. Par-ti-cl
+e ac-tiv-ity and mo- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1751--1768
+\OT1/cmr/m/n/10 tions.  \OT1/cmr/m/it/10 Jour-nal of Geo-phys-i-cal Re-search: 
+Earth Sur-face\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 117\OT1/cmr/m/n/10 (3).  doi: 
+
+ []
+
+
+Underfull \hbox (badness 5388) in paragraph at lines 1782--1799
+[]\OT1/cmr/m/n/10 Saletti, M., & Has-san, M. A.  (2020).  Width vari-a-tions co
+n-trol the de-vel-op-ment 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1782--1799
+\OT1/cmr/m/n/10 of grain struc-tur-ing in steep step-pool dom-i-nated streams :
+ in-sight from 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1782--1799
+\OT1/cmr/m/n/10 flume ex-per-i-ments.  \OT1/cmr/m/it/10 Earth Sur-face Pro-cess
+es and Land-forms\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 4815\OT1/cmr/m/n/10 .  doi:
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Underfull \hbox (badness 3525) in paragraph at lines 1813--1829
+\OT1/cmr/m/n/10 ac-tions for anoma-lous dif-fu-sion: A case study.  \OT1/cmr/m/
+it/10 Jour-nal of Physics Con-densed 
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 1843--1860
+[]\OT1/cmr/m/n/10 Schumer, R., Meer-schaert, M. M., & Baeumer, B.  (2009).  Fra
+c-tional advection- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1843--1860
+\OT1/cmr/m/n/10 dispersion equa-tions for mod-el-ing trans-port at the Earth su
+r-face.  \OT1/cmr/m/it/10 Jour- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1843--1860
+\OT1/cmr/m/it/10 nal of Geo-phys-i-cal Re-search: Earth Sur-face\OT1/cmr/m/n/10
+ , \OT1/cmr/m/it/10 114\OT1/cmr/m/n/10 (4), 1--15.  doi: $10 [] .1029 / 
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 1874--1889
+[]\OT1/cmr/m/n/10 Sekine, M., & Kikkawa, H.  (1992).  Me-chan-ics of saltat-ing
+ grains. II.  \OT1/cmr/m/it/10 Jour-nal of 
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 1901--1914
+[]\OT1/cmr/m/n/10 Shlesinger, M. F.  (1974).  Asymp-totic so-lu-tions of contin
+uous-time ran-dom walks. 
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 2034--2052
+[]\OT1/cmr/m/n/10 Voepel, H., Schumer, R., & Has-san, M. A.  (2013).  Sed-i-men
+t res-i-dence time dis- 
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 2034--2052
+\OT1/cmr/m/it/10 of Geo-phys-i-cal Re-search: Earth Sur-face\OT1/cmr/m/n/10 , \
+OT1/cmr/m/it/10 118\OT1/cmr/m/n/10 (4), 2557--2567.  doi: $10 [] .1002 / jgrf [
+] 
+ []
+
+
+Underfull \hbox (badness 4608) in paragraph at lines 2066--2082
+\OT1/cmr/m/n/10 asym-met-ric ran-dom walks.  \OT1/cmr/m/it/10 Phys-i-cal Re-vie
+w E - Sta-tis-ti-cal Physics, Plas-mas, 
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 2066--2082
+\OT1/cmr/m/it/10 Flu-ids, and Re-lated In-ter-dis-ci-plinary Top-ics\OT1/cmr/m/
+n/10 , \OT1/cmr/m/it/10 57\OT1/cmr/m/n/10 (5), 4915--4920.  doi: $10 [] .1103 /
+ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2172--2190
+[]\OT1/cmr/m/n/10 Witz, M. J., Cameron, S., & Nikora, V.  (2019).  Bed par-ti-c
+le dy-nam-ics at en- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2172--2190
+\OT1/cmr/m/n/10 train-ment.  \OT1/cmr/m/it/10 Jour-nal of Hy-draulic Re-search\
+OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 57\OT1/cmr/m/n/10 (4), 464--474.  Re-trieved 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2172--2190
+\OT1/cmr/m/n/10 from $\OT1/cmtt/m/n/10 https :// doi [] .org / 10 [] .1080 / 00
+221686 [] .2018 [] .1489898$   \OT1/cmr/m/n/10 doi: $10 [] .1080 / 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2204--2224
+[]\OT1/cmr/m/n/10 Wu, Z., Foufoula-Georgiou, E., Parker, G., Singh, A., Fu, X.,
+ & Wang, G.  (2019). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2204--2224
+\OT1/cmr/m/n/10 An-a-lyt-i-cal So-lu-tion for Anoma-lous Dif-fu-sion of Bed-loa
+d Trac-ers Grad-u-ally 
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 2204--2224
+\OT1/cmr/m/n/10 Un-der-go-ing Burial.  \OT1/cmr/m/it/10 Jour-nal of Geo-phys-i-
+cal Re-search: Earth Sur-face\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 124\OT1/cmr/m/n
+/10 (1), 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2240--2258
+\OT1/cmr/m/n/10 Ad-vec-tive Slow-down of Bed-load Trac-ers by Par-ti-cle Burial
+ and Ex-huma-tion. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14])
+[15] (./rwdiffu.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.45pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5226 strings out of 492982
+ 69743 string characters out of 6134896
+ 149074 words of memory out of 5000000
+ 8669 multiletter control sequences out of 15000+600000
+ 13558 words of font info for 53 fonts, out of 8000000 for 9000
+ 1147 hyphenation exceptions out of 8191
+ 50i,20n,37p,1503b,570s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on rwdiffu.pdf (15 pages, 905054 bytes).
+PDF statistics:
+ 159 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+

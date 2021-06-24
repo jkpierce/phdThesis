@@ -1,20 +1,20 @@
 #!/bin/bash
 # this cleans out all of the auxilary and log files after compilation
-rm -f .abs/abs.aux
-rm -f .ack/ack.aux
-rm -f .ch1intro/ch1intro.aux
-rm -f .ch2flipFlop/ch2flipFlop.aux
-rm -f .ch2flipFlop/ch2flipFlop.log
-rm -f .ch3bedEle/ch3bedEle.aux
-rm -4 .ch3bedEle/ch3bedEle.log
-rm -f .ch4downDiff/ch4downDiff.aux
-rm -f .ch4downDiff/ch4downDiff.log
-rm -f .ch5conc/ch5conc.aux
-rm -f .ch5conc/ch5conc.log
-rm -f .laySum/laySum.aux
-rm -f .laySum/laySum.log
-rm -f .pref/pref.aux
-rm -f .pref/pref.log
+rm -f abs.aux
+rm -f ack.aux
+rm -f ch1intro.aux
+rm -f ch2flipFlop.aux
+rm -f ch2flipFlop.log
+rm -f ch3bedEle.aux
+rm -f ch3bedEle.log
+rm -f ch4downDiff.aux
+rm -f ch4downDiff.log
+rm -f ch5conc.aux
+rm -f ch5conc.log
+rm -f laySum.aux
+rm -f laySum.log
+rm -f pref.aux
+rm -f pref.log
 rm -f appendix.aux
 rm -f diss.aux
 rm -f diss.bbl

@@ -1,0 +1,11 @@
+
+
+abstract:
+
+Sediment grains transport through gravel bed rivers in cycles of motion and rest. When grains rest on the surface, material transported from upstream can bury them. The surface shields buried grains from the flow, so they can be immobile for long time periods. These immobile periods can dominate sediment diffusion characteristics. Although investigators have recognized the impact of sediment burial on diffusion, existing models do not usually incorporate it. In this study, we present a random walk model incorporating sediment burial and solve it analytically. The model predicts three sediment diffusion ranges with distinct scaling characteristics in each. We relate the crossover times dividing these ranges to measurable transport parameters and describe each range from underlying physical processes. Our developments provide new geophysical perspective on the scale dependence of fluvial sediment transport.
+
+
+plainlang:
+
+
+The transport characteristics of a group of sediment grains in a river change through time. This is a major problem when considering the fate of solid contaminants in river channels, since physical relations used to make estimates need to change with time as well. Hans Albert Einstein, the son of the famous Albert Einstein, developed the first model to predict the downstream transport of coarse sediment in 1937, and his model remains highly influential today. However, the Einstein model's predictions do not change with time. In this work, we generalize Einstein's model to better describe the transport of coarse sediment through rivers. To do this, we incorporate the burial of sediment within the riverbed, which has been mostly overlooked in previous research. The model we develop has wide relevance to transport phenomena outside of river science, since transport phenomena ranging from cholesterols in cells to honeybees in fields also show characteristics that change with time.

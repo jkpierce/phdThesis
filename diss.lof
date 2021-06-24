@@ -7,4 +7,5 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta _1=1$, $\theta _2=0$). The solid lines are the analytical distribution in equation (\ref {eq:pdf}), while the points are numerically simulated, showing the correctness of our derivations. Colors pertain to different times. Units are unspecified, since we aim to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa =0$ -- no burial. In this case, the joint distribution tends toward Gaussian at large times \citep {Einstein1937,Lisle1998}. Panel (b) shows the case when grains have rate $\kappa = 0.01$ to become buried while resting. Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian. \relax }}{10}{figure.caption.8}%
 \addvspace {10\p@ }

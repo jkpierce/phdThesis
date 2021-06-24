@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: src.aux
+The style file: agu.bst
+Database file #1: biblio.bib
+Warning--I didn't find a database entry for "Staron2006"
+Warning--I didn't find a database entry for "Venditti2016"
+Warning--I didn't find a database entry for "Ma2014b"
+Warning--I didn't find a database entry for "Ohkubo2009"
+Warning--I didn't find a database entry for "Hassan2016"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "Turowski"
+Warning--empty publisher in Santos2014
+Warning--empty institution in Shields1936
+You've used 90 entries,
+            2789 wiz_defined-function locations,
+            1579 strings with 24043 characters,
+and the built_in function-call counts, 74176 in all, are:
+= -- 9236
+> -- 3086
+< -- 52
++ -- 1656
+- -- 741
+* -- 5079
+:= -- 7479
+add.period$ -- 90
+call.type$ -- 90
+change.case$ -- 509
+chr.to.int$ -- 89
+cite$ -- 272
+duplicate$ -- 6356
+empty$ -- 3551
+format.name$ -- 992
+if$ -- 14930
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 96
+newline$ -- 274
+num.names$ -- 363
+pop$ -- 2718
+preamble$ -- 1
+purify$ -- 424
+quote$ -- 0
+skip$ -- 5165
+stack$ -- 0
+substring$ -- 3287
+swap$ -- 5391
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 777
+warning$ -- 2
+while$ -- 472
+width$ -- 0
+write$ -- 988
+(There were 9 warnings)

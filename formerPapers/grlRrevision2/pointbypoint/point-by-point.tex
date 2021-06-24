@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+% General document formatting
+\usepackage[margin=0.75in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}         % side-by-side figures 
+% Related to math
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{booktabs} % for wrapping tabulars in accord with
+\bibliographystyle{agu}
+
+
+%\usepackage[math]{kurier}
+\newcommand\be{\begin{equation}} % shortcut to start eq envs 
+\newcommand\ee{\end{equation}}   % shortcut to end eq envs
+\newcommand\ol{\overline}        % shortcut to draw overline 
+\newcommand\bra{\langle}
+\newcommand\ket{\rangle}
+\newcommand\El{\mathcal{L}}
+\newcommand\tg{\tilde{g}}
+\newcommand\tG{\tilde{G}}
+\begin{document}
+	
+	\title{Response to reviewers: ``Back to Einstein: burial-induced three-range diffusion in fluvial sediment transport''}
+	\author{J. Kevin Pierce \& Marwan A. Hassan}
+	\maketitle
+
+\section*{Associate Editor}
+I agree with the reviewers that the revisions have improved the manuscript but there are new points raised by the reviewers, in particular the comments of reviewer 1 on the number of regimes identified and the need for a consistent story, rather than a timeline style of presentation of the results, and edits from reviewer 2.
+
+\paragraph{Reply:}
+We modified the manuscript in response to every comment of both reviewers. 
+We clarified the number of regimes identified (four variance scaling ranges, three of which are diffusive) at L20, 202, 226, and 273. We removed the timeline style presentation of the results, and we incorated all edits from reviewer \#2. 
+
+\section*{Reviewer \#1}
+
+\begin{enumerate}
+\item 'However, this context changes the main story and we now have a manuscript with “three range diffusion” in the title, but “four range” in the key points and the key figure- figure 2. Also, lines 221-226 describe three ranges, then the 4 th range is mentioned after the list but not counted.'
+\paragraph{Reply:} 
+We reconciled the inconsistency you pointed out between "three range" and "four range" within the revised manuscript. There are four variance scaling ranges but only three ``diffusion'' ranges. The fourth ``geomorphic'' variance scaling range does not involve the movement of any particles (at least with permanent burial), so it isn't a diffusion range. We clarified this distinction in the revised manuscript at L20, 202, 226, and 273 so we could write ``three-range diffusion'' without ambiguity. 
+
+\item I suggest that the authors remove their timeline of discovery (eg lines 240-250 “in the preliminary studies for this paper we found that a two-state....” “these realizations and the need for a physical model...” )
+\paragraph{Reply:}
+We removed the timeline of discovery and rephrased the underlying point that the Nikora et al. suggestion of a two state model with heavy-tailed rests does not generate three diffusion ranges. 
+
+\item  All previous descriptions of the global regime fit within this model depending on the timescale/tail relationship between rest and burial. Similarly, existence of a geomorphic range (or at least the slope on figure 2) is a function of permanent burial or not. The multi state model generalizes all random walk findings and highlights the physical process timescales that are significant. If there are other physical processes that are relevant, they can be
+added. All of this should be reflected in Figure 2-
+\paragraph{Reply:} 
+We comprehensively revised figure 2 to include all components of your thoughtful summary. We highlighted the variation of global range diffusion with $k_1/\kappa$ (ratio of burial time to resting time), we illustrated the anticipated result of impermanent burial in the geomorphic range, and we added an additional panel with a schematic of bedload trajectories through motion, rest, and burial states to indicate the physical processes that generate each diffusion range.
+\end{enumerate}
+
+We appreciate your attention toward improving our manuscript and hope we have addressed your concerns sufficiently. 
+
+\section*{Reviewer \#2}
+
+\subsection*{General Comments}
+
+The revised manuscript appropriately addresses the first set of reviews by placing a larger emphasis on the geophysical aspects of the problem. The revised manuscript is suitable for publication following minor revisions or a few changes that could potentially happen within the copy-editing phase.
+
+\subsection*{Specific Comments:}
+\begin{enumerate}
+\item Abstract. The abstract would benefit from some general editing. 7/12 lines are introducing the problem rather than serving as a synopsis of the paper. Some of this would be better suited to the introduction section.
+\paragraph{Reply:} We removed these lines and replaced them with a synopsis of the paper. The first several lines of the abstract now introduce the problem, the middle lines state what we did to solve the problem, and the final lines summarize our key findings. 
+
+\item Ln. 64. This is a bit of a miss citaiton here. Both Bradley (2017) and Phillips et al. (2013) only consider time above a transport threshold thus specifically excluding the time spent resting during low flow between floods.
+\paragraph{Reply:} We modified this sentence from the terminology ``between subsequent floods'' to represent our point that sampling timescales of tracer positions in these studies are at least as long as individual floods.
+
+\item Ln. 278-282. In Weeks and Swinney (1998) long time subdiffusion is uncommon for asymmetric random walks requiring very heavy-tailed waiting times. Given re-entrainment from burial is likely in all but aggrading systems is long term subdiffusion really a viable solution for natural rivers?
+\paragraph{Reply:} We are unsure whether long-time sub-diffusion is viable, so we modified this section to better communicate the existing support for both possibilities. The field study of  \citet{Olinde2015} shows sufficiently heavy-tailed resting times for long-time sub-diffusion, but their methods do not discern whether these rests are due to burial or some other process. Several models including our recent JGR paper show that burial times under equilibrium transport conditions are not sufficiently heavy-tailed for sub-diffusion \citep{Pierce2020,Martin2014,Voepel2013}. Similarly, \citet{Bradley2017} presents resting times that were insufficient for long-time sub-diffusion. The evidence mostly points toward long-time super-diffusion, but the limited data leave us not confident enough to refute the Nikora et al. hypothesis.
+\end{enumerate}
+
+Thank you sincerely for your constructive comments and attention toward our work. 
+
+\bibliography{biblio}
+\end{document}
