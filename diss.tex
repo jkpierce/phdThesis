@@ -56,10 +56,11 @@
 \usepackage[scaled=.92]{helvet}
 
 %% Math or theory people may want to include the handy AMS macros
-\usepackage{amssymb}
+%\usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{float} % figure placement?
+%\usepackage{amsfonts}
+\usepackage{float} % figure placement.
+\usepackage{wrapfig} % table wrapped by text
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,6 +76,15 @@
 \newcommand\tp{\tilde{p}}
 \newcommand\tG{\tilde{G}}
 \newcommand\El{\mathcal{L}}
+\newcommand{\pt}{\partial_t}
+\newcommand{\px}{\partial_x}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\vp}{\varrho}
+\DeclareMathOperator\erf{erf}
+\DeclareMathOperator\erfc{erfc}
+\DeclareMathOperator\erfi{erfi}
+\newcommand{\cev}[1]{\reflectbox{\ensuremath{\vec{\reflectbox{\ensuremath{#1}}}}}}
+
 
 %% The pifont package provides access to the elements in the dingbat font.   
 %% Use \ding{##} for a particular dingbat (see p7 of psnfss2e.pdf)
