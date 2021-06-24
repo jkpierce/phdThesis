@@ -1,0 +1,64 @@
+
+
+
+
+Recognizing the significance of the observation timescale $a$ used to study or describe stochastic quantities \citep{Singh2009,Marani2003}, we analyzed the effect of changing this scale on the simulated distributions.
+We found the shape of the distributions was essentially unchanged with $a$, while the magnitude of fluctuations was suppressed as the observation scale increased.
+This contrasts with some observations of so-called multiscaling in sediment transport \citep{Shang2005,Singh2009} and bed elevation timeseries \citep{Singh2009,Singh2012,Aberle2006}, whereby the shape of probability distributions of bedload or bed elevations changes with observation scale $a$, but it agrees with some others showing monoscaling, whereby the shape of the distribution under analysis does not change with observation scale \citep{Saletti2015}.
+We identify the full statistical characterization of bed elevation, bedload flux, and other timeseries expressed by rivers as an emerging topic of research.
+Whether the scaling behavior of our model agrees with reality or not, it does provide a baseline from which to develop further models. 
+We believe this is important since understanding and modeling these scale dependencies of time series in river science has practical importance for interpreting measurements on one timescale to guide restoration efforts \citep[e.g.,][]{Gaeuman2017} or pollution mitigation \citep[e.g.,][]{Macklin2006} on other timescales \citep[c.f.,][]{Marani2003}.
+
+
+We find exponential autocorrelation functions with correlation times of bed elevations being generally much longer than correlation times of bedload fluxes. This disconnect between correlation times is entirely reasonable with the interpretation of bed elevation changes as the cumulative result of many individual bedload entrainment or deposition events.
+
+
+Our simulations also show novel interplay between local bed elevations and bedload fluctuations which earlier models have not captured, since they've left out the vertical dimension of bed elevation changes, and they provide a new prediction of the form of the resting time distribution for sediment undergoing burial, corroborating earlier studies on the topic \citep[e.g.,][]{Martin2014,Voepel2013}.
+In particular, we have shown that a dynamic sedimentary bed coupled to bedload transport can buffer bedload transport fluctuations. 
+
+
+More importantly, we interpret resting times of sediment undergoing burial as return times from above in the bed elevation time series \citep[e.g.,][]{Voepel2013,Martin2014}, and predict the form and characteristics of this distribution.
+Of course, modeling complex geophysical phenomena (such as expressions of coupled fluid and granular phases) necessitates simplifying assumptions \citep[e.g.,][]{Larsen2016}, and our work is no exception.
+We believe the key limitations of our work are (1) our assumption that local (as opposed to non-local) deviations in bed elevation are the dominant control on the mobility of grains; and (2) those assumptions inherited from the underlying bedload transport model of \citet{Ancey2008}, which essentially incorporates the earlier assumptions of \citet{Einstein1950} into a stochastic framework.
+The first assumption can be somewhat justified under conditions in which the formation of organized bed structures is not favored \citep[e.g.,][]{Hassan2008}, while the second has been discussed in earlier works and appears justified in near-threshold transport conditions when the intermittent aspect of bedload transport is emphasized \citep[e.g.,][]{Ancey2008,Heyman2014} whenever organized bed structures are not present \citep[e.g.,][]{Dhont2018}.
+
+The joint description (\ref{eq:master}) reproduces earlier descriptions of bedload activities by \citet{Ancey2008} and bed elevations by \citet{Martin2014} in simplified limits.
+The \citet{Ancey2008} bedload model is obtained when bed elevation fluctuations $\delta m$ are considered small: $m \approx m_0$.
+Taking account of this change in equation (\ref{eq:master}) obtains the master equation of \citet{Ancey2008} for the bedload activity distribution $P(n,t)$.
+Hence the differences between our bedload activity statistics and those of the \citet{Ancey2008} model are induced by bed elevation fluctuations.
+When relatively large bed elevation fluctuations are possible (i.e., $l$ is large), bed elevation changes act to buffer bedload activity fluctuations.
+In contrast, when bed elevation changes are tightly linked to the mobility of moving and stationary grains (i.e., $l$ is small), bed elevation changes enhance bedload fluctuations.
+We hypothesize this enhancement/suppression of bedload fluctuations is primarily due to the collective entrainment term in equation , since the \citet{Ancey2008} variance is most sensitive to the collective entrainment process.
+However, more research will be required to clarify the linkage between bed elevation changes and bedload fluctuations.
+Given recent observations of sudden local elevation changes being induced by avalanches on the downstream face of bars \citep{Dhont2018}, we identify the interplay between collective motions of bedload and bed elevation changes as an emerging research theme, and we suggest our joint description may hint toward a modeling framework to address these issues.
+
+The \citet{Martin2014} bed elevation model based upon the Ornstein-Uhlenbeck (OU) process is obtained in the converse limit when bedload activity fluctuations $\delta n$ are small: $n \approx \langle n \rangle$.
+In this case, neglecting the migration terms and identifying the mean entrainment and deposition rates as $E =\lambda_0 + \mu_0 \langle n \rangle$ and $D = \sigma_0 \langle n \rangle$ before using the steady-state transport condition $E=D$ \citep[e.g.,][]{Einstein1950} gives
+This is a discrete state analogue of the OU process \citet{Martin2014} used to model bed elevation changes, and it provides excellent correspondence to the bed elevation statistics and resting time distributions computed from our joint model.
+Our resting time distributions of sediment undergoing burial essentially correspond with those of \citet{Martin2014} given our computational uncertainty.
+These authors proposed $\alpha \approx 1 $ from a continuum analogue of equation (\ref{eq:ou}).
+Incidentally, they scale resting times by an "activity parameter" $1/a$ which is equivalent to $1/(2E)$ in our notation.
+Our work suggests the incomplete collapse displayed by \citet{Martin2014} may be corrected by including a bed elevation variance factor in their scaling as in equation (\ref{eq:time}), further justifying the correspondence of our model to equation (\ref{eq:ou}).
+In fact, we note $T_0$ is the autocorrelation time of the limiting OU process equation (\ref{eq:time}) \citep[e.g.,][]{Gardiner1983}.
+
+
+
+
+% E) discuss your key conclusions on resting time distributions and bedload diffusion / discuss relationship to field studies and laboratory experiments
+The computed resting time distributions (figure \ref{fig:cdfs}) provide several implications for bedload diffusion.
+Our simulations show asymptotic power law tails with parameter $\alpha = 1.18 \pm 0.32$ after scaling by $T_0$ related to the characteristic speed of bed elevation changes.
+For a general power law, if $\alpha<1$, neither the mean or variance of the resting time will converge, while if $1<\alpha <2$, the mean will converge while the variance will not \citep[e.g.,][]{Bradley2017}.
+Within our computational uncertainty stemming from the finite duration of our simulations and the log-likelihood estimation of $\alpha$ \citep[e.g.,][]{Newman2005}, we are unable to conclude whether the mean resting time will diverge, but we can conclude the variance will diverge.
+According to \citet{Weeks1998}, if the step length distribution has a light tail \citep[e.g.,][]{Hassan2013}, our computed power-law resting times are sufficiently heavy tailed to imply diffusion scaling as either $\sigma_x^2 \propto t^{3-\alpha} \approx t^{\{1.82 \pm 0.32 \}}$ or $\sigma_x^2 \propto t^{2\alpha} \approx t^{\{3.64\pm 0.45\}}$ at asymptotically large times.
+In either case, the process of sediment burial induces an extreme super-diffusion of bedload: at long timescales, some grains will continue to transport downstream in alternate motion-rest sequences while others will become trapped under the bed for relatively long periods of time, driving a rapid spreading of the population.
+In relation to solid contaminant export from river channels \citep[e.g.,][]{Malmon2005}, long-time super-diffusion implies contaminants will eventually dilute over a relatively vast region. However, heavy tailed resting times mean total evacuation could take an exceedingly long time.
+
+% F) Discuss scope for extension and shortcomings
+Finally, we propose a possible extension of the joint model (\ref{eq:master}) by following its linkage to \citet{Ancey2008} and follow-ups \citep[e.g.,][]{Ancey2014a, Heyman2014, Heyman2015}.
+These works are based on chaining many \citet{Ancey2008} single-cell models together along a line, with migration out of one cell being migration into another.
+In this way, they provide a framework to study spatial correlations in bedload transport \citep[e.g.,][]{Heyman2014,Heyman2015}.
+Similar approaches have been used to formulate reaction-diffusion and flow problems in stochastic physics \citep[e.g.,][]{Gardiner1983}. 
+One can imagine using the model (\ref{eq:master}) in the same way, chaining an array of volumes (as in figure \ref{fig:definition}) together along a line to generate a fluvial morphodynamics model ultimately rooted in a stochastic concept of individual motions \citep[e.g.,][]{Einstein1937}.
+Such a model could provide spatial correlations in bed elevation changes and bedload transport while taking account of their inherent granularity.
+Given the increasing realization that granular physics phenomena initiated by individual grains, such as avalanches and jamming, play a non-negligible role in fluvial processes \citep[e.g.,][]{Saletti2016,Dhont2018}, we speculate such a model, if suitably extended, might provide unique traction on future research problems centered around processes initiated by individual grains.
+

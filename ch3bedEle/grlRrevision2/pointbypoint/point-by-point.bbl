@@ -1,0 +1,40 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Bradley}(2017)}]{Bradley2017}
+Bradley, D.~N., {Direct Observation of Heavy-Tailed Storage Times of Bed Load
+  Tracer Particles Causing Anomalous Superdiffusion}, \textit{Geophysical
+  Research Letters}, \textit{44}(24), 12,227--12,235,
+  \doi{10.1002/2017GL075045}, 2017.
+
+\bibitem[{\textit{Martin et~al.}(2014)\textit{Martin, Purohit, and
+  Jerolmack}}]{Martin2014}
+Martin, R.~L., P.~K. Purohit, and D.~J. Jerolmack, {Sedimentary bed evolution
+  as a mean-reverting random walk: Implications for tracer statistics},
+  \textit{Geophysical Research Letters}, \textit{41}(17), 6152--6159,
+  \doi{10.1002/2014GL060525}, 2014.
+
+\bibitem[{\textit{Olinde and Johnson}(2015)}]{Olinde2015}
+Olinde, L., and J.~P.~L. Johnson, {Using RFID and accelerometer-embedded
+  tracers to measure probabilities of bed load transport, step lengths, and
+  rest times in a mountain stream}, \textit{Water Resources Research},
+  \textit{51}, 7572--7589, \doi{10.1002/2014WR016259}, 2015.
+
+\bibitem[{\textit{Pierce and Hassan}(2020)}]{Pierce2020}
+Pierce, J.~K., and M.~A. Hassan, {Joint stochastic bedload transport and bed
+  elevation model: variance regulation and power law rests}, \textit{Journal of
+  Geophysical Research: Earth Surface}, \textit{125}(4), 1--15,
+  \doi{10.1029/2019jf005259}, 2020.
+
+\bibitem[{\textit{Voepel et~al.}(2013)\textit{Voepel, Schumer, and
+  Hassan}}]{Voepel2013}
+Voepel, H., R.~Schumer, and M.~A. Hassan, {Sediment residence time
+  distributions: Theory and application from bed elevation measurements},
+  \textit{Journal of Geophysical Research: Earth Surface}, \textit{118}(4),
+  2557--2567, \doi{10.1002/jgrf.20151}, 2013.
+
+\end{thebibliography}
