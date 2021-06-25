@@ -13,7 +13,7 @@ A level-1 auxiliary file: ch5langevin.aux
 A level-1 auxiliary file: ch6conc.aux
 The style file: ./agu.bst
 A level-1 auxiliary file: appendix.aux
-Reallocated field_info (elt_size=4) to 11072 items from 5000.
+Reallocated field_info (elt_size=4) to 11095 items from 5000.
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "Chorley1984"
 Warning--I didn't find a database entry for "Gilbert1877"
@@ -85,45 +85,45 @@ Warning--can't use both volume and number fields in Redner2007
 Warning--empty publisher in Santos2014
 Warning--can't use both volume and number fields in Temme1996
 Warning--empty publisher in Yano1969
-You've used 200 entries,
+You've used 201 entries,
             2789 wiz_defined-function locations,
-            2354 strings with 44394 characters,
-and the built_in function-call counts, 179012 in all, are:
-= -- 23057
-> -- 6873
-< -- 118
-+ -- 3815
-- -- 1646
-* -- 11898
-:= -- 17264
-add.period$ -- 200
-call.type$ -- 200
-change.case$ -- 1140
-chr.to.int$ -- 198
-cite$ -- 606
-duplicate$ -- 15939
-empty$ -- 8223
-format.name$ -- 2259
-if$ -- 35997
+            2361 strings with 44586 characters,
+and the built_in function-call counts, 179904 in all, are:
+= -- 23174
+> -- 6898
+< -- 120
++ -- 3829
+- -- 1652
+* -- 11951
+:= -- 17347
+add.period$ -- 201
+call.type$ -- 201
+change.case$ -- 1145
+chr.to.int$ -- 199
+cite$ -- 609
+duplicate$ -- 16022
+empty$ -- 8267
+format.name$ -- 2270
+if$ -- 36184
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 204
-newline$ -- 604
-num.names$ -- 805
-pop$ -- 6447
+missing$ -- 205
+newline$ -- 607
+num.names$ -- 809
+pop$ -- 6482
 preamble$ -- 1
-purify$ -- 944
+purify$ -- 948
 quote$ -- 0
-skip$ -- 12956
+skip$ -- 13019
 stack$ -- 0
-substring$ -- 8506
-swap$ -- 13992
-text.length$ -- 18
+substring$ -- 8551
+swap$ -- 14065
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1767
+type$ -- 1776
 warning$ -- 6
-while$ -- 1120
+while$ -- 1127
 width$ -- 0
-write$ -- 2205
+write$ -- 2216
 (There were 70 warnings)

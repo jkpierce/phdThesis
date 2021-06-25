@@ -15,13 +15,33 @@ These systems stand in contrast to the systems in geomorphology. Earth's surface
 There are nevertheless lessons physics can exchange with geomorphology and sediment transport theory. This is the central theme of this thesis. Before presenting original research, the first chapter summarizes key developments in quantitative geomorphology models which have resulted from this exchange. The section is organized along two classifications. First, I distinguish earlier works as ``stochastic" or ``deterministic". Stochastic models introduce randomness or noise as a means to crudely represent the complexity of natural systems (open boundaries, diversity in component parts) within idealized mathematical models of nature. Deterministic models involve Newtonian equations without noise to represent nature. Second, I distinguish earlier models as ``discrete" or ``continuous". These terms reflect whether the degrees of freedom of individual particles are retained in mathematical models, or whether they are averaged away. When grains are tracked, a model is discrete. When they are discussed as a flow, it is continuous. We can therefore discuss a ``discrete and stochastic" model, or a ``continuous and deterministic" model, and so on.
 With these distinctions in mind, we launch into a survey of the foundation upon which this thesis builds: physics-inspired, process-based models of sediment transport and landscape evolution.
 
-\section{The bedload transport problem}
+\section{Bedload transport foundations}
+
+Sediment moves in rivers when the tractive force of the water flow overcomes any resisting forces by gravity and friction. 
+
+\subsection{Bulk bedload flux}
 
 
-\section{Models of bedload: Determinism and continuity}
+\subsection{Bagnold's energy balance}
+
+One of the most influential approaches from physical arguments is due to Bagnold \citep{Bagnold1956,Bagnold1966}.
+Bagnold described sediment transport as a process which ultimately converts flow energy to heat.
+He assumed that the flow power $P_f$ available to move sediment scaled as $P_f \propto \tau - \tau_c$, where $\tau$ is the average bed shear stress and $\tau_c$ is the threshold shear stress at which particles first begin to move. 
+He reasoned that if the average downstream flux of particles is $q$, and particles move on average with velocity proportional to the fluid velocity near the bed, then the power $P_g$ required to sustain particle motion scales as $P_g \propto q/\tau^{1/2}. $ Balancing fluid propulsion against frictional dissipation ($P_f = P_g$) then provides Bagnold's sediment transport formula
+\be q = k(\tau-\tau_c)\tau^{1/2}, \label{eq:bagnold}\ee
+which has shown good correspondence with laboratory data after careful calibration of the constant factors $k$ and $\tau_c$.
+The large shear stress limit $q \sim \tau^{3/2}$ is shared in common with many other empirical formulas describing the mean downstream flux of bedload \citep[e.g.][]{MeyerPeter1948, Yalin1972}
+
+\subsection{Discrete particle models}
 
 
-\subsection{Exner's landscape evolution} 
+\subsection{The probabilistic approach of Einstein}
+
+
+\section{From transport to landscape evolution}
+
+
+\subsection{Exner's approach} 
 
 Exner was probably the first to describe landscape evolution as a mathematical result of sediment transport \citep{Exner1925}, when he related the topographic elevation to the sediment flux via
 \be (1-\lambda)\frac{\partial z}{\partial t}(\textbf{x},t) = -\nabla q (\textbf{x},t). \ee
@@ -31,73 +51,14 @@ Within the Exner equation, the elevation $z$ and sediment flux $q$ are represent
 
 Yet there are many contexts on Earth's surface where the scale of interest is not much larger than the largest grains involved in the system. We can wonder, for example, in mountain channels, how large boulders contribute to the formation of steps \citep{Zimmerman2008,Saletti2020}, or other structures with sizes comparable to channel widths, like ribs or stone cells \citep{Hassan2008,Venditti2017}. In these cases, individual grains are comparable to the scales of interest, and the continuum approximation breaks down.  
 
-\section{Bagnold's sediment flux}
 
-When the Exner equation applies, the question arises as to how one should relate the sediment flux within it to the fluid flow characteristics. One of the most influential approaches from physical arguments is due to Bagnold \citep{Bagnold1956,Bagnold1966}.
-Bagnold described sediment transport as a process which ultimately converts flow energy to heat.
-He assumed that the flow power $P_f$ available to move sediment scaled as $P_f \propto \tau - \tau_c$, where $\tau$ is the average bed shear stress and $\tau_c$ is the threshold shear stress at which particles first begin to move. 
-He reasoned that if the average downstream flux of particles is $q$, and particles move on average with velocity proportional to the fluid velocity near the bed, then the power $P_g$ required to sustain particle motion scales as $P_g \propto q/\tau^{1/2}. $ Balancing fluid propulsion against frictional dissipation ($P_f = P_g$) then provides Bagnold's sediment transport formula
-\be q = k(\tau-\tau_c)\tau^{1/2}, \label{eq:bagnold}\ee
-which has shown good correspondence with laboratory data after careful calibration of the constant factors $k$ and $\tau_c$.
-The large shear stress limit $q \sim \tau^{3/2}$ is shared in common with many other empirical formulas describing the mean downstream flux of bedload \citep[e.g.][]{MeyerPeter1948, Yalin1972}.
-
-\subsection{The combination: two-phase deterministic/continuum models}
-
-Joined with a model of flow hydraulics such as the shallow water equations, solved against the boundary condition formed by the bed surface, the Exner equation and Bagnold's formulation of the flux might be expected to provide a continuum mechanics description of channel evolution in the form of coupled partial differential equations for hydraulics, sediment transport (eq. \ref{eq:bagnold}), and topography (eq. \ref{eq:exner}).
-Unfortunately, this scheme does not provide the linear instabilities necessary to develop bedforms \citep{Balmforth2002}. In such a coupled model, although interesting hydrodynamic instabilities such as roll waves result, the bed does not evolve on timescales disparate from the flow.
-
-\subsection{Challenges of the continuum approximation}
-
-While 
-
-
-The sediment flux fluctuates, and it depends on observation scale.
-
-The bed is not continuous, but it is discrete. Discrete beds have not been described in the stochastic paradigm -- only in the deterministic paradigm.
-
-
-\section{Discrete and deterministic}
-
-\subsection{Saltation models: Van Rijn and Wiberg}
-
-\subsection{Discrete element modelling}
-
-haff and other 2d approaches. early days. mcewan and heald
-
-\subsection{State of the art in discrete/deterministic}
-
-Coupled DEM/CFD
-
-\subsection{Challenges of the discrete and deterministic approach}
-
-simulations are very expensive at realistic scales
-
-
-\section{Discrete and stochastic}
-this is my baby
-
-\subsection{The stochastic alternative: Einstein's flux}
-Explain the idea of entrainment and deposition.
-Formulate the movement characteristics of individual particles in the stair-step approach.
-Find q= El.
-Summarize the major strengths and limitations.
-
-\subsection{Tsujimoto's landscape}
+\subsection{Tusjimoto and beyond}
 Explain what tsujimoto essentially did to couple Einstein into Exner, giving the entrainment form of the exner equation.
 Cite Parker and Furbish who provided refinements of it.
 Describe the inherently nonlocal characteristics of sediment flux.
 Indicate the major strengths and weaknesses -  key weakness being that, if the sediment flux is a fluctuating quantity, as formulated by Einstein, then 
 
-\subsection{The details of entrainment}
-
-\subsection{State of the art in the stochastic paradigm}
-Ancey's developments to describe the full probability distribution of the sediment flux. 
-
-Lisle and Lajenesse's efforts to include a finite movement velocity into einstein's 37 model.
-
-Increased emphasis on the dynamical origins of grain kinematics, including ancey 2014 and fan 2014 and the representation of turbulence by white noise in a Langevin equation.
-
-\subsection{Limitations: Realism versus complexity}
+\section{Realism versus complexity}
 
 \section{The point of the thesis} 
 

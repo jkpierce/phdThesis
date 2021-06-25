@@ -1,4 +1,4 @@
-\begin{thebibliography}{200}
+\begin{thebibliography}{201}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{\it Aberle and Nikora\/}(2006)}]{Aberle2006}
@@ -672,6 +672,11 @@ Metzler, R., J.~H. Jeon, A.~G. Cherstvy, and E.~Barkai, {Anomalous diffusion
   models and their properties: Non-stationarity, non-ergodicity, and ageing at
   the centenary of single particle tracking}, {\it Physical Chemistry Chemical
   Physics\/}, {\it 16\/}, 24,128--24,164, 2014.
+
+\bibitem[{{\it Meyer-Peter and M{\"{u}}ller\/}(1948)}]{MeyerPeter1948}
+Meyer-Peter, E., and R.~M{\"{u}}ller, {Formulas for Bed-Load Transport}, {\it
+  Proceedings of the 2nd Meeting of the International Association of Hydraulic
+  Research\/}, pp. 39--64, 1948.
 
 \bibitem[{{\it Michaelides\/}(1997)}]{Michaelides1997}
 Michaelides, E.~E., {Review—the transient equation of motion for particles,
