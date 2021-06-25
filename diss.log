@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.24)  23 JUN 2021 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.24)  24 JUN 2021 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -98,55 +98,6 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \@figprefixlen=\skip86
 \@tabprefixlen=\skip87
 )
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup4
-\symitalic=\mathgroup5
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
-LaTeX Info: Redefining \hbar on input line 50.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
-Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
-)
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
-Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
-))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip88
@@ -157,7 +108,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks14
 \ex@=\dimen137
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -187,30 +138,30 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count188
 \dspbrk@lvl=\count189
-\tag@help=\toks16
+\tag@help=\toks15
 \row@=\count190
 \column@=\count191
 \maxfields@=\count192
-\andhelp@=\toks17
+\andhelp@=\toks16
 \eqnshift@=\dimen140
 \alignsep@=\dimen141
 \tagshift@=\dimen142
 \tagwidth@=\dimen143
 \totwidth@=\dimen144
 \lineht@=\dimen145
-\@envbody=\toks18
+\@envbody=\toks17
 \multlinegap=\skip89
 \multlinetaggap=\skip90
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count193
-\float@exts=\toks20
+\float@exts=\toks19
 \float@box=\box47
-\@float@everytoks=\toks21
+\@float@everytoks=\toks20
 \@floatcapt=\box48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
@@ -218,7 +169,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \WF@size=\dimen147
 \c@WF@wrappedlines=\count194
 \WF@box=\box49
-\WF@everypar=\toks22
+\WF@everypar=\toks21
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
@@ -241,6 +192,10 @@ Package: checkend 2002/04/20 v1.0 Environment checking
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
@@ -613,31 +568,51 @@ LaTeX Warning: Label `sec:discussion' multiply defined.
 
 LaTeX Warning: Label `sec:conclusion' multiply defined.
 
-) (./ch5conc.aux) (./appendix.aux))
+) (./ch5langevin.aux
+
+LaTeX Warning: Label `sec:model' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig1' multiply defined.
+
+
+LaTeX Warning: Label `eq:langevin' multiply defined.
+
+
+LaTeX Warning: Label `eq:master' multiply defined.
+
+
+LaTeX Warning: Label `sec:results' multiply defined.
+
+
+LaTeX Warning: Label `sec:solution' multiply defined.
+
+
+LaTeX Warning: Label `sec:discussion' multiply defined.
+
+
+LaTeX Warning: Label `sec:conclusion' multiply defined.
+
+) (./ch6conc.aux) (./appendix.aux))
 \openout1 = `diss.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 356.
-LaTeX Font Info:    ... okay on input line 356.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 356.
-LaTeX Font Info:    ... okay on input line 356.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 356.
-LaTeX Font Info:    ... okay on input line 356.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 356.
-LaTeX Font Info:    ... okay on input line 356.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 356.
-LaTeX Font Info:    ... okay on input line 356.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 356.
-LaTeX Font Info:    ... okay on input line 356.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 356.
-LaTeX Font Info:    ... okay on input line 356.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 356.
-LaTeX Font Info:    ... okay on input line 356.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 358.
+LaTeX Font Info:    ... okay on input line 358.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count311
@@ -664,9 +639,9 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package backref Info: ** backref set up for natbib ** on input line 356.
+Package backref Info: ** backref set up for natbib ** on input line 358.
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 356.
+Package hyperref Info: Link coloring OFF on input line 358.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -679,20 +654,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count318
 )
-LaTeX Info: Redefining \ref on input line 356.
-LaTeX Info: Redefining \pageref on input line 356.
-LaTeX Info: Redefining \nameref on input line 356.
+LaTeX Info: Redefining \ref on input line 358.
+LaTeX Info: Redefining \pageref on input line 358.
+LaTeX Info: Redefining \nameref on input line 358.
 
 (./diss.out) (./diss.out)
 \@outlinefile=\write4
 \openout4 = `diss.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-59.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [1
+ [1
 
 
 
@@ -703,10 +673,10 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 
-]
+] [4]
 \openout2 = `laySum.aux'.
 
- (./laySum.tex) [4
+ (./laySum.tex) [5
 
 
 
@@ -714,82 +684,80 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ]
 \openout2 = `pref.aux'.
 
-
-(./pref.tex) [5
+ (./pref.tex) [6
 
 
 
 
 ] (./diss.toc
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 2.
+[7
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+
+
+] [8] [9]
+Overfull \hbox (4.57472pt too wide) in paragraph at lines 102--102
+ [][] []\OT1/cmr/m/n/10.95 Understanding of how sed-i-ment burial af-fects the 
+down- 
+ []
+
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
- [6
-
-
-
-] [7])
 \tf@toc=\write5
 \openout5 = `diss.toc'.
 
- [8]
-(./diss.lot)
+ [10] [11] (./diss.lot)
 \tf@lot=\write6
 \openout6 = `diss.lot'.
 
- [9
+ [12
 
 
 ] (./diss.lof
-Overfull \hbox (0.26892pt too wide) in paragraph at lines 9--9
- \OT1/ptm/m/n/10.95 ary par-ti-cles and Normal-like mov-ing par-ti-cles. The ri
-ght panel 
+Overfull \hbox (1.94101pt too wide) in paragraph at lines 7--7
+ [][] []\OT1/cmr/m/n/10.95 Einstein's con-cep-tual pic-ture (adapted from [][]\
+OT1/cmr/m/it/10.95 Yalin[] \OT1/cmr/m/n/10.95 ([]1972[])). 
  []
 
-[10
+[13
 
 
-] [11] [12])
+]
+Overfull \hbox (2.79532pt too wide) in paragraph at lines 14--14
+ \OT1/cmr/m/n/10.95 layer depth $\OML/cmm/m/it/10.95 l$ \OT1/cmr/m/n/10.95 char
+-ac-ter-izes bed el-e-va-tion changes as posited 
+ []
+
+[14]
+Overfull \hbox (1.06667pt too wide) in paragraph at lines 17--17
+ \OT1/cmr/m/n/10.95 con-di-tions and the bed el-e-va-tion vari-ance. Panel (a) 
+shows 
+ []
+
+[15]
+Overfull \hbox (1.2039pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10.95 trans-port-ing small ($5$ mm) grav-els ([][]\OT1/cmr/m/it/1
+0.95 La-je-unesse et al.[]\OT1/cmr/m/n/10.95 , []2010[]; 
+ []
+
+[16]
+Overfull \hbox (11.86458pt too wide) in paragraph at lines 23--23
+ \OT1/cmr/m/n/10.95 di-vid-ual re-al-iza-tions are sin-gled out as black traces
+. Particle- 
+ []
+
+
+Overfull \hbox (9.0358pt too wide) in paragraph at lines 23--23
+ \OT1/cmr/m/n/10.95 bed col-li-sions im-ply sud-den downward-velocity jumps. Fl
+ow 
+ []
+
+[17])
 \tf@lof=\write7
 \openout7 = `diss.lof'.
 
- [13] [14]
+ [18]
 \openout2 = `ack.aux'.
 
- (./ack.tex
-Overfull \hbox (4.59332pt too wide) in paragraph at lines 8--9
-[]\OT1/ptm/m/n/10.95 Shawn Char-trand, Conor Mc-Dow-ell, Mat-teo Saletti, Will 
-Booker, David Adams,
- []
-
-) [15
+ (./ack.tex) [19
 
 
 
@@ -798,77 +766,216 @@ Booker, David Adams,
 
  (./ch1intro.tex
 Chapter 1.
-) [1
+
+Package natbib Warning: Citation `Chorley1984' on page 1 undefined on input lin
+e 8.
+
+
+Package natbib Warning: Citation `Gilbert1877' on page 1 undefined on input lin
+e 9.
+
+
+Package natbib Warning: Citation `Tight1903' on page 1 undefined on input line 
+9.
+
+
+Package natbib Warning: Citation `Hack1960' on page 1 undefined on input line 9
+.
+
+
+Package natbib Warning: Citation `Strahler1952' on page 1 undefined on input li
+ne 9.
+
+
+Package natbib Warning: Citation `Scheidegger1961' on page 1 undefined on input
+ line 9.
+
+
+Package natbib Warning: Citation `Leopold1962' on page 1 undefined on input lin
+e 9.
+
+
+Package natbib Warning: Citation `Church2005' on page 1 undefined on input line
+ 9.
+
+
+Package natbib Warning: Citation `Roades1996' on page 1 undefined on input line
+ 9.
+
+
+Package natbib Warning: Citation `Chorley1965' on page 1 undefined on input lin
+e 9.
+
+
+Package natbib Warning: Citation `Slaymaker2020' on page 1 undefined on input l
+ine 11.
+
+
+Package natbib Warning: Citation `GoldSteinClassicalMechanics' on page 1 undefi
+ned on input line 12.
+
+
+Package natbib Warning: Citation `SakuraiQM' on page 1 undefined on input line 
+12.
+
+
+Package natbib Warning: Citation `JacksonElectrodynamics' on page 1 undefined o
+n input line 12.
+
+
+Package natbib Warning: Citation `Chorley1971' on page 1 undefined on input lin
+e 13.
+
+[1
 
 
 
 
 ]
+
+Package natbib Warning: Citation `Exner1925' on page 2 undefined on input line 
+25.
+
+[2]
+
+Package natbib Warning: Citation `Zimmerman2008' on page 3 undefined on input l
+ine 31.
+
+[3] [4] [5] [6]
+
+Package natbib Warning: Citation `FerrerBoix2015' on page 7 undefined on input 
+line 144.
+
+[7]
+
+Package natbib Warning: Citation `Cox1965' on page 8 undefined on input line 16
+0.
+
+
+Package natbib Warning: Citation `Cox1965' on page 8 undefined on input line 16
+7.
+
+
+Package natbib Warning: Citation `VanKampen1992' on page 8 undefined on input l
+ine 167.
+
+
+Package natbib Warning: Citation `Cox1965' on page 8 undefined on input line 16
+8.
+
+
+Package natbib Warning: Citation `VanKampen1992' on page 8 undefined on input l
+ine 168.
+
+
+Overfull \hbox (51.10399pt too wide) in paragraph at lines 163--169
+[]\OT1/cmr/m/n/10.95 Deterministic pro-cesses trace the evo-lu-tion of some set
+ of vari-ables $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 
+(\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; x[]\OT1/cmr/m/n
+/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; [] \OMS/
+cmsy/m/n/10.95 g$
+ []
+
+[8]
+
+Package natbib Warning: Citation `Cox1965' on page 9 undefined on input line 17
+2.
+
+
+Package natbib Warning: Citation `VanKampen1992' on page 9 undefined on input l
+ine 172.
+
+
+Package natbib Warning: Citation `Gillespie1992' on page 9 undefined on input l
+ine 172.
+
+
+Package natbib Warning: Citation `Cox1965' on page 9 undefined on input line 17
+6.
+
+[9]
+
+LaTeX Warning: Reference `sec:review' on page 10 undefined on input line 200.
+
+
+LaTeX Warning: Reference `sec:extension' on page 10 undefined on input line 201
+.
+
+[10] [11]
+<./figures/ch1/yalindrawing.png, id=1033, 476.78125pt x 141.52875pt>
+File: ./figures/ch1/yalindrawing.png Graphic file (type png)
+<use ./figures/ch1/yalindrawing.png>
+Package pdftex.def Info: ./figures/ch1/yalindrawing.png  used on input line 229
+.
+(pdftex.def)             Requested size: 352.79846pt x 104.73178pt.
+
+Underfull \hbox (badness 4647) in paragraph at lines 230--230
+[] []|\OT1/cmr/m/n/10.95 Ein-stein's con-cep-tual pic-ture (adapted from [][]\O
+T1/cmr/m/it/10.95 Yalin[]
+ []
+
+[12 <./figures/ch1/yalindrawing.png>] [13] [14] [15]
+
+Package natbib Warning: Citation `Cox1965' on page 16 undefined on input line 3
+03.
+
+
+LaTeX Warning: Reference `sec:review' on page 16 undefined on input line 309.
+
+[16] [17] [18]
+
+Package natbib Warning: Multiple citation on page 19: same authors and year
+(natbib)                without distinguishing extra letter,
+(natbib)                appears as question mark.
+
+
+Package natbib Warning: Citation `Ma2014b' on page 19 undefined on input line 3
+54.
+
+[19] [20]
+
+Package natbib Warning: Citation `Turowski' on page 21 undefined on input line 
+381.
+
+[21]) [22]
 \openout2 = `ch2flipFlop.aux'.
 
  (./ch2flipFlop.tex
 Chapter 2.
 
-Package natbib Warning: Citation `Celik2019' on page 2 undefined on input line 
-9.
+Package natbib Warning: Citation `Celik2019' on page 23 undefined on input line
+ 9.
 
 
-Package natbib Warning: Citation `Valyrakis2014' on page 2 undefined on input l
-ine 9.
+Package natbib Warning: Citation `Valyrakis2014' on page 23 undefined on input 
+line 9.
 
 
-Package natbib Warning: Citation `Pierce2020' on page 2 undefined on input line
- 11.
+Package natbib Warning: Citation `Pierce2020' on page 23 undefined on input lin
+e 11.
 
-
-Package natbib Warning: Citation `Ancey2020' on page 2 undefined on input line 
-11.
-
-[2
+[23
 
 
 
 ]
 
-Package natbib Warning: Citation `Ancey2014' on page 3 undefined on input line 
-19.
+Package natbib Warning: Citation `Pierce2021' on page 24 undefined on input lin
+e 19.
 
 
-Package natbib Warning: Citation `Fan2014' on page 3 undefined on input line 19
-.
+Package natbib Warning: Citation `Saletti2014' on page 24 undefined on input li
+ne 23.
 
 
-Package natbib Warning: Citation `Pierce2021' on page 3 undefined on input line
- 19.
+Package natbib Warning: Citation `Dhont2019' on page 24 undefined on input line
+ 23.
 
 
-Package natbib Warning: Citation `Pierce2020b' on page 3 undefined on input lin
-e 20.
+Package natbib Warning: Citation `Ancey2019' on page 24 undefined on input line
+ 24.
 
-
-Package natbib Warning: Citation `Ancey2014' on page 3 undefined on input line 
-22.
-
-
-Package natbib Warning: Citation `Saletti2014' on page 3 undefined on input lin
-e 23.
-
-
-Package natbib Warning: Citation `Dhont2019' on page 3 undefined on input line 
-23.
-
-
-Package natbib Warning: Citation `Ancey2019' on page 3 undefined on input line 
-24.
-
-[3] [4]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
-
+[24] [25]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 45.
@@ -877,384 +984,526 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 45.
 
+[26]
 
-Package natbib Warning: Citation `Hanggi1978' on page 5 undefined on input line
- 48.
-
-
-Package natbib Warning: Citation `VanKampen1978' on page 5 undefined on input l
-ine 51.
+Package natbib Warning: Citation `VanKampen1978' on page 27 undefined on input 
+line 51.
 
 
-Package natbib Warning: Citation `Loginov1978' on page 5 undefined on input lin
-e 51.
+Package natbib Warning: Citation `Loginov1978' on page 27 undefined on input li
+ne 51.
 
-
-Package natbib Warning: Citation `Balakrishnan1993' on page 5 undefined on inpu
-t line 51.
-
-[5]
-
-Package natbib Warning: Citation `Banerjee2020' on page 6 undefined on input li
-ne 58.
-
-
-LaTeX Warning: File `./figures/ch2/figure1.png' not found on input line 60.
-
-
-! Package pdftex.def Error: File `./figures/ch2/figure1.png' not found: using d
-raft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 ...ncludegraphics{./figures/ch2/figure1.png}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
+<./figures/ch2/figure1.pdf, id=1353, 397.485pt x 198.7425pt>
+File: ./figures/ch2/figure1.pdf Graphic file (type pdf)
+<use ./figures/ch2/figure1.pdf>
+Package pdftex.def Info: ./figures/ch2/figure1.pdf  used on input line 60.
+(pdftex.def)             Requested size: 397.48402pt x 198.742pt.
+[27] [28 <./figures/ch2/figure1.pdf>] [29]
+<figures/ch2/figure2_slopeKey.pdf, id=1411, 397.485pt x 137.313pt>
+File: figures/ch2/figure2_slopeKey.pdf Graphic file (type pdf)
+<use figures/ch2/figure2_slopeKey.pdf>
+Package pdftex.def Info: figures/ch2/figure2_slopeKey.pdf  used on input line 9
 0.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [6] [7]
+(pdftex.def)             Requested size: 397.48402pt x 137.31265pt.
+ [30]
+Overfull \hbox (14.1604pt too wide) detected at line 102
+ []$[]  \OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; t\OT1/c
+mr/m/n/10.95 ) = [] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 D@[] \OT1/cmr/m
+/n/10.95 + \OML/cmm/m/it/10.95 Vk[]=k@[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.
+95 k \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N\OT1/cmr/m/n/10.95 (\OML/cmm/m
+/it/10.95 t\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 @[][] [][] \OMS/cmsy/m/n/
+10.95 I[][]\OT1/cmr/m/n/10.95 2[][]\OML/cmm/m/it/10.95 e[]$ 
+ []
 
-LaTeX Warning: File `figures/ch2/figure2slopeKey.pdf' not found on input line 9
-0.
-
-
-! Package pdftex.def Error: File `figures/ch2/figure2slopeKey.pdf' not found: u
-sing draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 ...graphics{figures/ch2/figure2slopeKey.pdf}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[8] [9]) [10]
+[31 <./figures/ch2/figure2_slopekey.pdf>]) [32]
 \openout2 = `ch3bedEle.aux'.
 
  (./ch3bedEle.tex
 Chapter 3.
-[11
-
-
-
-]
-
-Package natbib Warning: Citation `Pretzlav2016' on page 12 undefined on input l
-ine 15.
-
-
-Overfull \hbox (7.17049pt too wide) in paragraph at lines 14--22
-\OT1/ptm/m/n/10.95 els be-cause the pre-dicted dif-fu-sion char-ac-ter-is-tics 
-are crit-i-cally de-pen-dent on whether
- []
-
-
-Package natbib Warning: Citation `Saletti2015a' on page 12 undefined on input l
-ine 24.
-
-[12]
-
-Package natbib Warning: Citation `Sawai1987' on page 13 undefined on input line
- 32.
-
-[13]
-<./figures/ch3/definition.pdf, id=745, 384.1122pt x 227.62204pt>
-File: ./figures/ch3/definition.pdf Graphic file (type pdf)
-<use ./figures/ch3/definition.pdf>
-Package pdftex.def Info: ./figures/ch3/definition.pdf  used on input line 46.
-(pdftex.def)             Requested size: 360.0pt x 213.34303pt.
- [14]
-
-Package natbib Warning: Citation `Sawai1987' on page 15 undefined on input line
- 59.
-
-
-Package natbib Warning: Citation `Sawai1987' on page 15 undefined on input line
- 60.
-
-
-Package natbib Warning: Citation `Sawai1987' on page 15 undefined on input line
- 61.
-
-
-Package natbib Warning: Citation `Crickmore1962' on page 15 undefined on input 
-line 62.
-
-[15 <./figures/ch3/definition.pdf>]
-
-Package natbib Warning: Citation `Cox1965' on page 16 undefined on input line 8
-0.
-
-
-Package natbib Warning: Citation `VanKampen1992' on page 16 undefined on input 
-line 80.
-
-
-Package natbib Warning: Citation `Cox1965' on page 16 undefined on input line 8
-3.
-
-
-Package natbib Warning: Citation `Gillespie1992' on page 16 undefined on input 
-line 83.
-
-
-Overfull \hbox (41.87094pt too wide) in paragraph at lines 82--84
-\OT1/ptm/m/n/10.95 mogorov equa-tion $\OML/ztmcm/m/it/10.95 @P\OT1/ztmcm/m/n/10
-.95 (\OML/ztmcm/m/it/10.95 n; m\OT1/ztmcm/m/n/10.95 ; \OML/ztmcm/m/it/10.95 t\O
-T1/ztmcm/m/n/10.95 )\OML/ztmcm/m/it/10.95 =@t \OT1/ztmcm/m/n/10.95 = [][][\OML/
-ztmcm/m/it/10.95 R\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 n; m\OMS/ztmcm/m/
-n/10.95 j\OML/ztmcm/m/it/10.95 n[]; m[]\OT1/ztmcm/m/n/10.95 )\OML/ztmcm/m/it/10
-.95 P\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 n[]; m[]\OT1/ztmcm/m/n/10.95 ;
- \OML/ztmcm/m/it/10.95 t\OT1/ztmcm/m/n/10.95 ) \OMS/ztmcm/m/n/10.95 ^^@ \OML/zt
-mcm/m/it/10.95 R\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 n[]; m[]\OMS/ztmcm/
-m/n/10.95 j\OML/ztmcm/m/it/10.95 n; m\OT1/ztmcm/m/n/10.95 )\OML/ztmcm/m/it/10.9
-5 P\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 n; m\OT1/ztmcm/m/n/10.95 ; \OML/
-ztmcm/m/it/10.95 t\OT1/ztmcm/m/n/10.95 )]$
- []
-
-[16]
-Overfull \hbox (11.72899pt too wide) detected at line 91
- []$[]  []\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 n; m\OT1/ztmcm/m/n/10.95 
-; \OML/ztmcm/m/it/10.95 t\OT1/ztmcm/m/n/10.95 ) = \OML/ztmcm/m/it/10.95 ^^WP\OT
-1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 n \OMS/ztmcm/m/n/10.95 ^^@ \OT1/ztmcm/
-m/n/10.95 1\OML/ztmcm/m/it/10.95 ; m\OT1/ztmcm/m/n/10.95 ; \OML/ztmcm/m/it/10.9
-5 t\OT1/ztmcm/m/n/10.95 ) + [\OML/ztmcm/m/it/10.95 ^^U\OT1/ztmcm/m/n/10.95 (\OM
-L/ztmcm/m/it/10.95 m \OT1/ztmcm/m/n/10.95 + 1) + \OML/ztmcm/m/it/10.95 ^^V\OT1/
-ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 n \OMS/ztmcm/m/n/10.95 ^^@ \OT1/ztmcm/m/
-n/10.95 1)][1 + \OML/ztmcm/m/it/10.95 ^^T\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/
-10.95 m \OT1/ztmcm/m/n/10.95 + 1)]\OML/ztmcm/m/it/10.95 P\OT1/ztmcm/m/n/10.95 (
-\OML/ztmcm/m/it/10.95 n \OMS/ztmcm/m/n/10.95 ^^@ \OT1/ztmcm/m/n/10.95 1\OML/ztm
-cm/m/it/10.95 ; m \OT1/ztmcm/m/n/10.95 + 1; \OML/ztmcm/m/it/10.95 t\OT1/ztmcm/m
-/n/10.95 )$ 
- []
-
-
-Package natbib Warning: Citation `Cox1965' on page 17 undefined on input line 9
-5.
-
-
-Package natbib Warning: Citation `Gillespie1992' on page 17 undefined on input 
-line 104.
-
-
-Package natbib Warning: Citation `Haken1983' on page 17 undefined on input line
- 104.
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 110--110
-[][]\OT1/ptm/m/it/10.95 An-cey et al.[] \OT1/ptm/m/n/10.95 ([]2008[]). Units ar
-e
- []
-
-
-Underfull \hbox (badness 5403) in paragraph at lines 110--110
-\OML/ztmcm/m/it/10.95 s[]$ \OT1/ptm/m/n/10.95 (prob-a-bil-i-ty/-time). In our
- []
-
-
-Overfull \hbox (17.95758pt too wide) in paragraph at lines 111--124
-[][] 
- []
-
-[17]
-
-Package natbib Warning: Citation `Cox1965' on page 18 undefined on input line 1
-24.
-
-
-Underfull \hbox (badness 1769) in paragraph at lines 124--129
-\OT1/ptm/m/n/10.95 re-sult, to step the Markov pro-cess
- []
-
-[18] [19] [20]
-<./figures/ch3/distributions.pdf, id=944, 398.9304pt x 166.22101pt>
-File: ./figures/ch3/distributions.pdf Graphic file (type pdf)
-<use ./figures/ch3/distributions.pdf>
-Package pdftex.def Info: ./figures/ch3/distributions.pdf  used on input line 19
-8.
-(pdftex.def)             Requested size: 360.0pt x 150.00839pt.
- [21]
-<./figures/ch3/variance.pdf, id=957, 198.7425pt x 198.7425pt>
-File: ./figures/ch3/variance.pdf Graphic file (type pdf)
-<use ./figures/ch3/variance.pdf>
-Package pdftex.def Info: ./figures/ch3/variance.pdf  used on input line 215.
-(pdftex.def)             Requested size: 180.0pt x 180.00682pt.
-
-Underfull \hbox (badness 2334) in paragraph at lines 216--216
-[] []|\OT1/ptm/m/n/10.95 Data from all sim-u-la-tions
- []
-
-
-Underfull \hbox (badness 1472) in paragraph at lines 216--216
-\OT1/ptm/m/n/10.95 depth $\OML/ztmcm/m/it/10.95 l$ \OT1/ptm/m/n/10.95 char-ac-t
-er-izes bed el-e-va-
- []
-
-[22 <./figures/ch3/distributions.pdf>]
-<./figures/ch3/momentsuppression.pdf, id=1027, 398.9304pt x 189.96686pt>
-File: ./figures/ch3/momentsuppression.pdf Graphic file (type pdf)
-<use ./figures/ch3/momentsuppression.pdf>
-Package pdftex.def Info: ./figures/ch3/momentsuppression.pdf  used on input lin
-e 226.
-(pdftex.def)             Requested size: 360.0pt x 171.43816pt.
-
-Overfull \hbox (14.46613pt too wide) in paragraph at lines 224--235
-\OT1/ptm/m/n/10.95 plays the mean shift $\OT1/ztmcm/m/n/10.95 [\OMS/ztmcm/m/n/1
-0.95 h\OML/ztmcm/m/it/10.95 n\OMS/ztmcm/m/n/10.95 j\OML/ztmcm/m/it/10.95 m\OMS/
-ztmcm/m/n/10.95 i ^^@ h\OML/ztmcm/m/it/10.95 n\OMS/ztmcm/m/n/10.95 i\OT1/ztmcm/
-m/n/10.95 ]\OML/ztmcm/m/it/10.95 =\OMS/ztmcm/m/n/10.95 h\OML/ztmcm/m/it/10.95 n
-\OMS/ztmcm/m/n/10.95 i$ \OT1/ptm/m/n/10.95 and the vari-ance shift $\OT1/ztmcm/
-m/n/10.95 [[](\OML/ztmcm/m/it/10.95 n\OMS/ztmcm/m/n/10.95 j\OML/ztmcm/m/it/10.9
-5 m\OT1/ztmcm/m/n/10.95 ) \OMS/ztmcm/m/n/10.95 ^^@ []\OT1/ztmcm/m/n/10.95 (\OML
-/ztmcm/m/it/10.95 n\OT1/ztmcm/m/n/10.95 )]\OML/ztmcm/m/it/10.95 =[]\OT1/ztmcm/m
-/n/10.95 (\OML/ztmcm/m/it/10.95 n\OT1/ztmcm/m/n/10.95 )$
- []
-
-[23 <./figures/ch3/variance.pdf>]
-<./figures/ch3/colent-suppression.pdf, id=1075, 398.9304pt x 189.96686pt>
-File: ./figures/ch3/colent-suppression.pdf Graphic file (type pdf)
-<use ./figures/ch3/colent-suppression.pdf>
-Package pdftex.def Info: ./figures/ch3/colent-suppression.pdf  used on input li
-ne 241.
-(pdftex.def)             Requested size: 360.0pt x 171.43816pt.
- [24 <./figures/ch3/momentsuppression.pdf>]
-[25 <./figures/ch3/colent-suppression.pdf>]
-<./figures/ch3/rtcdf.pdf, id=1194, 398.9304pt x 306.86955pt>
-File: ./figures/ch3/rtcdf.pdf Graphic file (type pdf)
-<use ./figures/ch3/rtcdf.pdf>
-Package pdftex.def Info: ./figures/ch3/rtcdf.pdf  used on input line 251.
-(pdftex.def)             Requested size: 360.0pt x 276.93858pt.
-
-
-Package natbib Warning: Citation `Nakagawa1980' on page 26 undefined on input l
-ine 260.
-
-[26 <./figures/ch3/rtcdf.pdf>]
-
-Package natbib Warning: Citation `Nakagawa1980' on page 27 undefined on input l
-ine 280.
-
-
-Package natbib Warning: Citation `Nakagawa1980' on page 27 undefined on input l
-ine 280.
-
-[27]
-
-Package natbib Warning: Citation `Saletti2015a' on page 28 undefined on input l
-ine 287.
-
-[28] [29]
-
-Package natbib Warning: Citation `Pretzlav2016' on page 30 undefined on input l
-ine 304.
-
-
-Package natbib Warning: Citation `Sornette2000' on page 30 undefined on input l
-ine 305.
-
-
-Package natbib Warning: Citation `Saletti2015a' on page 30 undefined on input l
-ine 314.
-
-
-Package natbib Warning: Citation `Sornette2000' on page 30 undefined on input l
-ine 314.
-
-
-Package natbib Warning: Citation `Saletti2015a' on page 30 undefined on input l
-ine 315.
-
-[30] [31]) [32]
-\openout2 = `ch4downDiff.aux'.
-
- (./ch4downDiff.tex
-Chapter 4.
-
-Package natbib Warning: Citation `Ettema2014' on page 33 undefined on input lin
-e 10.
-
-
-Overfull \hbox (4.39107pt too wide) in paragraph at lines 6--12
-\OT1/ptm/m/n/10.95 Many en-vi-ron-men-tal prob-lems in-clud-ing chan-nel mor-ph
-ol-ogy ([][]\OT1/ptm/m/it/10.95 Has-san and Bradley[]\OT1/ptm/m/n/10.95 ,
- []
-
 [33
 
 
 
 ]
 
-Package natbib Warning: Citation `Cundall1979' on page 34 undefined on input li
-ne 27.
+Package natbib Warning: Citation `Pretzlav2016' on page 34 undefined on input l
+ine 15.
 
 [34]
 
-Package natbib Warning: Citation `Lajeunesse2018' on page 35 undefined on input
- line 35.
+Package natbib Warning: Citation `Saletti2015a' on page 35 undefined on input l
+ine 24.
+
+
+Package natbib Warning: Citation `Sawai1987' on page 35 undefined on input line
+ 32.
 
 [35]
+<./figures/ch3/definition.pdf, id=1964, 384.1122pt x 227.62204pt>
+File: ./figures/ch3/definition.pdf Graphic file (type pdf)
+<use ./figures/ch3/definition.pdf>
+Package pdftex.def Info: ./figures/ch3/definition.pdf  used on input line 46.
+(pdftex.def)             Requested size: 360.0pt x 213.34303pt.
+ [36] [37 <./figures/ch3/definition.pdf>]
 
-Package natbib Warning: Citation `Lajeunesse2018' on page 36 undefined on input
+Package natbib Warning: Citation `Sawai1987' on page 38 undefined on input line
+ 59.
+
+
+Package natbib Warning: Citation `Sawai1987' on page 38 undefined on input line
+ 60.
+
+
+Package natbib Warning: Citation `Sawai1987' on page 38 undefined on input line
+ 61.
+
+
+Package natbib Warning: Citation `Crickmore1962' on page 38 undefined on input 
+line 62.
+
+[38]
+
+Package natbib Warning: Citation `Cox1965' on page 39 undefined on input line 8
+0.
+
+
+Package natbib Warning: Citation `VanKampen1992' on page 39 undefined on input 
+line 80.
+
+
+Package natbib Warning: Citation `Cox1965' on page 39 undefined on input line 8
+3.
+
+
+Package natbib Warning: Citation `Gillespie1992' on page 39 undefined on input 
+line 83.
+
+
+Overfull \hbox (18.14078pt too wide) detected at line 91
+ []$[]  []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n; m\OT1/cmr/m/n/10.95 ; \OML
+/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 ^^WP\OT1/cmr/m/n/10
+.95 (\OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1\OML/cmm
+/m/it/10.95 ; m\OT1/cmr/m/n/10.95 ; \OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) +
+ [\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m \OT1/cmr/m/n
+/10.95 + 1) + \OML/cmm/m/it/10.95 ^^V\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n 
+\OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1)][1 + \OML/cmm/m/it/10.95 ^^T\OT1/
+cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m \OT1/cmr/m/n/10.95 + 1)]\OML/cmm/m/it/10.9
+5 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m
+/n/10.95 1\OML/cmm/m/it/10.95 ; m \OT1/cmr/m/n/10.95 + 1; \OML/cmm/m/it/10.95 t
+\OT1/cmr/m/n/10.95 )$ 
+ []
+
+
+Package natbib Warning: Citation `Cox1965' on page 39 undefined on input line 9
+5.
+
+[39]
+
+Package natbib Warning: Citation `Gillespie1992' on page 40 undefined on input 
+line 104.
+
+
+Package natbib Warning: Citation `Haken1983' on page 40 undefined on input line
+ 104.
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 110--110
+[] []|\OT1/cmr/m/n/10.95 Mi-gra-tion, en-train-ment,
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 110--110
+\OT1/cmr/m/n/10.95 0$ from [][]\OT1/cmr/m/it/10.95 An-cey et al.[] \OT1/cmr/m/n
+/10.95 ([]2008[]).
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 110--110
+\OT1/cmr/m/n/10.95 Units are $\OML/cmm/m/it/10.95 s[]$ \OT1/cmr/m/n/10.95 (prob
+-a-bil-i-ty/-
+ []
+
+
+Overfull \hbox (19.44606pt too wide) in paragraph at lines 111--124
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--124
+\OT1/cmr/m/n/10.95 tran-si-tions are
+ []
+
+
+Package natbib Warning: Citation `Cox1965' on page 40 undefined on input line 1
+24.
+
+[40] [41] [42] [43]
+Overfull \hbox (9.72017pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10.95 steady-state stochas-tic dy-nam-ics of $\OML/cmm/m/it/10.95 
+n$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 m$ \OT1/cmr/m/n/10.95 which sup-
+port a time-independent
+ []
+
+<./figures/ch3/distributions.pdf, id=2169, 398.9304pt x 166.22101pt>
+File: ./figures/ch3/distributions.pdf Graphic file (type pdf)
+<use ./figures/ch3/distributions.pdf>
+Package pdftex.def Info: ./figures/ch3/distributions.pdf  used on input line 19
+8.
+(pdftex.def)             Requested size: 360.0pt x 150.00839pt.
+[44]
+<./figures/ch3/variance.pdf, id=2182, 198.7425pt x 198.7425pt>
+File: ./figures/ch3/variance.pdf Graphic file (type pdf)
+<use ./figures/ch3/variance.pdf>
+Package pdftex.def Info: ./figures/ch3/variance.pdf  used on input line 215.
+(pdftex.def)             Requested size: 180.0pt x 180.00682pt.
+
+Underfull \hbox (badness 1102) in paragraph at lines 216--216
+[] []|\OT1/cmr/m/n/10.95 Data from all sim-u-la-
+ []
+
+[45 <./figures/ch3/distributions.pdf> <./figures/ch3/variance.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/ch3/variance.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>]
+<./figures/ch3/momentsuppression.pdf, id=2271, 398.9304pt x 189.96686pt>
+File: ./figures/ch3/momentsuppression.pdf Graphic file (type pdf)
+<use ./figures/ch3/momentsuppression.pdf>
+Package pdftex.def Info: ./figures/ch3/momentsuppression.pdf  used on input lin
+e 226.
+(pdftex.def)             Requested size: 360.0pt x 171.43816pt.
+ [46]
+<./figures/ch3/colent-suppression.pdf, id=2298, 398.9304pt x 189.96686pt>
+File: ./figures/ch3/colent-suppression.pdf Graphic file (type pdf)
+<use ./figures/ch3/colent-suppression.pdf>
+Package pdftex.def Info: ./figures/ch3/colent-suppression.pdf  used on input li
+ne 241.
+(pdftex.def)             Requested size: 360.0pt x 171.43816pt.
+ [47 <./figures/ch3/momentsuppression.pdf>] [48 <./figures/ch3/colent-suppressi
+on.pdf>]
+<./figures/ch3/rtcdf.pdf, id=2419, 398.9304pt x 306.86955pt>
+File: ./figures/ch3/rtcdf.pdf Graphic file (type pdf)
+<use ./figures/ch3/rtcdf.pdf>
+Package pdftex.def Info: ./figures/ch3/rtcdf.pdf  used on input line 251.
+(pdftex.def)             Requested size: 360.0pt x 276.93858pt.
+
+
+Package natbib Warning: Citation `Nakagawa1980' on page 49 undefined on input l
+ine 260.
+
+[49 <./figures/ch3/rtcdf.pdf>] [50]
+
+Package natbib Warning: Citation `Nakagawa1980' on page 51 undefined on input l
+ine 280.
+
+
+Package natbib Warning: Citation `Nakagawa1980' on page 51 undefined on input l
+ine 280.
+
+
+Package natbib Warning: Citation `Saletti2015a' on page 51 undefined on input l
+ine 287.
+
+[51] [52]
+
+Package natbib Warning: Citation `Pretzlav2016' on page 53 undefined on input l
+ine 304.
+
+
+Package natbib Warning: Citation `Sornette2000' on page 53 undefined on input l
+ine 305.
+
+[53]
+
+Package natbib Warning: Citation `Saletti2015a' on page 54 undefined on input l
+ine 314.
+
+
+Package natbib Warning: Citation `Sornette2000' on page 54 undefined on input l
+ine 314.
+
+
+Package natbib Warning: Citation `Saletti2015a' on page 54 undefined on input l
+ine 315.
+
+[54]
+Overfull \hbox (1.5938pt too wide) in paragraph at lines 325--326
+[]\OT1/cmr/m/n/10.95 Collective en-train-ment gen-er-ates a sta-tis-ti-cal reg-
+u-la-tion ef-fect, whereby
+ []
+
+) [55]
+\openout2 = `ch4downDiff.aux'.
+
+ (./ch4downDiff.tex
+Chapter 4.
+
+Package natbib Warning: Citation `Ettema2014' on page 56 undefined on input lin
+e 10.
+
+[56
+
+
+
+]
+
+Package natbib Warning: Citation `Cundall1979' on page 57 undefined on input li
+ne 27.
+
+
+Overfull \hbox (1.10417pt too wide) in paragraph at lines 25--31
+[]\OT1/cmr/m/n/10.95 Newtonian bed-load tra-jec-tory mod-els also show mul-ti-p
+le dif-fu-sion ranges,
+ []
+
+[57]
+
+Package natbib Warning: Citation `Lajeunesse2018' on page 58 undefined on input
+ line 35.
+
+[58]
+
+Package natbib Warning: Citation `Lajeunesse2018' on page 59 undefined on input
  line 52.
 
-[36] [37]
-<./figures/ch4/pdf-plot.png, id=1657, 385.9218pt x 164.5347pt>
+[59] [60] [61]
+<./figures/ch4/pdf-plot.png, id=2894, 385.9218pt x 164.5347pt>
 File: ./figures/ch4/pdf-plot.png Graphic file (type png)
 <use ./figures/ch4/pdf-plot.png>
 Package pdftex.def Info: ./figures/ch4/pdf-plot.png  used on input line 94.
 (pdftex.def)             Requested size: 360.0pt x 153.48766pt.
- [38] [39 <./figures/ch4/pdf-plot.png>]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 124.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 124.
-
-Overfull \hbox (41.31207pt too wide) in paragraph at lines 124--143
+ [62 <./figures/ch4/pdf-plot.png>]
+Overfull \hbox (63.39835pt too wide) in paragraph at lines 124--143
  [][] 
  []
 
 
-Package natbib Warning: Citation `Nakagawa1980' on page 40 undefined on input l
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `Nakagawa1980' on page 63 undefined on input l
 ine 148.
 
-[40]
-<./figures/ch4/diffusion.png, id=1741, 380.98335pt x 308.71335pt>
+[63]
+<./figures/ch4/diffusion.png, id=2968, 380.98335pt x 308.71335pt>
 File: ./figures/ch4/diffusion.png Graphic file (type png)
 <use ./figures/ch4/diffusion.png>
 Package pdftex.def Info: ./figures/ch4/diffusion.png  used on input line 151.
 (pdftex.def)             Requested size: 360.0pt x 291.7168pt.
 
 
-LaTeX Warning: Float too large for page by 32.31667pt on input line 155.
+LaTeX Warning: Float too large for page by 59.51668pt on input line 155.
 
+[64] [65 <./figures/ch4/diffusion.png>]
 
-Package natbib Warning: Citation `Pierce2020' on page 41 undefined on input lin
+Package natbib Warning: Citation `Pierce2020' on page 66 undefined on input lin
 e 179.
 
-[41] [42 <./figures/ch4/diffusion.png>] [43]
+[66]
 
-Package natbib Warning: Citation `Pierce2020' on page 44 undefined on input lin
+Package natbib Warning: Citation `Pierce2020' on page 67 undefined on input lin
 e 193.
 
 
-Package natbib Warning: Citation `Pierce2020' on page 44 undefined on input lin
+Package natbib Warning: Citation `Pierce2020' on page 67 undefined on input lin
 e 195.
 
-[44]) [45] [46]
-\openout2 = `ch5conc.aux'.
+[67] [68]) [69]
+\openout2 = `ch5langevin.aux'.
 
- (./ch5conc.tex
+ (./ch5langevin.tex
 Chapter 5.
-) [47
+
+Package natbib Warning: Citation `Boltzman' on page 70 undefined on input line 
+11.
+
+
+Package natbib Warning: Citation `Lajeunesse2020' on page 70 undefined on input
+ line 11.
+
+[70
+
+
+
+]
+
+Package natbib Warning: Citation `Sezilles2014' on page 71 undefined on input l
+ine 18.
+
+[71] [72]
+
+LaTeX Warning: Reference `fig:1' on page 73 undefined on input line 39.
+
+[73]
+
+Package natbib Warning: Citation `Williams2020' on page 74 undefined on input l
+ine 44.
+
+
+LaTeX Warning: Reference `fig:1' on page 74 undefined on input line 45.
+
+<./figures/ch5/Fig1Concept.png, id=3256, 361.35pt x 162.6075pt>
+File: ./figures/ch5/Fig1Concept.png Graphic file (type png)
+<use ./figures/ch5/Fig1Concept.png>
+Package pdftex.def Info: ./figures/ch5/Fig1Concept.png  used on input line 48.
+(pdftex.def)             Requested size: 361.34912pt x 162.6071pt.
+
+Package natbib Warning: Citation `Serrero2015' on page 74 undefined on input li
+ne 53.
+
+[74 <./figures/ch5/Fig1Concept.png>]
+
+LaTeX Warning: Reference `eq:1' on page 75 undefined on input line 57.
+
+
+Package natbib Warning: Citation `Auton1987' on page 75 undefined on input line
+ 60.
+
+
+Package natbib Warning: Citation `Mei2006' on page 75 undefined on input line 6
+1.
+
+
+Package natbib Warning: Citation `Michaelides1995' on page 75 undefined on inpu
+t line 64.
+
+
+Package natbib Warning: Citation `Dalche2015' on page 75 undefined on input lin
+e 64.
+
+[75]
+
+LaTeX Warning: Reference `eq:drag' on page 76 undefined on input line 73.
+
+
+Package natbib Warning: Citation `vandenBroek1983' on page 76 undefined on inpu
+t line 83.
+
+
+Package natbib Warning: Citation `Risken1984' on page 76 undefined on input lin
+e 84.
+
+
+Package natbib Warning: Citation `Suweiss2011' on page 76 undefined on input li
+ne 84.
+
+[76]
+
+LaTeX Warning: Reference `sec:appendixA' on page 77 undefined on input line 90.
+
+
+
+Overfull \hbox (0.353pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/10.95 We de-rive the equa-tion gov-ern-ing the stream-wise ve-loc-
+ity dis-tri-bu-tion $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.
+95 u; t\OT1/cmr/m/n/10.95 )$
+ []
+
+
+Package natbib Warning: Citation `Duderstadt1971' on page 77 undefined on input
+ line 98.
+
+
+Package natbib Warning: Citation `Brilliantov2004' on page 77 undefined on inpu
+t line 98.
+
+
+Package natbib Warning: Citation `Serero2015' on page 77 undefined on input lin
+e 98.
+
+[77]
+
+Package natbib Warning: Citation `Hall1970' on page 78 undefined on input line 
+114.
+
+
+Package natbib Warning: Citation `Zaidi2015' on page 78 undefined on input line
+ 114.
+
+
+Package natbib Warning: Citation `Bhalekar2017' on page 78 undefined on input l
+ine 114.
+
+[78]
+
+Package natbib Warning: Citation `Cox1965' on page 79 undefined on input line 1
+23.
+
+[79]
+<./figures/ch5/Fig2pdfs.png, id=3395, 319.37317pt x 232.89008pt>
+File: ./figures/ch5/Fig2pdfs.png Graphic file (type png)
+<use ./figures/ch5/Fig2pdfs.png>
+Package pdftex.def Info: ./figures/ch5/Fig2pdfs.png  used on input line 135.
+(pdftex.def)             Requested size: 319.37238pt x 232.8895pt.
+ [80 <./figures/ch5/Fig2pdfs.png>]
+<./figures/ch5/Fig3asymptotic.png, id=3410, 312.50752pt x 122.91922pt>
+File: ./figures/ch5/Fig3asymptotic.png Graphic file (type png)
+<use ./figures/ch5/Fig3asymptotic.png>
+Package pdftex.def Info: ./figures/ch5/Fig3asymptotic.png  used on input line 1
+47.
+(pdftex.def)             Requested size: 312.50674pt x 122.9189pt.
+ [81 <./figures/ch5/Fig3asymptotic.png>]
+
+LaTeX Warning: Reference `eq:2ndmom' on page 82 undefined on input line 156.
+
+
+LaTeX Warning: Reference `sec:appendixB' on page 82 undefined on input line 156
+.
+
+<./figures/ch5/Fig4expComparison.png, id=3428, 388.99327pt x 203.19914pt>
+File: ./figures/ch5/Fig4expComparison.png Graphic file (type png)
+<use ./figures/ch5/Fig4expComparison.png>
+Package pdftex.def Info: ./figures/ch5/Fig4expComparison.png  used on input lin
+e 185.
+(pdftex.def)             Requested size: 388.99231pt x 203.19864pt.
+
+Package natbib Warning: Citation `Coleman2019' on page 82 undefined on input li
+ne 198.
+
+[82] [83 <./figures/ch5/Fig4expComparison.png>]
+
+Package natbib Warning: Citation `Marshall2001' on page 84 undefined on input l
+ine 208.
+
+[84] [85]
+
+Package natbib Warning: Citation `VanKampen1983' on page 86 undefined on input 
+line 254.
+
+
+LaTeX Warning: Reference `eq:detlangevin' on page 86 undefined on input line 25
+7.
+
+[86]
+Overfull \hbox (1.8479pt too wide) in paragraph at lines 266--268
+\OT1/cmr/m/n/10.95 where the co-ef-fi-cients $\OML/cmm/m/it/10.95 R[]$ \OT1/cmr
+/m/n/10.95 are the residues of the prod-uct $[\OML/cmm/m/it/10.95 q\OT1/cmr/m/n
+/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 ) [] \OML/cmm/m/it/10.95 q\O
+T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 )][]$: 
+ []
+
+[87]
+
+Package natbib Warning: Citation `Hall1970' on page 88 undefined on input line 
+286.
+
+
+Overfull \hbox (24.85725pt too wide) detected at line 292
+[]\OT1/cmr/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 "[]\OT1/cmr
+/m/n/10.95 )[]\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\
+OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ []\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m
+/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \OM
+L/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95 )
+ + []\OML/cmm/m/it/10.95 Q[]z \OT1/cmr/m/n/10.95 + [][]\OML/cmm/m/it/10.95 z \O
+T1/cmr/m/n/10.95 + [][][] = 0
+ []
+
+[88]) [89]
+\openout2 = `ch6conc.aux'.
+
+ (./ch6conc.tex
+Appendix A.
+) [90
 
 
 
@@ -1262,57 +1511,88 @@ Chapter 5.
 \tf@brf=\write8
 \openout8 = `diss.brf'.
 
- [48
+
+Overfull \hbox (46.67136pt too wide) in paragraph at lines 35--35
+[]\OT1/cmr/m/n/10.95 xii[], []xv[], []7[], []9[], []10[], []16[], []19[], []22[
+], []24[], []34[], []35[], []36[], []37[], []38[], []39[], []40[], []41[], []42
+[], []43[], []46[], []47[], []48[], []51[], []52[], []53[][]  
+ []
+
+[91
 
 
-] [49] [50] [51] [52] [53] [54] [55]
-[56]) [57]
+] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103] [104]
+[105] [106] [107] [108]) [109]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex)
+ (./appendix.texpdfTeX warning (ext4): destination with the same identifier (na
+me{appendix.A}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \chapter{Mathematical Compendia}
+                                    
+Appendix A.
+) [110
+
+
+]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
 (./diss.aux (./abs.aux) (./laySum.aux) (./pref.aux) (./ack.aux) (./ch1intro.aux
-) (./ch2flipFlop.aux) (./ch3bedEle.aux) (./ch4downDiff.aux) (./ch5conc.aux)
-(./appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
+) (./ch2flipFlop.aux) (./ch3bedEle.aux) (./ch4downDiff.aux) (./ch5langevin.aux)
+(./ch6conc.aux) (./appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: EE41359069BFB253FE82D810BD140BEC;4311.
-Package rerunfilecheck Info: File `diss.brf' has not changed.
-(rerunfilecheck)             Checksum: 4AA4ECC04BEABFE9BF007C8581809CDD;18833.
+(rerunfilecheck)             Checksum: BC95ECACCE20AE512438F85E2DA288F8;8675.
+
+
+Package rerunfilecheck Warning: File `diss.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `diss.brf':
+(rerunfilecheck)             Before: 97984356738911B14E18324FF0951BA6;30813
+(rerunfilecheck)             After:  D4DA44A6C4E51E4F9C86C68920B8E873;30907.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 408.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
  ) 
 Here is how much of TeX's memory you used:
- 13028 strings out of 483183
- 195068 string characters out of 5966292
- 508176 words of memory out of 5000000
- 27330 multiletter control sequences out of 15000+600000
- 590829 words of font info for 138 fonts, out of 8000000 for 9000
+ 13838 strings out of 483183
+ 207833 string characters out of 5966292
+ 532584 words of memory out of 5000000
+ 27957 multiletter control sequences out of 15000+600000
+ 542069 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,20n,46p,1672b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/u
-crr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on diss.pdf (72 pages, 1150984 bytes).
+ 47i,20n,46p,1672b,1073s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/kp/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on diss.pdf (129 pages, 4177820 bytes).
 PDF statistics:
- 2412 PDF objects out of 2487 (max. 8388607)
- 2077 compressed objects within 21 object streams
- 303 named destinations out of 1000 (max. 500000)
- 481 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4309 PDF objects out of 5155 (max. 8388607)
+ 3749 compressed objects within 38 object streams
+ 559 named destinations out of 1000 (max. 500000)
+ 892 words of extra memory for PDF output out of 10000 (max. 10000000)
 

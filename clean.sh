@@ -9,8 +9,6 @@ rm -f ch3bedEle.aux
 rm -f ch3bedEle.log
 rm -f ch4downDiff.aux
 rm -f ch4downDiff.log
-rm -f ch5conc.aux
-rm -f ch5conc.log
 rm -f laySum.aux
 rm -f laySum.log
 rm -f pref.aux
@@ -26,3 +24,8 @@ rm -f diss.lot
 rm -f diss.out
 rm -f diss.synctex.gz
 rm -f diss.toc
+rm -f ch6conc.aux
+rm -f ch6conc.log
+rm -f ch5langevin.aux
+rm -r ch5langevin.log
+

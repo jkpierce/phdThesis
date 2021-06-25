@@ -52,8 +52,9 @@
 %%
 
 %% NFSS font specification (New Font Selection Scheme)
-\usepackage{times,mathptmx,courier}
-\usepackage[scaled=.92]{helvet}
+%\usepackage{times,mathptmx,courier}
+%\usepackage[scaled=.92]{helvet}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Math or theory people may want to include the handy AMS macros
 %\usepackage{amssymb}
@@ -84,6 +85,7 @@
 \DeclareMathOperator\erfc{erfc}
 \DeclareMathOperator\erfi{erfi}
 \newcommand{\cev}[1]{\reflectbox{\ensuremath{\vec{\reflectbox{\ensuremath{#1}}}}}}
+\newcommand{\Rey}{\text{Re}}
 
 
 %% The pifont package provides access to the elements in the dingbat font.   
@@ -391,7 +393,8 @@
 \include{ch2flipFlop}
 \include{ch3bedEle}
 \include{ch4downDiff}
-\include{ch5conc}
+\include{ch5langevin}
+\include{ch6conc}
 
 % BIBLIOGRAPHY
 \begin{singlespace}

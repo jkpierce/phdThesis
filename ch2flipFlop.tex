@@ -57,7 +57,7 @@ One can see in particular that taking an the entrainment rate $k_E$ very large, 
 \section{Formalism for the downstream sediment flux}
 Now we express the probability distribution of the sediment flux using the probability distribution of particle position $P(x,t)$ provided as the solution of equation \ref{eq:master}. We apply a modified version of the approach recently developed by Banerjee and coworkers for \citep{Banerjee2020}. The basic idea, as depicted in Figure 1, is that we distribute particles in all states of motion along a domain at random locations at $x<0$, then we calculate using $P(x,t)$ the rate of particle arrival to $x>0$ within the sampling time $T$.
 \begin{figure}
-	\centerline{\includegraphics{./figures/ch2/figure1.png}}
+	\centerline{\includegraphics{./figures/ch2/figure1.pdf}}
 	\caption{The left panel indicates the configuration for the flux. The particle trajectories within are calculated from equation \ref{eq:langevin}, demonstrating alternation between rest and motion with fluctuating velocity. Particles begin their transport with positions $-L\leq x \leq 0$ at $t=0$, and as depicted in the right panel, the flux is calculated as the number of particles $N_>(t)$ which lie to the right of $x=0$ at the observation time $t$, divided by $t$: $Q(t) = t^{-1}N_>(t)$. We calculate the probability distribution of $Q$ over all realizations of the trajectories and initial positions as $L\rightarrow \infty$}
 	\label{fig:fig1}
 \end{figure}
@@ -87,7 +87,7 @@ This equation implies that the mean flux is $\bra Q \ket(T) = \int_0^\infty dQ Q
 \section{Results \label{sec:res}}
 \subsection{Derivation of the position probability distribution and its moments}
 \begin{figure}
-	\centerline{\includegraphics{figures/ch2/figure2slopeKey.pdf}}
+	\centerline{\includegraphics{figures/ch2/figure2_slopeKey.pdf}}
 	\caption{The left panel shows the probability distribution of position evolving through time. From the initial state, which is a mixture of moving and resting particles, the distribution splits at short times into contributions from Delta function-like stationary particles and Normal-like moving particles. The right panel demonstrates the resulting spreading characteristics of particles. This short-time splitting noted in the left panel gives rise to ballistic diffusion at short timescales, followed by normal diffusion, as exemplified by equation \ref{eq:var}.}
 	\label{fig:fig1}
 \end{figure}

@@ -6,50 +6,40 @@
 
 \section{Geomorphology traditions}
 Geomorphology can be defined as the study of Earth's evolution by tectonics, weathering, and erosion \citep{Chorley1984}. 
-This science has long been characterized by observation and description \citep{Gilbert1877, Tight1903, Hack1960}. Only relatively recently did the science turn to quantitative methods \citep{Bagnold1941, Strahler1952, Scheidegger1961, Leopold1962}, with researchers working to frame observations in terms of underlying processes and to describe them with mathematical models modified from physics \citep{Church2005,Roades1996,Chorley1965}.
+This science has long been characterized by observation and description \citep{Gilbert1877, Tight1903, Hack1960}. Only relatively recently did the science turn to quantitative methods \citep{Bagnold1941, Strahler1952, Scheidegger1961, Leopold1962}, with researchers working to frame observations in terms of underlying processes and to describe them with mathematical models modified from physics \citep{Roades1996,Chorley1965}.
 
-This quantitative shift or incorporation of physics methods into geomorphology has been criticized as overly reductionist \citep{Slaymaker2020}.
-Many of the problems addressed within physics involve closed systems with perfect order \citep{GoldSteinClassicalMechanics,SakuraiQM,JacksonElectrodynamics}. 
-These systems stand in contrast to the systems in geomorphology. Earth's surface is open and highly disordered. The surface receives fluxes of mass and energy across its boundaries by tectonics, climate, transpiration, and sunlight, and its component parts vary widely in their characteristics, activities, and compositions. With this complexity \citep{Chorley1971}, we can conclude that a complete reduction of geomorphology to physics is likely impossible.
+This quantitative shift in geomorphology can be criticized \citep{S
+Many of the problems addressed within physics involve closed systems with perfect order \citep{GoldSteinClassicalMechanics,SakuraiQM,JacksonElectrodynamics}, but Earth's surface is not closed, and it is highly disordered. The surface is open to fluxes of mass and energy across its boundaries by tectonics, climate, transpiration, and sunlight, and its component parts vary widely in their characteristics and activities. With this complexity, we have to acknowledge that a full reduction of geomorphology to physics is probably not possible.
 
-There are nevertheless lessons physics can exchange with geomorphology and sediment transport theory. This is the central theme of this thesis. Before presenting original research, the first chapter summarizes key developments in quantitative geomorphology models which have resulted from this exchange. The section is organized along two classifications. First, I distinguish earlier works as ``stochastic" or ``deterministic". Stochastic models introduce randomness or noise as a means to crudely represent the complexity of natural systems (open boundaries, diversity in component parts) within idealized mathematical models of nature. Deterministic models involve Newtonian equations without noise to represent nature. Second, I distinguish earlier models as ``discrete" or ``continuous". These terms reflect whether the degrees of freedom of individual particles are retained in mathematical models, or whether they are averaged away. When grains are tracked, a model is discrete. When they are discussed as a flow, it is continuous. We can therefore discuss a ``discrete and stochastic" model, or a ``continuous and deterministic" model, and so on.
-With these distinctions in mind, we launch into a survey of the foundation upon which this thesis builds: physics-inspired, process-based models of sediment transport and landscape evolution.
+This is not a reason to give up. There are lessons from physics for geomorphology, and this exchange has gone both ways. Here, we begin with a brief survey of earlier research in physical, mechanistic, and quantitative description of landscape evolution and sediment transport.
 
-\section{The bedload transport problem}
+\section{Continuous and deterministic}
 
+\subsection{Exner's landscapes} 
 
-\section{Models of bedload: Determinism and continuity}
-
-
-\subsection{Exner's landscape evolution} 
-
-Exner was probably the first to describe landscape evolution as a mathematical result of sediment transport \citep{Exner1925}, when he related the topographic elevation to the sediment flux via
-\be (1-\lambda)\frac{\partial z}{\partial t}(\textbf{x},t) = -\nabla q (\textbf{x},t). \ee
-This equation links the temporal evolution of the land elevation $z$ at a location $\textbf{x}=(x,y)$ to spatial gradients in the sediment flux. The parameter $\lambda$ is the bed porosity.
+Exner was probably the first to describe landscape evolution as a mathematical function of sediment transport \citep{Exner1925}.
+ He wrote
+\be \frac{\partial z}{\partial t}(\textbf{x},t) = -\nabla q (\textbf{x},t). \ee
+This equation relates the rate of change of the land elevation $z$ at a location $\textbf{x}=(x,y)$ through time in response to spatial gradients in the sediment flux.
 
 Within the Exner equation, the elevation $z$ and sediment flux $q$ are represented as continuous fields. This representation can be interpreted as an average over the detailed locations of individual grains, and it is expected to be an excellent approximation whenever the scales of interest are large compared to the size of the averaging window, which should be taken much larger than the size of the largest grains being modelled \citep{Coleman2009}. 
 
-Yet there are many contexts on Earth's surface where the scale of interest is not much larger than the largest grains involved in the system. We can wonder, for example, in mountain channels, how large boulders contribute to the formation of steps \citep{Zimmerman2008,Saletti2020}, or other structures with sizes comparable to channel widths, like ribs or stone cells \citep{Hassan2008,Venditti2017}. In these cases, individual grains are comparable to the scales of interest, and the continuum approximation breaks down.  
+Yet there are many contexts on Earth's surface where the scale of interest is not much larger than the largest grains involved in the system. We can wonder, for example, in mountain channels, how large boulders contribute to the formation of steps \citep{Zimmerman2008,Saletti2020}, or other structures like clusters, ribs, or cells \citep{Hassan2008,Venditti2017}. In this case, channel widths are not appreciably larger than the sizes of the largest grains, and the continuous representation of the bed seems of limited use.
 
-\section{Bagnold's sediment flux}
 
-When the Exner equation applies, the question arises as to how one should relate the sediment flux within it to the fluid flow characteristics. One of the most influential approaches from physical arguments is due to Bagnold \citep{Bagnold1956,Bagnold1966}.
-Bagnold described sediment transport as a process which ultimately converts flow energy to heat.
-He assumed that the flow power $P_f$ available to move sediment scaled as $P_f \propto \tau - \tau_c$, where $\tau$ is the average bed shear stress and $\tau_c$ is the threshold shear stress at which particles first begin to move. 
-He reasoned that if the average downstream flux of particles is $q$, and particles move on average with velocity proportional to the fluid velocity near the bed, then the power $P_g$ required to sustain particle motion scales as $P_g \propto q/\tau^{1/2}. $ Balancing fluid propulsion against frictional dissipation ($P_f = P_g$) then provides Bagnold's sediment transport formula
-\be q = k(\tau-\tau_c)\tau^{1/2}, \label{eq:bagnold}\ee
-which has shown good correspondence with laboratory data after careful calibration of the constant factors $k$ and $\tau_c$.
-The large shear stress limit $q \sim \tau^{3/2}$ is shared in common with many other empirical formulas describing the mean downstream flux of bedload \citep[e.g.][]{MeyerPeter1948, Yalin1972}.
+\section{Bagnold's fluxes}
 
-\subsection{The combination: two-phase deterministic/continuum models}
+On a problem with grains small enough compared to the scales of interest such that the Exner equation applies, the question arises as to how one should represent the sediment flux as a function of the forces exerted on individual grains by the fluid.
+One approach to describe the flux which is based on sound mechanistic reasoning is due to Bagnold.
 
-Joined with a model of flow hydraulics such as the shallow water equations, solved against the boundary condition formed by the bed surface, the Exner equation and Bagnold's formulation of the flux might be expected to provide a continuum mechanics description of channel evolution in the form of coupled partial differential equations for hydraulics, sediment transport (eq. \ref{eq:bagnold}), and topography (eq. \ref{eq:exner}).
-Unfortunately, this scheme does not provide the linear instabilities necessary to develop bedforms \citep{Balmforth2002}. In such a coupled model, although interesting hydrodynamic instabilities such as roll waves result, the bed does not evolve on timescales disparate from the flow.
+Bagnold considered that the fluid supplies some fraction of its average power to sediment grains, while the movement of sediment transport dissipated this energy by converting it to heat. He used this reasoning to formulate the sediment transport rate as an average energy balance.
+Since the stream 
+
+\subsection{Modern progress in continuum modelling}
+
+
 
 \subsection{Challenges of the continuum approximation}
-
-While 
-
 
 The sediment flux fluctuates, and it depends on observation scale.
 
@@ -112,15 +102,13 @@ explain that the sediment flux is key to landscape evolution. not just in mean v
 
 \subsection{Tools of the trade}
 
-\subsubsection{The Langevin equation}
-When particles are subjected to fluctuating forces, their Newtonian equation of motion can be written
-
-In this equation, $F$ is the deterministic or steady component of the forcing, while $\xi$ is the fluctuating component. 
-The classic example is due to Einstein, and 
-\subsubsection{Master equations and probability flow}
-
-\subsubsection{Idealized noises}
-
+Langevin equations
+Master equations
+White noise
+Dichotomous Noise
+Poisson noise
+Transform calculus
+The statistical ensemble
 
 \subsection{Organization of the thesis}
 
