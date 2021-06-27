@@ -4,24 +4,54 @@
 \chapter{Sediment transport and landscape evolution}
 \label{ch:Introduction}
 
-Landscales change when sediment moves.
+Landscapes evolve when water, wind, and ice, driven by gravity, grade the uplifted relics of forces from below Earth's surface.
+Channels initiate along faults and depressions wherever climatic conditions are suitable, incising networks in the landscape and transferring sediments from uplands to lowlands as they grind them to sand through a machine of denundation.
+Earth's biota colonize these networks which form conduits for migration, transmitting water and organic material while biota convert sediments to soils, staging the joint evolution of life and landscapes which has persisted over geological time.
+Human impacts on these old patterns have become severe, in what has been characterized as an environmental and social crisis.
+Geologic records display unprecedented recent shifts in ancient climatic, denundational, and biotic patterns, requiring effective aquatic habitat restoration, contaminant management, and river engineering strategies more than ever before.
 
+In this context river geomorphology as a scientific practice is shifting toward more quantitative methods to enable concrete predictions about the natural world.
+Sediment transport in river channels is especially amenable to this quantitative approach since it is basically the result of fluid and granular processes.
+Modelling sediment transport is extremely challenging because fluid and granular physics are notoriously difficult subfields of classical physics.
+Sediment moves in different modes depending on the relative importance of the fluid forces against the weight of grains.
+When particles are coarse as in gravel-bed rivers, the fluid forces are relatively weak and particles move as ``bedload" by bouncing, rolling, and sliding along the bed surface. In these conditions, fluid turbulence and the irregular bed surface become important controls over sediment dynamics.
+
+Bedload transport exerts considerable influence over stream morphology and stability \citep{Church2006,Hassan2008,Recking2016}, in part because the coarsest grains in a river provide a partially-immobile skeleton upon which sedimentary deposits can develop \citep{Zimmerman2007,Comiti2012, McKenzie2018, Eaton2020}.
+As a result, a longstanding problem in river science is to determine the bedload flux, or downtream rate of movement of bedload sediment grains \citep{duBoys1879, }.
+Unfortunately, existing approaches to compute the bedload flux are inadequate as predictions regularly deviate by orders of magnitude from measured values \citep{Gomez1989, Barry2004, Bathurst2007a, Recking2012, Dhont2018}, and this is despite well over a century of concerted effort \citep{Gomez1991}.
+This state of affairs indicates that new research approaches are needed to accelerate research progress \citep{Ancey2020a,Ancey2020}.
+
+Predicting bedload fluxes is challenging because transport is not always well correlated to average characteristics of the flow and bed material. 
+Local fluxes can range through orders of magnitude as details of turbulent fluctuations and bed organization vary, while average characterizations of flow and sediment remain constant \citep{Sumer2003, Charru2004, Hassan2008, Venditti2017}.
+The same turbulence and sediment organization details which correlate with the bedload flux also interact with it. 
+Turbulent impulses drive sediment motion \citep{Valyrakis2010, Celik2014, Amir2014, Shih2017}, moving sediment affects turbulent flow characteristics \citep{Singh2010, Santos2014, Liu2016}, and bedload fluxes modify the stability and arrangement of bed surface grains \citep{Kirchener1990, Charru2004, Strom2008}, which encourages further transport in a positive feedback \citep{Ancey2008,Heyman2016,Lee2018}.
+The bedload flux is thus in a cyclical feedback with its controls in the details of turbulence and bed organization \citep{Jerolmack2005}. 
+
+The approach taken in this thesis is to consider the bedload flux as an aggregate result of many individual transported grains.
+This departs from the traditional strategy of correlating transport rates to the mean flow and sedimentary characteristics \citep{Gilbert1917,MeyerPeter1948}.
+Since the trajectories of individual grains are governed by Newtonian mechanics, this perspective provides a wide foothold on the problem.
+The Newtonian approach is nonetheless complicated because the forces driving and resisting sediment motion vary through space and time, in part due to the turbulent flow and the erratic interactions of moving particles with the bed.
+To address this complication, I develop in this thesis a handful of new bedload transport models using methods adopted from statistical physics.
+These efforts build on an an earlier literature to provide more realistic descriptions of the trajectories of individual grains and the bedload fluxes they generate.
+
+The thesis begins with a review of the most relevant pieces of this earlier literature on which my research builds. The rest of this chapter summarizes earlier works, rephrasing them when necessary to indicate common themes and to show continuity with my own research which follows in the subsequent chapters. In particular, the common theme to watch for is that many earlier models rely implicitly on the idealized noises of nonequilibrium statistical physics, Gaussian white noise, white Poisson noise, white dichotomous noise, and so on \citep{Cox1965,VanKampen1992,Gardiner1983,Kubo,Risken1984}. 
+The review in this chapter focuses on two main themes: first, models of the movements of individual particles, and second, models of the over-all bedload flux which results from these individual movements. An outline of my own research which follows comes at the end of these two sections.
 
 \section{Theories of individual particle movement}
 
 A basic (but not simple) problem in sediment transport modelling is to predict the downstream movement of an individual particle.
-At first glance, maybe at the idealistic beginnings of one's PhD, this seems an elementary problem in general physics, but then some challenges appear.
+At first glance, this seems an elementary problem in general physics, but challenges appear.
 Particles moving as bedload are driven downstream by a turbulent fluid flow \citep{}, but the exact relationships between the fluid flow and the applied forces are not known \citep{Furbish1997}.
 Downstream movement is resisted by frictional collisions between moving particles and the bed.
 Since the bed is a granular surface, its surface geometry is very difficult to characterize \citep{Gordon1972}, and the outcome of collisions varies from one to the next \citep{Sekine1992}
 Entrainment and deposition provide an additional layer of complexity.
-Moving particles that encounter the bed with sufficiently low velocities can settle into pockets which protect them from the flow \citep{Miller1966}, so they can deposit \citep{Charru2004}.
-These pockets are not permanent shelter.
-Rearrangement of the surrounding bed can reexpose sheltered particles to the flow, and sufficiently strong turbulent fluctuations can overcome the shelter, even if the surrounding particles do not move \citep{Valyrakis2012,Celik2014}, so particles can entrain back into motion.
-Ultimately, particles at rest on the bed surface can also become covered by other transported particles \citep{Yang1972}. These buried particles cannot move again until those burying them have \citep{Nakagawa1981}.
+Moving particles that encounter the bed with sufficiently low velocities can settle into pockets which protect them from the flow \citep{Miller1966} and they deposit \citep{Charru2004}.
+These pockets are not permanent shelter, because rearrangement of the surrounding bed can re-expose particles to the flow, and sufficiently strong turbulent fluctuations can overcome shelter, even if it is not disturbed \citep{Valyrakis2012,Celik2014}, and particles entrain.
+Ultimately, particles at rest on the bed surface can also become covered by other transported particles \citep{Yang1972}. These buried particles cannot move again until those burying them have been transported away \citep{Nakagawa1981}.
 
-Predicting the movements of individual particles therefore involves many contributing processes, and our understanding of each of these processes remains incomplete.
-\citet{Nikora2001,Nikora2002} provided a conceptual model of individual particle motions which helps to organize the challenges and research progress, although it has been slightly revised in more recent studies \citep{Campagnol2013, Hassan2017, Pierce2020}.
+Individual trajectories of particles therefore involve a number of contributing processes, and we have limitations in our understanding of every one of these.
+\citet{Nikora2001,Nikora2002} provided a conceptual model of individual particle motions which helps to organize earlier research by the subset of these processes which it attempts to incorporate, although this conceptual model been slightly revised in some recent studies \citep{Campagnol2013, Hassan2017, Pierce2020}.
+
 Nikora et al divided the downstream trajectory of an individual particle into three timescales, or ``ranges", termed local, intermediate, and global.
 The local range refers to the period of motion between subsequent interactions with the bed, when the particle accelerates downstream within the flow, the intermediate range reflects particle motions through sequences of collisions, and the global range refers to particle motion between subsequent entrainment and disentrainment events.
 \citet{Hassan2017} added an additional range, referred to as ``geomorphic", to reflect the even longer period over which particles become buried. 
@@ -155,18 +185,6 @@ These models produce successful descriptions of disparate experimental results, 
 In a similar way, the Ancey model does not have a particle-particle interaction term, and it includes what is apparently a Stokes drag term (linear in $u-U$), which is not applicable to bedload transport in water, since bedload particles are typically large compared to the viscous length scale \citep{Clift1978}.
 We have to wonder if a more detailed treatment of particle-bed interactions might produce a more general model of bedload particle velocities for application at the local and intermediate scales.
 
-
-\section{The bedload transport problem}
-
-In river science, a fundamental problem is the determination of the bulk bedload flux, or the rate of downstream movement of coarse sediment grains \citep{Ballio2014}.
-Since bedload transport controls stream morphology \citep{Church2006, Recking2016}, its prediction is useful to a wide range of problems, from aquatic habitat restoration to energy production \citep{Kondolf2014, Wohl2015a}. 
-Unfortunately, no satisfying approach currently exists to compute the bedload flux \citep{Ancey2020,Ancey2020a}, and predictions regularly deviate by two orders of magnitude from measured values \citep{Gomez1989, Barry2004, Bathurst2007a, Recking2012}. 
-
-Predicting bedload fluxes is challenging because transport is not always well correlated to average characterizations of flow and bed material. 
-Local fluxes can range through orders of magnitude as details of turbulent fluctuations and bed organization vary, while average characterizations of flow and sediment remain constant \citep{Sumer2003, Charru2004, Hassan2008, Venditti2017}.
-The same turbulence and bed sediment organization details which correlate with the bedload flux are also modified by it.
-Turbulent impulses induce sediment motion \citep{Valyrakis2010, Celik2014, Amir2014, Shih2017}, but moving sediment affects turublence characteristics \citep{Singh2010, Santos2014, Liu2016}. Bedload transport is controlled by the configuration \citep{Miller1966, Paintal1971,} and consolidation \citep{Johnson2016,Allen2018,Masteller2019} of grains on the bed surface, but bedload transport also modifies the stability and arrangement of bed surface grains \citep{Kirchener1990, Charru2004, Hassan2008}.
-The bedload flux controls its control variables. It is in a cyclical feedback with the details of turbulence and bed organization \citep{Jerolmack2005}, so predicting it is challenging.
 
 \subsection{The definition of the flux}
 
@@ -361,24 +379,27 @@ Assuming that the particle activity in the control volume and the velocities of 
 \be Q(q) = L \sum_{k=1}^\infty P(k)G(U) ,\ee
 where $P(n)$ comes from eq. \ref{eq:negbin} and $G(U)$ is the probability that the sum of $k$ particle velocities at some instant is equal to $U$.
 
-\subsection{Queueing theories for scale dependence}
+\subsection{Renewal theories for scale dependence}
 
-The final approach to summarize is that of \citet{Ancey2020}, which calculates the sediment flux probability distribution from an ``arrival time distribution".
-This is the distribution of times between subsequent arrivals of particles to a control surface.
-This approach is reminiscient of queueing theory, which evalues the wait times of customers in a line given a distribution of service times \citep{Cox1961}. 
+The final approach to summarize is that of \citet{Ancey2020}, which calculates the sediment flux probability distribution from an ``arrival time distribution" representing the distribution of times between subsequent arrivals of particles to a control surface. This distribution changes depending on the observation time $T$ used to calculate the averaged flux. This is the phenomenon of scale dependence.
 
-\citet{Ancey2020} considered two different arrival time distributions to calculate the time-averaged sediment flux probability distribution.
-The first is a simple exponential distribution, $P(t) = \Lambda \exp(-\Lambda t).$ Here the mean time between particle arrivals is $1/\Lambda$.
-In this case, the flux can be represented with a Poisson pulse noise, similar to the particle position in the Einstein model of section \ref{sec:einstein}:
-\be q(t) = \frac{1}{t}\int_0^t dt' \mu(t'). \ee
+ \begin{figure}[!htbp]
+	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/anceyRenewal.pdf}
+	\caption{The scale-dependent sediment flux is described as a renewal process. Panel (a) indicates the arrivals of particles at rate $\Lambda$, while panel (b) shows an ensemble of realizations of the sediment flux versus the observation time $T$. Note that different realizations of the flux converge toward the same value at large observation times, whereas at small observation times, uncertainty in the flux is large. This is observation-scale dependence. The nature of this convergence depends on the particle dynamics in an as yet unspecified way. }
+	\label{fig:ancey}
+\end{figure}
+
+\citet{Ancey2020} considered two different arrival time distributions to calculate the probability distribution of the time-averaged sediment flux. Only the first of these is reviewed here. This is an exponential distribution: $P(t) = \Lambda \exp(-\Lambda t),$ so the mean time between particle arrivals is $1/\Lambda$.
+In this case, the flux averaged over a period $T$ can be represented with a Poisson pulse noise, similar to the particle position in the Einstein model of section \ref{sec:einstein}:
+\be q(T) = \frac{1}{T}\int_0^T dt' \mu(t'). \label{eq:flucflux}\ee
 Here, the noise is 
 \be \mu(t) = \sum_{i=1}^{N(t)}\delta(t-t_i), \label{eq:poissfluxnoise}\ee
-where $N(t)$ is Poisson distributed with rate $\Lambda$. 
-This flux is a random variable. Its probability distribution can be derived by evaluating $P(q,t) = \bra \delta(q-\int_0^t \mu(t')/t) \ket$, which involves an average over all possible realizations of the noise in eq. \ref{eq:poissfluxnoise}, providing \citep{VanKampen2007}
+as indicated in figure \ref{fig:ancey} panel (a). In this equation, $N(t)$ is Poisson distributed with rate $\Lambda t$. 
+The flux in eq. \ref{eq:flucflux} is a random variable as indicated in \ref{fig:ancey} panel (b). Its probability distribution, which is contingent on the observation time $T$, can be derived by evaluating $P(q|T) = \bra \delta(q-\int_0^T \mu(t') dt'/T) \ket$. This equation entails an average over all possible realizations of the noise in eq. \ref{eq:poissfluxnoise}, producing \citep{VanKampen2007}
 \be  \ee
 
 
-\section{Open problems}
+\section{Open problems and thesis outline}
 
 
 \endinput
