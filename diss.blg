@@ -10,10 +10,15 @@ A level-1 auxiliary file: ch2flipFlop.aux
 A level-1 auxiliary file: ch3bedEle.aux
 A level-1 auxiliary file: ch4downDiff.aux
 A level-1 auxiliary file: ch5langevin.aux
+Case mismatch error between cite keys Clift1978 and CLift1978
+---line 56 of file ch5langevin.aux
+ : \citation{Clift1978
+ :                    ,Gonzalez2017}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: ch6conc.aux
 The style file: ./agu.bst
 A level-1 auxiliary file: appendix.aux
-Reallocated field_info (elt_size=4) to 11095 items from 5000.
+Reallocated field_info (elt_size=4) to 12291 items from 5000.
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "Chorley1984"
 Warning--I didn't find a database entry for "Gilbert1877"
@@ -30,18 +35,42 @@ Warning--I didn't find a database entry for "GoldSteinClassicalMechanics"
 Warning--I didn't find a database entry for "SakuraiQM"
 Warning--I didn't find a database entry for "JacksonElectrodynamics"
 Warning--I didn't find a database entry for "Chorley1971"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "Furbish1997"
+Warning--I didn't find a database entry for "Valyrakis2012"
+Warning--I didn't find a database entry for "Yang1972"
+Warning--I didn't find a database entry for "Nakagawa1981"
+Warning--I didn't find a database entry for "Pierce2020"
+Warning--I didn't find a database entry for "Pretzlav2021"
+Warning--I didn't find a database entry for "Takayama1966"
+Warning--I didn't find a database entry for "Ashmore2020"
+Warning--I didn't find a database entry for "Haschenberger2012"
+Warning--I didn't find a database entry for "Kubo1978"
+Warning--I didn't find a database entry for "Goldstein1956"
+Warning--I didn't find a database entry for "Risken1984"
+Warning--I didn't find a database entry for "Sokolev2002"
+Warning--I didn't find a database entry for "Crickmore1962"
+Warning--I didn't find a database entry for "Todorovic1975"
+Warning--I didn't find a database entry for "Nakagawa1980"
+Warning--I didn't find a database entry for "1937"
+Warning--I didn't find a database entry for "Abbott1970"
+Warning--I didn't find a database entry for "Francis1972"
+Warning--I didn't find a database entry for "Cox1965"
+Warning--I didn't find a database entry for "Sokolov2014"
+Warning--I didn't find a database entry for "Cundall1979"
+Warning--I didn't find a database entry for "Jiang1993"
+Warning--I didn't find a database entry for "Vowincklel2014"
+Warning--I didn't find a database entry for "Wachs2011"
+Warning--I didn't find a database entry for "Kirkby1971"
 Warning--I didn't find a database entry for "Exner1925"
 Warning--I didn't find a database entry for "Zimmerman2008"
 Warning--I didn't find a database entry for "FerrerBoix2015"
-Warning--I didn't find a database entry for "Cox1965"
 Warning--I didn't find a database entry for "VanKampen1992"
 Warning--I didn't find a database entry for "Gillespie1992"
 Warning--I didn't find a database entry for "Ma2014b"
-Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "Turowski"
 Warning--I didn't find a database entry for "Celik2019"
 Warning--I didn't find a database entry for "Valyrakis2014"
-Warning--I didn't find a database entry for "Pierce2020"
 Warning--I didn't find a database entry for "Pierce2021"
 Warning--I didn't find a database entry for "Saletti2014"
 Warning--I didn't find a database entry for "Dhont2019"
@@ -51,12 +80,9 @@ Warning--I didn't find a database entry for "Loginov1978"
 Warning--I didn't find a database entry for "Pretzlav2016"
 Warning--I didn't find a database entry for "Saletti2015a"
 Warning--I didn't find a database entry for "Sawai1987"
-Warning--I didn't find a database entry for "Crickmore1962"
 Warning--I didn't find a database entry for "Haken1983"
-Warning--I didn't find a database entry for "Nakagawa1980"
 Warning--I didn't find a database entry for "Sornette2000"
 Warning--I didn't find a database entry for "Ettema2014"
-Warning--I didn't find a database entry for "Cundall1979"
 Warning--I didn't find a database entry for "Lajeunesse2018"
 Warning--I didn't find a database entry for "Boltzman"
 Warning--I didn't find a database entry for "Lajeunesse2020"
@@ -68,7 +94,6 @@ Warning--I didn't find a database entry for "Mei2006"
 Warning--I didn't find a database entry for "Michaelides1995"
 Warning--I didn't find a database entry for "Dalche2015"
 Warning--I didn't find a database entry for "vandenBroek1983"
-Warning--I didn't find a database entry for "Risken1984"
 Warning--I didn't find a database entry for "Suweiss2011"
 Warning--I didn't find a database entry for "Duderstadt1971"
 Warning--I didn't find a database entry for "Brilliantov2004"
@@ -81,49 +106,51 @@ Warning--I didn't find a database entry for "Marshall2001"
 Warning--I didn't find a database entry for "VanKampen1983"
 Warning--empty institution in Ancey2014a
 Warning--empty publisher in Bagnold1941
+Warning--empty publisher in Hanggi1984
+Warning--empty journal in Moss1989
 Warning--can't use both volume and number fields in Redner2007
 Warning--empty publisher in Santos2014
 Warning--can't use both volume and number fields in Temme1996
 Warning--empty publisher in Yano1969
-You've used 201 entries,
+You've used 233 entries,
             2789 wiz_defined-function locations,
-            2361 strings with 44586 characters,
-and the built_in function-call counts, 179904 in all, are:
-= -- 23174
-> -- 6898
-< -- 120
-+ -- 3829
-- -- 1652
-* -- 11951
-:= -- 17347
-add.period$ -- 201
-call.type$ -- 201
-change.case$ -- 1145
-chr.to.int$ -- 199
-cite$ -- 609
-duplicate$ -- 16022
-empty$ -- 8267
-format.name$ -- 2270
-if$ -- 36184
-int.to.chr$ -- 3
+            2572 strings with 49885 characters,
+and the built_in function-call counts, 203554 in all, are:
+= -- 26081
+> -- 7838
+< -- 144
++ -- 4329
+- -- 1879
+* -- 13614
+:= -- 19794
+add.period$ -- 233
+call.type$ -- 233
+change.case$ -- 1316
+chr.to.int$ -- 230
+cite$ -- 707
+duplicate$ -- 18046
+empty$ -- 9449
+format.name$ -- 2600
+if$ -- 40916
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 205
-newline$ -- 607
-num.names$ -- 809
-pop$ -- 6482
+missing$ -- 239
+newline$ -- 703
+num.names$ -- 938
+pop$ -- 7359
 preamble$ -- 1
-purify$ -- 948
+purify$ -- 1087
 quote$ -- 0
-skip$ -- 13019
+skip$ -- 14578
 stack$ -- 0
-substring$ -- 8551
-swap$ -- 14065
-text.length$ -- 19
+substring$ -- 9564
+swap$ -- 15740
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1776
-warning$ -- 6
-while$ -- 1127
+type$ -- 2055
+warning$ -- 8
+while$ -- 1282
 width$ -- 0
-write$ -- 2216
-(There were 70 warnings)
+write$ -- 2566
+(There was 1 error message)

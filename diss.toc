@@ -5,94 +5,101 @@
 \contentsline {chapter}{Contents}{vii}{chapter*.4}%
 \contentsline {chapter}{List of Tables}{xi}{chapter*.5}%
 \contentsline {chapter}{List of Figures}{xii}{chapter*.6}%
-\contentsline {chapter}{Acknowledgments}{xviii}{chapter*.7}%
+\contentsline {chapter}{Acknowledgments}{xix}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Sediment transport and landscape evolution}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Geomorphology traditions}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Bedload transport foundations}{2}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Bulk bedload flux}{2}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Bagnold's energy balance}{2}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Discrete particle models}{3}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}The probabilistic approach of Einstein}{3}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}From transport to landscape evolution}{3}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Exner's approach}{3}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Tusjimoto and beyond}{4}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Realism versus complexity}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}The point of the thesis}{4}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Open problems in the stochastic paradigm}{4}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Quantities of interest}{4}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Tools of the trade}{5}{subsection.1.5.3}%
-\contentsline {subsubsection}{The Langevin equation}{5}{subsubsection*.8}%
-\contentsline {subsubsection}{Master equations and probability flow}{5}{subsubsection*.9}%
-\contentsline {subsubsection}{Idealized noises}{5}{subsubsection*.10}%
-\contentsline {subsection}{\numberline {1.5.4}Organization of the thesis}{5}{subsection.1.5.4}%
-\contentsline {section}{\numberline {1.6}Introduction: birth-death models for the probability distribution of bedload flux}{5}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Background: the foundational stochastic model of bedload transport}{10}{section.1.7}%
-\contentsline {section}{\numberline {1.8}Scope: identifying future research directions}{16}{section.1.8}%
-\contentsline {subsection}{\numberline {1.8.1}recap}{16}{subsection.1.8.1}%
-\contentsline {subsection}{\numberline {1.8.2}Assumptions, calibraiton problems, and unclear aspects: A criticism of the birth-death approach}{19}{subsection.1.8.2}%
-\contentsline {chapter}{\numberline {2}Calculation of the sediment flux}{22}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{22}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Model development }{24}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Dynamical equation for bed load sediment transport}{25}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Derivation of the master equation for $P(x,t)$}{25}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Formalism for the downstream sediment flux}{26}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Results }{29}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Derivation of the position probability distribution and its moments}{29}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Calculation of the flux}{30}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Connection to earlier work}{31}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Discussion }{31}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}The role of stochasticity in landscape evolution}{31}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Methods to calculate the sediment flux}{31}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Outlook and future research}{31}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Conclusion }{31}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Analysis of the bed elevation}{32}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Stochastic model of bedload transport and bed elevations}{35}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Model solutions}{39}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Numerical simulations}{39}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Approximate solutions}{40}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Results}{43}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Probability distributions of bedload transport and bed elevations}{43}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Statistical moments}{44}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Collective entrainment and bedload activity fluctuations}{46}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Resting times of sediment undergoing burial}{48}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Discussion}{50}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Context}{50}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Contributions}{50}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Next steps}{52}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Conclusion}{54}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Inclusion of sediment burial}{55}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Bedload trajectories as a multi-state random walk}{58}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Model assumptions}{58}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Governing equations}{59}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Joint probability distribution}{59}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Positional variance}{62}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Diffusion exponents}{63}{subsection.4.1.5}%
-\contentsline {section}{\numberline {4.2}Discussion}{65}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Local and intermediate ranges with comparison to earlier work}{65}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Global and geomorphic ranges with next steps for research}{66}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Conclusion}{68}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Collisional model of sediment velocity distributions}{69}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{69}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Model}{72}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Langevin equation}{75}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Chapman-Komogorov equation and particle-bed collision integral}{76}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Results}{77}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Derivation of the velocity distribution}{77}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Exponential and Gaussian regimes}{80}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Comparison with experimental data}{81}{subsection.5.3.3}%
-\contentsline {section}{\numberline {5.4}Discussion}{82}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Conclusion}{84}{section.5.5}%
-\contentsline {section}{\numberline {.1}Derivation of Master Equation}{84}{section.Alph0.1}%
-\contentsline {section}{\numberline {.2}Derivation of Steady-state solution}{85}{section.Alph0.2}%
-\contentsline {section}{\numberline {.3}Calculation of the moments}{87}{section.Alph0.3}%
-\contentsline {section}{\numberline {.4}Weak and strong collision limits}{87}{section.Alph0.4}%
-\contentsline {chapter}{\numberline {A}Summary and future work}{89}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Key contributions}{89}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Probability distribution of the sediment flux}{89}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Inclusion of velocity fluctuations into Einstein's model of individual particle trajectories}{89}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Quantification of the control of bed elevation fluctuations on sediment transport fluctuations}{89}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Understanding of how sediment burial affects the downstream spreading of sediment tracer particles}{89}{subsection.A.1.4}%
-\contentsline {section}{\numberline {A.2}Models and the real world}{89}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Closure: Complexity vs Realism}{89}{section.A.3}%
-\contentsline {chapter}{Bibliography}{90}{appendix*.29}%
-\contentsline {chapter}{\numberline {A}Mathematical Compendia}{110}{appendix.A}%
+\contentsline {section}{\numberline {1.2}theories of individual particle movements}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Motivation: tracers and rudiments}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2} Einstein 1937}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}First extensions of the Einstein model}{7}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Inclusion of the movement duration}{8}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}The Newtonian approach}{11}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Langevin models for the sediment velocity distribution}{12}{subsection.1.2.6}%
+\contentsline {section}{\numberline {1.3}Bedload transport foundations}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Bulk bedload flux}{14}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Bagnold's energy balance}{14}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Discrete particle models}{15}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}The probabilistic approach of Einstein}{15}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}From transport to landscape evolution}{15}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Exner's approach}{15}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Tusjimoto and beyond}{16}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Realism versus complexity}{16}{section.1.5}%
+\contentsline {section}{\numberline {1.6}The point of the thesis}{16}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Open problems in the stochastic paradigm}{16}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Quantities of interest}{16}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Tools of the trade}{16}{subsection.1.6.3}%
+\contentsline {subsubsection}{The Langevin equation}{16}{subsubsection*.10}%
+\contentsline {subsubsection}{Master equations and probability flow}{17}{subsubsection*.11}%
+\contentsline {subsubsection}{Idealized noises}{17}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {1.6.4}Organization of the thesis}{17}{subsection.1.6.4}%
+\contentsline {section}{\numberline {1.7}Introduction: birth-death models for the probability distribution of bedload flux}{17}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Background: the foundational stochastic model of bedload transport}{22}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Scope: identifying future research directions}{27}{section.1.9}%
+\contentsline {subsection}{\numberline {1.9.1}recap}{27}{subsection.1.9.1}%
+\contentsline {subsection}{\numberline {1.9.2}Assumptions, calibraiton problems, and unclear aspects: A criticism of the birth-death approach}{30}{subsection.1.9.2}%
+\contentsline {chapter}{\numberline {2}Calculation of the sediment flux}{34}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{34}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Model development }{36}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Dynamical equation for bed load sediment transport}{37}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Derivation of the master equation for $P(x,t)$}{37}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Formalism for the downstream sediment flux}{38}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Results }{41}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Derivation of the position probability distribution and its moments}{41}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Calculation of the flux}{42}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Connection to earlier work}{43}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Discussion }{43}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}The role of stochasticity in landscape evolution}{43}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Methods to calculate the sediment flux}{43}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Outlook and future research}{43}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Conclusion }{43}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Analysis of the bed elevation}{44}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Stochastic model of bedload transport and bed elevations}{47}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Model solutions}{51}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Numerical simulations}{51}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Approximate solutions}{52}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Results}{55}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Probability distributions of bedload transport and bed elevations}{55}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Statistical moments}{56}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Collective entrainment and bedload activity fluctuations}{58}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Resting times of sediment undergoing burial}{60}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Discussion}{62}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Context}{62}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Contributions}{62}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Next steps}{64}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Conclusion}{66}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Inclusion of sediment burial}{67}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Bedload trajectories as a multi-state random walk}{70}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Model assumptions}{70}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Governing equations}{71}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Joint probability distribution}{71}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Positional variance}{74}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Diffusion exponents}{75}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Discussion}{77}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Local and intermediate ranges with comparison to earlier work}{77}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Global and geomorphic ranges with next steps for research}{78}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Conclusion}{80}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Collisional model of sediment velocity distributions}{81}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{81}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Model}{84}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Langevin equation}{87}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Chapman-Komogorov equation and particle-bed collision integral}{88}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Results}{89}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Derivation of the velocity distribution}{89}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Exponential and Gaussian regimes}{92}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Comparison with experimental data}{93}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Discussion}{94}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Conclusion}{96}{section.5.5}%
+\contentsline {section}{\numberline {.1}Derivation of Master Equation}{96}{section.Alph0.1}%
+\contentsline {section}{\numberline {.2}Derivation of Steady-state solution}{97}{section.Alph0.2}%
+\contentsline {section}{\numberline {.3}Calculation of the moments}{99}{section.Alph0.3}%
+\contentsline {section}{\numberline {.4}Weak and strong collision limits}{99}{section.Alph0.4}%
+\contentsline {chapter}{\numberline {A}Summary and future work}{101}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Key contributions}{101}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Probability distribution of the sediment flux}{101}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Inclusion of velocity fluctuations into Einstein's model of individual particle trajectories}{101}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Quantification of the control of bed elevation fluctuations on sediment transport fluctuations}{101}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Understanding of how sediment burial affects the downstream spreading of sediment tracer particles}{101}{subsection.A.1.4}%
+\contentsline {section}{\numberline {A.2}Models and the real world}{101}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Closure: Complexity vs Realism}{101}{section.A.3}%
+\contentsline {chapter}{Bibliography}{102}{appendix*.31}%
+\contentsline {chapter}{\numberline {A}Mathematical Compendia}{125}{appendix.A}%
