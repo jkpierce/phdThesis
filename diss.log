@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.24)  2 JUL 2021 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.24)  2 JUL 2021 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,35 +504,28 @@ Package babel Info: \l@australian = using hyphenrules for english
 Package babel Info: \l@newzealand = using hyphenrules for english
 (babel)             (\language0) on input line 108.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count292
-\c@Blindtext=\count293
-\c@blind@countparstart=\count294
-\blind@countxx=\count295
-\blindtext@numBlindtext=\count296
-\blind@countyy=\count297
-\c@blindlist=\count298
-\c@blindlistlevel=\count299
-\c@blindlist@level=\count300
-\blind@listitem=\count301
-\c@blind@listcount=\count302
-\c@blind@levelcount=\count303
-\blind@mathformula=\count304
-\blind@Mathformula=\count305
-\c@blind@randomcount=\count306
-\c@blind@randommax=\count307
-\c@blind@pangramcount=\count308
-\c@blind@pangrammax=\count309
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip98
+\LTright=\skip99
+\LTpre=\skip100
+\LTpost=\skip101
+\LTchunksize=\count292
+\LTcapwidth=\dimen191
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@cols=\count293
+\LT@rows=\count294
+\c@LT@tables=\count295
+\c@LT@chunks=\count296
+\LT@p@ftn=\toks28
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count310
-\l__pdf_internal_box=\box55
+\l__kernel_color_stack_int=\count297
+\l__pdf_internal_box=\box59
 )
 (./diss.aux (./abs.aux) (./laySum.aux) (./pref.aux) (./ack.aux) (./ch1intro.aux
 
@@ -590,39 +583,43 @@ LaTeX Warning: Label `sec:discussion' multiply defined.
 
 LaTeX Warning: Label `sec:conclusion' multiply defined.
 
-) (./ch6conc.aux) (./appendix.aux))
+) (./ch6conc.aux) (./app_ch2.aux) (./app_ch4.aux
+
+LaTeX Warning: Label `eq:nicedist' multiply defined.
+
+) (./app_ch3.aux) (./app_ch5.aux) (./app_mc.aux))
 \openout1 = `diss.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 365.
+LaTeX Font Info:    ... okay on input line 365.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen191
-\scratchbox=\box56
-\nofMPsegments=\count312
-\nofMParguments=\count313
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen192
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count298
+\scratchdimen=\dimen192
+\scratchbox=\box60
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen193
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -632,13 +629,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count317
+\c@lstlisting=\count304
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
 Package caption Info: End \AtBeginDocument code.
-Package backref Info: ** backref set up for natbib ** on input line 360.
-\AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 360.
+Package backref Info: ** backref set up for natbib ** on input line 365.
+\AtBeginShipoutBox=\box61
+Package hyperref Info: Link coloring OFF on input line 365.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -649,11 +651,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count318
+\c@section@level=\count305
 )
-LaTeX Info: Redefining \ref on input line 360.
-LaTeX Info: Redefining \pageref on input line 360.
-LaTeX Info: Redefining \nameref on input line 360.
+LaTeX Info: Redefining \ref on input line 365.
+LaTeX Info: Redefining \pageref on input line 365.
+LaTeX Info: Redefining \nameref on input line 365.
 
 (./diss.out) (./diss.out)
 \@outlinefile=\write4
@@ -689,6 +691,10 @@ LaTeX Warning: Reference `ch:downdiff' on page vi undefined on input line 8.
 Package natbib Warning: Citation `Geophysical Research Letters' on page vi unde
 fined on input line 8.
 
+
+Package natbib Warning: Citation `Pierce2020a' on page vi undefined on input li
+ne 8.
+
 ) [6
 
 
@@ -698,79 +704,90 @@ fined on input line 8.
 
 
 
-] [9] [10]
-Overfull \hbox (4.57472pt too wide) in paragraph at lines 90--90
- [][] []\OT1/cmr/m/n/10.95 Understanding of how sed-i-ment burial af-fects the 
-down- 
+] [9] [10] [11]
+Overfull \hbox (1.10722pt too wide) in paragraph at lines 94--94
+ [][] []\OT1/cmr/m/n/10.95 Predicting how sed-i-ment burial af-fects the down-s
+tream 
  []
 
-[11])
+[12])
 \tf@toc=\write5
 \openout5 = `diss.toc'.
 
- [12] (./diss.lot)
+ [13] (./diss.lot)
 \tf@lot=\write6
 \openout6 = `diss.lot'.
 
- [13
+ [14
 
 
 ] (./diss.lof
 
-LaTeX Warning: Reference `eq:lislerando' on page xiv undefined on input line 8.
+LaTeX Warning: Reference `eq:lislerando' on page xv undefined on input line 9.
 
 
-
-Overfull \hbox (4.67851pt too wide) in paragraph at lines 10--10
+Overfull \hbox (4.67851pt too wide) in paragraph at lines 11--11
  [][] []\OT1/cmr/m/n/10.95 Einstein's con-cep-tual pic-ture (mod-i-fied from []
 []\OT1/cmr/m/it/10.95 Yalin[] \OT1/cmr/m/n/10.95 ([]1972[])). 
  []
 
-[14
+[15
 
 
-] [15] [16]
-Overfull \hbox (2.79532pt too wide) in paragraph at lines 19--19
+] [16] [17]
+Overfull \hbox (2.79532pt too wide) in paragraph at lines 20--20
  \OT1/cmr/m/n/10.95 layer depth $\OML/cmm/m/it/10.95 l$ \OT1/cmr/m/n/10.95 char
 -ac-ter-izes bed el-e-va-tion changes as posited 
  []
 
-[17]
-Overfull \hbox (1.06667pt too wide) in paragraph at lines 22--22
+[18]
+Overfull \hbox (1.06667pt too wide) in paragraph at lines 23--23
  \OT1/cmr/m/n/10.95 con-di-tions and the bed el-e-va-tion vari-ance. Panel (a) 
 shows 
  []
 
-[18]
-Overfull \hbox (1.2039pt too wide) in paragraph at lines 25--25
+[19]
+Overfull \hbox (1.2039pt too wide) in paragraph at lines 26--26
  \OT1/cmr/m/n/10.95 trans-port-ing small ($5$ mm) grav-els ([][]\OT1/cmr/m/it/1
 0.95 La-je-unesse et al.[]\OT1/cmr/m/n/10.95 , []2010[]; 
  []
 
-[19]
-Overfull \hbox (11.86458pt too wide) in paragraph at lines 28--28
+[20]
+Overfull \hbox (11.86458pt too wide) in paragraph at lines 29--29
  \OT1/cmr/m/n/10.95 di-vid-ual re-al-iza-tions are sin-gled out as black traces
 . Particle- 
  []
 
 
-Overfull \hbox (9.0358pt too wide) in paragraph at lines 28--28
+Overfull \hbox (9.0358pt too wide) in paragraph at lines 29--29
  \OT1/cmr/m/n/10.95 bed col-li-sions im-ply sud-den downward-velocity jumps. Fl
 ow 
  []
 
-[20])
+[21])
 \tf@lof=\write7
 \openout7 = `diss.lof'.
 
- [21]
+ [22] (./glossary.tex
+Overfull \hbox (62.33858pt too wide) in alignment at lines 6--8
+[] [] 
+ []
+
+
+Overfull \hbox (62.33858pt too wide) in alignment at lines 8--11
+[] [] 
+ []
+
+) [23
+
+
+]
 \openout2 = `ack.aux'.
 
- (./ack.tex [22
+ (./ack.tex [24
 
 
-
-] [23] [24] [25]) [26]
+] [25] [26] [27]) [28]
 \openout2 = `ch1intro.aux'.
 
  (./ch1intro.tex
@@ -860,7 +877,7 @@ Package natbib Warning: Citation `Kubo1978' on page 6 undefined on input line 8
 Package natbib Warning: Citation `Goldstein1956' on page 6 undefined on input l
 ine 87.
 
-<./figures/ch1/einsteinConcept.pdf, id=923, 397.485pt x 130.086pt>
+<./figures/ch1/einsteinConcept.pdf, id=1026, 397.485pt x 130.086pt>
 File: ./figures/ch1/einsteinConcept.pdf Graphic file (type pdf)
 <use ./figures/ch1/einsteinConcept.pdf>
 Package pdftex.def Info: ./figures/ch1/einsteinConcept.pdf  used on input line 
@@ -896,7 +913,7 @@ Package natbib Warning: Citation `Cox1965' on page 9 undefined on input line 12
 LaTeX Warning: Reference `eq:lislelangevin' on page 9 undefined on input line 1
 21.
 
-<./figures/ch1/lisleConcept.pdf, id=1041, 397.485pt x 130.086pt>
+<./figures/ch1/lisleConcept.pdf, id=1144, 397.485pt x 130.086pt>
 File: ./figures/ch1/lisleConcept.pdf Graphic file (type pdf)
 <use ./figures/ch1/lisleConcept.pdf>
 Package pdftex.def Info: ./figures/ch1/lisleConcept.pdf  used on input line 127
@@ -943,7 +960,7 @@ Package natbib Warning: Citation `Risken1984' on page 12 undefined on input lin
 e 158.
 
 [12]
-<./figures/ch1/fanAncey.pdf, id=1180, 397.485pt x 216.81pt>
+<./figures/ch1/fanAncey.pdf, id=1283, 397.485pt x 216.81pt>
 File: ./figures/ch1/fanAncey.pdf Graphic file (type pdf)
 <use ./figures/ch1/fanAncey.pdf>
 Package pdftex.def Info: ./figures/ch1/fanAncey.pdf  used on input line 174.
@@ -957,7 +974,7 @@ e 201.
 LaTeX Warning: Reference `fig:einsteinFluxConcept' on page 15 undefined on inpu
 t line 210.
 
-<./figures/ch1/yalinDrawing.pdf, id=1288, 397.485pt x 126.4725pt>
+<./figures/ch1/yalinDrawing.pdf, id=1390, 397.485pt x 126.4725pt>
 File: ./figures/ch1/yalinDrawing.pdf Graphic file (type pdf)
 <use ./figures/ch1/yalinDrawing.pdf>
 Package pdftex.def Info: ./figures/ch1/yalinDrawing.pdf  used on input line 212
@@ -1033,7 +1050,7 @@ Package natbib Warning: Citation `Lajeunesse2012' on page 23 undefined on input
 Package natbib Warning: Citation `Cox1967' on page 24 undefined on input line 3
 41.
 
-<./figures/ch1/anceyRenewal.pdf, id=1517, 397.485pt x 130.086pt>
+<./figures/ch1/anceyRenewal.pdf, id=1619, 397.485pt x 130.086pt>
 File: ./figures/ch1/anceyRenewal.pdf Graphic file (type pdf)
 <use ./figures/ch1/anceyRenewal.pdf>
 Package pdftex.def Info: ./figures/ch1/anceyRenewal.pdf  used on input line 344
@@ -1131,7 +1148,7 @@ Package natbib Warning: Citation `Loginov1978' on page 33 undefined on input li
 ne 50.
 
 [33]
-<./figures/ch2/figure1.pdf, id=1734, 397.485pt x 198.7425pt>
+<./figures/ch2/figure1.pdf, id=1836, 397.485pt x 198.7425pt>
 File: ./figures/ch2/figure1.pdf Graphic file (type pdf)
 <use ./figures/ch2/figure1.pdf>
 Package pdftex.def Info: ./figures/ch2/figure1.pdf  used on input line 60.
@@ -1141,7 +1158,7 @@ Package pdftex.def Info: ./figures/ch2/figure1.pdf  used on input line 60.
 Package natbib Warning: Citation `Cox1965' on page 36 undefined on input line 8
 2.
 
-<figures/ch2/figure2_slopeKey.pdf, id=1783, 397.485pt x 137.313pt>
+<figures/ch2/figure2_slopeKey.pdf, id=1885, 397.485pt x 137.313pt>
 File: figures/ch2/figure2_slopeKey.pdf Graphic file (type pdf)
 <use figures/ch2/figure2_slopeKey.pdf>
 Package pdftex.def Info: figures/ch2/figure2_slopeKey.pdf  used on input line 9
@@ -1163,7 +1180,7 @@ cmm/m/it/10.95 e[] \OT1/cmr/m/n/10.95 + [][][[] + \OML/cmm/m/it/10.95 k\OT1/cmr
 
 LaTeX Warning: Reference `eq:fluxdist' on page 40 undefined on input line 149.
 
-<figures/ch2/figure3_slopeKey.pdf, id=2166, 180.675pt x 126.4725pt>
+<figures/ch2/figure3_slopeKey.pdf, id=2268, 180.675pt x 126.4725pt>
 File: figures/ch2/figure3_slopeKey.pdf Graphic file (type pdf)
 <use figures/ch2/figure3_slopeKey.pdf>
 Package pdftex.def Info: figures/ch2/figure3_slopeKey.pdf  used on input line 1
@@ -1308,7 +1325,7 @@ Package natbib Warning: Citation `Sawai1987' on page 48 undefined on input line
  32.
 
 [48]
-<./figures/ch3/definition-combo.pdf, id=2763, 384.1122pt x 227.62204pt>
+<./figures/ch3/definition-combo.pdf, id=2865, 384.1122pt x 227.62204pt>
 File: ./figures/ch3/definition-combo.pdf Graphic file (type pdf)
 <use ./figures/ch3/definition-combo.pdf>
 Package pdftex.def Info: ./figures/ch3/definition-combo.pdf  used on input line
@@ -1414,14 +1431,14 @@ n$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 m$ \OT1/cmr/m/n/10.95 which sup-
 port a time-independent
  []
 
-<./figures/ch3/distributions.pdf, id=2965, 398.9304pt x 166.22101pt>
+<./figures/ch3/distributions.pdf, id=3067, 398.9304pt x 166.22101pt>
 File: ./figures/ch3/distributions.pdf Graphic file (type pdf)
 <use ./figures/ch3/distributions.pdf>
 Package pdftex.def Info: ./figures/ch3/distributions.pdf  used on input line 19
 8.
 (pdftex.def)             Requested size: 360.0pt x 150.00839pt.
 [57]
-<./figures/ch3/variance.pdf, id=2978, 198.7425pt x 198.7425pt>
+<./figures/ch3/variance.pdf, id=3081, 198.7425pt x 198.7425pt>
 File: ./figures/ch3/variance.pdf Graphic file (type pdf)
 <use ./figures/ch3/variance.pdf>
 Package pdftex.def Info: ./figures/ch3/variance.pdf  used on input line 215.
@@ -1436,14 +1453,14 @@ Underfull \hbox (badness 1102) in paragraph at lines 216--216
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/ch3/variance.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >]
-<./figures/ch3/momentsuppression.pdf, id=3068, 398.9304pt x 189.96686pt>
+<./figures/ch3/momentsuppression.pdf, id=3170, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/momentsuppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/momentsuppression.pdf>
 Package pdftex.def Info: ./figures/ch3/momentsuppression.pdf  used on input lin
 e 226.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
  [59]
-<./figures/ch3/colent-suppression.pdf, id=3096, 398.9304pt x 189.96686pt>
+<./figures/ch3/colent-suppression.pdf, id=3197, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/colent-suppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/colent-suppression.pdf>
 Package pdftex.def Info: ./figures/ch3/colent-suppression.pdf  used on input li
@@ -1451,7 +1468,7 @@ ne 241.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
  [60 <./figures/ch3/momentsuppression.pdf>] [61 <./figures/ch3/colent-suppressi
 on.pdf>]
-<./figures/ch3/rtcdf.pdf, id=3215, 398.9304pt x 306.86955pt>
+<./figures/ch3/rtcdf.pdf, id=3317, 398.9304pt x 306.86955pt>
 File: ./figures/ch3/rtcdf.pdf Graphic file (type pdf)
 <use ./figures/ch3/rtcdf.pdf>
 Package pdftex.def Info: ./figures/ch3/rtcdf.pdf  used on input line 251.
@@ -1544,7 +1561,7 @@ Package natbib Warning: Citation `Lajeunesse2018' on page 72 undefined on input
  line 52.
 
 [72] [73] [74]
-<./figures/ch4/pdf-plot.png, id=3684, 385.9218pt x 164.5347pt>
+<./figures/ch4/pdf-plot.png, id=3786, 385.9218pt x 164.5347pt>
 File: ./figures/ch4/pdf-plot.png Graphic file (type png)
 <use ./figures/ch4/pdf-plot.png>
 Package pdftex.def Info: ./figures/ch4/pdf-plot.png  used on input line 94.
@@ -1562,7 +1579,7 @@ Package natbib Warning: Citation `Nakagawa1980' on page 76 undefined on input l
 ine 148.
 
 [76]
-<./figures/ch4/diffusion.png, id=3759, 380.98335pt x 308.71335pt>
+<./figures/ch4/diffusion.png, id=3862, 380.98335pt x 308.71335pt>
 File: ./figures/ch4/diffusion.png Graphic file (type png)
 <use ./figures/ch4/diffusion.png>
 Package pdftex.def Info: ./figures/ch4/diffusion.png  used on input line 151.
@@ -1615,7 +1632,7 @@ ine 47.
 
 LaTeX Warning: Reference `fig:1' on page 87 undefined on input line 48.
 
-<./figures/ch5/Fig1Concept.png, id=4083, 361.35pt x 162.6075pt>
+<./figures/ch5/Fig1Concept.png, id=4185, 361.35pt x 162.6075pt>
 File: ./figures/ch5/Fig1Concept.png Graphic file (type png)
 <use ./figures/ch5/Fig1Concept.png>
 Package pdftex.def Info: ./figures/ch5/Fig1Concept.png  used on input line 51.
@@ -1662,10 +1679,6 @@ Package natbib Warning: Citation `Suweiss2011' on page 90 undefined on input li
 ne 87.
 
 
-LaTeX Warning: Reference `sec:appendixA' on page 90 undefined on input line 93.
-
-
-
 Overfull \hbox (0.353pt too wide) in paragraph at lines 93--94
 \OT1/cmr/m/n/10.95 We de-rive the equa-tion gov-ern-ing the stream-wise ve-loc-
 ity dis-tri-bu-tion $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.
@@ -1703,12 +1716,12 @@ ine 117.
 Package natbib Warning: Citation `Cox1965' on page 93 undefined on input line 1
 26.
 
-<./figures/ch5/Fig2pdfs.png, id=4219, 319.37317pt x 232.89008pt>
+<./figures/ch5/Fig2pdfs.png, id=4322, 319.37317pt x 232.89008pt>
 File: ./figures/ch5/Fig2pdfs.png Graphic file (type png)
 <use ./figures/ch5/Fig2pdfs.png>
 Package pdftex.def Info: ./figures/ch5/Fig2pdfs.png  used on input line 138.
 (pdftex.def)             Requested size: 319.37238pt x 232.8895pt.
-<./figures/ch5/Fig3asymptotic.png, id=4228, 312.50752pt x 122.91922pt>
+<./figures/ch5/Fig3asymptotic.png, id=4331, 312.50752pt x 122.91922pt>
 File: ./figures/ch5/Fig3asymptotic.png Graphic file (type png)
 <use ./figures/ch5/Fig3asymptotic.png>
 Package pdftex.def Info: ./figures/ch5/Fig3asymptotic.png  used on input line 1
@@ -1718,12 +1731,8 @@ Package pdftex.def Info: ./figures/ch5/Fig3asymptotic.png  used on input line 1
 
 LaTeX Warning: Reference `eq:2ndmom' on page 95 undefined on input line 159.
 
-
-LaTeX Warning: Reference `sec:appendixB' on page 95 undefined on input line 159
-.
-
 [95 <./figures/ch5/Fig3asymptotic.png>]
-<./figures/ch5/Fig4expComparison.png, id=4261, 388.99327pt x 203.19914pt>
+<./figures/ch5/Fig4expComparison.png, id=4366, 388.99327pt x 203.19914pt>
 File: ./figures/ch5/Fig4expComparison.png Graphic file (type png)
 <use ./figures/ch5/Fig4expComparison.png>
 Package pdftex.def Info: ./figures/ch5/Fig4expComparison.png  used on input lin
@@ -1781,103 +1790,562 @@ Chapter 6.
 
 
 
-] (./diss.bbl (./diss.brf)
+]
+Overfull \vbox (45.8604pt too high) has occurred while \output is active []
+
+
+[101] (./diss.bbl (./diss.brf)
 \tf@brf=\write8
 \openout8 = `diss.brf'.
 
- [101
+ [102
 
 
 ]
-Overfull \hbox (99.59642pt too wide) in paragraph at lines 57--57
-[]\OT1/cmr/m/n/10.95 xiii[], []xvii[], []15[], []22[], []23[], []27[], []30[], 
+Overfull \hbox (124.23396pt too wide) in paragraph at lines 57--57
+[]\OT1/cmr/m/n/10.95 xiv[], []xviii[], []15[], []22[], []23[], []27[], []30[], 
 []31[], []42[], []47[], []48[], []49[], []50[], []51[], []52[], []53[], []54[],
  []55[], []56[], []59[], []60[], []61[], []64[], []65[], []66[], []83[], []84[]
-[]  
+, []136[][]  
  []
 
-[102] [103] [104] [105]
-Overfull \hbox (10.47546pt too wide) in paragraph at lines 335--335
-[]\OT1/cmr/m/n/10.95 xix[], []5[], []7[], []8[], []16[], []26[], []30[], []37[]
-, []41[], []45[], []46[], []47[], []64[], []69[], []70[], []71[], []72[], []74[
-], []75[], []76[], []79[], []80[], []81[][]  
+[103] [104] [105] [106]
+Overfull \hbox (7.43379pt too wide) in paragraph at lines 340--340
+[]\OT1/cmr/m/n/10.95 xx[], []5[], []7[], []8[], []16[], []26[], []30[], []37[],
+ []41[], []45[], []46[], []47[], []64[], []69[], []70[], []71[], []72[], []74[]
+, []75[], []76[], []79[], []80[], []81[][]  
  []
 
-[106] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116] [117]
-[118] [119] [120] [121] [122]) [123]
-\openout2 = `app_ch1.aux'.
-
- (./app_ch1.tex
-Appendix A.
-[124
-
-
-]
-
-Package natbib Warning: Citation `VanKampen1983' on page 125 undefined on input
- line 32.
-
-
-LaTeX Warning: Reference `eq:detlangevin' on page 125 undefined on input line 3
-5.
-
-[125]
-Overfull \hbox (1.8479pt too wide) in paragraph at lines 44--46
-\OT1/cmr/m/n/10.95 where the co-ef-fi-cients $\OML/cmm/m/it/10.95 R[]$ \OT1/cmr
-/m/n/10.95 are the residues of the prod-uct $[\OML/cmm/m/it/10.95 q\OT1/cmr/m/n
-/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 ) [] \OML/cmm/m/it/10.95 q\O
-T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 )][]$: 
+[107] [108] [109] [110] [111] [112]
+Overfull \hbox (8.6505pt too wide) in paragraph at lines 688--688
+[]\OT1/cmr/m/n/10.95 xvii[], []xx[], []8[], []9[], []26[], []27[], []30[], []31
+[], []33[], []34[], []37[], []41[], []42[], []45[], []71[], []72[], []74[], []7
+5[], []80[], []81[], []82[], []130[][]  
  []
 
-[126]
-
-Package natbib Warning: Citation `Hall1970' on page 127 undefined on input line
- 64.
-
-
-Overfull \hbox (24.85725pt too wide) detected at line 70
-[]\OT1/cmr/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 "[]\OT1/cmr
-/m/n/10.95 )[]\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\
-OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ []\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m
-/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \OM
-L/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95 )
- + []\OML/cmm/m/it/10.95 Q[]z \OT1/cmr/m/n/10.95 + [][]\OML/cmm/m/it/10.95 z \O
-T1/cmr/m/n/10.95 + [][][] = 0
- []
-
-[127]) [128]
+[113] [114] [115] [116] [117] [118] [119] [120] [121] [122] [123]) [124]
 \openout2 = `app_ch2.aux'.
 
- (./app_ch2.tex
+
+(./app_ch2.tex
+Appendix A.
+) [125
+
+
+]
+\openout2 = `app_ch4.aux'.
+
+ (./app_ch4.tex
 Appendix B.
-[129
+
+Package natbib Warning: Citation `Kittel1958' on page 126 undefined on input li
+ne 18.
+
+[126
+
+
+
+] [127]
+
+Package natbib Warning: Citation `Prudnikov1992a' on page 128 undefined on inpu
+t line 60.
+
+[128]
+Overfull \hbox (39.14093pt too wide) detected at line 77
+[]
+ []
+
+[129]
+
+Package natbib Warning: Citation `Lajeunesse2018' on page 130 undefined on inpu
+t line 104.
+
+[130]) [131] [132]
+\openout2 = `app_ch3.aux'.
+
+ (./app_ch3.tex
+Appendix C.
+
+Package natbib Warning: Citation `Gillespie1992' on page 133 undefined on input
+ line 9.
+
+
+Package natbib Warning: Citation `Cox1965' on page 133 undefined on input line 
+10.
+
+[133
+
+
+
+] [134]
+Overfull \hbox (112.80997pt too wide) detected at line 32
+[]\OML/cmm/m/it/10.95 S \OT1/cmr/m/n/10.95 = [][]\OML/cmm/m/it/10.95 ; []; []; 
+[][]:
+ []
+
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 42--43
+[][] 
+ []
+
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \begin{algorithmic}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.45 	\State
+             $t = 0$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 	\State
+             $n = n_0$\Comment{Set the initial state $(n_0,m_0)$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 	\State $n = n_0$\Comment
+                              {Set the initial state $(n_0,m_0)$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.47 	\State
+             $m =  m_0$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 	\While
+            {$t<t_{\text{max}}$;}{	\Comment{Simulation will go until $t$ sur...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 	\While{$t<t_{\text{max}}$;}{	\Comment
+                                           {Simulation will go until $t$ sur...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.50 		\State
+              record $(n,m,t)$ \Comment{Build time series of $n$ and $m$}		
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.50 		\State record $(n,m,t)$ \Comment
+                                       {Build time series of $n$ and $m$}		
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51 		\State
+              draw $\tau$ from eq. (\ref{eq:exp}) \Comment{Select time to ne...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51 ...aw $\tau$ from eq. (\ref{eq:exp}) \Comment
+                                                  {Select time to next trans...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 		\State
+              $t \coloneqq t+\tau$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 		\State $t \coloneqq
+                           t+\tau$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 		\State
+              draw a random number $r$ in $[0,1]$ \Comment{Select type of tr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 ...aw a random number $r$ in $[0,1]$ \Comment
+                                                  {Select type of transition...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 		\State
+              compute the ratios $r_1,r_2,r_3,r_4$ in eq. (\ref{eq:rel})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.55 		\State
+              form the cumulative sums $r_i = \sum_{1\leq j\leq i}r_j$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.56 		\Comment
+               {Now enact the transition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.57 		\If
+           {$0\leq r<r_1$}	\Comment{Migration in}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.57 		\If {$0\leq r<r_1$}	\Comment
+                                   {Migration in}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.58 		\State
+              $n \coloneqq n+1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.58 		\State $n \coloneqq
+                           n+1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.59 		\ElsIf
+              {$r_1\leq r < r_2$} 	\Comment{Entrainment}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.59 		\ElsIf {$r_1\leq r < r_2$} 	\Comment
+                                           {Entrainment}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.60 		\State
+              $n \coloneqq n + 1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.60 		\State $n \coloneqq
+                           n + 1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.61 		\State
+              $m \coloneqq m-1 $
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.61 		\State $m \coloneqq
+                           m-1 $
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.62 		\ElsIf
+              {$r_2\leq r < r_3$} 	\Comment{Deposition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.62 		\ElsIf {$r_2\leq r < r_3$} 	\Comment
+                                           {Deposition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.63 		\State
+              $ n \coloneqq n - 1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.63 		\State $ n \coloneqq
+                            n - 1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.64 		\State
+              $ m \coloneqq m + 1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.64 		\State $ m \coloneqq
+                            m + 1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.65 		\ElsIf
+              {$r_3 \leq r \leq 1$} \Comment{ Migration out}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.65 		\ElsIf {$r_3 \leq r \leq 1$} \Comment
+                                            { Migration out}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.66 		\State
+              $ n \coloneqq n-1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.66 		\State $ n \coloneqq
+                            n-1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.67 		\EndIf
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.69 	\EndWhile
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{algorithmic}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[135]
+Overfull \hbox (97.84091pt too wide) detected at line 77
+[]\OT1/cmr/m/n/10.95 0 = \OML/cmm/m/it/10.95 ^^WA\OT1/cmr/m/n/10.95 (\OML/cmm/m
+/it/10.95 n \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1) + [\OML/cmm/m/it/10.9
+5 ^^U \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^V\OT1/cmr/m/n/10.95 (\OML/cmm/
+m/it/10.95 n \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1)]\OML/cmm/m/it/10.95 
+A\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n
+/10.95 1) + \OML/cmm/m/it/10.95 ^^[\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n \O
+T1/cmr/m/n/10.95 + 1)\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.
+95 n \OT1/cmr/m/n/10.95 + 1) + \OML/cmm/m/it/10.95 ^^M\OT1/cmr/m/n/10.95 (\OML/
+cmm/m/it/10.95 n \OT1/cmr/m/n/10.95 + 1)\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95
+ (\OML/cmm/m/it/10.95 n \OT1/cmr/m/n/10.95 + 1) \OMS/cmsy/m/n/10.95 ^^@ \OT1/cm
+r/m/n/10.95 (\OML/cmm/m/it/10.95 ^^W \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^
+^U \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^Vn \OT1/cmr/m/n/10.95 + \OML/cmm/
+m/it/10.95 ^^[n \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^Mn\OT1/cmr/m/n/10.95
+ )\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n\OT1/cmr/m/n/10
+.95 )\OML/cmm/m/it/10.95 :
+ []
+
+
+Package natbib Warning: Citation `Cox1965' on page 136 undefined on input line 
+78.
+
+[136]
+Overfull \hbox (33.33513pt too wide) in paragraph at lines 97--99
+\OT1/cmr/m/n/10.95 Taking into ac-count that this dis-tri-bu-tion should be nor
+-mal-iz-able, $[][] \OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.9
+5 z\OT1/cmr/m/n/10.95 ) =
+ []
+
+[137]
+Overfull \hbox (15.37517pt too wide) in paragraph at lines 104--106
+\OT1/cmr/m/n/10.95 for the mean par-ti-cle ac-tiv-ity con-di-tional to the el-e
+-va-tion $\OML/cmm/m/it/10.95 m$ \OT1/cmr/m/n/10.95 into into manuscript
+ []
+
+
+Overfull \hbox (58.37712pt too wide) detected at line 107
+[]\OT1/cmr/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^^Y []\OT1/cmr/m/n/10.95 1 + \OML/cm
+m/m/it/10.95 ^^T\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m \OT1/cmr/m/n/10.95 + 
+1)[]1 \OMS/cmsy/m/n/10.95 ^^@ [][][]\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 (\O
+ML/cmm/m/it/10.95 m \OT1/cmr/m/n/10.95 + 1) + []1 \OMS/cmsy/m/n/10.95 ^^@ \OML/
+cmm/m/it/10.95 ^^T\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95
+ ^^@ \OT1/cmr/m/n/10.95 1)[]1 + [][][] \OMS/cmsy/m/n/10.95 ^^@ []\OT1/cmr/m/n/1
+0.95 2 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^Tm[][][][]M\OT1/cmr/m/n/10
+.95 (\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 )
+ []
+
+) [138]
+\openout2 = `app_ch5.aux'.
+
+ (./app_ch5.tex
+Appendix D.
+[139
 
 
 
 ]
 
-Package natbib Warning: Citation `VanKampen1983' on page 130 undefined on input
- line 32.
+Package natbib Warning: Citation `VanKampen1983' on page 140 undefined on input
+ line 26.
 
 
-LaTeX Warning: Reference `eq:detlangevin' on page 130 undefined on input line 3
-5.
+LaTeX Warning: Reference `eq:detlangevin' on page 140 undefined on input line 2
+9.
 
-[130]
-Overfull \hbox (1.8479pt too wide) in paragraph at lines 44--46
+
+Overfull \hbox (1.8479pt too wide) in paragraph at lines 38--40
 \OT1/cmr/m/n/10.95 where the co-ef-fi-cients $\OML/cmm/m/it/10.95 R[]$ \OT1/cmr
 /m/n/10.95 are the residues of the prod-uct $[\OML/cmm/m/it/10.95 q\OT1/cmr/m/n
 /10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 ) [] \OML/cmm/m/it/10.95 q\O
 T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 )][]$: 
  []
 
-[131]
+[140] [141]
 
-Package natbib Warning: Citation `Hall1970' on page 132 undefined on input line
- 64.
+Package natbib Warning: Citation `Hall1970' on page 142 undefined on input line
+ 58.
 
 
-Overfull \hbox (24.85725pt too wide) detected at line 70
+Overfull \hbox (24.85725pt too wide) detected at line 64
 []\OT1/cmr/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 "[]\OT1/cmr
 /m/n/10.95 )[]\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\
 OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ []\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m
@@ -1887,44 +2355,48 @@ L/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95 )
 T1/cmr/m/n/10.95 + [][][] = 0
  []
 
-[132]) [133]
+) [142]
+\openout2 = `app_mc.aux'.
+
+ (./app_mc.tex
+Appendix E.
+) [143
+
+
+
+]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 414.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 414.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
 (./diss.aux (./abs.aux) (./laySum.aux) (./pref.aux) (./ack.aux) (./ch1intro.aux
 ) (./ch2flipFlop.aux) (./ch3bedEle.aux) (./ch4downDiff.aux) (./ch5langevin.aux)
-(./ch6conc.aux) (./app_ch1.aux) (./app_ch2.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 414.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 414.
-
-
-Package rerunfilecheck Warning: File `diss.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `diss.out':
-(rerunfilecheck)             Before: B8D1097AC6C4E1EAB1BDB1306528B58D;9295
-(rerunfilecheck)             After:  25CF9AB4F4C0206F0B832C2ACC6F4010;10162.
+(./ch6conc.aux) (./app_ch2.aux) (./app_ch4.aux) (./app_ch3.aux) (./app_ch5.aux)
+(./app_mc.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
+Package rerunfilecheck Info: File `diss.out' has not changed.
+(rerunfilecheck)             Checksum: FFE9E5EB21D656970CCCD685DDDDC988;10780.
 Package rerunfilecheck Info: File `diss.brf' has not changed.
-(rerunfilecheck)             Checksum: BFE5D260A226AA51F34241344AF6D44C;36833.
+(rerunfilecheck)             Checksum: 01408F3316165B573CC7F2231E269E99;37771.
+
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 414.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
  ) 
 Here is how much of TeX's memory you used:
- 14350 strings out of 483183
- 216287 string characters out of 5966292
- 547306 words of memory out of 5000000
- 28325 multiletter control sequences out of 15000+600000
+ 14413 strings out of 483183
+ 216479 string characters out of 5966292
+ 540060 words of memory out of 5000000
+ 28315 multiletter control sequences out of 15000+600000
  542069 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,20n,46p,1672b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,20n,46p,1672b,1284s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/kp/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
@@ -1942,10 +2414,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on diss.pdf (159 pages, 4414049 bytes).
+Output written on diss.pdf (171 pages, 4448337 bytes).
 PDF statistics:
- 5374 PDF objects out of 6186 (max. 8388607)
- 4608 compressed objects within 47 object streams
- 692 named destinations out of 1000 (max. 500000)
- 917 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5613 PDF objects out of 6186 (max. 8388607)
+ 4833 compressed objects within 49 object streams
+ 741 named destinations out of 1000 (max. 500000)
+ 1061 words of extra memory for PDF output out of 10000 (max. 10000000)
 

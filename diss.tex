@@ -90,6 +90,8 @@
 \newcommand\mci{\mathcal{I}} % mathcal{I} for bessel functions
 
 
+
+
 %% The pifont package provides access to the elements in the dingbat font.   
 %% Use \ding{##} for a particular dingbat (see p7 of psnfss2e.pdf)
 %%   Useful:
@@ -354,7 +356,13 @@
 
 
 \usepackage[english]{babel}
-\usepackage{blindtext} % for making jibberjabber text
+
+%% this part is for nomenclature entry in the list of notation section (from glossary)
+%% https://tex.stackexchange.com/questions/490666/customize-list-of-symbols
+\usepackage{longtable}
+\newcommand\nom[2]{#1 & #2 \\}  % use this to input new nomenclature entries 
+\usepackage{array}
+
 
 
 \begin{document}
@@ -383,12 +391,14 @@
 
 \textspacing		% begin one-half or double spacing
 
+\input{glossary}
+
 \include{ack}
 
 % Body of Thesis (not all sections may apply)
 \mainmatter
 
-\acresetall	% reset all acronyms used so far
+%\acresetall	% reset all acronyms used so far
 
 % CHAPTERS
 \include{ch1intro}
@@ -406,10 +416,11 @@
 \end{singlespace}
 \appendix
 
-\include{app_ch1}
+
 \include{app_ch2}
-\include{app_ch3}
 \include{app_ch4}
+\include{app_ch3}
+\include{app_ch5}
 \include{app_mc}
 
 \backmatter

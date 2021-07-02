@@ -1,4 +1,4 @@
-\begin{thebibliography}{238}
+\begin{thebibliography}{239}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{\it Aberle and Nikora\/}(2006)}]{Aberle2006}
@@ -152,6 +152,11 @@ Bena, I., {Dichotomous Markov noise: Exact results for out-of-equilibrium
 \bibitem[{{\it Bennett\/}(1972)}]{Bennett1972}
 Bennett, C.~H., {Serially deposited amorphous aggregates of hard spheres}, {\it
   Journal of Applied Physics\/}, {\it 43\/}, 2727--2734, 1972.
+
+\bibitem[{{\it Berezhkovskii and Weiss\/}(2002)}]{Berezhkovskii2002}
+Berezhkovskii, A.~M., and G.~H. Weiss, {Detailed description of a two-state
+  non-Markov system}, {\it Physica A: Statistical Mechanics and its
+  Applications\/}, {\it 303\/}, 1--12, 2002.
 
 \bibitem[{{\it Bialik et~al.\/}(2012){\it Bialik, Nikora, and
   Rowi{\'{n}}ski\/}}]{Bialik2012}

@@ -16,8 +16,11 @@ A level-1 auxiliary file: ch4downDiff.aux
 A level-1 auxiliary file: ch5langevin.aux
 A level-1 auxiliary file: ch6conc.aux
 The style file: ./agu.bst
-A level-1 auxiliary file: appendix.aux
-Reallocated field_info (elt_size=4) to 12751 items from 5000.
+A level-1 auxiliary file: app_ch2.aux
+A level-1 auxiliary file: app_ch4.aux
+A level-1 auxiliary file: app_ch5.aux
+A level-1 auxiliary file: app_mc.aux
+Reallocated field_info (elt_size=4) to 12820 items from 5000.
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "Slaymaker2020"
 Warning--I didn't find a database entry for "Church2005"
@@ -117,6 +120,8 @@ Warning--I didn't find a database entry for "Marshall2001"
 Warning--I didn't find a database entry for "Skylar2004"
 Warning--I didn't find a database entry for "Tingian"
 Warning--I didn't find a database entry for "Turowski2020"
+Warning--I didn't find a database entry for "Kittel1958"
+Warning--I didn't find a database entry for "Prudnikov1992a"
 Warning--I didn't find a database entry for "VanKampen1983"
 Warning--empty publisher in Armanini2017
 Warning--empty publisher in Bagnold1941
@@ -128,45 +133,45 @@ Warning--can't use both volume and number fields in Redner2007
 Warning--empty publisher in Santos2014
 Warning--can't use both volume and number fields in Temme1996
 Warning--empty publisher in Yano1969
-You've used 238 entries,
+You've used 239 entries,
             2789 wiz_defined-function locations,
-            2624 strings with 50280 characters,
-and the built_in function-call counts, 207042 in all, are:
-= -- 26608
-> -- 7775
-< -- 146
-+ -- 4321
-- -- 1866
-* -- 13808
-:= -- 20067
-add.period$ -- 238
-call.type$ -- 238
-change.case$ -- 1325
-chr.to.int$ -- 234
-cite$ -- 724
-duplicate$ -- 18493
-empty$ -- 9667
-format.name$ -- 2591
-if$ -- 41590
+            2637 strings with 50502 characters,
+and the built_in function-call counts, 207791 in all, are:
+= -- 26704
+> -- 7800
+< -- 147
++ -- 4334
+- -- 1872
+* -- 13861
+:= -- 20142
+add.period$ -- 239
+call.type$ -- 239
+change.case$ -- 1330
+chr.to.int$ -- 235
+cite$ -- 727
+duplicate$ -- 18560
+empty$ -- 9704
+format.name$ -- 2602
+if$ -- 41739
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 247
-newline$ -- 718
-num.names$ -- 957
-pop$ -- 7340
+missing$ -- 248
+newline$ -- 721
+num.names$ -- 961
+pop$ -- 7354
 preamble$ -- 1
-purify$ -- 1094
+purify$ -- 1098
 quote$ -- 0
-skip$ -- 14966
+skip$ -- 15028
 stack$ -- 0
-substring$ -- 9816
-swap$ -- 16148
+substring$ -- 9850
+swap$ -- 16205
 text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2097
+type$ -- 2106
 warning$ -- 10
-while$ -- 1311
+while$ -- 1317
 width$ -- 0
-write$ -- 2621
+write$ -- 2632
 (There was 1 error message)
