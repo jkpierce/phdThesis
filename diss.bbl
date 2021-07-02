@@ -1,4 +1,4 @@
-\begin{thebibliography}{232}
+\begin{thebibliography}{238}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{\it Aberle and Nikora\/}(2006)}]{Aberle2006}
@@ -21,6 +21,12 @@ Allen, B., and A.~Kudrolli, {Granular bed consolidation, creep, and armoring
 Amir, M., V.~I. Nikora, and M.~T. Stewart, {Pressure forces on sediment
   particles in turbulent open-channel flow: A laboratory study}, {\it Journal
   of Fluid Mechanics\/}, {\it 757\/}, 458--497, 2014.
+
+\bibitem[{{\it An et~al.\/}(2017){\it An, Fu, Wang, and Parker\/}}]{An2017}
+An, C., X.~Fu, G.~Wang, and G.~Parker, {Effect of grain sorting on gravel bed
+  river evolution subject to cycled hydrographs: Bed load sheets and breakdown
+  of the hydrograph boundary layer}, {\it Journal of Geophysical Research:
+  Earth Surface\/}, {\it 122\/}, 1513--1533, 2017.
 
 \bibitem[{{\it Ancey\/}(2020)}]{Ancey2020}
 Ancey, C., {Bedload transport: a walk between randomness and determinism. Part
@@ -77,6 +83,9 @@ Az{\'{e}}ma, E., and F.~Radja{\"{i}}, {Force chains and contact network
   topology in sheared packings of elongated particles}, {\it Physical Review E
   - Statistical, Nonlinear, and Soft Matter Physics\/}, {\it 85\/}, 1--12,
   2012.
+
+\bibitem[{{\it Bagnold\/}(1941)}]{Bagnold1941}
+Bagnold, {\it {Physics of Blown Sand}\/}, 1941.
 
 \bibitem[{{\it Bagnold\/}(1954)}]{Bagnold1954}
 Bagnold, R.~A., {Experiments on a gravity-free dispersion of large solid
@@ -177,16 +186,11 @@ Bradley, D.~N., G.~E. Tucker, and D.~A. Benson, {Fractional dispersion in a
   sand bed river}, {\it Journal of Geophysical Research\/}, {\it 115\/},
   F00A09, 2010.
 
-\bibitem[{{\it Bunte and Abt\/}(2005)}]{Bunte2005}
-Bunte, K., and S.~R. Abt, {Effect of sampling time on measured gravel bed load
-  transport rates in a coarse-bedded stream}, {\it Water Resources Research\/},
-  {\it 41\/}, 1--12, 2005.
-
-\bibitem[{{\it Campagnol et~al.\/}(2013){\it Campagnol, Radice, Nokes,
-  Bulankina, Lescova, and Ballio\/}}]{Campagnol2013}
-Campagnol, J., A.~Radice, R.~Nokes, V.~Bulankina, A.~Lescova, and F.~Ballio,
-  {Lagrangian analysis of bed-load sediment motion: Database contribution},
-  {\it Journal of Hydraulic Research\/}, {\it 51\/}, 589--596, 2013.
+\bibitem[{{\it Cameron et~al.\/}(2020){\it Cameron, Nikora, and
+  Witz\/}}]{Cameron2020}
+Cameron, S.~M., V.~I. Nikora, and M.~J. Witz, {Entrainment of sediment
+  particles by very large-scale motions}, {\it Journal of Fluid Mechanics\/},
+  {\it 888\/}, 2020.
 
 \bibitem[{{\it Celik et~al.\/}(2010){\it Celik, Diplas, Dancey, and
   Valyrakis\/}}]{Celik2010}
@@ -250,11 +254,6 @@ Coleman, N.~L., {A theoretical and experimental study of drag and lift forces
 Coleman, S.~E., and V.~I. Nikora, {Exner equation: A continuum approximation of
   a discrete granular system}, {\it Water Resources Research\/}, {\it 45\/},
   1--8, 2009.
-
-\bibitem[{{\it Comiti and Mao\/}(2012)}]{Comiti2012}
-Comiti, F., and L.~Mao, {Recent Advances in the Dynamics of Steep Channels},
-  {\it Gravel-Bed Rivers: Processes, Tools, Environments\/}, pp. 351--377,
-  2012.
 
 \bibitem[{{\it Correa et~al.\/}(2017){\it Correa, Windhorst, Tetzlaff, Crespo,
   C{\'{e}}lleri, Feyen, and Breuer\/}}]{Church2017}
@@ -408,6 +407,11 @@ Fraccarollo, L., and M.~A. Hassan, {Einstein conjecture and resting-Time
   particles}, {\it Journal of Fluid Mechanics\/}, {\it 876\/}, 1077--1089,
   2019.
 
+\bibitem[{{\it Frey\/}(2014)}]{Frey2014}
+Frey, P., {Particle velocity and concentration profiles in bedload experiments
+  on a steep slope}, {\it Earth Surface Processes and Landforms\/}, {\it 39\/},
+  646--655, 2014.
+
 \bibitem[{{\it Frey and Church\/}(2011)}]{Frey2011}
 Frey, P., and M.~Church, {Bedload: A granular phenomenon}, {\it Earth Surface
   Processes and Landforms\/}, {\it 36\/}, 58--69, 2011.
@@ -457,9 +461,9 @@ Gillespie, D.~T., {Exact stochastic simulation of coupled chemical reactions},
 Gillespie, D.~T., {Stochastic simulation of chemical kinetics}, {\it Annual
   Review of Physical Chemistry\/}, {\it 58\/}, 35--55, 2007.
 
-\bibitem[{{\it Gomez\/}(1991)}]{Gomez1991}
-Gomez, B., {Bedload transport}, {\it Earth Science Reviews\/}, {\it 31\/},
-  89--132, 1991.
+\bibitem[{{\it Goh and Barab{\'{a}}si\/}(2008)}]{Goh2008}
+Goh, K.~I., and A.~L. Barab{\'{a}}si, {Burstiness and memory in complex
+  systems}, {\it Epl\/}, {\it 81\/}, 2008.
 
 \bibitem[{{\it Gomez and Church\/}(1989)}]{Gomez1989}
 Gomez, B., and M.~Church, {An assessment of bed load sediment transport
@@ -558,6 +562,13 @@ Heyman, J., H.~B. Ma, F.~Mettra, and C.~Ancey, {Spatial correlations in bed
   load transport : Evidence, importance, and modeling}, {\it Journal of
   Geophysical Research: Earth Surface\/}, {\it 119\/}, 1751--1767, 2014.
 
+\bibitem[{{\it Heyman et~al.\/}(2015){\it Heyman, Boh{\'{o}}rquez, and
+  Ancey\/}}]{Heyman2015}
+Heyman, J., P.~Boh{\'{o}}rquez, and C.~Ancey, {Exploring the physics of
+  sediment transport in non-uniform super-critical flows through a large
+  dataset of particle trajectories}, {\it J. Geophys. Res:Earth Surf.\/}, {\it
+  submitted\/}, 2015.
+
 \bibitem[{{\it Heyman et~al.\/}(2016){\it Heyman, Bohorquez, and
   Ancey\/}}]{Heyman2016}
 Heyman, J., P.~Bohorquez, and C.~Ancey, {Entrainment, motion, and deposition of
@@ -595,6 +606,12 @@ Houssais, M., C.~P. Ortiz, D.~J. Durian, and D.~J. Jerolmack, {Onset of
   sediment transport is a continuous transition driven by fluid shear and
   granular creep}, {\it Nature Communications\/}, {\it 6\/}, 1--8, 2015.
 
+\bibitem[{{\it Houssais et~al.\/}(2016){\it Houssais, Ortiz, Durian, and
+  Jerolmack\/}}]{Houssais2016}
+Houssais, M., C.~P. Ortiz, D.~J. Durian, and D.~J. Jerolmack, {Rheology of
+  sediment transported by a laminar flow}, {\it Physical Review E\/}, {\it
+  94\/}, 1--10, 2016.
+
 \bibitem[{{\it Hubbell and Sayre\/}(1964)}]{Hubbell1964}
 Hubbell, D., and W.~Sayre, {Sand Transport Studies with Radioactive Tracers},
   {\it Journal of the Hydraulics Division\/}, {\it 90\/}, 39--68, 1964.
@@ -620,6 +637,10 @@ Jiang, Z., and P.~K. Haff, {Multiparticle simulation methods applied to the
 Joseph, G.~G., R.~Zenit, M.~L. Hunt, and A.~M. Rosenwinkel, {Particle-wall
   collisions in a viscous fluid}, {\it Journal of Fluid Mechanics\/}, {\it
   433\/}, 329--346, 2001.
+
+\bibitem[{{\it Kalinske\/}(1947)}]{Kalinske1947}
+Kalinske, A.~A., {Movement of sediment as bed load in rivers}, {\it Eos,
+  Transactions American Geophysical Union\/}, {\it 28\/}, 615--620, 1947.
 
 \bibitem[{{\it KIRCHNER et~al.\/}(1990){\it KIRCHNER, DIETRICH, ISEYA, and
   IKEDA\/}}]{Kirchener1990}
@@ -879,6 +900,10 @@ Papangelakis, E., and M.~A. Hassan, {The role of channel morphology on the
   mobility and dispersion of bed sediment in a small gravel-bed stream}, {\it
   Earth Surface Processes and Landforms\/}, {\it 41\/}, 2191--2206, 2016.
 
+\bibitem[{{\it Parker and Klingeman\/}(1982)}]{Parker1982}
+Parker, G., and P.~C. Klingeman, {On why gravel bed streams are paved}, {\it
+  Water Resources Research\/}, {\it 18\/}, 1409--1423, 1982.
+
 \bibitem[{{\it Parker et~al.\/}(2002){\it Parker, Paola, and
   Leclair\/}}]{Parker2000}
 Parker, G., C.~Paola, and S.~Leclair, {Probabilistic exner sediment continuity
@@ -890,6 +915,13 @@ Parker, G., C.~Paola, and S.~Leclair, {Probabilistic exner sediment continuity
 Parker, G., G.~Seminara, and L.~Solari, {Bed load at low Shields stress on
   arbitrarily sloping beds: Alternative entrainment formulation}, {\it Water
   Resources Research\/}, {\it 39\/}, 1--11, 2003.
+
+\bibitem[{{\it Parker et~al.\/}(2007){\it Parker, Hassan, and
+  Wilcock\/}}]{Parker2007}
+Parker, G., M.~Hassan, and P.~Wilcock, {10 Adjustment of the bed surface size
+  distribution of gravel-bed rivers in response to cycled hydrographs}, in {\it
+  Developments in Earth Surface Processes\/}, edited by H.~Habersack,
+  H.~Piegay, and M.~Rinaldi, vol.~11, pp. 241--285, Elsevier B.V, 2007.
 
 \bibitem[{{\it Pelosi and Parker\/}(2014)}]{Pelosi2014}
 Pelosi, A., and G.~Parker, {Morphodynamics of river bed variation with variable
@@ -971,11 +1003,6 @@ Santos, B.~O., M.~J. Franca, and R.~M. Ferreira, {Coherent structures in open
   channel flows with bed load transport over an hydraulically rough bed}, in
   {\it Proceedings of the International Conference on Fluvial Hydraulics, RIVER
   FLOW 2014\/}, EPFL-CONF-202022, pp. 883--890, 2014.
-
-\bibitem[{{\it Sayre and Hubbell\/}(1965)}]{Sayre1965}
-Sayre, W., and D.~Hubbell, {Transport and Dispersion of Labeled Bed Material
-  North Loup River , Nebraska}, {\it Transport of Radionuclides by Streams\/},
-  1965.
 
 \bibitem[{{\it Schmeeckle\/}(2014)}]{Schmeeckle2014}
 Schmeeckle, M.~W., {Numerical simulation of turbulence and sediment transport
@@ -1060,10 +1087,6 @@ Singh, A., E.~Foufoula-Georgiou, F.~Port{\'{e}}-Agel, and P.~R. Wilcock,
 \bibitem[{{\it Sokolov\/}(2012)}]{Sokolov2012}
 Sokolov, I.~M., {Models of anomalous diffusion in crowded environments}, {\it
   Soft Matter\/}, {\it 8\/}, 9043--9052, 2012.
-
-\bibitem[{{\it Strom and Papanicolaou\/}(2008)}]{Strom2008}
-Strom, K.~B., and A.~N. Papanicolaou, {Morphological characterization of
-  cluster microforms}, {\it Sedimentology\/}, {\it 55\/}, 137--153, 2008.
 
 \bibitem[{{\it Sumer et~al.\/}(2003){\it Sumer, Chua, Cheng, and
   Freds{\o}e\/}}]{Sumer2003}
@@ -1162,15 +1185,25 @@ Weiss, G.~H., {The two-state random walk}, {\it Journal of Statistical
 Weiss, G.~H., {\it {Aspects and Applications of the Random Walk.}\/}, North
   Holland, Amsterdam, 1994.
 
-\bibitem[{{\it Weiss\/}(2002)}]{Weiss2002a}
+\bibitem[{{\it Weiss\/}(2002{\natexlab{a}})}]{Weiss2002}
 Weiss, G.~H., {Some applications of persistent random walks and the
   telegrapher's equation}, {\it Physica A: Statistical Mechanics and its
-  Applications\/}, {\it 311\/}, 381--410, 2002.
+  Applications\/}, {\it 311\/}, 381--410, 2002{\natexlab{a}}.
+
+\bibitem[{{\it Weiss\/}(2002{\natexlab{b}})}]{Weiss2002a}
+Weiss, G.~H., {Some applications of persistent random walks and the
+  telegrapher's equation}, {\it Physica A: Statistical Mechanics and its
+  Applications\/}, {\it 311\/}, 381--410, 2002{\natexlab{b}}.
 
 \bibitem[{{\it Wiberg and Smith\/}(1985)}]{Wiberg1985}
 Wiberg, P.~L., and J.~D. Smith, {A theoretical model for saltating grains in
   water.}, {\it Journal of Geophysical Research\/}, {\it 90\/}, 7341--7354,
   1985.
+
+\bibitem[{{\it Wilcock\/}(2001)}]{Wilcock2001}
+Wilcock, P.~R., {Toward a practical method for estimating sediment-transport
+  rates in gravel-bed rivers}, {\it Earth Surface Processes and Landforms\/},
+  {\it 26\/}, 1395--1408, 2001.
 
 \bibitem[{{\it Wilcock and Crowe\/}(2003)}]{Wilcock2003}
 Wilcock, P.~R., and J.~C. Crowe, {Surface-based transport model for mixed-size

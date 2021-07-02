@@ -4,6 +4,10 @@ The top-level auxiliary file: diss.aux
 A level-1 auxiliary file: abs.aux
 A level-1 auxiliary file: laySum.aux
 A level-1 auxiliary file: pref.aux
+White space in argument---line 3 of file pref.aux
+ : \citation{Geophysical
+ :                       Research Letters}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: ack.aux
 A level-1 auxiliary file: ch1intro.aux
 A level-1 auxiliary file: ch2flipFlop.aux
@@ -13,73 +17,86 @@ A level-1 auxiliary file: ch5langevin.aux
 A level-1 auxiliary file: ch6conc.aux
 The style file: ./agu.bst
 A level-1 auxiliary file: appendix.aux
-Reallocated field_info (elt_size=4) to 12245 items from 5000.
+Reallocated field_info (elt_size=4) to 12751 items from 5000.
 Database file #1: biblio.bib
-Warning--I didn't find a database entry for "Zimmerman2007"
-Warning--I didn't find a database entry for "McKenzie2018"
+Warning--I didn't find a database entry for "Slaymaker2020"
+Warning--I didn't find a database entry for "Church2005"
+Warning--I didn't find a database entry for "Frey2009"
 Warning--I didn't find a database entry for "Eaton2020"
-Warning--I didn't find a database entry for "duBoys1879"
+Warning--I didn't find a database entry for "Gilbert1914"
+Warning--I didn't find a database entry for "Parker1990"
 Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "Gilbert1917"
-Warning--I didn't find a database entry for "Cox1965"
-Warning--I didn't find a database entry for "VanKampen1992"
-Warning--I didn't find a database entry for "Kubo"
-Warning--I didn't find a database entry for "Risken1984"
 Warning--I didn't find a database entry for "Furbish1997"
 Warning--I didn't find a database entry for "Valyrakis2012"
 Warning--I didn't find a database entry for "Yang1972"
 Warning--I didn't find a database entry for "Nakagawa1981"
-Warning--I didn't find a database entry for "Pierce2020"
+Warning--I didn't find a database entry for "Church1994"
+Warning--I didn't find a database entry for "Pretzslav2021"
 Warning--I didn't find a database entry for "Pretzlav2021"
 Warning--I didn't find a database entry for "Takayama1966"
 Warning--I didn't find a database entry for "Ashmore2020"
+Warning--I didn't find a database entry for "Wilcock1997"
 Warning--I didn't find a database entry for "Haschenberger2012"
 Warning--I didn't find a database entry for "Kubo1978"
 Warning--I didn't find a database entry for "Goldstein1956"
+Warning--I didn't find a database entry for "Risken1984"
 Warning--I didn't find a database entry for "Sokolev2002"
-Warning--I didn't find a database entry for "Crickmore1962"
-Warning--I didn't find a database entry for "Todorovic1975"
-Warning--I didn't find a database entry for "Nakagawa1980"
-Warning--I didn't find a database entry for "1937"
 Warning--I didn't find a database entry for "Abbott1970"
 Warning--I didn't find a database entry for "Francis1972"
+Warning--I didn't find a database entry for "Cox1965"
 Warning--I didn't find a database entry for "Sokolov2014"
 Warning--I didn't find a database entry for "Cundall1979"
 Warning--I didn't find a database entry for "Jiang1993"
 Warning--I didn't find a database entry for "Vowincklel2014"
 Warning--I didn't find a database entry for "Wachs2011"
-Warning--I didn't find a database entry for "Kirkby1971"
-Warning--I didn't find a database entry for "Kittel1958"
 Warning--I didn't find a database entry for "Parker1998"
-Warning--I didn't find a database entry for "Wilcock1997"
 Warning--I didn't find a database entry for "Charru2006a"
+Warning--I didn't find a database entry for "Tucker2014"
 Warning--I didn't find a database entry for "Exner1925"
 Warning--I didn't find a database entry for "Zimmerman2008"
 Warning--I didn't find a database entry for "Nakawaga1976"
-Warning--I didn't find a database entry for "Abramian2020"
-Warning--I didn't find a database entry for "Benavides2021"
-Warning--I didn't find a database entry for "Hammamori1962"
-Warning--I didn't find a database entry for "Saletti2015"
+Warning--I didn't find a database entry for "Hamamori1962"
+Warning--I didn't find a database entry for "Nikora1984"
 Warning--I didn't find a database entry for "Lajeunesse2012"
 Warning--I didn't find a database entry for "Cox1967"
+Warning--I didn't find a database entry for "Lajeunesse2018"
+Warning--I didn't find a database entry for "Tsujimoto1976"
+Warning--I didn't find a database entry for "Ferguson2012"
+Warning--I didn't find a database entry for "Brilliantov2004"
 Warning--I didn't find a database entry for "Celik2019"
 Warning--I didn't find a database entry for "Valyrakis2014"
-Warning--I didn't find a database entry for "Pierce2021"
 Warning--I didn't find a database entry for "Saletti2014"
 Warning--I didn't find a database entry for "Dhont2019"
-Warning--I didn't find a database entry for "Ancey2019"
 Warning--I didn't find a database entry for "VanKampen1978"
 Warning--I didn't find a database entry for "Loginov1978"
+Warning--I didn't find a database entry for "Gillespie1992"
+Warning--I didn't find a database entry for "Dhont2010"
+Warning--I didn't find a database entry for "Saletti2015"
+Warning--I didn't find a database entry for "Benavides2021"
+Warning--I didn't find a database entry for "Heyman2014b"
+Warning--I didn't find a database entry for "Cardy2006"
+Warning--I didn't find a database entry for "Chapman1970"
+Warning--I didn't find a database entry for "Hernandez2004"
+Warning--I didn't find a database entry for "Viparelli2011"
+Warning--I didn't find a database entry for "Bohorquez2014"
+Warning--I didn't find a database entry for "Kardar2007"
+Warning--I didn't find a database entry for "Kawakatsu2004"
+Warning--I didn't find a database entry for "Nelson2004"
+Warning--I didn't find a database entry for "Leopold1952"
+Warning--I didn't find a database entry for "Wolman1960"
+Warning--I didn't find a database entry for "Furbish2021c"
+Warning--I didn't find a database entry for "Ancey2020b"
+Warning--I didn't find a database entry for "Lajeunesse1010"
 Warning--I didn't find a database entry for "Pretzlav2016"
 Warning--I didn't find a database entry for "Saletti2015a"
 Warning--I didn't find a database entry for "Sawai1987"
-Warning--I didn't find a database entry for "Gillespie1992"
+Warning--I didn't find a database entry for "Crickmore1962"
+Warning--I didn't find a database entry for "VanKampen1992"
 Warning--I didn't find a database entry for "Haken1983"
+Warning--I didn't find a database entry for "Nakagawa1980"
 Warning--I didn't find a database entry for "Sornette2000"
 Warning--I didn't find a database entry for "Ettema2014"
-Warning--I didn't find a database entry for "Lajeunesse2018"
-Warning--I didn't find a database entry for "Boltzman"
-Warning--I didn't find a database entry for "Lajeunesse2020"
+Warning--I didn't find a database entry for "Pierce2020"
 Warning--I didn't find a database entry for "Sezilles2014"
 Warning--I didn't find a database entry for "Williams2020"
 Warning--I didn't find a database entry for "Serrero2015"
@@ -90,61 +107,66 @@ Warning--I didn't find a database entry for "Dalche2015"
 Warning--I didn't find a database entry for "vandenBroek1983"
 Warning--I didn't find a database entry for "Suweiss2011"
 Warning--I didn't find a database entry for "Duderstadt1971"
-Warning--I didn't find a database entry for "Brilliantov2004"
 Warning--I didn't find a database entry for "Serero2015"
 Warning--I didn't find a database entry for "Hall1970"
 Warning--I didn't find a database entry for "Zaidi2015"
 Warning--I didn't find a database entry for "Bhalekar2017"
 Warning--I didn't find a database entry for "Coleman2019"
+Warning--I didn't find a database entry for "other.."
 Warning--I didn't find a database entry for "Marshall2001"
+Warning--I didn't find a database entry for "Skylar2004"
+Warning--I didn't find a database entry for "Tingian"
+Warning--I didn't find a database entry for "Turowski2020"
 Warning--I didn't find a database entry for "VanKampen1983"
 Warning--empty publisher in Armanini2017
+Warning--empty publisher in Bagnold1941
 Warning--empty publisher in Hanggi1984
 Warning--empty publisher in Lajeunesse2015
 Warning--empty journal in Moss1989
+Warning--can't use both volume and number fields in Parker2007
 Warning--can't use both volume and number fields in Redner2007
 Warning--empty publisher in Santos2014
 Warning--can't use both volume and number fields in Temme1996
 Warning--empty publisher in Yano1969
-You've used 232 entries,
+You've used 238 entries,
             2789 wiz_defined-function locations,
-            2560 strings with 49148 characters,
-and the built_in function-call counts, 202602 in all, are:
-= -- 26059
-> -- 7632
-< -- 143
-+ -- 4238
-- -- 1830
-* -- 13499
-:= -- 19613
-add.period$ -- 232
-call.type$ -- 232
-change.case$ -- 1297
-chr.to.int$ -- 229
-cite$ -- 704
-duplicate$ -- 18087
-empty$ -- 9426
-format.name$ -- 2548
-if$ -- 40708
-int.to.chr$ -- 4
+            2624 strings with 50280 characters,
+and the built_in function-call counts, 207042 in all, are:
+= -- 26608
+> -- 7775
+< -- 146
++ -- 4321
+- -- 1866
+* -- 13808
+:= -- 20067
+add.period$ -- 238
+call.type$ -- 238
+change.case$ -- 1325
+chr.to.int$ -- 234
+cite$ -- 724
+duplicate$ -- 18493
+empty$ -- 9667
+format.name$ -- 2591
+if$ -- 41590
+int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 240
-newline$ -- 700
-num.names$ -- 932
-pop$ -- 7231
+missing$ -- 247
+newline$ -- 718
+num.names$ -- 957
+pop$ -- 7340
 preamble$ -- 1
-purify$ -- 1071
+purify$ -- 1094
 quote$ -- 0
-skip$ -- 14620
+skip$ -- 14966
 stack$ -- 0
-substring$ -- 9609
-swap$ -- 15807
-text.length$ -- 18
+substring$ -- 9816
+swap$ -- 16148
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2046
-warning$ -- 8
-while$ -- 1283
+type$ -- 2097
+warning$ -- 10
+while$ -- 1311
 width$ -- 0
-write$ -- 2554
-(There were 91 warnings)
+write$ -- 2621
+(There was 1 error message)

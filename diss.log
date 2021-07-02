@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.24)  1 JUL 2021 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.24)  2 JUL 2021 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -172,20 +172,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \WF@everypar=\toks21
 Package: wrapfig 2003/01/31  v 3.6
 )
-
-! LaTeX Error: Command \Re already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 \newcommand{\Re}{\mbox{\textit{Re}}}
-                                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
@@ -562,9 +548,6 @@ LaTeX Warning: Label `eq:master' multiply defined.
 
 ) (./ch4downDiff.aux
 
-LaTeX Warning: Label `ch:downDiff' multiply defined.
-
-
 LaTeX Warning: Label `sec:model' multiply defined.
 
 
@@ -602,9 +585,6 @@ LaTeX Warning: Label `sec:results' multiply defined.
 LaTeX Warning: Label `sec:solution' multiply defined.
 
 
-LaTeX Warning: Label `fig:fig3' multiply defined.
-
-
 LaTeX Warning: Label `sec:discussion' multiply defined.
 
 
@@ -613,22 +593,22 @@ LaTeX Warning: Label `sec:conclusion' multiply defined.
 ) (./ch6conc.aux) (./appendix.aux))
 \openout1 = `diss.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 361.
-LaTeX Font Info:    ... okay on input line 361.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 361.
-LaTeX Font Info:    ... okay on input line 361.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 361.
-LaTeX Font Info:    ... okay on input line 361.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 361.
-LaTeX Font Info:    ... okay on input line 361.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 361.
-LaTeX Font Info:    ... okay on input line 361.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 361.
-LaTeX Font Info:    ... okay on input line 361.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 361.
-LaTeX Font Info:    ... okay on input line 361.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 361.
-LaTeX Font Info:    ... okay on input line 361.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 360.
+LaTeX Font Info:    ... okay on input line 360.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -656,9 +636,9 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package backref Info: ** backref set up for natbib ** on input line 361.
+Package backref Info: ** backref set up for natbib ** on input line 360.
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 361.
+Package hyperref Info: Link coloring OFF on input line 360.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -671,9 +651,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count318
 )
-LaTeX Info: Redefining \ref on input line 361.
-LaTeX Info: Redefining \pageref on input line 361.
-LaTeX Info: Redefining \nameref on input line 361.
+LaTeX Info: Redefining \ref on input line 360.
+LaTeX Info: Redefining \pageref on input line 360.
+LaTeX Info: Redefining \nameref on input line 360.
 
 (./diss.out) (./diss.out)
 \@outlinefile=\write4
@@ -703,9 +683,6 @@ LaTeX Info: Redefining \nameref on input line 361.
 
  (./pref.tex
 
-LaTeX Warning: Reference `ch:bedEle' on page vi undefined on input line 8.
-
-
 LaTeX Warning: Reference `ch:downdiff' on page vi undefined on input line 8.
 
 
@@ -722,78 +699,78 @@ fined on input line 8.
 
 
 ] [9] [10]
-Overfull \hbox (4.57472pt too wide) in paragraph at lines 94--94
+Overfull \hbox (4.57472pt too wide) in paragraph at lines 90--90
  [][] []\OT1/cmr/m/n/10.95 Understanding of how sed-i-ment burial af-fects the 
 down- 
  []
 
-)
+[11])
 \tf@toc=\write5
 \openout5 = `diss.toc'.
 
- [11] (./diss.lot)
+ [12] (./diss.lot)
 \tf@lot=\write6
 \openout6 = `diss.lot'.
 
- [12
+ [13
 
 
 ] (./diss.lof
 
-LaTeX Warning: Reference `eq:lislerando' on page xiii undefined on input line 8
-.
+LaTeX Warning: Reference `eq:lislerando' on page xiv undefined on input line 8.
 
 
-Overfull \hbox (4.67851pt too wide) in paragraph at lines 9--9
+
+Overfull \hbox (4.67851pt too wide) in paragraph at lines 10--10
  [][] []\OT1/cmr/m/n/10.95 Einstein's con-cep-tual pic-ture (mod-i-fied from []
 []\OT1/cmr/m/it/10.95 Yalin[] \OT1/cmr/m/n/10.95 ([]1972[])). 
  []
 
-[13
+[14
 
 
-] [14] [15]
-Overfull \hbox (2.79532pt too wide) in paragraph at lines 18--18
+] [15] [16]
+Overfull \hbox (2.79532pt too wide) in paragraph at lines 19--19
  \OT1/cmr/m/n/10.95 layer depth $\OML/cmm/m/it/10.95 l$ \OT1/cmr/m/n/10.95 char
 -ac-ter-izes bed el-e-va-tion changes as posited 
  []
 
-[16]
-Overfull \hbox (1.06667pt too wide) in paragraph at lines 21--21
+[17]
+Overfull \hbox (1.06667pt too wide) in paragraph at lines 22--22
  \OT1/cmr/m/n/10.95 con-di-tions and the bed el-e-va-tion vari-ance. Panel (a) 
 shows 
  []
 
-[17]
-Overfull \hbox (1.2039pt too wide) in paragraph at lines 24--24
+[18]
+Overfull \hbox (1.2039pt too wide) in paragraph at lines 25--25
  \OT1/cmr/m/n/10.95 trans-port-ing small ($5$ mm) grav-els ([][]\OT1/cmr/m/it/1
 0.95 La-je-unesse et al.[]\OT1/cmr/m/n/10.95 , []2010[]; 
  []
 
-[18]
-Overfull \hbox (11.86458pt too wide) in paragraph at lines 27--27
+[19]
+Overfull \hbox (11.86458pt too wide) in paragraph at lines 28--28
  \OT1/cmr/m/n/10.95 di-vid-ual re-al-iza-tions are sin-gled out as black traces
 . Particle- 
  []
 
 
-Overfull \hbox (9.0358pt too wide) in paragraph at lines 27--27
+Overfull \hbox (9.0358pt too wide) in paragraph at lines 28--28
  \OT1/cmr/m/n/10.95 bed col-li-sions im-ply sud-den downward-velocity jumps. Fl
 ow 
  []
 
-[19])
+[20])
 \tf@lof=\write7
 \openout7 = `diss.lof'.
 
- [20]
+ [21]
 \openout2 = `ack.aux'.
 
- (./ack.tex [21
+ (./ack.tex [22
 
 
 
-] [22] [23] [24]) [25]
+] [23] [24] [25]) [26]
 \openout2 = `ch1intro.aux'.
 
  (./ch1intro.tex
@@ -805,10 +782,6 @@ ine 10.
 
 Package natbib Warning: Citation `Church2005' on page 1 undefined on input line
  13.
-
-
-Package natbib Warning: Citation `Kalinske1947' on page 1 undefined on input li
-ne 16.
 
 
 Package natbib Warning: Citation `Frey2009' on page 1 undefined on input line 1
@@ -834,24 +807,8 @@ Package natbib Warning: Citation `Parker1990' on page 3 undefined on input line
  30.
 
 
-Package natbib Warning: Citation `Wilcock2001' on page 3 undefined on input lin
-e 30.
-
-
 Package natbib Warning: Citation `Furbish1997' on page 3 undefined on input lin
 e 44.
-
-
-Package natbib Warning: Citation `Houssais2016' on page 3 undefined on input li
-ne 49.
-
-
-Package natbib Warning: Citation `Frey2014' on page 3 undefined on input line 4
-9.
-
-
-Package natbib Warning: Citation `Cameron2020' on page 3 undefined on input lin
-e 49.
 
 
 Package natbib Warning: Citation `Valyrakis2012' on page 3 undefined on input l
@@ -903,7 +860,7 @@ Package natbib Warning: Citation `Kubo1978' on page 6 undefined on input line 8
 Package natbib Warning: Citation `Goldstein1956' on page 6 undefined on input l
 ine 87.
 
-<./figures/ch1/einsteinConcept.pdf, id=873, 397.485pt x 130.086pt>
+<./figures/ch1/einsteinConcept.pdf, id=923, 397.485pt x 130.086pt>
 File: ./figures/ch1/einsteinConcept.pdf Graphic file (type pdf)
 <use ./figures/ch1/einsteinConcept.pdf>
 Package pdftex.def Info: ./figures/ch1/einsteinConcept.pdf  used on input line 
@@ -939,7 +896,7 @@ Package natbib Warning: Citation `Cox1965' on page 9 undefined on input line 12
 LaTeX Warning: Reference `eq:lislelangevin' on page 9 undefined on input line 1
 21.
 
-<./figures/ch1/lisleConcept.pdf, id=992, 397.485pt x 130.086pt>
+<./figures/ch1/lisleConcept.pdf, id=1041, 397.485pt x 130.086pt>
 File: ./figures/ch1/lisleConcept.pdf Graphic file (type pdf)
 <use ./figures/ch1/lisleConcept.pdf>
 Package pdftex.def Info: ./figures/ch1/lisleConcept.pdf  used on input line 127
@@ -985,171 +942,177 @@ Package natbib Warning: Citation `Wachs2011' on page 10 undefined on input line
 Package natbib Warning: Citation `Risken1984' on page 12 undefined on input lin
 e 158.
 
-[12] [13]
+[12]
+<./figures/ch1/fanAncey.pdf, id=1180, 397.485pt x 216.81pt>
+File: ./figures/ch1/fanAncey.pdf Graphic file (type pdf)
+<use ./figures/ch1/fanAncey.pdf>
+Package pdftex.def Info: ./figures/ch1/fanAncey.pdf  used on input line 174.
+(pdftex.def)             Requested size: 360.0pt x 196.3711pt.
+ [13 <./figures/ch1/fanAncey.pdf>] [14]
 
-Package natbib Warning: Citation `Parker1998' on page 14 undefined on input lin
-e 194.
+Package natbib Warning: Citation `Parker1998' on page 15 undefined on input lin
+e 201.
 
-[14]
 
 LaTeX Warning: Reference `fig:einsteinFluxConcept' on page 15 undefined on inpu
-t line 203.
+t line 210.
 
-<./figures/ch1/yalinDrawing.png, id=1209, 476.78125pt x 141.52875pt>
-File: ./figures/ch1/yalinDrawing.png Graphic file (type png)
-<use ./figures/ch1/yalinDrawing.png>
-Package pdftex.def Info: ./figures/ch1/yalinDrawing.png  used on input line 205
+<./figures/ch1/yalinDrawing.pdf, id=1288, 397.485pt x 126.4725pt>
+File: ./figures/ch1/yalinDrawing.pdf Graphic file (type pdf)
+<use ./figures/ch1/yalinDrawing.pdf>
+Package pdftex.def Info: ./figures/ch1/yalinDrawing.pdf  used on input line 212
 .
-(pdftex.def)             Requested size: 360.0pt x 106.86974pt.
+(pdftex.def)             Requested size: 360.0pt x 114.54979pt.
 
-Underfull \hbox (badness 3579) in paragraph at lines 208--208
+Underfull \hbox (badness 3579) in paragraph at lines 215--215
 [] []|\OT1/cmr/m/n/10.95 Ein-stein's con-cep-tual pic-ture (mod-i-fied from [][
 ]\OT1/cmr/m/it/10.95 Yalin[]
  []
 
-[15]
+[15] [16 <./figures/ch1/yalindrawing.pdf>]
 
-Package natbib Warning: Citation `Cox1965' on page 16 undefined on input line 2
-21.
+Package natbib Warning: Citation `Cox1965' on page 17 undefined on input line 2
+28.
 
-[16 <./figures/ch1/yalindrawing.png>]
 
 Package natbib Warning: Citation `Wilcock1997' on page 17 undefined on input li
-ne 228.
+ne 235.
 
 
 Package natbib Warning: Citation `Valyrakis2012' on page 17 undefined on input 
-line 235.
+line 242.
 
+[17]
 
-Package natbib Warning: Citation `Charru2006a' on page 17 undefined on input li
-ne 241.
+Package natbib Warning: Citation `Charru2006a' on page 18 undefined on input li
+ne 248.
 
-[17] [18]
+[18]
 
 Package natbib Warning: Citation `Tucker2014' on page 19 undefined on input lin
-e 264.
+e 271.
 
 [19]
 
 Package natbib Warning: Citation `Exner1925' on page 20 undefined on input line
- 284.
-
-
-Package natbib Warning: Citation `Zimmerman2008' on page 20 undefined on input 
-line 289.
+ 291.
 
 [20]
 
+Package natbib Warning: Citation `Zimmerman2008' on page 21 undefined on input 
+line 296.
+
+
 Package natbib Warning: Citation `Nakawaga1976' on page 21 undefined on input l
-ine 291.
-
-
-Package natbib Warning: Citation `Hamamori1962' on page 21 undefined on input l
-ine 303.
-
-
-Package natbib Warning: Citation `Nikora1984' on page 21 undefined on input lin
-e 303.
+ine 298.
 
 [21]
 
-Package natbib Warning: Citation `Cox1965' on page 22 undefined on input line 3
-13.
+Package natbib Warning: Citation `Hamamori1962' on page 22 undefined on input l
+ine 310.
+
+
+Package natbib Warning: Citation `Nikora1984' on page 22 undefined on input lin
+e 310.
 
 
 Package natbib Warning: Citation `Cox1965' on page 22 undefined on input line 3
-18.
+20.
 
 [22]
 
+Package natbib Warning: Citation `Cox1965' on page 23 undefined on input line 3
+25.
+
+
 Package natbib Warning: Citation `Lajeunesse2012' on page 23 undefined on input
- line 327.
+ line 334.
 
+[23]
 
-Package natbib Warning: Citation `Cox1967' on page 23 undefined on input line 3
-34.
+Package natbib Warning: Citation `Cox1967' on page 24 undefined on input line 3
+41.
 
-<./figures/ch1/anceyRenewal.pdf, id=1422, 397.485pt x 130.086pt>
+<./figures/ch1/anceyRenewal.pdf, id=1517, 397.485pt x 130.086pt>
 File: ./figures/ch1/anceyRenewal.pdf Graphic file (type pdf)
 <use ./figures/ch1/anceyRenewal.pdf>
-Package pdftex.def Info: ./figures/ch1/anceyRenewal.pdf  used on input line 337
+Package pdftex.def Info: ./figures/ch1/anceyRenewal.pdf  used on input line 344
 .
 (pdftex.def)             Requested size: 360.0pt x 117.82263pt.
 
-LaTeX Warning: Reference `sec:einstein' on page 23 undefined on input line 343.
+LaTeX Warning: Reference `sec:einstein' on page 24 undefined on input line 350.
 
 
-[23] [24 <./figures/ch1/anceyRenewal.pdf>]
+[24 <./figures/ch1/anceyRenewal.pdf>] [25]
 
-Package natbib Warning: Citation `Lajeunesse2018' on page 25 undefined on input
- line 369.
+Package natbib Warning: Citation `Lajeunesse2018' on page 26 undefined on input
+ line 376.
 
-[25]
 
 Package natbib Warning: Citation `Exner1925' on page 26 undefined on input line
- 377.
+ 384.
 
 
 Package natbib Warning: Citation `Tsujimoto1976' on page 26 undefined on input 
-line 377.
+line 384.
 
 
 Package natbib Warning: Citation `Ferguson2012' on page 26 undefined on input l
-ine 378.
-
-
-LaTeX Warning: Reference `ch:burial' on page 26 undefined on input line 380.
+ine 385.
 
 [26]
 
-LaTeX Warning: Reference `ch:downdiff' on page 27 undefined on input line 387.
+LaTeX Warning: Reference `ch:burial' on page 27 undefined on input line 387.
+
+
+LaTeX Warning: Reference `ch:downdiff' on page 27 undefined on input line 394.
 
 
 Package natbib Warning: Citation `Lajeunesse2018' on page 27 undefined on input
- line 387.
+ line 394.
+
+[27]
+
+Package natbib Warning: Citation `Brilliantov2004' on page 28 undefined on inpu
+t line 402.
 
 
-Package natbib Warning: Citation `Brilliantov2004' on page 27 undefined on inpu
-t line 395.
-
-
-Overfull \hbox (8.55626pt too wide) in paragraph at lines 395--397
+Overfull \hbox (8.55626pt too wide) in paragraph at lines 402--404
 []\OT1/cmr/m/n/10.95 Chapter []5[] presents a stochas-tic Langevin model in-clu
 d-ing episodic particle-
  []
 
-) [27]
+) [28]
 \openout2 = `ch2flipFlop.aux'.
 
  (./ch2flipFlop.tex
 Chapter 2.
 
-Package natbib Warning: Citation `Celik2019' on page 28 undefined on input line
+Package natbib Warning: Citation `Celik2019' on page 29 undefined on input line
  9.
 
 
-Package natbib Warning: Citation `Valyrakis2014' on page 28 undefined on input 
+Package natbib Warning: Citation `Valyrakis2014' on page 29 undefined on input 
 line 9.
 
-[28
+[29
 
 
 
 ]
 
-Package natbib Warning: Citation `Hamamori1962' on page 29 undefined on input l
+Package natbib Warning: Citation `Hamamori1962' on page 30 undefined on input l
 ine 24.
 
 
-Package natbib Warning: Citation `Saletti2014' on page 29 undefined on input li
+Package natbib Warning: Citation `Saletti2014' on page 30 undefined on input li
 ne 25.
 
 
-Package natbib Warning: Citation `Dhont2019' on page 29 undefined on input line
+Package natbib Warning: Citation `Dhont2019' on page 30 undefined on input line
  25.
 
-[29] [30]
+[30] [31]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 44.
@@ -1158,42 +1121,37 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 44.
 
-[31]
+[32]
 
-Package natbib Warning: Citation `VanKampen1978' on page 32 undefined on input 
+Package natbib Warning: Citation `VanKampen1978' on page 33 undefined on input 
 line 50.
 
 
-Package natbib Warning: Citation `Loginov1978' on page 32 undefined on input li
+Package natbib Warning: Citation `Loginov1978' on page 33 undefined on input li
 ne 50.
 
-[32]
-<./figures/ch2/figure1.pdf, id=1641, 397.485pt x 198.7425pt>
+[33]
+<./figures/ch2/figure1.pdf, id=1734, 397.485pt x 198.7425pt>
 File: ./figures/ch2/figure1.pdf Graphic file (type pdf)
 <use ./figures/ch2/figure1.pdf>
 Package pdftex.def Info: ./figures/ch2/figure1.pdf  used on input line 60.
 (pdftex.def)             Requested size: 397.48402pt x 198.742pt.
- [33] [34 <./figures/ch2/figure1.pdf>]
+ [34] [35 <./figures/ch2/figure1.pdf>]
 
-Package natbib Warning: Citation `Cox1965' on page 35 undefined on input line 8
+Package natbib Warning: Citation `Cox1965' on page 36 undefined on input line 8
 2.
 
-<figures/ch2/figure2_slopeKey.pdf, id=1690, 397.485pt x 137.313pt>
+<figures/ch2/figure2_slopeKey.pdf, id=1783, 397.485pt x 137.313pt>
 File: figures/ch2/figure2_slopeKey.pdf Graphic file (type pdf)
 <use figures/ch2/figure2_slopeKey.pdf>
 Package pdftex.def Info: figures/ch2/figure2_slopeKey.pdf  used on input line 9
 2.
 (pdftex.def)             Requested size: 397.48402pt x 137.31265pt.
 
-Package natbib Warning: Citation `Gillespie1992' on page 35 undefined on input 
+Package natbib Warning: Citation `Gillespie1992' on page 36 undefined on input 
 line 96.
 
-[35] [36 <./figures/ch2/figure2_slopekey.pdf>]
-
-Package natbib Warning: Citation `Weiss2002' on page 37 undefined on input line
- 100.
-
-[37] [38]
+[36] [37 <./figures/ch2/figure2_slopekey.pdf>] [38] [39]
 Overfull \hbox (3.60487pt too wide) detected at line 146
  []$[] \OMS/cmsy/m/n/10.95 ^^B [][][]\OT1/cmr/m/n/10.95 [[] + \OML/cmm/m/it/10.
 95 k\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 u \OMS/cmsy/m/n/10.95 ^^@ [][]\OML/
@@ -1203,209 +1161,191 @@ cmm/m/it/10.95 e[] \OT1/cmr/m/n/10.95 + [][][[] + \OML/cmm/m/it/10.95 k\OT1/cmr
  []
 
 
-LaTeX Warning: Reference `eq:fluxdist' on page 39 undefined on input line 149.
+LaTeX Warning: Reference `eq:fluxdist' on page 40 undefined on input line 149.
 
-<figures/ch2/figure3_slopeKey.pdf, id=2071, 180.675pt x 126.4725pt>
+<figures/ch2/figure3_slopeKey.pdf, id=2166, 180.675pt x 126.4725pt>
 File: figures/ch2/figure3_slopeKey.pdf Graphic file (type pdf)
 <use figures/ch2/figure3_slopeKey.pdf>
 Package pdftex.def Info: figures/ch2/figure3_slopeKey.pdf  used on input line 1
-51.
-(pdftex.def)             Requested size: 180.67455pt x 126.47218pt.
-[39 <./figures/ch2/figure3_slopekey.pdf>]
+52.
+(pdftex.def)             Requested size: 360.0pt x 252.02383pt.
 
 LaTeX Warning: Reference `eq:einsteinpdf' on page 40 undefined on input line 16
-1.
-
-
-Package natbib Warning: Citation `Lajeunesse2018' on page 40 undefined on input
- line 167.
-
-
-LaTeX Warning: Reference `eq:fluxdist' on page 40 undefined on input line 172.
-
-
-Package natbib Warning: Citation `Dhont2010' on page 40 undefined on input line
- 174.
-
-
-Package natbib Warning: Citation `Saletti2015' on page 40 undefined on input li
-ne 174.
-
-
-Package natbib Warning: Citation `Goh2008' on page 40 undefined on input line 1
-74.
-
-
-Package natbib Warning: Citation `Benavides2021' on page 40 undefined on input 
-line 174.
+2.
 
 [40]
 
-Package natbib Warning: Citation `Heyman2015' on page 41 undefined on input lin
-e 177.
+Package natbib Warning: Citation `Lajeunesse2018' on page 41 undefined on input
+ line 168.
+
+[41 <./figures/ch2/figure3_slopekey.pdf>]
+
+LaTeX Warning: Reference `eq:fluxdist' on page 42 undefined on input line 173.
 
 
-Package natbib Warning: Citation `Heyman2014b' on page 41 undefined on input li
-ne 178.
+Package natbib Warning: Citation `Dhont2010' on page 42 undefined on input line
+ 175.
 
 
-LaTeX Warning: Reference `eq:Langevin' on page 41 undefined on input line 180.
+Package natbib Warning: Citation `Saletti2015' on page 42 undefined on input li
+ne 175.
 
 
-Package natbib Warning: Citation `Goldstein1956' on page 41 undefined on input 
-line 182.
+Package natbib Warning: Citation `Benavides2021' on page 42 undefined on input 
+line 175.
 
 
-Package natbib Warning: Citation `Cardy2006' on page 41 undefined on input line
- 182.
-
-
-Package natbib Warning: Citation `Chapman1970' on page 41 undefined on input li
-ne 182.
-
-
-Package natbib Warning: Citation `Brilliantov2004' on page 41 undefined on inpu
-t line 182.
-
-
-Package natbib Warning: Citation `Hernandez2004' on page 41 undefined on input 
-line 182.
-
-[41]
-
-Package natbib Warning: Citation `Exner1925' on page 42 undefined on input line
- 191.
-
-
-LaTeX Warning: Reference `eq:stocEx' on page 42 undefined on input line 192.
-
-
-Package natbib Warning: Citation `Parker2007' on page 42 undefined on input lin
-e 194.
-
-
-Package natbib Warning: Citation `Viparelli2011' on page 42 undefined on input 
-line 194.
-
-
-Package natbib Warning: Citation `An2017' on page 42 undefined on input line 19
-4.
-
-
-Package natbib Warning: Citation `Bohorquez2014' on page 42 undefined on input 
-line 196.
-
-
-Package natbib Warning: Citation `Kardar2007' on page 42 undefined on input lin
-e 198.
-
-
-LaTeX Warning: Reference `eq:stocEx' on page 42 undefined on input line 199.
-
-
-Package natbib Warning: Citation `Kawakatsu2004' on page 42 undefined on input 
-line 201.
-
-
-Package natbib Warning: Citation `Nelson2004' on page 42 undefined on input lin
-e 201.
-
-
-Package natbib Warning: Citation `Leopold1952' on page 42 undefined on input li
-ne 204.
-
-
-Package natbib Warning: Citation `Wolman1960' on page 42 undefined on input lin
-e 204.
-
-
-Package natbib Warning: Citation `Parker1982' on page 42 undefined on input lin
-e 204.
-
-
-Package natbib Warning: Citation `Furbish2021c' on page 42 undefined on input l
-ine 205.
-
-
-Package natbib Warning: Citation `Ancey2020b' on page 42 undefined on input lin
-e 205.
+Package natbib Warning: Citation `Heyman2014b' on page 42 undefined on input li
+ne 179.
 
 [42]
 
-Package natbib Warning: Citation `Lajeunesse2018' on page 43 undefined on input
- line 212.
+LaTeX Warning: Reference `eq:Langevin' on page 43 undefined on input line 181.
 
 
-Package natbib Warning: Citation `Lajeunesse1010' on page 43 undefined on input
- line 212.
+Package natbib Warning: Citation `Goldstein1956' on page 43 undefined on input 
+line 183.
 
 
-Overfull \hbox (1.06787pt too wide) in paragraph at lines 212--214
+Package natbib Warning: Citation `Cardy2006' on page 43 undefined on input line
+ 183.
+
+
+Package natbib Warning: Citation `Chapman1970' on page 43 undefined on input li
+ne 183.
+
+
+Package natbib Warning: Citation `Brilliantov2004' on page 43 undefined on inpu
+t line 183.
+
+
+Package natbib Warning: Citation `Hernandez2004' on page 43 undefined on input 
+line 183.
+
+
+Package natbib Warning: Citation `Exner1925' on page 43 undefined on input line
+ 193.
+
+
+LaTeX Warning: Reference `eq:stocEx' on page 43 undefined on input line 194.
+
+
+Package natbib Warning: Citation `Viparelli2011' on page 43 undefined on input 
+line 196.
+
+
+Package natbib Warning: Citation `Bohorquez2014' on page 43 undefined on input 
+line 198.
+
+
+Package natbib Warning: Citation `Kardar2007' on page 43 undefined on input lin
+e 200.
+
+
+LaTeX Warning: Reference `eq:stocEx' on page 43 undefined on input line 201.
+
+
+Package natbib Warning: Citation `Kawakatsu2004' on page 43 undefined on input 
+line 203.
+
+
+Package natbib Warning: Citation `Nelson2004' on page 43 undefined on input lin
+e 203.
+
+[43]
+
+Package natbib Warning: Citation `Leopold1952' on page 44 undefined on input li
+ne 206.
+
+
+Package natbib Warning: Citation `Wolman1960' on page 44 undefined on input lin
+e 206.
+
+
+Package natbib Warning: Citation `Furbish2021c' on page 44 undefined on input l
+ine 207.
+
+
+Package natbib Warning: Citation `Ancey2020b' on page 44 undefined on input lin
+e 207.
+
+[44]
+
+Package natbib Warning: Citation `Lajeunesse2018' on page 45 undefined on input
+ line 214.
+
+
+Package natbib Warning: Citation `Lajeunesse1010' on page 45 undefined on input
+ line 214.
+
+
+Overfull \hbox (1.06787pt too wide) in paragraph at lines 214--216
 []\OT1/cmr/m/n/10.95 These re-sults gen-er-al-ize the bed-load tra-jec-tory mod
 -els of [][]\OT1/cmr/m/it/10.95 Ein-stein[] \OT1/cmr/m/n/10.95 ([]1937[]),
  []
 
-[43]) [44]
+) [45]
 \openout2 = `ch3bedEle.aux'.
 
  (./ch3bedEle.tex
 Chapter 3.
-[45
+[46
 
 
 
 ]
 
-Package natbib Warning: Citation `Pretzlav2016' on page 46 undefined on input l
+Package natbib Warning: Citation `Pretzlav2016' on page 47 undefined on input l
 ine 15.
 
-[46]
+[47]
 
-Package natbib Warning: Citation `Saletti2015a' on page 47 undefined on input l
+Package natbib Warning: Citation `Saletti2015a' on page 48 undefined on input l
 ine 24.
 
 
-Package natbib Warning: Citation `Sawai1987' on page 47 undefined on input line
+Package natbib Warning: Citation `Sawai1987' on page 48 undefined on input line
  32.
 
-[47]
-<./figures/ch3/definition.pdf, id=2651, 384.1122pt x 227.62204pt>
-File: ./figures/ch3/definition.pdf Graphic file (type pdf)
-<use ./figures/ch3/definition.pdf>
-Package pdftex.def Info: ./figures/ch3/definition.pdf  used on input line 46.
+[48]
+<./figures/ch3/definition-combo.pdf, id=2763, 384.1122pt x 227.62204pt>
+File: ./figures/ch3/definition-combo.pdf Graphic file (type pdf)
+<use ./figures/ch3/definition-combo.pdf>
+Package pdftex.def Info: ./figures/ch3/definition-combo.pdf  used on input line
+ 46.
 (pdftex.def)             Requested size: 360.0pt x 213.34303pt.
- [48] [49 <./figures/ch3/definition.pdf>]
+ [49] [50 <./figures/ch3/definition-combo.pdf>]
 
-Package natbib Warning: Citation `Sawai1987' on page 50 undefined on input line
+Package natbib Warning: Citation `Sawai1987' on page 51 undefined on input line
  59.
 
 
-Package natbib Warning: Citation `Sawai1987' on page 50 undefined on input line
+Package natbib Warning: Citation `Sawai1987' on page 51 undefined on input line
  60.
 
 
-Package natbib Warning: Citation `Sawai1987' on page 50 undefined on input line
+Package natbib Warning: Citation `Sawai1987' on page 51 undefined on input line
  61.
 
 
-Package natbib Warning: Citation `Crickmore1962' on page 50 undefined on input 
+Package natbib Warning: Citation `Crickmore1962' on page 51 undefined on input 
 line 62.
 
-[50]
+[51]
 
-Package natbib Warning: Citation `Cox1965' on page 51 undefined on input line 8
+Package natbib Warning: Citation `Cox1965' on page 52 undefined on input line 8
 0.
 
 
-Package natbib Warning: Citation `VanKampen1992' on page 51 undefined on input 
+Package natbib Warning: Citation `VanKampen1992' on page 52 undefined on input 
 line 80.
 
 
-Package natbib Warning: Citation `Cox1965' on page 51 undefined on input line 8
+Package natbib Warning: Citation `Cox1965' on page 52 undefined on input line 8
 3.
 
 
-Package natbib Warning: Citation `Gillespie1992' on page 51 undefined on input 
+Package natbib Warning: Citation `Gillespie1992' on page 52 undefined on input 
 line 83.
 
 
@@ -1424,16 +1364,16 @@ cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m \OT1/cmr/m/n/10.95 + 1)]\OML/cmm/m/it/10.9
  []
 
 
-Package natbib Warning: Citation `Cox1965' on page 51 undefined on input line 9
+Package natbib Warning: Citation `Cox1965' on page 52 undefined on input line 9
 5.
 
-[51]
+[52]
 
-Package natbib Warning: Citation `Gillespie1992' on page 52 undefined on input 
+Package natbib Warning: Citation `Gillespie1992' on page 53 undefined on input 
 line 104.
 
 
-Package natbib Warning: Citation `Haken1983' on page 52 undefined on input line
+Package natbib Warning: Citation `Haken1983' on page 53 undefined on input line
  104.
 
 
@@ -1464,24 +1404,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--124
  []
 
 
-Package natbib Warning: Citation `Cox1965' on page 52 undefined on input line 1
+Package natbib Warning: Citation `Cox1965' on page 53 undefined on input line 1
 24.
 
-[52] [53] [54] [55]
+[53] [54] [55] [56]
 Overfull \hbox (9.72017pt too wide) in paragraph at lines 189--190
 \OT1/cmr/m/n/10.95 steady-state stochas-tic dy-nam-ics of $\OML/cmm/m/it/10.95 
 n$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 m$ \OT1/cmr/m/n/10.95 which sup-
 port a time-independent
  []
 
-<./figures/ch3/distributions.pdf, id=2855, 398.9304pt x 166.22101pt>
+<./figures/ch3/distributions.pdf, id=2965, 398.9304pt x 166.22101pt>
 File: ./figures/ch3/distributions.pdf Graphic file (type pdf)
 <use ./figures/ch3/distributions.pdf>
 Package pdftex.def Info: ./figures/ch3/distributions.pdf  used on input line 19
 8.
 (pdftex.def)             Requested size: 360.0pt x 150.00839pt.
-[56]
-<./figures/ch3/variance.pdf, id=2869, 198.7425pt x 198.7425pt>
+[57]
+<./figures/ch3/variance.pdf, id=2978, 198.7425pt x 198.7425pt>
 File: ./figures/ch3/variance.pdf Graphic file (type pdf)
 <use ./figures/ch3/variance.pdf>
 Package pdftex.def Info: ./figures/ch3/variance.pdf  used on input line 215.
@@ -1491,93 +1431,93 @@ Underfull \hbox (badness 1102) in paragraph at lines 216--216
 [] []|\OT1/cmr/m/n/10.95 Data from all sim-u-la-
  []
 
-[57 <./figures/ch3/distributions.pdf> <./figures/ch3/variance.pdf
+[58 <./figures/ch3/distributions.pdf> <./figures/ch3/variance.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/ch3/variance.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >]
-<./figures/ch3/momentsuppression.pdf, id=2958, 398.9304pt x 189.96686pt>
+<./figures/ch3/momentsuppression.pdf, id=3068, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/momentsuppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/momentsuppression.pdf>
 Package pdftex.def Info: ./figures/ch3/momentsuppression.pdf  used on input lin
 e 226.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
- [58]
-<./figures/ch3/colent-suppression.pdf, id=2985, 398.9304pt x 189.96686pt>
+ [59]
+<./figures/ch3/colent-suppression.pdf, id=3096, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/colent-suppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/colent-suppression.pdf>
 Package pdftex.def Info: ./figures/ch3/colent-suppression.pdf  used on input li
 ne 241.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
- [59 <./figures/ch3/momentsuppression.pdf>] [60 <./figures/ch3/colent-suppressi
+ [60 <./figures/ch3/momentsuppression.pdf>] [61 <./figures/ch3/colent-suppressi
 on.pdf>]
-<./figures/ch3/rtcdf.pdf, id=3106, 398.9304pt x 306.86955pt>
+<./figures/ch3/rtcdf.pdf, id=3215, 398.9304pt x 306.86955pt>
 File: ./figures/ch3/rtcdf.pdf Graphic file (type pdf)
 <use ./figures/ch3/rtcdf.pdf>
 Package pdftex.def Info: ./figures/ch3/rtcdf.pdf  used on input line 251.
 (pdftex.def)             Requested size: 360.0pt x 276.93858pt.
 
 
-Package natbib Warning: Citation `Nakagawa1980' on page 61 undefined on input l
+Package natbib Warning: Citation `Nakagawa1980' on page 62 undefined on input l
 ine 260.
 
-[61 <./figures/ch3/rtcdf.pdf>] [62]
+[62 <./figures/ch3/rtcdf.pdf>] [63]
 
-Package natbib Warning: Citation `Nakagawa1980' on page 63 undefined on input l
+Package natbib Warning: Citation `Nakagawa1980' on page 64 undefined on input l
 ine 280.
 
 
-Package natbib Warning: Citation `Nakagawa1980' on page 63 undefined on input l
+Package natbib Warning: Citation `Nakagawa1980' on page 64 undefined on input l
 ine 280.
 
 
-Package natbib Warning: Citation `Saletti2015a' on page 63 undefined on input l
+Package natbib Warning: Citation `Saletti2015a' on page 64 undefined on input l
 ine 287.
 
-[63] [64]
+[64] [65]
 
-Package natbib Warning: Citation `Pretzlav2016' on page 65 undefined on input l
+Package natbib Warning: Citation `Pretzlav2016' on page 66 undefined on input l
 ine 304.
 
 
-Package natbib Warning: Citation `Sornette2000' on page 65 undefined on input l
+Package natbib Warning: Citation `Sornette2000' on page 66 undefined on input l
 ine 305.
 
-[65]
+[66]
 
-Package natbib Warning: Citation `Saletti2015a' on page 66 undefined on input l
+Package natbib Warning: Citation `Saletti2015a' on page 67 undefined on input l
 ine 314.
 
 
-Package natbib Warning: Citation `Sornette2000' on page 66 undefined on input l
+Package natbib Warning: Citation `Sornette2000' on page 67 undefined on input l
 ine 314.
 
 
-Package natbib Warning: Citation `Saletti2015a' on page 66 undefined on input l
+Package natbib Warning: Citation `Saletti2015a' on page 67 undefined on input l
 ine 315.
 
-[66]
+[67]
 Overfull \hbox (1.5938pt too wide) in paragraph at lines 325--326
 []\OT1/cmr/m/n/10.95 Collective en-train-ment gen-er-ates a sta-tis-ti-cal reg-
 u-la-tion ef-fect, whereby
  []
 
-) [67]
+) [68]
 \openout2 = `ch4downDiff.aux'.
 
  (./ch4downDiff.tex
 Chapter 4.
 
-Package natbib Warning: Citation `Ettema2014' on page 68 undefined on input lin
+Package natbib Warning: Citation `Ettema2014' on page 69 undefined on input lin
 e 10.
 
-[68
+[69
 
 
 
 ]
 
-Package natbib Warning: Citation `Cundall1979' on page 69 undefined on input li
+Package natbib Warning: Citation `Cundall1979' on page 70 undefined on input li
 ne 27.
 
 
@@ -1593,23 +1533,23 @@ Overfull \hbox (2.45276pt too wide) in paragraph at lines 25--31
 10.95 Kraich-
  []
 
-[69]
-
-Package natbib Warning: Citation `Lajeunesse2018' on page 70 undefined on input
- line 35.
-
 [70]
 
 Package natbib Warning: Citation `Lajeunesse2018' on page 71 undefined on input
+ line 35.
+
+[71]
+
+Package natbib Warning: Citation `Lajeunesse2018' on page 72 undefined on input
  line 52.
 
-[71] [72] [73]
-<./figures/ch4/pdf-plot.png, id=3578, 385.9218pt x 164.5347pt>
+[72] [73] [74]
+<./figures/ch4/pdf-plot.png, id=3684, 385.9218pt x 164.5347pt>
 File: ./figures/ch4/pdf-plot.png Graphic file (type png)
 <use ./figures/ch4/pdf-plot.png>
 Package pdftex.def Info: ./figures/ch4/pdf-plot.png  used on input line 94.
 (pdftex.def)             Requested size: 360.0pt x 153.48766pt.
- [74 <./figures/ch4/pdf-plot.png>]
+ [75 <./figures/ch4/pdf-plot.png>]
 Overfull \hbox (63.39835pt too wide) in paragraph at lines 124--143
  [][] 
  []
@@ -1618,11 +1558,11 @@ Overfull \hbox (63.39835pt too wide) in paragraph at lines 124--143
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package natbib Warning: Citation `Nakagawa1980' on page 75 undefined on input l
+Package natbib Warning: Citation `Nakagawa1980' on page 76 undefined on input l
 ine 148.
 
-[75]
-<./figures/ch4/diffusion.png, id=3651, 380.98335pt x 308.71335pt>
+[76]
+<./figures/ch4/diffusion.png, id=3759, 380.98335pt x 308.71335pt>
 File: ./figures/ch4/diffusion.png Graphic file (type png)
 <use ./figures/ch4/diffusion.png>
 Package pdftex.def Info: ./figures/ch4/diffusion.png  used on input line 151.
@@ -1631,245 +1571,271 @@ Package pdftex.def Info: ./figures/ch4/diffusion.png  used on input line 151.
 
 LaTeX Warning: Float too large for page by 59.51668pt on input line 155.
 
-[76] [77 <./figures/ch4/diffusion.png>]
-
-Package natbib Warning: Citation `Pierce2020' on page 78 undefined on input lin
-e 179.
-
-[78]
+[77] [78 <./figures/ch4/diffusion.png>]
 
 Package natbib Warning: Citation `Pierce2020' on page 79 undefined on input lin
+e 179.
+
+[79]
+
+Package natbib Warning: Citation `Pierce2020' on page 80 undefined on input lin
 e 193.
 
 
-Package natbib Warning: Citation `Pierce2020' on page 79 undefined on input lin
+Package natbib Warning: Citation `Pierce2020' on page 80 undefined on input lin
 e 195.
 
-[79] [80]) [81]
+[80] [81]) [82]
 \openout2 = `ch5langevin.aux'.
 
  (./ch5langevin.tex
 Chapter 5.
-
-Package natbib Warning: Citation `Boltzman' on page 82 undefined on input line 
-11.
-
-
-Package natbib Warning: Citation `Lajeunesse2020' on page 82 undefined on input
- line 11.
-
-[82
+[83
 
 
 
 ]
-Overfull \hbox (8.52579pt too wide) in paragraph at lines 18--20
+Overfull \hbox (8.52579pt too wide) in paragraph at lines 17--19
 []\OT1/cmr/m/n/10.95 Particle tra-jec-to-ries are a com-pro-mise be-tween tur-b
 u-lent drag and particle-
  []
 
 
-Package natbib Warning: Citation `Sezilles2014' on page 83 undefined on input l
-ine 22.
+Package natbib Warning: Citation `Sezilles2014' on page 84 undefined on input l
+ine 21.
 
-[83] [84]
+[84] [85] [86]
 
-LaTeX Warning: Reference `fig:1' on page 85 undefined on input line 43.
-
-[85]
-
-Package natbib Warning: Citation `Williams2020' on page 86 undefined on input l
-ine 48.
+LaTeX Warning: Reference `fig:1' on page 87 undefined on input line 42.
 
 
-LaTeX Warning: Reference `fig:1' on page 86 undefined on input line 49.
+Package natbib Warning: Citation `Williams2020' on page 87 undefined on input l
+ine 47.
 
-<./figures/ch5/Fig1Concept.png, id=3939, 361.35pt x 162.6075pt>
+
+LaTeX Warning: Reference `fig:1' on page 87 undefined on input line 48.
+
+<./figures/ch5/Fig1Concept.png, id=4083, 361.35pt x 162.6075pt>
 File: ./figures/ch5/Fig1Concept.png Graphic file (type png)
 <use ./figures/ch5/Fig1Concept.png>
-Package pdftex.def Info: ./figures/ch5/Fig1Concept.png  used on input line 52.
+Package pdftex.def Info: ./figures/ch5/Fig1Concept.png  used on input line 51.
 (pdftex.def)             Requested size: 361.34912pt x 162.6071pt.
 
-Package natbib Warning: Citation `Serrero2015' on page 86 undefined on input li
-ne 57.
+Package natbib Warning: Citation `Serrero2015' on page 87 undefined on input li
+ne 56.
+
+[87]
+
+LaTeX Warning: Reference `eq:1' on page 88 undefined on input line 60.
 
 
-LaTeX Warning: Reference `eq:1' on page 86 undefined on input line 61.
-
-[86]
-
-Package natbib Warning: Citation `Auton1987' on page 87 undefined on input line
- 64.
+Package natbib Warning: Citation `Auton1987' on page 88 undefined on input line
+ 63.
 
 
-Package natbib Warning: Citation `Mei2006' on page 87 undefined on input line 6
-5.
+Package natbib Warning: Citation `Mei2006' on page 88 undefined on input line 6
+4.
 
 
-Package natbib Warning: Citation `Michaelides1995' on page 87 undefined on inpu
-t line 68.
+Package natbib Warning: Citation `Michaelides1995' on page 88 undefined on inpu
+t line 67.
 
 
-Package natbib Warning: Citation `Dalche2015' on page 87 undefined on input lin
-e 68.
+Package natbib Warning: Citation `Dalche2015' on page 88 undefined on input lin
+e 67.
 
-[87 <./figures/ch5/Fig1Concept.png>]
+[88 <./figures/ch5/Fig1Concept.png>]
 
-LaTeX Warning: Reference `eq:drag' on page 88 undefined on input line 77.
+LaTeX Warning: Reference `eq:drag' on page 89 undefined on input line 76.
 
+[89]
 
-Package natbib Warning: Citation `vandenBroek1983' on page 88 undefined on inpu
-t line 87.
-
-
-Package natbib Warning: Citation `Risken1984' on page 88 undefined on input lin
-e 88.
+Package natbib Warning: Citation `vandenBroek1983' on page 90 undefined on inpu
+t line 86.
 
 
-Package natbib Warning: Citation `Suweiss2011' on page 88 undefined on input li
-ne 88.
+Package natbib Warning: Citation `Risken1984' on page 90 undefined on input lin
+e 87.
 
-[88]
 
-LaTeX Warning: Reference `sec:appendixA' on page 89 undefined on input line 94.
+Package natbib Warning: Citation `Suweiss2011' on page 90 undefined on input li
+ne 87.
+
+
+LaTeX Warning: Reference `sec:appendixA' on page 90 undefined on input line 93.
 
 
 
-Overfull \hbox (0.353pt too wide) in paragraph at lines 94--95
+Overfull \hbox (0.353pt too wide) in paragraph at lines 93--94
 \OT1/cmr/m/n/10.95 We de-rive the equa-tion gov-ern-ing the stream-wise ve-loc-
 ity dis-tri-bu-tion $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.
 95 u; t\OT1/cmr/m/n/10.95 )$
  []
 
+[90]
 
-Package natbib Warning: Citation `Duderstadt1971' on page 89 undefined on input
- line 102.
-
-
-Package natbib Warning: Citation `Brilliantov2004' on page 89 undefined on inpu
-t line 102.
+Package natbib Warning: Citation `Duderstadt1971' on page 91 undefined on input
+ line 101.
 
 
-Package natbib Warning: Citation `Serero2015' on page 89 undefined on input lin
-e 102.
-
-[89] [90]
-
-Package natbib Warning: Citation `Hall1970' on page 91 undefined on input line 
-118.
+Package natbib Warning: Citation `Brilliantov2004' on page 91 undefined on inpu
+t line 101.
 
 
-Package natbib Warning: Citation `Zaidi2015' on page 91 undefined on input line
- 118.
-
-
-Package natbib Warning: Citation `Bhalekar2017' on page 91 undefined on input l
-ine 118.
-
-
-Package natbib Warning: Citation `Cox1965' on page 91 undefined on input line 1
-27.
+Package natbib Warning: Citation `Serero2015' on page 91 undefined on input lin
+e 101.
 
 [91]
-<./figures/ch5/Fig2pdfs.png, id=4075, 319.37317pt x 232.89008pt>
+
+Package natbib Warning: Citation `Hall1970' on page 92 undefined on input line 
+117.
+
+
+Package natbib Warning: Citation `Zaidi2015' on page 92 undefined on input line
+ 117.
+
+
+Package natbib Warning: Citation `Bhalekar2017' on page 92 undefined on input l
+ine 117.
+
+[92]
+
+Package natbib Warning: Citation `Cox1965' on page 93 undefined on input line 1
+26.
+
+<./figures/ch5/Fig2pdfs.png, id=4219, 319.37317pt x 232.89008pt>
 File: ./figures/ch5/Fig2pdfs.png Graphic file (type png)
 <use ./figures/ch5/Fig2pdfs.png>
-Package pdftex.def Info: ./figures/ch5/Fig2pdfs.png  used on input line 139.
+Package pdftex.def Info: ./figures/ch5/Fig2pdfs.png  used on input line 138.
 (pdftex.def)             Requested size: 319.37238pt x 232.8895pt.
-<./figures/ch5/Fig3asymptotic.png, id=4084, 312.50752pt x 122.91922pt>
+<./figures/ch5/Fig3asymptotic.png, id=4228, 312.50752pt x 122.91922pt>
 File: ./figures/ch5/Fig3asymptotic.png Graphic file (type png)
 <use ./figures/ch5/Fig3asymptotic.png>
 Package pdftex.def Info: ./figures/ch5/Fig3asymptotic.png  used on input line 1
-51.
+50.
 (pdftex.def)             Requested size: 312.50674pt x 122.9189pt.
- [92]
+[93] [94 <./figures/ch5/Fig2pdfs.png>]
 
-LaTeX Warning: Reference `eq:2ndmom' on page 93 undefined on input line 160.
+LaTeX Warning: Reference `eq:2ndmom' on page 95 undefined on input line 159.
 
 
-LaTeX Warning: Reference `sec:appendixB' on page 93 undefined on input line 160
+LaTeX Warning: Reference `sec:appendixB' on page 95 undefined on input line 159
 .
 
-[93 <./figures/ch5/Fig2pdfs.png>]
-<./figures/ch5/Fig4expComparison.png, id=4109, 388.99327pt x 203.19914pt>
+[95 <./figures/ch5/Fig3asymptotic.png>]
+<./figures/ch5/Fig4expComparison.png, id=4261, 388.99327pt x 203.19914pt>
 File: ./figures/ch5/Fig4expComparison.png Graphic file (type png)
 <use ./figures/ch5/Fig4expComparison.png>
 Package pdftex.def Info: ./figures/ch5/Fig4expComparison.png  used on input lin
-e 189.
+e 188.
 (pdftex.def)             Requested size: 388.99231pt x 203.19864pt.
 
 
-Package natbib Warning: Citation `Coleman2019' on page 94 undefined on input li
-ne 202.
+Package natbib Warning: Citation `Coleman2019' on page 96 undefined on input li
+ne 201.
 
 
-Package natbib Warning: Citation `Nakagawa1981' on page 94 undefined on input l
-ine 202.
-
-
-Package natbib Warning: Citation `Brilliantov2004' on page 94 undefined on inpu
-t line 204.
-
-
-Package natbib Warning: Citation `other..' on page 94 undefined on input line 2
-04.
-
-[94 <./figures/ch5/Fig3asymptotic.png>] [95 <./figures/ch5/Fig4expComparison.pn
-g>]
-
-Package natbib Warning: Citation `Chapman1970' on page 96 undefined on input li
-ne 209.
+Package natbib Warning: Citation `Nakagawa1981' on page 96 undefined on input l
+ine 201.
 
 
 Package natbib Warning: Citation `Brilliantov2004' on page 96 undefined on inpu
-t line 209.
+t line 203.
 
 
-Package natbib Warning: Citation `Marshall2001' on page 96 undefined on input l
-ine 212.
+Package natbib Warning: Citation `other..' on page 96 undefined on input line 2
+03.
 
-[96]
+[96 <./figures/ch5/Fig4expComparison.png>]
 
-Package natbib Warning: Citation `Skylar2004' on page 97 undefined on input lin
-e 220.
-
-
-Package natbib Warning: Citation `Tingian' on page 97 undefined on input line 2
-20.
+Package natbib Warning: Citation `Chapman1970' on page 97 undefined on input li
+ne 208.
 
 
-Package natbib Warning: Citation `Turowski2020' on page 97 undefined on input l
-ine 220.
+Package natbib Warning: Citation `Brilliantov2004' on page 97 undefined on inpu
+t line 208.
+
+
+Package natbib Warning: Citation `Marshall2001' on page 97 undefined on input l
+ine 211.
 
 [97]
 
-Package natbib Warning: Citation `Bagnold1941' on page 98 undefined on input li
-ne 225.
-
-[98]
-
-Package natbib Warning: Citation `VanKampen1983' on page 99 undefined on input 
-line 268.
+Package natbib Warning: Citation `Skylar2004' on page 98 undefined on input lin
+e 219.
 
 
-LaTeX Warning: Reference `eq:detlangevin' on page 99 undefined on input line 27
-1.
+Package natbib Warning: Citation `Tingian' on page 98 undefined on input line 2
+19.
 
-[99]
-Overfull \hbox (1.8479pt too wide) in paragraph at lines 280--282
+
+Package natbib Warning: Citation `Turowski2020' on page 98 undefined on input l
+ine 219.
+
+[98]) [99]
+\openout2 = `ch6conc.aux'.
+
+ (./ch6conc.tex
+Chapter 6.
+) [100
+
+
+
+] (./diss.bbl (./diss.brf)
+\tf@brf=\write8
+\openout8 = `diss.brf'.
+
+ [101
+
+
+]
+Overfull \hbox (99.59642pt too wide) in paragraph at lines 57--57
+[]\OT1/cmr/m/n/10.95 xiii[], []xvii[], []15[], []22[], []23[], []27[], []30[], 
+[]31[], []42[], []47[], []48[], []49[], []50[], []51[], []52[], []53[], []54[],
+ []55[], []56[], []59[], []60[], []61[], []64[], []65[], []66[], []83[], []84[]
+[]  
+ []
+
+[102] [103] [104] [105]
+Overfull \hbox (10.47546pt too wide) in paragraph at lines 335--335
+[]\OT1/cmr/m/n/10.95 xix[], []5[], []7[], []8[], []16[], []26[], []30[], []37[]
+, []41[], []45[], []46[], []47[], []64[], []69[], []70[], []71[], []72[], []74[
+], []75[], []76[], []79[], []80[], []81[][]  
+ []
+
+[106] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116] [117]
+[118] [119] [120] [121] [122]) [123]
+\openout2 = `app_ch1.aux'.
+
+ (./app_ch1.tex
+Appendix A.
+[124
+
+
+]
+
+Package natbib Warning: Citation `VanKampen1983' on page 125 undefined on input
+ line 32.
+
+
+LaTeX Warning: Reference `eq:detlangevin' on page 125 undefined on input line 3
+5.
+
+[125]
+Overfull \hbox (1.8479pt too wide) in paragraph at lines 44--46
 \OT1/cmr/m/n/10.95 where the co-ef-fi-cients $\OML/cmm/m/it/10.95 R[]$ \OT1/cmr
 /m/n/10.95 are the residues of the prod-uct $[\OML/cmm/m/it/10.95 q\OT1/cmr/m/n
 /10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 ) [] \OML/cmm/m/it/10.95 q\O
 T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 )][]$: 
  []
 
-[100]
+[126]
 
-Package natbib Warning: Citation `Hall1970' on page 101 undefined on input line
- 300.
+Package natbib Warning: Citation `Hall1970' on page 127 undefined on input line
+ 64.
 
 
-Overfull \hbox (24.85725pt too wide) detected at line 306
+Overfull \hbox (24.85725pt too wide) detected at line 70
 []\OT1/cmr/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 "[]\OT1/cmr
 /m/n/10.95 )[]\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\
 OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ []\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m
@@ -1879,51 +1845,49 @@ L/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95 )
 T1/cmr/m/n/10.95 + [][][] = 0
  []
 
-[101]) [102]
-\openout2 = `ch6conc.aux'.
+[127]) [128]
+\openout2 = `app_ch2.aux'.
 
- (./ch6conc.tex
-Appendix A.
-) [103
+ (./app_ch2.tex
+Appendix B.
+[129
 
-
-
-] (./diss.bbl (./diss.brf)
-\tf@brf=\write8
-\openout8 = `diss.brf'.
-
-
-Overfull \hbox (60.66304pt too wide) in paragraph at lines 51--51
-[]\OT1/cmr/m/n/10.95 xii[], []xvi[], []14[], []22[], []23[], []26[], []29[], []
-30[], []41[], []45[], []46[], []47[], []48[], []49[], []50[], []51[], []52[], [
-]53[], []54[], []57[], []58[], []59[], []62[], []63[], []64[][]  
- []
-
-[104
-
-
-] [105] [106] [107] [108]
-Overfull \hbox (16.5588pt too wide) in paragraph at lines 336--336
-[]\OT1/cmr/m/n/10.95 xviii[], []5[], []7[], []8[], []15[], []26[], []29[], []36
-[], []40[], []43[], []44[], []45[], []62[], []67[], []68[], []69[], []70[], []7
-2[], []73[], []74[], []77[], []78[], []79[][]  
- []
-
-[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
-[121] [122] [123] [124]) [125]
-\openout2 = `appendix.aux'.
-
- (./appendix.texpdfTeX warning (ext4): destination with the same identifier (na
-me{appendix.A}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 \chapter{Mathematical Compendia}
-                                    
-Appendix A.
-) [126
 
 
 ]
+
+Package natbib Warning: Citation `VanKampen1983' on page 130 undefined on input
+ line 32.
+
+
+LaTeX Warning: Reference `eq:detlangevin' on page 130 undefined on input line 3
+5.
+
+[130]
+Overfull \hbox (1.8479pt too wide) in paragraph at lines 44--46
+\OT1/cmr/m/n/10.95 where the co-ef-fi-cients $\OML/cmm/m/it/10.95 R[]$ \OT1/cmr
+/m/n/10.95 are the residues of the prod-uct $[\OML/cmm/m/it/10.95 q\OT1/cmr/m/n
+/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 ) [] \OML/cmm/m/it/10.95 q\O
+T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 )][]$: 
+ []
+
+[131]
+
+Package natbib Warning: Citation `Hall1970' on page 132 undefined on input line
+ 64.
+
+
+Overfull \hbox (24.85725pt too wide) detected at line 70
+[]\OT1/cmr/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 "[]\OT1/cmr
+/m/n/10.95 )[]\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\
+OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ []\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m
+/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@ \OM
+L/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95 )
+ + []\OML/cmm/m/it/10.95 Q[]z \OT1/cmr/m/n/10.95 + [][]\OML/cmm/m/it/10.95 z \O
+T1/cmr/m/n/10.95 + [][][] = 0
+ []
+
+[132]) [133]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1931,19 +1895,20 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 414.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 414.
 (./diss.aux (./abs.aux) (./laySum.aux) (./pref.aux) (./ack.aux) (./ch1intro.aux
 ) (./ch2flipFlop.aux) (./ch3bedEle.aux) (./ch4downDiff.aux) (./ch5langevin.aux)
-(./ch6conc.aux) (./appendix.aux))
+(./ch6conc.aux) (./app_ch1.aux) (./app_ch2.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 414.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 414.
-Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: F3E889E06B665C05D431FB23ED6F6694;8334.
 
 
-Package rerunfilecheck Warning: File `diss.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
+Package rerunfilecheck Warning: File `diss.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `diss.brf':
-(rerunfilecheck)             Before: 7F584BC22A091656AF301D99A91B0B83;35539
-(rerunfilecheck)             After:  965652F0F9623C49AABA468CD56B2E72;35539.
+Package rerunfilecheck Info: Checksums for `diss.out':
+(rerunfilecheck)             Before: B8D1097AC6C4E1EAB1BDB1306528B58D;9295
+(rerunfilecheck)             After:  25CF9AB4F4C0206F0B832C2ACC6F4010;10162.
+Package rerunfilecheck Info: File `diss.brf' has not changed.
+(rerunfilecheck)             Checksum: BFE5D260A226AA51F34241344AF6D44C;36833.
 
 LaTeX Warning: There were undefined references.
 
@@ -1953,13 +1918,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 414.
  ) 
 Here is how much of TeX's memory you used:
- 14217 strings out of 483183
- 214407 string characters out of 5966292
- 544410 words of memory out of 5000000
- 28252 multiletter control sequences out of 15000+600000
+ 14350 strings out of 483183
+ 216287 string characters out of 5966292
+ 547306 words of memory out of 5000000
+ 28325 multiletter control sequences out of 15000+600000
  542069 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,20n,46p,1672b,1208s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,20n,46p,1672b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/kp/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
@@ -1977,10 +1942,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on diss.pdf (151 pages, 4327433 bytes).
+Output written on diss.pdf (159 pages, 4414049 bytes).
 PDF statistics:
- 5129 PDF objects out of 5155 (max. 8388607)
- 4396 compressed objects within 44 object streams
- 639 named destinations out of 1000 (max. 500000)
- 872 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5374 PDF objects out of 6186 (max. 8388607)
+ 4608 compressed objects within 47 object streams
+ 692 named destinations out of 1000 (max. 500000)
+ 917 words of extra memory for PDF output out of 10000 (max. 10000000)
 

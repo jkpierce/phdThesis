@@ -1,19 +1,18 @@
 %%!TEX root = diss.tex
 
-\chapter{Collisional model of sediment velocity distributions}
+\chapter{Collisional Langevin model of the bedload sediment velocity distributions}
 \label{ch:langevin}
 \section{Introduction}
 
 Bulk bed load transport rates show wide and frequent fluctuations which originate from coupling between the fluid and granular phases.
-Due to these fluctuations, measured transport rates often show extremely slow convergence through time, and predicted rates often deviate from measured values by several orders of magnitude.
-These challenges limit numerous ecological and engineering applications that rely on sediment transport predictions.
-In recent decades, stochastic formulations of the bed load flux have become increasingly popular for their potential to predict the mean transport rates required by applications while also predicting fluctuations, quantifying the dependence of measurements on the observation scale, and linking bulk transport characteristics to the ``microscopic" dynamics of individual grains.
-Recent indications that sediment transport fluctuations might explain longstanding and unsolved problems in alluvial channel stability, such as channel width maintenance \citep{Boltzman, Lajeunesse2020} and bedform initiation \citep{Ancey2014,Bohorquez2016} provide additional motivation to develop these stochastic approaches.
-One subset of these methods expresses downstream transport rates as a sum over the instantaneous streamwise velocities of all particles in motion within a control volume.
-These approaches highlight the instantaneous velocity distribution of sediment particles as an object of crucial importance.
-Unfortunately, current understanding of bedload velocity distributions remains limited.
-We have as of yet no consensus on the shape of the bedload velocity distribution (is it Exponential, Gaussian, Gamma, or some other shape?), and no mechanistic models have yet been developed to describe the full range of experimental observations.
-Here, we develop a stochastic model of particle velocities to addresses these issues.
+Due to these fluctuations, measured transport rates often show slow convergence through time, and predicted rates often deviate from measured values by several orders of magnitude \citep{Ancey2020}.
+These challenges limit numerous ecological and engineering applications that rely on sediment transport predictions \citep{}.
+In recent decades, stochastic formulations of the bed load flux have become increasingly popular for their potential to predict the mean transport rates required by applications while also predicting fluctuations \citep{Ancey2008}, quantifying the dependence of measurements on the observation scale \citep{Turowski2010}, and linking bulk transport characteristics to the ``microstructural" dynamics of individual grains \citep{Ancey2014}.
+Recent indications that sediment transport fluctuations might explain longstanding and unsolved problems in alluvial channel stability, such as channel width maintenance \citep{Abramian2019} and bedform initiation \citep{Jerolmack2005,Bohorquez2016} provide additional motivation to develop these stochastic approaches.
+One subset of stochastic methods expresses downstream transport rates as a sum over the instantaneous streamwise velocities of all particles in motion within a control volume \citep{Ancey2008,Furbish2012}.
+These approaches rely on the instantaneous velocity distribution of sediment particles \citep{Lajeunesse2010}, but our understanding of these distributions unfortunately remains limited.
+We have as of yet no consensus on the shape of the bedload velocity distribution (is it Exponential, Gaussian, Gamma, or some other shape?), and although models have described some extreme endmember distributions \citep[e.g.][]{Fan2014,Ancey2014}, we have as of yet no mechanistic models that describe the full range of experimental observations \citep{Lajeunesse2010,Fathel2015,Heyman2016,Liu2019,Houssais2012}.
+In this chapter, I develop a stochastic model of particle velocities which addresses this shortcoming.
 
 Particle trajectories are a compromise between turbulent drag and particle-bed collision \citep{Wiberg1985}. We therefore anticipate that the Stokes number, which is known to characterize colliding bodies within a viscous fluid \citep{}, is an important dimensionless parameter of the bedload velocity distribution.
 The Stokes number is defined as ... where ....
@@ -37,7 +36,7 @@ Taking inspiration from this established knowledge, we develop below a model for
 We develop the model and explain our assumptions in section \ref{sec:model}, then we present the analytical solution and major results in \ref{sec:results}. We finally discuss the implications of these results, summarize our findings, and suggest ideas for further research in sections \ref{sec:discussion} and \ref{sec:conclusion}.
 
 
-\section{Model}
+\section{Mechanistic description of particle velocities}
 \label{sec:model}
 
 Figure \ref{fig:1} indicates the configuration we have in mind. Nearly spherical and cohesionless particles of diameter $d$ and mass $m$ moving as bed load down a slope inclined at an angle $\theta$ in a steady turbulent shear flow. The flow is just strong enough to drive grains into rarefied transport of a kind typical in gravel-bed rivers: particles saltate along the bed in sequences of collisions between events of erosion and deposition; moving particles collide often with stationary particles, but rarely with other moving particles.
@@ -60,12 +59,12 @@ Further assuming that the number of collisions per unit time is $\nu$ and that t
 Here, $N_\nu(t)$ is the number of collisions in time $t$, the $\tau_k$ ($k=1,2,\dots$) are times at which collisions occur, and the $\varepsilon_k$ are elasticity coefficients characterizing the amount by which each collision slows the particle down.
 This collision force is a sequence of random impulses which are proportional to the pre-collisional streamwise momentum. This collision model should be adequate when the contact times between moving and resting particles are small compared to the times between collisions. These conditions are always satisfied for the idealized saltation-type motion depicted in figure \ref{eq:1}.
 
-Fluid forces on a coarse particle in a viscous flow depend on the Reynolds number $\Rey_p = d V/\nu$ defined by the particle size $d$, slip velocity $V$ between particle and fluid, and kinematic viscosity $\nu$.
-These forces have been calculated analytically from the Navier-Stokes equations for vanishing $\Rey_p$ and include acceleration, history, and velocity-dependent drag terms \citep{Hjelmfelt1966, Maxey1983, Auton1987}.
-At realistic $\Re_p$ analytical results are limited, so it is standard practice to turn instead to empirical corrections on the small $\Rey_p$ formulas \citep{Schmeeckle2007,Mei2006}.
+Fluid forces on a coarse particle in a viscous flow depend on the Reynolds number $\Re_p = d V/\nu$ defined by the particle size $d$, slip velocity $V$ between particle and fluid, and kinematic viscosity $\nu$.
+These forces have been calculated analytically from the Navier-Stokes equations for vanishing $\Re_p$ and include acceleration, history, and velocity-dependent drag terms \citep{Hjelmfelt1966, Maxey1983, Auton1987}.
+At realistic $\Re_p$ analytical results are limited, so it is standard practice to turn instead to empirical corrections on the small $\Re_p$ formulas \citep{Schmeeckle2007,Mei2006}.
 A dominant contribution to the downstream drag force $F_D$ on nearly spherical particles at large $\Re_p$ can be written $F_D = \frac{\pi}{8}
-\rho_f d^2 C_D(\Rey_p) |V|V$, where $\rho_f$ is the fluid density, $d$ is the particle diameter, $C_D(\Rey_p)$ is an empirical drag coefficient, and $V = U-u$ is the slip velocity between the fluid ($U$) and particle ($u$) velocities \citep{Coleman1967, Schmeeckle2007, Dwivedi2012}.
-In the present model we set $C_D = \frac{24}{\Rey_p}( 1 + 0.194 \Rey_p^{0.631})$ \citep{Clift1978,Gonzalez2017} and we do not involve acceleration and history terms for simplicity, although we acknowledge their potential importance for coarse sediment transport \citep{Michaelides1995,Armenio2001,Dalche2015}.
+\rho_f d^2 C_D(\Re_p) |V|V$, where $\rho_f$ is the fluid density, $d$ is the particle diameter, $C_D(\Re_p)$ is an empirical drag coefficient, and $V = U-u$ is the slip velocity between the fluid ($U$) and particle ($u$) velocities \citep{Coleman1967, Schmeeckle2007, Dwivedi2012}.
+In the present model we set $C_D = \frac{24}{\Re_p}( 1 + 0.194 \Re_p^{0.631})$ \citep{Clift1978,Gonzalez2017} and we do not involve acceleration and history terms for simplicity, although we acknowledge their potential importance for coarse sediment transport \citep{Michaelides1995,Armenio2001,Dalche2015}.
 
 Drag forces have been argued to fluctuate rapidly compared to the inertial response times of coarse sediment grains \citep{Fan2014}.
 The magnitude of drag fluctuations has been observed to follow a Gaussian distribution \citep{Hofland2006,Schmeeckle2007,Dwivedi2010,Celik2014}.
@@ -76,7 +75,7 @@ Defining $\bar{V}$ as a representative slip velocity which we specify more caref
 \rho_f d^2 \bar{C}_D \bar{V}^2 + \sqrt{2 D } \eta(t). \ee
 In this drag force \ref{eq:drag} and the collision force \ref{eq:col}, the turbulent fluctuations $\xi(t)$, collision times $\tau_k$, and dissipation coefficients $\varepsilon_k$, can take any values consistent with their distribution and correlation functions. This set of possiblities defines a statistical ensemble.
 
-\subsection{Langevin equation}
+\subsection{Langevin equation for collisional transport}
 
 With the above forces, we express the Langevin equation $m\dot{u}(t) = F_D(t) + F_C(t)$ for the sediment dynamics as
 \be m \dot{u}(t) = \Gamma + \sqrt{2D}\eta(t) - m u(t) \xi_{\nu, \ve}(t). \label{eq:langevin} \ee
@@ -111,7 +110,7 @@ In what follows, we drop all but the first two terms to obtain the leading order
 \section{Results}
 \label{sec:results}
 
-\subsection{Derivation of the velocity distribution}
+\subsection{Derivation of the bedload velocity distribution}
 \label{sec:solution}
 Hereafter we drop the prime on the most common streamwise restitution coefficient $\ve'$. With the truncation to two terms, equation \ref{eq:master} gives 
 \be 0 = -\tilde{\Gamma}\partial_u P(u) + \tilde{D}\partial_u^2 P(u) -P(u) + \frac{1}{\ve} P\big(\frac{u}{\ve}\big),\label{eq:governer} \ee
@@ -143,7 +142,7 @@ Figure \ref{fig:fig2} depicts velocity characteristics for different realization
 We can see an apparent transition from exponential-like to Gaussian-like velocity distributions as typical collisions vary from more inelastic ($\ve \rightarrow 0$) to more elastic ($\ve \rightarrow 1$). In between, the full distribution \ref{eq:steadystate} resembles a Gamma distribution, although it is not a Gamma distribution.
 
 
-\subsection{Exponential and Gaussian regimes}
+\subsection{Exponential and Gaussian regimes: limits to earlier work}
 \label{sec:modelcomparison}
 
 In fact, the apparent transition in figure \ref{fig:fig2} can be made rigorous: despite its complex appearance, simple Gaussian and exponential distributions appear as rigorous mathematical limits of equation \ref{eq:steadystate}. When particle-bed collisions are completely inelastic, \ref{eq:steadystate} becomes an exponential distribution, and when they are completely elastic, \ref{eq:steadystate} becomes Gaussian. Figure \ref{fig:fig3} demonstrates more closely the approach of the distribution toward these limits.
@@ -220,7 +219,7 @@ Many phenomena of landscape evolution depend on the velocities of individual gra
 The erosion rates of bedrock rivers are for example parameterized by the impact velocities of individual sediment grains against the bedrock surface \citep{Skylar2004,Tingian,Turowski2020}, on which they have a sensitive nonlinear dependence.
 It is not much of a stretch to imagine that bedrock erosion could be dominated by the largest impact velocities that originate from the extreme tail of the bedload velocity distribution. Here, we have shown that the weight of this tail depends sensitively on the dissipation characteristics of particle-bed collisions, suggesting that another feedback, that between dissipation and ... may be at play in the evolution of bedrock canyons.
 
-\section{Rivers, hillslopes, and dunes}
+\section{Analogies to hillslope and wind-driven transport}
 
 It has long been recognized, probably since \citet{Bagnold1941} and certainly today \citep{}, that there are deep analogies between tranpsort phenomena in air and water.
 In an ideal perspective, we might imagine writing the governing equations for transport in water as a function of the fluid viscosity, then tuning the viscosity between air and water to obtain a description applying to both spheres.
@@ -242,69 +241,3 @@ connection to the stochastic description of the flux
 \section{Conclusion}
 We have demonstrated that particle-bed collisions control the shape of the particle velocity distribution.  
 \label{sec:conclusion}
-
-
-\appendix
-
-\section{Derivation of Master Equation}
-To derive the master equation from \ref{eq:langevin}, we temporarily consider the Gaussian white noise (GWN) $\xi(t)$ as a Poisson jump process having rate $r$ and jumps $ \sqrt{2 d} h$ with $h$ distributed as $f(h)$. We will later take a GWN limit on this noise. With this assumption, integrating \ref{eq:langevin} over a small time interval $\delta t$ considering the Ito interpretation for the collision term provides
-\be     
-u(t+\delta t) =
-\begin{cases}
-	u(t) + \gamma \delta t & \text{with probability } 1- r \delta t - \nu \delta t\\
-	u(t) + \sqrt{2 d} h &  \text{with probability } r \delta t \\
-	\ve u(t) &  \text{with probability } \nu \delta t
-\end{cases}
-\ee
-
-Considering the probability $P(u,t+\delta)$ as sum over possible paths from $P(u,t)$ develops 
-\begin{align} P(u,t+\delta t) =
-	(1- r \delta t - \nu \delta t)\int_{-\infty}^\infty dw  \delta(u-w-\gamma \delta t) P(w,t)\\ 
-	+  r \delta t \int_{-\infty}^\infty dw \int_{-\infty}^\infty dh f(h) \delta (u - w - \sqrt{2 d}h) P(w,t) \\ 
-	+ \nu \delta t \int_{-\infty}^\infty dw \int_0^1 d\ve \rho(\ve)  \delta(u-w\ve) P(w,t).
-\end{align}
-Evaluating all integrals over $\delta$-functions provides 
-\begin{align} P(u,t+\delta t) = (1-r \delta t - \nu \delta t)P(u-\gamma \delta t, t) \\+ r \delta t\int_{-\infty}^\infty dh f(h) P(u+\sqrt{2d}h) \\+ \nu \delta t \int_0^1 \frac{d\ve}{\ve} \rho(\ve) P\big(\frac{u}{\ve}\big).\end{align}
-Finally, we take $\delta t \rightarrow 0$ and limit the Poisson noise involving $\sqrt{2d}$ to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ \cite{VanKampen1983}. This process finally obtains the master equation (\ref{eq:master}).
-\section{Derivation of Steady-state solution}
-
-Defining $\tilde{P}(s) = \int_{-\infty}^\infty du e^{i u s} P(u) $ as the Fourier transform (FT) of $P(u)$ and taking the FT of \ref{eq:detlangevin} develops the recursion relation
-\be \tilde{P}(s) = \frac{\tilde{P}(s\ve)}{q(s)}. \ee
-where
-\be q(z) = d z^2 - i \gamma z + 1 . \label{eq:q} \ee
-Recursing $N+1$ times provides
-\be \tilde{P}(s) = \frac{\tilde{P}(s \ve^{N+1})}{q(s \ve^0)q(s\ve^1)\dots q(s\ve^N)}.\label{eq:recursion}\ee
-The polynomials $q(z)$ can always be factored as $q(z) = d(z - i\lambda_-)(z - i\lambda_+)$ where
-\be \lambda_\pm = \frac{\gamma}{2d}\Big[1 \pm \sqrt{ 1 + 4d/\gamma^2} \Big].\ee
-Using these factors to expand $\tilde{P}(s)$ in partial fractions provides
-\be \tilde{P}(s)  = \tilde{P}(s \ve^{N+1}) \sum_{l=0}^N  \Big[ \frac{R_l^-}{s\ve^l - i\lambda_-} + \frac{R_l^+}{s\ve^l - i\lambda_+} \Big] \ee
-where the coefficients $R_l^\pm$ are the residues of the product $[q(s\ve^0)\dots q(s\ve^N)]^{-1}$:
-\be R_l^\pm = \frac{s \ve^{l} - i\lambda_\pm }{q(s\ve^0)\dots q(s \ve^N)} \Big|_{s= i \lambda_\pm \ve^{-l}}.\ee
-The Fourier transform (\ref{eq:recursion}) has a beautiful feature as $N\rightarrow \infty$: since $0<\ve <1$, the prefactor $\tilde{P}( s \ve^{N+1})$ becomes the normalization condition $\tilde{P}(0)=1$ for the probability distribution $P(u)$ in the limit.
-Taking this limit and evaluating the residues provides 
-\begin{multline} \tilde{P}(s) = \frac{1}{d(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_- \ve^m)} \sum_{l=0}^\infty \frac{i}{(s\ve^l-i\lambda_-)\prod_{m=1}^l q(i\lambda_- \ve^{-m})} 
-	\\+ \frac{1}{d(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_+ \ve^m)} \sum_{l=0}^\infty \frac{-i}{(s\ve^l-i \lambda_+)\prod_{m=1}^l q(i\lambda_+ \ve^{-m})} \end{multline}
-Finally, inverting the Fourier transforms term by term with contour integration and incorporating (\ref{eq:q}) provides the steady-state solution (\ref{eq:steadystate}).
-
-\section{Calculation of the moments}
-Taking (\ref{eq:master}), multiplying by $u^k$, integrating over all space, and taking account of normalization of $P(u)$ provides a recursion relation for the moments: 
-\be 0 = Dk (k-1)\langle u^{k-2} \rangle + \Gamma k \langle u^{k-1} \rangle + \nu (\ve^k-1)\langle u^k \rangle. \ee
-$k=1$ provides the mean
-\be \langle u \rangle = \frac{\Gamma}{\nu(1-\ve)} = \frac{\gamma}{1-\ve}\ee
-while $k=2$ provides the second moment
-\be \langle u^2 \rangle = 2 \frac{d + \gamma \langle u \rangle}{1-\ve^2}, \ee
-leading to the velocity variance
-\be \sigma_u = \sqrt{\frac{2 d + \gamma^2}{1-\ve^2}}.\ee
-\section{Weak and strong collision limits}
-Now we demonstrate that weak collisions imply a Gaussian-like distribution for sediment velocities. The limit is challenging since the steady-state distribution \ref{eq:steadystate} and the moments above all diverge as $\ve \rightarrow 1$.
-Following \cite{Hall1970}, this suggests normalizing the distribution $P(u)$ using 
-\be z = \frac{u - \bar{u}}{\sigma_u} \ee
-and 
-\be Q(z) = \sigma_u P(u)\ee
-to seek a differential equation for $Q(z)$ with manageable behavior as $\ve \rightarrow 1$.
-Incorporating this transformation into (\ref{eq:master}) provides a ``normalized" Master equation
-\be (1-\ve^2) \frac{d}{2d + \gamma} Q''(z) - \frac{\gamma\sqrt{1-\ve^2}}{\sqrt{2d+\gamma^2}}Q'(z) - Q(z) + \frac{1}{\ve} Q\Big(z + \Big[\frac{1-\ve}{\ve}z + \frac{\gamma\sqrt{1-\ve^2}}{\ve\sqrt{2d+\gamma^2}} \Big]\Big) = 0 \ee
-This equation remains exact and is only a change of variables from (\ref{eq:master}).
-Now we approximate the equation for $\ve \rightarrow 1$ by expanding the final term to second order around $z=0$ before setting $\ve = 1$, obtaining
-\be Q''(z) + z Q'(z) + Q(z) = 0, \ee
-which is the classic Ornstein-Uhlenbeck Fokker-Planck equation whose solution is the standard normal distribution for $Q(z)$. This solution provides \ref{eq:gaussian} when transformed back to the original variables $P(u)$ and $u$.

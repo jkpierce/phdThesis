@@ -1,6 +1,6 @@
 %%!TEX root = diss.tex
 
-\chapter{Analysis of the bed elevation}
+\chapter{Analysis of bed elevation change and sediment transport fluctuations}
 \label{ch:bedEle}
 
 The transport characteristics of coarse grains moving under a turbulent flow ultimately control a wide set processes within rivers, including the export of contaminants \citep{Malmon2005,Macklin2006}, the success of ecological restoration efforts \citep{Gaeuman2017}, and the response of channel morphology to disturbances \citep{Hassan2017}.
@@ -43,7 +43,7 @@ These events are (1) migration of a moving particle into the volume from upstrea
 The four events are depicted as arrows in figure \ref{fig:definition}.
 As the events occur at random intervals, they set up a joint stochastic evolution of the populations $n$ and $m$ characterized by a joint probability distribution $P(n,m,t)$ for the number of particles in motion and rest in the volume at $t$.
 \begin{figure}[!htbp]
-	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch3/definition.pdf}
+	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch3/definition-combo.pdf}
 	\caption{Definition sketch of a control volume containing $n$ moving grains and $m$ resting grains. Migration, entrainment, and deposition are represented by arrows, and the instantaneous bed elevation is depicted by dotted lines. The bed is displayed in a degraded state, where $m<0$. The marginal distributions of $n$ and $m$ are indicated in the upper right panel, while the bottom panel is a realized time-series of bed elevations computed from $m$ using (\ref{eq:ele}).}
 	\label{fig:definition}
 \end{figure}
@@ -103,7 +103,7 @@ Unfortunately, equation (\ref{eq:master}) does not appear to admit an analytical
 The difficulty originates from the product terms between $n$ and $m$ representing the bed elevation dependence of collective entrainment and deposition rates.
 In response to this difficulty, we resort to numerical methods and analytical approximations, simulating equation (\ref{eq:master}) with the Gillespie algorithm \citep{Gillespie1977, Gillespie1992, Gillespie2007} and solving it approximately with mean field and Fokker-Planck approaches \citep{Haken1983,Gardiner1983}. The simulation algorithm is described in \ref{sec:numerical}, and analytical approximations are described in \ref{sec:analytical}.
 
-\subsection{Numerical simulations}
+\subsection{Numerical study of the joint model}
 \label{sec:numerical}
 
 The Gillespie algorithm leverages the defining property of a Markov process: when transition rates are independent of history, time intervals between transitions are \begin{wraptable}{l}{0.5\textwidth}
@@ -134,7 +134,7 @@ Flow conditions are labeled (a), (g), (i), and (l), roughly in order of increasi
 In all simulations, we take the packing fraction $\phi = 0.6$ -- a typical value for a pile of spheres \citep[e.g.,][]{Bennett1972}, and we set $L = 22.5$cm and $a = 0.3$cm in accord with the \citet{Ancey2008} experiments.
 Each simulation was run for $250$ hours of virtual time, a period selected to ensure neat convergence of particle activity and bed elevation statistics.
 
-\subsection{Approximate solutions}
+\subsection{Approximate solutions of the joint model}
 \label{sec:analytical}
 
 We approximately decouple the $n$ and $m$ dynamics in equation (\ref{eq:master}) using the inequality $l \gg z_1$ (equivalently $\kappa \ll 1$) which holds for large values of the active layer depth $l$. These inequalites mean many entrainment or deposition events are required for an appreciable change in the entrainment or deposition rates.
@@ -202,7 +202,7 @@ A representative subset of these marginal distributions is displayed in figure \
 The mean field equation (\ref{eq:ancey}) for the particle activity $n$ closely represents the numerical results, and while there are small differences between numerical and analytical results for the relative number $m$ of resting particles, the numerical solutions approximately match equation (\ref{eq:ou2}), having Gaussian profiles consistent with our assumption of a symmetric scaling of erosion and deposition rates with bed elevation changes. 
 
 
-\subsection{Statistical moments}
+\subsection{Statistical moments of bed elevation and the particle activity}
 \label{sec:mom}
 
 We calculate the moments of $n$ and $m$ by summing over $P(n,m)$. 
@@ -274,12 +274,12 @@ These distributions are sufficiently heavy tailed to violate the central limit t
 \section{Discussion}
 \label{sec:discussion}
 
-\subsection{Context}
+\subsection{Context of the research}
 Einstein developed the first stochastic models of bedload tracer diffusion \citep{Einstein1937} and the bedload flux \citep{Einstein1950}, and his ideas can be viewed as the nexus of an entire paradigm of research that extends into the present day \citep[e.g.,][]{Hubbell1964, Nakagawa1976,Hassan1991,Ancey2008, Wu2019}.
 These models aim to predict bedload transport characteristics from stochastic concepts of individual particle motions.
 With some exceptions \citep{Yang1971,Nakagawa1980,Pelosi2016,Wu2019,Wu2019a}, existing descriptions are spatially one-dimensional, concentrating on the motion of grains in the downstream direction without including the vertical dimension wherein local bed elevation changes imply sediment burial \citep{Voepel2013,Martin2014} and change the mobility of surface grains \citep{Yang1971,Nakagawa1980}.
 
-\subsection{Contributions}
+\subsection{New contributions}
 
 In this paper, we have built on earlier works \citep{Ancey2008,Martin2014} to include the vertical dimension of bed elevation dynamics, study the interplay between bedload transport and bed elevation fluctuations, and investigate resting time distributions of sediment undergoing burial.
 To our knowledge, this model is the first description of bedload transport and bed elevations as a coupled stochastic population model based on individual grains.
@@ -294,7 +294,7 @@ As our model builds on earlier works describing particle activity and bed elevat
 With the mean field approach in section \ref{sec:analytical}, we derived the \citet{Martin2014} Ornstein-Uhlenbeck model for bed elevations and the \citet{Ancey2008} birth-death model for the particle activity as simplified limits of our coupled model. While the mean field description of bed elevations over-predicts the bed elevation variance by approximately a factor of two, it does capture the Gaussian shape of the bed elevation distribution, and its conclusions on the tail characteristics of resting time distributions for sediment undergoing burial are identical to ours within the numerical uncertainty: \citet{Martin2014} described a power-law distribution with tail parameter $\alpha \approx 1$ which falls neatly within our estimation $\alpha = 1.18 \pm 0.32$. In addition to our original contributions, we have corroborated the models of \citet{Ancey2008} and \citet{Martin2014} from an alternate perspective, showing their results to be mostly robust when accounting for bed elevation changes.
 
 
-\subsection{Next steps}
+\subsection{Next steps for research}
 
 The model we have presented computes statistical characteristics of the bedload particle activity and bed elevation within a control volume by assuming all particles on the bed surface have similar mobility characteristics while sediment transport and bed topography are in equilibrium. In actuality, particles span a range of sizes, and spatial organization occurs both in the forces imparted to particles by the flow \citep{Shih2017,Amir2014} and in the mobility characteristics of particles on the bed surface \citep{Charru2004, Hassan2008, Nelson2014}.
 Together, these factors may generate spatial correlations in particle activities that models concentrating on a single control volume will be unable to capture. 
@@ -314,7 +314,7 @@ However, we have left many other statistical characteristics of bedload transpor
 For example, the dependence of bedload transport \citep{Saletti2015a,Singh2009} and bed elevation statistics \citep{Aberle2006, Singh2009,Singh2012} on the spatial and temporal scales over which they are observed is an emerging research topic. Statistical quantities can either be monoscaling or multiscaling across the observation scale \citep{Sornette2000}, and we currently lack physical understanding and general conclusions about the scale dependence of particle activity and bed elevation signals.
 The model we have presented shows statistical monoscaling for both quantites \citep[e.g.][]{Saletti2015a}, whereas other experiments indicate statistical multiscaling \citep{Aberle2006,Singh2009,Singh2012}. We consider this topic to go beyond the scope of the present work, and we have focused on statistical characteristics at the highest temporal resolutions, with no averaging over the observation scale.
 
-\section{Conclusion}
+\section{Summary and conclusion}
 \label{sec:conclusion}
 
 We developed a stochastic model for particle activity and local bed elevations including feedbacks between elevation changes and the erosion and deposition rates.

@@ -1,6 +1,6 @@
 %%!TEX root = diss.tex
 
-\chapter{Inclusion of sediment burial}
+\chapter{Burial-induced three-range diffusion in sediment transport}
 \label{ch:downDiff}
 
 Many environmental problems including channel morphology \citep{Hassan2017}, contaminant transport \citep{Macklin2006}, and aquatic habitat restoration \citep{Gaeuman2017} rely on our ability to predict the diffusion characteristics of coarse sediment tracers in river channels.
@@ -44,7 +44,7 @@ Below, we develop and solve the model in section \ref{sec:model}. Then, we discu
 
 \section{Bedload trajectories as a multi-state random walk}
 \label{sec:model}
-\subsection{Model assumptions}
+\subsection{Assumptions of the burial model}
 \label{sec:assumptions}
 We construct a three-state random walk where the states are motion, surface rest, and burial, and we label these states as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
 Our target is the probability distribution $p(x,t)$ to find a grain at position $x$ and time $t$ if we know it started with the initial distribution $p(x,0)=\delta(x)$.
@@ -63,7 +63,7 @@ Finally, the overall probability to be at position $x$ at time $t$ is
 This joint density is completely determined from the solutions of equations (\ref{eq:g1}-\ref{eq:g2}). We only need to specify the distributions $g_{ij}$ and $G_i$.
 
 
-\subsection{Joint probability distribution}
+\subsection{Joint probability distribution of particle position with burial}
 \label{sec:solution}
 
 We construct these distributions from the assumptions described in section \ref{sec:assumptions}.
@@ -101,7 +101,7 @@ When grains do not become buried, as in panel (a) of figure \ref{fig:pdfs}, the 
 When grains become buried, as in panel (b) of figure \ref{fig:pdfs},  the Q-function terms prevent the distribution from approaching a Gaussian at large timescales, exemplifying anomalous diffusion \citep{Weeks1998} and violating the central limit theorem \citep{Metzler2000,Schumer2009}.
 
 
-\subsection{Positional variance}
+\subsection{Downstream diffusion}
 
 To obtain an analytical formula for tracers diffusing downstream while they gradually become buried, we derive the first two moments of position by taking derivatives with respect to $\eta$ of the Laplace space distribution (\ref{eq:nicedist}) using an approach similar to \citet{Shlesinger1974} and \citet{Weeks1998}, and we use these to calculate the positional variance $\sigma_x^2 = \bra x^2\ket - \bra x \ket^2$. 
 The first two moments are
@@ -154,7 +154,7 @@ We suggest to call the fourth range geomorphic, since any further transport in t
 	\label{fig:var}
 \end{figure}
 
-\subsection{Diffusion exponents}
+\subsection{Diffusion exponents and three range scaling}
 
 Two limiting cases of equation (\ref{eq:var}) provide the scaling exponents $\gamma$ of the diffusion $\sigma_x^2 \propto t^\gamma$ in each range. Limit (1) represents times so short a negligible amount of sediment burial has occurred, $t\ll 1/\kappa$, while limit (2) represents times so long motion intervals appear as instantaneous steps of mean length $l=v/k_2$, $1/k_2 \rightarrow 0$ while $v/k_2 = \text{constant}$.
 Limit (1) provides local exponent $2 \leq \gamma \leq 3$ depending on the initial conditions $\theta_i$, and intermediate exponent $\gamma=1$.

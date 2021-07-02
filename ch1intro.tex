@@ -92,7 +92,7 @@ Equation \ref{eq:einlangevin} is a kind of dynamical equation representing how t
 \end{figure}
 
 The governing equation of the distribution $P(x,t)$ to find the particle at $x$ can be calculated as an ensemble average of $\delta(x-x(t))$ over all possible realizations of the noise \citep{Risken1984,Moss1989}. Different methods exist to compute such averages \citep{Hanggi1978, Hanggi1984, Balakrishnan1993, VanDenBroeck1983}, but whatever the approach, the governing equation for the distribution comes out as
-\be  \big(\ell \px \pt + k_E \ell \px + pt \big)P(x,t) = 0. \label{eq:einmaster}\ee
+\be  \big(\ell \px \pt + k_E \ell \px + \pt \big)P(x,t) = 0. \label{eq:einmaster}\ee
 This equation can be solved by standard methods (series solutions or transform calculus) \citep{Arfken1985,Prudnikov1986a} to reproduce the original result of \citet{Einstein1937} for the probability distribution of position of a sediment particle:
 \be P(x,t) = \delta(x) e^{-k_E t} + e^{-k_E t - x/\ell}\theta(x) \sqrt{\frac{k_E t}{\ell x}}\mathcal{I}_1\Big(2 \sqrt{\frac{k_E x t}{\ell}}\Big) \ee
 Here, $\mathcal{I}$ is a modified Bessel function. 
@@ -120,7 +120,7 @@ The analogue of Einstein's model equation \ref{eq:einlangevin} with a finite mov
 \be \dot{x} = V\eta(t), \ee
 where the noise is now a ``dichotomous Markov noise" \citep{Bena2006}, which is essentially a random switch or telegraph-type signal that alternates between ``on" ($\eta(t) = 1$, meaning the particle is moving) and ``off" ($\eta(t) = 0$, meaning the particle is resting) \citep{Cox1965,Horsthemke1984, Masoliver1991, Masoliver1996} as displayed in figure \ref{fig:lislefig} panel (a). Some particle trajectories solving equation \ref{eq:lislelangevin} are displayed in \ref{fig:lislefig} panel (b).
 
-The governing equation of the position probability distribution $P(x,t) = \langle \delta(x-\int_0^t V\eta(t')dt' \rangle$ becomes \citep{Balakrishnan1993}
+The governing equation of the position probability distribution $P(x,t) = \langle \delta(x-\int_0^t V\eta(t')dt') \rangle$ becomes \citep{Balakrishnan1993}
 \be \big(\pt^2 + V \px \pt + k_E V \px + k \pt \big) P(x,t) = 0,\ee
 where $k_E$ and $k_D$ are the entrainment and deposition rates, $V$ is the particle velocity during the motion phase, and $k = k_E+k_D$. This partial differential equation is called an asymmetric telegrapher's equation \citep{Rossetto2018}, and although the symmetric analogue of this equation is well-studied \citep{Weiss2002a, Masoliver2017}, the asymmetric problem is not often encountered.
 \begin{figure}[!htbp]
@@ -156,7 +156,7 @@ Experimental studies on bedload velocities have provided two dominant conclusion
 They wrote, for the streamwise particle velocity $u$, a Langevin equation
 \be \dot{u}(t) = -\Delta \text{sgn}(u) + F + \sqrt{2D}\xi(t). \label{eq:fanlangevin}\ee
 This equation drives the particle velocity by a fluid drag $F + \sqrt{2D} \xi(t)$, where $F$ is a constant, $D$ is a diffusivity that characterizes the magnitude of particle velocity fluctuations, and $\xi(t)$ is a Gaussian white noise with unit variance and vanishing mean \citep{Gardiner1983}. The fluid drag is resisted by a heuristic particle friction term $-\Delta \text{sgn}(u)$, introduced as a proxy for particle-bed collisions. The ``Fokker-Planck equation" governing the probability distribution $P(u,t)$ of the particle velocity can be derived from equation \ref{eq:fanlangevin} as \citep{Risken1984,VanKampen2007} 
-\be \pt P(u,t) = \Delta\partial_u\Big[ \text{sgn}(u) P \Big] + D \partial_u^2 P,\ee
+\be \frac{\partial}{\partial t} P(u,t) = -\Delta\frac{\partial}{\partial u}\Big[ \text{sgn}(u) P \Big] + D \frac{\partial^2 P}{\partial u^2},\ee
 implying that the steady-state velocity distribution ($\pt P(x,t) = 0$) provided by equation \ref{eq:fanlangevin} is
 \be P(u) = \frac{\Delta^2-F^2}{2\Delta D}\exp\Big(-\frac{-\Delta |u| + F u}{D}\Big).\ee
 This is the (two-sided) exponential distribution observed in one subset of experiments.
@@ -164,11 +164,18 @@ This is the (two-sided) exponential distribution observed in one subset of exper
 \citet{Ancey2014} formulated a Langevin equation to describe the Gaussian velocity distributions observed in the other subset of experiments. They wrote for the streamwise velocity 
 \be t_r \dot{u}(t) = -(U-u) + \sqrt{2D}\xi(t),\ee
 where $U$ is the mean velocity of particles, $D$ characterizes the magnitude of velocity fluctuations, and $\xi(t)$ is again a Gaussian white noise with vanishing mean and unit variance. The timescale $t_r$ is a relaxation time over which velocity fluctuations decay. This time, the Fokker-Planck equation is
-\be \pt P(u,t) = -\partial_u\Big[\frac{U-u}{t_r}P\Big] + \frac{D}{t_r^2} \partial_u^2 P,\ee 
+\be \frac{\partial}{\partial t} P(u,t) = -\frac{\partial}{\partial u}\Big[\frac{U-u}{t_r}P\Big] + \frac{D}{t_r^2}\frac{\partial^2 P}{\partial u^2},\ee 
 and the steady state solution becomes
 \be P(u) = \sqrt{\frac{t_r}{2\pi D}} \exp\Big(-\frac{t_r(u-U)^2}{2 D}\Big), \ee
 which is the Gaussian velocity distribution from the other subset of the experiments.
 
+These two models of bedload velocity distributions are summarized in figure \ref{fig:fanAncey}.
+\begin{figure}[!htbp]
+	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/fanAncey.pdf}
+	\caption{Panel (a) demonstrates the trajectory of a particle within the Fan et al model, where Coulomb friction impedes turbulent drag. Panel (b) shows the resulting exponential particle velocity distribution, having relatively large fluctuations with mode at $u=0$.
+	Panel (c) shows the analogous trajectory from the Ancey et al model, where turbulent Stokes drag generates the Gaussian velocity distribution seen in (d). The latter has relatively narrow and symmetric fluctuations, with the mode well above $u=0$.}
+	\label{fig:fanAncey}
+\end{figure}
 
 \subsection{The definition of the flux}
 
@@ -202,7 +209,7 @@ Einstein formulated his original model of individual grains in transport \citep{
 Later, \citet{Einstein1942,Einstein1950} calculated the bulk sediment flux with these same probabilistic ideas, providing an alternative to the Bagnold scaling approach.
 The conceptual picture that Einstein considered is depicted in figure \ref{fig:einsteinFluxConcept}.
  \begin{figure}[!htbp]
-	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/yalinDrawing.png}
+	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/yalinDrawing.pdf}
 	\caption{Einstein’s conceptual picture (modified from \citet{Yalin1972}). Particles move in discrete jumps of length $\ell$ from
 left to right through an array of adjacent control volumes. The bedload flux is the rate of bedload particles crossing
 the surface $\mathcal{S}$ per unit width and time, collected from all upstream control volumes.}
