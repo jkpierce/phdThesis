@@ -72,7 +72,7 @@ Taking the Laplace transform over $Q$ (i.e. forming the characteristic function)
 	&=  \Big\bra \exp\Big(\frac{s}{T}\sum_{i=1}^N \mathcal{I}_i(T)\Big)\Big\ket \\
 	&=  \prod_{i=1}^N \Big\bra \exp\Big(-\frac{s}{T}\mathcal{I}_i(T)\Big)\Big\ket \\
 	&= \prod_{i=1}^N \Big[1-\big(1-e^{-s/T}\big)\big\bra \mathcal{I}_i(T) \big\ket \Big] \end{align}
-This progression relies on the independence of averages for each particle (so the average of a product is the product of averages) and the fact that  $ \mathcal{I}_i(T)$ is either $1$ or $0$ ($e^{ax} = 1-(1-e^a)x$ if $x=0,1$).
+This progression relies on the independence of averages for each particle (so the average of a product is the product of averages) and the fact that  $ \mathcal{I}_i(T)$ is either $1$ or $0$, so that $e^{ax} = 1-(1-e^a)x$.
 The average over initial conditions and possible trajectories for the $i$th particle can be written
 \be \bra \mathcal{I}_i(t) \ket = \frac{1}{L}\int_L^0 dx' \int_0^\infty dx \mathcal{P}(x,t|x') =  \frac{1}{L}\int_0^L dx' \int_0^\infty dx \mathcal{P}(x,t|-x'), \ee
 where $\mathcal{P}(x,t|x')$ is the probability density that the particle is found at position $x$ at time $t$ given it was initially at $x'$ at time $0$. This is the part of the flux that depends on the particle dynamics (ie instantenous velocities and entrainment/deposition characteristics).
@@ -164,33 +164,74 @@ In either of these limit cases, the mean sediment flux becomes $\bra q \ket = E 
  
 \section{Discussion \label{sec:disc}}
 
-This chapter has generalized the random walk description of individual sediment trajectories b \citet{Lisle1998} and \citet{Lajeunesse2018} to include velocity fluctuations in the motion state.
-Using the probability distribution of particle position derived from this generalized model, I demonstrated how to calculate the sediment flux probability distribution. 
-This is a Poisson distribution, reflecting the conclusion that when sediment particles do not interact, and when they all undergo the same dynamics, a Poisson distributed-flux derives as an inevitable consequence. 
+This chapter has generalized the earlier descriptions of individual sediment trajectories \citep[e.g.][]{Lisle1998,Lajeunesse2018} to include velocity fluctuations in the motion state. Using results from this generalized model as an example, I demonstrated how to calculate the sediment flux probability distribution, phrasing earlier renewal theory approaches more directly in terms of the underlying particle dynamics \citep[e.g.][]{Turowski2010,Ancey2020}. 
+Calculated in this way, the sediment flux distribution is observation-scale dependent, describing how sediment fluxes depend on the period over which they are measured.
 
-This is an interesting conclusion because in reality, sediment flux distributions are rarely Poissonian \citep{Ancey2008,Turowski2010,Dhont2010,Saletti2015}.
-Generally they have wide tails representing the possibility of extreme fluctuations which have been associated with burstiness or intermittency in sediment flux timeseries \citep{Singh2009, Benavides2021}.
-We conclude that non-interacting models of the sediment flux are probably not capable of describing realistic sediment transport fluctuations, which actually harks back to the realization of \citet{Ancey2006} which led them to introduce the collective entrainment process to generate realistic fluctuations \citep{Ancey2008}.
-Apparently, real sediment grains have correlated motions. Whether this is because of entrainment by particle-bed collisions \citep{Lee2018,Heyman2016}, or waves of entrainment caused by episodic losses of stability in the bed \citep{Heyman2013,Dhont2018,Benavides2021} remains an open question deserving of further research.
+\subsection{Fluctuations and collective motions}
 
-\subsection{The role of stochasticity in landscape evolution}
+The sediment flux probability distribution in equation \ref{eq:fluxdist} represents a Poisson distribution with an observation-scale dependent rate.
+Poisson distributions have a relatively thin tail, meaning fluctuations are typically small \citep{Ancey2006}.
+In reality, sediment flux distributions are only Poissonian at high transport rates, whereas in other conditions they have wide tails representing the possibility of extremely large transport fluctuations \citep{Ancey2008,Turowski2010,Dhont2010,Saletti2015} which appear as bursts \citep[e.g.][]{Goh2008} in the sediment flux timeseries \citep{Singh2009, Heyman2013,Benavides2021}. This exposes a need to generalize a mechanistic theory of the sediment flux I developed here to produce wider fluctuations.
 
-As reflected in this work and a vast number now of experimental studies, the sediment flux is a stochastic quantity. 
-The conventional view of landscape evolution applies the Exner equation, which evaluates the mass exchange between moving particles with the bed.
-The Exner approach assumes that the bed and sediment flux are continuous, deterministic quantities, so that topographic evolution is itself determinsitic as well.
+Descriptions of sediment transport based on population dynamics in a control volume have realistically-wide fluctuations by incorporating a positive feedback between the number of moving particles and the particle entrainment rate called collective entrainment \citep{Ancey2008,Ancey2014}.
+This feedback generates spatially-correlated waves of moving particles \citep{Ancey2014, Heyman2015} and produces non-exponential interarrival time distributions \citep{Heyman2013} which imply wide-tailed flux distributions when incorporated in renewal theory \citep{Turowski2010,Ancey2020}.
+Collective entrainment has been attributed to particle-particle interactions, such as small granular avalanches and collision-induced entrainment, and to fluid-particle interactions, such as large eddies entraining particles as they sweep downstream \citep{Heyman2014b,Ancey2014,Lee2018}.
 
-This continuous view of landscapes neglects the granularity which can moderate 
+We can imagine generalizing the description in equation \ref{eq:Langevin} to include such fluid-particle interactions by including time dependence in the movement velocity ($V$), diffusivity ($D$), or entrainment and deposition rates ($k_E$ and $k_D$) as necessary, although the resulting equations would likely require numerical solutions.
+Particle-particle interactions would be more challenging to include.
+The dynamical equation \ref{eq:langevin} would generalize to $\dot{x}_i(t) = F_i(x_i,t) + \sum_{i\neq j}G_{ij}(\{x_j\},t)$, where the $F_i$ are the driving terms unique to each particle, while the $G_{ij}$ are some (generally stochastic) terms representing interactions between the $i$th and $j$th particles \citep{Goldstein1956}. The resulting joint distribution of particle positions and velocities ($P(x_1,v_1,\dots,x_{N(t)},v_{N(t)},t)$) might be formulated by analogy to the theory of reaction diffusion systems \citep{Cardy2006}, non-ideal gases \citep{Chapman1970,Brilliantov2004}, or other interacting particle models available in physics literature \citep{Hernandez2004,Escaff2018}. 
+By analogy to collective entrainment, interacting models which generalize the approach established in this chapter should be capable of producing wide sediment transport fluctuations.
 
-If sediment transport is stochastic, a deterministic Exner equation would not always be expected to correspond to reality.
-Here I explore the implications of a fluctuating sediment flux within the Exner formulation.
-In one dimension, the Exner equation was given in section \ref{sec:exner} as 
-\be \pt z(x,t) = -\px q(x,t). \ee
-Considering the sediment flux as a quantity which fluctuates both in space and time, this gives
+\subsection{Measurement protocol for the sediment flux}
 
 
-\subsection{Methods to calculate the sediment flux}
 
-An early approach to calculate the sediment flux distribution is due to \citet{Hamamori1962}, who evaluated the sediment flux as the result of migrating bedforms. This approach has been extended to include bedforms with a range of sizes \citep{Guala2014,Nikora1984}.
+\subsection{Stochasticity in landscape evolution}
+
+\citet{Exner1925} originally phrased channel morphodynamics in terms of spatial gradients in the sediment flux (sec. \ref{eq:exner}), writing
+\be (1-\phi) \pt h(x,t) = -\px q(x,t). \ref{eq:stocEx}\ee
+In this one-dimensional equation, $h(x,t)$ is a continuous field representing the longitudinal channel profile.
+Traditionally, the Exner equation is evaluated considering the flux as a deterministic quantity \citep{Parker2007,Viparelli2011,An2017}, which provides a solitary trajectory of the profile through time.
+
+Considering the flux in the Exner equation as a stochastic quantity requires us to reinterpret channel dynamics in a way which few researchers have explored \citep{Jerolmack2005,Bohorquez2014}.
+In contrast to the traditional analysis, a stochastic Exner equation with fluctuating $q(x,t)$ generates an ensemble of possibilities for the channel profile $z(x)$ at each instant. This set of possibilities is characterized by a probability distribution $P(\{z(x)\},t)$ for each possible profile.
+Mathematically, since the channel profile is a field, evaluating such a probability distribution of channel profiles would require statistical field theory \citep{Kardar2007}.
+A starting point on this analysis might be $P(\{z(x)\},t) = \bra \delta[z(x,t)-h(x,t)]\ket,$ where $h(x,t)$ involves the stochastic flux $q(x,t)$ from equation \ref{eq:stocEx}.
+In this equation, $\delta[f(x)]$ is a Dirac delta functional, which generalizes the delta function $\delta(x)$ from a single-valued parameter $x$ to a continuous field $f(x)$.
+Such ideas are commonly applied to understand polymers and membranes \citep{Kawakatsu2004,Nelson2004}, but they have not been introduced in geomorphology.
+
+Introducing such a description with the stochastic Exner equation would lend new mathematical language to the old unsolved problem in geomorphology: how does variability affect landscape evolution?
+The classic works all acknowledge variability \citep{Leopold1952}, although one of their main efforts was to construct strategies to describe landscapes without explicitly accounting for it, producing ideas like competent flows to summarize climatic variability \citep{Wolman1960}, characteristic grain sizes to overcome sorting processes \citep{Parker1982}, or average flow energies to avoid turbulence \citep{Bagnold1954}.
+Progress in stochastic approaches to river science \citep[e.g.][]{Furbish2021c,Ancey2020b} invites us to step beyond averaged descriptions, propagate noises through the governing equations of landscape evolution, and ask again with these classic works to what extent fluctuations shape Earth's surface.
+
+\section{Summary and Conclusion \label{sec:conc}} 
+ 
+This chapter introduced a two-noise stochastic dynamical equation to describe individual bedload trajectories for particles alternating between motions and rests. The motion phase was enriched to include velocity fluctuations, forming the first physical model of this type.
+The probability distribution of the bedload sediment flux was calculated from these particle dynamics, and the resulting flux distribution was demonstrated to adopt scale-dependence from the underlying trajectories of individual particles. The measurement timescales over which sediment flux observations converge were expressed in terms of the mean particle movement velocity and the typical magnitude of its fluctuations in terms of a Peclet number.
+ 
+These results generalize the bedload trajectory models of \citet{Einstein1937}, \citet{Lisle1998}, and \citet{Lajeunesse2018} to include fluctuating movement velocities, and they reframe earlier renewal models of the sediment flux probability distribution \citep{Lajeunesse1010,Ancey2020} to explicitly include the transport dynamics of individual sediment grains. They further quantify the dependence of the sediment flux on the observation scale, and provide guidance as to the measurement times required to resolve sediment transport without ambiguity, at least in simplified configurations when bedforms are absent. 
+Next steps are to include interactions between particles to produce wider sediment transport fluctuations, and to evaluate the effects of sediment transport fluctuations on channel morphodynamics.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\endinput
+Introducing such a description with the stochastic Exner equation would lend new mathematical language to the old unsolved problem in geomorphology: how does variability affect landscape evolution?
+The classic works all acknowledge variability \citep{Leopold1952}, although one of their main efforts was to construct strategies to describe landscapes without explicitly accounting for it, producing ideas like competent flows to summarize climatic variability \citep{Wolman1960}, characteristic grain sizes to overcome sorting processes \citep{Parker1982}, or average flow energies to avoid turbulence \citep{Bagnold1954}.
+Progress in stochastic approaches to river science \citep[e.g.][]{Furbish2021c,Ancey2020b} invites us to step beyond averaged descriptions, propagate noises through the governing equations of landscape evolution, and ask again with these classic works to what extent fluctuations shape Earth's surface.
+
+
+This chapter upscaled from individual particle motions to calculate the sediment flux.
+We can imagine going further, to upscale from the sediment flux to understand channel morphodynamics.
+The sediment flux is stochastic as a result of variability in the individual particle trajectories forming it.
+As a result, the channel morphodynamics should also adopt this stochasticity, although very few studies have evaluated this possibility \citep{Bohorquez2016, Jerolmack2005}.
+
+
+
 
 Earlier approaches to calculate the probability distribution of the sediment flux have counted the fluctuating number of particles in a control volume with population models \citep{Ancey2008,Ancey2014}, or they have evaluated the average rate of particles crossing a control surface using the interarrival time distribution of particles from upstream \citep{Turowski2010,Ancey2020,Heyman2013}, in what is basically an application of renewal theory \citep{Cox1962}.
 These approaches can be described as ``kinematic", in that they do not explicitly account for the trajectories of individual particles as they move downstream.
@@ -216,18 +257,4 @@ The second possibilty is to introduce interactions between moving particles, suc
 Including such effects would require a many-body generalization of the Langevin and master equations \ref{eq:langevin} and \ref{eq:master}, where the probability distribution of position is promoted to a joint form $P(x_1,v_1,\dots,x_{N(t)},v_{N(t)},t)$, which is puzzling, since the number of particles $N(t)$ in the distribution fluctuates.
 The model of \citet{Ancey2014} hints at this possibility, although its starting point is not a dynamical equation as in \ref{eq:master}.
 Some hints as to how to generalize our work to include interactions between particles to describe wide-tailed sediment fluxes can be gleaned from literature on reaction-diffusion processes \citep{Hernandez2004,Cardy2006} and interacting gases \citep{Chapman1970,Brilliantov2004}. The further inclusion of interacting particle models into bedload transport theory would be an exciting development.
-
-\section{Conclusion \label{sec:conc}} 
- 
-This chapter has introduced a two-noise stochastic dynamical equation to describe individual bedload trajectories for particles alternating between motion and rest, including fluctuating movement velocities in the motion state. This description of particle trajectories was connected to the probability distribution of the bedload sediment flux, linking this probability distribution to the individual particle dynamics for the first time.
-Notably, the bedload flux distribution calculated in this way is scale dependent, so long as particle velocities are fluctuating, indicating that bedload velocity fluctuations slow the convergence of measurements of averaged bedload fluxes, and relating the timescales over which mean bedload fluxes to the mean particle transport velocity and the strength of its fluctuations.
-
-\citet{Einstein1937} introduced the concept of describing individual particle motions, but this description was not clearly linked to the mechanics of bedload transport that involve turbulent flow and particle-particle contacts and collisions.
-In the thesis up to now I have emphasized that Einstein's model and the works which followed it can actually be viewed as dynamical equations, reminiscent of Newton's third law, where the time derivatives of particle position equate to stochastic driving terms, force-like quantities, which provide phenomenological representations of particle movement.
-These stochastic driving terms are always highly simplified and idealized forces -- sequences of pulses, alternating switches, and up to now, they have always been used in isolation. 
-In this work I combined these idealized driving forces to provide a more realistic description of particle trajectories moving downstream through motion and rest.
-On the one hand, particle velocities alternate through entrainment and deposition, and on the other, they fluctuate during the period of motion.
-This strategy of combining idealised noises to approximate the complex reality of fluid turbulence, grain-grain collisions, and the entrainment and deposition processes these generate has potential to be extremely useful in future research.
-
-
 

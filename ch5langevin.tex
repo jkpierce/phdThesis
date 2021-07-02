@@ -62,8 +62,8 @@ This collision force is a sequence of random impulses which are proportional to 
 
 Fluid forces on a coarse particle in a viscous flow depend on the Reynolds number $\Rey_p = d V/\nu$ defined by the particle size $d$, slip velocity $V$ between particle and fluid, and kinematic viscosity $\nu$.
 These forces have been calculated analytically from the Navier-Stokes equations for vanishing $\Rey_p$ and include acceleration, history, and velocity-dependent drag terms \citep{Hjelmfelt1966, Maxey1983, Auton1987}.
-At realistic $\Rey_p$ analytical results are limited, so it is standard practice to turn instead to empirical corrections on the small $\Rey_p$ formulas \citep{Schmeeckle2007,Mei2006}.
-A dominant contribution to the downstream drag force $F_D$ on nearly spherical particles at large $\Rey_p$ can be written $F_D = \frac{\pi}{8}
+At realistic $\Re_p$ analytical results are limited, so it is standard practice to turn instead to empirical corrections on the small $\Rey_p$ formulas \citep{Schmeeckle2007,Mei2006}.
+A dominant contribution to the downstream drag force $F_D$ on nearly spherical particles at large $\Re_p$ can be written $F_D = \frac{\pi}{8}
 \rho_f d^2 C_D(\Rey_p) |V|V$, where $\rho_f$ is the fluid density, $d$ is the particle diameter, $C_D(\Rey_p)$ is an empirical drag coefficient, and $V = U-u$ is the slip velocity between the fluid ($U$) and particle ($u$) velocities \citep{Coleman1967, Schmeeckle2007, Dwivedi2012}.
 In the present model we set $C_D = \frac{24}{\Rey_p}( 1 + 0.194 \Rey_p^{0.631})$ \citep{Clift1978,Gonzalez2017} and we do not involve acceleration and history terms for simplicity, although we acknowledge their potential importance for coarse sediment transport \citep{Michaelides1995,Armenio2001,Dalche2015}.
 
