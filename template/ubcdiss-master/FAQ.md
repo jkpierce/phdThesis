@@ -1,4 +1,4 @@
-# Frequently Asked Questions (FAQ)
+u# Frequently Asked Questions (FAQ)
 
 Many questions are also answered in [doc.pdf](doc.pdf).
 

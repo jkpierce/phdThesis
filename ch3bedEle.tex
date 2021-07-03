@@ -12,7 +12,7 @@ In the first type, individual displacements are considered to result from altern
 Differences between the random-walk motions of one grain and the next imply a spreading apart of tracer grains as they transport downstream: bedload tracers undergo diffusion.
 
 Resting time distributions have been carefully studied in relation to these models because the predicted diffusion characteristics are critically dependent on whether the distribution has a light or heavy tail \citep{Bradley2017,Martin2012,Weeks1998}.
-Resting times have puzzled researchers because early experiments show exponential distributions \citep{Einstein1937,Hubbell1964, Yano1969,Nakagawa1976}, while later experiments show heavy-tailed power-law distributions \citep{Martin2012,Voepel2013, Olinde2015, Pretzlav2016, Bradley2017, Liu2019}.
+Resting times have puzzled researchers because early experiments show exponential distributions \citep{Einstein1937,Hubbell1964, Yano1969,Nakagawa1976}, while later experiments show heavy-tailed power-law distributions \citep{Martin2012,Voepel2013, Olinde2015, Pretzlav2016a, Bradley2017, Liu2019}.
 A predominant hypothesis is that power-law distributed resting times originate from buried grains \citep{Martin2014,Voepel2013}; this hypothesis permits surface grains to retain exponential resting times. 
 Conceptually, when grains rest on the surface, material transported from upstream can deposit on top of them, preventing entrainment until its removal, driving up resting times and imparting a heavy tail to the distribution.
 To our knowledge, \citet{Martin2014} have provided the only direct support for this hypothesis by tracking grains through complete cycles of burial and exhumation using a narrow flume with glass walls.
@@ -21,7 +21,7 @@ Both of these models treat bed elevation changes as a random walk and interpret 
 Models of sedimentary bed evolution incorporating sediment transport processes might enhance understanding of sediment resting times. 
 
 The second type of stochastic model prescribes rates (probabilities per unit time) to the erosion and deposition events of individual grains within a control volume to calculate the particle activity \citep{Einstein1950}.
-These approaches aim at a complete statistical characterization of the bedload flux \citep{Furbish2012a,Fathel2015,Furbish2017,Heyman2016}, including probability distributions \citep{Ancey2006,Ancey2008}, spatial and temporal characteristics of its fluctuations \citep{Ancey2008, Heyman2014a, Roseberry2012,Dhont2018}, and the dependence of these statistical characteristics on the length and time scales over which they are measured or calculated \citep{Singh2009,Singh2012,Saletti2015a,Ma2014}.
+These approaches aim at a complete statistical characterization of the bedload flux \citep{Furbish2012a,Fathel2015,Furbish2017,Heyman2016}, including probability distributions \citep{Ancey2006,Ancey2008}, spatial and temporal characteristics of its fluctuations \citep{Ancey2008, Heyman2014a, Roseberry2012,Dhont2018}, and the dependence of these statistical characteristics on the length and time scales over which they are measured or calculated \citep{Singh2009,Singh2012,Saletti2015,Ma2014}.
 A recent surge in research activity has generated rapid progress and spawned many new inquiries in this subject. 
 For example, \citet{Ancey2006} demonstrated that a constant erosion rate as originally proposed by \citet{Einstein1950} was insufficient to develop realistically large particle activity fluctuations, so they added a positive feedback between the particle activity and erosion rate they called ``collective entrainment'' \citep{Ancey2008, Heyman2013,Heyman2014,Ma2014, Lee2018}.
 While they deemed this feedback necessary to model realistic activity fluctuations, the implications of this collective entrainment term on bed topography and particle activity changes has not been fully explored.
@@ -77,7 +77,7 @@ We refer to $\kappa$ as a coupling constant since it controls the strength of th
 \end{equation}
 where $l$ is a characteristic length scale of bed elevation change that we interpret as the active layer depth \citep{Wong2007,Church2017}.
 All four rates are independent of the past history of the populations and depend only on the current populations $(n,m)$. 
-As a result, the model is Markovian \citep{Cox1965, VanKampen1992}, meaning time intervals between any two subsequent transitions are exponentially distributed \citep{Gillespie2007}.
+As a result, the model is Markovian \citep{Cox1965, VanKampen2007}, meaning time intervals between any two subsequent transitions are exponentially distributed \citep{Gillespie2007}.
 
 We write the master equation for the probability flow using the forward Kolmogorov equation $\partial P(n,m;t)/\partial t = 
 \sum_{n',m'} [R(n,m|n',m')P(n',m';t)-R(n',m'|n,m)P(n,m;t)]$ \citep{Cox1965, Gillespie1992, Ancey2008} as 

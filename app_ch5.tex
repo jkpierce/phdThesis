@@ -23,7 +23,7 @@ Considering the probability $P(u,t+\delta)$ as sum over possible paths from $P(u
 \end{align}
 Evaluating all integrals over $\delta$-functions provides 
 \begin{align} P(u,t+\delta t) = (1-r \delta t - \nu \delta t)P(u-\gamma \delta t, t) \\+ r \delta t\int_{-\infty}^\infty dh f(h) P(u+\sqrt{2d}h) \\+ \nu \delta t \int_0^1 \frac{d\ve}{\ve} \rho(\ve) P\big(\frac{u}{\ve}\big).\end{align}
-Finally, we take $\delta t \rightarrow 0$ and limit the Poisson noise involving $\sqrt{2d}$ to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ \cite{VanKampen1983}. This process finally obtains the master equation (\ref{eq:master}).
+Finally, we take $\delta t \rightarrow 0$ and limit the Poisson noise involving $\sqrt{2d}$ to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ \cite{VanDenBroeck1983}. This process finally obtains the master equation (\ref{eq:master}).
 \section{Derivation of Steady-state solution}
 
 Defining $\tilde{P}(s) = \int_{-\infty}^\infty du e^{i u s} P(u) $ as the Fourier transform (FT) of $P(u)$ and taking the FT of \ref{eq:detlangevin} develops the recursion relation

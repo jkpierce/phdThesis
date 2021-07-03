@@ -7,7 +7,7 @@ Many environmental problems including channel morphology \citep{Hassan2017}, con
 Diffusion is quantified by the time dependence of the positional variance $\sigma_x^2$ of a group of tracers.
 With the scaling $\sigma_x^2 \propto t$, the diffusion is said to be normal, since this is found in the classic problems \citep{Taylor1920}.
 However, with the scaling $\sigma_x^2 \propto t^\gamma$ with $\gamma \neq 1$, the diffusion is said to be anomalous \citep{Sokolov2012}, with $\gamma>1$ defining super-diffusion and $\gamma<1$ defining sub-diffusion \citep{Metzler2000}.
-\citet{Einstein1937} developed one of the earliest models of bedload diffusion to describe a series of flume experiments \citep{Ettema2014}.
+\citet{Einstein1937} developed one of the earliest models of bedload diffusion to describe a series of flume experiments \citep{Ettema2004}.
 Interpreting individual bedload trajectories as a sequence of random steps and rests, Einstein originally concluded that a group of bedload tracers undergoes normal diffusion.
 
 More recently, Nikora et al. realized coarse sediment tracers can show either normal or anomalous diffusion depending on the length of time they have been tracked \citep{Nikora2001a,Nikora2002}.
@@ -24,7 +24,7 @@ As a result, three diffusion ranges can be identified by patching together multi
 
 Newtonian bedload trajectory models also show multiple diffusion ranges, although they also do not provide consensus on the expected number of ranges or their scaling properties. 
 The majority of these models predict two ranges of diffusion (local and intermediate) without predicting a global range.
-Among these, \citet{Nikora2001a} used synthetic turbulence \citep{Kraichnan1970} with a discrete element method for the granular phase \citep{Cundall1979}; \citet{Bialik2012} used synthetic turbulence with a random collision model \citep{Sekine1992}; and \citet{Fan2016} used a Langevin equation with probabilistic rests.
+Among these, \citet{Nikora2001a} used synthetic turbulence \citep{Kraichnan1970} with a discrete element method for the granular phase \citep{Cundall1979a}; \citet{Bialik2012} used synthetic turbulence with a random collision model \citep{Sekine1992}; and \citet{Fan2016} used a Langevin equation with probabilistic rests.
 To our knowledge, only \citet{Bialik2015} have claimed to capture all three ranges from a Newtonian approach.
 They incorporated a second resting mechanism into their earlier model \citep{Bialik2012}, implicitly suggesting that three diffusion ranges could result from two distinct timescales of sediment rest.
 However, Newtonian approaches have not evaluated the effect of sediment burial on tracer diffusion, probably due to the long simulation timescales required. 
@@ -32,7 +32,7 @@ However, Newtonian approaches have not evaluated the effect of sediment burial o
 Random walk bedload diffusion models constructed in the spirit of \citet{Einstein1937} provide an alternative to the Newtonian approach and can include a second timescale of rest by incorporating sediment burial.
 Einstein originally modeled bedload trajectories as instantaneous steps interrupted by durations of rest lying on statistical distributions \citep{Hassan1991}, but this generates only one range of normal diffusion \citep{Einstein1937,Hubbell1964,Nakagawa1976}.
 Recently, researchers have generalized Einstein's model in a few different ways to describe multiple diffusion ranges.
-\citet{Lisle1998} and \citet{Lajeunesse2018} promoted Einstein's instantaneous steps to motion intervals with random durations and a constant velocity, providing two diffusion ranges -- local and intermediate.
+\citet{Lisle1998} and \citet{Lajeunesse2017} promoted Einstein's instantaneous steps to motion intervals with random durations and a constant velocity, providing two diffusion ranges -- local and intermediate.
 \citet{Wu2019} retained Einstein's instantaneous steps but included the possibility that grains can become permanently buried as they rest on the bed, also providing two diffusion ranges -- intermediate and global. 
 These earlier works suggest the minimal required components to model three bedload diffusion ranges: (1) exchange between motion and rest intervals and (2) the sediment burial process.
 
@@ -49,7 +49,7 @@ Below, we develop and solve the model in section \ref{sec:model}. Then, we discu
 We construct a three-state random walk where the states are motion, surface rest, and burial, and we label these states as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
 Our target is the probability distribution $p(x,t)$ to find a grain at position $x$ and time $t$ if we know it started with the initial distribution $p(x,0)=\delta(x)$.
 We characterize times spent moving or resting on the surface by exponential distributions $\psi_2(t)=k_2e^{-k_2 t}$ and $\psi_1(t) = k_1e^{-k_1t}$, since numerous experiments show thin-tailed distributions for these quantities \citep{Fathel2015,Roseberry2012,Einstein1937,Ancey2006,Martin2012}. We expect our conclusions will not be contingent on the specific distributions chosen, since all thin-tailed distributions provide similar diffusion characteristics in random walks \citep{Weiss1994,Weeks1998}.
-We consider grains in motion to have characteristic velocity $v$ \citep{Lisle1998,Lajeunesse2018}, and we model burial as long lasting enough to be effectively permanent \citep{Wu2019}, with grains resting on the surface having a probability per unit time $\kappa$ to become buried, meaning $\Phi(t) = e^{-\kappa t}$ represents the probability that a grain is not buried after resting for a time $t$, while $1-\Phi(t)$ represents the probability that it is buried.
+We consider grains in motion to have characteristic velocity $v$ \citep{Lisle1998,Lajeunesse2017}, and we model burial as long lasting enough to be effectively permanent \citep{Wu2019}, with grains resting on the surface having a probability per unit time $\kappa$ to become buried, meaning $\Phi(t) = e^{-\kappa t}$ represents the probability that a grain is not buried after resting for a time $t$, while $1-\Phi(t)$ represents the probability that it is buried.
 We specify the initial conditions with probabilities $\theta_1$ and $\theta_2$ to be in rest and motion at $t=0$, and we require $\theta_1+\theta_2=1$ for normalization.
 
 \subsection{Governing equations}
@@ -176,7 +176,7 @@ Finally, the burial of all tracers generates a geomorphic range of no diffusion.
 
 We extended \citet{Einstein1937} by including motion and burial processes in a multi-state random walk \citep{Weiss1994,Weeks1998} to demonstrate that a group of bedload tracers moving downstream while gradually becoming buried will generate a super-diffusive local range \citep{Martin2012,Fathel2016,Witz2018}, a normal-diffusive intermediate range \citep{Nakagawa1976,Yano1969}, and a super-diffusive global range \citep{Bradley2017, Bradley2010}, before the diffusion eventually terminates in a geomorphic range \citep{Hassan2017}.
 \citet{Nikora2002} highlighted the need for such a physical description, although they suggested to use a two-state random walk between motion and rest states with heavy-tailed resting times, and they did not discuss sediment burial.
-However, other works have demonstrated that a two-state walk with heavy-tailed rests provides two diffusion ranges -- not three \citep{Weeks1996,Fan2016}, and although heavy-tailed resting times have been documented for surface particles \citep{Liu2019,Fraccarollo2019}, they are more often associated with buried particles \citep{Martin2012,Martin2014,Voepel2013,Olinde2015,Pelosi2016, Pierce2020}, while surface particles retain light-tailed resting times \citep{Einstein1937,Yano1969,Ancey2006,Nakagawa1976}.
+However, other works have demonstrated that a two-state walk with heavy-tailed rests provides two diffusion ranges -- not three \citep{Weeks1996,Fan2016}, and although heavy-tailed resting times have been documented for surface particles \citep{Liu2019,Fraccarollo2019}, they are more often associated with buried particles \citep{Martin2012,Martin2014,Voepel2013,Olinde2015,Pelosi2016, Pierce2020a}, while surface particles retain light-tailed resting times \citep{Einstein1937,Yano1969,Ancey2006,Nakagawa1976}.
 Accordingly, we developed a random walk model of bedload trajectories with light-tailed surface resting times that incorporates sediment burial.
 
 The local and intermediate range diffusion characteristics resulting from our model correspond closely to the original Nikora et al. concepts, while our global range has a different origin than Nikora et al. envisioned.
@@ -192,7 +192,7 @@ While our results also show global range super-diffusion, they do not necessaril
 We assumed sediment burial was a permanent condition which developed a non-diffusive geomorphic range.
 In actuality, burial is a temporary condition, because bed scour can exhume buried sediment back into transport \citep{Wu2019a}, probably after heavy-tailed intervals \citep{Voepel2013,Martin2014,Pierce2020}.
 We anticipate that a generalization of our model to include heavy-tailed timescales between burial and exhumation would develop four ranges of diffusion, where the long-time decay of the exhumation time distribution would dictate the geomorphic range diffusion characteristics as depicted in figure \ref{fig:var}.
-If cumulative exhumation times decay faster than $T^{-1/2}$, as suggested by equilibrium transport models \citep{Voepel2013, Martin2014, Pierce2020} and laboratory experiments \citep{Martin2014,Martin2012}, we expect a super-diffusive geomorphic range \citep{Weeks1998}.
+If cumulative exhumation times decay faster than $T^{-1/2}$, as suggested by equilibrium transport models \citep{Voepel2013, Martin2014, Pierce2020a} and laboratory experiments \citep{Martin2014,Martin2012}, we expect a super-diffusive geomorphic range \citep{Weeks1998}.
 However, if they decay slower than $T^{-1/2}$, as implicitly suggested by the data of \citet{Olinde2015}, we expect a genuinely sub-diffusive geomorphic range \citep{Weeks1998}, leaving Nikora et al. with the final word on long-time sub-diffusion.
 
 The analytical solution of bedload diffusion in equation (\ref{eq:var}) reduces exactly to the analytical solutions of the \citet{Lisle1998} and \citet{Lajeunesse2017} models in the limit without burial ($\kappa \rightarrow 0$), the \citet{Wu2019} model in the limit of instantaneous steps ($k_2 \rightarrow \infty$ and $l = v/k_2$), and the original \citet{Einstein1937} model in the limit of instantaneous steps without burial.
