@@ -47,7 +47,7 @@ The solution of equation \ref{eq:langevin} for a given realization of the two no
 We form the desired probability distribution of position as $ P(y,t) = \big\bra \delta(y-x(t))\big\ket_{\eta,\xi} $, where $x(t)$ is the formal solution of eq. \ref{eq:langevin} and the average is over both noises, but this symbolic equation is not yet useful as taking averages over both noises directly is a challenging mathematical problem \citep{Hanggi1978}.
 A simpler approach is to conduct the averages in Fourier space. Integrating eq. 1, using its solution in the probability distribution, then Fourier transforming gives
 \be \tilde{P}(g,t) = \Big\bra  \Big\bra \exp \Big[- i g \int_0^t du [V+\sqrt{2D}\xi(u)]\eta(u) \Big]\Big\ket_\eta \Big\ket_\xi.\ee
-Taking time derivatives and conducting the averages using known characteristics of averages of exponentials of Gaussian white noise \citep{Gardiner1983,VanKampen1978} and the Furutsu-Norikov procedure for time derivatives of averages involving dichotomous noise \citep{Loginov1978} in a method similar to \citep{Balakrishnan1993} provides the Fourier-space master equation
+Taking time derivatives and conducting the averages using known characteristics of averages of exponentials of Gaussian white noise \citep{Gardiner1983,VanKampen2007} and the Furutsu-Norikov procedure for time derivatives of averages involving dichotomous noise \citep{Shapiro1978} in a method similar to \citep{Balakrishnan1993} provides the Fourier-space master equation
 \be \pt^2 \tilde{P}(g,t)  = (igV-g^2D-k)\pt  \tilde{P} + k_E (igV-g^2D) \tilde{P},\ee
 and inverse Fourier transforming provides the desired real-space master equation
 \be (\pt^2 + V \px \pt + k_E V \px + k \pt - D \px^2 \pt - k_E D \px^2) P(x,t) = 0. \label{eq:master}\ee
@@ -203,8 +203,8 @@ In this equation, $\delta[f(x)]$ is a Dirac delta functional, which generalizes 
 Such ideas are commonly applied to understand polymers and membranes \citep{Kawakatsu2001,Nelson2004}, but they have not been introduced in geomorphology.
 
 Introducing such a description with the stochastic Exner equation would lend new mathematical language to the old unsolved problem in geomorphology: how does variability affect landscape evolution?
-The classic works all acknowledge variability \citep{Leopold1952}, although one of their main efforts was to construct strategies to describe landscapes without explicitly accounting for it, producing ideas like competent flows to summarize climatic variability \citep{Wolman1959,Wolman1978}, characteristic grain sizes to overcome sorting processes \citep{Parker1982}, or average flow energies to avoid turbulence \citep{Bagnold1954}.
-Progress in stochastic approaches to river science \citep[e.g.][]{Furbish2021c,Ancey2020b} invites us to step beyond averaged descriptions, propagate noises through the governing equations of landscape evolution, and ask again with these classic works to what extent fluctuations shape Earth's surface.
+Early process-based geomorphologists acknowledged variability \citep{Strahler1952,Langbein1964}, although their main efforts were to construct strategies to describe landscapes without explicitly accounting for it, producing ideas like competent conditions to summarize climatic variability \citep{Wolman1959,Wolman1978}, characteristic grain sizes to overcome sorting processes \citep{Parker1982,Andrews1983}, and averaged flow conditions to avoid flow turbulence \citep{MeyerPeter1948,Bagnold1954}.
+Recent progress in stochastic approaches \citep[e.g.][]{Furbish2021a,Ancey2020b} invites us to step beyond averaged descriptions, propagate noises through the governing equations of landscape evolution, and ask with more precision to what extent fluctuations shape Earth's surface.
 
 \section{Summary and Conclusion \label{sec:conc}} 
  

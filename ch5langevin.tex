@@ -61,10 +61,10 @@ This collision force is a sequence of random impulses which are proportional to 
 
 Fluid forces on a coarse particle in a viscous flow depend on the Reynolds number $\Re_p = d V/\nu$ defined by the particle size $d$, slip velocity $V$ between particle and fluid, and kinematic viscosity $\nu$.
 These forces have been calculated analytically from the Navier-Stokes equations for vanishing $\Re_p$ and include acceleration, history, and velocity-dependent drag terms \citep{Hjelmfelt1966, Maxey1983, Auton1987}.
-At realistic $\Re_p$ analytical results are limited, so it is standard practice to turn instead to empirical corrections on the small $\Re_p$ formulas \citep{Schmeeckle2007,Mei2006}.
+At realistic $\Re_p$ analytical results are limited, so it is standard practice to turn instead to empirical corrections on the small $\Re_p$ formulas \citep{Schmeeckle2007,Clift1978}.
 A dominant contribution to the downstream drag force $F_D$ on nearly spherical particles at large $\Re_p$ can be written $F_D = \frac{\pi}{8}
 \rho_f d^2 C_D(\Re_p) |V|V$, where $\rho_f$ is the fluid density, $d$ is the particle diameter, $C_D(\Re_p)$ is an empirical drag coefficient, and $V = U-u$ is the slip velocity between the fluid ($U$) and particle ($u$) velocities \citep{Coleman1967, Schmeeckle2007, Dwivedi2012}.
-In the present model we set $C_D = \frac{24}{\Re_p}( 1 + 0.194 \Re_p^{0.631})$ \citep{Clift1978,Gonzalez2017} and we do not involve acceleration and history terms for simplicity, although we acknowledge their potential importance for coarse sediment transport \citep{Michaelides1997,Armenio2001,Dalche2015}.
+In the present model we set $C_D = \frac{24}{\Re_p}( 1 + 0.194 \Re_p^{0.631})$ \citep{Clift1978,Gonzalez2017} and we do not involve acceleration and history terms for simplicity, although we acknowledge their potential importance for coarse sediment transport \citep{Michaelides1997,Armenio2001}.
 
 Drag forces have been argued to fluctuate rapidly compared to the inertial response times of coarse sediment grains \citep{Fan2014}.
 The magnitude of drag fluctuations has been observed to follow a Gaussian distribution \citep{Hofland2006,Schmeeckle2007,Dwivedi2010,Celik2014}.
@@ -114,14 +114,14 @@ In what follows, we drop all but the first two terms to obtain the leading order
 \label{sec:solution}
 Hereafter we drop the prime on the most common streamwise restitution coefficient $\ve'$. With the truncation to two terms, equation \ref{eq:master} gives 
 \be 0 = -\tilde{\Gamma}\partial_u P(u) + \tilde{D}\partial_u^2 P(u) -P(u) + \frac{1}{\ve} P\big(\frac{u}{\ve}\big),\label{eq:governer} \ee
-which is now a non-local ordinary differential equation. Such equations have seen some attention in the mathematics literature, where they are called pantograph equations \citep{Hall1970,Zaidi2015,Bhalekar2017} for their relationship to a current collection device used on electric trains \citep{Ockendon1971}.
+which is now a non-local ordinary differential equation. have seen some attention in the mathematics literature, where they are called pantograph equations \citep{Hall1989, Kim1998,Zaidi2015}.
 In the appendix we solve equation \ref{eq:governer} using Laplace transforms, providing
 \begin{multline} P(u) = \frac{\theta(-u)}{K_+}\sum_{l=0}^\infty \frac{\ve^{-l}e^{\lambda_+\ve^{-l}u}}{\prod_{m=1}^l(-\tilde{D} \lambda_+^2 \ve^{-2m} + \tilde{\Gamma} \lambda_+ \ve^{-m} + 1) } 
 	\\+ \frac{\theta(u)}{K_-}\sum_{l=0}^\infty \frac{\ve^{-l}e^{\lambda_-\ve^{-l}u}}{\prod_{m=1}^l(-d \lambda_-^2 \ve^{-2m} + \gamma \lambda_- \ve^{-m} + 1) } \label{eq:steadystate}. \end{multline}
 The factors $\lambda_\pm$ are defined in the appendix; they are proportional to $\tilde{\Gamma}/\tilde{D}$. 
 The normalization factors are $K_\pm$ are 
 \be K_\pm = d(\lambda_+-\lambda_-)\prod_{l=1}^\infty (-d\lambda_\pm^2 \ve^{2l} + \gamma \lambda_\pm \ve^{l} + 1). \ee
-Although this velocity distribution appears quite complicated, one can verify that this is a normalized probability distribution which has very simple limiting behaviors as the most common dissipation coefficient $\ve$ approaches fully elastic ($\ve=1$) and inelastic ($\ve = 0$) values.
+Although this velocity distribution appears quite complicated, one can verify that this is a normalized probability distribution which has very simple limiting behaviors as the mode dissipation constant $\ve$ approaches fully elastic ($\ve=1$) and inelastic ($\ve = 0$) values.
 
 It is rather simple to derive the moments of this probability distribution by multiplying \ref{eq:governer} by $u$, integrating, and then solving the resulting moment evolution equations \citep[c.f.][]{Cox1965}.
 The first moment is
@@ -216,7 +216,7 @@ In real channels, grain sizes often span a wide range. A major implication of th
 \subsection{Implications for landscape evolution}
 
 Many phenomena of landscape evolution depend on the velocities of individual grains.
-The erosion rates of bedrock rivers are for example parameterized by the impact velocities of individual sediment grains against the bedrock surface \citep{Sklar2004,Tingian}, on which they have a sensitive nonlinear dependence.
+The erosion rates of bedrock rivers are for example parameterized by the impact velocities of individual sediment grains against the bedrock surface \citep{Sklar2004,Li2020,Turowski2021}, on which they have a sensitive dependence.
 It is not much of a stretch to imagine that bedrock erosion could be dominated by the largest impact velocities that originate from the extreme tail of the bedload velocity distribution. Here, we have shown that the weight of this tail depends sensitively on the dissipation characteristics of particle-bed collisions, suggesting that another feedback, that between dissipation and ... may be at play in the evolution of bedrock canyons.
 
 \subsection{Analogies to hillslope and wind-driven transport}
