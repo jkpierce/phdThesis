@@ -9,7 +9,7 @@
 \BOOKMARK [0][-]{chapter.1}{1 Sediment transport and landscape evolution}{}% 9
 \BOOKMARK [1][-]{section.1.1}{1.1 Theories of individual particle movement}{chapter.1}% 10
 \BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Motivation: tracers and basic understanding}{section.1.1}% 11
-\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Einstein 1937}{section.1.1}% 12
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Einstein's random walk model}{section.1.1}% 12
 \BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Inclusion of the movement duration}{section.1.1}% 13
 \BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 The Newtonian approach}{section.1.1}% 14
 \BOOKMARK [2][-]{subsection.1.1.5}{1.1.5 Mechanistic-stochastic models for the sediment velocity distribution}{section.1.1}% 15
@@ -69,7 +69,7 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Local and intermediate ranges with comparison to earlier work}{section.4.2}% 69
 \BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Global and geomorphic ranges with next steps for research}{section.4.2}% 70
 \BOOKMARK [1][-]{section.4.3}{4.3 Conclusion}{chapter.4}% 71
-\BOOKMARK [0][-]{chapter.5}{5 Collisional Langevin model of the bedload sediment velocity distributions}{}% 72
+\BOOKMARK [0][-]{chapter.5}{5 Collisional Langevin model of bedload sediment velocity distributions}{}% 72
 \BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 73
 \BOOKMARK [1][-]{section.5.2}{5.2 Mechanistic description of particle velocities}{chapter.5}% 74
 \BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Langevin equation for collisional transport}{section.5.2}% 75
@@ -83,7 +83,7 @@
 \BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Analogies to hillslope and wind-driven transport}{section.5.4}% 83
 \BOOKMARK [1][-]{section.5.5}{5.5 Conclusion}{chapter.5}% 84
 \BOOKMARK [0][-]{chapter.6}{6 Summary and future work}{}% 85
-\BOOKMARK [1][-]{section.6.1}{6.1 Overall Methodology}{chapter.6}% 86
+\BOOKMARK [1][-]{section.6.1}{6.1 Overall methodology of the thesis}{chapter.6}% 86
 \BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Langevin and master equations}{section.6.1}% 87
 \BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Idealized noises and their combinations}{section.6.1}% 88
 \BOOKMARK [1][-]{section.6.2}{6.2 Key contributions}{chapter.6}% 89
@@ -92,17 +92,17 @@
 \BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Quantification of the control of bed elevation fluctuations over sediment transport fluctuations}{section.6.2}% 92
 \BOOKMARK [2][-]{subsection.6.2.4}{6.2.4 Predicting how sediment burial affects the downstream spreading of sediment tracer particles}{section.6.2}% 93
 \BOOKMARK [1][-]{section.6.3}{6.3 Conclusion}{chapter.6}% 94
-\BOOKMARK [0][-]{chapter*.32}{Bibliography}{}% 95
-\BOOKMARK [0][-]{appendix.A}{A Ch. 2 calculations}{}% 96
+\BOOKMARK [0][-]{chapter*.33}{Bibliography}{}% 95
+\BOOKMARK [0][-]{appendix.A}{A Calculations involved in dynamical sediment flux model}{}% 96
 \BOOKMARK [1][-]{section.A.1}{A.1 Derivation of the master equation}{appendix.A}% 97
 \BOOKMARK [1][-]{section.A.2}{A.2 Solution for the position probability distribution}{appendix.A}% 98
 \BOOKMARK [1][-]{section.A.3}{A.3 Moments of position}{appendix.A}% 99
 \BOOKMARK [1][-]{section.A.4}{A.4 Calculation of the flux rate constant}{appendix.A}% 100
-\BOOKMARK [0][-]{appendix.B}{B Ch. 4 calculations}{}% 101
+\BOOKMARK [0][-]{appendix.B}{B Calculations involved in the sediment burial model}{}% 101
 \BOOKMARK [1][-]{section.B.1}{B.1 Calculation of the distribution function}{appendix.B}% 102
 \BOOKMARK [1][-]{section.B.2}{B.2 Calculation of the moments}{appendix.B}% 103
 \BOOKMARK [1][-]{section.B.3}{B.3 Limiting behavior of the moments}{appendix.B}% 104
-\BOOKMARK [0][-]{appendix.C}{C Ch. 3 calculations}{}% 105
+\BOOKMARK [0][-]{appendix.C}{C Calculations involved in the bed elevation model}{}% 105
 \BOOKMARK [1][-]{section.C.1}{C.1 Numerical simulation algorithm}{appendix.C}% 106
 \BOOKMARK [2][-]{subsection.C.1.1}{C.1.1 Times between transitions of any kind}{section.C.1}% 107
 \BOOKMARK [2][-]{subsection.C.1.2}{C.1.2 Selection of transitions that occur}{section.C.1}% 108
@@ -111,9 +111,9 @@
 \BOOKMARK [2][-]{subsection.C.2.1}{C.2.1 Mean field solution of particle activity}{section.C.2}% 111
 \BOOKMARK [2][-]{subsection.C.2.2}{C.2.2 Mean field solution of bed elevations}{section.C.2}% 112
 \BOOKMARK [2][-]{subsection.C.2.3}{C.2.3 Closure equation approach for bed elevations}{section.C.2}% 113
-\BOOKMARK [0][-]{appendix.D}{D Ch. 5 calculations}{}% 114
+\BOOKMARK [0][-]{appendix.D}{D Calculations involved in the Collisional Langevin model}{}% 114
 \BOOKMARK [1][-]{section.D.1}{D.1 Derivation of Master Equation}{appendix.D}% 115
 \BOOKMARK [1][-]{section.D.2}{D.2 Derivation of Steady-state solution}{appendix.D}% 116
 \BOOKMARK [1][-]{section.D.3}{D.3 Calculation of the moments}{appendix.D}% 117
 \BOOKMARK [1][-]{section.D.4}{D.4 Weak and strong collision limits}{appendix.D}% 118
-\BOOKMARK [0][-]{appendix.E}{E Monte Carlo strategies}{}% 119
+\BOOKMARK [0][-]{appendix.E}{E Monte Carlo simulation strategies}{}% 119

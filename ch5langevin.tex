@@ -1,17 +1,17 @@
 %%!TEX root = diss.tex
 
-\chapter{Collisional Langevin model of the bedload sediment velocity distributions}
+\chapter{Collisional Langevin model of bedload sediment velocity distributions}
 \label{ch:langevin}
 \section{Introduction}
 
 Bulk bed load transport rates show wide and frequent fluctuations which originate from coupling between the fluid and granular phases.
-Due to these fluctuations, measured transport rates often show slow convergence through time, and predicted rates often deviate from measured values by several orders of magnitude \citep{Ancey2020}.
-These challenges limit numerous ecological and engineering applications that rely on sediment transport predictions \citep{}.
-In recent decades, stochastic formulations of the bed load flux have become increasingly popular for their potential to predict the mean transport rates required by applications while also predicting fluctuations \citep{Ancey2008}, quantifying the dependence of measurements on the observation scale \citep{Turowski2010}, and linking bulk transport characteristics to the ``microstructural" dynamics of individual grains \citep{Ancey2014}.
+Due to these fluctuations, measured transport rates often show slow convergence through time \citep{Dhont2018,Turowski2010}, and predicted rates can deviate from measured values by several orders of magnitude \citep{Recking2012,Martin2003}.
+These challenges limit numerous ecological and engineering applications that rely on sediment transport predictions \citep{Gaeuman2017,Malmon2005}.
+In recent decades, stochastic formulations of the bed load flux have become increasingly popular for their potential to predict the mean transport rates required by applications while also predicting the magnitude of transport fluctuations \citep{Ancey2008} and quantifying the dependence of measurements on the observation scale \citep{Turowski2010}. 
 Recent indications that sediment transport fluctuations might explain longstanding and unsolved problems in alluvial channel stability, such as channel width maintenance \citep{Abramian2019} and bedform initiation \citep{Jerolmack2005,Bohorquez2016} provide additional motivation to develop these stochastic approaches.
 One subset of stochastic methods expresses downstream transport rates as a sum over the instantaneous streamwise velocities of all particles in motion within a control volume \citep{Ancey2008,Furbish2012}.
-These approaches rely on the instantaneous velocity distribution of sediment particles \citep{Lajeunesse2010}, but our understanding of these distributions unfortunately remains limited.
-We have as of yet no consensus on the shape of the bedload velocity distribution (is it Exponential, Gaussian, Gamma, or some other shape?), and although models have described some extreme endmember distributions \citep[e.g.][]{Fan2014,Ancey2014}, we have as of yet no mechanistic models that describe the full range of experimental observations \citep{Lajeunesse2010,Fathel2015,Heyman2016,Liu2019,Houssais2012}.
+This formulation requires the instantaneous velocity distributions of sediment particles \citep{Lajeunesse2010}, although our understanding of these distributions unfortunately remains limited.
+We have as of yet no consensus on the shape of the bedload velocity distribution, and although models have described some extreme end-member distributions \citep[e.g.][]{Fan2014,Ancey2014}, we have as of yet no mechanistic models that describe the full range of experimental observations \citep{Lajeunesse2010,Fathel2015,Heyman2016,Liu2019,Houssais2012}.
 In this chapter, I develop a stochastic model of particle velocities which addresses this shortcoming.
 
 Particle trajectories are a compromise between turbulent drag and particle-bed collision \citep{Wiberg1985}. We therefore anticipate that the Stokes number, which is known to characterize colliding bodies within a viscous fluid \citep{}, is an important dimensionless parameter of the bedload velocity distribution.
@@ -83,7 +83,7 @@ This equation replaces the steady friction terms of earlier stocahstic bed load 
 It represents a jump-diffusion process \citep{Daly2006} with multiplicative Poisson noise \citep{Dubkov2016,Denisov2009}. 
 Collisions introduce ``jumps" in velocity while turbulent generates "diffusion".
 The collision term is "multiplicative" in the sense that $u$ multiplies the Poisson noise.
-Equations like \ref{eq:langevin} have long been studied in the stochastic physics literature \citep{Hanggi1978,VanDenBroeck1983}, but solving such equations remains extremely challenging \citep{Luczka1995,Daly2010,Mau2014,Dubkov2019}.
+Equations like \ref{eq:langevin} have long been studied in the stochastic physics literature \citep{Hanggi1978,VanDenBroeck1983}, but solving such equations remains extremely challenging \citep{Luczka1995,Daly2010,Mau2014,Dubkov2016,Dubkov2019}.
 One issue is that multiplicative white noises imply the prescription dilemma of stochastic calculus \citep{Risken1989,Gardiner1983}, meaning \ref{eq:langevin} is not defined without further specifying an integration rule \citep{Suweis2011}.
 Here, the Ito interpretation (lower endpoint integration rule) is the physical choice since the energy dissipated by collisions depends strictly on pre-collisional velocities, not post-collisional.
 Given this integration rule, the remaining issues are to obtain the integro-differential equation characterizing the ensemble of velocities defined by \ref{eq:langevin}, and then to solve this equation for the velocity distribution $P(u)$.

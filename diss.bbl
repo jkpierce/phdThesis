@@ -1,4 +1,4 @@
-\begin{thebibliography}{315}
+\begin{thebibliography}{316}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{\it Abbott and Francis\/}(1977)}]{Abbott1977}
@@ -932,6 +932,11 @@ Martin, R.~L., D.~J. Jerolmack, and R.~Schumer, {The physical basis for
 Martin, R.~L., P.~K. Purohit, and D.~J. Jerolmack, {Sedimentary bed evolution
   as a mean-reverting random walk: Implications for tracer statistics}, {\it
   Geophysical Research Letters\/}, {\it 41\/}, 6152--6159, 2014.
+
+\bibitem[{{\it Martin\/}(2003)}]{Martin2003}
+Martin, Y., {Evaluation of bed load transport formulae using field evidence
+  from the Vedder River, British Columbia}, {\it Geomorphology\/}, {\it 53\/},
+  75--95, 2003.
 
 \bibitem[{{\it Masoliver\/}(2016)}]{Masoliver2016}
 Masoliver, J., {Fractional telegrapher's equation from fractional persistent
