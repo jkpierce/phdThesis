@@ -97,7 +97,7 @@ The master equation \ref{eq:master} describes the evolution of the probability d
 
 Because the master equation is second order in time, it requires initial conditions for $P$ and $\pt P$. Considering that particles start at rest in a mixture of motion and rest states, with a fraction $k_E/k$ starting in motion and a fraction $k_D/k$ starting in rest, these conditions derive from the state 
 \be P(x,0) = \lim_{t\rightarrow 0 } \frac{k_E}{k} \sqrt{\frac{1}{4\pi D t}} \exp\Big[-\frac{(x-Vt)^2}{4Dt}\Big]+ \frac{k_D}{k}\delta(x)\ee
-which gives $P(x,0) = \delta(x)$ and $ \pt P(x,0) = \frac{k_E}{k}\big[D\delta''(x)-V \delta'(x) \big]$ \citep{Weiss2002}.
+which gives $P(x,0) = \delta(x)$ and $ \pt P(x,0) = \frac{k_E}{k}\big[D\delta''(x)-V \delta'(x) \big]$ \citep{Weiss2002a}.
 
 The master equation \ref{eq:master} is solved by transform calculus in the appendix, providing
 \begin{multline} P(x,t) = \big[-\varphi D\px^2 + V\varphi \px + k + \pt \big]\int_0^t \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) e^{-k_E(t-u)} \\ \times \sqrt{ \frac{1}{4\pi D u}} \exp\Big[-k_D u - \frac{(x-Vu)^2}{4Du}\Big] du. \label{eq:monster}
@@ -178,9 +178,9 @@ Descriptions of sediment transport based on population dynamics in a control vol
 This feedback generates spatially-correlated waves of moving particles \citep{Ancey2014, Heyman2015} and produces non-exponential interarrival time distributions \citep{Heyman2013} which imply wide-tailed flux distributions when incorporated in renewal theory \citep{Turowski2010,Ancey2020}.
 Collective entrainment has been attributed to particle-particle interactions, such as small granular avalanches and collision-induced entrainment, and to fluid-particle interactions, such as large eddies entraining particles as they sweep downstream \citep{Heyman2014a,Ancey2014,Lee2018}.
 
-We can imagine generalizing the description in equation \ref{eq:Langevin} to include such fluid-particle interactions by including time dependence in the movement velocity ($V$), diffusivity ($D$), or entrainment and deposition rates ($k_E$ and $k_D$) as necessary, although the resulting equations would likely require numerical solutions.
+We can imagine generalizing the description in equation \ref{eq:flipfloplangevin} to include such fluid-particle interactions by including time dependence in the movement velocity ($V$), diffusivity ($D$), or entrainment and deposition rates ($k_E$ and $k_D$) as necessary, although the resulting equations would likely require numerical solutions.
 Particle-particle interactions would be more challenging to include.
-The dynamical equation \ref{eq:langevin} would generalize to $\dot{x}_i(t) = F_i(x_i,t) + \sum_{i\neq j}G_{ij}(\{x_j\},t)$, where the $F_i$ are the driving terms unique to each particle, while the $G_{ij}$ are some (generally stochastic) terms representing interactions between the $i$th and $j$th particles \citep{Goldstein1997}. The resulting joint distribution of particle positions and velocities ($P(x_1,v_1,\dots,x_{N(t)},v_{N(t)},t)$) might be formulated by analogy to the theory of reaction diffusion systems \citep{Pechenik1999, Cardy2008}, non-ideal gases \citep{Chapman1970,Brilliantov2004}, or other interacting particle models available in physics literature \citep{Hernandez2004,Escaff2018}. 
+The dynamical equation \ref{eq:flipfloplangevin} would generalize to $\dot{x}_i(t) = F_i(x_i,t) + \sum_{i\neq j}G_{ij}(\{x_j\},t)$, where the $F_i$ are the driving terms unique to each particle, while the $G_{ij}$ are some (generally stochastic) terms representing interactions between the $i$th and $j$th particles \citep{Goldstein1997}. The resulting joint distribution of particle positions and velocities ($P(x_1,v_1,\dots,x_{N(t)},v_{N(t)},t)$) might be formulated by analogy to the theory of reaction diffusion systems \citep{Pechenik1999, Cardy2008}, non-ideal gases \citep{Chapman1970,Brilliantov2004}, or other interacting particle models available in physics literature \citep{Hernandez2004,Escaff2018}. 
 By analogy to collective entrainment, interacting models which generalize the approach established in this chapter should be capable of producing wide sediment transport fluctuations.
 
 \subsection{Measurement protocol for the sediment flux}
@@ -190,7 +190,7 @@ By analogy to collective entrainment, interacting models which generalize the ap
 
 \subsection{Stochasticity in landscape evolution}
 
-\citet{Exner1925} originally phrased channel morphodynamics in terms of spatial gradients in the sediment flux (sec. \ref{eq:exner}), writing
+\citet{Exner1925} originally phrased channel morphodynamics in terms of spatial gradients in the sediment flux (sec. \ref{sec:landscape}), writing
 \be (1-\phi) \pt h(x,t) = -\px q(x,t). \ref{eq:stocEx}\ee
 In this one-dimensional equation, $h(x,t)$ is a continuous field representing the longitudinal channel profile.
 Traditionally, the Exner equation is evaluated considering the flux as a deterministic quantity \citep{Parker2007,Viparelli2011,An2017}, which provides a solitary trajectory of the profile through time.
@@ -203,8 +203,6 @@ In this equation, $\delta[f(x)]$ is a Dirac delta functional, which generalizes 
 Such ideas are commonly applied to understand polymers and membranes \citep{Kawakatsu2001,Nelson2004}, but they have not been introduced in geomorphology.
 
 Introducing such a description with the stochastic Exner equation would lend new mathematical language to the old unsolved problem in geomorphology: how does variability affect landscape evolution?
-Early process-based geomorphologists acknowledged variability \citep{Strahler1952,Langbein1964}, although their main efforts were to construct strategies to describe landscapes without explicitly accounting for it, producing ideas like competent conditions to summarize climatic variability \citep{Wolman1959,Wolman1978}, characteristic grain sizes to overcome sorting processes \citep{Parker1982,Andrews1983}, and averaged flow conditions to avoid flow turbulence \citep{MeyerPeter1948,Bagnold1954}.
-Recent progress in stochastic approaches \citep[e.g.][]{Furbish2021a,Ancey2020b} invites us to step beyond averaged descriptions, propagate noises through the governing equations of landscape evolution, and ask with more precision to what extent fluctuations shape Earth's surface.
 
 \section{Summary and Conclusion \label{sec:conc}} 
  

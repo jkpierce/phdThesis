@@ -91,7 +91,6 @@
 
 
 
-
 %% The pifont package provides access to the elements in the dingbat font.   
 %% Use \ding{##} for a particular dingbat (see p7 of psnfss2e.pdf)
 %%   Useful:
@@ -321,7 +320,7 @@
 %% Document meta-data: be sure to also change the \hypersetup information
 %%
 
-\title{The stochastic movements of individual streambed grains}
+\title{The stochastic movements of individual \\streambed grains}
 
 \author{J. Kevin Pierce}
 \previousdegree{B.S. Physics, West Virginia University 2013}
@@ -338,19 +337,20 @@
 \submissionmonth{June}
 \submissionyear{2021}
 
-\examiningcommittee{Marwan Hassan, Geography}{Supervisor}
-\examiningcommittee{Brett Eaton, Geography}%
-    {Supervisory Committee Member}
-\examiningcommittee{Rui Ferreira, University of Lisbon}{Civil Engineering}
-\examiningcommittee{Magnus Monolith, Other Department}{External Examiner}
 
-\supervisorycommittee{Person1}%
-    {Supervisory Committee Member}
-\supervisorycommittee{Person 2}{Supervisory Committee Member}
+\examiningcommittee{}{Chair}
+\examiningcommittee{}{Internal Examiner}
+\examiningcommittee{}{External Examiner}
+
+\supervisorycommittee{Marwan Hassan, Geography}{Research Supervisor}
+\supervisorycommittee{Brett Eaton, Geography}{Supervisory Committee Member}
+\supervisorycommittee{Rui Ferreira, University of Lisbon}{Supervisory Committee Member}
+
+
 
 \hypersetup{
   pdftitle={The stochastic movements of individual streambed grains  (DRAFT: \today)},
-  pdfauthor={J. Kevin Pierce},
+  pdfauthor={Kevin Pierce},
   pdfkeywords={landscapes, Surface processes, sediment transport, stochastic processes}
 }
 
@@ -360,7 +360,7 @@
 %% this part is for nomenclature entry in the list of notation section (from glossary)
 %% https://tex.stackexchange.com/questions/490666/customize-list-of-symbols
 \usepackage{longtable}
-\newcommand\nom[2]{#1 & #2 \\}  % use this to input new nomenclature entries 
+\newcommand\nom[3]{#1 & #2 \\}  % use this to input new nomenclature entries 
 \usepackage{array}
 
 
@@ -373,7 +373,7 @@
 
 \maketitle
 
-\makecommitteepage
+%\makecommitteepage  %%% figure that out later
 
 \include{abs}
 \cleardoublepage

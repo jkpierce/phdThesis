@@ -17,53 +17,48 @@ A level-1 auxiliary file: app_ch4.aux
 A level-1 auxiliary file: app_ch3.aux
 A level-1 auxiliary file: app_ch5.aux
 A level-1 auxiliary file: app_mc.aux
-Reallocated field_info (elt_size=4) to 12153 items from 5000.
+Reallocated field_info (elt_size=4) to 12268 items from 5000.
 Database file #1: biblio.bib
-Repeated entry---line 14501 of file biblio.bib
- : @article{Lajeunesse2017
- :                        ,
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
-Warning--empty institution in Takayama1965
-You've used 310 entries,
+You've used 315 entries,
             2789 wiz_defined-function locations,
-            2824 strings with 58328 characters,
-and the built_in function-call counts, 259368 in all, are:
-= -- 33121
-> -- 9573
+            2858 strings with 59708 characters,
+and the built_in function-call counts, 265155 in all, are:
+= -- 33815
+> -- 9907
 < -- 203
-+ -- 5306
-- -- 2305
-* -- 17376
-:= -- 25410
-add.period$ -- 310
-call.type$ -- 310
-change.case$ -- 1689
-chr.to.int$ -- 303
-cite$ -- 931
-duplicate$ -- 23139
-empty$ -- 12438
-format.name$ -- 3232
-if$ -- 52108
++ -- 5477
+- -- 2383
+* -- 17782
+:= -- 25974
+add.period$ -- 315
+call.type$ -- 315
+change.case$ -- 1727
+chr.to.int$ -- 308
+cite$ -- 945
+duplicate$ -- 23587
+empty$ -- 12693
+format.name$ -- 3323
+if$ -- 53307
 int.to.chr$ -- 8
 int.to.str$ -- 1
-missing$ -- 328
-newline$ -- 934
-num.names$ -- 1249
-pop$ -- 9072
+missing$ -- 336
+newline$ -- 949
+num.names$ -- 1270
+pop$ -- 9325
 preamble$ -- 1
-purify$ -- 1383
+purify$ -- 1419
 quote$ -- 0
-skip$ -- 18632
+skip$ -- 19029
 stack$ -- 0
-substring$ -- 12188
-swap$ -- 20015
-text.length$ -- 22
+substring$ -- 12425
+swap$ -- 20403
+text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2694
-warning$ -- 1
-while$ -- 1679
+type$ -- 2733
+warning$ -- 0
+while$ -- 1710
 width$ -- 0
-write$ -- 3407
-(There was 1 error message)
+write$ -- 3462
+(There was 1 warning)
