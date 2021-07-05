@@ -17,48 +17,51 @@ A level-1 auxiliary file: app_ch4.aux
 A level-1 auxiliary file: app_ch3.aux
 A level-1 auxiliary file: app_ch5.aux
 A level-1 auxiliary file: app_mc.aux
-Reallocated field_info (elt_size=4) to 12291 items from 5000.
+Reallocated field_info (elt_size=4) to 12866 items from 5000.
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for ""
-You've used 316 entries,
+Warning--I didn't find a database entry for "Kubo1972"
+Warning--I didn't find a database entry for "Kolmogorov1941"
+Warning--I didn't find a database entry for "Pretzslav2021"
+You've used 338 entries,
             2789 wiz_defined-function locations,
-            2863 strings with 59852 characters,
-and the built_in function-call counts, 265868 in all, are:
-= -- 33912
-> -- 9918
-< -- 204
-+ -- 5485
-- -- 2386
-* -- 17822
-:= -- 26043
-add.period$ -- 316
-call.type$ -- 316
-change.case$ -- 1731
-chr.to.int$ -- 309
-cite$ -- 948
-duplicate$ -- 23661
-empty$ -- 12732
-format.name$ -- 3327
-if$ -- 53448
+            2984 strings with 63505 characters,
+and the built_in function-call counts, 285798 in all, are:
+= -- 36527
+> -- 10633
+< -- 215
++ -- 5902
+- -- 2557
+* -- 19127
+:= -- 27917
+add.period$ -- 338
+call.type$ -- 338
+change.case$ -- 1853
+chr.to.int$ -- 331
+cite$ -- 1014
+duplicate$ -- 25488
+empty$ -- 13628
+format.name$ -- 3572
+if$ -- 57427
 int.to.chr$ -- 8
 int.to.str$ -- 1
-missing$ -- 337
-newline$ -- 952
-num.names$ -- 1274
-pop$ -- 9355
+missing$ -- 359
+newline$ -- 1018
+num.names$ -- 1362
+pop$ -- 10188
 preamble$ -- 1
-purify$ -- 1422
+purify$ -- 1523
 quote$ -- 0
-skip$ -- 19074
+skip$ -- 20425
 stack$ -- 0
-substring$ -- 12465
-swap$ -- 20467
-text.length$ -- 23
+substring$ -- 13446
+swap$ -- 22097
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2742
+type$ -- 2937
 warning$ -- 0
-while$ -- 1716
+while$ -- 1833
 width$ -- 0
-write$ -- 3473
-(There was 1 warning)
+write$ -- 3711
+(There were 4 warnings)
