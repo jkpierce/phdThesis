@@ -7,105 +7,138 @@
 A relativity weak flow shearing a bed of sediment entrains individual particles into a state of motion controlled by turbulent forcing and intermittent collisions with other grains at rest on the bed, generating wide fluctuations in the sediment velocity \citep{Heyman2016,Fathel2015}.
 Bed load particles move downstream until they are disentrained when they happen to encounter sufficiently sheltered pockets on the bed surface to interrupt their motions \citep{Charru2004,Gordon1972}.
 Eventually, the bed around them rearranges and destroys this shelter, or turbulent fluctuations overcome the shelter \citep{Celik2014,Valyrakis2010}, particles are once again entrained, and the cycle repeats.
-Bed load transport is thus a kind of itinerant motion, characterized by alternation between fluctuating movements and rest.
-This process is difficult to describe mathematically given the technicality of the stochastic physics involved \citep{Furbish2017,Ancey2020}.
+Bed load transport is thus a kind of itinerant motion, characterized by alternation between fluctuating movements and periods of rest.
+This process is difficult to describe mathematically given the technical stochastic physics required \citep{Furbish2017,Ancey2020}.
 
 To date, descriptions of bed load transport have therefore simplified the problem in various ways to enable progress.
 The foundational work is due to Einstein, who considering bed load motions as instantaneous so he could describe bed load transport as an alternating sequence of ``steps" and rests having random length and duration \citep{Einstein1937}, in a pioneering application of the continuous time random walk \citep{Montroll1965}.
-Einstein concluded that particles move downstream with a mean velocity $\bra u \ket = k_E l$, where $k_E$ is the rate at which an individual bed particle entrains into motion, and $l$ is the mean length of each downstream step.
-Later, Einstein applied these ideas to calculate the mean downstream flux due to the movements of many such particles \citep{Einstein1950}. Einstein reasoned that if the density of resting particles on the bed is $\rho_b$, the overall areal entrainment rate of particles can be written $E = \rho_b k_E$, giving a mean sediment flux $\bra q_s \ket = \rho_b \bra u \ket  = El $.
+Einstein concluded that particles move downstream with a mean velocity $\bra u \ket = k_E \ell$, where $k_E$ is the rate at which an individual bed particle entrains into motion, and $\ell$ is the mean length of each downstream step.
+Later, Einstein applied these ideas to calculate the mean downstream flux due to the movements of many such particles \citep{Einstein1950}. Einstein reasoned that if the density of resting particles on the bed is $\rho_b$, the overall areal entrainment rate of particles can be written $E = \rho_b k_E$, giving a mean sediment flux $\bra q \ket = \rho_b \bra u \ket  = E \ell $.
 
 Many researchers have since refined Einstein's approach to provide more realistic descriptions of individual particle motions than Einstein's instantaneous step model.
-One set of efforts has neglected particle deposition process to calculate the downstream velocity distributions of moving particles after entrainment using mechanistic equations with terms representing turbulent fluid forces and particle-bed collisions \citep{Ancey2014,Fan2014}. 
-Another set of efforts has described particles alternating between motion and rest, considering that motions occur with a constant velocity \citep{Lisle1998,Lajeunesse2017,Pierce2020b}. 
-No models have yet been formulated which describe particles alternating between motion and rest, while motions have a realistic fluctuating velocity.
+One set of efforts has neglected the particle deposition process to calculate the downstream velocity distributions of moving particles after entrainment using mechanistic equations with terms representing turbulent fluid forces and particle-bed collisions \citep{Ancey2014,Fan2014}. 
+Another set of works have described particles alternating between motion and rest, considering that motions occur with a constant velocity \citep{Lisle1998,Lajeunesse2017,Pierce2020b}. 
+No models have yet been formulated which describe particles alternating between motion and rest with motions having realistic fluctuating velocities.
 
-A set of studies has developed stochastic formulations of the sediment flux which improve on the mean field description provided by Einstein \citep{Furbish2012}. 
-Sediment fluxes generally exhibit wide fluctuations due to variations in the number of moving particles and their velocities \citep{Bohm2005a,Ancey2006}, the migration of bedforms and sediment waves \citep{Guala2014,Recking2012}, and a host of other processes \citep{Dhont2018}.
+Parallel to these efforts to better describe individual particle trajectories, a complementary set of studies have developed stochastic formulations of the sediment flux which improve on the mean field description provided by Einstein \citep{Turowski2010,Furbish2012a,Ancey2020}. 
+Sediment fluxes generally exhibit wide fluctuations due to variations in the number of moving particles and their velocities \citep{Bohm2005a,Ancey2006,Furbish2012a}, the migration of bedforms and sediment waves \citep{Guala2014,Recking2012}, and a host of other processes \citep{Dhont2018}.
 Because these fluctuations occur over disparate timescales, measurements of mean sediment fluxes depend on the timescale over which they are collected, a phenomenon called scale-dependence \citep{Saletti2015,Dhont2018,Singh2009,Turowski2010,Ancey2020}.
-To date, very few models have calculated the probability distribution of the bed load sediment flux due to individual particle motions \citep{Ancey2008,Ancey2014}, and among these, even fewer have described any observation-scale dependence of the flux \citep{Ancey2020,Turowski2010}. Among those that do, none have yet formulated the sediment flux in terms of the downstream trajectories of individual grains.
+To date, very few models have calculated the probability distribution of the bed load sediment flux due to individual particle motions \citep{Ancey2008,Ancey2014}, and among these, even fewer have described any observation-scale dependence of the flux \citep{Ancey2020,Turowski2010}.
+Among those that do, none have yet formulated the sediment flux in terms of the downstream trajectories of individual grains.
 
-This survey provides context for the two problems addressed in this chapter. First, we do not yet have the capability to describe individual sediment trajectories through motion and rest including velocity fluctuations in the motion state; and second, we need more understanding of how to connect individual particle trajectories through motion and rest to the overall downstream sediment flux, including its probability distribution, and the dependence of its statistical moments on the observation time.
+This survey provides context for the two problems addressed in this chapter.
+First, we do not yet have the capability to describe individual sediment trajectories through motion and rest including velocity fluctuations in the motion state; and second, we need more understanding of how to connect individual particle trajectories through motion and rest to the overall downstream sediment flux, including its probability distribution and the dependence of its statistical moments on the observation time.
 
-Here, I develop a new statistical physics-based formalism which addresses both of these problems by describing individual particle trajectories with a Langevin-type dynamical equation in a combination of earlier approaches \citep{Fan2014,Ancey2014,Lisle1998,Lajeunesse2017}.
+Here, I develop a new statistical physics-based formalism which addresses both of these problems by describing individual particle trajectories with a stochastic Langevin equation.
 This dynamical equation describes alternation between motion and rest at random intervals while particles in motion have velocity that fluctuates around a mean value.
-Using the probability distribution of particle position generated by this model, I construct a formalism to derive analytically the probability distribution of the sediment flux. This distribution exhibits observation-scale dependence as a result of velocity fluctuations among moving sediment.
+Using the probability distribution of particle position generated by this model, I construct a formalism to derive analytically the probability distribution of the sediment flux.
+This distribution exhibits observation-scale dependence as a result of velocity fluctuations among moving particles.
 Below, I develop the new formalism in sec. \ref{sec:mod}, solve it in sec. \ref{sec:res}, and I discuss the implications of my results and future research ideas in secs. \ref{sec:disc} and \ref{sec:conc}.
 
 \section{Description of motion-rest alternation with velocity fluctuations \label{sec:mod}}
-Consider an infinite one-dimensional domain populated with sediment particles on the surface of a sedimentary bed. Consider that the flow is weak enough that interactions among moving grains are very rare, although interactions between moving particles and the bed may be common. The flow is in contrast strong enough so that particles move.
-Label the downstream coordinate as $x$, so that the downstream velocity of a moving particle is $\dot{x}$, and we describe all sediment particles as independent from one another but governed by the same underlying dynamical equations, meaning we neglect any influence of sediment size or shape or spatial variations in the overlying fluid flow.
+The starting point for this analysis is an idealized one-dimensional domain, infinite in extent, populated with sediment particles on the surface of a sedimentary bed.
+Particles are set in motion by the turbulent flow and move downstream until they deposit, and the cycle repeats.
+The downstream coordinate is $x$, so that $\dot{x}$ describes a velocity in the downstream direction.
+
+The flow is considered weak enough that interactions among moving grains are very rare, although interactions between moving particles and the bed may be common, characteristic of rarefied transport conditions \citep[e.g.][]{Kumaran2006,Furbish2017}. Any variations like particle size, shape, or spatial variations in the overlying fluid flow are neglected for mathematical simplicity.
+These conditions allow for all particles to be described as independent from one another but governed by the same underlying dynamical equations.
 
 \subsection{Dynamical equation for grain-scale sediment transport}
-From these assumptions, our first target is to write an equation of motion for the individual sediment particle encompassing two features. First, particles should alternate between motion and rest. The transition rate from rest to motion is called entrainment and occurs with probability per unit time (or rate) $k_E$, while the transition from motion to rest is called deposition and occurs with rate $k_D$. Second, particles in motion should move with mean velocity $V$ and some fluctuations around this velocity. 
+From these assumptions, the first target is to write an equation of motion for the individual sediment particle encompassing two features.
+First, particles should alternate between motion and rest. The transition rate from rest to motion is called entrainment and occurs with probability per unit time (or rate) $k_E$, while the transition from motion to rest is called deposition and occurs with rate $k_D$. Second, particles in motion should move with mean velocity $V$ and their instantaneous velocities should jitter around this mean through time due to turbulent drag and particle-bed collisions.
+
 The simplest equation of motion including these features is
-\be \dot{x}(t) = [V + \sqrt{2D}\xi(t)]\eta(t).  \label{eq:langevin} \ee
-Here $\xi(t)$ is a Gaussian white noise having zero mean and unit variance representing velocity fluctuations among moving particles, and $\eta(t)$ is a dichotomous noise which takes on values $\eta = 1$, representing motion (with mean duration $1/k_D$), and $\eta=0$, representing rest (with mean duration $1/k_E$). Here, $V$ is the mean particle velocity, and $D$ is a diffusivity [units $L^2/T$] describing velocity fluctuations among moving particles. The transition rate from $\eta=0$ to $\eta = 1$ is $k_E$, and the transition rate from $\eta=1$ to $\eta= 0$ is $k_D$. We write $k=k_E+k_D$ as a shorthand. This problem is similar to the ``randomly flashing diffusion" developed by Luczka and coworkers \citep{uczka1992,Luczka1993,Luczka1995}, although it includes a more complex asymmetric noise ($k_E\neq k_D$) and involves particle rest.
+\be \dot{x}(t) = [V + \sqrt{2D}\xi(t)]\eta(t).  \label{eq:flippylangevin} \ee
+Here $\xi(t)$ is a Gaussian white noise having zero mean and unit variance representing velocity fluctuations among moving particles. $\eta(t)$ is a dichotomous noise which takes on values $\eta = 1$, representing motion (with mean duration $1/k_D$), and $\eta=0$, representing rest (with mean duration $1/k_E$).
+
+The mean particle velocity is $V$, and $D$ is a diffusivity [units $L^2/T$] describing velocity fluctuations among moving particles. The transition rate from $\eta=0$ to $\eta = 1$ is $k_E$, and the transition rate from $\eta=1$ to $\eta= 0$ is $k_D$. The notation $k=k_E+k_D$ is a shorthand used throughout the thesis.
+
+The Langevin equation \ref{eq:flippylangevin} is a generalization of the model by \citet{Lisle1998} and \citet{Lajeunesse2017}, presented in section \ref{sec:lisle}, to include velocity fluctuations in the motion state.
+It is similar to the ``randomly flashing diffusion" developed by Luczka and coworkers in physics \citep{Luczka1992,Luczka1993,Luczka1995}, although it includes a more complex asymmetric noise ($k_E\neq k_D$).
+This equation describes the downstream movement of particles alternating through motion and rest with velocity fluctuations in the motion state. This is a more realistic description of bed load trajectories than earlier works in the Einstein paradigm reviewed in section \ref{sec:trajmodels}.
 
 \subsection{Derivation of the master equation for the sediment position distribution $P(x,t)$}
-The solution of equation \ref{eq:langevin} for a given realization of the two noises $\eta(t)$ and $\xi(t)$ gives the trajectory of one particle. Averaging over the ensemble of all such trajectories from different realizations of the noises will obtain the probability distribution $P(x,t)$ that a particle which started at position $x=0$ at time $t=0$ has travelled to position $x$ by time $t$. This distribution, by construction, will generalize earlier models of bedload alternation between motion and rest which did not include velocity fluctuations among moving particles \citep{Lisle1998,Lajeunesse2017}.
+The solution of equation \ref{eq:flippylangevin} for a given realization of the two noises $\eta(t)$ and $\xi(t)$ gives one possible trajectory of a particle. Averaging over the ensemble of all possible trajectories from different realizations of the noises will obtain the probability distribution $P(x,t)$ that a particle which started at position $x=0$ at time $t=0$ has travelled to position $x$ by time $t$. This distribution, by construction, will generalize earlier models of bedload alternation between motion and rest which did not include velocity fluctuations among moving particles \citep{Lisle1998,Lajeunesse2017}.
 
-We form the desired probability distribution of position as $ P(y,t) = \big\bra \delta(y-x(t))\big\ket_{\eta,\xi} $, where $x(t)$ is the formal solution of eq. \ref{eq:langevin} and the average is over both noises, but this symbolic equation is not yet useful as taking averages over both noises directly is a challenging mathematical problem \citep{Hanggi1978}.
-A simpler approach is to conduct the averages in Fourier space. Integrating eq. 1, using its solution in the probability distribution, then Fourier transforming gives
-\be \tilde{P}(g,t) = \Big\bra  \Big\bra \exp \Big[- i g \int_0^t du [V+\sqrt{2D}\xi(u)]\eta(u) \Big]\Big\ket_\eta \Big\ket_\xi.\ee
-Taking time derivatives and conducting the averages using known characteristics of averages of exponentials of Gaussian white noise \citep{Gardiner1983,VanKampen2007} and the Furutsu-Norikov procedure for time derivatives of averages involving dichotomous noise \citep{Shapiro1978} in a method similar to \citep{Balakrishnan1993} provides the Fourier-space master equation
-\be \pt^2 \tilde{P}(g,t)  = (igV-g^2D-k)\pt  \tilde{P} + k_E (igV-g^2D) \tilde{P},\ee
-and inverse Fourier transforming provides the desired real-space master equation
-\be (\pt^2 + V \px \pt + k_E V \px + k \pt - D \px^2 \pt - k_E D \px^2) P(x,t) = 0. \label{eq:master}\ee
-This is a diffusion-like equation governing the probability distribution of position for individual particles as they transport downstream through a sequence of motions and rests, with the movement velocity being a fluctuating quantity.
-One can see in particular that taking an the entrainment rate $k_E$ very large, meaning that all particles are generally moving, implies an advection-diffusion equation $(\pt + V\px -D \px^2)P=0$ for the position, characteristic of a particle moving downstream with Gaussian velocity fluctuations \citep{Ancey2014}. Otherwise, with $k_E$ of similar order as $k_D$, there is a finite probability that the particle is at rest, and the advection-diffusion process is often interrupted by deposition, giving rise to the additional terms in eq. \ref{eq:master} reminiscient of earlier motion-rest models with constant velocity \citep{Lisle1998,Lajeunesse2017}.
+The desired probability distribution of position is formed as $ P(x',t) = \big\bra \delta(x'-x(t))\big\ket_{\eta,\xi} $, where $x(t)$ is the formal solution of eq. \ref{eq:flippylangevin} and the average is over both noises.
+This symbolic equation is not directly useful as taking averages over both noises is a challenging mathematical problem \citep{Hanggi1978}. This calculation is completed in the appendix section \ref{sec:appAmaster}, providing the master equation
+\be (\pt^2 + V \px \pt + k_E V \px + k \pt - D \px^2 \pt - k_E D \px^2) P(x,t) = 0 \label{eq:flippymaster}\ee
+for the probability distribution of position.
+
+The master equation \ref{eq:flippymaster} is a diffusion-like equation governing the probability distribution of position for individual particles as they transport downstream through a sequence of motions and rests, with the movement velocity being a fluctuating quantity.
+
+One can see in particular that taking an the entrainment rate $k_E$ very large, meaning that all particles are generally moving, implies an advection-diffusion equation $(\pt + V\px -D \px^2)P=0$ for the position, characteristic of a particle moving downstream with Gaussian velocity fluctuations \citep{Ancey2014}. Otherwise, with $k_E$ of similar order as $k_D$, there is a finite probability that the particle is at rest, and the advection-diffusion process is often interrupted by deposition, giving rise to the additional terms in eq. \ref{eq:flippymaster} reminiscent of equation \ref{eq:lislemaster} from earlier simpler motion-rest models. When diffusion is turned off ($D=0$), equation \ref{eq:flippymaster} becomes identical to equation \ref{eq:lislemaster}, as expected.
 
 \section{Formalism for the downstream sediment flux}
-The probability distribution of the sediment flux is calculated using the probability distribution of particle position $P(x,t)$ provided as the solution of equation \ref{eq:master}. This method is modified from the approach recently developed by Banerjee and coworkers in physics \citep{Banerjee2020}. The basic idea, as depicted in Figure 1, is that particles are initially distributed in all states of motion along a domain at random locations to the left of $x=0$. The flux is calculated using the number of particles that end up to the right of $x=0$ during the sampling time $T$.
+
+The probability distribution of the sediment flux can be calculated using the probability distribution of particle position $P(x,t)$ provided as the solution of equation \ref{eq:flippymaster}.
+This method is modified from the approach recently developed by Banerjee and coworkers in physics \citep{Banerjee2020}. It generalizes the nonlocal formulation (\ref{sec:nonlocal}) to provide the probability distribution of the flux, and it generalizes the renewal approach (sec. \ref{sec:renewal}) to include the mechanics of individual particles in downstream transport.
+
+The basic idea, as depicted in Figure \ref{fig:flipflopfig1}, is to initially distribute $N$ particles in all states of motion along a domain of length $L$ at some random initial locations $x_i$ to the left of $x=0$.
+Later, the number of particles $N$ and the size $L$ of the domain will be limited to infinity such that their ratio $\rho=N/L$ remains constant. 
+This limit will provide a configuration similar to the one constructed in the nonlocal formation (sec. \ref{sec:nonlocal}).
+
+From this initial configuration, particles move downstream through time according to equation \ref{eq:flippylangevin}.
+The flux is calculated as the average rate of particles crossing to the right of $x=0$ after a sampling time $T$.
 \begin{figure}
 	\centerline{\includegraphics{./figures/ch2/figure1.pdf}}
-	\caption{The left panel indicates the configuration for the flux. The particle trajectories within are calculated from equation \ref{eq:langevin}, demonstrating alternation between rest and motion with fluctuating velocity. Particles begin their transport with positions $-L\leq x \leq 0$ at $t=0$, and as depicted in the right panel, the flux is calculated as the number of particles $N_>(t)$ which lie to the right of $x=0$ at the observation time $t$, divided by $t$: $Q(t) = t^{-1}N_>(t)$. We calculate the probability distribution of $Q$ over all realizations of the trajectories and initial positions as $L\rightarrow \infty$}
-	\label{fig:fig1}
+	\caption{The left panel indicates the configuration for the flux. The particle trajectories within are calculated from equation \ref{eq:langevin}, demonstrating alternation between rest and motion with fluctuating velocity. Particles begin their transport with positions $-L\leq x \leq 0$ at $t=0$, and as depicted in the right panel, the flux is calculated with the number of particles $N_>(T)$ which lie to the right of $x=0$ at the observation time $t=T$, divided by $T$: $q(T) = N_>(T)/T$. The probability distribution of $q(T)$ is determined from all possible realizations of the trajectories and initial positions as $N,L$ tend to infinity while the density of particles $\rho=N/L$ to the left of the control surface remains fixed.}
+	\label{fig:flipflopfig1}
 \end{figure}
+This time-averaged flux is
+\be q(T) = \frac{1}{T}\sum_{i=1}^N I_i(T). \label{eq:flippyflux} \ee
+In this equation, $I_i(T)$ is an indicator function which is $1$ if the $i$th particle has passed the control surface ($x=0$) at the observation time $T$ and $0$ otherwise.
+All particles which have not crossed the control surface (or which have crossed and then crossed back) contribute nothing to the flux.
 
-The rate of particles crossing the surface in an observation time $T$ is
-\be Q(T) = \frac{1}{T}\sum_{i=1}^N \mathcal{I}_i(T). \ee
-In this equation, $\mathcal{I}_i(T)$ is an indicator function which is $1$ whenever the $i$th particle has passed our control surface and $0$ otherwise. All particles which have not crossed the control surface (or which have crossed and then crossed back) contribute nothing to the flux. The probability distribution of the flux is then 
-\be P(Q|T) = \Big \bra \delta\Big( Q - \frac{1}{T}\sum_{i=1}^N \mathcal{I}_i(T) \Big) \Big\ket. \ee
-The average is over the initial conditions of each particle and the ensemble of trajectories for each particle.
-Taking the Laplace transform over $Q$ (i.e. forming the characteristic function) obtains
-\begin{align} \tilde{P}(s|T) &= \Bigg\bra \int_0^\infty dQ e^{-s Q}\delta\Big( Q - \frac{1}{T}\sum_{i=1}^N \mathcal{I}_i(T) \Big)\Bigg\ket \\
-	&=  \Big\bra \exp\Big(\frac{s}{T}\sum_{i=1}^N \mathcal{I}_i(T)\Big)\Big\ket \\
-	&=  \prod_{i=1}^N \Big\bra \exp\Big(-\frac{s}{T}\mathcal{I}_i(T)\Big)\Big\ket \\
-	&= \prod_{i=1}^N \Big[1-\big(1-e^{-s/T}\big)\big\bra \mathcal{I}_i(T) \big\ket \Big] \end{align}
-This progression relies on the independence of averages for each particle (so the average of a product is the product of averages) and the fact that  $ \mathcal{I}_i(T)$ is either $1$ or $0$, so that $e^{ax} = 1-(1-e^a)x$.
-The average over initial conditions and possible trajectories for the $i$th particle can be written
-\be \bra \mathcal{I}_i(t) \ket = \frac{1}{L}\int_L^0 dx' \int_0^\infty dx \mathcal{P}(x,t|x') =  \frac{1}{L}\int_0^L dx' \int_0^\infty dx \mathcal{P}(x,t|-x'), \ee
-where $\mathcal{P}(x,t|x')$ is the probability density that the particle is found at position $x$ at time $t$ given it was initially at $x'$ at time $0$. This is the part of the flux that depends on the particle dynamics (ie instantenous velocities and entrainment/deposition characteristics).
+The probability distribution of the flux is then the average of equation \ref{eq:flippyflux} across all possible initial configurations of particles and their trajectories
+\be P(q|T) = \Big \bra \delta\Big( q - \frac{1}{T}\sum_{i=1}^N I_i(T) \Big) \Big\ket. \ee
+To evaluate these averages, taking the Laplace transform over $q$ (i.e. forming the characteristic function of $P(q|T)$) obtains
+\begin{align} \tilde{P}(s|T) &=  \Big\bra \exp\Big(\frac{s}{T}\sum_{i=1}^N I_i(T)\Big)\Big\ket \\
+	&=  \prod_{i=1}^N \Big\bra \exp\Big(-\frac{s}{T}I_i(T)\Big)\Big\ket \\
+	&= \prod_{i=1}^N \Big[1-\big(1-e^{-s/T}\big)\big\bra I_i(T) \big\ket \Big] \label{eq:flippycharacteristic}\end{align}
+This progression relies on the independence of averages for each particle (so the average of a product is the product of averages) and the fact that  $e^{a I} = 1-(1-e^a)I$ because $I$ is either $0$ or $1$.
 
-Inserting (7) into (6) and taking the limit as $L\rightarrow \infty$ and $N \rightarrow \infty$ while the density of particles $\rho = N/L$ remains constant provides
-\be \tilde{P}(s|T) = \lim_{N \rightarrow \infty} \Big(1 - \frac{1}{N}\big(1-e^{-s/T}\big)\mu(T) \Big)^N = \exp \Big[ -\big(1-e^{-s/T}\big)\mu(T) \Big].\ee
-where $\mu(T) = \rho \int_0^\infty dx \int_0^\infty dx' \mathcal{P}(x,T|x')$ is a rate constant which encodes the particle dynamics. This expression is the characteristic function of a Poisson distribution \citep{Cox1965}.
-Expanding in $e^{-s/T}$ and inverting the Laplace transform provides the probability distribution of the flux, contingent on the sampling time $T$:
-\be P(Q|T) = \sum_{k=0}^\infty \frac{\mu(T)^k}{k!}e^{-\mu(T)}\delta(Q-\frac{k}{T}).\ee
-This equation implies that the mean flux is $\bra Q \ket(T) = \int_0^\infty dQ Q P(Q|T) = \mu(T)/T$, and similarly the variance is $\sigma_Q^2(T) = \mu(T)/T^2$. 
-The conclusion is that if the flux is considered as a time averaged number of particles crossing a control surface, the mean flux is always Poissonian, no matter how particles move, provided the particles are independent and do not interact.
+The average over initial conditions and possible trajectories for the $i$th particle involved in this characteristic function can be written
+\be \bra I_i(t) \ket = \frac{1}{L}\int_L^0 dx' \int_0^\infty dx P(x-x',t) \label{eq:indicator} \ee
+where $P(x,t)$ solves equation \ref{eq:flippymaster}.
+Equation \ref{eq:indicator} describes the probability that the $ith$ particle is found to the right of control surface by time $T$ provided it started at a random location somewhere to the left.
+These $\bra I_i(t) \ket$ are the components of the flux that depend on the particle dynamics. 
 
+Inserting equation \ref{eq:indicator} into equation \ref{eq:flippycharacteristic} and taking the limits $L\rightarrow \infty$ and $N \rightarrow \infty$ as the density of particles $\rho = N/L$ remains constant, obtaining the configuration of the nonlocal formulation in section \ref{sec:nonlocal}, provides
+\begin{align} \tilde{P}(s|T) &= \lim_{N \rightarrow \infty} \Big(1 - \frac{1}{N}\big(1-e^{-s/T}\big)\Lambda(T)T \Big)^N \\ &= \exp \Big[ -\big(1-e^{-s/T}\big)\Lambda(T)T \Big]. \label{eq:flippychar} \end{align}
+where $\Lambda(T) = \frac{\rho}{T} \int_0^\infty dx \int_0^\infty dx' P(x+x',T)$ is a rate constant, analogous to the rate constant in the renewal process models of section \ref{sec:renewal}, except that it is now formulated in terms of individual particle trajectories via the probability distribution of particle position $P(x,t)$, which itself originates from the Langevin equation \ref{eq:flippylangevin} governing the particle dynamics.
+
+The equation \ref{eq:flippychar} is the characteristic function of a Poisson distribution \citep{Cox1965}.
+Expanding in $e^{-s/T}$ and inverting the Laplace transform provides a key equation of this chapter, the probability distribution of the flux, held contingent on the sampling time $T$:
+\be P(q|T) = \sum_{l=0}^\infty \frac{\big[\Lambda(T)T\big]^l}{l!}e^{-\Lambda(T)T}\delta(q-\frac{l}{T}). \label{sec:flippydist}\ee
+This equation implies that the mean flux is $\bra q(T) \ket = \int_0^\infty q P(q|T) dq = \Lambda(T)$, and similarly the variance is $\sigma_q^2(T) = \Lambda(T)/T$. For the case when $\Lambda(T)$ does not depend on time, this equation is identical to the renewal theory approach reviewed in section \ref{sec:renewal}.
+
+This section has demonstrated that the scale-dependent sediment flux probability distribution can be calculated using the probabilistic dynamics of individual particles as a starting point.
+This constructs a mechanistic foundation beneath the renewal theory approach reviewed in section \ref{sec:renewal}.
 
 \section{Results \label{sec:res}}
 \subsection{The position probability distribution and its moments}
 \begin{figure}
 	\centerline{\includegraphics{figures/ch2/figure2_slopeKey.pdf}}
-	\caption{Panel (a) indicates the probability distribution of particle position as it evolves through time. From the initial mixture of motion and rest states, particles advect downstream as they diffuse due to differences in their fluctuating velocities and exchange between motion and rest. Panel (b) shows the resulting particle diffusion. At timescales $t \ll 2D/V^2$, the diffusion is normal since the movement is approximately a standard diffusion process (as advection is irrelevant on these timescales). For larger timescales, $2D/V^2 \ll t \ll \tau$, particles undergo ballistic diffusion similar to \citet{Lisle1998} as a result of some particles being stationary as others advect. Finally longer than the timescale $\tau = 1/k$ associated with entrainment and deposition, diffusion is again normal, exemplified by exchange between motion and rest. All results are scaled by the mean hop length $l=V/k_D$ and the autocorrelation time $\tau=1/k$ of the motion/rest alternation.}
+	\caption{Panel (a) indicates the probability distribution of particle position as it evolves through time. From the initial mixture of motion and rest states, particles advect downstream as they diffuse apart from one another due to differences in their velocities and exchange times between motion and rest. Panel (b) shows the resulting particle diffusion. At timescales $t \ll 2D/V^2$, the diffusion is normal since the movement is approximately a standard Brownian diffusion process (as advection is irrelevant on these timescales). For larger timescales, $2D/V^2 \ll t \ll \tau$, particles undergo ballistic diffusion similar to \citet{Lisle1998} as a result of some particles being stationary as others advect. Finally longer than the timescale $\tau = 1/k$ associated with entrainment and deposition, diffusion is again normal, formed of particles well-mixed among motion and rest states. All results are scaled by the mean hop length $l=V/k_D$ and the autocorrelation time $\tau=1/k$ of the motion/rest alternation.}
 	\label{fig:fig1}
 \end{figure}
-The master equation \ref{eq:master} describes the evolution of the probability distribution of position through time. Loosely speaking the solution of this equation is expected to be some combination of the \citet{Einstein1937} theory for particle transport with the Gaussian propagator of the advection-diffusion equation \citep{Morse1953a}. 
+The master equation \ref{eq:master} describes the evolution of the probability distribution of position through time. Loosely speaking the solution of this equation is expected to be some combination of the \citet{Einstein1937} theory for particle transport with the Gaussian propagator of the advection-diffusion equation \citep{Morse1953a}.
 
-Because the master equation is second order in time, it requires initial conditions for $P$ and $\pt P$. Considering that particles start at rest in a mixture of motion and rest states, with a fraction $k_E/k$ starting in motion and a fraction $k_D/k$ starting in rest, these conditions derive from the state 
+Because the master equation is second order in time, it requires initial conditions for both $P$ and $\pt P$. Considering that particles start at rest in a mixture of motion and rest states, with a fraction $k_E/k$ starting in motion and a fraction $k_D/k$ starting in rest, these conditions derive from the state 
 \be P(x,0) = \lim_{t\rightarrow 0 } \frac{k_E}{k} \sqrt{\frac{1}{4\pi D t}} \exp\Big[-\frac{(x-Vt)^2}{4Dt}\Big]+ \frac{k_D}{k}\delta(x)\ee
 which gives $P(x,0) = \delta(x)$ and $ \pt P(x,0) = \frac{k_E}{k}\big[D\delta''(x)-V \delta'(x) \big]$ \citep{Weiss2002a}.
 
-The master equation \ref{eq:master} is solved by transform calculus in the appendix, providing
-\begin{multline} P(x,t) = \big[-\varphi D\px^2 + V\varphi \px + k + \pt \big]\int_0^t \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) e^{-k_E(t-u)} \\ \times \sqrt{ \frac{1}{4\pi D u}} \exp\Big[-k_D u - \frac{(x-Vu)^2}{4Du}\Big] du. \label{eq:monster}
+The master equation \ref{eq:master} is solved by transform calculus in the appendix section \ref{sec:fluccymastersol}, providing
+\begin{multline} P(x,t) = \big[-\varphi D\px^2 + V\varphi \px + k + \delta(t) +  \pt \big]\\
+	\times \int_0^t \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) e^{-k_E(t-u)-k_D u} \\ \times \sqrt{ \frac{1}{4\pi D u}} \exp\Big[- \frac{(x-Vu)^2}{4Du}\Big] du, \label{eq:monster}
  \end{multline}
-This integral term encodes the earlier expectation of Einstein model-like behavior mixed with a Gaussian propagator. The integral term convolves the probability that the particle has been in motion for a period $u$ out of a time $t$ with the probability density that a particle has travelled a distance $x$ in time $u$. The prefactor involving partial derivatives can be understood as adapting this distribution to the initial conditions.
+where $\varphi=k_D/k$ is the probability the particle starts at rest. This equation generalizes the earlier result \citep[e.g.][]{Lisle1998} for alternation between motions and rests, eq. \ref{eq:lisledist}, to include velocity fluctuations in the motion state.
 
-The moments of position from this distribution could be calculated by integrating equation \ref{eq:monster}, but this is challenging. Instead, we calculate the governing equation of the moments directly from the master equation \ref{eq:master}. Multipling this equation by $x^l$ and integrating over all $x$ provides
+The integral in this equation encodes the earlier expectation of Einstein model-like behavior mixed with a Gaussian propagator, in that it convolves the modified Bessel probability density that the particle has been in motion for a period $u$ out of a time $t$ with the advection-diffusion propagator that a particle has travelled a distance $x$ in time $u$. The prefactor of this integral term can be understood as adapting this distribution to the initial conditions.
+
+\subsection{The moments of particle position through motion-rest alternation}
+The moments of position from this distribution could be calculated by integrating equation \ref{eq:monster}, but this is challenging. Instead, we can calculate the governing equation of the moments directly from the master equation \ref{eq:master}. Multipling this equation by $x^l$ and integrating over all $x$ provides
 \be \pt^2 m_l -V l \pt m_{l-1} -k_E V l m_{l-1} + k \pt m_l - D l (l-1) \pt m_{l-2} - k_E D l(l-1) m_{l-2} = 0,\ee
 where $\bra x^l \ket = m_l$. 
 For $l = 1$, this equation generates the mean position $ \bra x \ket(t) = k_E V t/k$, which is unaffected by diffusion (since Gaussian velocity fluctuations are symmetric).
@@ -201,13 +234,11 @@ In contrast to the traditional analysis, a stochastic Exner equation with fluctu
 Mathematically, since the channel profile is a field, evaluating such a probability distribution of channel profiles would require statistical field theory \citep{Kardar2007}.
 A starting point on this analysis might be $P(\{z(x)\},t) = \bra \delta[z(x,t)-h(x,t)]\ket,$ where $h(x,t)$ involves the stochastic flux $q(x,t)$ from equation \ref{eq:stocEx}.
 In this equation, $\delta[f(x)]$ is a Dirac delta functional, which generalizes the delta function $\delta(x)$ from a single-valued parameter $x$ to a continuous field $f(x)$.
-Such ideas are commonly applied to understand polymers and membranes \citep{Kawakatsu2001,Nelson2004}, but they have not been introduced in geomorphology.
-
-Introducing such a description with the stochastic Exner equation would lend new mathematical language to the old unsolved problem in geomorphology: how does variability affect landscape evolution?
+Such ideas are commonly applied to understand polymers and membranes \citep{Kawakatsu2001,Nelson2004}, but they have not been introduced in geomorphology. Such a description would be an exciting extension of the methodology applied in this thesis so far to better understand landscape evolution.
 
 \section{Summary and Conclusion \label{sec:conc}} 
  
-This chapter introduced a two-noise stochastic dynamical equation to describe individual bedload trajectories for particles alternating between motions and rests. The motion phase was enriched to include velocity fluctuations, forming the first physical model of this type.
+This chapter introduced a two-noise stochastic dynamical equation to describe individual bedload trajectories for particles alternating between motions and rests. The motion phase included velocity fluctuations, forming the first analytical model of this type.
 The probability distribution of the bedload sediment flux was calculated from these particle dynamics, and the resulting flux distribution was demonstrated to adopt scale-dependence from the underlying trajectories of individual particles. The measurement timescales over which sediment flux observations converge were expressed in terms of the mean particle movement velocity and the typical magnitude of its fluctuations in terms of a Peclet number.
  
 These results generalize the bedload trajectory models of \citet{Einstein1937}, \citet{Lisle1998}, and \citet{Lajeunesse2017} to include fluctuating movement velocities, and they reframe earlier renewal models of the sediment flux probability distribution \citep{Lajeunesse2010,Ancey2020} to explicitly include the transport dynamics of individual sediment grains. They further quantify the dependence of the sediment flux on the observation scale, and provide guidance as to the measurement times required to resolve sediment transport without ambiguity, at least in simplified configurations when bedforms are absent. 
@@ -259,3 +290,12 @@ Including such effects would require a many-body generalization of the Langevin 
 The model of \citet{Ancey2014} hints at this possibility, although its starting point is not a dynamical equation as in \ref{eq:master}.
 Some hints as to how to generalize our work to include interactions between particles to describe wide-tailed sediment fluxes can be gleaned from literature on reaction-diffusion processes \citep{Hernandez2004,Cardy2006} and interacting gases \citep{Chapman1970,Brilliantov2004}. The further inclusion of interacting particle models into bedload transport theory would be an exciting development.
 
+
+
+\endinput
+
+A simpler approach is to conduct the averages in Fourier space. Integrating eq. 1, using its solution in the probability distribution, then Fourier transforming provides
+\be \tilde{P}(g,t) = \Big\bra  \Big\bra \exp \Big[- i g \int_0^t du [V+\sqrt{2D}\xi(u)]\eta(u) \Big]\Big\ket_\eta \Big\ket_\xi.\ee
+Taking time derivatives and conducting the averages using known characteristics of averages of exponentials of Gaussian white noise \citep{Gardiner1983,VanKampen2007} and the Furutsu-Norikov procedure for time derivatives of averages involving dichotomous noise \citep{Shapiro1978}, in a method similar to \citep{Balakrishnan1993} provides the Fourier-space master equation
+\be \pt^2 \tilde{P}(g,t)  = (igV-g^2D-k)\pt  \tilde{P} + k_E (igV-g^2D) \tilde{P},\ee
+and inverse Fourier transforming provides the desired real-space master equation

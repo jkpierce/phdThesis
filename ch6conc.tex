@@ -72,50 +72,60 @@ The work further demonstrates that many approaches to describe individual partic
 Finally, chapter () displayed a new theoretical model of individual grains saltating downstream in a turbulent flow through a sequence of particle-bed collisions.
 This work provides the first comprehensive description of all bedload velocity distributions observed in experiments (), while earlier works had described only particular end-member cases ().
 
-This work includes ideas from granular gas theory into sediment transport modelling and provides a concrete example of the control grain-scale processes exert over large scale landscape evolution. In particular, since the work implies the shape of the bedload particle velocity distribution may depend on particle size, this has implications for mechanistic understanding of how abrasion by collisions of saltating bedload occurs (), which relates ultimately to rate at which Earth's bedrock canyons incise.
+This work includes ideas from granular gas theory into sediment transport modelling and provides a concrete example of the control grain-scale processes exert over large scale landscape evolution. In particular, since the work implies the shape of the bedload particle velocity distribution may depend on particle size, this has implications for mechanistic understanding of how abrasion by collisions of saltating bedload occurs (), which relates ultimately to the rates at which Earth's bedrock canyons incise.
 
 \section{Limitations and future research directions}
 
-The objective of this thesis was to produce new understanding of how to describe bedload transport using statistical physics.
-
-
-In some cases these limitations specific to the models produced in this thesis, but in most, they are shared in common with a majority of other models in the same research paradigm \citep{Ancey2020,Furbish2021a}.
+This thesis has produced new understanding of how to describe bedload transport using statistical physics, but its approach has many limitations deserving of future research attention.
+In some cases these are specific to the models produced in the thesis, but in others, they are shared in common with a majority of models in the stochastic sediment transport research paradigm \citep{Ancey2020,Furbish2021a}.
 
 \subsection{Landscape dynamics and channel morphology}
 
-The first limitation concerns the assumption, implicit in every chapter of this thesis, that sediment transport characteristics are steady through time and space.
-This assumption contrasts with conditions in real gravel-bed river channels, where riffles, bars, and steps control the movements of individual grains \citep{}, sediment is supplied in episodic bursts from mass movements \citep{}, woody debris forces sediment deposition \citep{}, and flow conditions vary through time with weather \citep{}, climate change \citep{}, and seasonality \citep{}.
+The first limitation concerns the assumption, implicit in every chapter of this thesis, that sediment transport characteristics are steady and uniform in time and space.
+This assumption contrasts with conditions in real gravel-bed rivers, where riffles, bars, and steps coordinate the movements of individual grains \citep{Ashmore1998,McDowell2020}, sediment is supplied in episodic bursts from mass movements \citep{Benda1990, Muller2018}, woody debris coordinates sediment movement \citep{Eaton2012,Reid2019}, and variable flow conditions modify bed texture and sediment availability \citep{Mao2012,Phillips2018}.
 
-Here I have considered extremely idealized conditions where sediment transport and landscape dynamics are not linked, except for chapter 2 where bed elevations were coupled to sediment entrainment and deposition.
+To date, very little work has concentrated on stochastic sediment transport models in unsteady conditions \citep[e.g.][]{Bohorquez2016}.
+The most obvious scheme to address unsteadiness is to introduce time and space dependence to movement velocities, diffusivities, or entrainment and deposition rates, but how exactly one should express these rates in terms of time and space is a matter for speculation, and would be contingent on a given context given our limited understanding of how these parameters relate to the flow hydraulics \citep[e.g.][]{Heyman2016}.
 
-
-
+Future studies might investigate in more depth the linkage between flow hydraulics, the geometric arrangement of grains on the bed, and the bed topography with the entrainment and deposition rates of individual particles to develop the foundational knowledge to incorporate temporally or spatially variable flow and sedimentary conditions into stochastic models of sediment transport.
 
 \subsection{Grain size distributions}
 
-Sediment in real rivers spans a range of sizes, while I have modelled sediment transport of one grain size only, characterized by 
+The second major limitation of this work concerns grain size.
+In actuality, sediments in rivers spans a range of sizes, and differential mobility based on particle size produces spatial sorting, both vertically as in bed armoring \citep{Parker1982,Wilcock1989,Aberle2006}, and laterally as patch, particle cluster, or riffle development \citep{Nelson2014,Venditti2017}.
 
-\subsection{Rivers, hillslopes, and dunes}
+There have been a few works on stochastic modelling of sediment transport with multiple grain sizes \citep{Sun2000,Parker2000}, but these approaches are not spatially distributed, so there is as yet no stochastic method to understand sorting processes. 
 
+Future studies should revisit the stochastic framework applied to multiple grain sizes. Simplified experimental geometries based on bimodal sediment beds \citep[e.g.][]{Houssais2012} would be a great context to revisit these issues. Extending the motion-rest model of chapter () to two grain sizes with a matrix formulation, then calibrating its parameters to experiments would be a nice place to start.
 
-It has long been recognized, probably since \citet{Bagnold1941} and certainly today \citep{}, that there are deep analogies between tranpsort phenomena in air and water.
-In an ideal perspective, we might imagine writing the governing equations for transport in water as a function of the fluid viscosity, then tuning the viscosity between air and water to obtain a description applying to both spheres.
+\subsection{The full range of geophysical flows}
 
+The final limitation I will mention is that all of the efforts in this thesis were concentrated on weak bedload transport, where densities of moving particles are low enough that they may interact with the static bed () but never with each other. This concentration is justified because weak bedload transport conditions are typical of gravel bed rivers \citep{Ashworth1989,Warburton1992}, but it is nonetheless a limitation given the diversity of processes which move sediment over Earth's surface.
 
-For example, in a mixture of small and large grains, neglecting any sorting effects whereby the mobility of small grains is contingent on the mobility of the large grains, small grains will have exponential velocities with relatively wide fluctuations, while large grains will have Gaussian velocities with relatively narrow fluctuations. Considering the over-all flux then as the number of moving particles times their velocities, transport fluctuations
+Earth's landforms are shaped by numerous transport phenomena from booming debris flows \citep{Iverson1997} to barely perceptible hillslope creep \citep{Deshpande2021}.
+Different phenomena are basically distinguished by the relative importance of fluid, granular, and gravitational forces in sustaining them \citep{Jerolmack2019}.
 
+Weak bedload transport is characterized by fluid forces small in comparison to gravity, and collision forces comparable to gravity.
+Viewed in this way, the work in this thesis represents a minute region of the vast parameter space spanned by Earth's geophysical flows, and geomorphology requires characterization of them all.
+Future studies should continue the effort \citep{Furbish2021a} to describe these processes as different expressions of the same basic building blocks. 
+Statistical mechanics has some versatile blocks. 
 
-
-aeolean transport extension maybe
-particle size distributions - interesting implications
-connection to computational physics approach
-connection to the stochastic description of the flux
 
 \section{Conclusion}
 
-This thesis applied statistical mechanics methods to describe the movements of individual grains along streambeds.
-The research has produced new understanding of the relationships between the overall sediment transport rates which control channel evolution and the movements of individual grains. The work embraces variability as an intrinsic part of Earth surface dynamics, and it produces descriptions which predict mean values as well as their fluctuations. 
+This thesis described the movements of individual grains along streambeds using probabilistic methods.
+The research has related the overall sediment transport rates responsible for channel evolution to the movements of individual grains.
+At base level, the thesis embraces variability as an intrinsic part of Earth surface dynamics, and it produces descriptions which predict mean values as well as the magnitude of their fluctuations.
 
-The founders of process geomorphology always acknowledged variability in landscapes \citep{Horton1945,Strahler1952,Langbein1964}, although their main efforts were to develop strategies to describe landscapes despite it, like averaged flow conditions to avoid including fluid turbulence \citep{MeyerPeter1948,Bagnold1954}, competent conditions to summarize climatic fluctuations \citep{Wolman1959,Wolman1978}, and representative grain sizes to avoid wide grain size distributions \citep{Parker1982,Andrews1983}.
+The founders of process geomorphology always acknowledged the role of variability in landscape evolution \citep{Horton1945,Strahler1952,Langbein1964}, although their main efforts were to develop strategies to describe landscapes without including it, like averaged shear stresses to avoid fluid turbulence \citep{MeyerPeter1948,Bagnold1954}, competent conditions to replace climate fluctuations \citep{Wolman1959,Wolman1978}, and representative grain sizes to avoid evolving grain size distributions \citep{Parker1982,Andrews1983}.
 
-The stochastic models of sediment transport developed in this thesis hint toward a methodology to step beyond averaged descriptions of landscape evolution, propagate noises through the equations governing landscape change, and revisit this old question in geomorphology: How does variability shape Earth's surface?
+The stochastic descriptions of sediment transport developed in this thesis hint toward a methodology to step beyond averaged descriptions of landscape evolution, propagate noises through the equations governing landscape change, and revisit the old question in geomorphology: How does variability shape Earth's surface?
+
+\endinput
+
+Its closest neighbours may be rarefied hillslope transport, where solitary grains tumble down hillslopes \citep{Williams2021}, and intense bedload transport, where particles creep downstream in a dense granular flow, supported by collisions with other moving grains \citep{Frey2014}. These phenomena differ only by viscosity or density, not mechanically. 
+
+
+
+\citet{Ashworth1989} and \citet{Warburton1992} identified three phases of bedload transport in gravel-bed streams that occur as the flow increases. Phase 1 is characterized by movement of sand only, while gravel remains stationary; phase 2 involves partial mobility of the smaller gravel sizes; and phase 3 is the full mobility of all grain sizes represented on the bed.
+Phase 2 is most common in gravel-bed rivers, but phase 3 has 
