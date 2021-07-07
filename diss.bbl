@@ -1,4 +1,4 @@
-\begin{thebibliography}{346}
+\begin{thebibliography}{348}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{\it Abbott and Francis\/}(1977)}]{Abbott1977}
@@ -178,6 +178,11 @@ Benavides, S.~J., E.~A. Deal, M.~Rushlow, J.~G. Venditti, K.~Kamrin, and J.~T.
   Perron, {The impact of intermittency on bed load sediment transport}, {\it
   Unpublished\/}, pp. 1--18, 2021.
 
+\bibitem[{{\it Benda\/}(1990)}]{Benda1990}
+Benda, L., {The influence of debris flows on channels and valley floors in the
+  Oregon coast range, USA}, {\it Earth Surface Processes and Landforms\/}, {\it
+  15\/}, 457--466, 1990.
+
 \bibitem[{{\it Bennett\/}(1972)}]{Bennett1972}
 Bennett, C.~H., {Serially deposited amorphous aggregates of hard spheres}, {\it
   Journal of Applied Physics\/}, {\it 43\/}, 2727--2734, 1972.
@@ -307,10 +312,6 @@ Church, M., {Bed material transport and the morphology of alluvial river
 \bibitem[{{\it Church\/}(2010)}]{Church2010}
 Church, M., {The trajectory of geomorphology}, {\it Progress in Physical
   Geography\/}, {\it 34\/}, 265--286, 2010.
-
-\bibitem[{{\it Church and Haschenburger\/}(2017)}]{Church2017}
-Church, M., and J.~K. Haschenburger, {What is the "active layer"?}, {\it Water
-  Resources Research\/}, {\it 53\/}, 5--10, 2017.
 
 \bibitem[{{\it Clark et~al.\/}(2015){\it Clark, Shattuck, Ouellette, and
   O'Hern\/}}]{Clark2015}
@@ -625,6 +626,12 @@ Gillespie, D.~T., {\it {Markov processes — an introduction for physical
 \bibitem[{{\it Gillespie\/}(2007)}]{Gillespie2007}
 Gillespie, D.~T., {Stochastic simulation of chemical kinetics}, {\it Annual
   Review of Physical Chemistry\/}, {\it 58\/}, 35--55, 2007.
+
+\bibitem[{{\it Glielmo et~al.\/}(2014){\it Glielmo, Gunkelmann, and
+  P{\"{o}}schel\/}}]{Glielmo2014}
+Glielmo, A., N.~Gunkelmann, and T.~P{\"{o}}schel, {Coefficient of restitution
+  of aspherical particles}, {\it Physical Review E - Statistical, Nonlinear,
+  and Soft Matter Physics\/}, {\it 90\/}, 1--7, 2014.
 
 \bibitem[{{\it Goh and Barab{\'{a}}si\/}(2008)}]{Goh2008}
 Goh, K.~I., and A.~L. Barab{\'{a}}si, {Burstiness and memory in complex
@@ -992,13 +999,6 @@ Luczka, J., R.~Bartussek, and P.~Hanggi, {White-noise-induced transport in
 Luque, R.~F., and R.~van Beek, {Erosion and transport of bed-load sediment},
   {\it Journal of Hydraulic Research\/}, {\it 14\/}, 127--144, 1976.
 
-\bibitem[{{\it Ma et~al.\/}(2014){\it Ma, Heyman, Fu, Mettra, Ancey, and
-  Parker\/}}]{Ma2014}
-Ma, H., J.~Heyman, X.~Fu, F.~Mettra, C.~Ancey, and G.~Parker, {Bed load
-  transport over a broad range of timescales: Determination of three regimes of
-  fluctuations}, {\it Journal of Geophysical Research: Earth Surface\/}, {\it
-  119\/}, 2653--2673, 2014.
-
 \bibitem[{{\it Macklin et~al.\/}(2006){\it Macklin, Brewer, Hudson-Edwards,
   Bird, Coulthard, Dennis, Lechler, Miller, and Turner\/}}]{Macklin2006}
 Macklin, M.~G., P.~A. Brewer, K.~A. Hudson-Edwards, G.~Bird, T.~J. Coulthard,
@@ -1348,11 +1348,6 @@ Pretzlav, K. L.~G., J.~P.~L. Johnson, and D.~N. Bradley, {Smartrock transport
   in a mountain stream: bedload hysteresis and changing thresholds of motion},
   {\it Water Resources Research\/}, {\it 56\/}, 1--20, 2020.
 
-\bibitem[{{\it Prudnikov et~al.\/}(1988){\it Prudnikov, Brychkov, Marichev, and
-  Romer\/}}]{Prudnikov1986}
-Prudnikov, A.~P., Y.~A. Brychkov, O.~I. Marichev, and R.~H. Romer, {\it
-  {Integrals and Series}\/}, Gordon and Breach, New York, 1988.
-
 \bibitem[{{\it Prudnikov et~al.\/}(1992){\it Prudnikov, Brychkov, Marichev, and
   Gould\/}}]{Prudnikov1992a}
 Prudnikov, A.~P., I.~A. Brychkov, O.~I. Marichev, and G.~G. Gould, {\it
@@ -1380,6 +1375,13 @@ Redner, S., {\it {A Guide to First-Passage Processes}\/}, 1st ed., Cambridge
 Redolfi, M., W.~Bertoldi, M.~Tubino, and M.~Welber, {Bed Load Variability and
   Morphology of Gravel Bed Rivers Subject to Unsteady Flow: A Laboratory
   Investigation}, {\it Water Resources Research\/}, {\it 54\/}, 842--862, 2018.
+
+\bibitem[{{\it Reid et~al.\/}(2019){\it Reid, Hassan, Bird, and
+  Hogan\/}}]{Reid2019}
+Reid, D.~A., M.~A. Hassan, S.~Bird, and D.~Hogan, {Spatial and temporal
+  patterns of sediment storage over 45 years in Carnation Creek, BC, a
+  previously glaciated mountain catchment}, {\it Earth Surface Processes and
+  Landforms\/}, {\it 44\/}, 1584--1601, 2019.
 
 \bibitem[{{\it Rickenmann and McArdell\/}(2007)}]{Rickenmann2007}
 Rickenmann, D., and B.~W. McArdell, {Continuous measurement of sediment
@@ -1490,6 +1492,13 @@ Shih, W.~R., P.~Diplas, A.~O. Celik, and C.~Dancey, {Accounting for the role of
 \bibitem[{{\it Shlesinger\/}(1974)}]{Shlesinger1974}
 Shlesinger, M.~F., {Asymptotic solutions of continuous-time random walks}, {\it
   Journal of Statistical Physics\/}, {\it 10\/}, 421--434, 1974.
+
+\bibitem[{{\it Shobe et~al.\/}(2021){\it Shobe, Turowski, Nativ, Glade,
+  Bennett, and Dini\/}}]{Shobe2021}
+Shobe, C.~M., J.~M. Turowski, R.~Nativ, R.~C. Glade, G.~L. Bennett, and
+  B.~Dini, {The role of infrequently mobile boulders in modulating landscape
+  evolution and geomorphic hazards}, {\it Earth-Science Reviews\/}, {\it
+  220\/}, 103,717, 2021.
 
 \bibitem[{{\it Singh et~al.\/}(2009){\it Singh, Fienberg, Jerolmack, Marr, and
   Foufoula-Georgiou\/}}]{Singh2009}
@@ -1676,6 +1685,11 @@ Vowinckel, B., T.~Kempe, and J.~Fr{\"{o}}hlich, {Fluid-particle interaction in
 Walther, G.-r., E.~Post, P.~Convey, A.~Menzel, C.~Parmesank, T.~J.~C. Beebee,
   J.-m. Fromentin, O.~H.-g. I, and F.~Bairlein, {Ecological response to recent
   climate cnahge}, {\it Nature\/}, {\it 416\/}, 389--395, 2002.
+
+\bibitem[{{\it Warburton\/}(1992)}]{Warburton1992}
+Warburton, J., {Observations of bed load transport and channel bed changes in a
+  proglacial mountain stream}, {\it Arctic {\&} Alpine Research\/}, {\it 24\/},
+  195--203, 1992.
 
 \bibitem[{{\it Weeks and Swinney\/}(1998)}]{Weeks1998}
 Weeks, E.~R., and H.~L. Swinney, {Anomalous diffusion resulting from strongly

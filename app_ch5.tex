@@ -5,6 +5,7 @@
 
 
 \section{Derivation of Master Equation}
+\label{sec:langmasterderiv}
 To derive the master equation from \ref{eq:langevin}, we temporarily consider the Gaussian white noise (GWN) $\xi(t)$ as a Poisson jump process having rate $r$ and jumps $ \sqrt{2 d} h$ with $h$ distributed as $f(h)$. We will later take a GWN limit on this noise. With this assumption, integrating \ref{eq:langevin} over a small time interval $\delta t$ considering the Ito interpretation for the collision term provides
 \be     
 u(t+\delta t) =
@@ -25,7 +26,7 @@ Evaluating all integrals over $\delta$-functions provides
 \begin{align} P(u,t+\delta t) = (1-r \delta t - \nu \delta t)P(u-\gamma \delta t, t) \\+ r \delta t\int_{-\infty}^\infty dh f(h) P(u+\sqrt{2d}h) \\+ \nu \delta t \int_0^1 \frac{d\ve}{\ve} \rho(\ve) P\big(\frac{u}{\ve}\big).\end{align}
 Finally, we take $\delta t \rightarrow 0$ and limit the Poisson noise involving $\sqrt{2d}$ to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ \cite{VanDenBroeck1983}. This process finally obtains the master equation (\ref{eq:master}).
 \section{Derivation of Steady-state solution}
-
+\label{sec:langsteadyderiv}
 Defining $\tilde{P}(s) = \int_{-\infty}^\infty du e^{i u s} P(u) $ as the Fourier transform (FT) of $P(u)$ and taking the FT of \ref{eq:detlangevin} develops the recursion relation
 \be \tilde{P}(s) = \frac{\tilde{P}(s\ve)}{q(s)}. \ee
 where
@@ -45,6 +46,7 @@ Taking this limit and evaluating the residues provides
 Finally, inverting the Fourier transforms term by term with contour integration and incorporating (\ref{eq:q}) provides the steady-state solution (\ref{eq:steadystate}).
 
 \section{Calculation of the moments}
+\label{sec:langmoments}
 Taking (\ref{eq:master}), multiplying by $u^k$, integrating over all space, and taking account of normalization of $P(u)$ provides a recursion relation for the moments: 
 \be 0 = Dk (k-1)\langle u^{k-2} \rangle + \Gamma k \langle u^{k-1} \rangle + \nu (\ve^k-1)\langle u^k \rangle. \ee
 $k=1$ provides the mean
@@ -54,6 +56,7 @@ while $k=2$ provides the second moment
 leading to the velocity variance
 \be \sigma_u = \sqrt{\frac{2 d + \gamma^2}{1-\ve^2}}.\ee
 \section{Weak and strong collision limits}
+\label{sec:langextremes}
 Now we demonstrate that weak collisions imply a Gaussian-like distribution for sediment velocities. The limit is challenging since the steady-state distribution \ref{eq:steadystate} and the moments above all diverge as $\ve \rightarrow 1$.
 Following \cite{Hall1989}, this suggests normalizing the distribution $P(u)$ using 
 \be z = \frac{u - \bar{u}}{\sigma_u} \ee

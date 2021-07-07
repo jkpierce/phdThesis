@@ -126,7 +126,7 @@ The governing equation of the position probability distribution $P(x,t) = \langl
 where $k_E$ and $k_D$ are the entrainment and deposition rates, $V$ is the particle velocity during the motion state, and $k = k_E+k_D$. This partial differential equation is called an asymmetric telegrapher's equation \citep{Rossetto2018}, and although the symmetric analogue of this equation is well-studied \citep{Weiss2002a, Masoliver2017}, the asymmetric problem is not often encountered.
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/lisleConcept.pdf}
-	\caption{Panel (a) indicates the generalization of Einstein's model to include the interval of sediment motion between entrainment and deposition, now represented with dichotomous noise eq. \ref{eq:lislerando}, while panel (b) shows the tilted stair-step trajectories of sediment particles moving downstream in cycles of motion at velocity $V$ (with mean duration $1/k_D$) and rest (with mean duration $1/k_E$). }
+	\caption{Panel (a) indicates the generalization of Einstein's model to include the interval of sediment motion between entrainment and deposition, now represented with dichotomous noise eq. \ref{eq:lislelangevin}, while panel (b) shows the tilted stair-step trajectories of sediment particles moving downstream in cycles of motion at velocity $V$ (with mean duration $1/k_D$) and rest (with mean duration $1/k_E$). }
 	\label{fig:lislefig}
 \end{figure}
 
@@ -217,6 +217,7 @@ Bagnold's formulation also faces the notorious challenge of defining the critica
 The difficulties with Bagnold's approach led to many revisions of his theory, often based on more carefully incorporating the properties of individual particle motions into the sediment transport energy budget \citep{Engelund1976,Luque1976,Nino1998,Martin2000}.
 
 \subsection{Einstein's probabilistic approach}
+\label{sec:einflux}
 
 Among these revisions of Bagnold, one category shows a return to the probabilistic ideas of Einstein \citep{Parker2003,Ancey2006}.
 \citet{Einstein1937} formulated his original model of individual particle trajectories in terms of entrainment and deposition rates using the idealization of grains moving downstream through a sequence of instantaneous steps.
@@ -312,7 +313,7 @@ Owing to \ref{eq:exner}, this expression of the sediment flux immediately implie
 In a nonlocal framework, as in equation \ref{eq:furbo}, sediment deposition can be interpreted as the eventual result of entrainment from all upstream locations, giving
 \be (1-\phi) \px z(x,t) = \int_0^\infty dx' \int_0^\infty dt' E(x',t')F(x',t') - E(x,t). \ee
 This ``entrainment form of the Exner equation" \citep{Furbish2017} phrases topographic change from a stochastic interpretation of sediment transport.
-The major limitation of these approaches are that they assume the landscape is a continuous field. This can be interpreted as an average over the detailed configurations of individual grains \citep{Coleman2009}. This averaging process is expected to obscure the physics whenever individual grains are large compared to the scales of interest \citep[e.g.][]{Schobe2021}.
+The major limitation of these approaches are that they assume the landscape is a continuous field. This can be interpreted as an average over the detailed configurations of individual grains \citep{Coleman2009}. This averaging process is expected to obscure the physics whenever individual grains are large compared to the scales of interest \citep[e.g.][]{Shobe2021}.
 
 \subsection{Fluctuations and scale dependence}
 

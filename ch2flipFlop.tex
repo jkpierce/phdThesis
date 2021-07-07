@@ -65,7 +65,7 @@ The Langevin equation \ref{eq:flippylangevin} is a generalization of the model b
 It is similar to the ``randomly flashing diffusion" developed by Luczka and coworkers in physics \citep{Luczka1992,Luczka1993,Luczka1995}, although it includes a more complex asymmetric noise ($k_E\neq k_D$).
 This equation describes the downstream movement of particles alternating through motion and rest with velocity fluctuations in the motion state. This is a more realistic description of bed load trajectories than earlier works in the Einstein paradigm reviewed in section \ref{sec:trajmodels}.
 
-\subsection{Derivation of the master equation for the sediment position distribution $P(x,t)$}
+\subsection{Derivation of the master equation for the sediment position distribution}
 \label{sec:floppymastereq}
 The solution of equation \ref{eq:flippylangevin} for a given realization of the two noises $\eta(t)$ and $\xi(t)$ gives one possible trajectory of a particle. Averaging over the ensemble of all possible trajectories from different realizations of the noises will obtain the probability distribution $P(x,t)$ that a particle which started at position $x=0$ at time $t=0$ has travelled to position $x$ by time $t$. This distribution, by construction, will generalize earlier models of bedload alternation between motion and rest which did not include velocity fluctuations among moving particles \citep{Lisle1998,Lajeunesse2017}.
 
@@ -187,7 +187,7 @@ This is an intricate result for the rate constant in the sediment flux \ref{eq:f
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{figures/ch2/figure3_slopeKey.pdf}
 	\caption{The mean sediment flux is plotted for different values of the Peclet number $\Pe = V^2/(2k_D D)$, characterizing the relative strength of particle velocity fluctuations during motion. The flux is normalized by the prediction $q_0 = E \ell$ of the Einstein theory (sec. \ref{sec:einflux}). For nonzero velocity fluctuations in the motion state (finite $\Pe$), the Einstein limit is approached as the observation time $T$ grows. Stronger velocity fluctuations (smaller $\Pe$) slow the convergence to this limit.
-		In all cases, satisfactory convergence of the mean flux is achieved when the observation time satisfies $T\gg 1/(k_D \Pe),$ as expected by equation \ref{eq:fluccolimitcases}. Plotted lines are the analytical result eq. \ref{eq:fluxy}, while the points are the results of Monte Carlo simulations.}
+	In all cases, satisfactory convergence of the mean flux is achieved when the observation time satisfies $T\gg 1/(k_D \Pe),$ as expected by equation \ref{eq:fluccolimitcases}. Plotted lines are the analytical result eq. \ref{eq:fluxy}, while the points are the results of Monte Carlo simulations.}
 	\label{fig:fluxconvergence}
 \end{figure}
 
@@ -224,9 +224,9 @@ This feedback generates waves of moving particles \citep{Ancey2014, Heyman2015} 
 Collective entrainment has been attributed to particle-particle interactions, such as small granular avalanches and collision-induced entrainment, and to fluid-particle interactions, such as large eddies \citep[e.g.][]{Cameron2020} entraining particles en masse as they sweep downstream \citep{Ancey2014,Lee2018}, leading to spatial correlations in sediment transport \citep{Heyman2014}.
 
 Such interactions would be challenging to include in a mechanistic model for the sediment flux like I developed here. 
-The dynamical equation \ref{eq:flipfloplangevin} would generalize to $\dot{x}_i(t) = F_i(x_i,t) + \sum_{i\neq j}G_{ij}(\{x_j\},t)$, where the $F_i$ are the driving terms unique to each particle, while the $G_{ij}$ are some (generally stochastic) terms representing interactions between the $i$th and $j$th particles \citep{Goldstein1997}.
+The dynamical equation \ref{eq:flippylangevin} would generalize to $\dot{x}_i(t) = F_i(x_i,t) + \sum_{i\neq j}G_{ij}(\{x_j\},t)$, where the $F_i$ are the driving terms unique to each particle, while the $G_{ij}$ are some (generally stochastic) terms representing interactions between the $i$th and $j$th particles \citep{Goldstein1997}.
 
-The resulting joint distribution of particle positions and velocities ($P(x_1,v_1,\dots,x_{N(t)},v_{N(t)},t)$) might be formulated by analogy to the theory of reaction diffusion systems \citep{Pechenik1999, Cardy2008}, non-ideal gases \citep{Chapman1970,Brilliantov2004}, or other interacting particle models available in physics literature \citep{Hernandez2004,Escaff2018}.
+The resulting joint distribution of particle positions and velocities -- $P(x_1,v_1,\dots,x_{N(t)},v_{N(t)},t)$ -- might be formulated by analogy to the theory of reaction diffusion systems \citep{Pechenik1999, Cardy2008}, non-ideal gases \citep{Chapman1970,Brilliantov2004}, or other interacting particle models available in physics literature \citep{Hernandez2004,Escaff2018}.
 
 Models which generalize the approach established in this chapter to include collective motions should be capable of producing wide sediment transport fluctuations, but their development will be a challenging next step for research. The present chapter only lays the basic groundwork.
 
