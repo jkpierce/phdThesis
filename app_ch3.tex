@@ -8,7 +8,7 @@
 The Gillespie Stochastic Simulation Algorithm (SSA) generates exact realizations of a Markov random process from a sequence of random numbers.
 It was originally developed for chemical physics by \citet{Gillespie1977} and is reviewed in \citet{Gillespie1991} and \citet{Gillespie2007}.
 The SSA hinges on the defining property of a Markov process. When the transition rates from one state to another are not dependent on the distant past, the process is Markov \citep[e.g.,][]{Cox1965}.
-In the following sections, we begin by demonstrating the time intervals $\tau$ between subsequent transitions (i.e., the intervals between transition times) are exponentially distributed within the model we develop in the main text. Then we describe the SSA as a consequence of this property.
+The following sections demonstrate that the time intervals $\tau$ between subsequent transitions are exponentially distributed within the model of chapter \ref{ch:ch3}. The SSA follows as a consequence of this property.
 
 \subsection{Times between transitions of any kind}
 Our joint stochastic description of bedload and bed elevation changes is characterized by a set of states $(n,m)$ where $n$ and $m$ are positive integers. 
@@ -37,7 +37,7 @@ In summary, to step the process through a single transition, we draw the time in
 
 \subsection{Pseudo code for the Gillespie SSA}
 
-To initialize a simulation, we specify the initial conditions $n_0$ and $m_0$, the model parameters for use in equations (2-7) in the main paper, and the desired simulation duration $t_\text{max}$. The SSA uses these inputs to generate time series of $n$ and $m$ as follows:
+Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model parameters used in equations \ref{eq:rate1}-\ref{eq:rate4}, and the desired simulation duration $t_\text{max}$. The SSA uses these inputs to generate time series of $n$ and $m$ as follows:
 
 \rule{\linewidth}{1pt}
 
@@ -73,24 +73,24 @@ To initialize a simulation, we specify the initial conditions $n_0$ and $m_0$, t
 
 \subsection{Mean field solution of particle activity}
 
-By assuming the dynamics of the particle activity are totally independent of the bed elevation and summing equation (8) of the manuscript over all values of $m$, we obtain the mean field equation for the particle activity: 
+By assuming the dynamics of the particle activity are totally independent of the bed elevation and summing equation (8) of the manuscript over all values of $m$, one can obtain the mean field equation for the particle activity: 
 \be 0 = \nu A(n-1) + [\lambda + \mu(n-1)]A(n-1) + \sigma(n+1)A(n+1)+\gamma(n+1)A(n+1)-(\nu  + \lambda + \mu n + \sigma n + \gamma n)A(n).\ee
 This can be solved by introducing the generating function \citep{Cox1965} $G(x) = \sum_n x^n A(n)$, providing
 \be 0 = (\nu+\lambda)(x-1)G + [\mu x^2 + \sigma + \gamma - (\mu + \sigma + \gamma)x]\frac{\partial G}{\partial x},\ee
 which is separable and integrates for 
 \be G(x) = \Bigg( \frac{\gamma + \sigma -\mu}{\gamma + \sigma - \mu x}\Bigg)^{\frac{\nu + \lambda}{\mu}}\ee
 after applying the normalization condition $G(1)=1$.
-From the definition of $G$ we can determine $A(n) = \frac{1}{n!} \frac{d^nG}{dx^n}|_{x=0}$, giving the negative binomial distribution of particle activity demonstrated by \citet{Ancey2008} and stated in equation (10) of the manuscript.
+From the definition of $G$ it follows that $A(n) = \frac{1}{n!} \frac{d^nG}{dx^n}|_{x=0}$, giving the negative binomial distribution of particle activity demonstrated by \citet{Ancey2008} and stated in equation \ref{eq:ancey} and introduced originally in section \ref{sec:birthdeath}.
 
 \subsection{Mean field solution of bed elevations}
 
-From the negative binomial distribution we have $\langle n |m \rangle = \langle n \rangle$, so equation (9) provides 
+The negative binomial distribution provides $\langle n |m \rangle = \langle n \rangle$, so equation (9) produces 
 \begin{multline} 0 = [\lambda + \mu \langle n \rangle][1+\kappa(m+1)]M(m+1) + \sigma \langle n \rangle [1-\kappa(m-1)]M(m-1) \\- \{[\lambda + \mu \langle n \rangle](1+\kappa m) + \sigma \langle n \rangle (1-\kappa m) \}M(m). \end{multline}
 Identifying $E=\lambda + \mu \langle n \rangle$ and $D = \sigma \langle n \rangle$ and incorporating $E=D$ gives equation (11) of the manuscript
 \be 0 = [1+\kappa(m+1)]M(m+1) + [1-\kappa(m-1)]M(m-1) - 2M(m).\ee
 The \citet{Martin2014} Ornstein-Uhlenbeck model. 
 
-We solve this using the Fokker-Planck expansion \citep{Gardiner1983} that effectively converts this discrete Master equation for $m$ into a diffusion equation for the quasi-continuous variable $z=z_1 m$ This works since $z_1$ is small. Introducing $z$ and writing $\overline{\kappa}=\kappa/z_1$ gives
+This can be solved using the Fokker-Planck expansion \citep{Gardiner1983} that effectively converts this discrete Master equation for $m$ into a diffusion equation for the quasi-continuous variable $z=z_1 m$ This works since $z_1$ is small. Introducing $z$ and writing $\overline{\kappa}=\kappa/z_1$ gives
 \be 0 = [1+\overline{\kappa}(z+z_1)]M(z+z_1) + [1-\overline{\kappa}(z-z_1)]M(z-z_1) - 2M(z).\ee
 $\overline{\kappa}$ should not depend on $z_1$ since the magnitude of the feedbacks between bed elevations and entrainment and deposition rates depends on elevation changes, and not on the size of grains or the length of the control volume.
 Expanding the entire first and second terms to second order $z_1$ provides the Fokker-Planck equation
@@ -100,12 +100,12 @@ Taking into account that this distribution should be normalizable, $\lim_{z\righ
 as stated in the manuscript.
 
 \subsection{Closure equation approach for bed elevations}
-We set out to determine an approximate relationship to close $\langle n | m \rangle$ in terms of $m$ valid to first order in $\kappa$.
+This section produces an approximate relationship to close $\langle n | m \rangle$ in terms of $m$ valid to first order in $\kappa$.
 \be \langle n | m \rangle \approx \langle n \rangle  - \kappa c m,\ee
 for the mean particle activity conditional to the elevation $m$ into into manuscript equation (9), noting $E=D$, and neglecting terms of $O(\kappa^2)$ provides 
-\be 0 \approx \Big[ 1+\kappa(m+1)\Big\{ 1-\frac{\mu c}{E}\Big\}\Big]M(m+1) + \Big[1-\kappa(m-1)\Big\{1+\frac{\sigma c}{E}\Big\}\Big]-\Big[2-\kappa m\Big\{\frac{(\sigma+\mu)c}{E}\Big\}\Big]M(m)
-\ee
-At this point, we consider $c$ an undetermined positive constant that may depend on the entrainment, migration, and deposition rates.
+\begin{multline} 0 \approx \Big[ 1+\kappa(m+1)\Big\{ 1-\frac{\mu c}{E}\Big\}\Big]M(m+1) + \Big[1-\kappa(m-1)\Big\{1+\frac{\sigma c}{E}\Big\}\Big]\\-\Big[2-\kappa m\Big\{\frac{(\sigma+\mu)c}{E}\Big\}\Big]M(m)
+\end{multline}
+At this point, $c$ is considered an undetermined positive constant that may depend on the entrainment, migration, and deposition rates.
 Taking the Fokker-Planck expansion and requiring the distribution $M(m)$ to vanish at infinity for normalization yields
 \be 0 = 2\kappa m \Big( 2 + \frac{(\sigma-\mu)c}{E}\Big)M(m) + \Big\{
 \Big[2-\kappa m \frac{(\sigma+\mu)c}{E} \Big]M(m)\Big\}'.\ee

@@ -138,21 +138,21 @@ Such equations seen some attention in the mathematics literature, where they are
 
 In the appendix section \ref{sec:langsteadyderiv} I solve equation \ref{eq:governer} using Laplace transforms, providing
 \begin{multline} P(u) = \frac{\theta(-u)}{K_+}\sum_{l=0}^\infty \frac{\ve^{-l}e^{\lambda_+\ve^{-l}u}}{\prod_{m=1}^l(-\tilde{D} \lambda_+^2 \ve^{-2m} + \tilde{\Gamma} \lambda_+ \ve^{-m} + 1) } 
-	\\+ \frac{\theta(u)}{K_-}\sum_{l=0}^\infty \frac{\ve^{-l}e^{\lambda_-\ve^{-l}u}}{\prod_{m=1}^l(-d \lambda_-^2 \ve^{-2m} + \gamma \lambda_- \ve^{-m} + 1) } \label{eq:steadystate}. \end{multline}
-The factors $\lambda_\pm$ are defined in the appendix; they are proportional to $\tilde{\Gamma}/\tilde{D}$. 
+	\\+ \frac{\theta(u)}{K_-}\sum_{l=0}^\infty \frac{\ve^{-l}e^{\lambda_-\ve^{-l}u}}{\prod_{m=1}^l(- \tilde{D} \lambda_-^2 \ve^{-2m} + \tilde{\Gamma} \lambda_- \ve^{-m} + 1) } \label{eq:steadystate}. \end{multline}
+The factors $\lambda_\pm$ are defined in appendix equations \ref{eq:lambdas}. They are proportional to $\tilde{\Gamma}/\tilde{D}$. 
 The normalization factors are $K_\pm$ are 
-\be K_\pm = d(\lambda_+-\lambda_-)\prod_{l=1}^\infty (-d\lambda_\pm^2 \ve^{2l} + \gamma \lambda_\pm \ve^{l} + 1). \ee
-Although this velocity distribution appears complicated, one can verify that this is a normalized probability distribution ($\int du P(u) = 1$) which has very simple limiting behaviors as the mode elasticity $\ve$ approaches fully elastic ($\ve=1$) and inelastic ($\ve = 0$) values.
+\be K_\pm = \tilde{D}(\lambda_+-\lambda_-)\prod_{l=1}^\infty (- \tilde{D}\lambda_\pm^2 \ve^{2l} +\tilde{\Gamma} \lambda_\pm \ve^{l} + 1). \ee
+Although this velocity distribution has a complex mathematical structure, one can verify that this is a normalized probability distribution ($\int du P(u) = 1$) which has very simple limiting behaviors as the mode elasticity $\ve$ approaches fully elastic ($\ve=1$) and inelastic ($\ve = 0$) values. The complexity of this result is not surprising given how few analytical solutions are available in granular gas theories with similar nonlocal collision integrals \citep[e.g.][]{Brilliantov2004}.
 
 It is possible to derive the moments of this probability distribution by multiplying \ref{eq:governer} by $u$, integrating, and then solving the resulting moment evolution equations \citep[c.f.][]{Cox1965}.
 These calculations are provided in appendix section \ref{sec:langmoments}, where the mean bedload velocity is derived as
-\be \langle u \rangle = \frac{\Gamma}{\nu(1-\ve)} = \frac{\gamma}{1-\ve}.\ee
+\be \langle u \rangle = \frac{\Gamma}{\nu(1-\ve)} = \frac{\gamma}{1-\ve}. \label{eq:meanu}\ee
 This result scales linearly with the mean fluid drag and nonlinearly with the rate and typical elasticity of collisions, indicating a strong influence of particle collisions on bedload velocities.
 The second moment is
 \be \langle u^2 \rangle = 2 \frac{d + \gamma \langle u \rangle}{1-\ve^2}, \ee
 leading to the velocity variance ($\sigma_u^2 = \bra u^2 \ket - \bra u \ket ^2 $)
-\be \sigma_u^2 = \frac{2 d + \gamma^2}{1-\ve^2}.\ee
-This equation demonstrates that velocity fluctuations originate from both the steady and fluctuating components of the flow forces, yet the variance is linear in these factors and is therefore relatively insensitive to the fluid flow.
+\be \sigma_u^2 = \frac{2 d + \gamma^2}{1-\ve^2}. \label{eq:varu}\ee
+This result demonstrates that velocity fluctuations originate from both the steady and fluctuating components of the flow forces, yet the variance is linear in these factors and is therefore relatively insensitive to the fluid flow.
 In contrast, particle velocity fluctuations depend sharply on the parameters representing particle-bed collisions, suggesting collisions are a leading control on particle velocity fluctuations.
 
 Figure \ref{fig:fig2} depicts the velocity characteristics of particles for different realizations of the fluid and collisional forces.

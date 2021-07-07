@@ -37,7 +37,7 @@ where $\varphi = k_D/k$ is the probability a particle starts at rest.
 The numerator terms encode the initial conditions. The denominator terms are where the real structure of the solution is contained.
 The numerator terms involving $g$ are easily expressed as first and second derivatives with respect to $x$. The problem, then is to calculate the inverse Fourier integral of the denominator.
 This can be conducted by finding the zeros of the denominator, expanding in partial fractions, then applying the contour integral \citep[e.g.][]{Arfken1985}
-\be \int_{-\infty}^\infty \frac{1}{2\pi i} \frac{e^{-i g x}}{g + i c} dg = \theta(x)e^{-c x}.\ee
+\be \int_{-\infty}^\infty \frac{1}{2\pi i} \frac{e^{-i g x}}{g + i c} dg = \theta(x)e^{-c x}. \label{eq:contour}\ee
 
 Rearranging the governing equation gives
 \be \tilde{\hat{P}}(g,s) = \frac{\varphi D g^2 - ig V\varphi  + s + k}{D(s+k_E)}\frac{1}{g^2-i\frac{V}{D}g + \frac{s(s+k)}{D(s+k_E)}}\ee
