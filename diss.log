@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.2)  6 JUL 2021 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.2)  7 JUL 2021 02:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -575,37 +575,16 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 (./diss.aux (./abs.aux) (./laySum.aux) (./pref.aux) (./ack.aux) (./ch1intro.aux
 ) (./ch2flipFlop.aux) (./ch3bedEle.aux) (./ch4downDiff.aux
 
-LaTeX Warning: Label `sec:model' multiply defined.
-
-
-LaTeX Warning: Label `sec:solution' multiply defined.
-
-
 LaTeX Warning: Label `fig:pdfs' multiply defined.
 
 
 LaTeX Warning: Label `fig:var' multiply defined.
-
-
-LaTeX Warning: Label `sec:discussion' multiply defined.
-
-
-LaTeX Warning: Label `sec:conclusion' multiply defined.
 
 ) (./ch5langevin.aux
 
 LaTeX Warning: Label `sec:model' multiply defined.
 
 
-LaTeX Warning: Label `fig:fig1' multiply defined.
-
-
-LaTeX Warning: Label `eq:master' multiply defined.
-
-
-LaTeX Warning: Label `sec:results' multiply defined.
-
-
 LaTeX Warning: Label `sec:solution' multiply defined.
 
 
@@ -614,11 +593,7 @@ LaTeX Warning: Label `sec:discussion' multiply defined.
 
 LaTeX Warning: Label `sec:conclusion' multiply defined.
 
-) (./ch6conc.aux) (./app_ch2.aux
-
-LaTeX Warning: Label `eq:laplacefluxrate' multiply defined.
-
-) (./app_ch4.aux
+) (./ch6conc.aux) (./app_ch2.aux) (./app_ch4.aux
 
 LaTeX Warning: Label `sec:appendixA' multiply defined.
 
@@ -731,7 +706,7 @@ LaTeX Info: Redefining \nameref on input line 374.
 
 ]
 [7] [8] [9]
-Overfull \hbox (2.93219pt too wide) in paragraph at lines 95--95
+Overfull \hbox (2.93219pt too wide) in paragraph at lines 94--94
  [][] []\OT1/cmr/m/n/10.95 Description of how particle-bed col-li-sions con-tro
 l move- 
  []
@@ -762,45 +737,53 @@ Overfull \hbox (4.67851pt too wide) in paragraph at lines 12--12
  []
 
 [14] [15]
-Overfull \hbox (2.79532pt too wide) in paragraph at lines 21--21
+
+LaTeX Warning: Reference `sec:einflux' on page xvi undefined on input line 18.
+
+[16]
+
+LaTeX Warning: Reference `eq:active' on page xvii undefined on input line 22.
+
+
+Overfull \hbox (2.79532pt too wide) in paragraph at lines 22--22
  \OT1/cmr/m/n/10.95 layer depth $\OML/cmm/m/it/10.95 l$ \OT1/cmr/m/n/10.95 char
 -ac-ter-izes bed el-e-va-tion changes as posited 
  []
 
-[16]
-Overfull \hbox (1.06667pt too wide) in paragraph at lines 24--24
+[17]
+Overfull \hbox (1.06667pt too wide) in paragraph at lines 25--25
  \OT1/cmr/m/n/10.95 con-di-tions and the bed el-e-va-tion vari-ance. Panel (a) 
 shows 
  []
 
-[17]
-Overfull \hbox (1.2039pt too wide) in paragraph at lines 27--27
+[18]
+Overfull \hbox (1.2039pt too wide) in paragraph at lines 28--28
  \OT1/cmr/m/n/10.95 trans-port-ing small ($5$ mm) grav-els ([][]\OT1/cmr/m/it/1
 0.95 La-je-unesse et al.[]\OT1/cmr/m/n/10.95 , []2010[]; 
  []
 
-[18]
-Overfull \hbox (11.86458pt too wide) in paragraph at lines 30--30
+[19]
+Overfull \hbox (11.86458pt too wide) in paragraph at lines 31--31
  \OT1/cmr/m/n/10.95 di-vid-ual re-al-iza-tions are sin-gled out as black traces
 . Particle- 
  []
 
 
-Overfull \hbox (9.0358pt too wide) in paragraph at lines 30--30
+Overfull \hbox (9.0358pt too wide) in paragraph at lines 31--31
  \OT1/cmr/m/n/10.95 bed col-li-sions im-ply sud-den downward-velocity jumps. Fl
 ow 
  []
 
-[19])
+[20])
 \tf@lof=\write7
 \openout7 = `diss.lof'.
 
- [20] (./glossary.tex
+ [21] (./glossary.tex
 Overfull \hbox (62.33858pt too wide) in alignment at lines 6--12
 [] [] 
  []
 
-) [21
+) [22
 
 
 ]
@@ -812,16 +795,10 @@ Overfull \hbox (1.04633pt too wide) in paragraph at lines 10--11
  Afzhalirhad,
  []
 
-
-Overfull \hbox (19.353pt too wide) in paragraph at lines 12--14
-[]\OT1/cmr/m/n/10.95 Thanks also to my pro-fes-sors at South-ern WV Com-mu-nity
- Col-lege (SWVCC)
- []
-
-[22
+[23
 
 
-] [23] [24]) [25]
+] [24] [25]) [26]
 \openout2 = `ch1intro.aux'.
 
  (./ch1intro.tex
@@ -832,14 +809,14 @@ Chapter 1.
 
 
 ] [2] [3] [4] [5]
-<./figures/ch1/einsteinConcept.pdf, id=1131, 397.485pt x 130.086pt>
+<./figures/ch1/einsteinConcept.pdf, id=1145, 397.485pt x 130.086pt>
 File: ./figures/ch1/einsteinConcept.pdf Graphic file (type pdf)
 <use ./figures/ch1/einsteinConcept.pdf>
 Package pdftex.def Info: ./figures/ch1/einsteinConcept.pdf  used on input line 
 89.
 (pdftex.def)             Requested size: 360.0pt x 117.82263pt.
  [6] [7 <./figures/ch1/einsteinConcept.pdf>] [8]
-<./figures/ch1/lisleConcept.pdf, id=1258, 397.485pt x 130.086pt>
+<./figures/ch1/lisleConcept.pdf, id=1271, 397.485pt x 130.086pt>
 File: ./figures/ch1/lisleConcept.pdf Graphic file (type pdf)
 <use ./figures/ch1/lisleConcept.pdf>
 Package pdftex.def Info: ./figures/ch1/lisleConcept.pdf  used on input line 128
@@ -855,12 +832,12 @@ LaTeX Warning: Reference `eq:lislerando' on page 9 undefined on input line 129.
 
 
 [9] [10 <./figures/ch1/lisleConcept.pdf>] [11] [12] [13]
-<./figures/ch1/fanAncey.pdf, id=1437, 397.485pt x 216.81pt>
+<./figures/ch1/fanAncey.pdf, id=1450, 397.485pt x 216.81pt>
 File: ./figures/ch1/fanAncey.pdf Graphic file (type pdf)
 <use ./figures/ch1/fanAncey.pdf>
 Package pdftex.def Info: ./figures/ch1/fanAncey.pdf  used on input line 181.
 (pdftex.def)             Requested size: 360.0pt x 196.3711pt.
-<./figures/ch1/fluxDefinitions.pdf, id=1438, 397.485pt x 137.313pt>
+<./figures/ch1/fluxDefinitions.pdf, id=1451, 397.485pt x 137.313pt>
 File: ./figures/ch1/fluxDefinitions.pdf Graphic file (type pdf)
 <use ./figures/ch1/fluxDefinitions.pdf>
 Package pdftex.def Info: ./figures/ch1/fluxDefinitions.pdf  used on input line 
@@ -868,7 +845,7 @@ Package pdftex.def Info: ./figures/ch1/fluxDefinitions.pdf  used on input line
 (pdftex.def)             Requested size: 360.0pt x 124.36835pt.
  [14 <./figures/ch1/fanAncey.pdf>] [15 <./figures/ch1/fluxDefinitions.pdf>] [16
 ]
-<./figures/ch1/yalinDrawing.pdf, id=1575, 397.485pt x 126.4725pt>
+<./figures/ch1/yalinDrawing.pdf, id=1588, 397.485pt x 126.4725pt>
 File: ./figures/ch1/yalinDrawing.pdf Graphic file (type pdf)
 <use ./figures/ch1/yalinDrawing.pdf>
 Package pdftex.def Info: ./figures/ch1/yalinDrawing.pdf  used on input line 226
@@ -899,7 +876,7 @@ in-tro-duces scale-dependence
  []
 
 [24] [25]
-<./figures/ch1/anceyRenewal.pdf, id=1886, 397.485pt x 130.086pt>
+<./figures/ch1/anceyRenewal.pdf, id=1899, 397.485pt x 130.086pt>
 File: ./figures/ch1/anceyRenewal.pdf Graphic file (type pdf)
 <use ./figures/ch1/anceyRenewal.pdf>
 Package pdftex.def Info: ./figures/ch1/anceyRenewal.pdf  used on input line 361
@@ -921,96 +898,102 @@ Chapter 2.
 
 
 ] [33] [34]
-
-Package natbib Warning: Citation `Luczka1992' on page 35 undefined on input lin
-e 57.
-
-[35]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
+<./figures/ch2/fig0mod.pdf, id=2105, 397.485pt x 130.086pt>
+File: ./figures/ch2/fig0mod.pdf Graphic file (type pdf)
+<use ./figures/ch2/fig0mod.pdf>
+Package pdftex.def Info: ./figures/ch2/fig0mod.pdf  used on input line 49.
+(pdftex.def)             Requested size: 397.48402pt x 130.08566pt.
+ [35 <./figures/ch2/fig0mod.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
+(hyperref)                removing `math shift' on input line 68.
 
-[36]
-<./figures/ch2/figure1.pdf, id=2144, 397.485pt x 198.7425pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 68.
+
+[36] [37]
+<./figures/ch2/figure1.pdf, id=2253, 397.485pt x 198.7425pt>
 File: ./figures/ch2/figure1.pdf Graphic file (type pdf)
 <use ./figures/ch2/figure1.pdf>
-Package pdftex.def Info: ./figures/ch2/figure1.pdf  used on input line 84.
+Package pdftex.def Info: ./figures/ch2/figure1.pdf  used on input line 94.
 (pdftex.def)             Requested size: 397.48402pt x 198.742pt.
- [37] [38 <./figures/ch2/figure1.pdf>] [39]
-<figures/ch2/figure2_slopeKey.pdf, id=2211, 397.485pt x 137.313pt>
+ [38] [39 <./figures/ch2/figure1.pdf>] [40]
+<figures/ch2/figure2_slopeKey.pdf, id=2320, 397.485pt x 137.313pt>
 File: figures/ch2/figure2_slopeKey.pdf Graphic file (type pdf)
 <use figures/ch2/figure2_slopeKey.pdf>
 Package pdftex.def Info: figures/ch2/figure2_slopeKey.pdf  used on input line 1
-22.
+30.
 (pdftex.def)             Requested size: 397.48402pt x 137.31265pt.
- [40]
-
-LaTeX Warning: Reference `sec:fluccymastersol' on page 41 undefined on input li
-ne 132.
-
-[41 <./figures/ch2/figure2_slopekey.pdf>] [42] [43]
-Overfull \hbox (3.60487pt too wide) detected at line 180
- []$[] \OMS/cmsy/m/n/10.95 ^^B [][][]\OT1/cmr/m/n/10.95 [[] + \OML/cmm/m/it/10.
-95 k\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 u \OMS/cmsy/m/n/10.95 ^^@ [][]\OML/
-cmm/m/it/10.95 e[] \OT1/cmr/m/n/10.95 + [][][[] + \OML/cmm/m/it/10.95 k\OT1/cmr
-/m/n/10.95 ]\OML/cmm/m/it/10.95 u \OMS/cmsy/m/n/10.95 ^^@ [][] [] [] ^^@ [][][]
-\OML/cmm/m/it/10.95 du:$ []  
+ [41] [42 <./figures/ch2/figure2_slopekey.pdf>] [43]
+Overfull \hbox (15.6767pt too wide) in paragraph at lines 155--157
+\OT1/cmr/m/n/10.95 This equa-tion de-scribes a non-trivial multi-scale dif-fu-s
+ion phe-nomenon, whereby
  []
 
-
-LaTeX Warning: Reference `eq:fluxdist' on page 44 undefined on input line 183.
-
-<figures/ch2/figure3_slopeKey.pdf, id=2599, 180.675pt x 126.4725pt>
+[44]
+<figures/ch2/figure3_slopeKey.pdf, id=2739, 180.675pt x 126.4725pt>
 File: figures/ch2/figure3_slopeKey.pdf Graphic file (type pdf)
 <use figures/ch2/figure3_slopeKey.pdf>
 Package pdftex.def Info: figures/ch2/figure3_slopeKey.pdf  used on input line 1
-86.
+88.
 (pdftex.def)             Requested size: 360.0pt x 252.02383pt.
 
-LaTeX Warning: Reference `eq:einsteinpdf' on page 44 undefined on input line 19
-6.
 
-[44] [45 <./figures/ch2/figure3_slopekey.pdf>]
-
-LaTeX Warning: Reference `eq:fluxdist' on page 46 undefined on input line 207.
-
-[46]
-
-LaTeX Warning: Reference `eq:flipfloplangevin' on page 47 undefined on input li
-ne 215.
+LaTeX Warning: Reference `sec:einflux' on page 45 undefined on input line 190.
 
 
-LaTeX Warning: Reference `eq:flipfloplangevin' on page 47 undefined on input li
-ne 217.
+LaTeX Warning: Reference `sec:einflux' on page 45 undefined on input line 190.
 
-[47]
-Overfull \hbox (1.06787pt too wide) in paragraph at lines 244--246
+[45] [46 <./figures/ch2/figure3_slopekey.pdf>] [47]
+
+LaTeX Warning: Reference `eq:flipfloplangevin' on page 48 undefined on input li
+ne 227.
+
+
+Overfull \hbox (102.17902pt too wide) in paragraph at lines 229--230
+[]\OT1/cmr/m/n/10.95 The re-sult-ing joint dis-tri-bu-tion of par-ti-cle po-si-
+tions and ve-loc-i-ties ($\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/i
+t/10.95 x[]; v[]; [] ; x[]; v[]; t\OT1/cmr/m/n/10.95 )$)
+ []
+
+[48] [49]
+Overfull \hbox (1.06787pt too wide) in paragraph at lines 256--257
 []\OT1/cmr/m/n/10.95 These re-sults gen-er-al-ize the bed-load tra-jec-tory mod
 -els of [][]\OT1/cmr/m/it/10.95 Ein-stein[] \OT1/cmr/m/n/10.95 ([]1937[]),
  []
 
-[48]) [49]
+) [50] [51]
 \openout2 = `ch3bedEle.aux'.
 
  (./ch3bedEle.tex
 Chapter 3.
-[50
+[52
 
 
 
-] [51] [52]
-<./figures/ch3/definition-combo.pdf, id=3239, 384.1122pt x 227.62204pt>
+] [53]
+
+LaTeX Warning: Reference `sec:elebirthdeath' on page 54 undefined on input line
+ 33.
+
+[54]
+<./figures/ch3/definition-combo.pdf, id=3388, 384.1122pt x 227.62204pt>
 File: ./figures/ch3/definition-combo.pdf Graphic file (type pdf)
 <use ./figures/ch3/definition-combo.pdf>
 Package pdftex.def Info: ./figures/ch3/definition-combo.pdf  used on input line
- 46.
+ 50.
 (pdftex.def)             Requested size: 360.0pt x 213.34303pt.
- [53] [54 <./figures/ch3/definition-combo.pdf>] [55]
-Overfull \hbox (18.14078pt too wide) detected at line 91
+ [55]
+Overfull \hbox (27.96559pt too wide) in paragraph at lines 55--60
+\OT1/cmr/m/n/10.95 where $\OML/cmm/m/it/10.95 u[]$ \OT1/cmr/m/n/10.95 is the ch
+ar-ac-ter-is-tic ve-loc-ity of mov-ing bed-load and $\OMS/cmsy/m/n/10.95 h\OML/
+cmm/m/it/10.95 n\OMS/cmsy/m/n/10.95 i \OT1/cmr/m/n/10.95 = [][] \OML/cmm/m/it/1
+0.95 nP\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n; m\OT1/cmr/m/n/10.95 )$
+ []
+
+[56 <./figures/ch3/definition-combo.pdf>] [57]
+Overfull \hbox (18.14078pt too wide) detected at line 96
  []$[]  []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n; m\OT1/cmr/m/n/10.95 ; \OML
 /cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 ^^WP\OT1/cmr/m/n/10
 .95 (\OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1\OML/cmm
@@ -1024,94 +1007,110 @@ cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m \OT1/cmr/m/n/10.95 + 1)]\OML/cmm/m/it/10.9
 \OT1/cmr/m/n/10.95 )$ 
  []
 
-[56]
-Underfull \hbox (badness 1629) in paragraph at lines 110--110
-[] []|\OT1/cmr/m/n/10.95 Mi-gra-tion, en-train-ment,
+[58] [59]
+Underfull \hbox (badness 1360) in paragraph at lines 145--149
+\OT1/cmr/m/n/10.95 train-ment, and de-po-si-tion
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 110--110
-\OT1/cmr/m/n/10.95 0$ from [][]\OT1/cmr/m/it/10.95 An-cey et al.[] \OT1/cmr/m/n
-/10.95 ([]2008[]).
+Overfull \hbox (3.12068pt too wide) in paragraph at lines 145--149
+\OT1/cmr/m/n/10.95 pa-ram-e-ters rep-re-sent-ing bed-
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 110--110
-\OT1/cmr/m/n/10.95 Units are $\OML/cmm/m/it/10.95 s[]$ \OT1/cmr/m/n/10.95 (prob
--a-bil-i-ty/-
+Underfull \hbox (badness 6493) in paragraph at lines 145--149
+\OT1/cmr/m/n/10.95 con-di-tion $(\OML/cmm/m/it/10.95 ^^W; ^^U; ^^V; ^^[; ^^M\OT
+1/cmr/m/n/10.95 )$, I
  []
 
+[60] [61]
 
-Overfull \hbox (19.44606pt too wide) in paragraph at lines 111--124
-[][] 
- []
+LaTeX Warning: Reference `eq:active' on page 62 undefined on input line 185.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--124
-\OT1/cmr/m/n/10.95 tran-si-tions are
- []
+LaTeX Warning: Reference `eq:active' on page 62 undefined on input line 196.
 
-[57] [58] [59] [60]
-Overfull \hbox (9.72017pt too wide) in paragraph at lines 189--190
+[62]
+Overfull \hbox (9.72017pt too wide) in paragraph at lines 203--204
 \OT1/cmr/m/n/10.95 steady-state stochas-tic dy-nam-ics of $\OML/cmm/m/it/10.95 
 n$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 m$ \OT1/cmr/m/n/10.95 which sup-
 port a time-independent
  []
 
-<./figures/ch3/distributions.pdf, id=3473, 398.9304pt x 166.22101pt>
+<./figures/ch3/distributions.pdf, id=3615, 398.9304pt x 166.22101pt>
 File: ./figures/ch3/distributions.pdf Graphic file (type pdf)
 <use ./figures/ch3/distributions.pdf>
-Package pdftex.def Info: ./figures/ch3/distributions.pdf  used on input line 19
-8.
+Package pdftex.def Info: ./figures/ch3/distributions.pdf  used on input line 21
+2.
 (pdftex.def)             Requested size: 360.0pt x 150.00839pt.
-[61]
-<./figures/ch3/variance.pdf, id=3486, 198.7425pt x 198.7425pt>
+[63]
+<./figures/ch3/variance.pdf, id=3628, 198.7425pt x 198.7425pt>
 File: ./figures/ch3/variance.pdf Graphic file (type pdf)
 <use ./figures/ch3/variance.pdf>
-Package pdftex.def Info: ./figures/ch3/variance.pdf  used on input line 215.
+Package pdftex.def Info: ./figures/ch3/variance.pdf  used on input line 231.
 (pdftex.def)             Requested size: 180.0pt x 180.00682pt.
 
-Underfull \hbox (badness 1102) in paragraph at lines 216--216
+
+LaTeX Warning: Reference `eq:active' on page 64 undefined on input line 232.
+
+
+LaTeX Warning: Reference `eq:active' on page 64 undefined on input line 232.
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 232--232
 [] []|\OT1/cmr/m/n/10.95 Data from all sim-u-la-
  []
 
-[62 <./figures/ch3/distributions.pdf> <./figures/ch3/variance.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/ch3/variance.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
->]
-<./figures/ch3/momentsuppression.pdf, id=3575, 398.9304pt x 189.96686pt>
+Underfull \hbox (badness 10000) in paragraph at lines 226--234
+\OT1/cmr/m/n/10.95 train-ment and de-po-si-tion rate scal-ing with $\OML/cmm/m/
+it/10.95 m$\OT1/cmr/m/n/10.95 .
+ []
+
+[64 <./figures/ch3/distributions.pdf>]
+<./figures/ch3/momentsuppression.pdf, id=3695, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/momentsuppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/momentsuppression.pdf>
 Package pdftex.def Info: ./figures/ch3/momentsuppression.pdf  used on input lin
-e 226.
+e 240.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
- [63]
-<./figures/ch3/colent-suppression.pdf, id=3603, 398.9304pt x 189.96686pt>
+
+
+LaTeX Warning: Reference `tab:anceyparam' on page 65 undefined on input line 24
+4.
+
+[65 <./figures/ch3/variance.pdf>]
+<./figures/ch3/colent-suppression.pdf, id=3738, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/colent-suppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/colent-suppression.pdf>
 Package pdftex.def Info: ./figures/ch3/colent-suppression.pdf  used on input li
-ne 241.
+ne 255.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
- [64 <./figures/ch3/momentsuppression.pdf>] [65 <./figures/ch3/colent-suppressi
-on.pdf>]
-<./figures/ch3/rtcdf.pdf, id=3722, 398.9304pt x 306.86955pt>
+ [66 <./figures/ch3/momentsuppression.pdf>]
+[67 <./figures/ch3/colent-suppression.pdf>]
+<./figures/ch3/rtcdf.pdf, id=3857, 398.9304pt x 306.86955pt>
 File: ./figures/ch3/rtcdf.pdf Graphic file (type pdf)
 <use ./figures/ch3/rtcdf.pdf>
-Package pdftex.def Info: ./figures/ch3/rtcdf.pdf  used on input line 251.
+Package pdftex.def Info: ./figures/ch3/rtcdf.pdf  used on input line 265.
 (pdftex.def)             Requested size: 360.0pt x 276.93858pt.
- [66 <./figures/ch3/rtcdf.pdf>] [67] [68] [69] [70] [71]
-Overfull \hbox (1.5938pt too wide) in paragraph at lines 325--326
+ [68 <./figures/ch3/rtcdf.pdf>]
+[69] [70]
+
+LaTeX Warning: Reference `sec:eleanalytical' on page 71 undefined on input line
+ 310.
+
+[71] [72] [73]
+Overfull \hbox (1.5938pt too wide) in paragraph at lines 348--349
 []\OT1/cmr/m/n/10.95 Collective en-train-ment gen-er-ates a sta-tis-ti-cal reg-
 u-la-tion ef-fect, whereby
  []
 
-) [72]
+) [74]
 \openout2 = `ch4downDiff.aux'.
 
  (./ch4downDiff.tex
 Chapter 4.
-[73
+[75
 
 
 
@@ -1128,13 +1127,13 @@ Overfull \hbox (2.45276pt too wide) in paragraph at lines 25--31
 10.95 Kraich-
  []
 
-[74] [75] [76] [77] [78]
-<./figures/ch4/pdf-plot.png, id=4216, 385.9218pt x 164.5347pt>
+[76] [77] [78] [79] [80]
+<./figures/ch4/pdf-plot.png, id=4325, 385.9218pt x 164.5347pt>
 File: ./figures/ch4/pdf-plot.png Graphic file (type png)
 <use ./figures/ch4/pdf-plot.png>
 Package pdftex.def Info: ./figures/ch4/pdf-plot.png  used on input line 94.
 (pdftex.def)             Requested size: 360.0pt x 153.48766pt.
- [79 <./figures/ch4/pdf-plot.png>]
+ [81 <./figures/ch4/pdf-plot.png>]
 Overfull \hbox (63.39835pt too wide) in paragraph at lines 124--143
  [][] 
  []
@@ -1142,8 +1141,8 @@ Overfull \hbox (63.39835pt too wide) in paragraph at lines 124--143
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[80]
-<./figures/ch4/diffusion.png, id=4294, 380.98335pt x 308.71335pt>
+[82]
+<./figures/ch4/diffusion.png, id=4401, 380.98335pt x 308.71335pt>
 File: ./figures/ch4/diffusion.png Graphic file (type png)
 <use ./figures/ch4/diffusion.png>
 Package pdftex.def Info: ./figures/ch4/diffusion.png  used on input line 151.
@@ -1152,12 +1151,12 @@ Package pdftex.def Info: ./figures/ch4/diffusion.png  used on input line 151.
 
 LaTeX Warning: Float too large for page by 59.51668pt on input line 155.
 
-[81] [82 <./figures/ch4/diffusion.png>] [83] [84] [85]) [86]
+[83] [84 <./figures/ch4/diffusion.png>] [85] [86] [87]) [88]
 \openout2 = `ch5langevin.aux'.
 
  (./ch5langevin.tex
 Chapter 5.
-[87
+[89
 
 
 
@@ -1167,137 +1166,129 @@ Overfull \hbox (8.52579pt too wide) in paragraph at lines 17--19
 u-lent drag and particle-
  []
 
-[88] [89] [90]
+[90] [91] [92]
 
-LaTeX Warning: Reference `fig:1' on page 91 undefined on input line 42.
+LaTeX Warning: Reference `fig:1' on page 93 undefined on input line 42.
 
 
-LaTeX Warning: Reference `fig:1' on page 91 undefined on input line 48.
+LaTeX Warning: Reference `fig:1' on page 93 undefined on input line 48.
 
-<./figures/ch5/Fig1Concept.png, id=4639, 361.35pt x 162.6075pt>
+<./figures/ch5/Fig1Concept.png, id=4748, 361.35pt x 162.6075pt>
 File: ./figures/ch5/Fig1Concept.png Graphic file (type png)
 <use ./figures/ch5/Fig1Concept.png>
 Package pdftex.def Info: ./figures/ch5/Fig1Concept.png  used on input line 51.
 (pdftex.def)             Requested size: 361.34912pt x 162.6071pt.
-[91]
+[93]
 
-LaTeX Warning: Reference `eq:1' on page 92 undefined on input line 60.
+LaTeX Warning: Reference `eq:1' on page 94 undefined on input line 60.
 
-[92 <./figures/ch5/Fig1Concept.png>]
+[94 <./figures/ch5/Fig1Concept.png>]
 
-LaTeX Warning: Reference `eq:drag' on page 93 undefined on input line 76.
+LaTeX Warning: Reference `eq:drag' on page 95 undefined on input line 76.
 
-[93] [94] [95] [96] [97]
-<./figures/ch5/Fig2pdfs.png, id=4818, 319.37317pt x 232.89008pt>
+[95] [96] [97] [98] [99]
+<./figures/ch5/Fig2pdfs.png, id=4928, 319.37317pt x 232.89008pt>
 File: ./figures/ch5/Fig2pdfs.png Graphic file (type png)
 <use ./figures/ch5/Fig2pdfs.png>
 Package pdftex.def Info: ./figures/ch5/Fig2pdfs.png  used on input line 139.
 (pdftex.def)             Requested size: 319.37238pt x 232.8895pt.
-<./figures/ch5/Fig3asymptotic.png, id=4827, 312.50752pt x 122.91922pt>
+<./figures/ch5/Fig3asymptotic.png, id=4937, 312.50752pt x 122.91922pt>
 File: ./figures/ch5/Fig3asymptotic.png Graphic file (type png)
 <use ./figures/ch5/Fig3asymptotic.png>
 Package pdftex.def Info: ./figures/ch5/Fig3asymptotic.png  used on input line 1
 51.
 (pdftex.def)             Requested size: 312.50674pt x 122.9189pt.
- [98 <./figures/ch5/Fig2pdfs.png>] [99 <./figures/ch5/Fig3asymptotic.png>]
+ [100 <./figures/ch5/Fig2pdfs.png>] [101 <./figures/ch5/Fig3asymptotic.png>]
 
-LaTeX Warning: Reference `eq:2ndmom' on page 100 undefined on input line 160.
+LaTeX Warning: Reference `eq:2ndmom' on page 102 undefined on input line 160.
 
-[100]
+[102]
 Overfull \hbox (33.43335pt too wide) in paragraph at lines 180--190
  [] 
  []
 
-<./figures/ch5/Fig4expComparison.png, id=4868, 388.99327pt x 203.19914pt>
+<./figures/ch5/Fig4expComparison.png, id=4979, 388.99327pt x 203.19914pt>
 File: ./figures/ch5/Fig4expComparison.png Graphic file (type png)
 <use ./figures/ch5/Fig4expComparison.png>
 Package pdftex.def Info: ./figures/ch5/Fig4expComparison.png  used on input lin
 e 196.
 (pdftex.def)             Requested size: 388.99231pt x 203.19864pt.
-[101] [102 <./figures/ch5/Fig4expComparison.png>] [103]) [104]
+[103] [104 <./figures/ch5/Fig4expComparison.png>] [105]) [106]
 \openout2 = `ch6conc.aux'.
 
  (./ch6conc.tex
 Chapter 6.
-[105
+[107
 
 
 
-] [106]
+] [108]
 
-Package natbib Warning: Citation `Kubo1972' on page 107 undefined on input line
+Package natbib Warning: Citation `Kubo1972' on page 109 undefined on input line
  29.
 
-[107] [108]
+[109] [110]
 
-Package natbib Warning: Citation `Pretzslav2021' on page 109 undefined on input
+Package natbib Warning: Citation `Pretzslav2021' on page 111 undefined on input
  line 65.
 
-[109]
+[111]
 
-Package natbib Warning: Citation `Benda1990' on page 110 undefined on input lin
+Package natbib Warning: Citation `Benda1990' on page 112 undefined on input lin
 e 85.
 
 
-Package natbib Warning: Citation `Reid2019' on page 110 undefined on input line
+Package natbib Warning: Citation `Reid2019' on page 112 undefined on input line
  85.
 
-[110] [111]
+[112] [113]
 
-Package natbib Warning: Citation `Warburton1992' on page 112 undefined on input
+Package natbib Warning: Citation `Warburton1992' on page 114 undefined on input
  line 103.
 
-[112]) [113] (./diss.bbl (./diss.brf)
+[114]) [115] (./diss.bbl (./diss.brf)
 \tf@brf=\write8
 \openout8 = `diss.brf'.
 
- [114
+ [116
 
 
 ]
-Overfull \hbox (102.02975pt too wide) in paragraph at lines 67--67
-[]\OT1/cmr/m/n/10.95 xii[], []xvii[], []17[], []24[], []25[], []30[], []34[], [
-]46[], []51[], []52[], []53[], []54[], []55[], []56[], []57[], []58[], []59[], 
-[]60[], []63[], []64[], []65[], []68[], []69[], []70[], []87[], []88[], []166[]
-[]  
+Overfull \hbox (39.37135pt too wide) in paragraph at lines 61--61
+[]\OT1/cmr/m/n/10.95 xii[], []xviii[], []17[], []24[], []25[], []30[], []34[], 
+[]48[], []54[], []55[], []56[], []57[], []58[], []60[], []61[], []62[], []65[],
+ []66[], []70[], []71[], []89[], []90[], []167[][]  
  []
 
-[115] [116] [117] [118] [119] [120]
-Overfull \hbox (27.50882pt too wide) in paragraph at lines 454--454
-[]\OT1/cmr/m/n/10.95 xviii[], []4[], []5[], []7[], []9[], []17[], []29[], []33[
-], []40[], []45[], []49[], []50[], []51[], []68[], []73[], []74[], []75[], []76
-[], []78[], []79[], []80[], []83[], []84[], []85[][]  
+[117] [118] [119] [120] [121] [122]
+Overfull \hbox (5.00046pt too wide) in paragraph at lines 452--452
+[]\OT1/cmr/m/n/10.95 xix[], []4[], []5[], []7[], []9[], []17[], []29[], []33[],
+ []41[], []50[], []52[], []53[], []70[], []75[], []76[], []77[], []78[], []80[]
+, []81[], []82[], []85[], []86[], []87[][]  
  []
 
-[121] [122] [123] [124] [125] [126] [127] [128] [129] [130]
-Overfull \hbox (0.74216pt too wide) in paragraph at lines 957--957
-[]\OT1/cmr/m/n/10.95 xv[], []xviii[], []9[], []10[], []29[], []30[], []33[], []
-36[], []41[], []42[], []45[], []46[], []49[], []75[], []76[], []78[], []79[], [
-]84[], []85[], []86[], []159[][]  
- []
-
-[131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142]
-[143] [144] [145]) [146]
+[123] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133] [134]
+[135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145] [146])
+[147]
 \openout2 = `app_ch2.aux'.
 
  (./app_ch2.tex
 Appendix A.
-Runaway argument?
-{sec: satisfies $P(x,t) = \bra \bra \delta (x-x(t))\ket _\xi \ket _\eta \ETC.
-! Paragraph ended before \T@ref was complete.
-<to be read again> 
-                   \par 
-l.35 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-[147
+[148
 
 
 ]
-Overfull \hbox (40.65738pt too wide) detected at line 49
+Overfull \hbox (0.10338pt too wide) in paragraph at lines 24--26
+\OT1/cmr/m/n/10.95 Taking a sec-ond time deriva-tive opens up the pos-si-bil-it
+y of us-ing the Furutsu-
+ []
+
+
+LaTeX Warning: Reference `flippymaster' on page 149 undefined on input line 33.
+
+
+[149] [150]
+Overfull \hbox (41.93484pt too wide) detected at line 53
 [][][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; s\OT1/cmr/m/n/10.95 ) = [][]\O
 ML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.9
 5 ) [] [][](1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 )
@@ -1306,100 +1297,72 @@ ML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.9
 /10.95 )[][]\OML/cmm/m/it/10.95 :
  []
 
-[148]
-Overfull \hbox (44.61104pt too wide) detected at line 66
+
+Overfull \hbox (1.07391pt too wide) detected at line 61
+[][]\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; t\OT1/cmr/m
+/n/10.95 ) = []\OML/cmm/m/it/10.95 e[]\OMS/cmsy/m/n/10.95 L[][][] ^^@ \OML/cmm/
+m/it/10.95 'D@[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 V'@[] \OT1/cmr/m/n/10
+.95 + \OML/cmm/m/it/10.95 k[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 s[] [] [
+][][][][];
+ []
+
+
+Overfull \hbox (45.8885pt too wide) detected at line 65
 [][]\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; t\OT1/cmr/m
 /n/10.95 ) = []\OML/cmm/m/it/10.95 e[][] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/
-10.95 ^^^D@[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 V^^^@[] \OT1/cmr/m/n/10.
-95 + \OML/cmm/m/it/10.95 k[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N\OT1/c
-mr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 @
-[][] [] [][][]\OMS/cmsy/m/n/10.95 L[][][][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10
-.95 t\OT1/cmr/m/n/10.95 )
+10.95 'D@[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 V'@[] \OT1/cmr/m/n/10.95 +
+ \OML/cmm/m/it/10.95 k[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N\OT1/cmr/m
+/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 @[][]
+ [] [][][]\OMS/cmsy/m/n/10.95 L[][][][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 
+t\OT1/cmr/m/n/10.95 )
  []
 
-
-Overfull \hbox (62.8882pt too wide) detected at line 68
+[151]
+Overfull \hbox (3.55617pt too wide) detected at line 74
  []$[]  \OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; t\OT1/c
-mr/m/n/10.95 ) = []\OML/cmm/m/it/10.95 e[][] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m
-/it/10.95 ^^^D@[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 V^^^@[] \OT1/cmr/m/n
-/10.95 + \OML/cmm/m/it/10.95 k[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N\O
-T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.
-95 @[][] [] [][][] [][] du\OMS/cmsy/m/n/10.95 I[][]\OT1/cmr/m/n/10.95 2[][]$ 
+mr/m/n/10.95 ) = [] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 'D@[] \OT1/cmr/
+m/n/10.95 + \OML/cmm/m/it/10.95 V'@[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 
+k \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N\OT1/cmr/m/n/10.95 (\OML/cmm/m/it
+/10.95 t\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 @[][] [][] \OMS/cmsy/m/n/10.
+95 I[][]\OT1/cmr/m/n/10.95 2[][]\OML/cmm/m/it/10.95 e[]$ 
  []
 
 
-Overfull \hbox (2.2787pt too wide) detected at line 71
- []$[]  \OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; t\OT1/c
-mr/m/n/10.95 ) = [] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^^D@[] \OT1/cm
-r/m/n/10.95 + \OML/cmm/m/it/10.95 V^^^@[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10
-.95 k \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^N\OT1/cmr/m/n/10.95 (\OML/cmm/
-m/it/10.95 t\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 @[][] [][] \OMS/cmsy/m/n
-/10.95 I[][]\OT1/cmr/m/n/10.95 2[][]\OML/cmm/m/it/10.95 e[]$ 
- []
-
-[149] [150] [151]
-Overfull \hbox (45.96991pt too wide) detected at line 117
-[][][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s\OT1/cmr/m/n/10.95 ) = [][] \OML
-/cmm/m/it/10.95 dx[] [] [][][][]^^^[] \OMS/cmsy/m/n/10.95 ^^@ [] ^^@ [][]\OML/c
-mm/m/it/10.95 ;
- []
-
-[152]
-Overfull \hbox (26.00014pt too wide) detected at line 129
-[][]\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 u\OT1/cmr/m/n/
-10.95 ) = [] \OMS/cmsy/m/n/10.95 ^^@ [] \OT1/cmr/m/n/10.95 + [] + [][](\OML/cmm
-/m/it/10.95 u\OT1/cmr/m/n/10.95 )
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 78.
 
 
-Overfull \hbox (3.60487pt too wide) detected at line 140
- []$[] \OMS/cmsy/m/n/10.95 ^^B [][][]\OT1/cmr/m/n/10.95 [[] + \OML/cmm/m/it/10.
-95 k\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 u \OMS/cmsy/m/n/10.95 ^^@ [][]\OML/
-cmm/m/it/10.95 e[] \OT1/cmr/m/n/10.95 + [][][[] + \OML/cmm/m/it/10.95 k\OT1/cmr
-/m/n/10.95 ]\OML/cmm/m/it/10.95 u \OMS/cmsy/m/n/10.95 ^^@ [][] [] [] ^^@ [][][]
-\OML/cmm/m/it/10.95 du:$ []  
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Lambda' on input line 78.
 
 
-Overfull \hbox (155.4604pt too wide) detected at line 147
- []$[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 e[] [][] \OMS/cmsy/m/n/10.95 I[
-][]\OT1/cmr/m/n/10.95 2[][]\OML/cmm/m/it/10.95 e[][][]k[]u \OMS/cmsy/m/n/10.95 
-^^@ [][][]\OML/cmm/m/it/10.95 e[] \OT1/cmr/m/n/10.95 + [](\OML/cmm/m/it/10.95 u
- \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 k[]\OT1/cmr/m/n/10.95 ) [] [] \OMS
-/cmsy/m/n/10.95 ^^@ [][][]\OML/cmm/m/it/10.95 du$ 
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 78.
 
-
-Overfull \hbox (109.16795pt too wide) detected at line 147
- []$[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 e[] [][] e[][]\OMS/cmsy/m/n/10.
-95 I[][]\OT1/cmr/m/n/10.95 2[][][][]\OML/cmm/m/it/10.95 e[] \OT1/cmr/m/n/10.95 
-+ [] [] [] \OMS/cmsy/m/n/10.95 ^^@ [][][]\OML/cmm/m/it/10.95 du$ []  
- []
-
-[153]) [154]
+[152] [153] [154]) [155]
 \openout2 = `app_ch4.aux'.
 
  (./app_ch4.tex
 Appendix B.
-[155
+[156
 
 
 
-] [156] [157]
+] [157] [158]
 Overfull \hbox (39.14093pt too wide) detected at line 77
 []
  []
 
-[158] [159]) [160] [161]
+[159] [160]) [161] [162]
 \openout2 = `app_ch3.aux'.
 
  (./app_ch3.tex
 Appendix C.
-[162
+[163
 
 
 
-] [163]
+] [164]
 Overfull \hbox (112.80997pt too wide) detected at line 32
 [][]\OML/cmm/m/it/10.95 S \OT1/cmr/m/n/10.95 = [][]\OML/cmm/m/it/10.95 ; []; []
 ; [][]:
@@ -1410,7 +1373,7 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 42--43
 [][] 
  []
 
-[164]
+[165]
 Overfull \hbox (97.84091pt too wide) detected at line 77
 [][]\OT1/cmr/m/n/10.95 0 = \OML/cmm/m/it/10.95 ^^WA\OT1/cmr/m/n/10.95 (\OML/cmm
 /m/it/10.95 n \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1) + [\OML/cmm/m/it/10
@@ -1429,7 +1392,7 @@ m/m/it/10.95 ^^[n \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^Mn\OT1/cmr/m/n/10.
 10.95 )\OML/cmm/m/it/10.95 :
  []
 
-[165] [166]
+[166] [167]
 Overfull \hbox (33.33513pt too wide) in paragraph at lines 97--99
 \OT1/cmr/m/n/10.95 Taking into ac-count that this dis-tri-bu-tion should be nor
 -mal-iz-able, $[][] \OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.9
@@ -1454,21 +1417,21 @@ L/cmm/m/it/10.95 ^^T\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.
 10.95 (\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 )
  []
 
-[167]) [168]
+[168]) [169]
 \openout2 = `app_ch5.aux'.
 
  (./app_ch5.tex
 Appendix D.
-[169
+[170
 
 
 
 ]
 
-LaTeX Warning: Reference `eq:detlangevin' on page 170 undefined on input line 2
+LaTeX Warning: Reference `eq:detlangevin' on page 171 undefined on input line 2
 9.
 
-[170]
+[171]
 Overfull \hbox (1.8479pt too wide) in paragraph at lines 38--40
 \OT1/cmr/m/n/10.95 where the co-ef-fi-cients $\OML/cmm/m/it/10.95 R[]$ \OT1/cmr
 /m/n/10.95 are the residues of the prod-uct $[\OML/cmm/m/it/10.95 q\OT1/cmr/m/n
@@ -1476,7 +1439,7 @@ Overfull \hbox (1.8479pt too wide) in paragraph at lines 38--40
 T1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s"[]\OT1/cmr/m/n/10.95 )][]$: 
  []
 
-[171]
+[172]
 Overfull \hbox (24.85725pt too wide) detected at line 64
 [][]\OT1/cmr/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 "[]\OT1/c
 mr/m/n/10.95 )[]\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 
@@ -1487,7 +1450,7 @@ OML/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 z\OT1/cmr/m/n/10.95
 \OT1/cmr/m/n/10.95 + [][][] = 0
  []
 
-[172]) [173]
+[173]) [174]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1500,9 +1463,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: 864495BCAC1D8E433AE2F934C4535DB0;11255.
+(rerunfilecheck)             Checksum: 5B0302D69715FEDCE2E0577D5A81900C;11209.
 Package rerunfilecheck Info: File `diss.brf' has not changed.
-(rerunfilecheck)             Checksum: CD3E79F8061870416B1063537EDCC469;49861.
+(rerunfilecheck)             Checksum: F5425043486A6CB869C14A382848E4C1;50049.
 
 
 LaTeX Warning: There were undefined references.
@@ -1513,13 +1476,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
  ) 
 Here is how much of TeX's memory you used:
- 16466 strings out of 483107
- 250114 string characters out of 5964631
- 590139 words of memory out of 5000000
- 30191 multiletter control sequences out of 15000+600000
- 542069 words of font info for 57 fonts, out of 8000000 for 9000
+ 16480 strings out of 483107
+ 250482 string characters out of 5964631
+ 594392 words of memory out of 5000000
+ 30213 multiletter control sequences out of 15000+600000
+ 542908 words of font info for 60 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 47i,20n,46p,1672b,1819s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,20n,46p,1672b,1809s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/kp/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
@@ -1537,10 +1500,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on diss.pdf (198 pages, 4574213 bytes).
+Output written on diss.pdf (200 pages, 4642869 bytes).
 PDF statistics:
- 6703 PDF objects out of 7423 (max. 8388607)
- 5875 compressed objects within 59 object streams
- 915 named destinations out of 1000 (max. 500000)
- 1082 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6859 PDF objects out of 7423 (max. 8388607)
+ 5993 compressed objects within 60 object streams
+ 906 named destinations out of 1000 (max. 500000)
+ 1079 words of extra memory for PDF output out of 10000 (max. 10000000)
 

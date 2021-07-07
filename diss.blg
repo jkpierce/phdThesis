@@ -16,7 +16,7 @@ A level-1 auxiliary file: app_ch2.aux
 A level-1 auxiliary file: app_ch4.aux
 A level-1 auxiliary file: app_ch3.aux
 A level-1 auxiliary file: app_ch5.aux
-Reallocated field_info (elt_size=4) to 13142 items from 5000.
+Reallocated field_info (elt_size=4) to 13119 items from 5000.
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "Schobe2021"
 Warning--I didn't find a database entry for ""
@@ -26,45 +26,45 @@ Warning--I didn't find a database entry for "Benda1990"
 Warning--I didn't find a database entry for "Reid2019"
 Warning--I didn't find a database entry for "Warburton1992"
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-You've used 347 entries,
+You've used 346 entries,
             2789 wiz_defined-function locations,
-            3038 strings with 64910 characters,
-and the built_in function-call counts, 295131 in all, are:
-= -- 37843
-> -- 10842
-< -- 224
-+ -- 6049
-- -- 2608
-* -- 19653
-:= -- 28710
-add.period$ -- 347
-call.type$ -- 347
-change.case$ -- 1897
-chr.to.int$ -- 340
-cite$ -- 1041
-duplicate$ -- 26441
-empty$ -- 14052
-format.name$ -- 3654
-if$ -- 59306
+            3034 strings with 64720 characters,
+and the built_in function-call counts, 294931 in all, are:
+= -- 37860
+> -- 10834
+< -- 223
++ -- 6051
+- -- 2605
+* -- 19626
+:= -- 28659
+add.period$ -- 346
+call.type$ -- 346
+change.case$ -- 1893
+chr.to.int$ -- 339
+cite$ -- 1038
+duplicate$ -- 26438
+empty$ -- 13993
+format.name$ -- 3655
+if$ -- 59249
 int.to.chr$ -- 8
 int.to.str$ -- 1
-missing$ -- 367
-newline$ -- 1045
-num.names$ -- 1398
-pop$ -- 10470
+missing$ -- 365
+newline$ -- 1042
+num.names$ -- 1392
+pop$ -- 10494
 preamble$ -- 1
-purify$ -- 1558
+purify$ -- 1556
 quote$ -- 0
-skip$ -- 21206
+skip$ -- 21183
 stack$ -- 0
-substring$ -- 13988
-swap$ -- 22989
-text.length$ -- 23
+substring$ -- 13996
+swap$ -- 23012
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 3021
+type$ -- 3018
 warning$ -- 0
-while$ -- 1891
+while$ -- 1886
 width$ -- 0
-write$ -- 3811
+write$ -- 3800
 (There were 7 warnings)

@@ -4,39 +4,43 @@
 \label{sec:appendixA}
 \section{Derivation of the master equation for particle position}
 \label{sec:appAmaster}
-The probability distribution of position in section \ref{sec: satisfies $P(x,t) = \bra\bra \delta(x-x(t))\ket_\xi \ket_\eta$, where the averages are over all realizations of the two independent noises.
-Integrating the Langevin equation, substituting it, and taking the Fourier transform in space gives
+Here I derive the master equation \ref{eq:flippymaster} for the probability distribution of particle position from the Langevin equation \ref{eq:flippylangevin}. This is closely based off of the approach in \citet{Balakrishnan1993}.
+
+The master equation satisfies $P(x,t) = \bra\bra \delta(x-x(t))\ket_\xi \ket_\eta$, where the averages are over all realizations of the two independent noises. It is most convenient to take these averages after taking Fourier transforms and manipulating time derivatives of the resulting equations.
+
+Integrating the Langevin equation \ref{eq:flippylangevin}, substituting the solution in the above definition, and taking the Fourier transform in space gives
 \be \tilde{P}(g,t) = \Big\bra  \Big\bra \exp \Big[- i g \int_0^t du [V+\sqrt{2D}\xi(u)]\eta(u) \Big]\Big\ket_\eta \Big\ket_\xi\ee
 This can be rearranged as
-\be \tilde{P}(g,t) = \Big\bra \exp\Big[i g V \int_0^t du \eta(u)\Big] \Big\bra \exp\Big[ i g \sqrt{2D}\int_0^t du \xi(u) \eta(u)]\Big]\Big\ket_\xi \Big\ket_\eta \ee
-Using the classic identity for an average over white noise of an exponential  from Gardiner 1983 (which derives easily from the reduction of gaussian cumulants to 2 point correlation functions) gives, after realizing that $\eta^2 = \eta$, 
-\be \tilde{P}(g,t) = \Big\bra \exp\Big[(igV-g^2D) \int_0^t du \eta(u) \Big]\Big\ket_\eta \ee
-Calling $G = igV-g^2D$ and $F=\exp G\int_0^t \eta(u)du$ as shorthands and taking a time derivative gives
-\be G^{-1}\pt \tilde{P}(g,t) = \bra \eta F\ket.\ee
-Taking a second time derivative opens up the possibility of using the Furutsu-Novikov formula: 
-\be G^{-1}\pt \tilde{P}(g,t) = \pt \bra \eta F\ket = G\bra \eta F \ket + k\big[ \bra \eta \ket \tilde{P}(g,t) - G^{-1} \pt \tilde{P}(g,t) \big] \ee
-for which the best reference is gardiner. This finally gives
+\be \tilde{P}(g,t) = \Big\bra \exp\Big[i g V \int_0^t du \eta(u)\Big] \Big\bra \exp\Big[ i g \sqrt{2D}\int_0^t du \xi(u) \eta(u)]\Big]\Big\ket_\xi \Big\ket_\eta .\ee
+
+Using the classic identity for an average over white noise of an exponential \citep{Balakrishnan1993,VanKampen2007} gives, after recognizing that the dichotomous noise satisfies $\eta^2 = \eta$ since $\eta$ is either $0$ or $1$,
+\be \tilde{P}(g,t) = \Big\bra \exp\Big[(igV-g^2D) \int_0^t du \eta(u) \Big]\Big\ket_\eta. \label{eq:logi}\ee
+
+Now I will take time derivatives in order to apply the so-called Furutsu-Novikov formula to evaluate the ensemble average over dichotomous noise \citep{Shapiro1978}. Applied to the dichotomous noise in figure \ref{fig:lislefig}, the Furutsu-Novikov formula is, for an arbitrary functional $F$ of the noise,
+\be \pt \bra \eta(t)F[\eta(t)] \ket = \bra \eta \pt F \ket + k \big[\bra \eta \ket \bra F \ket -\bra \eta F \ket \big]  \label{eq:furuti}.\ee
+
+
+Making the shorthands $G = igV-g^2D$ and $F=\exp G\int_0^t \eta(u)du$ and taking as time derivative of eq. \ref{eq:logi} gives
+\be G^{-1}\pt \tilde{P}(g,t) = \bra \eta F\ket. \label{eq:furut}\ee
+Taking a second time derivative opens up the possibility of using the Furutsu-Novikov formula \ref{eq:furuti}: 
+\be G^{-1}\pt \tilde{P}(g,t) = \pt \bra \eta F\ket = G\bra \eta F \ket + k\big[ \bra \eta \ket \tilde{P}(g,t) - G^{-1} \pt \tilde{P}(g,t) \big]. \ee
+Applying eq. \ref{eq:furut} finally gives
 \be \pt^2 \tilde{P}(g,t)  = (igV-g^2D-k)\pt  \tilde{P} + k_E (igV-g^2D) \tilde{P},\ee
-and inverse Fourier transforming provides the master equation
-\be (\pt^2 + V \px \pt + k_E V \px + k \pt - D \px^2 \pt - k_E D \px^2) P(x,t) = 0 \ee
+and inverse Fourier transforming provides the master equation \ref{eq:flippymaster}.
+
 \section{Solution for the position probability distribution}
 \label{sec:fluccymastersol}
-The initial conditions for which to solve this equation are 
-\be P(x,0) = \delta(x) \ee
-\be \pt P(x,0) = \frac{k_E}{k}\big[D\delta''(x)-V \delta'(x) \big]\ee
-These initial conditions come from the initial state
-\be P(x,0) = \lim_{t\rightarrow 0 } \frac{k_E}{k} \sqrt{\frac{1}{4\pi D t}} \exp\Big[-\frac{(x-Vt)^2}{4Dt}\Big]+ \frac{k_D}{k}\delta(x)\ee
-characterizing the potential for a particle to start in motion, where it undergoes advection and diffusion, and rest, where it stays put. In the derivation of the initial condition, it is convenient to use the Fokker-Planck equation satisfied by the Gaussian Green's function to convert the time derivative to a space derivative.
-Applying the rules above provides
-\be \bar{\tilde{P}}(g,s) = \frac{s + k +\phi  Dg^2 - i g V \phi}{s(s+k)+(Dg^2-igV)(s+k_E)}, \ee
-where $\varphi = k_D/k$.
-This appears correct as it reduces to Einstein and Brownian problems in the appropriate limits.
-The numerator terms encode the initial conditions. The denominator terms are where the real structure of the solution is contained.
+The position probability distribution can be obtained from eq. \ref{flippymaster} for the initial conditions $P(x,0) = \delta(x)$ and $ \pt P(x,0) = \frac{k_E}{k}\big[D\delta''(x)-V \delta'(x) \big]$ using Fourier transforms in space and Laplace transforms in time. Taking these transforms provides
+\be \bar{\tilde{P}}(g,s) = \frac{s + k +\varphi  Dg^2 - i g V \varphi}{s(s+k)+(Dg^2-igV)(s+k_E)}, \ee
+where $\varphi = k_D/k$ is the probability a particle starts at rest.
 
-The numerator terms involving $g$ are easily expressed as first and second derivatives with respect to $x$. The problem, then is to calculate the inverse Fourier integral of the denominator. This can be conducted by finding the zeros of the denominator, expanding in partial fractions, then applying the contour integral
-\be \int_{-\infty}^\infty \frac{1}{2\pi i} \frac{e^{-i g x}}{g + i c} dg = \theta(x)e^{-c x}\ee
-that I've used to solve earlier problems. Rearranging the governing equation gives
-\be \tilde{\hat{P}}(g,s) = \frac{\phi D g^2 - ig V\phi  + s + k}{D(s+k_E)}\frac{1}{g^2-i\frac{V}{D}g + \frac{s(s+k)}{D(s+k_E)}}\ee
+The numerator terms encode the initial conditions. The denominator terms are where the real structure of the solution is contained.
+The numerator terms involving $g$ are easily expressed as first and second derivatives with respect to $x$. The problem, then is to calculate the inverse Fourier integral of the denominator.
+This can be conducted by finding the zeros of the denominator, expanding in partial fractions, then applying the contour integral \citep[e.g.][]{Arfken1985}
+\be \int_{-\infty}^\infty \frac{1}{2\pi i} \frac{e^{-i g x}}{g + i c} dg = \theta(x)e^{-c x}.\ee
+
+Rearranging the governing equation gives
+\be \tilde{\hat{P}}(g,s) = \frac{\varphi D g^2 - ig V\varphi  + s + k}{D(s+k_E)}\frac{1}{g^2-i\frac{V}{D}g + \frac{s(s+k)}{D(s+k_E)}}\ee
 The roots of the denominator are at
 \be g_\pm = \frac{iV}{2D}\Big[ 1  \pm R \Big],\ee
 where
@@ -44,105 +48,73 @@ where
 The partial fractions expansion is therefore
 \be \frac{1}{g^2-i\frac{V}{D}g + \frac{s(s+k)}{D(s+k_E)}} = \frac{D}{i V R}\Big[ \frac{1}{g-g_+} - \frac{1}{g-g_-}\Big]\ee
 Giving 
-\be \tilde{P}(x,s) = \frac{-\phi D\px^2 + V\phi\px + s + k}{VR(s+k_E)}\Bigg[ \int \frac{dg}{2\pi i}\frac{e^{-igx}}{g-g_+} - \int \frac{dg}{2\pi i}\frac{e^{-igx}}{g-g_-}\Bigg]\ee
+\be \tilde{P}(x,s) = \frac{-\varphi D\px^2 + V\varphi\px + s + k}{VR(s+k_E)}\Bigg[ \int \frac{dg}{2\pi i}\frac{e^{-igx}}{g-g_+} - \int \frac{dg}{2\pi i}\frac{e^{-igx}}{g-g_-}\Bigg]\ee
 or eventually
-\be \tilde{P}(x,s) = \frac{-\phi D\px^2 + V\phi \px + s + k}{VR(s+k_E)}\Bigg[ \theta(x) \exp\Big(\frac{Vx}{2D}(1-R)\Big) + \theta(-x)\exp\Big( \frac{Vx}{2D}(1+R)\Big) \Bigg].\ee
-which simplifies a bit
-\be \tilde{P}(x,s) = \frac{-\phi D\px^2 + V\phi \px + s + k}{VR(s+k_E)}\exp\Big[\frac{Vx}{2D} - \frac{V|x|}{2D}R \Big], \label{eq:laplace}\ee
-where as a reminder, $\phi = k_D/k$.
+\be \tilde{P}(x,s) = \frac{-\varphi D\px^2 + V\varphi \px + s + k}{VR(s+k_E)}\Bigg[ \theta(x) \exp\Big(\frac{Vx}{2D}(1-R)\Big) + \theta(-x)\exp\Big( \frac{Vx}{2D}(1+R)\Big) \Bigg].\ee
+This simplifies slightly to
+\be \tilde{P}(x,s) = \frac{-\varphi D\px^2 + V\varphi \px + s + k}{VR(s+k_E)}\exp\Big[\frac{Vx}{2D} - \frac{V|x|}{2D}R \Big], \label{eq:laplaceapp}\ee
+where as a reminder, $\varphi = k_D/k$.
 
-An incredible propery from the Bateman manuscript by Erdelyi vol. 1 pg. 133 is
-\be \mathcal{L}^{-1} \Big\{ \frac{1}{s} \tilde{g}(s-a/s)\Big\} = \int_0^t \mathcal{I}_0\Big(2\sqrt{au(t-u)}\Big) g(u) du
-\ee
-which can be derived by taking a Laplace transform and using u-substitution.
-
-The problem is
-\be P(x,t) = \mathcal{L}^{-1}\Bigg\{ \frac{1}{V} \big[-\phi D\px^2 + V\phi \px + k + s \big] \exp\Big(\frac{Vx}{2D}\Big) \frac{\exp\Big(-\frac{V|x|R}{2D} \Big)}{(s+k_E)R} \Bigg\}(t) \ee
-Using the shift property, this becomes
-\be P(x,t) = \frac{1}{V}e^{-k_E t} \mathcal{L}^{-1}\Bigg\{ \big[-\phi D\px^2 + V \phi \px + k_D + s\big] \exp\Big(\frac{Vx}{2D}\Big) \frac{\exp\Big(\frac{-V|x|R_\ast}{2D}\Big)}{s R_\star} \Bigg\},\ee
+Taking the inverse Laplace transform symbolically provides the desired probability density function
+\be P(x,t) = \mathcal{L}^{-1}\Bigg\{ \frac{1}{V} \big[-\varphi D\px^2 + V\varphi \px + k + s \big] \exp\Big(\frac{Vx}{2D}\Big) \frac{\exp\Big(-\frac{V|x|R}{2D} \Big)}{(s+k_E)R} \Bigg\}(t). \ee
+Using the shift property of Laplace transforms \citep[e.g.][]{Arfken1985}, this becomes
+\be P(x,t) = \frac{1}{V}e^{-k_E t} \mathcal{L}^{-1}\Bigg\{ \big[-\varphi D\px^2 + V \varphi \px + k_D + s\big] \exp\Big(\frac{Vx}{2D}\Big) \frac{\exp\Big(\frac{-V|x|R_\ast}{2D}\Big)}{s R_\star} \Bigg\},\ee
 where 
 \be R_\ast = \sqrt{1 + \frac{4D(k_D-k_E)}{V^2}+ \frac{4D}{V^2}\Big(s-\frac{k_Ek_D}{s}\Big)}. \ee
-Using the property that $\mathcal{L}^{-1}\big\{s \tilde{f}\big\} = (\delta(t) + \pt)f(t)$ gives
-\be P(x,t) = \frac{1}{V} e^{-k_E t} \big[ -\phi D\px^2 + V\phi \px + k_D + \delta(t) + \pt \big] \exp\Big[\frac{Vx}{2D}\Big] \mathcal{L}^{-1}\Bigg\{ \frac{-\exp\Big[\frac{-V|x|R_\ast}{2D}\Big]}{sR_\ast} \Bigg\}(t) \ee
-Using the Erdelyi shifting property from Bateman manuscript gives 
-\begin{multline}  P(x,t) = \frac{1}{V} e^{-k_E t}  \big[ -\phi D\px^2 + V\phi \px + k_D + \delta(t) + \pt \big] \exp\Big[\frac{Vx}{2D}\Big] \int_0^t du \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) \\ \times \mathcal{L}^{-1}\Bigg\{ \frac{\exp\Big[ \frac{-V|x|}{2D}\sqrt{a+b s}\Big]}{\sqrt{a + b s}}\Bigg\}(u) \end{multline}
-where $a = 1 + 4D(k_E-k_E)/(V^2)$ and $b = 4D/V^2$.
-Using the trick of introducing a parameter and integrating over it to remove the square root from the denominator, the remaining transform can be evaluated from tables or mathematica, eventually giving (after integration over and setting to 1 of the fake parameter),
-\begin{multline} P(x,t) = \big[-\phi D\px^2 + V\phi \px + k + \delta(t)+ \pt \big]\int_0^t \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) e^{-k_E(t-u)} \\ \times \sqrt{ \frac{1}{4\pi D u}} \exp\Big[-k_D u - \frac{(x-Vu)^2}{4Du}\Big] du \end{multline}
-We see here a convolution between a modified Bessel function describing the probability that a particle is at rest, and a Gaussian propagator, damped by deposition, describing the drift and diffusion of moving particles.
-Probably the $\mathcal{I}_0$ term represents the probability that the particle has been in motion for a time $u$ after a time $t$ has elapsed.
-The expansion of this formula by evaluating the derivatives and so on gives nothing nice. it becomes a sum of mainly three terms. Two are convolution integrals over bessels $I_1$ and $I_0$ with elementary functions also factors inside the integrals. One is a delta function decaying with $k_D$, and another uis a Gaussian propagator decaying with $k_E$.
-
-\section{Moments of position}
-
-Multiplying the master equation by $x^l$ and integrating over all $x$ gives
-\be \pt^2 m_l -V l \pt m_{l-1} -k_E V l m_{l-1} + k \pt m_l - D l (l-1) \pt m_{l-2} - k_E D l(l-1) m_{l-2} = 0,\ee
-where $\bra x^l \ket = m_l$. 
-For $l=1$ this generates
-\be (\pt^2+ k \pt )\bra x \ket = k_E V \ee
-which has solution $ \bra x \ket = k_E V t/k$ given the initial conditions of the problem. The general solution is $\alpha_2 + k_E V t /k + \alpha_1 e^{-k t}/k$. The first moment is totally unaffected by diffusion.
-For $l=2$, the governing equation is
-\be (\pt^2 + k \pt)\bra x^2 \ket = 2V(\pt + k_E)\bra x \ket + 2 k_E D.\ee
-Plugging in the result for the first moment develops
-\be (\pt^2 + k\pt ) \bra x^2 \ket = \frac{2V^2 k_E}{k}[1+k_E t] + 2k_E D. \ee
-This time the general solution is
-\be \bra x^2 \ket = \frac{2k_E}{k}\Big[\frac{V^2k_D}{k^2} + D\Big]t + \Big(\frac{Vk_E t}{k}\Big)^2  + C_1 e^{-kt}/k + C_2.\ee
-This is subject to the conditions $\bra x^2 \ket(0) = 0$ and $\pt \bra x^2 \ket (0) = 2k_E D/k$, derived by the initial conditions used for the pdf, giving a variance
-\be \sigma_x^2 = \frac{2k_Ek_DV^2}{k^3}\Big( t + \frac{1}{k}e^{-k t} - \frac{1}{k}\Big) + 2\frac{k_E D}{k}t.\ee
-At short times $t\ll k^{-1}$, this becomes
-\be \sigma_x^2 \sim \frac{k_E k_D V^2}{k^2} t^2 + \frac{2 k_E D }{k}t,\ee
-so it scales as $\sigma_x^2 \sim t^2$ when $t \gg \frac{2Dk}{V^2 k_D}$ and $\sigma_x^2 \sim t$ when $t \ll \frac{2Dk}{V^2 k_D}$.
-Similarly at long times $t\gg k^{-1}$, 
-\be \sigma_x^2 \sim \frac{2k_Ek_D V^2}{k^3}t,\ee
-so we have another non-trivial multi-scale diffusion phenomenon. Provided that $2D/V^2 \ll k_D/k^2$, we therefore have
-\be \sigma_x^2 \sim 
-\begin{cases}
-	t, & t \ll \frac{2Dk}{V^2 k_D}, \\ 
-	t^2, &  \frac{2Dk}{V^2 k_D} \ll t \ll \frac{1}{k}, \\
-	t, & t\gg \frac{1}{k}.
-\end{cases}\ee
-Note in the physical condition when $k\approx k_D$, the condition for the existence of three ranges becomes $ \Pe \ll 1,$ where
-$\Pe = 2 D k_D/V^2.$
-
-
-\section{Calculation of the flux rate constant}
-
-The central object required for the flux is 
-\be \mu(t) = \rho \int_0^\infty dx_i \int_0^\infty dx P(x+x_i,t).\ee
-This represents, up to a proportionality factor, the probability that a particle starts at $x_i$, somewhere to the left of $x=0$, then manages to cross $x=0$ by time $t$. This can be demonstrated as the rate of the Poisson flux distribution (although it's divided by the density).
-Taking the Laplace transform,
-\be \tilde{\mu}(s) = \rho \int_0^\infty dx_i \int_0^\infty dx \tilde{P}(x+x_i,s).\ee
-This means the starting point is integrating equation \ref{eq:laplace}. Noting that $x+x_i$ is always positive,
-The first integration gives ($\phi = k_D/k$)
-\be \tilde{\mu}(s) = \int_0^\infty dx_i \exp\Big[\frac{V(1-R)x_i}{2D}\Big]\Big(\phi \frac{1-R}{2R(s+k_E)} - \frac{\phi}{R(s+k_E)} - \frac{2D(s+k)}{V^2R(1-R)(s+k_E)}\Big), \ee
-and the second integration gives
-\be  \tilde{\mu}(s) = -\frac{\phi D}{V R(s+k_E)} + \frac{2D\phi}{VR(1-R)(s+k_E)} + \frac{4D^2(s+k)}{V^3R(1-R)^2(s+k_E)}. \label{eq:laplacefluxrate}\ee
-The problem is to take the inverse transform of this. 
-
-Starting from \ref{eq:laplacefluxrate}, taking the inverse transform, converting the $s$ factor in the numerator of the last term to $\pt + \delta(t)$, and using the shift property gives
-\be \mu(t) = \Bigg\{ - \frac{\phi D}{VR_\star s} + \frac{2D\phi}{VR_\ast(1-R_\star)s} + \frac{4D^2\big( \cev{\pt} + k\big)}{V^3 R_\star(1-R_\star)^2s}\Bigg\}.\ee
-Here the notation $\cev{\pt}$ means the derivative acts from the left on all terms multiplying it.
-Now using the Erdelyi formula again provides
-\be \mu(t) = e^{-k_E t}\int_0^t \mathcal{I}_0\Big(2\sqrt{k_Ek_D u(t-u)}\Big)K(u)du,\ee
-where 
-\be K(u) = \Bigg\{  - \frac{\phi D}{V\sqrt{a+bs}}+ \frac{2D\phi}{V\sqrt{a+bs}(1-\sqrt{a+bs})} + \frac{4D^2\big( \cev{\pt} + k\big)}{V^3 \sqrt{a+bs}(1-\sqrt{a+bs})^2} \Bigg\}(u)
+Using the property that $\mathcal{L}^{-1}\big\{s \tilde{f}\big\} = (\delta(t) + \pt)f(t)$ \citep{Arfken1985} gives
+\be P(x,t) = \frac{1}{V} e^{-k_E t} \big[ -\varphi D\px^2 + V\varphi \px + k_D + \delta(t) + \pt \big] \exp\Big[\frac{Vx}{2D}\Big] \mathcal{L}^{-1}\Bigg\{ \frac{-\exp\Big[\frac{-V|x|R_\ast}{2D}\Big]}{sR_\ast} \Bigg\}(t) \ee
+Finally, using the identity
+\be \mathcal{L}^{-1} \Big\{ \frac{1}{s} \tilde{g}(s-a/s)\Big\} = \int_0^t \mathcal{I}_0\Big(2\sqrt{au(t-u)}\Big) g(u) du
 \ee
-Using the shift property again provides
-\be K(u) = e^{-au/b} \Bigg\{  - \frac{\phi D}{V\sqrt{bs}}+ \frac{2D\phi}{V\sqrt{bs}(1-\sqrt{bs})} + \frac{4D^2\big( \cev{\pt} + k\big)}{V^3\sqrt{bs}(1-\sqrt{bs})^2} \Bigg\}(u) \ee
-The three transforms within are (from mathematica):
-\be \Bigg\{ - \frac{\phi D}{V\sqrt{bs}} \Bigg\}(u) = -\frac{\phi}{2}\sqrt{\frac{D}{\pi u}} \ee
-\be \Bigg\{\frac{2D\phi}{V\sqrt{bs}(1-\sqrt{bs})} \Bigg\}(u) = -\frac{k_D V}{2k}e^{V^2u/4D}\erfc\Bigg(-\sqrt{\frac{V^2u}{4D}}\Bigg) \ee
-\be \Bigg\{  \frac{4D^2\big( \cev{\pt} + k\big)}{V^3\sqrt{bs}(1-\sqrt{bs})^2} \Bigg\}(u) = \big(\cev{\partial}_t+k\big)\Bigg[\sqrt{\frac{Du}{\pi}} + \frac{Vu}{2}e^{V^2 u/4D}\erfc\Bigg(-\sqrt{\frac{V^2u}{4D}}\Bigg)\Bigg] \ee
-so the net result is
+from \citet{Bateman1953}, pg. 133 (which can be derived by either u-substitution or series expansion in powers of $a$) provides:
+\begin{multline}  P(x,t) = \frac{1}{V} e^{-k_E t}  \big[ -\varphi D\px^2 + V\varphi \px + k_D + \delta(t) + \pt \big] \exp\Big[\frac{Vx}{2D}\Big]\\ \times \int_0^t du \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) \\ \times \mathcal{L}^{-1}\Bigg\{ \frac{\exp\Big[ \frac{-V|x|}{2D}\sqrt{a+b s}\Big]}{\sqrt{a + b s}}\Bigg\}(u)  \label{eq:magic}\end{multline}
+where $a = 1 + 4D(k_E-k_E)/(V^2)$ and $b = 4D/V^2$ are shorthands.
+
+Using the trick of introducing a parameter and integrating over it to remove the square root from the denominator, the remaining transform can be evaluated from standard tables \citep{Prudnikov1992a}, eventually giving (after integration over and setting to 1 of the fake parameter),
+\begin{multline} P(x,t) = \big[-\varphi D\px^2 + V\varphi \px + k + \delta(t)+ \pt \big]\int_0^t \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) e^{-k_E(t-u)} \\ \times \sqrt{ \frac{1}{4\pi D u}} \exp\Big[-k_D u - \frac{(x-Vu)^2}{4Du}\Big] du, \end{multline}
+as reported in equation \ref{eq:monster}.
+
+
+\section{Calculation of the scale-dependent rate function $\Lambda(T)$}
+\label{sec:fluxconstant}
+The central object required to calculate the sediment flux probability distribution in equation \ref{eq:flippyflux} is 
+\be \Lambda(T) = \rho \int_0^\infty dx_i \int_0^\infty dx P(x+x_i,T).\ee
+This represents the rate at which particles starts at $x_i$, anywhere to the left of $x=0$, and manage to cross $x=0$ by time $T$.
+
+Again it is easiest to conduct the necessary calculus after Laplace transforming. This gives 
+\be \tilde{\Lambda}(s) = \rho \int_0^\infty dx_i \int_0^\infty dx \tilde{P}(x+x_i,s).\ee
+The Laplace transform of the rate function therefore follows after integrating equation \ref{eq:laplaceapp} twice.
+
+Noting that $x+x_i$ is always positive,
+The first integration gives
+\begin{multline} \tilde{\Lambda}(s) = \rho \int_0^\infty dx_i \exp\Big[\frac{V(1-R)x_i}{2D}\Big]\\ 
+	\times\Big(\varphi \frac{1-R}{2R(s+k_E)} - \frac{\varphi}{R(s+k_E)} - \frac{2D(s+k)}{V^2R(1-R)(s+k_E)}\Big), \end{multline}
+and the second integration provides
+\begin{multline}  \tilde{\Lambda}(s) = -\frac{\rho \varphi D}{V R(s+k_E)}  + \frac{2\rho D\varphi}{VR(1-R)(s+k_E)} \\ + \frac{4\rho D^2(s+k)}{V^3R(1-R)^2(s+k_E)}. 
+	\label{eq:laplacefluxrate}\end{multline}
+
+Taking the inverse transform, converting the $s$ factor in the numerator of the last term to $\pt + \delta(t)$, and using the shift property gives \citep[e.g.][]{Arfken1985}
+\be \Lambda(t) = \rho \mathcal{L}^{-1}\Bigg\{ - \frac{\varphi D}{VR_\star s} + \frac{2D\varphi}{VR_\ast(1-R_\star)s} + \frac{4D^2\big( \cev{\pt} + k\big)}{V^3 R_\star(1-R_\star)^2s}\Bigg\}.\ee
+Here the notation $\cev{\pt}$ means the derivative acts from the left on all terms multiplying it (as in $f(t)\cev{\pt} g(t) = \pt [f(t)g(t)]$).
+
+After some work, using eq. \ref{eq:magic} and tabulated Laplace transform pairs \citep[e.g.][]{Arfken1985,Prudnikov1992a} to perform the inverse Laplace transforms, the net result for the rate constant is
 \begin{multline} 
-	\mu(t) = \int_0^t \mathcal{I}_0\Big(2\sqrt{k_Ek_Du(t-u)}\Big)e^{-k_E(t-u)-k_D u} \\
-	\times \Bigg[\sqrt{\frac{D}{\pi u}}\Big([\cev{\partial_t} + k]u-\frac{k_D}{2 k}\Big)e^{-V^2 u/4D} + \frac{V}{2}\Big([\cev{\partial_t} + k]u -\frac{k_D}{k}\Big) \erfc\Bigg(-\sqrt{\frac{V^2 u}{4D}}\Bigg)\Bigg] du.
+	\Lambda(t) = \rho \int_0^t \mathcal{I}_0\Big(2\sqrt{k_Ek_Du(t-u)}\Big)e^{-k_E(t-u)-k_D u} \\
+	\times \Bigg[\sqrt{\frac{D}{\pi u}}\Big([\cev{\partial_t} + k]u-\frac{k_D}{2 k}\Big)e^{-V^2 u/4D}  \\ + \frac{V}{2}\Big([\cev{\partial_t} + k]u -\frac{k_D}{k}\Big) \erfc\Bigg(-\sqrt{\frac{V^2 u}{4D}}\Bigg)\Bigg] du,
 \end{multline}
-Evaluating the derivatives and doing algebra gives finally
-\begin{multline}	\mu(t) = 
-	e^{-k_D t} \Bigg\{ \sqrt{\frac{Dt}{\pi}} e^{-V^2t/4D} + \frac{Vt}{2} \erfc\Bigg(-\sqrt{\frac{V^2 t}{4D}}\Bigg)\Bigg\} \\
-	+ e^{-k_E t} \int_0^t \mathcal{I}_0 \Big( 2\sqrt{k_E k_D u(t-u) } \Big) e^{-(k_D-k_E)u} \Bigg(\Big(k_D u-\frac{k_D}{2k}\Big) \sqrt{\frac{D}{\pi u}}e^{-V^2u/4D} + \frac{Vk_D}{2}(u-k^{-1})\erfc\Bigg[-\sqrt{\frac{V^2 u}{4D}}\Bigg] \Bigg)du
-	\\ 
-	+ e^{-k_E t} \int_0^t e^{-(k_D-k_E)u} \sqrt{\frac{k_Ek_Du}{t-u}}\mathcal{I}_1\Big( 2\sqrt{k_E k_D u(t-u) } \Big) \Bigg(\sqrt{\frac{Du}{\pi}}e^{-V^2u/4D} + \frac{Vu}{2}\erfc\Bigg[-\sqrt{\frac{V^2 u}{4D}}\Bigg] \Bigg)du
-\end{multline}
-This one was hard work... that $k_D/k$ term multiplying $\mci_0$ was a pain and depends sensitively on getting the correct initial conditions at the starting point.
+as reported in equation \ref{eq:fluxy}.
+
+\label{sec:fluxlimits}
+Equation \ref{eq:fluxy} is difficult to work with. To explore the behavior at extreme values of the observation time $T$, one can apply Tauberian theorems \citep[e.g.][]{Weiss1994} to invert the Laplace-transformed rate function of equation \ref{eq:laplacefluxrate} at the opposite extreme of $s$.
+	
+For example, at short times, expanding equation \ref{eq:laplacefluxrate} as $s\rightarrow \infty$ gives
+\be \tilde{\Lambda}(s) = \frac{\rho k_E V}{2 k s^2} + \frac{\rho k_E}{k}\sqrt{\frac{D}{4 s^3}} \ee
+which inverts to
+\be \Lambda(t) \sim \frac{\rho k_E V T}{2 k} + \frac{\rho k_E}{k}\sqrt{\frac{D T}{\pi}},\ee
+giving the small $T$ behavior.
+This has two scaling limits within it. Provided that $T \ll 4D/V^2/\pi < 2 D/V^2$, the scaling goes as $\Lambda(T) \sim T^{-1/2}$. But if $T\gg 4D/V^2/\pi$, it goes as $\Lambda(t) \sim T$.
+
+For large times, taking $s\rightarrow 0 $ gives
+\be \tilde{\Lambda}(s) = \frac{\rho k_E V }{ks^2}, \ee
+and this inverts to $\Lambda(T) = \rho k_E V T/k$ as the long time solution, providing a mean flux equivalent to the Einstein model (sec. \ref{sec:lisle}).
+These limits are summarized in equation \ref{eq:fluccolimitcases}.
