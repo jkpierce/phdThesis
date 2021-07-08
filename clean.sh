@@ -27,5 +27,4 @@ rm -f diss.toc
 rm -f ch6conc.aux
 rm -f ch6conc.log
 rm -f ch5langevin.aux
-rm -r ch5langevin.log
 

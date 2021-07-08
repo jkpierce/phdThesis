@@ -76,6 +76,10 @@ Merging these ideas with those of \citet{Ancey2008} produces expressions for the
 	&R_{MO}(n-1|n) =\gamma n && &\text{migration out} \label{eq:rate4}.
 \end{align}
 In equations (\ref{eq:rate2}) and (\ref{eq:rate3}), $\kappa$ is a coupling constant between bed elevations and the entrainment and deposition rates.
+$\kappa$ is referred to as a coupling constant since it controls the strength of this feedback. I will later demonstrate the relationship
+\begin{equation}\kappa \approx \big(\frac{z_1}{2l}\big)^2 \label{eq:active}
+\end{equation}
+where $l$ is a characteristic length scale of bed elevation change that can be interpreted as the active layer depth \citep{Wong2007,Church2017}.
 $\nu$ is the rate of migration into the control volume, $\lambda$ is the conventional entrainment rate, $\mu$ is the collective entrainment rate, $\sigma$ is the deposition rate, and $\gamma$ is the rate of migration out of the control volume.
 At $m=0$, these equations reduce to those of the \citet{Ancey2008} model.
 Away from this elevation, entrainment and deposition are alternatively suppressed or enhanced depending on the sign of $m$, constituting a feedback between bed elevations and erosion / deposition.
@@ -110,10 +114,10 @@ The difficulty originates from the product terms between $n$ and $m$ representin
 
 Because the model is Markovian, it is nevertheless possible to numerically simulate equation (\ref{eq:elemaster}) with the Gillespie algorithm \citep{Gillespie1977, Gillespie1991, Gillespie2007}. 
 In conditions when the coupling constant $\kappa$ between the entrainment/deposition rates and the bed elevation is weak, it is also possible to solve the master equation approximately with mean field and Fokker-Planck approaches \citep{Haken1978,Gardiner1983}.
-The Gillespie simulation algorithm is described below in \ref{sec:numerical}, while these analytical approximations are described in \ref{sec:analytical}.
+The Gillespie simulation algorithm is described below in \ref{sec:elenumerical}, while these analytical approximations are described in \ref{sec:eleanalytical}.
 
 \subsection{Numerical study of the joint model}
-\label{sec:numerical}
+\label{sec:elenumerical}
 
 The Gillespie algorithm takes advantage of the defining property of a Markov process: when transition rates are independent of history, time intervals between transitions are
 exponentially distributed \citep{Cox1965}.
@@ -148,7 +152,7 @@ In all simulations, I took the packing fraction $\phi = 0.6$ -- a typical value 
 Each simulation was run for $250$ hours of virtual time, a period selected to ensure convergence of particle activity and bed elevation statistics.
 
 \subsection{Approximate solutions of the joint model}
-\label{sec:analytical}
+\label{sec:eleanalytical}
 
 The $n$ and $m$ dynamics in equation (\ref{eq:elemaster}) can be approximately decoupled using the inequality $l \gg z_1$ (equivalently $\kappa \ll 1$) which holds for large values of the active layer depth $l$.
 These inequalites mean many entrainment or deposition events are required for an appreciable change in the entrainment or deposition rates.
@@ -195,7 +199,7 @@ As I show in the supplementary information, introducing this closure equation to
 \begin{equation} M(m) \approx M_0 e^{-2\kappa m^2}, \label{eq:ou2}\end{equation}
 representing a Gaussian distribution with variance $\sigma_m^2 = \frac{1}{4\kappa}$ -- smaller than the former mean field theory by a factor of two and in agreement with the result posited in equation (\ref{eq:active}).
 $M_0$ is a normalization constant. 
-As we will demonstrate, this closure equation approach shows good coorespondence with numerical solutions of equation (\ref{eq:elemaster}), at least for the flow parameters in table \ref{tab:anceyparams}.
+This closure equation approach shows good coorespondence with numerical solutions of equation (\ref{eq:elemaster}), at least for the flow parameters in table \ref{tab:anceyparams}.
 
 \section{Results}
 \label{sec:eleresults}
@@ -241,7 +245,7 @@ The coupling between bed elevation changes and the erosion and deposition rates 
 	\caption{The shifts between particle activity moments conditioned on instantaneous elevations and their over-all mean values. Panel (a) indicates the mean particle activity shift versus the bed elevation measured in units of $\sigma_z=l$. This shift displays asymmetric dependence on $m$ at the flow conditions of the \citet{Ancey2008} experiements, and departures of the bedload transport mean can be as much as 60\% when the bed is in a severely degraded state with $z\approx -3l$. The closure equation (\ref{eq:closure}) is plotted in panel (a) Panel (b) demonstrates a more symmetrical variance shift with some dependence on flow conditions displaying shifts of up to 20\% with bed elevations. These results indicate that bedload statistics measurements on short timescales could be severely biased by departures from the mean bed elevation.}
 	\label{fig:condmoms}
 \end{figure}
-Figure (\ref{fig:condmoms}a) demonstrates that the flow conditions in table \ref{tab:anceyparam} support departures of the mean particle activity by as much as 60\% from the overall mean value when the bed is in a degraded state $z\approx -3l$, and the activity can be decreased by 20\% when the bed is in an aggraded state.
+Figure (\ref{fig:condmoms}a) demonstrates that the flow conditions in table \ref{tab:anceyparams} support departures of the mean particle activity by as much as 60\% from the overall mean value when the bed is in a degraded state $z\approx -3l$, and the activity can be decreased by 20\% when the bed is in an aggraded state.
 The closure model (\ref{eq:closure}) used to derive the approximate bed elevation distribution (\ref{eq:ou2}) is plotted behind the conditional mean profiles in figure (\ref{fig:condmoms}a), where it appears to be crude approximation, as it does not capture the asymmetry.
 Nevertheless, figure \ref{fig:var} demonstrates the variance $1/(4\kappa)$ derived from this closure equation is representative of the numerical relationship.
 For the parameters of the \citet{Ancey2008} experiments, figure (\ref{fig:condmoms}b) displays a variance shift with bed elevation changes that is less severe than the mean shift but is nevertheless appreciable, with bed elevations changing the magnitude of bedload activity fluctuations by as much as 20\%.
@@ -337,7 +341,7 @@ Many other statistical characteristics of bedload transport have been left for f
 For example, the dependence of bedload transport \citep{Saletti2015,Singh2009} and bed elevation statistics \citep{Aberle2006, Singh2009,Singh2012} on the spatial and temporal scales over which they are observed is an emerging research topic which was previously referenced in section \ref{sec:renewal}.
 Whether bed elevation distributions are also scale-dependent like the sediment flux distribution of chapter \ref{ch:flux} is an interesting question for future research.
 
-\section{Summary and conclusion}
+\section{Summary}
 \label{sec:eleconclusion}
 
 This chapter presented a stochastic model for particle activity and local bed elevations including feedbacks between elevation changes and sediment transport.

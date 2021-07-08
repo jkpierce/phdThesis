@@ -46,9 +46,9 @@ Below, I develop and solve the model in section \ref{sec:model}. Then, I discuss
 \label{sec:model}
 \subsection{Assumptions of the burial model}
 \label{sec:assumptions}
-Here I construct a three-state random walk where the states are motion, surface rest, and burial. These states are labelled as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
+Particle trajectories are formulated as a three-state random walk where the states are motion, surface rest, and burial. These states are labelled as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
 The target is the probability distribution $p(x,t)$ to find a grain at position $x$ and time $t$ if it is known to have started with the initial distribution $p(x,0)=\delta(x)$.
-Times spent moving or resting on the surface are characterized by exponential distributions $\psi_2(t)=k_2e^{-k_2 t}$ and $\psi_1(t) = k_1e^{-k_1t}$, since numerous experiments show thin-tailed distributions for these quantities \citep{Fathel2015,Roseberry2012,Einstein1937,Ancey2006,Martin2012}. We expect our conclusions will not be contingent on the specific distributions chosen, since all thin-tailed distributions provide similar diffusion characteristics in random walks \citep{Weiss1994,Weeks1998}.
+Times spent moving or resting on the surface are characterized by exponential distributions $\psi_2(t)=k_2e^{-k_2 t}$ and $\psi_1(t) = k_1e^{-k_1t}$, since numerous experiments show thin-tailed distributions for these quantities \citep{Fathel2015,Roseberry2012,Einstein1937,Ancey2006,Martin2012}. The end results will not be contingent on the specific distributions chosen, since all thin-tailed distributions provide similar diffusion characteristics in random walks \citep{Weiss1994,Weeks1998}.
 Grains in motion are considered to have a characteristic velocity $V$ \citep{Lisle1998,Lajeunesse2017}, and burial is modelled as long lasting enough to be effectively permanent \citep{Wu2019}, with grains resting on the surface having a probability per unit time $\kappa$ to become buried.
 This means $\Phi(t) = e^{-\kappa t}$ represents the probability that a grain is not buried after resting for a time $t$, while $1-\Phi(t)$ represents the probability that it is buried.
 The initial conditions are specified with probabilities $\theta_1$ and $\theta_2$ to be in rest or motion at $t=0$. Normalization requires $\theta_1+\theta_2=1$.
@@ -104,7 +104,7 @@ When grains become buried, as in panel (b) of figure \ref{fig:diffpdfs},  the Q-
 
 \subsection{Downstream diffusion}
 
-To obtain an analytical formula for tracers diffusing downstream while they gradually become buried, we derive the first two moments of position by taking derivatives with respect to $\eta$ of the Laplace space distribution (\ref{eq:diffnicedist}) using an approach similar to \citet{Shlesinger1974} and \citet{Weeks1998}, and these moments produce the positional variance $\sigma_x^2 = \bra x^2\ket - \bra x \ket^2$. 
+To obtain an analytical formula for tracers diffusing downstream while they gradually become buried, the first two moments of position are derived by taking derivatives with respect to $\eta$ of the Laplace space distribution (\ref{eq:diffnicedist}) using an approach similar to \citet{Shlesinger1974} and \citet{Weeks1998}. These moments produce the positional variance $\sigma_x^2 = \bra x^2\ket - \bra x \ket^2$. 
 The first two moments are
 \begin{align}
 	\bra x(t) \ket &= A_1 e^{(b-a)t}+B_1e^{-(a+b)t}+C_1, \label{eq:mean}\\
@@ -202,7 +202,7 @@ Within random walk theory, sophisticated descriptions of transport with variable
 Meanwhile, in bedload transport research, variable velocities \citep{Lajeunesse2010,Furbish2012,Heyman2016}, correlated motions \citep{Heyman2014,Lee2018,Saletti2020}, and anomalous diffusion \citep{Fathel2016,Bradley2017,Schumer2009} constitute open research issues.
 I believe further developing the linkage between existing bedload models and random walk concepts could rapidly progress our understanding.
 
-\section{Conclusion}
+\section{Summary}
 \label{sec:conclusion}
 In this chapter, I developed a random walk model to describe sediment tracers transporting through a river channel as they gradually become buried, providing a physical description of the local, intermediate, and global diffusion ranges identified by \citet{Nikora2002}.
 Pushing their ideas somewhat further, I followed \citet{Hassan2017} to propose a geomorphic range to describe diffusion characteristics at timescales larger than the global range when burial and exhumation both moderate downstream transport.

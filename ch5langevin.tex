@@ -33,20 +33,20 @@ A physical description for the full range of experimentally-observed bedload vel
 
 In this chapter I explore the possibility that the shape of the particle velocity distribution is controlled by momentum dissipation during particle-bed collisions.
 In the theory of granular gases, dissipative collisions are known to cause departures toward an exponential velocity distribution from the ideal Gaussian form expected from perfectly elastic collisions \citep{Brilliantov2004}.
-Gas theory formulates particle-particle collisions as a nonlocal integral within the master equation for the probability distribution of particle velocity called the Boltzmann equation \citep{Chapman1970,Landau1980}.
+Gas theory formulates particle-particle collisions as a nonlocal integral within the master equation for the probability distribution of particle velocity called the Boltzmann equation \citep{Landau1969,Chapman1970}.
 Collisions in these models involve episodic kicks to the particle momenta at random times, parameterized by billiard ball-like models of the underlying rigid body dynamics \citep[e.g.][]{Brach1989}.
 In contrast, current stochastic models of bedload transport appear highly simplified, treating collisions instead with static Coulomb or velocity-dependent drag.
 
 Taking inspiration from granular gas theory, I develop in this chapter an improved model for sediment grains in transport, including episodic particle-bed collisions.
 The driving motivation is to test the hypothesis that particle-bed collision characteristics can explain the range of experimentally-observed streamwise bed load particle velocity distributions.
 A secondary one is to introduce more realistic forces into earlier stochastic descriptions of individual bed load particle dynamics. 
-I develop the model and explain its key assumptions in section \ref{sec:langlangmodel}. Then I present the analytical solution of the model and other major results in \ref{sec:langresults}. Finally I discuss the implications of these results, summarize key findings, and suggest ideas for further research in sections \ref{sec:langdiscussion} and \ref{sec:langconclusion}.
+I develop the model and explain its key assumptions in section \ref{sec:langmodel}. Then I present the analytical solution of the model and other major results in \ref{sec:langresults}. Finally I discuss the implications of these results, summarize key findings, and suggest ideas for further research in sections \ref{sec:langdiscussion} and \ref{sec:langconclusion}.
 
 
 \section{Mechanistic description of particle velocities}
 \label{sec:langmodel}
 
-Figure \ref{fig:1} indicates the configuration of the model in this chapter.
+Figure \ref{fig:fig1} indicates the configuration of the model in this chapter.
 Nearly spherical cohesionless particles of diameter $d$ and mass $m$ move as bed load down a slope inclined at an angle $\theta$ in a steady turbulent shear flow.
 The flow is just strong enough to drive grains into the rarefied transport typical in gravel-bed rivers: particles saltate downstream through a sequence of particle-bed collisions. 
 Moving particles collide often with stationary particles, but rarely with other moving particles.
@@ -56,8 +56,8 @@ The objective is to calculate the probability distribution $P(u)$ of this downst
 I include the most realistic article-bed collision and fluid forces possible while still allowing for analytical solutions. 
 
 \subsection{Episodic collisions}
-Collision forces dissipate streamwise momentum, partly by converting it to vertical, lateral, or rotational momentum, and partly by deforming particles and generating heat \citep{Schmeeckle2014,Williams2021}.
-The microscopic details of particle-particle collisions have been thoroughly studied \citep{Brach1989, Lorenz1997,Montaine2011}. Here, we introduce a simple elasticity parameter $\varepsilon$ as a first stab at the problem, as indicated in figure \ref{fig:1}. This elasticity characterizes the fraction of downstream momentum lost in a collision. If the streamwise velocity just prior to a collision is $u$, just after the collision it becomes $\varepsilon u$. The elasticity ranges from $\varepsilon=0$, representing a completely inelastic collision, to $\varepsilon=1$, representing a completely elastic collision.
+Collisions between bedload particles dissipate momentum, partly by converting it to vertical, lateral, or rotational momentum, partly by deforming particles and generating heat \citep{Schmeeckle2014,Williams2021}, and partly by pressurizing the fluid \citep{Joseph2001,Schmeeckle2001}. 
+The microscopic details of particle-particle collisions have been thoroughly studied \citep{Brach1989, Lorenz1997,Montaine2011}. Here, we introduce a simple elasticity parameter $\varepsilon$ as a first attempt at the problem, as indicated in figure \ref{fig:fig1}. This elasticity characterizes the fraction of downstream momentum lost in a collision. If the streamwise velocity just prior to a collision is $u$, just after the collision it becomes $\varepsilon u$. The elasticity ranges from $\varepsilon=0$, representing a completely inelastic collision, to $\varepsilon=1$, representing a completely elastic collision.
 \begin{figure}
 	\centerline{\includegraphics{./figures/ch5/Fig1Concept.png}}
 	\caption{Definition sketch of rarefied sediment transport with turbulent fluid drag and particle-bed collision forces. During saltation, pre-collisional streamwise velocities $u$ are transformed to postcollisional velocities $\ve u < u$.}
@@ -78,7 +78,7 @@ These forces have been calculated analytically from the Navier-Stokes equations 
 At realistic $\Re_p$, analytical results are inaccessible, so it is standard to include empirical corrections to the small $\Re_p$ formulas \citep{Schmeeckle2007,Clift1978}.
 A dominant contribution to the downstream drag force $F_D$ on nearly spherical particles at large $\Re_p$ can be written $F_D = \frac{\pi}{8}
 \rho_f d^2 C_D(\Re_p) |V|V$, where $\rho_f$ is the fluid density, $d$ is the particle diameter, $C_D(\Re_p)$ is an empirical drag coefficient, and $V = U-u$ is the slip velocity between the fluid ($U$) and particle ($u$) velocities \citep{Coleman1967, Schmeeckle2007, Dwivedi2012}.
-In the present model I set $C_D = \frac{24}{\Rey_p}( 1 + 0.194 \Rey_p^{0.631})$ \citep{Clift1978,Gonzalez2017}, and I leave out acceleration and history terms for analytical tractability, although they are certainly relevant in coarse sediment transport \citep{Michaelides1997,Armenio2001}.
+In this study, I leave out acceleration and history terms for analytical tractability, although they are certainly relevant in coarse sediment transport \citep{Michaelides1997,Armenio2001}.
 
 Drag forces have been argued to fluctuate rapidly compared to the inertial response times of submerged grains \citep{Fan2014}, and the magnitude of drag fluctuations has been observed to follow a Gaussian distribution \citep{Hofland2006,Schmeeckle2007,Dwivedi2010,Celik2014}.
 These ideas allow two major simplifications of the above drag force.
@@ -153,7 +153,8 @@ The second moment is
 leading to the velocity variance ($\sigma_u^2 = \bra u^2 \ket - \bra u \ket ^2 $)
 \be \sigma_u^2 = \frac{2 d + \gamma^2}{1-\ve^2}. \label{eq:varu}\ee
 This result demonstrates that velocity fluctuations originate from both the steady and fluctuating components of the flow forces, yet the variance is linear in these factors and is therefore relatively insensitive to the fluid flow.
-In contrast, particle velocity fluctuations depend sharply on the parameters representing particle-bed collisions, suggesting collisions are a leading control on particle velocity fluctuations.
+This is consistent with the remarkable similarities sometimes visible between viscous and turbulent flow experiments \citep[e.g.][]{Charru2004,Lajeunesse2010}.
+In contrast, particle velocity fluctuations in equation \ref{eq:varu} depend sharply on the parameters representing particle-bed collisions, suggesting collisions are the leading control on particle velocity fluctuations.
 
 Figure \ref{fig:fig2} depicts the velocity characteristics of particles for different realizations of the fluid and collisional forces.
 \begin{figure}
@@ -180,7 +181,7 @@ The exponential limit of \ref{eq:steadystate} as $\ve \rightarrow 0$ is easy to 
 \be P(u) = \frac{d}{\sqrt{\gamma^2 + 4d}}e^{\frac{\gamma u }{2 d} - \frac{\sqrt{\gamma^2 + 4 d}|u|}{2d}}. \ee
 Thus, for bed load transport conditions with typically very inelastic particle-bed collisions, we can expect exponential-like velocities and large deviations from a Gaussian behavior.
 
-The Gaussian limit as $\ve \rightarrow 1$ of \ref{eq:steadystate} is more difficult to evaluate. The challenge is that the statistical moments \ref{eq:mean} and \ref{eq:2ndmom} diverge at the same time as the denominator factors of the distribution \ref{eq:steadystate}. In appendix \ref{sec:langappendixB} I return instead to the original equation \ref{eq:governer} to evaluate this elastic limit, obtaining
+The Gaussian limit as $\ve \rightarrow 1$ of \ref{eq:steadystate} is more difficult to evaluate. The challenge is that the statistical moments \ref{eq:mean} and \ref{eq:varu} diverge at the same time as the denominator factors of the distribution \ref{eq:steadystate}. In the appendix section \ref{sec:langextremes} I return instead to the original equation \ref{eq:governer} to evaluate the completely elastic limit, obtaining
 \be P(u) = \frac{1}{\sqrt{2\pi\sigma_u^2}}e^{-\frac{(u-\bar{u})^2}{2\sigma_u^2}}. \label{eq:gaussian}\ee
 This result is identical to the velocity distribution derived by \citet{Ancey2014}, up to notation.
 
@@ -189,12 +190,16 @@ This result is identical to the velocity distribution derived by \citet{Ancey201
 
 A variety of velocity distributions have been observed in bedload transport experiments, ranging from exponential to Gaussian in shape. 
 This section compares these with the theoretical result eq. \ref{eq:steadystate}.
-Comparing eq. \ref{eq:steadystate} with experimental data requires values for the steady component of the drag force $\Gamma$, the particle mass $m$, the magnitude of turbulent drag fluctuations $D$, the rate of particle-bed collisions $\nu$, and the most common fraction of momentum $\varepsilon$ dissipated in each collision.
+Comparing eq. \ref{eq:steadystate} with experimental data requires values for the steady component of the drag force $\Gamma$, the particle mass $m$, the magnitude of turbulent drag fluctuations $D$, the rate of particle-bed collisions $\nu$, and the mode elasticity of collisions $\varepsilon$.
 
-Below, I compare this formula with the results of six different experiments.
+This section compares eq. \ref{eq:steadystate} with the results of six different experiments.
 In each case, the particle mass is computed from experimental parameters assuming spherical sediment as $m = \pi \rho_s d^3/6$, where $\rho_s$ is the sediment density and $d$ is the particle diameter. The steady component of the drag force is estimated as
 \be \Gamma =  \frac{\pi}{8}\rho C_D(\Rey_p) d^2 u_\ast^2,\ee
-where $\rho$ is the fluid density, $C_D(\Rey_p)$ is the drag coefficient dependent on particle Reynolds number, and $u_\ast$ is the shear velocity of the flow, considered as a proxy for the average slip velocity between moving particles and the flow. The magnitude $D$ of turbulent fluctuations is eliminated with the mean and variance of the particle velocity. The remaining coefficients in the model, the dissipation per collision $\ve$ and the collision rate $\nu$,, are treated as calibration parameters and are tuned to provide best fit between the distribution \ref{eq:steadystate} and the experimental data.
+where $\rho$ is the fluid density and $C_D(\Rey_p)$ is the drag coefficient, given as \citep{Clift1978,Gonzalez2017}
+\be C_D = \frac{24}{\Rey_p}( 1 + 0.194 \Rey_p^{0.631}). \ee
+Particle Reynolds numbers are estimated using the shear velocity: $\Rey_p= u_\ast d/nu$. 
+
+The magnitude $D$ of turbulent fluctuations is eliminated with the mean and variance of the particle velocity. The remaining coefficients in the model, the dissipation per collision $\ve$ and the collision rate $\nu$, are treated as calibration parameters and are tuned to provide best fit between the distribution \ref{eq:steadystate} and the experimental data.
 
 The parameters for each experiment and the best-fit calibration parameters are collated in table \ref{tab:calib}, while the results of fitting the model to the available experimental data are shown in figure \ref{fig:fig4ch5}.
 \begin{table}
@@ -214,7 +219,7 @@ The parameters for each experiment and the best-fit calibration parameters are c
 		\label{tab:calib}
 	\end{center}
 \end{table}
-In every case, good agreement is obtained between the theoretical and empirical velocity disributions, suggesting that the Langevin model \ref{eq:langevin} captures most of the underlying physics.
+In every case, good agreement is obtained between the theoretical and empirical velocity disributions, suggesting that the Langevin model \ref{eq:langevin} captures the essential physics.
 \begin{figure}
 	\centerline{\includegraphics{./figures/ch5/Fig4expComparison.png}}
 	\caption{This figure compares the available experimental data on velocity distributions and the theoretical velocity distribution \ref{eq:steadystate} with parameters $\nu$, $\varepsilon$, and $D$ treated as calibration parameters. In all cases there is good agreement, indicating that the model is capable of the range of distributions exhibited by the experimental data.} \label{fig:fig4ch5}
@@ -224,12 +229,50 @@ In every case, good agreement is obtained between the theoretical and empirical 
 \section{Discussion}
 \label{sec:langdiscussion}
 
-Here, I developed a Langevin description of bed load sediment transport which includes episodic collisions between particles and the bed.
-The model relates the shape of the instantaneous streamwise particle velocity distribution to the elasticity of particle-bed collisions,
-generalizes earlier approaches available in the literature which did not treat episodic collisions \citep{Ancey2014,Fan2014}, and provides a new physical explanation for the different streamwise sediment velocity distributions resolved in experiments.
-Although in reality, the turbulent forces on moving sediment particles vary in a complex spatio-temporal way, we have approximated the fluid forces on bed load particles as spatially uniform Gaussian white noise. Even though the non-Gaussian aspects of fluid turbulence certainly do impact sediment entrainment \citep{Cameron2020,Celik2014}, this flow model appears more or less justified since sediment transport experiments provide similar velocity distributions regardless of whether the flow is viscous or turbulent \citep{Lajeunesse2010, Charru2004}, and since particle relaxation times are typically long compared to the timescales of turbulent fluctuations \citep{Hofland2006,Schmeeckle2007,Nakagawa1981}.
-We modelled particle-bed collision forces as a sequence of instantaneous impulses where the intervals between successive collisions were characterized as exponential random variables. The effect of each collision on the streamwise particle velocities was parameterized by a restitution-like coefficient.
-Although such approximate descriptions of particle-particle collisions are common in the theory of granular gases, the setting here is somewhat different than grains in air. Because particles within a viscous flow in general interact at a distance, we should expect the collision model will become poor when the time between subsequent collisions becomes small. Therefore, although the model seems appropriate for saltation, it should be critically examined for ``reptation", when the times between subsequent particle-bed collisions are short. Of course, more realistic flow and collision forces could always be incorporated into Langevin equations for bed load transport, although these might require numerical methods for their solution. The theory of granular gases provides some indication of the types of more nuanced collision models which are possible \citep{Brilliantov2004}.
+In this final chapter I developed a Langevin description of bed load sediment transport which includes episodic collisions between particles and the bed.
+The model relates the shape of the instantaneous streamwise particle velocity distribution to the elasticity of particle-bed collisions.
+This work generalizes earlier approaches available in the literature which did not treat episodic collisions \citep{Ancey2014,Fan2014}, and provides a new physical explanation for the different streamwise sediment velocity distributions resolved in experiments.
+
+Although in reality, the turbulent forces on moving sediment particles vary in a complex spatio-temporal way, I have approximated the fluid forces on bed load particles as spatially uniform Gaussian white noise. Even though the non-Gaussian and history-dependent aspects of fluid turbulence certainly do impact sediment entrainment \citep{Cameron2020,Celik2014}, this flow model appears more or less justified since sediment transport experiments provide similar velocity distributions regardless of whether the flow is viscous or turbulent \citep{Lajeunesse2010, Charru2004}, and since particle relaxation times are typically long compared to the timescales of turbulent fluctuations \citep{Hofland2006,Schmeeckle2007,Nakagawa1981}.
+
+The model developed in this chapter described particle-bed collision forces as a sequence of instantaneous impulses in an approach that is reminiscent of the kinetic theory of gases \citep{Landau1969}.
+The effect of each collision on the streamwise particle velocities was described by a simple elasticity-like coefficient.
+Although such approximate descriptions of particle-particle collisions are common in the theory of granular gases, the elasticity coefficient introduced here is not equivalent to the ``coefficient of restitution" typically applied in granular gas theory.
+The coefficient of resitution is defined normal to the contact plane of two particles during a collision, and it characterizes energy loss due to deformation of the colliding particles in the absence of a viscous fluid \citep{Brach1992,Ismail2008}.
+
+In bedload transport, colliding particles are submerged in a viscous fluid, and this introduces additional damping processes besides particle deformation \citep{Joseph2001,Yang2006,Schmeeckle2001}.
+The model developed here did not consider these viscous forces, nor did it explicitly model the geometry of collisions, as $\ve$ was defined as a parameter applying to the downstream velocity only.
+Thus, although I have included episodic particle-bed collisions in a stochastic sediment transport model for the first time, the key parameter ($\ve$) in this formulation has a rather heuristic character and is not clearly related to the coefficient of restitution from granular gas theory.
+Future studies should formulate particle-bed collisions in stochastic sediment transport models considering more details of collision geometry \citep{Sekine1992}, fluid-particle interactions \citep{Marshall2011}, and traditional restitution \citep{Brach1989} using the present study as a starting point. 
+
+\subsection{Does the velocity distribution depend on particle size?}
+
+Several researchers have considered why particle velocity distributions differ from one experiment to the next.
+One prevailing view is that it relates to flow hydraulics \citep{Wu2020}. Many of the experiments producing Gaussian velocity distributions were conducted in supercritical flows \citep[e.g.][]{Heyman2016,Martin2012,Ancey2014}, whereas many producing exponential distributions were conducted in subcritical flows \citep[e.g.][]{Fathel2015,Charru2004,Seizilles2014}.
+However several experiments run counter to this hypothesis.
+The experiments of \citet{Lajeunesse2010} produced distinctly exponential velocity distributions in flows well within the supercritical regime ($\Fro=1.5$), whereas \citet{Liu2019} produced Gamma-like distributions in the subcritical regime ($\Fro=0.3$).
+
+An alternative viewpoint, formulated in this chapter, is that the shape of the velocity distribution originates from granular interactions.
+Particle size enters the Langevin model \ref{eq:langevin} explicitly within the steady component of the drag, but it may also enter implicitly through the elasticity parameter $\ve$.
+The analytical velocity distribution \ref{eq:steadystate} was fit to six different experimental datasets in figure \ref{fig:fig4ch5}, and the best fit parameters required to for these fits were presented in table \ref{tab:calib}.
+These fit parameters suggest collisions are generally less elastic for smaller particle sizes, whereas they are more elastic for larger particle sizes. This suggests that the amount of momentum dissipated by collisions may depend on particle size.
+
+Because the elasticity $\ve$ lumps together collision geometry and dissipation effects, it is challenging to attribute the increasing relationship between elasticity and particle size evident in table \ref{tab:calib} directly to particle size.
+Yet this would be consistent with experiments of idealized particle collisions in viscous fluids. These demonstrate that momentum dissipation varies sharply with particle size, being more elastic for large particles, and less elastic for small particles \citep{Joseph2001,Yang2006,Schmeeckle2001}, exactly like the trend in the table.
+A definite conclusion that particle size controls the shape of the bedload velocity distribution requires additional experimental and theoretical study. This chapter nevertheless produces suggestive ideas.
+
+\section{Summary}
+\label{sec:langconclusion}
+This chapter has presented a Langevin description of individual bedload particles saltating downstream through episodic collisions.
+The model suggests that episodic particle-bed collisions control the shape of the particle velocity distribution, and it is the first model to describe the full range of bedload velocity distributions that have been reported in experimental studies.
+
+This work hints that particle size, and not flow hydraulics, may be primarily responsible for the different bedload velocity distributions obtained in experiments, although future study is required for a definite conclusion.
+The next step is to build up the episodic collision model presented in this chapter to include the geometric details of particle-bed collisions.
+Such an effort would produce additional insight into the controls of transverse, vertical, and rotational movements on the downstream velocities of individual grains.
+
+\endinput
+
+
 
 Sediment transport experiments reveal correlations between particle size and the shape of the bed load velocity distribution.
 Experiments with smaller particles tend to give exponential distributions, and those with larger particles give Gaussian distributions.
@@ -241,21 +284,6 @@ In experiments relating restitution coefficient to Stokes number for idealized c
 Although collision geometry and grain shape certainly complicate the narrative, these values of $St$ are consistent with our model conclusion that the shape of the particle velocity depends on the elasticity of collisions.
 
 In real channels, grain sizes often span a wide range. A major implication of the dependence of the shape of the particle velocity distribution on grain size is that different grain sizes in a mixture will impart distinct fluctuation signatures to the overall bulk transport rate. Even in the absence of sorting effects and differential mobility, smaller grains can be expected to carry more control over the largest fluctuations in the overall transport rate, since their velocity distributions have wider tails. 
-
-\subsection{Implications for landscape evolution}
-
-Many phenomena of landscape evolution depend on the velocities of individual grains.
-The erosion rates of bedrock rivers are for example parameterized by the impact velocities of individual sediment grains against the bedrock surface \citep{Sklar2004,Li2020,Turowski2021}, on which they have a sensitive dependence.
-It is not much of a stretch to imagine that bedrock erosion could be dominated by the largest impact velocities that originate from the extreme tail of the bedload velocity distribution. Here, we have shown that the weight of this tail depends sensitively on the dissipation characteristics of particle-bed collisions, suggesting that another feedback, that between dissipation and ... may be at play in the evolution of bedrock canyons.
-
-
-
-\section{Conclusion}
-\label{sec:langconclusion}
-We have demonstrated that particle-bed collisions control the shape of the particle velocity distribution.  
-
-
-\endinput
 
 Particle trajectories are a compromise between turbulent drag and momentum dissipation by particle-bed collisions \citep{Schmeeckle2014}. For particles submerged in a viscous fluid, the amount of momentum dissipated by collisions is controlled by the particle Stokes number ($\St$), which characterizes the balance of pre-collisional momentum against the viscous pressure generated in the squeeze film between approaching particles \citep{}. The Stokes number is defined by $\St = \rho_s V d/(9\nu \rho)$, where $\rho_s$ and $\rho$ are the solid and fluid densities, $V$ is the approach velocity, $d$ is the particle size, and $\nu$ is the fluid viscosity. Momentum dissipation in submerged collisions shows a sharp dependence on $\St$ \citep{Joseph2001, Schmeeckle2001}, and hence also the particle size. This suggests particle size may have a nontrivial control over bedload velocity distributions.
 

@@ -11,29 +11,32 @@ The SSA hinges on the defining property of a Markov process. When the transition
 The following sections demonstrate that the time intervals $\tau$ between subsequent transitions are exponentially distributed within the model of chapter \ref{ch:ch3}. The SSA follows as a consequence of this property.
 
 \subsection{Times between transitions of any kind}
-Our joint stochastic description of bedload and bed elevation changes is characterized by a set of states $(n,m)$ where $n$ and $m$ are positive integers. 
-Our description involves four possible transitions (migration in, entrainment, deposition, migration out) with rates given in equations (2-5) in the main text.
+The joint description of bedload transport and bed elevation changes is characterized by a set of states $(n,m)$ where $n$ and $m$ are integers.
+The description involves four possible transitions (migration in, entrainment, deposition, migration out) with rates given in equations (\ref{eq:rate1}-\ref{eq:rate4}).
+
 From the state $(n,m)$, the rate (probability per unit time) for any transition to occur is the sum over all possibilities:
 \begin{multline} A(n,m) = R_{MI}(n+1,m|n,m) + R_E(n+1,m-1|n,m) \\+ R_D(n-1,m+1|n,m) + R_{MO}(n-1,m|n,m).\end{multline}
-Using this, the probability that no transition occurs from the state $(n,m)$ in a small time interval $\delta \tau$ is $1-A(n,m)\delta \tau$. If we denote by $Q(\tau|n,m)$ the probability density that a transition of any kind occurs from the state $(n,m)$ after a time $\tau$, we can express the probability density that a transition happens after a slightly larger time $\tau + \delta \tau$ as 
+Using this, the probability that no transition occurs from the state $(n,m)$ in a small time interval $\delta \tau$ is $1-A(n,m)\delta \tau$. If $Q(\tau|n,m)$ denotes the probability density that a transition of any kind occurs from the state $(n,m)$ after a time $\tau$, the probability density that a transition happens after a slightly larger time $\tau + \delta \tau$ can be written
 \be Q(\tau+\delta \tau|n,m) = \big[1-A(n,m)\delta \tau\big]Q(\tau|n,m).\ee
-This equation invokes the Markov property, since it does not involve the past history of states $(n,m)$. Taking $\delta\tau \rightarrow 0 $ we find the master equation $\frac{d}{d\tau}Q(\tau|n,m) = -A(n,m)Q(\tau|n,m)$, from which we conclude the time $\tau$ between subsequent transitions is distributed as 
+Taking $\delta\tau \rightarrow 0 $ produces a master equation $\frac{d}{d\tau}Q(\tau|n,m) = -A(n,m)Q(\tau|n,m)$, from which it follows that the time $\tau$ between subsequent transitions is distributed as 
 \be Q(\tau|n,m) = A(n,m)e^{-A(n,m)\tau}. \label{eq:exp}\ee
-Therefore we have shown the time $\tau$ to the next transition from a state $(n,m)$ is exponentially distributed with mean value $\bar{\tau} = 1/A(n,m).$ In deriving this result, we used the normalization condition $1 = \int_0^\infty Q(\tau|n,m)d\tau.$
-
-This result implies if the stochastic process transitioned to the state $(n,m)$ at a time $t$, the next transition will occur at a time $t+\tau$ with $\tau$ a random variable drawn from the exponential distribution \ref{eq:exp}.
-Therefore, we can determine the times between subsequent transitions by drawing exponentially distributed random numbers.
+This equation demonstrates that the time $\tau$ to the next transition from a state $(n,m)$ is exponentially distributed with mean value $\bar{\tau} = 1/A(n,m).$ This means if the stochastic process transitioned to the state $(n,m)$ at a time $t$, the next transition will occur at a time $t+\tau$ with $\tau$ a random variable drawn from the exponential distribution \ref{eq:exp}.
 
 \subsection{Selection of transitions that occur}
 
-So far, we have determined how to step the time from one transition to the next, but we have not specified how to step the state variables $n$ and $m$ at each transition time. 
-That is, we have not specified the type of transitions that occur at each time step.
-Intuitively, this will depend on the relative magnitudes of the rates from equations (2-5) in the main text: the transition with the highest rate is most likely to occur. This is formalized by generating the ratios
-\be S = \Bigg\{\frac{R_{MI}(n+1,m|n,m)}{ A(n,m)},\frac{R_E(n+1,m-1|n,m)}{ A(n,m)},\frac{R_D(n-1,m+1|n,m)}{ A(n,m)},\frac{R_{MO}(n-1,m|n,m)}{ A(n,m)}\Bigg\}. \label{eq:rel}\ee
-By construction, $\text{sum}\{S\}=1$.
-By forming cumulative sums of the four ratios, we partition the unit interval $[0,1]$ into four chunks, each associated with a transition -- either migration in, entrainment, deposition, or migration out. The transitions with the highest rates have the largest associated chunks. To randomly select the transition that occurs at a transition time, we draw a random number on $[0,1]$ and find which chunk it falls in.
+So far, equation \ref{eq:exp} demonstrates how to step the time from one transition to the next, but it remains unclear how to step the state variables $n$ and $m$ at each transition time. There is a need to characterize the type of transition which occurs at a given transition time.
 
-In summary, to step the process through a single transition, we draw the time interval to the next transition from the distribution (\ref{eq:exp}), then draw a uniform random from $[0,1]$ and use it to select the transition that occurs from the cumulative sum of the ratios in (\ref{eq:rel}). The SSA simply iterates this random number generation/selection process to generate exact realizations of the stochastic process: these are series of $n$ and $m$ through time from which we can calculate any statistics of interest.
+Intuitively, this will depend on the relative magnitudes of the rates from equations (\ref{eq:rate1}-\ref{eq:rate4}).
+The transition with the highest rate is most likely to occur.
+This is formalized by generating the ratios
+\begin{multline} S = \Bigg\{\frac{R_{MI}(n+1,m|n,m)}{ A(n,m)},
+	\frac{R_E(n+1,m-1|n,m)}{ A(n,m)},\\
+	\frac{R_D(n-1,m+1|n,m)}{ A(n,m)},
+	\frac{R_{MO}(n-1,m|n,m)}{ A(n,m)}\Bigg\}. \label{eq:rel} \end{multline}
+By construction, $\sum S=1$.
+Forming cumulative sums of the four ratios partitions the unit interval $[0,1]$ into four chunks, each associated with a transition -- either migration in, entrainment, deposition, or migration out. The transitions with the highest rates have the largest associated chunks. Drawing a random number on $[0,1]$ can then select the transition which occurs at a given transition time by querying which chunk it falls within.
+
+In summary, to step the process through a single transition, the SSA draws the time interval to the next transition from the distribution (\ref{eq:exp}), draws a uniform random from $[0,1]$, then uses this uniform random to select the transition that occurs from the cumulative sum of the ratios in (\ref{eq:rel}). Iterating this random number generation and selection process simulates exact realizations of the stochastic process. These are series of $n$ and $m$ through time from which any statistics of interest can be calculated.
 
 \subsection{Pseudo code for the Gillespie SSA}
 
@@ -73,8 +76,9 @@ Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model
 
 \subsection{Mean field solution of particle activity}
 
-By assuming the dynamics of the particle activity are totally independent of the bed elevation and summing equation (8) of the manuscript over all values of $m$, one can obtain the mean field equation for the particle activity: 
-\be 0 = \nu A(n-1) + [\lambda + \mu(n-1)]A(n-1) + \sigma(n+1)A(n+1)+\gamma(n+1)A(n+1)-(\nu  + \lambda + \mu n + \sigma n + \gamma n)A(n).\ee
+By assuming the dynamics of the particle activity are totally independent of the bed elevation and summing equation \ref{eq:elemaster} over all values of $m$ obtains a mean field equation for the particle activity: 
+\begin{multline} 0 = \nu A(n-1) + [\lambda + \mu(n-1)]A(n-1) + \sigma(n+1)A(n+1) \\
+	+\gamma(n+1)A(n+1)-(\nu  + \lambda + \mu n + \sigma n + \gamma n)A(n).\end{multline}
 This can be solved by introducing the generating function \citep{Cox1965} $G(x) = \sum_n x^n A(n)$, providing
 \be 0 = (\nu+\lambda)(x-1)G + [\mu x^2 + \sigma + \gamma - (\mu + \sigma + \gamma)x]\frac{\partial G}{\partial x},\ee
 which is separable and integrates for 
@@ -84,33 +88,33 @@ From the definition of $G$ it follows that $A(n) = \frac{1}{n!} \frac{d^nG}{dx^n
 
 \subsection{Mean field solution of bed elevations}
 
-The negative binomial distribution provides $\langle n |m \rangle = \langle n \rangle$, so equation (9) produces 
+The negative binomial distribution provides $\langle n |m \rangle = \langle n \rangle$, so equation \ref{eq:elemaster} produces
 \begin{multline} 0 = [\lambda + \mu \langle n \rangle][1+\kappa(m+1)]M(m+1) + \sigma \langle n \rangle [1-\kappa(m-1)]M(m-1) \\- \{[\lambda + \mu \langle n \rangle](1+\kappa m) + \sigma \langle n \rangle (1-\kappa m) \}M(m). \end{multline}
-Identifying $E=\lambda + \mu \langle n \rangle$ and $D = \sigma \langle n \rangle$ and incorporating $E=D$ gives equation (11) of the manuscript
+Identifying $E=\lambda + \mu \langle n \rangle$ and $D = \sigma \langle n \rangle$ and incorporating $E=D$ gives equation \ref{eq:ou}:
 \be 0 = [1+\kappa(m+1)]M(m+1) + [1-\kappa(m-1)]M(m-1) - 2M(m).\ee
-The \citet{Martin2014} Ornstein-Uhlenbeck model. 
 
 This can be solved using the Fokker-Planck expansion \citep{Gardiner1983} that effectively converts this discrete Master equation for $m$ into a diffusion equation for the quasi-continuous variable $z=z_1 m$ This works since $z_1$ is small. Introducing $z$ and writing $\overline{\kappa}=\kappa/z_1$ gives
 \be 0 = [1+\overline{\kappa}(z+z_1)]M(z+z_1) + [1-\overline{\kappa}(z-z_1)]M(z-z_1) - 2M(z).\ee
 $\overline{\kappa}$ should not depend on $z_1$ since the magnitude of the feedbacks between bed elevations and entrainment and deposition rates depends on elevation changes, and not on the size of grains or the length of the control volume.
 Expanding the entire first and second terms to second order $z_1$ provides the Fokker-Planck equation
 \be 0 = -2\overline{\kappa}z_1[zM(z)]' + z_1^2 M''(z). \ee
-Taking into account that this distribution should be normalizable, $\lim_{z\rightarrow \pm \infty}M(z) = 0$, we find
+Taking into account that this distribution should be normalizable, $\lim_{z\rightarrow \pm \infty}M(z) = 0$, the solution is
 \be M = M_0e^{-\kappa (z/z_1)^2}\ee
-as stated in the manuscript.
+as provided in chapter \ref{ch:ch3}.
 
 \subsection{Closure equation approach for bed elevations}
-This section produces an approximate relationship to close $\langle n | m \rangle$ in terms of $m$ valid to first order in $\kappa$.
+This section produces an approximate relationship to close
+$\langle n | m \rangle$ in terms of $m$ valid to first order in $\kappa$. Writing 
 \be \langle n | m \rangle \approx \langle n \rangle  - \kappa c m,\ee
-for the mean particle activity conditional to the elevation $m$ into into manuscript equation (9), noting $E=D$, and neglecting terms of $O(\kappa^2)$ provides 
+for the mean particle activity conditional to the elevation $m$ into \ref{eq:elemaster}, noting $E=D$, and neglecting terms of $O(\kappa^2)$ provides 
 \begin{multline} 0 \approx \Big[ 1+\kappa(m+1)\Big\{ 1-\frac{\mu c}{E}\Big\}\Big]M(m+1) + \Big[1-\kappa(m-1)\Big\{1+\frac{\sigma c}{E}\Big\}\Big]\\-\Big[2-\kappa m\Big\{\frac{(\sigma+\mu)c}{E}\Big\}\Big]M(m)
 \end{multline}
 At this point, $c$ is considered an undetermined positive constant that may depend on the entrainment, migration, and deposition rates.
 Taking the Fokker-Planck expansion and requiring the distribution $M(m)$ to vanish at infinity for normalization yields
 \be 0 = 2\kappa m \Big( 2 + \frac{(\sigma-\mu)c}{E}\Big)M(m) + \Big\{
 \Big[2-\kappa m \frac{(\sigma+\mu)c}{E} \Big]M(m)\Big\}'.\ee
-Finally, integrating, expanding to first order in $\kappa$, and exponentiating to solve for $M$, we find
+Finally, integrating, expanding to first order in $\kappa$, and exponentiating to solve for $M$ produces
 \be M(m) = M_0 \exp\Big\{-\kappa m^2 \Big[1 + \frac{(\sigma-\mu)c}{2E}\Big]\Big\}.\ee
-Since the numerical solutions show $\sigma_m^2 = \frac{1}{4\kappa}$, we determine the closure relation
+Since the numerical solutions show $\sigma_m^2 = \frac{1}{4\kappa}$, this suggests the closure relation
 \be \langle n | m \rangle = \langle n \rangle\Big( 1-\frac{2\kappa m}{1-\mu/\sigma}\Big) \ee
-corresponding to $c=2E/(\sigma-\mu)$. This is the closure relationship provided in equation (12) of the manuscript that is plotted with the numerical simulations in manuscript figure (4a).
+corresponding to $c=2E/(\sigma-\mu)$. This is the closure relationship provided in equation \ref{eq:closure} and plotted with the numerical simulations in figure \ref{fig:condmoms}.
