@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{arxiv}          % github user kourgeorge 
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}	    % fill rando text 
+\usepackage{graphicx}       % more control over graphics
+\usepackage{amsmath}        % math functionality 
+\usepackage{verbatim}	    % make comment blocks 
+\usepackage{wrapfig}        % make figures which text wraps 
+\usepackage{etoolbox}       % this is for generating block quotes
+\usepackage{bbm}            % to make an indicator \[ \mathbbm{1} \]
+\usepackage{mathtools}
+% \usepackage[math]{kurier}
+\usepackage{setspace}       % \onehalfspacing and \singlespacing
+\newcommand\be{\begin{equation}} % shortcut to start eq envs 
+\newcommand\ee{\end{equation}}   % shortcut to end eq envs
+\newcommand\ol{\overline}        % shortcut to draw overline 
+\newcommand\bra{\langle}
+\newcommand\ket{\rangle}
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{2010}{-} % support older LaTeX versions
+\AtBeginEnvironment{quote}{\singlespacing\small} % quote behavior
+
+\title{Birth-death models of bedload transport \\ A synthetic literature review}
+
+\author{James Kevin Pierce \\
+\thanks{Author contact information: \texttt{kpierce@alumni.ubc.ca}} \\
+Department of Geography\\
+University of British Columbia \\
+Vancouver, Canada \\
+       }
+
+\begin{document}
+\maketitle
+\input{abstract}
+\input{introduction}
+\input{background}
+\input{review}
+\input{scope}
+\input{synthesis}
+\input{conclusion}
+\bibliographystyle{agu}
+\bibliography{biblio}
+\end{document} 

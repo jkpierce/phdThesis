@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: diss.aux
+A level-1 auxiliary file: abs.aux
+A level-1 auxiliary file: laySum.aux
+A level-1 auxiliary file: pref.aux
+A level-1 auxiliary file: ack.aux
+A level-1 auxiliary file: ch1intro.aux
+A level-1 auxiliary file: ch2flipFlop.aux
+A level-1 auxiliary file: ch3bedEle.aux
+A level-1 auxiliary file: ch4downDiff.aux
+A level-1 auxiliary file: ch5langevin.aux
+A level-1 auxiliary file: ch6conc.aux
+The style file: ./agu.bst
+A level-1 auxiliary file: app_ch2.aux
+A level-1 auxiliary file: app_ch4.aux
+A level-1 auxiliary file: app_ch3.aux
+A level-1 auxiliary file: app_ch5.aux
+Reallocated field_info (elt_size=4) to 13050 items from 5000.
+Database file #1: biblio.bib
+Warning--I didn't find a database entry for ""
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+You've used 349 entries,
+            2789 wiz_defined-function locations,
+            3042 strings with 65382 characters,
+and the built_in function-call counts, 298228 in all, are:
+= -- 38315
+> -- 10923
+< -- 224
++ -- 6110
+- -- 2626
+* -- 19840
+:= -- 28938
+add.period$ -- 349
+call.type$ -- 349
+change.case$ -- 1910
+chr.to.int$ -- 343
+cite$ -- 1047
+duplicate$ -- 26763
+empty$ -- 14136
+format.name$ -- 3691
+if$ -- 59906
+int.to.chr$ -- 7
+int.to.str$ -- 1
+missing$ -- 368
+newline$ -- 1051
+num.names$ -- 1404
+pop$ -- 10550
+preamble$ -- 1
+purify$ -- 1569
+quote$ -- 0
+skip$ -- 21495
+stack$ -- 0
+substring$ -- 14190
+swap$ -- 23318
+text.length$ -- 22
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 3045
+warning$ -- 0
+while$ -- 1903
+width$ -- 0
+write$ -- 3834
+(There was 1 warning)

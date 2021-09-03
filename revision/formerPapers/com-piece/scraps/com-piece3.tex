@@ -1,0 +1,612 @@
+\documentclass{article}
+% General document formatting
+\usepackage[margin=0.7in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}         % side-by-side figures 
+% Related to math
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{natbib}
+\bibliographystyle{unsrtnat}
+
+
+% \usepackage[math]{kurier}
+\usepackage{setspace}       % \onehalfspacing and \singlespacing
+\newcommand\be{\begin{equation}} % shortcut to start eq envs 
+\newcommand\ee{\end{equation}}   % shortcut to end eq envs
+\newcommand\ol{\overline}        % shortcut to draw overline 
+\newcommand\bra{\langle}
+\newcommand\ket{\rangle}
+
+\begin{document}
+
+\title{Mechanics of gravel rivers: Einstein and Bagnold in modern context}
+\author{Kevin Pierce}
+\maketitle
+
+
+\section{Introduction}
+%% gravel bed rivers, bedload transport, mechanistic theories, Einstein and Bagnold 
+Gravel bed rivers are troubled natural systems, and changes in their morphology are linked to a wide array of ecological and engineering problems.
+Since the transport of coarse material as bedload is an important control on channel morphology, bedload transport has been the subject of intense research for over a century. 
+Despite this effort, our ability to predict bedload transport rates is inadequate.  
+In natural streams, predictions of bedload transport can deviate from measured values by factors of 100 or 1000. 
+Prediction is difficult because individual bedload grains move intermittently, rolling, sliding, and bouncing along the river bed \citep{Einstein1950, Bagnold1973}. 
+Since this bedload transport process is governed by Newtonian mechanics, it should be fully characterized by exchanges of momentum between the granular and fluid phases, highlighting a mechanical description as an attractive prospect.
+However, because bedload transport results from a turbulent flow interacting with granular matter, the full mechanical description is a fusion of two notoriously difficult and tenuously understood subfields of classical physics, meaning many of the required details are missing.
+In absence of these details, many researchers have attempted to reverse engineer mechanical theories of bedload transport, and from these efforts, two of them have emerged as important research paradigms in the physics of bedload transport. 
+These are the stochastic approach, initiated by \citet{Einstein1937, Einstein1950, Einstein1964} and the deterministic approach, initiated by \citet{Bagnold1956, Bagnold1966, Bagnold1973}. 
+
+% Einstein and Bagnold -- simplified concepts of motion -- semi-empirical -- rift between the two schools -- lack of communication between them 
+These two paradigms are founded on the application of mechanical reasoning to simplified concepts of bedload motion.
+These concepts are characterized by empirical parameters, so that mechanical models must be calibrated to applications. 
+Owing to these simplified concepts, proponents of Einstein and Bagnold-type models have different understanding of most aspects of bedload transport.
+Accordingly, when proponents of different schools discuss sediment transport processes, they often find miscommunications and disagreements. 
+This conflict is exascerbated by observations that neither mechanical approach is, practically speaking, very good; and any superiority of either approach is difficult to judge. 
+For example, either mechanical paradigm generates poorer bedload transport predictions than simpler power law curves, calibrated to empirical data without reference to mechanical concepts \citep{Barry2004}; and the semi-empirical aspect of these models provides flexibility, so comparing them by predictive ability is difficult, as neither approach shows uniform superiority across a full range of flow and sediment characteristics. 
+Accordingly, although each mechanical approach has merits, a perspective that either is uniformly superior for any reason apart from practicality, is not supported by evidence.  
+Because there is no clear path to join the two paradigms together, proponents of each toil away in their respective camps, solving problems within their own simplified conceptual pictures, and failing to communicate science across the stochastic / deterministic rift. 
+We need to ask: is this scientific divide justified by evidence? 
+Are stochastic and deterministic approaches to understand bedload transport as a mechanical process really so different that they share no common ground, and is one or the other completely wrong? 
+If so, theorists should out the failed approach and focus together on developing its successor. 
+If not, we should work together to synthesize something new out of the strongest elements of each paradigm. 
+
+\section{The stochastic paradigm of Einstein}
+% Einstein -- bedload flux is individual motions -- individual motions are random -- start to stop transitions -- entrainment, motion, and deposition
+
+Einstein initiated the stochastic paradigm by relating bedload transport rates to individual particle motions \citep{Einstein1942, Einstein1950}.
+He conceptualized the downstream transport of an individual particle as an alternating series of rests and hops, and he set out to determine the period of rest and distance covered during a hop with flume experiments \citep{Einstein1937}. 
+During these experiments, he realized that the resting period and hop distance of individual particles was not consistent or predictable from one particle to the next, so he was forced to switch to a statistical conception. 
+Viewing these motion characteristics on a population level involving many particles, Einstein noted the resting period and hop distance of individual particles lie on stable statistical distributions, which he measured \citep{Einstein1937}. 
+Initially, he used the random characteristics of individual rests and motions to calculate the probability distribution of the effective velocity at which bedload grains travel as the move downstream through cycles of rest and motion, with relevance to the spreading or diffusion of tracer particles as they move downstream due to their different effective velocity characteristics \citep{Einstein1937}. 
+Later, he derived the random character of the resting period as a mechanical consequence of fluid turbulence, and he used this concept to derive the mean rate of bedload transport \citep{Einstein1950}. 
+The tenacity with which Einstein's ideas have been followed up, modified, critiqued, and improved over the last seventy years is a testament to his pioneering originality \citep{Ettema2004}, yet the clear pattern of development and refinement along the course of his life provides motivation, showing an obvious balance between hard work and genius \citep{Einstein1937, Einstein1942, Einstein1950, Einstein1964}. 
+
+Generations of researchers and proponents of Einstein have criticized, generalized, and reinterpreted his stochastic concept of bedload transport, without fully invalidating his ideas. 
+Statistical characterizations of individual motions have been investigated extensively \citep{Hubbell1964, Yano1969, Nakagawa1976, Hassan1991, Habersack2001, Ancey2008, Roseberry2012, Heyman2016}, and it's clear that his conception of their characteristics as random variables drawn from statistical distributions is essentially correct. 
+Since Einstein, new characteristics of particle motion have been considered, and incorporated into stochastic theories of bedload transport, such as the velocity, acceleration, and travel time during single particle motions \citep{Drake1988, Ancey2008, Lajeunesse2010, Roseberry2012, Fathel2015, Heyman2016}. 
+Understanding of particle diffusion has advanced a great deal, and the problem is obviously more nuanced than Einstein considered \citep{Einstein1937}.  
+Particle diffusion has different characteristics depending on the temporal or spatial scales of consideration \citep{Nikora2002, Zhang2012, Martin2012}, and this probably relates crucially to the effects of particle burial \citep{Sayre1971, Nakagawa1980, Voepel2013, Martin2014, Bradley2017} and variable movement characteristics due to sediment size \citep{Fan2017} on the differences in effective velocities of moving bedload. 
+
+Most notably, Einstein's mechanical theory of the bedload transport rate \citep{Einstein1950} has been reworked a great deal. 
+Subsequent theories on the resting time of stationary sediment, which is equivalent to the rate of erosion of an individual surface grain, took account of the randomness in supporting configuration of bed surface grains, in addition to randomness resulting from fluid turbulence \citep{Paintal1971, Wu2002, Dey2018}, and experiments have increasing recognition of the role of both the magnitude and duration of turbulent fluctuations on particle entrainment \citep{Diplas2008, Valyrakis2010, Celik2014}, which Einstein-like models of the resting time (or erosion rate) have not yet incorporated \citep{Dey2018}. 
+Additionally, instead of computing mean bedload rates only, contemporary theories have harnessed the physics of stochastic processes to compute probability distributions of the bedload flux, so that mean values and the expected magnitude of bedload fluctuations are available \citep{Lisle1998, Sun2000, Ancey2006, Ancey2008, Ma2014, Ancey2014}. 
+This work reflected back on the resting period of particle motions in a contentious way which still requires resolution. 
+Einstein's concepts, when translated to a theory which predicts the magnitude of bedload fluctuations, produces fluctuations which are too small to describe experiments \citep{Ancey2006}. 
+Accordingly, a set of contemporary models has incorporated collective feedback mechanisms in particle motion, which could be physically attributed to the erosion of multiple grains from the bed at once \citep{Ancey2008, Heyman2013, Ma2014}, as might arise from small granular avalanches \citep{Heyman2013}, the effects of coherent turbulence on particle motion \citep{Nino1998, Amir2014, Santos2014, Shih2017}, or the migration of bedforms \citep{Dhont2018}. 
+In any case, research from the stochastic paradigm which Einstein initiated has generated a formidable amount of understanding about the physics underlying bedload transport, and this progress is expected to continue. 
+
+However, many elements of Einstein's conception can be criticized. 
+For one thing, there are multiple modes within the statistics characterizing particle rest and motion, and no clear indiciation of the extent to which these must be resolved in bedload transport theory. 
+For example, particles can rest on the bed surface, and this resting period can be characterized probabilistically \citep{Einstein1950}, but these resting times are known to be variable across bedforms, when the relative exposure of bed particles to the flow is variable \citep{Crickmore1962, Sayre1967, Yang1971, Nakagawa1980}. 
+Also, particles can rest within the bed surface, or in a state of burial \citep{Voepel2013, Martin2014, Olinde2015, Bradley2017}, and the resting statistics associated with the burial process are different than those associated with surface resting. 
+Similarly, when bedload particles move, they can fall into different modes of motion. 
+For example, they can roll, slide, or bounce, and within each of these modes they may have different motion statistics \citep{Frey2006, Frey2014}. 
+The degree to which these different modes must be accounted for in stochastic bedload transport theory has not been clarified.  
+For another thing, at high transport stages, Einstein's partition of bedload transport into separate motion and rest periods breaks down.
+Under these conditions, bedload motion takes the form of a sheet flow separating the bed from the water flow, and the entire bed surface moves with prevalent interactions between all moving grains \cite{Jenkins1998, Clark2015}, possibly with a vertical velocity distribution which depends upon distance from the shearing fluid \citep{Bagnold1973, Frey2011, Mouilleron2009, Houssais2015, Ferdowski2016}.
+This stage of bedload transport is expected to require a different description. 
+
+\section{The deterministic paradigm of Bagnold} 
+
+Bagnold formed a different simplified concept of bedload transport to understand it with mechanical principles, initatiating the deterministic paradigm of mechanistic bedload transport theory. 
+From a physical point of view, Bagnold considered bedload transport in terms of a momentum exchange between solid and liquid phases.
+He balanced the average power supplied to the flow by gravity against the average frictional dissipation by moving bedload, and neglected any details of turbulent fluctuations, irregularity in the configuration of stationary grains, or the trajectories of moving particles.
+Bagnold's formulation hinges on the application of an average dynamic friction coefficient to moving bedload in order to characterize its energy dissipation. 
+His formulation is built upon a key hypothesis: when bedload transport is at its equilibrium value, so it dissipates all available power to move sediment, the tractive force imparted by the moving fluid on the bed surface will match the threshold of sediment motion. 
+This is the so-called Bagnold hypothesis \citep{Engelund1976, Luque1976, Seminara2002, Ancey2006}.
+Bagnold's original formulation predicts a bedload transport rate which scales, at high stages of transport, as the average fluid shear stress to the $3/2$ power: $q_b \propto \tau^{3/2}.$ 
+His perspective on bedload transport has been taken up by generations of river scientists, and this enduring legacy is even more interesting because his research seems to be at most a tertiary component of his life's work, with a much larger portion of his time devoted to his decorated career as a military commander in both world wars, and his recreational hobby of driving cars around the Sahara desert, which eventually earned him status as a preminent desert explorer \citep{Bagnold1988}. 
+
+Bagnold's original concept is enlightening for its pragmatic approach \citep{Ashida1972, Bagnold1973, Engelund1976, Luque1976}. 
+His deterministic concept of bedload motion is simplified just enough from the real complexity to make contact with the foundational and reliable mechanical principle of conservation of energy. 
+His theory has been influential for a clear ability to describe bedload transport from mechanical concepts at relatively high transport stages, since it predicts a transport rate which scales as the average shear stress to the $3/2$ power, in accord with a large set of classic experiments and contemporary numerical simulations \citep{MeyerPeter1948,Gomez1989,Schmeeckle2014, Elghannay2017}.
+At the same time, his highly simplified assumptions, and various comparisons between experiments and his theoretical results, have left many open questions for proponents of his ideas. 
+There is at least one criticism of Bagnold's hypothesis that the fluid should be just competent to move sediment on the bed surface under equilibrium bedload transport \citep{Seminara2002}.
+In particular, Bagnold's concept of bedload transport ignores the details of bedload trajectories, motivating many efforts to reconcile his average energy budget concepts with the dynamics of individual bedload motions. 
+Finally, his theory is apparently inadequate at low discharges \citep{Engelund1976, Luque1976, Francis1977, Ancey2008}, and this realization has supported a great deal of research into why this is so, and how this problem can be rectified. 
+
+However, the conceptual simplicity of Bagnold's ideas and the essential correctness of his results at high transport rates is striking, so many investigators have worked to refine the details of his formulation while preserving his main concept that bedload transport rates derive from an average budget between gravitational energy and frictional dissipation. 
+The time spent in suspension by bedload grains between successive collisons, which is highly variable in accord with fluid turbulence and collisions with the bed surface \citep{Bialik2015}, contribute to the relative amount of time that bedload grains spend in contact with the bed, meaning the dynamic friction coefficient Bagnold introduced should scale with the characteristics of fluid turbulence, or equivalently with the details of bedload trajectories. 
+Accordingly, many investigators have tried to understand the turbulent basis of bedload trajectories, and to incorporate these details with Bagnold's average energy budget concepts, which should fix the number of particles in motion \citep{Abbott1977, Bridge1984, Wiberg1989, Bridge1992, Nino1998}.
+This research is a perplexing juxtaposition of average and turbulent energy considerations, and effectively it contends that the number of particles in motion results from an average power balance, while the dissipation mechanism which limits the number of particles in motion is contingent on fluid turbulence and granular collisions. 
+A shortcoming of this research is that the details of forces imparted by a turbulent flow on bedload grains are incompletely understood \citep{Maxey1986, Schmeeckle2007, Dwivedi2010, Dwivedi2011}, with relatively important terms entering the force balance apart from the typical drag and lift \citep{Bialik2015}.
+Accordingly, these Bagnold-type models incorporating the Newtonian physics of individual bedload motions remain somewhat troubled, usually overpredicting the velocity at which individual grains travel, and therefore also overpredicting bedload transport rates \citep{Bridge1984, Bialik2015}. 
+These overpredictions have been attributed to a lack of inclusion of collisions between moving grains \citep{Lee2002}, and a lack of understanding of stresses imparted by moving grains on the stationary bed \citep{Nino1998}, so both of these topics deserve further research attention \citep{Bialik2015}.  
+
+One criticism of Bagnold's hypothesis is that it fails under even a relatively small transverse (cross-stream) tilt in the bed surface \citep{Seminara2002}. 
+In particular, under such conditions it is shown that no bedload transport rate, no matter how large, is sufficient to reduce the fluid shear stress at the bed to the critical value.
+This undermines the Bagnold hypothesis, even under nearly horizontal beds, as it is not robust to realistic deviations from ideal conditions. 
+\citet{Parker2003} ammended the Bagnold hypothesis by replacing it with an Einstein-type concept regarding the balance of erosion and deposition rates, although they assumed somewhat ad hoc relationships to develop this connection. 
+Nevertheless, these efforts key into a parallel stream of research which borrows many concepts from Bagnold, where balances between erosion and deposition rates, parameterized by average characteristics of the fluid flow, are conjoined to form bedload transport rates with same scaling patterns as Bagnold's original theories, although they do not defer to the energy balance concept to the same degree as Bagnold \citep{Charru2004, Charru2006, Lajenesse2010, Lajenesse2018}. 
+
+At low transport stages, Bagnold's theory fails to characterize bedload transport.
+In relation to this, one observation is that bedload transport rates become highly fluctuating at relatively low mean discharges, meaning mean values increasingly represent a simplified characteristic of the bedload flux, and statistical representations are really closer to the underlying physics \citep{Ancey2008}.
+However, the deepest issue with Bagnold under these conditions is that solid transport rates is not suitably large to dissipate the excess energy available to move bedload grains, meaning Bagold-type models do not fit experimental data without calibrating bulk particle friction coefficients to unphysical values \citep{Engelund1976, Luque1976, Nelson1995, Nino1998}.
+For example, \citet{Nino1998} found a dynamic friction angle of $56.6$ degrees was required to describe their experiments at low transport stage, a value well above the angle of repose for any natural sediment.
+This failure of Bagnold at low rates is apparently consequent from his underyling assumption that bedload transport is always a dominant energy dissipation mechanism of the flow. 
+\citet{Ancey2008} analyzed energy dissipation by turbulence and by momentum transfers with moving bedload.
+They found at low solid discharges, as much as $90$ percent of the energy supplied by gravity was disspated by turbulence (so $10$ percent by bedload), while at high solid discharges, a much as $75$ percent was dissipated by momentum transfers with moving bedload (so $25$ percent by turbulence). 
+This data suggests that Bagnold's assumptions are only close to the physical reality of bedload transport at higher discharges, and at lower discharges, a different description is required. 
+
+
+
+
+
+%PROBLEMS AND OBSERVATIONS:
+%bagnold entirely ignores the details of individual motions. There have been many attempts to clarify the Newtonian physics underlying bedload trajectories, and to incorporate these details into a bagnold type framework where an average energy budget fixes the number of particles in motion under bedload equilibrium. An interesting issue is that the bulk friction coefficient should depend on the amount of time that bedload grains spend in suspension between successive bed impacts, which may in turn depend on the details of bed trajectories. Usually, velocities of bedload are overestimated, which may relate to the ommision of collisons between moving particles Lee2002, or the need to account for shear stress imparted on the bed by saltating particles Nino1998,Bialik2015
+
+
+
+% Ancey2008 found that, at low sediment transport stages, up to 90% of the excess energy was dissipated by fluid turbulence, while at relatively high transport stages, as much as 75 percent was dissipated by bedload transport, implying a transition between bagnold and einstein-type regimes 
+
+%The bagnold equations show no loss of linear stability in the coupled-fluid granular system so it fails to capture the physics of bedforms Ancey2006
+
+%Bagnold does not adapt to disequilibrium bed load transport or to mixtures of particle sizes Seminara2002,although Bridge1992 attempted to extend it to particle sizes, there is good discussion in Seminara about how this is kind of ridiculous 
+
+%bagnold fails away from steady uniform flow conditions and especially over arbitrarily sloping beds Seminara2002. The latter problem can be rectified by appealing to Einstein-like concepts of Entrainment and depostion rates, but the former problem is not currently solvable 
+
+%very difficult to clarify incipient motion conditions Mongomery1997 or bulk friction angles Kirchener1990 experimentally or theoretically, also there are indications that the optimal value of tau_c to use in bagnold type models is distinct from that which is theoretically obtained to characterize the incipient motion of sediment-- "lso, this formulation appears to be very dependent on the value of t?c, which in general is di?cult to estimate because it does not necessarily correspond to the value associated with the threshold of particle motion in the absence of bedload transport." Nino1998
+
+
+
+% very difficult to extend bagnold concepts to multiple grain sizes: BridgeBennett1992 noted that different grains sizes have different mobilities on the bed surface, and attempted to extend the formulation to multiple grain sizes but implying that the fluid shear stress is reduced to one critical value above the big grains and another, different value over the small grains places a strain on what turbulent flows are capable of doing. seminara 2002 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Similarity and Difference between Einstein and Bagnold: toward a collaborative synthesis}
+
+
+There is an overall conclusion that Bagnold's concepts work better when many particles are in motion, and when particles are relatively small. 
+In full mobility bedload (stage 3 transport), there is a continuous bedload layer with several mobile grain layers beneath the surface (Frey2011, Moullerion2009, Jenkins1998, Hsu2004, ).
+Under these conditions, bedload motion takes the form of a granular creep, somewhat closer to the concepts of the earliest bedload transport investigations
+"This condition, which corresponds with the classical notion of bedload transport as a ‘tractive carpet flow’ (DuBoys, 1879; Sohn, 1997), is typical of sand beds and can also occur in gravel beds under strong flows. Much of the experimental work on bedload transport has been conducted in this condition"
+Jenkins1998 We focus on sheet flows in which the particles are supported by their collisional interactions rather than by the velocity fluctuations of the turbulent fluid and introduce what we believe to be the simplest theory for the collisional regime that captures its essential features.
+Hsu2004 computes bedload transport in a regime where collision interactions between moving grains are the only upward force, considered dominant to turbulent fluctuations
+Balance equations for the average mass, momentum and energy for the two phases are phrased in terms of concentration–weighted (Favre averaged) velocities
+Mouilleron2009 develops a revised bagnold model based upon a uniform moving particle concentration in order to compute the vertical velocity distribution within a granular sheet flow 
+Once a sheet-layer flow is fully developed, the simple exchanges assumed here may be insufficient to describe reality, as moving particles would be continuously interacting with each others. In this limit, continuous models based on energy dissipation inside the bed load layer [Bagnold, 1973] might be more adequate.
+Engelund says "Hence the bed load forms a ))protection shield(( at higher bed load concentrations, which controls the erosion rate."
+
+
+
+
+% Similarity and Difference -- transport stages -- properties varies across transport stage; 
+"Transport of gravels and larger materials (which always move as bedload except in very exceptional circumstances) has been divided into three stages (Jackson and Beschta, 1982; Ash- worth and Ferguson, 1989; Warburton, 1992): (1) finer mate- rials overpassing a locally static bed: the material resident on the bed does not participate in the transport – the mobile material originates upstream; (2) partial transport of local bed material: at any one time part of the bed remains static, but any grain might eventually move; (3) general motion of the grains on the bed: all grains are equally apt to be moved."
+In light of our discussion of Einstein and Bagnold, we can conclude that each simplified conceptual picture really pertains to a specific stage of bedload motion. 
+In either case, individual bedload trajectories are undoubtedly stochastic: whether they are considered in relation to an Einstein or Bagnold-type formulation. 
+The essential difference between the two formulations is that, within Einstein-type formulations, the bedload flux is a collective result of individual bedload motions, while in Bagnold-type formulations, the individual motions are secondary to an over-arching collective limitation on the number of moving particles. 
+Because within the Einstein framework the intermittency of individual motion is dominant,
+
+\section{Synthesis}
+% Synthesis -- Einstein and Bagnold are limit cases, but think like Wolman: both are really missing the real complexity -- the intermediate region
+% so it's not surprising that they both fail -- intermediate region means feedbacks with morphology introduce interactions from higher scales
+% there is a clear separation between the scales of transport and morphology evolution, meaning the feedback is accentuated
+% potential critical phenomena and a mixture of scales driving concordant evolution of bedload transport and morphology
+% implying a potentially unsteady transport rate
+% the next century should be spent exploring these morphology-transport feedbacks in accord with the ideas of classical morphology
+
+\section{Conclusion} 
+
+% Mechanistic descriptions are attractive because they provide a possibility to leverage physical principles to improve our understanding of bedload motion
+% Owing to the complexity of fluid turbulence and granular physics, two main research paradigms have emerged, based upon simplified concepts -- Einstein and Bagnold
+% Einstein is based on the random characteristics of discrete particle motions, and describes a bedload rate with stochastic characteristics, where the intermittency of individual particle motions is emphasized, and the rate is better characterized by its statistics than by its mean trend 
+% Bagnold is based on the average characteristics of a population of moving particles, and describes a deterministic bedload rate which is fully characterized by the average characteristics of the granular phase and fluid flow. 
+% I have the perspective that the full complexity of bedload transport simplifies approximately to the simplified concepts of Einstein in Bagnold in different limit cases
+% Einstein pertains to low transport stages, when not many particles are moving during an observation period, and the role of fluid turbulence and irregularities in bed configuration are emphasized over the average characteristics of the granular and fluid phases, implying a highly fluctuating transport rate dominated by unsteady aspects of the driving and resisting forces
+% Bagnold pertains to high transport stages, when relatively many particles are moving, so there is an effective population averaging over the instantaneous characteristics of individual motions, meaning randomness can cancel out, implying a mostly steady transport rate dominated by the steady aspects of the driving and resisting forces. 
+% However, neither of these limit cases is ever fully realized in gravel bed rivers. 
+% There is a need to synthesize these two limit cases from a more sophisticated framework which includes especially the interaction between bed morphology, which is formed by bedload transport and 
+% To make this synthesis, we have to get past our partisan and uncollaborative nature, and realize these mechanical theories for what they are, and quit judging them as right or wrong: they are simplified conceptual pictures of reality, with differing degrees of accord to the real world, depending on the conditions. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+To attempt to answer these questions, we should start from a clear physical picture of bedload transport rates, and then consider where Einstein and Bagnold's theories fall in relation to it. 
+Because bedload transport rates are the cumulative result of individual particle motions, an appropriate starting point seems to be a clear physical understanding of individual bedload motions. 
+Because bedload motion is intermittent, a common and useful concept is to divide individual particle motions into three stages: initiation, movement, and cessation. 
+To interpret bedload experiments, investigators have studied how the properties of each stage result from a balance of granular and fluid interactions in accord with Newtonian mechanics. 
+Initiation, or the transition of a bed particle from rest to motion, is undoubtedly a result of momentum transfer to the stationary particle, by the fluid and possibly by impacts from other moving grains, and these driving impulses are resisted by frictional and contact forces imparted on stationary grains by every other grain in contact. 
+Similarly, the trajectories of particles, once they are in movement, are determined by the momentum transferred from the fluid phase and by impulses imparted by collisions with the irregular bed surface formed by stationary grains \citep{Wiberg1985, Bialik2015}. 
+The specifics of the fluid and granular forces are not accessible: to fully characterize the fluid forces would require the full time series of pressure and velocity fields within the turbulent fluid, including within the porous bed, and to characterize the static forces and dynamic impulses imparted by the bed surface would require knowledge of the location and relative orientation of every grain within the bed. 
+Accordingly, the initiation and trajectories of particles is very difficult to understand, but the cessasion of motion is even more difficult. 
+Cessasion of motion, or the transition of a moving particle to rest, results from a chance coordination of upstream impact forces from the configuration of static grains with a lull in turbulent driving forces \citep{Pahtz2018}, again in accord with Newton's laws.  
+
+
+
+
+
+% resting, entrainment by impulse, motion in turbulent flow, collisions with bed, deposition 
+
+
+
+
+% explain how bedload transport has different behaviors at low and high stages of bedload transport
+
+% introduce the einstein theory, its revisions, and experiments which support it
+
+% introduce the bagnold theory, its revisions, and experiments which support it
+
+% highlight that bagnold is the high transport stage limit of tau^(3/2), while einstein is really the low transport stage limit where average properties of the flow and grains do not characterize bedload transport
+
+% really, we should we should be joining these theories to describe wolman's intermediate region, which is where channel morphology happens
+
+% however, in intermediate regions, the linkage between morphology and transport becomes more highly coupled; so we really need to integrate knowledge from higher scales with the stochastic theories of einstein and the power dissipation arguments of bagnold -- neither is good enough
+
+% conclude by wrapping problems, stochastic, determinitsic, a synthetic description of intermediate conditions, where feedbacks are accentuated with morphology, with an interesting conclusion about scientific divides and tribalism impeding progress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sediment grains within gravel-bed rivers typically move intermittently, rolling, sliding, and bouncing along the river bed, in a condition called bedload motion \citep{Einstein1950, Bagnold1973}.
+The bedload motion of an individual grain is an alternating series of movements and rests, with these dynamics undoubtly governed by a Newtonian force balance between the solid and fluid phases \citep{Schmeeckle2013, Ji2013}.
+However, the forces making up the balance are not exactly known in any context, and the granular \citep{Lamb2008, Frey2011, Booth2014} and fluid \citep{Schmeeckle2007, Celik2014, Amir2014, Shih2017} forces are known to exhibit considerable variability in magnitude, direction, and duration. 
+Looking at experiments on the mechanics of bedload transport, it's clear that the Einstein and Bagnold schools are simplified from reality.
+
+
+
+We should really be attempting a synthesis between them, but to achieve this, we have to assess the experimental findings on the processes underlying bedload transport, as well as the concepts and development of the Einstein and Bagnold schools.  
+To make this synthesis, we should be greedy, taking useful ideas from wherever we can find them. 
+To this end, we can start from a question: which concepts from each school fit with experimental findings, and how can they be fused together for a predictive theory of bedload transport?  
+
+%% bedload experiments 
+
+% first describe broad brush ideas. initiation, motion, cessation 
+
+
+% now describe gaps in this understanding
+This broad mechanical perspective on the processes underlying individual particle motions reveals many gaps in experimental knowledge. 
+For one thing, in discussing the 
+
+% now describe the einstein theory, and 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% initiation
+% motion
+% cessasion
+% rates 
+
+%% Einstein and Bagnold
+
+
+Motion of an individual particle is initiated when a sufficiently strong driving force is applied by the turbulent fluid over a timescale large enough to overcome the resistive forces imparted on that grain by frictional and normal responses from the every bed grain it contacts \citep{Paintal1971, Valyrakis2010, Celik2014}. 
+In general, both the duration and magnitude of the applied fluid forces is important \citep{Diplas2008, Valkyrus2010, Celik2014}. 
+This is an impulse concept, although in a viscous flow without velocity or pressure fluctuations, this impulse concept reduces to the classical perspective of a critical motion condition based upon velocity or shear stress \citep{Shields1936, Buffington1997}. 
+
+This initiation of motion by a turbulent impulse is undoubtedly governed by Newton's laws, although the forces making up the balance are not exactly known in any context, and the granular resistive \citep{Lamb2008} and fluid driving \citep{Schmeeckle2007, Celik2014, Amir2014, Shih2017} forces are known to exhibit considerable variability in magnitude, direction, and duration. 
+Similarly, the trajectories of particles, once they are in motion, are determined by Newton's laws, contingent on the specifics of turbulent driving forces, including the full time series of turbulent forces, and by impulses imparted by collisions with the irregular bed surface formed by stationary grains \citep{Wiberg1985, Bialik2015}. 
+The cessastion of motion is poorly understood, but presumably results from a chance coordination of local bed geometry with a lull in turbulent driving forces \citep{Pahtz2018}, again in accord with Newton's laws.  
+Owing to these factors, a Newtonian description of bedload motion based on equations characterizing momentum exchange, is a difficult and probably impossible prospect. 
+This difficulty results from the diverse phenomenology of the fluid and granular phases, and especially from the processes that hold them in feedback to induce bedload motion. 
+
+Of course, the details of the fluid driving forces onto moving and stationary grains, expressed from the turbulent fluid flow interacting with its randomly arranged and porous gravel boundary, and exchanging momentum with moving bedload grains, are exceedingly complex. 
+In feedback with the fluid, the locations of all moving and stationary grains serve as boundary conditions for the Navier-Stokes equations governing the pressure and velocity fields within the fluid, the same fields which drive bedload motion \citep{Nikora2013}.
+Even were the flow fields completely known, the way in which the velocity and pressure fields within a fluid exert forces on moving particles is a topic of great uncertainty, especially when the particles under consideration are not spheres \citep{Maxey1983}.
+However, in a gravel bed river, these flow fields are defintely unknown, and, of course, the particles are not spheres.  
+Even over smooth boundaries, a steady and uniform open channel flow supports spatially extended and transient horseshoe vortices \citep{Adrian2007}: these are generated by rolling packets of fluid which curl up away from the bed: the toe of each horseshoe is relatively elevated to its heel prongs, which drag along the bed and manifest as low-speed streaks in the near-boundary flow \citep{Klein1967, Nino1998}. 
+As they move downstream, one conceptual picture is that these coherent structures shed self-similar vortices at smaller and smaller scales, eventually dissipating energy into viscosity as the smallest turbulent scales of the fluid. 
+Eventually, from this dissipative cycle, relatively slow near-bed dissipative structures mostly lose coherence and are suddenly swept away by a faster inrush of fluid from above: this cycle of coherent turbulence formation and destruction is referred to as the turbulent burst cycle \citep{}, and experiments have indicated its crucial influence on particle motion \citep{Nino1998, Amir2017}. 
+
+In flows over rough boundaries, the idealized horseshoe vortex picture breaks down: the irregular boundary prevents vortices from attaining full coherence, so the velocity and pressure fields within the fluid are informed by the dynamics of these partially coherent vortices, which probably form off of roughness elements, translate, shed smaller vortices, and scatter off of other vortices; meaning the velocity and pressure fields within the fluid are really the empitome of complexity.
+Pertaining to stationary bed grains, the formation of vortices off of roughness elements implies sheltering phenomena, whereby all particles on the bed surface do not feel the same fluid forces due to wake effects \citep{Egiazoff1965, AnnaM2017}. 
+This shedding can be intermittent or even periodic \citep{}, and it is extended in space, implying regions of exposure propagate non-local effects from the configuration of bed surface grains into the driving forces imparted to those bed grains by the overlying fluid \citep{McEwan2004}. 
+This is not to mention the influence of hyporheic flow, or flow below the bed surface, which is poorly understood but has perplexing behaviors \citep{Cooper2017}.  
+Apparently, pore regions within the bed surface can support relatively large pressure gradients within the hyporheic fluid, and open porosity on the surface of a gravel bed presumably modifies the pressure and velocity fields in near-bed regions as a result of the hyporheic flow acting as a momentum sink or source, or more probably, both. 
+Moving bedload grains, meanwhile, dissipate momentum from the flow and imply changes in its mean and turbulent pressure and velocity fields \citep{Singh2010, Santos2014, Liu2016}. 
+Usually, this rich phenomenology of the fluid phase and its interaction with the granular phase is approached by one or two types of gross simplification, which can work well under particular flow and sediment conditions: either we neglect all uncertain aspects of the fluid, characterizing the fluid flow, complete with all its imbricated vortices, coherent or partially coherent, shed in a messy and unpredictable self-similarity, by a time and/or space averaged quantity such as the shear velocity or stress \citep{Yalin1972, Stelczer1983}; or we understand the forcing imparted by the fluid and / or the sheltering effects introduced into the fluid by the granular phase in terms of simplified statistical concepts, such as the concept of a probability distribution (homogeneous in space) of fluid velocity \citep{Einstein1950, Paintal1971} which may be linked to the distributions of lift and drag forces \citep{Hofland2006, Schmeeckle2007}. 
+
+As diverse as the details of the fluid phase seem, the details of the granular phase are much less well studied, so considerations are speculative \citep{Frey2011}. 
+Borrowing perspectives from granular physics, we can conclude that the bed of static grains is maintained by the coordination of frictional and normal responses at every contact point between two grains within the granular assembly. 
+Accordingly, the stability of bed surface grains is contingent on the geometry of contact points with the grains which support them \citep{Coleman1967, Paintal1971}, and this geometry is, in a practical sense, random \citep{Bennett1972}. 
+When grains are stationary, the collective frictional, contact, and external forces mutually cancel out on every grain -- action and reaction -- to maintain static equilibrium  \citep{Cundall1979}. 
+Frictional forces within the granular assembly depend on granular shape and the material; considerations of granular rheology are, by anyone's judgement, on the list of open problems in modern physics. 
+External forces on the granular assembly result from the turbulent fluid shear and impacts from moving bedload. 
+Turbulent fluctuations in the fluid forcing or impacts from moving bedload, if they do not induce motion of stationary grains, are necessarily dissipated by adjustments in the force matrix spanning the network of granular contacts within the stationary bed. 
+Accordingly, the static equilibrium of the granular bed is, necessarily, under a turbulent flow and subject to collisions from moving bedload particles, maintained by a fluctuating and imbricated matrix of forces across contact points, and, from a mechanical perspective, this object underlies the details of bedload motion.
+Whether we can get an appropriate description of bedload transport without incorporating at least some of the details of this granular force balance is an open question. 
+So far, most descriptions, whether stochastic or determinsitic, have neglected almost all of its details. 
+
+There are indications that, in granular matter, the force matrix between grains self-organizes in such a way as to place most of the force required to maintain static equilibrium across a minority of the contact points in the granular assembly, developing chains of granular forces \citep{Peters2005, Corwin2005, Liu2010}. 
+Accordingly, granular forces on individual grains are expected to deviate unpredictably in relation to the orientation of force chains through the granular medium, and these factors are not easy to measure. 
+These chains of granular forces have been invoked to explain the otherwise anomalous stability of channel-spanning steps in gravel bed rivers \citep{Zimmerman2010, Saletti2016}. 
+Usually, the complexity and potential self-organization of forces within the granular phase, and the coordinated nature of the force balance within the granular phase, is simplified drastically in one of a few ways. 
+Either the result of all granular interactions which imply resistance to motion are represented by some averaged parameter(s), such as the critical shear stress \citep{Shields1936, Montgomery1997}, which possibly lies on a distribution due to the random geometry of contact points supporting surface grains or the random effects of sheltering \citep{Wiberg1987, Bridge1992, Ferreira2015}; or they are described in terms of probabilistic concepts, such as the probability of erosion in an instant of time \citep{Einstein1950}, which is either considered an empirical parameter \citep{Ancey2008} or is understood in terms of an exceedance probability of driving over resisting forces, where the resisting forces are usually simplified to include only the particle weight \citep{Einstein1950} or, at most, its normal response off of the supporting contacts \citep{Paintal1971, Dey2018}.
+The question of organization in the granular forces impeding the mobility of bed grains is a young inquiry, and its potential influence on bedload motion has not really been quantified \citep{}.  
+
+- granular sizes and shape
+- sorting, armoring, sheltering effects
+- micro meso macro forms , connection with balance of competence and supply 
+- collective stability 
+- feedbacks with fluid
+- basically, none of these aspects key into bagnold or einstein like models at all. 
+- grains are spherical and characterized by uniform mobility conditions
+- multiple sizes are treated independently or by some representative size
+
+To this point, I've pointed out complexities in the fluid and granular interactions underlying bedload transport, and I've alluded toward the simplifications that stochastic and deterministic approaches have made to glean understanding despite them. 
+The optimist might hold that these simplifications are justified: turbulent impulses, coherent turbulence, sheltering phenomena, the energy dissipation of moving bedload, the effects of particle shape on granular friction, the organization of granular forces into chains, the sorting of granular sizes -- sheltering and armoring effects, collective stability in bedforms -- these factors either don't matter, or they matter only at impractically small scales, with no influence on scales of interest to river scientists who might apply bedload transport predictions to understand morphology changes in relation to engineering or ecological problems.
+Another perspective is that, although these reach scale or smaller phenomena in the granular-fluid system might be problematic for our understanding of bedload transport, but they pale in comparison to wider issues, such as the input of sediment from landslides, geological controls on channel form, the hydrology of watersheds (with contingence on random weather and shifting climate), or the influence of wood on forest channel dynamics and sediment transport. 
+Probably, these thinkers are correct; these factors deeply affect bedload transport rates and channel form; earth science is holistic, and gravel bed rivers probably epitomize this.
+
+Yet we should not conclude that mechanical perspectives on bedload transport are useless for reach scale problems: with this same fallacy, one can argue that chemistry is useless for biology; when, in fact, chemistry and biology are both essential components of medicine. 
+In gravel bed rivers, the coupling between the small and the large goes both ways: bedload transport on smaller scales compounds to express morphology on larger scales, but transport is not the only control. 
+At best, there is a partial emergence of gravel bed morphology from bedload transport. 
+Wood and supply, hydrology and geology -- these play key roles in morphology too, and their influence at large scales goes back down to smaller ones; morphological elements form the boundary of the fluid flow and inform the balance of forces which drive sediment motion, so transport becomes independent of watershed processes only under particular limits. 
+- neglecting watershed processes, morphology and sediment transport are still not very connected 
+- einstein and bagnold limits are perplexing in relation to morphology -- there are open questions
+- for example, one common approach to study the relationship of morphology and transport is by coupling mass conservation principles such as the exner equation with an equation for the flow such as as the shallow water equations. 
+- under such a treatment, bedforms do not actually arise: this has motivated alternative stochastic morphodynamics models which do show bedform generation 
+- jerolmack and mohrig 2005 and Bohorquez and Ancey 2018
+- in light of this, bagnold and einstein type models of bedload transport arise from a considerable simplification: to get them, we must neglect the connectivity of scales within the watershed and the influence of watershed processes on channel dynamics
+
+- so we have some kind of perspective on the full array of processes which may control sediment transport rates in natural channels 
+- now we can discuss what sediment transport rates are actually like 
+- at relatively low stages of transport, intermittency is highlighted, and sediment moves in a rarefied way. 
+- sediment transport rates are highly fluctuating even under the most controlled laboratory conditions
+- the critical shear stress is only approximately valuable and below the critical shear stress, transport rates are non-zero 
+- at higher stages of transport, bedload transport transitions toward a sheet flow, where particles move in coordination and statistical attributes are minimized relative to mean values
+- going forward to describe the approaches of bagnold and einstein, we should keep account of these two extremes of motion characteristics 
+
+- the bagnold and einstein approaches were really formulated in order to describe these two extremes
+- at lower transport rates, einstein works 
+- Einstein observed the transport of sediment grains under typical flow conditions and noted their statistical attributes. 
+- he conceptualized sediment motion as a random switching between states of motion and rest
+- he characterized the sediment transport rate in terms of the rate of switching between rest and motion, or erosion, and the rate of switching from motion to rest, or deposition. 
+- he undrestood the erosion rate in terms of the exceedance probability of the force due to turbulent lift over the force due to weight. 
+- thus he did not factor granular forces or drag into particle mobility, but only evaluated water forces in the upward direction. 
+- he used these concepts in order to compute the mean bedload rate; 
+- notably, he assumed the rates of erosion and deposition were steady, and did not depend on location on the bed, nor did they depend 
+- so einstein's model has no influence of morphology: it does not allow for any 
+- nevertheless, under suitably uniform conditions, when morphology is suppressed, it describes bedload rates well at low discharges, when its parameters are properly calibrated. 
+- More recent Einstein-like models have amended his concepts to include downstream fluid forces and pivoting about granular contacts in order to have sediment motion
+- recently, instead of getting mean rates, einstein-models have been extended to predict bedload fluctuations and other statistical moments -- we can now obtain the full probability distribution of the bedload rate from Einstein's concepts
+- however, experimentally derived fluctuations using the concepts of Einstein are not wide enough, which has led to the introduction of new potential processes
+- granular avalanches, collective effects
+- we conclude that einstein-like models provide a clear conceptual framework, but that more work is needed to understand the inputs and processes at play which drive the motion-to-rest switching of bedload grains. 
+- they do adequately describe bedload rates at relatively low discharges, when intermittency and irregularity is emphasized in bedload rates
+- however, they fail at higher discharges when the divide between motion and rest states becomes blurred: under these conditions, transport becomes a sheet flow where grain-to-grain interactions are emphasized
+- notably, there is no limitation of the flow rate on the number of particles which can go into motion
+- presumably, this is limited by the power available in the water flow 
+
+- at higher transport rates, bagnold like models work 
+- bagnold considered sediment transport the result of the balance of power provided from the flow against the power dissipated by friction in the granular phase. 
+- he characterized both of these quantities, the driving and the dissipation, by average parameters in time and space including the excess shear stress, and he arrived at a transport formula which exhibits at scaling with average shear stress of tau3/2.
+- a few others have generalized bagnold type models (how?) 
+- a key component is the so-called bagnold hypothesis, which is that the threshold of motion and the fluid shear stress tend to equilibrate at the bed surface
+- parker showed that the bagnold hypothesis was false.
+- this scaling had been derived earlier from the careful empirical studies of meyer-peter. 
+- nevertheless, in straight laboratory channels, these types of models work well 
+- however, in natural channels with issues of supply, morphology, and inhomogeniety in flow and mobility conditions, they do not work, missing the mark by orders of magnitude
+- further, at low transport rates, the highly intermittent character of bedload transport calls into question the utility of bagnold-type deterministic models 
+- at these discharges, fluctuations are so prevalant that mean values without being supplemented by expected magnitudes of fluctuations lose their meaning
+- bagnold is capable of explaining transport rates at lower discharges, however the parameters of bagnold-type models must be fit to unphysical parameters. 
+- although bagnold type models have a mechanical basis, they hinge upon invalid concepts and their extension to multiple grain sizes is not obvious
+
+- in practice, mechanical models of bedload transport based upon the concepts of bagnold or einstein do not usually perform better than much simpler models based upon simple power law correlations
+- however, since these empirical models do not actually work either, we push on with the mechanistic approaches
+- physics can be a guide for model development: when processes get complex we should lean on the principles
+- in the case of einstein and bagnold, the question is how to take what we know and can deal with and map it onto physical principles
+- einstein used probability arguments in conjunction with the principle of conservation of mass, but his approach lacks deference to the power availble within the fluid flow to drive sediment motion, and it depends on a clean break between states of motion and rest, so while it provides a great statistical description at lower discharges, it breaks down at higher discharges. 
+- bagnold-like approaches neglect variation in granular stability or flow competence, and using the bagnold hypothesis, they become able to leverage a power balance argument in conjunction with conservation of mass in order to predict a sediment transport rate. 
+- under conditions when these assumptions hold -- steady flow and bagnold assumption -- we expect that bagnold works quite well, and indeed it does
+- under such conditions the statistical characteristics of bedload rates are minimized, and transport rates scale as shear stress to the 3/2 power
+- we note that either result neglects the coupling between larger scale granular arrangement, organized structures in fluid turbulence, watershed processes, and so on
+- maybe some of this is unavoidable 
+- however, the most notable deficiency of these models stems from intermediate transport rates: 
+- neither model appropriately describes sediment transport away from the limits of high adn low transport
+- we conclude that, really, einstein adn bagnold should be viewed as limiting cases of a more general theory
+- in fact, they are both short-sighted, with many approximations underpinning them, both acknowledged and unacknowledged
+- they are both wrong across most of the regime of sediment transport conditions, 
+- and they are both right in at least one extreme regime of sediment transport conditions
+- pushing bedload transport understanding forward is in the fusion of these two regimes, and it definitely isn't one or the other. 
+
+
+We conclude what we should really be aiming for is a more complete theory of sediment transport which is rooted in mechanics and confers both statistical and deterministic descriptions under suitable conditions -- purely stochastic, and dominated by fluctuations in fluid driving forces and granular resisting forces at relative low transport rates; and purely deterministic, dominated by average values of fluid driving forces and granular resisting forces at relatively high transport rates. 
+The intermediate region, of course, is where the really interesting physics happen -- the river morphology. 
+
+Wolman, in his classic theoretical work on geomorphology of river channels \citep{Wolman1968}, introduced the concept of the competent or effective flow. 
+To form this concept he highlighted a balance between the frequency and magnitude of hydrological conditions. 
+Extremely high river flows may be incredibly geomorphically active, and they may drastically change river morphology over short timescales, but these flows are rare. 
+The real geomorphic work is done by intermediate flow conditions which are both relatively common and relatively large enough to overcome the stability of river channels and effect change in their morphology. 
+What I'm saying is, following after Wolman, the real geomorphic work is done by intermediate flow conditions over intermediate time scales, and this intermediate range of conditions falls between the two extremes of pure stochastic and deterministic characteristics, the former mostly insensitive of average characterizations of fluid flow and granular resistance, and the latter mostly contingent on them. 
+We contend that Wolman's intermediate range is really untouched by any bedload transport theory, stochastic or deterministic.  
+In this range, both varying and averaged attributes of the factors driving and resisting bedload motion matter, and incorporating the varying components may require new theoretical approaches, borrowed from granular physics and fluid dynamics, into a fusion of Bagnold-like and Einstein-like bedload transport theories.
+Necessarily, these models should be stochastic, because they have to express stochastic transport at lower rates, but at higher rates their output distributions should sharpen, and their predicted fluxes should scale like $\tau^3/2$, in the absence of morphological or watershed-scale influence. 
+To develop these approaches, which incorporate everything we know, or select the part of it we consider relevant, we should stop quibbling. 
+Transport is deterministic and stochastic; we need to use mechanics because this problem is too complicated to go about without some guiding principles. 
+Accordingly, we should integrate and develop the description, and we should do it fast: salmon stocks are at all-time lows, the climate is changing, and forests are being removed at alarming rates. 
+Why should we discuss stochastic versus deterministic when each of them works? 
+
+  
+
+
+%\begin{comment} 
+%
+%
+%Where is this coupling in Einstein or Bagnold, or under what limits might they retain predictive power? 
+%More generally, where are the deficiencies in our understanding of bedload transport, and why do our predictions in natural channels fail?%
+%
+%To arrive at modern bedload transport models, based on mechanical concepts in the schools of Einstein and Bagnold, we're led to neglect almost everything. 
+%In effect, Bagnold viewed the river as a machine, where water provides the power to move bedload, and friction on moving sediment dissipates it. 
+%Bagnold represented the power of the fluid phase by the product of the average (time and space) shear velocity with the average shear stress, and he represented the %power dissipated by the sediment phase as the energy per unit time to support a given mass of sediment against frictional drag, which he characterized in an average %way. 
+
+
+%\end{comment}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We are saying researchers have crafted two main ways to simplify the vast phenomenology of bedload transport. 
+Either we neglect the fluctuating components of the driving and resisting forces implying motion of bedload, and only keep average values, implying deterministic predictions of bedload transport; or we neglect the possibility of a deterministic prediction of bedload transport, and attempt to keep account of the fluctuating components of driving and resisting forces in the most realistic way we can handle, implying a stochastic prediction \citep{Ferreira2015}. 
+I tend to believe that these two approaches are both important and valid, and that they describe different regions of the bedload transport parameter space. 
+ 
+
+
+
+
+
+
+
+
+
+
+
+The role of these factors on the grain-scale sediment transport is not expected to be reducible: trying to understand all aspects of morphology from the mechanics of sediment transport alone will provide only limited success. 
+We know that gravel bed rivers support a wide variety of morphological patterns, which, when classified, form an entire typology -- we call these morphological patterns armoring, clusters, ribs, bars, patches, and so on: the essential point is that morphology can be diverse \citep{Church1998, Hassan2008, Venditti2017}. 
+Often, we associate these different morphological patterns with sediment storage or stabilizing roles, and we associate their formation with some regime of hydraulic and sediment supply conditions. 
+Bars, for example, form under conditions of relatively high sediment supply which channels do not have the competent flow to evacuate, so they act as storage features which sequester sediment away from the main channel and prevent excessive aggradation. 
+Clusters, ribs, stone cells, and so on -- arrangements of grains on the surface of gravel beds, or armoring, the difference in grain sizes between surface and subsurface layers of the gravel bed \citep{Parker1982}, result from conditions of relative sediment starvation, so they act as stabilizing features which prevent excessive channel degradation. 
+
+Of course, transport is the realm of rocks, and gravel bed rivers in their undisturbed state often flow through forests, or at least vegetated plains. 
+Within forests, wood input from deadfall, landslides, or harvesting activity has crucial influence on sedimentological processees -- transport and storage -- within river channels. 
+Relatively large pieces of wood will jam in river channels, which can obstruct the transport of sediment and serve as another type of sediment storage: sediment backs up behind jams of wood in relatively large volumes; as a result, over yearly or decadal timescales, channels can avulse, or change their path, in order to bypass woody jams. Alternatively, the action of bedload and rotting implies the degradation of wood pieces forming jams. 
+With enough time, log jams can break, releasing sediment pulses into the downstream reach, and implying transient responses to morphological structures within channels. 
+Accordingly, there may be an intense feedback and intermittency in the storage and supply characteristics of natural gravel bed rivers, imparted from vegetation and morphology alone. 
+The essential point is that supply, hydrology, and vegetation interplay with sediment transport to express channel morphology, which is usually varies over a wide set of spatial and temporal scales. 
+Since the channel morphology affects sediment transport characteristics, and the time and space scales of individual sediment transport events may be different than those of morphological changes, we have a difficult problem: sediment transport and morphology are mixed, and vegetation and sediment supply are outside factors which stir them together. 
+Usually, investigators make a way out of this morphology-transport-supply-hydrology link by making some common assumptions: either they contend that the timescale of sediment transport is much smaller than the timescale of morphological change, so that they can consider morphology the result of transport, meaning transport occurs over a static backdrop; or they hold that sediment transport is really nothing more than the shift of morphological elements within the river channel, neglecting all of the grain-scale transport events which compound to express morphological elements or their migration. 
+Either approach is oversimple: a landslide can happen at the same timescale as the individual motion of a gravel cobble, so the scales of morphology and transport can overlap; and the migration of larger scale morphological elements within a river channel happen in coordination with and alongside the transport events of individual sediment, so to consider the migration of bars is really to neglect the grain scale physics from which this migration emerges. 
+One concludes there is a need for a deeper integration of the feedbacks between morphology and sediment transport in order to really understand and predict change in river channels, and especially of habitat in river channels.  
+
+Seeing and accepting the complexity and acknowledging our approximations, or the ways we've taken to escape it, is really the context we need to push river science forward. 
+The Archimedian scientist, considering the world of wind, water, fire, and earth, unwilling to acknowledge the existence of something deeper and more complex -- fermions, bosons, molecules, cells -- could not have developed CRISPR, the transistor, or 
+Fire is a useful concept but under certain conditions its more useful to see combustion as a consequence of hydrocarbons reacting with oxygen exothermically; and the light it exudes as transitions of electrons between different atomic or molecular states. 
+The concept "fire" is not enough to solve all fire-related issues. Throwing water on a gasoline fire will not have the intended effect: under certain limits, different attributes of fire matter.  
+Science should not be pursued with blind approximations; these approximations should be calculated and chosen from a more complete incorporation of the known phenomenology. 
+Accordingly, river scientists need grain-scale theories of bedload motion that depend on the morphological scales under certain limits; we should understand our average shear stresses contrast with known facts, and are only as meaningful as they are useful; we should break with our ties to engineering or geography and see the science of nature as a more holistic problem at the intersection of a diversity of interacting factors; we can see our approaches to understand rivers as approximations with regimes of validity, and find more comfort breaking with our blind convictions about the way nature should be. 
+
+Different approaches to reduce the mechanical complexity of the coupled fluid-granular system, including the connection to emergent morphological structures on larger spatial and temporal scales, that is a gravel bed river, and to obtain models of bedload transport with some degree of tractability, seem to fall mostly into two categories: deterministic and stochastic approaches \citep{Ferreira2015}. 
+We are saying researchers have crafted two main ways to simplify the vast phenomenology of bedload transport. 
+Either we neglect the fluctuating components of the driving and resisting forces implying motion of bedload, and only keep average values, implying deterministic predictions of bedload transport; or we neglect the possibility of a deterministic prediction of bedload transport, and attempt to keep account of the fluctuating components of driving and resisting forces in the most realistic way we can handle, implying a stochastic prediction \citep{Ferreira2015}. 
+I tend to believe that these two approaches are both important and valid, and that they describe different regions of the bedload transport parameter space. 
+
+For example, we know that at relatively low transport rates, averaged values of the fluid driving forces and granular resisting forces are not appropriate for describing bedload transport. 
+For one, the average shear stress has been held constant while the turbulent properties of fluid flow are varied, modifying transport rates by as much as 400 percent \citep{Sumer2003}. 
+For another, the critical shear stress is known to be highly variable, difficult to properly define and measure, and a poor predictor of sediment transport at low transport rates \citep{Paintal1969, Kirchener1990, Montgomery1997, Wilcock2008}. 
+Under these relatively low transport rate conditions, stochastic models are a much better descriptor of sediment transport \citep{Yalin1972, Ancey2006, Furbish2012}. 
+In these conditions, instantaneous bedload fluxes are as much as 400 percent mean values, and the bedload transport signal is more completely characterized by a probability distribution than it is by a deterministic value \citep{Bohm2004, Singh2009}. 
+Meanwhile, stochastic descriptions break down at high rates of bedload transport \citep{Yalin1972}. 
+Since stochastic models of bedload motion have been formulated in terms of a random switching between motion and rest states, and at higher transport rates these phases become less cleanly separated, the stochastic approach fails at high rates \citep{Heyman2013}.
+Accordingly, the stochastic approach pertains to the relatively low rates of bedload transport, where intermittency is emphasized \citep{Ancey2008}.  
+
+Of course, deterministic bedload transport formulas have their own place. 
+Opposite to the stochastic regime, at higher rates of sediment transport, fluctuations in the bedload rate tend to become small relative to mean flux values, so that intermittency is minimized and transport rates become more steady \citep{Ancey2008}, in accord with deterministic models of bedload transport such as \citet{Meyer-Peter1948} or \citet{Bagnold1966}.  
+Curiously, these mean-field descriptions of bedload motion all predict the bedload flux should scale as the 3/2 power of shear stress at high transport rates \citep{Yalin1972}, and this scaling law has been confirmed by experimental data \citep{Gomez1989, Recking2007, Wong2007} and the most detailed numerical models of sediment transport which have been performed \citep{Elghannay2017}. 
+At relatively low stages of transport, meanwhile, the parameters of deterministic models typical must be fit to unphysical values in order to describe mean bedload fluxes \citep{}. 
+We conclude what we should really be aiming for is a more complete theory of sediment transport which is rooted in mechanics and confers both statistical and deterministic descriptions under suitable conditions -- purely stochastic, and dominated by fluctuations in fluid driving forces and granular resisting forces at relative low transport rates; and purely deterministic, dominated by average values of fluid driving forces and granular resisting forces at relatively high transport rates. 
+The intermediate region, of course, is where the really interesting physics happen -- the river morphology. 
+
+Wolman, in his classic theoretical work on geomorphology of river channels \citep{Wolman1968}, introduced the concept of the competent or effective flow. 
+Within this concept he introduced a balance between the frequency and magnitude of hydrological conditions. 
+Extremely high river flows may be incredibly geomorphically active, and they may drastically change river morphology over short timescales, but these flows are rare. 
+The real geomorphic work is done by intermediate flow conditions which are both relatively common and relatively large enough to overcome the stability of river channels and effect change in their morphology. 
+What I'm saying is, following after Wolman, the real geomorphic work is done by intermediate flow conditions over intermediate time scales, and this intermediate range of conditions falls between the two extremes of pure stochastic and deterministic characteristics, the former mostly insensitive of average characterizations of fluid flow and granular resistance, and the latter purely contingent on them. 
+We contend that Wolman's intermediate range is an intermediate range within which bedload transport cannot be described by any existing theory, rather it be stochastic or deterministic.  
+In the intermediate zone, both fluctuating and average quantities matter, and truer geomorphic theories will result from incorporation of the big camp of Shields and the tiny camp of Einstein. 
+
+Of course, we already had this conclusion, from a different angle. 
+Its well known that deterministic morphodynamics models which are based upon power law transport formulas like \citet{MeyerPeter1948} coupled to simplifications of the Navier-Stokes equations, such as the Saint Venant equations, do not imply the emergence of realistic channel features such as bars \citep{Jerolmack2005}.
+So in morphodynamics modeling, deterministic models have a deficiency. 
+Meanwhile, stochastic models of morphodynamics, so-far restricted to 1D, do express realistic morphodynamic features which are not expressed by deterministic models, such as antidunes \citep{Bohorquez2018}. 
+This suggests stochasticity in bedload motion is necessary that it produce realistic morphological structure within river channels. 
+Accordingly, from the physical picture and this suggestion that purely deterministic models are not enough to express morphology, we suggest an armistice. 
+Einstein and Shields are not opposed but access different regions of the parameter space of bedload transport. 
+The resulting theory of bedload motion will be stochastic, as it should be given the phenomenology of the driving and resisting forces we discussed; but it is deterministic in high transport limit, where distributions sharpen and fluctuations become insignificant relative to averaged characterizations of those driving and resisting forces we can't exactly know. 
+We conclude that the two camps should start to speak. Bedload transport is stochastic but also deterministic; and neither camp's approach is fully sufficient to describe the form that river channels take. 
+It's time for a treaty, and we should ask Newton to write it.
+
+%\end{comment} 
+\bibliography{biblio}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+ 
+

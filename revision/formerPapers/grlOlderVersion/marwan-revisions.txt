@@ -1,0 +1,80 @@
+letter -> paper -> study 
+
+
+abstract:
+"despite the significant ... "
+say in a positive way
+although significance has been recognized the current models do not incorporate
+ 
+In this "study/paper" - kill the word letter
+
+
+
+Intro:
+"more or less" 
+mixed results...
+no more recent than recent
+recent research yielded mixed results, some supporting nikora, and others not supporting
+
+"several field studies" -> only two 
+limited field studies and you forgot a period before Martin
+
+letter shuold go away.
+
+Bedload diffusion with burial...:
+
+burial is rest, but a different kind of rest
+need to clearly define burial as a different type of rest
+modify to : "in this model, we consider burial to be a permanent condition"
+"closely follows" -> "follows"
+I am not copying Weiss
+
+track down the word letter and kill it. 
+
+plot of the burial
+"the major difference is really on the origin" 
+peak will decline and standard deviation will increase significantly
+
+THiNK to strengthen the emphasis on the tendency toward a uniform distribution
+
+
+
+Discussion:
+change this section title to "Discussion"
+
+"classic flume experiments based on visually tracking painted sediment" 
+fix this sentence
+
+
+permanent -> long-term
+change permanent to long-term
+
+In this letter, we develop
+
+"Our four-range bedload diffusion model"
+
+Don't ever use the word trapped in place of buried 
+"bed load trapping processes are important" 
+a lot of attention went to entrainment 
+read carefully the trapping business and don't be confusing 
+
+other processes trap sediment in the field .. 
+
+trapping can be a result of burial, or the surface as a reduction in the shear stress, or sheltering between surface structures, don't need the detail of water flow changes
+
+kill permanent again and put long term... 
+wrap by developing this model 
+
+be positive about this 
+last paragraph say what you did
+then say what you can do in the future 
+
+"finally, ..." 
+Our develop a model accounting for a long-term burial
+for future work we see two major things that need to be taken into consideration
+
+Conclusion:
+good 
+
+
+

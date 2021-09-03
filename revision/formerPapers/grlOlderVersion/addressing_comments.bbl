@@ -1,0 +1,165 @@
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Ancey et~al.}(2006)\textit{Ancey, B{\"{o}}hm, Jodeau, and
+  Frey}}]{Ancey2006}
+Ancey, C., T.~B{\"{o}}hm, M.~Jodeau, and P.~Frey, {Statistical description of
+  sediment transport experiments}, \textit{Physical Review E - Statistical,
+  Nonlinear, and Soft Matter Physics}, \textit{74}(1), 1--14,
+  \doi{10.1103/PhysRevE.74.011302}, 2006.
+
+\bibitem[{\textit{Ancey et~al.}(2008)\textit{Ancey, Davison, B{\"{o}}hm,
+  Jodeau, and Frey}}]{Ancey2008}
+Ancey, C., A.~C. Davison, T.~B{\"{o}}hm, M.~Jodeau, and P.~Frey, {Entrainment
+  and motion of coarse particles in a shallow water stream down a steep slope},
+  \textit{Journal of Fluid Mechanics}, \textit{595}(2008), 83--114,
+  \doi{10.1017/S0022112007008774}, 2008.
+
+\bibitem[{\textit{Bialik et~al.}(2012)\textit{Bialik, Nikora, and
+  Rowi{\'{n}}ski}}]{Bialik2012}
+Bialik, R.~J., V.~I. Nikora, and P.~M. Rowi{\'{n}}ski, {3D Lagrangian modelling
+  of saltating particles diffusion in turbulent water flow}, \textit{Acta
+  Geophysica}, \textit{60}(6), 1639--1660, \doi{10.2478/s11600-012-0003-2},
+  2012.
+
+\bibitem[{\textit{Cox and Miller}(1965)}]{Cox1965}
+Cox, D.~R., and H.~D. Miller, \textit{{The theory of stochastic processes}},
+  1--398 pp., Chapman and Hall, London, \doi{10.1201/9780203719152}, 1965.
+
+\bibitem[{\textit{Drake et~al.}(1988)\textit{Drake, Shreve, Dietrich, Whiting,
+  and Leopold}}]{Drake1988}
+Drake, T.~G., R.~L. Shreve, W.~E. Dietrich, P.~J. Whiting, and L.~B. Leopold,
+  {Bedload transport of fine gravel observed by motion-picture photography},
+  \textit{Journal of Fluid Mechanics}, \textit{192}(1988), 193,
+  \doi{10.1017/S0022112088001831}, 1988.
+
+\bibitem[{\textit{Einstein}(1937)}]{Einstein1937}
+Einstein, H.~A., {Bed-load transport as a probability problem}, Ph.D. thesis,
+  ETH Zurich, 1937.
+
+\bibitem[{\textit{Fathel et~al.}(2015)\textit{Fathel, Furbish, and
+  Schmeeckle}}]{Fathel2015}
+Fathel, S.~L., D.~J. Furbish, and M.~W. Schmeeckle, {Experimental evidence of
+  statistical ensemble behavior in bed load sediment transport},
+  \textit{Journal of Geophysical Research F: Earth Surface}, \textit{120}(11),
+  2298--2317, \doi{10.1002/2015JF003552}, 2015.
+
+\bibitem[{\textit{Ferguson and Hoey}(2002)}]{Ferguson2002}
+Ferguson, R.~I., and T.~B. Hoey, {Long-term slowdown of river tracer pebbles:
+  Generic models and implications for interpreting short-term tracer studies},
+  \textit{Water Resources Research}, \textit{38}(8), 17--1--17--11,
+  \doi{10.1029/2001wr000637}, 2002.
+
+\bibitem[{\textit{Furbish et~al.}(2012{\natexlab{a}})\textit{Furbish, Haff,
+  Roseberry, and Schmeeckle}}]{Furbish2012a}
+Furbish, D.~J., P.~K. Haff, J.~C. Roseberry, and M.~W. Schmeeckle, {A
+  probabilistic description of the bed load sediment flux: 1. Theory},
+  \textit{Journal of Geophysical Research: Earth Surface}, \textit{117}(3),
+  \doi{10.1029/2012JF002352}, 2012{\natexlab{a}}.
+
+\bibitem[{\textit{Furbish et~al.}(2012{\natexlab{b}})\textit{Furbish,
+  Roseberry, and Schmeeckle}}]{Furbish2012b}
+Furbish, D.~J., J.~C. Roseberry, and M.~W. Schmeeckle, {A probabilistic
+  description of the bed load sediment flux: 3. the particle velocity
+  distribution and the diffusive flux}, \textit{Journal of Geophysical
+  Research: Earth Surface}, \textit{117}(3), \doi{10.1029/2012JF002355},
+  2012{\natexlab{b}}.
+
+\bibitem[{\textit{Furbish et~al.}(2016)\textit{Furbish, Schmeeckle, Schumer,
+  and Fathel}}]{Furbish2016}
+Furbish, D.~J., M.~W. Schmeeckle, R.~Schumer, and S.~L. Fathel, {Probability
+  distributions of bed load particle velocities, accelerations, hop distances,
+  and travel times informed by Jaynes's principle of maximum entropy},
+  \textit{Journal of Geophysical Research: Earth Surface}, \textit{121}(7),
+  1373--1390, \doi{10.1002/2016JF003833}, 2016.
+
+\bibitem[{\textit{Furbish et~al.}(2017)\textit{Furbish, Fathel, Schmeeckle,
+  Jerolmack, and Schumer}}]{Furbish2017}
+Furbish, D.~J., S.~L. Fathel, M.~W. Schmeeckle, D.~J. Jerolmack, and
+  R.~Schumer, {The elements and richness of particle diffusion during sediment
+  transport at small timescales}, \textit{Earth Surface Processes and
+  Landforms}, \textit{42}(1), 214--237, \doi{10.1002/esp.4084}, 2017.
+
+\bibitem[{\textit{Haschenburger}(2011)}]{Haschenburger2011}
+Haschenburger, J.~K., {Vertical mixing of gravel over a long flood series},
+  \textit{Earth Surface Processes and Landforms}, \textit{36}(8), 1044--1058,
+  \doi{10.1002/esp.2130}, 2011.
+
+\bibitem[{\textit{Lajeunesse et~al.}(2018)\textit{Lajeunesse, Devauchelle, and
+  James}}]{Lajeunesse2018}
+Lajeunesse, E., O.~Devauchelle, and F.~James, {Advection and dispersion of bed
+  load tracers}, \textit{Earth Surface Dynamics}, \textit{6}(November),
+  389--399, 2018.
+
+\bibitem[{\textit{Lisle et~al.}(1998)\textit{Lisle, Rose, Hogarth, Hairsine,
+  Sander, and Parlange}}]{Lisle1998}
+Lisle, I.~G., C.~W. Rose, W.~L. Hogarth, P.~B. Hairsine, G.~C. Sander, and
+  J.-Y. Parlange, {Stochastic sediment transport in soil erosion},
+  \textit{Journal of Hydrology}, \textit{204}, 217--230, 1998.
+
+\bibitem[{\textit{Metzler et~al.}(2014)\textit{Metzler, Jeon, Cherstvy, and
+  Barkai}}]{Metzler2014}
+Metzler, R., J.~H. Jeon, A.~G. Cherstvy, and E.~Barkai, {Anomalous diffusion
+  models and their properties: Non-stationarity, non-ergodicity, and ageing at
+  the centenary of single particle tracking}, \textit{Physical Chemistry
+  Chemical Physics}, \textit{16}(44), 24,128--24,164, \doi{10.1039/c4cp03465a},
+  2014.
+
+\bibitem[{\textit{Montroll and Weiss}(1965)}]{Montroll1965}
+Montroll, E.~W., and G.~H. Weiss, {Random Walks on Lattices. II},
+  \textit{Journal of Mathematical Physics}, \textit{6}, 167--181, 1965.
+
+\bibitem[{\textit{Nikora et~al.}(2001)\textit{Nikora, Heald, Goring, and
+  McEwan}}]{Nikora2001a}
+Nikora, V., J.~Heald, D.~Goring, and I.~McEwan, {Diffusion of saltating
+  particles in unidirectional water flow over a rough granular bed},
+  \textit{Journal of Physics A: Mathematical and General}, \textit{34}(50),
+  \doi{10.1088/0305-4470/34/50/103}, 2001.
+
+\bibitem[{\textit{Roseberry et~al.}(2012)\textit{Roseberry, Schmeeckle, and
+  Furbish}}]{Roseberry2012}
+Roseberry, J.~C., M.~W. Schmeeckle, and D.~J. Furbish, {A probabilistic
+  description of the bed load sediment flux: 2. Particle activity and motions},
+  \textit{Journal of Geophysical Research: Earth Surface}, \textit{117}(3),
+  \doi{10.1029/2012JF002353}, 2012.
+
+\bibitem[{\textit{Schmidt et~al.}(2007)\textit{Schmidt, Sagu{\'{e}}s, and
+  Sokolov}}]{Schmidt2007}
+Schmidt, M.~G., F.~Sagu{\'{e}}s, and I.~M. Sokolov, {Mesoscopic description of
+  reactions for anomalous diffusion: A case study}, \textit{Journal of Physics
+  Condensed Matter}, \textit{19}(6), \doi{10.1088/0953-8984/19/6/065118}, 2007.
+
+\bibitem[{\textit{Sokolov}(2012)}]{Sokolov2012}
+Sokolov, I.~M., {Models of anomalous diffusion in crowded environments},
+  \textit{Soft Matter}, \textit{8}(35), 9043--9052, \doi{10.1039/c2sm25701g},
+  2012.
+
+\bibitem[{\textit{Weeks and Swinney}(1998)}]{Weeks1998}
+Weeks, E.~R., and H.~L. Swinney, {Anomalous diffusion resulting from strongly
+  asymmetric random walks}, \textit{Physical Review E - Statistical Physics,
+  Plasmas, Fluids, and Related Interdisciplinary Topics}, \textit{57}(5),
+  4915--4920, \doi{10.1103/PhysRevE.57.4915}, 1998.
+
+\bibitem[{\textit{Weiss}(1994)}]{Weiss1994}
+Weiss, G.~H., \textit{{Aspects and applications of the random walk}}, North
+  Holland, Amsterdam, 1994.
+
+\bibitem[{\textit{Wu et~al.}(2019{\natexlab{a}})\textit{Wu, Foufoula-Georgiou,
+  Parker, Singh, Fu, and Wang}}]{Wu2019}
+Wu, Z., E.~Foufoula-Georgiou, G.~Parker, A.~Singh, X.~Fu, and G.~Wang,
+  {Analytical Solution for Anomalous Diffusion of Bedload Tracers Gradually
+  Undergoing Burial}, \textit{Journal of Geophysical Research: Earth Surface},
+  \textit{124}(1), 21--37, \doi{10.1029/2018JF004654}, 2019{\natexlab{a}}.
+
+\bibitem[{\textit{Wu et~al.}(2019{\natexlab{b}})\textit{Wu, Singh, Fu, and
+  Wang}}]{Wu2019a}
+Wu, Z., A.~Singh, X.~Fu, and G.~Wang, {Transient anomalous diffusion and
+  advective slowdown of bedload tracers by particle burial and exhumation},
+  \textit{Water Resources Research}, \textit{55}, 1--19,
+  \doi{10.1029/2019wr025527}, 2019{\natexlab{b}}.
+
+\end{thebibliography}

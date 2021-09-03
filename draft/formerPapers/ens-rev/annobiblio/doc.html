@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="K Pierce" />
+  <title>annobiblio: stochastic sediment transport</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">annobiblio: stochastic sediment transport</h1>
+<h2 class="author">K Pierce</h2>
+<h3 class="date">Oct 2018</h3>
+</div>
+<hr />
+<h1 id="author-year">Author YEAR</h1>
+<h2 id="central-idea">(central idea)</h2>
+<p>Write a short summary of key or useful ideas.</p>
+<blockquote>
+<p>you can include quotes</p>
+</blockquote>
+<hr />
+<h1 id="abbott-and-francis-1977">Abbott and Francis 1977</h1>
+<h2 id="photo-tracking-of-granular-motion">(photo tracking of granular motion)</h2>
+<p>This is an early effort where developed photos were analyzed by hand to extract the kinematics of sediment motion. Data resolution was insufficient to resolve statistical distributions characterizing sediment motion such as those obtained by Einstein 1937.</p>
+<h1 id="amir-and-nikora-2014">Amir and Nikora 2014</h1>
+<h2 id="measured-spatial-distribution-of-pressure-on-sediment-grains-using-a-sensor-array">(measured spatial distribution of pressure on sediment grains using a sensor array)</h2>
+<p>They make a cross shaped pressure sensor array. They use piezo-resistive pressure sensors. They analyze pressure spectral scaling within the space domain pressure signal. They note drag has one scaling range whereas lift has two. They do not explain what this means or what it can do, but I should probably read more carefully</p>
+<h1 id="ancey-2006">Ancey 2006</h1>
+<h2 id="birth-death-markov-as-a-generalization-of-einsteins-model-a-video-experiment">(birth death markov as a generalization of Einstein's model + a video experiment)</h2>
+<blockquote>
+<p>A longstanding problem in the study of sediment transport in gravel-bed rivers is related to the physical mechanisms governing bed resistance and particle motion. To study this problem, we investigated the motion of coarse spherical glass beads entrained by a steady shallow turbulent water flow down a steep two- dimensional channel with a mobile bed. This experimental facility is the simplest representation of sediment transport on the laboratory scale, with the tremendous advantages that boundary conditions are perfectly controlled and a wealth of information can be obtained using imaging techniques. Flows were filmed from the side by a high-speed camera.</p>
+</blockquote>
+<blockquote>
+<p>Using image processing software made it possible to determine the flow char- acteristics such as particle trajectories, their state of motion rest, rolling, or saltating motion, and flow depth.</p>
+</blockquote>
+<blockquote>
+<p>(our experiments) ... revealed the existence of long term correlations</p>
+</blockquote>
+<blockquote>
+<p>Essentially we are trying to generalize Einstein’s theory and to cast it in more physical terms and derive the statistical properties of the key variables. This is only supposed to hold at low flow rates.</p>
+</blockquote>
+<blockquote>
+<p>For the sake of simplicity, we will assume here that there is only one species of moving particles, which is referred to as the moving i.e., saltating and rolling particles M.</p>
+</blockquote>
+<p>In this analysis they apply &quot;This two-state Markov process is known as a telegrapher’s process&quot;</p>
+<p>This work is a reframing of Einstein's 1950 work in terms of Telagrapher's processes. There is a nice review of Einstein's 1950 approach which is actually much easier to read than Einstein's original work. Ancey highlights three key takeaway messages: (1) Einstein's theory with a Poisson distribution fails to predict the heavy tail observed on the number distribution within a locality. This implies there are long range correlations within the particle number distribution. They note a negative binomial distribution fits the data better. The theory to derive this is in a later Ancey et al paper when they add collective entrainment.</p>
+<h1 id="ancey-2008">Ancey 2008</h1>
+<h2 id="entrainment-and-motion">(entrainment and motion)</h2>
+<p>They do two things: 1) computation of the velocity of a single particle using a Gaussian white noise Langevin equation approach 2) They extend their 2006 birth death model to include immigration and emigration, deriving a negbin distribution of n</p>
+<p>The key here is that this is a one cell version with birth death immigration and emigration. I am not sure how this is contrasted with the next version up..</p>
+<h1 id="ancey-2010">Ancey 2010</h1>
+<h2 id="exner-equation-for-planar-bed-incipient-bed-load-transport-condition">(Exner equation for planar bed incipient bed load transport condition)</h2>
+<p>This is a JGR paper. They transform the 2008 markov birth death emi imi model into a fokker planck equation. They show this is an Orstein-Uhlenbeck process. They couple their markov theory to an exner equation and show that bed elevation fluctuations should be Gaussian. THis apparently comes just from analysis with no explicit analytical solution.</p>
+<h1 id="ancey-and-heyman-2014">Ancey and Heyman 2014</h1>
+<h2 id="microstructural-approach">(microstructural approach)</h2>
+<p>Here an array of adjacent cells is considered in order to take the continuum limit on the cell size (L-&gt;0 as N-&gt; inf). This results in a diffusion equation for sediment motion (with advection and diffusion). There is some complicated discussion here about the implications of a non-Poissonian number distribution on the emergence of bed morphology. Apparently, a Poisson equation expresses &quot;relatively simple&quot; macroscopic behavior, in contrast to a negative Binomial.</p>
+<p>They find a Langevin equation for a parameter in the Poisson transform space which they note is exhibits a more complex noise structure than the earlier effort of Jerolmack and Mohrig (2005).</p>
+<p>They discuss numerical solution possibilities. The Poisson transform is considered necessary to reduce the complexity of the computations.</p>
+<h1 id="ancey-bohorquez-and-heyman-2014">Ancey Bohorquez and Heyman 2014</h1>
+<h2 id="ancey-review">(ancey review )</h2>
+<p>There is some discussion of scale related issues and itermittency in transport rates. They use their white noise model of particle velocity in conjunction with their markov model of particle number fluctuations to obtain the pdf of the sediment transport rate. They also talk about their Saint-Venant Exner equation work and attempt to apply it to a realize stream by averaging laterally across the channel.</p>
+<h1 id="armanini-2014">Armanini 2014</h1>
+<h2 id="rephrasing-of-einstein-1950">(rephrasing of einstein 1950)</h2>
+<p>This is a reworking on Einstein's theory in the vein of Yalin. It is worth a read. It uses the so-called &quot;ballistic&quot; approach. This is also reviewed in the Armanini 2018 book.</p>
+<blockquote>
+<p>read this maybe: Hu C, Guo Q. Near-bed sediment concentration distribution and basic probability of sediment movement. J Hydraul Eng 2011;137(10):1269–75.http://dx.doi.org/10.1061/(ASCE)HY.1943-7900.0000382</p>
+</blockquote>
+<blockquote>
+<p>It is known that a particle moves on the bed as a result of the most important impulsive events. This means that the probability density curve of the distance traveled by the particle is not symmetric, so it cannot be Gaussian, as other experimental and theoretical investigations have already ascertained (Ancey 2011 claims it's a Gamma distribution)</p>
+</blockquote>
+<p>The improvement here on Einstein is that the transport rate is expressed in terms of displacepment probabilities (as considered by Einstein) <em>and</em> dislodgement probabilities. Armanini et al assume displacement and dislodgement are independent so they can use Bayes' theorem.</p>
+<p>Einstein origincally considered a Gaussian distribution of &quot;grain detachment&quot;. Ancey considered a Gamma distribution.</p>
+<p>Another extension is that the range of particles is considered limited by the particle concentration. This makes sense from two perspectives: First, collisions in high particle density areas would decrease travel distances; and second, as densities get higher they collectively sap energy from the flow which reduces its propensity to drive high travel distances.</p>
+<p>This study is still essentially non-mechanical. They heurestically prescribe curves and limiting factors with properties which give the resulting model the desired qualitative behavior.</p>
+<p>These modifications of the Einstein model apparently improve it uniformly at both low and high transport rates (forcing parameters Psi)</p>
+<blockquote>
+<p>he approach is based on two distinct probability functions, one relevant to the detachment of grains and the second relevant to the length of particle jumps. The sediment transport is obtained by integrating the distribution of the ranges of the particle jumps multiplied by the average particle velocity.</p>
+</blockquote>
+<p>All in all this paper modified Einstein 1950 by: 1) modifying the original analysis to include dislodgement and displacement probabilities 2) making the displacement probabilities dependent on flow properties 3) Swapping from a Gaussian displacement distribution to a Gamma distribution of displacemnet. This makes sense because extreme events drive sediment transport at low transport stages.</p>
+<h1 id="armanini-2018">Armanini 2018</h1>
+<h2 id="principles-of-river-hydraulics">(principles of river hydraulics)</h2>
+<p>A massive book on sediment transport and hydraulics. Excellent review of Einstein 1950 and Yalin 1972's criticism.</p>
+<h1 id="bagnold-1966">Bagnold 1966</h1>
+<h2 id="sediment-transport-acts-to-reduce-shear-stress-to-critical-shear-stress-this-is-the-bagnold-hypothesis">(sediment transport acts to reduce shear stress to critical shear stress: this is the bagnold hypothesis)</h2>
+<p>This could be called a 'Coulombic' approach as it was called by Armanini because it relies on a friction model balancing fluid and solid momenta.</p>
+<p>THere is an excellent review of this work by Seminara. Other work in the school (following the 1966 paper or maybe the 1956 is Ashida and Michiue [1972], Engelund and Fredsoe [1976] for nearly horizontal beds. Wiberg and Smith [1989], Sekine and Kikkawa [1992], and Nino and Garcia [1994a, 1994b], for example, have used the hypoth- esis to derive models of bed load on nearly horizontal beds based on an explicit calculation of grain saltation. Sekine and Parker [1992] used the Bagnold hypothesis to develop a saltation model for bed load on surface with a mild transverse slope, and Kovacs and Parker [1994] extended the analysis of Ashida and Michiue [1972] to the case of arbitrarily sloping beds. Bridge and Bennett [1992] too (this came from Seminara)</p>
+<blockquote>
+<p>Based on the most recently published formulations of bed load transport, then, it is possible to say that the field as a whole has tended away from the Einsteinean and toward the Bagnoldean formulation. (seminara 2002)</p>
+</blockquote>
+<blockquote>
+<p>It is shown here that the straightforward extension of the Bagnold hypothesis to the case of arbitrarily sloping bed proves to be impossible. (seminara 2002)</p>
+</blockquote>
+<p>There is good discussion of the emergence of doubt in the Bagnold hypothesis which occured in the 90s and early 2000s. It was somewhat dead about the same time stochastic approaches began their resurgence with Bohm in 2004 and Ancey in 2006, going into Furbish in 2012.</p>
+<p>The Seminara 2002 argument of the failure of the Bagnold hypothesis is not that convincing to me however. It relies on an inclination in the transverse direction.. and who cares about that?</p>
+<p>I need to spend a few hours reading about the reasons to doubt the Bagnold hypothesis sometime soon.</p>
+<h1 id="ballio-2012">Ballio 2012</h1>
+<h2 id="why-the-grain-scale-matters">(why the grain scale matters)</h2>
+<p>I'm not really sure what this is. It appears to be an introduction to a book. It does definitely provide some nice references and it's written skillfully.</p>
+<p>They identify three physical subsystems of a sediment transport system:</p>
+<ol style="list-style-type: decimal">
+<li>Water flow</li>
+<li>bed geometry (static sediment)</li>
+<li>mobile sediment</li>
+</ol>
+<blockquote>
+<p>we should recognize that the choice of a correct support scale for the (Eulerian) analysis of sediment transport processes is not always straightforward (because) processes cover a wide range of not well separated scales and morphological features do not have scales much larger than an individual grain which undermines the continuum hypothesis (paraphrasing from ballio 2012)</p>
+</blockquote>
+<p>There is a nice argument to be made from the introduction that continuum approaches are on quite shaky footing relative to microscale approaches (grain scale), and this is due to the difficulty of separting scales</p>
+<blockquote>
+<p>a widely accepted sediment transport model which explicitly incorporates the effect of the turbulent fluctuating field is not yet available</p>
+</blockquote>
+<p>Add Chang and Scotti 2003, Lee et al. 2006, Vollmer and Kleinhans 2007, and Detert et al. 2010a, b to the set of studies around forces on indiviudal grains (the flow and stress fields around particles and on the consequent displacment and transport of them)</p>
+<p><em>why the grain scale matters</em> &gt; the choice of the grain scale for the analysis is not only motivated by fundamental research on basic phenomena but, more and more, it appears as promising with respect to the modelling of morpho-dynamic processes.</p>
+<blockquote>
+<p>the grain scale can provide insight over the whole phenomenological chain resulting from the interac- tions among the three “phases” (fluid, rough boundaries, and moving sedi- ments).</p>
+</blockquote>
+<h1 id="ballio-2014">Ballio 2014</h1>
+<h2 id="def-of-solid-discharge">(def of solid discharge)</h2>
+<p>A few papers to read:</p>
+<p>Campagnol, J., Radice, A., Ballio, F. (2012). Scale-based sta- tistical analysis of sediment fluxes. Acta Geophys. 60(6), 1744–1777.<br />
+Coleman, S.E., Nikora, V. (2009). The Exner equation: A con- tinuum approximation of a discrete granular system. Water Resour. Res. 45, W09421.</p>
+<p>Conceptual issues with the solid discharge:</p>
+<ul>
+<li><p>Should velocities and numbers used in solid discharge definitions be time averaged or instantaneous?</p></li>
+<li><p>volume or time averaging is always employed implicitly when the target is a flux through a surface. This is not an experimental possibility.</p></li>
+<li><p>Under what conditions can Q be considered smooth enough for meaningful space and time diferentiation?</p></li>
+</ul>
+<p>The scale issue is underemphasized according to the authors.</p>
+<p>Clipping functions come from Nikora 2013 or Coleman and Nikora 2009. Originally they come from Lhuilleier 1992 or Zhang and Prosperetti 1994 where they were called phase indicator functions.</p>
+<p>They express the volume sediment concentration as an integral of clipping functions.</p>
+<p>There are three types of sediment concentrations considered. They yield different time averages and they relate linearly. Therefore there is no practical difference although the specific values may differ.</p>
+<blockquote>
+<p>The sediment fluxes through the boundaries may be expressed as the product of Area,Concentration , and Velocity, definitions of which depend on the averaging strategy.</p>
+</blockquote>
+<blockquote>
+<p>Thus, our relations highlight approximate nature of the solid discharge expressions that employ volume-averaged velocities and con- centrations (instead of areal quantities), as in Eq. (2) and in experimental assessments where sediment motion is optically measured from the top (for example, Fernandez Luque and Van Beek 1976, Radice and Ballio 2008).</p>
+</blockquote>
+<p>This paper uses experiments from Radice and Ballio (2008) and Campagnol (2012). They find weak correlations between velocity and concentration.</p>
+<blockquote>
+<p>no absolute pref- erence can be given to any of the many possible alternative expressions for the sediment discharge, as the “best” choice is linked to physical and statistical properties of the variables involved in different expressions.</p>
+</blockquote>
+<p>I don't get much out of this. It doesn't read very well.</p>
+<h1 id="ballio-2018-need-to-get">Ballio 2018 [NEED TO GET]</h1>
+<h2 id="lagrangian-and-eulerian">(lagrangian and eulerian)</h2>
+<p>filler</p>
+<h1 id="baule-et-al-2017---">Baule et al 2017 --</h1>
+<h2 id="edwards-statistical-mechanics">(edwards' statistical mechanics)</h2>
+<p>I think is a nice example of the gibbs concept applied outside of the conventional phase space. I need to do more background reading to understand how generally statistical mechanics can be abused in this way. Presumably this relates to action angle variables and generalized Gibbs ensembles somehow.</p>
+<h1 id="bohm-2004">Bohm 2004</h1>
+<h2 id="apparently-a-fixed-bed-video-experiment">(apparently a fixed bed video experiment)</h2>
+<p>This is revisited in Ancey 2014.</p>
+<p>This is an experiment with 6mm glass beads subjected to a supercritial turbulent flow. They get big fluctuations in solid discharge. Their objective is to find the origin of these solid discharge fluctuations under their highly controlled conditions. They investigated two mobile bed and two fixed bed conditions.</p>
+<blockquote>
+<p>fluctuations reflected the finite size of the observation window</p>
+</blockquote>
+<p>They find fluctuations exacerbated on the mobile bed case due to (i) entrainment/deposition and (ii) collective entrainment, especially.</p>
+<blockquote>
+<p>In the field of bed load transport, the mean-field ap- proximation primarily proposed by Bagnold [4] is a perva- sive assumption. According to this hypothesis, the fluid shear stress at the bed equals the threshold value correspond- ing to incipient motion of particles; the difference between the total bottom shear stress and provides the shear stress in the solid phase. Interpreting the latter stress as the result of momentum transfers between the solid and fluid phases makes it possible to theoretically compute the number of particles that can be entrained and maintained in motion and, thereby, the solid flow rate (or solid discharge). Such an approximation leads to a solid discharge q s in the form (excess shear stress to the 3/2 power)</p>
+</blockquote>
+<p>They highlight at steady uniform or gently varying flows, bagnold hypothesis works, but it fails over 'arbitrarily sloping beds' (see seminara 2002)</p>
+<blockquote>
+<p>The failure of the Bagnold assumption has renewed inter- est in a better understanding of the physical mechanisms of bed load transport. An alternative approach takes its roots in the work of Einstein [7]</p>
+</blockquote>
+<blockquote>
+<p>solid discharge depended a great deal on bed arrangement</p>
+</blockquote>
+<p>They basically measured the solid discharge under varying flow and bed geometry possibilities and found pervasive fluctuations under all conditions, as well as a strong dependence of transport rate on bed geometry. Fluctuations were accentuated by the presence of a mobile bed due to entrainment/deposition and collective entrainment especially.</p>
+<h1 id="bridge-and-bennett-1992">Bridge and Bennett 1992</h1>
+<h2 id="model-for-entrainment">(model for entrainment)</h2>
+<p>long as hell. They account for multiple size sediments subjected to fluctuating turbulent driving forces of drag and lift. They assume a density function of shear stress which is either Normal or Log-Normal. They review previous studies from White to Wiberg which are based on mechanistic conceptual pictures.</p>
+<p>They use their probability of entrainment derived in this way to generate a sediment transport rate per size fraction.</p>
+<p>This thing is a goddamn monster. Better to read about it than it is to read it.</p>
+<h1 id="campagnol-2013">Campagnol 2013</h1>
+<h2 id="lagrangian-analysis-of-bedload---a-video-experiment">(lagrangian analysis of bedload-- a video experiment)</h2>
+<p>a pretty poor paper among the collection using this methodology They basically present some data they got from Roger Noakes' software applied to a 2d video, and then I don't think they really do much with it.</p>
+<h1 id="campagnol-2015-need-to-get">Campagnol 2015 [NEED TO GET]</h1>
+<h2 id="ensemble-resolving-sediment-transport-experiment">(ensemble resolving sediment transport experiment)</h2>
+<p>filler</p>
+<h1 id="celik-2014">Celik 2014</h1>
+<h2 id="pressure-measurements-on-grain">(pressure measurements on grain)</h2>
+<blockquote>
+<p>Investigators have advocated that particle dislodgement is due to the peak hydrodynamic force imparted by turbulent fluctuations (paraphrasing) -- Kalinske 1947, Kirchner 1990, Sumer 2003</p>
+</blockquote>
+<blockquote>
+<p>celik 2010 Nelson 1995 and Sumer 2003 all indicate that entrainment is highly sensitive to flow conditions</p>
+</blockquote>
+<p>This is the best review available of the cutting edge mobility studies.</p>
+<blockquote>
+<p>because of the highly fluctuating nature of turbulent flows, the magnitude of high instantaneous streamwise velocity or even the magnitude of the corresponding instantaneous drag forces occuring during the passage of the energetic flow structures are insufficient to completely describe the flow characteristics required for the full dislodgement of a sediment particle. Both the force magnitude and its duration play an equally important role in triggering particle dislodgement.</p>
+</blockquote>
+<p>tl;dr: impulse is more suitable</p>
+<p>The critical impulse idea comes from Celik 2011.</p>
+<blockquote>
+<p>All in all the dominance of sweep and outward interaction events in particle dislodgement is due to the frequence occurrence of high magnitude impulse events during the fourth and first quadrants and the coincident increase in many cases of the lift forces.</p>
+</blockquote>
+<h1 id="celik-diplas-2010">Celik Diplas 2010</h1>
+<h2 id="entrainment-is-highly-sensitive-to-flow-conditions">(entrainment is highly sensitive to flow conditions)</h2>
+<p>Nelson 1995 and Sumer 2003 corroborate this point.</p>
+<p>They measure the entrainment of a uniform sphere (ping pong ball?) from the surface of a uniform arrangement of ping pong balls.</p>
+<p>They catch the ball after entrainment with a retaining pin, then replace it in its original position.</p>
+<p>Simultaneously with the entrainment records which were measured using a photo detector and a laser (square wave signal), they obtain the downstream fluid velocity component with laser doppler velociometry.</p>
+<p>They show the impulse F*dt explains the entrainment record far more effectively than the mean velocity (which was sub-threshold) or its instantaneous signal.</p>
+<p>Impulse data fit a log-normal distribution.</p>
+<p>They observed a critical impulse value although there is so much noise that it, too does not seem to be a valid concept to me. I wonder what subsequent experiments say about this. I would assume there is a range of critical impulses.</p>
+<p>Entrainment is very sensitive to the critical velocity. They note orders of magnitude increase in the movement rate as shear stress is hardly varied.</p>
+<p>This is a great paper with a somewhat brilliant and somewhat sad conclusion.</p>
+<h1 id="charru-2004">Charru 2004</h1>
+<h2 id="deposition-model-kinematic-trapping">(deposition model! kinematic trapping)</h2>
+<p>Laminar flow in an annular channel shears glass beads. They observe the transport on video. 24Hz-- quite slow. The particles were manually identified int he video due to &quot;the lack of contrast&quot;. They also use an ultrasonic probe to measure the variations in bed elevation.</p>
+<blockquote>
+<p>In particular, it is recognized that the laws based on Bagnold’s original concepts are not accurate for bottom shear stresses close to the threshold of particle motion. Moreover, the above models ignore the problem of bed compaction, and to our knowledge there are again no models predicting the time scales of this phenomenon.</p>
+</blockquote>
+<blockquote>
+<p>The second objective is to propose two models to account for the underlying physical processes: a ‘dynamic’ model for the erosion and deposition processes, and a ‘kinematic’ model for the long-term evolution of the particle flow rate.</p>
+</blockquote>
+<p>They obtained several hundred particle velocity measurements. For the duration of particle motions they got &quot;an order of magnitude lower&quot; number of observations &quot;at least&quot;.</p>
+<p>They obtain velocity PDFS with Eulerian and Lagrangian methods. They find an <em>exponential velocity distribution</em>. They find particle velocity and fluid velocity are linearly linked and also proportionally related by the shear rate (shear stress per unit depth)</p>
+<p>They obtain the number of active particles per unit area. Notably the particle activity decreases steeply through time. _Even under laminar steady flow conditions, with uniform spherical sediment grains and with no sediment supply to consider, bed material mobility decreases steadily to a very low value.</p>
+<p>They note that the saturation value exhibits different regimes of behavior partitioned by the shear stress. It either saturates to zero or it saturates to a finite value which is a function of the shear stress.</p>
+<p>The divide between these two saturation regimes is a critical saturation stress which is said to be a function of the bed geometry via trapping and armoring.</p>
+<p>That's the experimental portion of the paper. Now for the theoretical portion of the paper:</p>
+<p>The first model is based on dimensional analysis and is not super interesting.</p>
+<p>The second model is very interesting.</p>
+<blockquote>
+<p>To account for the slow decrease of the surface density of the moving particles, and following the observation that this decrease is related to particles stopping in little crevices at the bed surface, we consider here explicitly the surface microstructure of the bed by modelling it as a flat surface with troughs in which moving particles may be trapped.</p>
+</blockquote>
+<p>He considers randomly distributed troughs which can trap particles.</p>
+<p>This is pretty inspiring. I'd love to modify the analysis to the case where the troughs have a probability to trap particles</p>
+<h1 id="charru-2006">Charru 2006</h1>
+<h2 id="section">()</h2>
+<p>filler</p>
+<h1 id="cheng-chiew-1998">Cheng-Chiew 1998</h1>
+<h2 id="pickup-probability">(pickup probability)</h2>
+<p>filler</p>
+<h1 id="church-2006">Church 2006</h1>
+<h2 id="bedload-transport-and-morphology">(bedload transport and morphology)</h2>
+<p>filler</p>
+<h1 id="cooper-2017">Cooper 2017</h1>
+<h2 id="permeability-of-beds-affects-the-near-bed-hydrodynamics">(permeability of beds affects the near bed hydrodynamics)</h2>
+<p>filler</p>
+<h1 id="cudden-and-hoey-2003">Cudden and Hoey 2003</h1>
+<h2 id="bed-load-experiment-emphasis-on-fluctuations">(bed load experiment emphasis on fluctuations)</h2>
+<p>filler</p>
+<h1 id="dey-1999-need-to-get">Dey 1999 [NEED TO GET]</h1>
+<h2 id="is-a-masterpiece-of-sediment-transport-theory">(is a masterpiece of sediment transport theory)</h2>
+<p>filler</p>
+<h1 id="dey-and-ali-2017">Dey and Ali 2017</h1>
+<h2 id="stochastic-mechanics-of-loose-boundary-particle-in-turbulent-flow">(stochastic mechanics of loose boundary particle in turbulent flow)</h2>
+<p>filler</p>
+<h1 id="dey-and-zanke-2004-need-to-get">Dey and Zanke (2004) [NEED TO GET]</h1>
+<h2 id="apparently-modified-1999-paper-to-incorporate-upward-hyperhoic-seepage">(apparently modified 1999 paper to incorporate upward hyperhoic seepage)</h2>
+<p>filler</p>
+<h1 id="dey-papanicola-2008">Dey Papanicola 2008</h1>
+<h2 id="sediment-treshold-review">(sediment treshold review)</h2>
+<p>filler</p>
+<h1 id="diplas-2008">Diplas 2008</h1>
+<h2 id="role-of-impulse">(role of impulse)</h2>
+<p>They show a critical threshold must incorporate impulse, which is an idea suggested by Newtonian physics anyway. They use an electromagnetic experiment to really drive the point home, as this is simpler than the fluid dynamical case.</p>
+<h1 id="dwivedi-2010a">Dwivedi 2010a</h1>
+<h2 id="drag-force-experiment">(drag force experiment)</h2>
+<p>filler</p>
+<h1 id="dwivedi-2010">Dwivedi 2010</h1>
+<h2 id="spectral-theory-drag-force-experiment">(spectral theory drag force experiment)</h2>
+<p>filler</p>
+<h1 id="dwivedi-2011">Dwivedi 2011</h1>
+<h2 id="lift-force-experiment">(Lift force experiment)</h2>
+<p>filler</p>
+<h1 id="einstein-1937">Einstein 1937</h1>
+<h2 id="section-1">()</h2>
+<p>filler</p>
+<h1 id="einstein-1950">Einstein 1950</h1>
+<h2 id="sediment-transport-based-on-ed---heuristic-or-phenomenological">(sediment transport based on E=D-- heuristic or phenomenological)</h2>
+<blockquote>
+<p>First, as pointed out by Lisle et al. Einstein implicitly considered that bed-load transport results from alternat- ing periods of motion and rest with a typical time scale of motion that remains very short compared to the resting time. In short, in Einstein’s approach, solid discharge does not de pend on particle velocity, but only on the rate at which grains are entrained from the bed. At approximately the same timeas Einstein, Kalinske derived a bed-load equation from particle velocity, but without determining the number of particles in motion. Surprisingly enough, it turns out that the two major ingredients used here the particle velocity and the number of particles in motion were already recognized 60 years ago as important when taken separately, but their combination seems to have been overlooked. (this is from Ancey 2006 appendix)</p>
+</blockquote>
+<p>It is noted that the entrainment probabilities will surpass 1 at high flow stages. This indicates the breakdown of itermittent bedload transport into a bedload sheet flow like that studied by Moullion</p>
+<blockquote>
+<p>For instance, in Einstein’s theory and subsequent variants, fluctuations of the solid discharge are Gaussian, whereas field and laboratory measurements show wider fluctuations. (from ancey 2008)</p>
+</blockquote>
+<blockquote>
+<p>Einstein assumed that the dimensionless lift force r 1⁄4 L=L, should follow a Gaussian dis- tribution. Indicating with a the threshold value of r, with which the detachment of the particle occurs, the detachment is possible only if r &gt; a. Another assumption of Einstein, which is difficult to explain rationally, is that the detachment is possible if |L | &gt; W - B, instead of simply L &gt; W - B. (from Armanini 2015). Einstein contends entrainment results from negative lift forces? Is this just to make the answer work out?</p>
+</blockquote>
+<p>See also Nakagawa and Tsujimoto [1980], van Rijn [1984], and Tsujimoto [1991] for similar approaches which rely on a pick-up or dislodgement probability (as Einstein's does... this comes from Seminara 2002).</p>
+<h1 id="einstein-1972-need-to-get">Einstein (1972) [NEED TO GET]</h1>
+<h2 id="section-2">()</h2>
+<p>filler</p>
+<h1 id="fan-2014">Fan 2014</h1>
+<h2 id="langevin-model">(langevin model)</h2>
+<p>filler</p>
+<h1 id="fan-2016">Fan 2016</h1>
+<h2 id="langevin-model-with-rest-times">(langevin model with rest times)</h2>
+<p>filler</p>
+<h1 id="fathel-2015">Fathel 2015</h1>
+<h2 id="experimental-evidence-of-statistical-ensemble">(experimental evidence of statistical ensemble)</h2>
+<p>filler</p>
+<h1 id="fathel-2016">Fathel 2016</h1>
+<h2 id="parsing-anomalous-vs-normal-diffusion-in-bedload-grains">(parsing anomalous vs normal diffusion in bedload grains)</h2>
+<p>filler</p>
+<h1 id="fernandez-luque-and-van-beek-1976-need-to-get">Fernandez Luque and Van Beek 1976 [NEED TO GET]</h1>
+<h2 id="video-experiment-from-the-top">(video experiment from the top)</h2>
+<p>learned about this from ballio 2014</p>
+<h1 id="foufoula-georgiou-and-stark-2012">Foufoula-Georgiou and Stark 2012</h1>
+<h2 id="section-3">()</h2>
+<p>cited in Armanini 2014</p>
+<h1 id="furbish-2012-1">Furbish 2012 (1)</h1>
+<h2 id="section-4">()</h2>
+<p>This is probably the cleanest discussion of ensemble averaging in sediment transport theory.</p>
+<p>Also different options for the sediment flux are reviewed here, leading into the Ballio 2014 work which analyzes their similarities and differences carefully.</p>
+<h1 id="furbish-2012-3">Furbish 2012 (3)</h1>
+<h2 id="probabilistic-description-of-velocity-distribution-and-sediment-flux">(probabilistic description of velocity distribution and sediment flux)</h2>
+<p>filler</p>
+<h1 id="furbish-2012-4">Furbish 2012 (4)</h1>
+<h2 id="fickian-diffusion-at-low-transport-rates">(fickian diffusion at low transport rates)</h2>
+<p>filler</p>
+<h1 id="furbish-2016">Furbish 2016</h1>
+<h2 id="velocities-accelearations-ho-pdistances-and-travel-times-informed-by-jayne-entropy">(velocities accelearations ho pdistances and travel times informed by Jayne entropy)</h2>
+<p>filler</p>
+<h1 id="furbish-2017">Furbish 2017</h1>
+<h2 id="review-on-sediment-diffusion">(review on sediment diffusion)</h2>
+<p>filler</p>
+<h1 id="ganti-2010">Ganti 2010</h1>
+<h2 id="stochastic-model-based-on-markov-theory">(stochastic model based on markov theory)</h2>
+<p>filler</p>
+<h1 id="gessler-1977-need-to-get">Gessler 1977 [NEED TO GET]</h1>
+<h2 id="estimate-of-probability-to-remain-stationary">(estimate of probability to remain stationary</h2>
+<p>filler</p>
+<h1 id="gomez-1991">Gomez 1991</h1>
+<h2 id="bedload-transport-review">(bedload transport review )</h2>
+<p>filler</p>
+<h1 id="hassan-and-bradley-2017">Hassan and Bradley 2017</h1>
+<h2 id="geomorphic-controls-on-tracers">(geomorphic controls on tracers)</h2>
+<p>filler</p>
+<h1 id="heyman-2013">Heyman 2013</h1>
+<h2 id="separation-of-timescales-in-bedload-transport-rate">(separation of timescales in bedload transport rate)</h2>
+<p>I think they see that fluctuations of different types in the transport rate separate cleanly into process divisions</p>
+<h1 id="heyman-2014">Heyman 2014</h1>
+<h2 id="spatial-correlations-in-bed-load-transport">(Spatial correlations in bed load transport)</h2>
+<p>filler</p>
+<h1 id="heyman-2014-1">Heyman 2014</h1>
+<h2 id="thesis---spatiotemporal-behavior-of-bedload-rate-fluctuations">(thesis-- spatiotemporal behavior of bedload rate fluctuations)</h2>
+<p>filler</p>
+<h1 id="heyman-2016a">Heyman 2016a</h1>
+<h2 id="entrainment-motion-and-deposition-of-coarse-particles">(Entrainment, motion, and deposition of coarse particles)</h2>
+<p>filler</p>
+<h1 id="heyman-2016b">Heyman 2016b</h1>
+<h2 id="spatiotemporal-bedload-rate-fluctuations">(spatiotemporal bedload rate fluctuations)</h2>
+<p>filler</p>
+<h1 id="hofland-and-battjes-2006">Hofland and Battjes (2006)</h1>
+<h2 id="a-probability-density-function-of-the-instantaneous-bed-shear-stress">(A probability density function of the instantaneous bed shear stress)</h2>
+<p>filler</p>
+<h1 id="jaynes-1957">Jaynes 1957</h1>
+<h2 id="information-entropy">(information entropy)</h2>
+<p>filler</p>
+<h1 id="kalinske-1947">Kalinske 1947</h1>
+<h2 id="bedload-movement">(bedload movement)</h2>
+<p>filler</p>
+<h1 id="kirchener-1990">Kirchener 1990</h1>
+<h2 id="section-5">()</h2>
+<p>filler</p>
+<h1 id="kline-1967">Kline (1967)</h1>
+<h2 id="turbulence-structure">(turbulence structure)</h2>
+<p>first paper on turbulence structure. they used hot wires and hydrogen bubbles</p>
+<h1 id="lajeunesse-2010">Lajeunesse 2010</h1>
+<h2 id="section-6">()</h2>
+<p>filler</p>
+<h1 id="lajeunesse-2012">Lajeunesse 2012</h1>
+<h2 id="section-7">()</h2>
+<p>filler</p>
+<h1 id="ling-1995">Ling 1995</h1>
+<h2 id="section-8">()</h2>
+<p>filler</p>
+<h1 id="ling-2012">Ling 2012</h1>
+<h2 id="entrainment-theory">(entrainment theory)</h2>
+<p>filler</p>
+<h1 id="lisle-1998-need-to-get">Lisle 1998 [NEED TO GET]</h1>
+<h2 id="sediment-transport-as-birth-death-process">(sediment transport as birth death process)</h2>
+<p>filler</p>
+<h1 id="ma-2014">Ma 2014</h1>
+<h2 id="three-regimes-of-fluctuations-in-bedload-transport">(three regimes of fluctuations in bedload transport)</h2>
+<p>filler</p>
+<h1 id="martin-2014">Martin 2014</h1>
+<h2 id="mean-reverting-random-walk">(mean reverting random walk)</h2>
+<p>filler</p>
+<h1 id="ma-xu-2013">Ma, Xu 2013</h1>
+<h2 id="rollover-model-probabilistic-with-some-simulations">(rollover model probabilistic with some simulations)</h2>
+<p>filler</p>
+<h1 id="mouilleron-and-charru-2009">Mouilleron and Charru 2009</h1>
+<h2 id="parabolic-velocity-distribution-inside-bed">(parabolic velocity distribution inside bed)</h2>
+<p>this paper might undermine the idea that there are two clean phases as envisioned by einstein. einstein is limited to a partial mobility state. as full mobility is approached, presumably the rest time concept breaks.</p>
+<h1 id="nelson-1995">Nelson 1995</h1>
+<h2 id="turbulence-and-sediment-transport">(turbulence and sediment transport)</h2>
+<p>filler</p>
+<h1 id="nino-garcia-1996">Nino Garcia 1996</h1>
+<h2 id="section-9">()</h2>
+<p>In 1999 they cast doubts on the Bagnold Hypthesis.</p>
+<h1 id="paintal-1970">Paintal 1970</h1>
+<h2 id="phd-thesis">(phd thesis)</h2>
+<p>filler</p>
+<h1 id="paintal-1971">Paintal 1971</h1>
+<h2 id="stochastic-bedload-model">(stochastic bedload model)</h2>
+<p>filler</p>
+<h1 id="papanicolaou-2002">Papanicolaou 2002</h1>
+<h2 id="stochastic-incipient-motion-criterion-for-spheres-under-various-bed-packing-conditions">(Stochastic Incipient Motion Criterion for Spheres under Various Bed Packing Conditions)</h2>
+<p>Apparently treats this as a birth death process following Lilse 1998</p>
+<h1 id="parker-2000">Parker 2000</h1>
+<h2 id="model-involving-instantaenous-bed-elevations-and-exner-equation">(model involving instantaenous bed elevations and exner equation)</h2>
+<p>filler</p>
+<h1 id="pelosi-2014">Pelosi 2014</h1>
+<h2 id="seemingly-advanced-model-including-burial-all-treated-probabilistically">(seemingly advanced model including burial all treated probabilistically)</h2>
+<p>filler</p>
+<h1 id="radice-2006">Radice 2006</h1>
+<h2 id="image-analysis-based-acquisition-of-qt">(image analysis based acquisition of Q(t))</h2>
+<p>filler</p>
+<h1 id="radice-and-ballio-2008-need-to-get">Radice and Ballio 2008 [NEED TO GET]</h1>
+<h2 id="bedload-fluctuations---something-about-averaging">(bedload fluctuations-- something about averaging )</h2>
+<p>filler</p>
+<h1 id="recking-2016">Recking 2016</h1>
+<h2 id="on-the-morphology---transport-connection-like-church-2006">(on the morphology-- transport connection like church 2006)</h2>
+<p>filler</p>
+<h1 id="roseberry-2012">Roseberry (2012)</h1>
+<h2 id="motion-of-sand-grains-from-camera-experiment">(motion of sand grains from camera experiment)</h2>
+<p>filler</p>
+<h1 id="sayre-hubbel-1965">Sayre Hubbel 1965</h1>
+<h2 id="strong-validation-of-einstein-model">(strong validation of einstein model )</h2>
+<p>Classic add radioactive sand to a river and follow it downstream. The data fit Einstein very well, probably because of the uniform sand.</p>
+<h1 id="schmeckle-2007">Schmeckle 2007</h1>
+<h2 id="instantaneous-force-acquisition">(instantaneous force acquisition)</h2>
+<p>filler</p>
+<h1 id="seizille-2014">Seizille 2014</h1>
+<h2 id="cross-stream-diffusion">(cross stream diffusion)</h2>
+<p>They measure cross stream diffusion over a fixed bed in a laminar flow using a top down camera perspective.</p>
+<h1 id="seminara-2002">Seminara 2002</h1>
+<h2 id="failure-of-bagnold-hypothesis">(failure of bagnold hypothesis)</h2>
+<p>The Bagnold Hypothesis is : &gt; The Bagnold hypothesis has been a major tool in the development of mechanistic models of bed load transport. According to the hypothesis, a necessary constraint for the maintenance of equilibrium bed load transport is that the fluid shear stress at the bed must be reduced to the critical, or threshold value associated with incipient motion of grains.</p>
+<p>The central idea of this paper is that above a critical slope there is no level of bed load transport which reduces the shear stress at the bed to the threshold value. The Bagnold criterion can never be met.</p>
+<blockquote>
+<p>Attempts to provide a mechanistic description of bed load transport under uniform equilibrium conditions have invariably fallen into one or the other of two camps, one having its origin in the work of Einstein [1950] and the other deriving from the work of Bagnold [1956].</p>
+</blockquote>
+<blockquote>
+<p>The centerpiece of the Einsteinean formulation is the specification of an entrainment rate of particles into bed load transport (pick-up function) as a function of boundary shear stress and other parameters. The work of Nakagawa and Tsujimoto [1980], van Rijn [1984], and Tsujimoto [1991], for example, represent formulations of this type..</p>
+</blockquote>
+<p>This paper claims the bagnold hypothesis fails for transverse angles. THey just slightly modified the bagnold work to include transverse angles and show the formulation is no longer solveable. I don't think it's all that interesting. I guess I need to read the companion paper though.</p>
+<h1 id="parker-seminara-et-al-2003">Parker Seminara et al 2003</h1>
+<h2 id="works-past-the-failure-of-the-bagnold-hypothesis">(works past the failure of the bagnold hypothesis)</h2>
+<p>filler</p>
+<h1 id="singh-2009">Singh 2009</h1>
+<h2 id="scaling-of-sediment-transport-rates">(scaling of sediment transport rates)</h2>
+<p>This paper indicates the difficulty of measuring a stable sediment transport rate through the wide discrepancy of characteristics seen at different sampling intervals.</p>
+<h1 id="singh-2010">Singh 2010</h1>
+<h2 id="influence-of-gravel-bed-on-velocity-power-spectra">(influence of gravel bed on velocity power spectra)</h2>
+<p>filler</p>
+<h1 id="sumer-2003">Sumer 2003</h1>
+<h2 id="influence-of-turbulence-on-bed-load">(influence of turbulence on bed load )</h2>
+<p>filler</p>
+<h1 id="sun-2015">Sun 2015</h1>
+<h2 id="stochastic-model-analysis-of-partial-transport">(stochastic model analysis of partial transport)</h2>
+<p>filler</p>
+<h1 id="sun-donahue-2000">Sun Donahue 2000</h1>
+<h2 id="stochastic-bedload-fraction">(stochastic bedload fraction)</h2>
+<p>filler</p>
+<h1 id="tsai-and-yang-2001-need-to-get">Tsai and Yang 2001 [NEED TO GET]</h1>
+<h2 id="modeling-bed-load-transport-by-a-three-state-continuous-time-markov-chain-model">(Modeling bed-load transport by a three-state continuous-time markov chain model)</h2>
+<p>filler</p>
+<h1 id="turowski-xxxx-need-to-get">Turowski XXXX [NEED TO GET]</h1>
+<h2 id="start-and-end-of-bedload-transport">(start and end of bedload transport)</h2>
+<p>filler</p>
+<h1 id="tolman-1937">Tolman 1937</h1>
+<h2 id="section-10">()</h2>
+<p>filler</p>
+<h1 id="valyrakis-2010">Valyrakis 2010</h1>
+<h2 id="extreme-value-theory">(extreme value theory)</h2>
+<p>filler</p>
+<h1 id="valyrakis-2010-1">Valyrakis 2010</h1>
+<h2 id="role-of-impulse-1">(role of impulse)</h2>
+<p>filler</p>
+<h1 id="valyrakis-2013">Valyrakis 2013</h1>
+<h2 id="energy-and-entrainment">(energy and entrainment)</h2>
+<p>filler</p>
+<h1 id="venditti-2017">Venditti 2017</h1>
+<h2 id="review-article-on-bedforms-and-sediment-supply">(review article on bedforms and sediment supply)</h2>
+<p>filler</p>
+<h1 id="wang-and-sayre-1971">Wang and Sayre 1971</h1>
+<h2 id="extension-of-einstein">(extension of einstein)</h2>
+<p>filler</p>
+<h1 id="weeks-1996">Weeks 1996</h1>
+<h2 id="assymetrical-random-walk">(assymetrical random walk)</h2>
+<p>filler</p>
+<h1 id="wiberg-and-smith-1987">Wiberg and Smith 1987</h1>
+<h2 id="critical-shear-stress-calculation">(critical shear stress calculation)</h2>
+<p>filler</p>
+<h1 id="wu-chou-2002">Wu Chou 2002</h1>
+<h2 id="rolling-lifting">(rolling lifting )</h2>
+<p>filler</p>
+<h1 id="wu-lin-2002">Wu Lin 2002</h1>
+<h2 id="pickup-probability-1">(pickup probability )</h2>
+<p>filler</p>
+<h1 id="wu-yang-2004">Wu Yang 2004</h1>
+<h2 id="entrainment">(entrainment)</h2>
+<p>filler</p>
+<h1 id="yalin-1972">Yalin 1972</h1>
+<h2 id="a-criticism-of-einstein-1950-apparently">(A criticism of Einstein 1950, apparently)</h2>
+<p>(these comments come from Armanini 2015) Einstein's weak points were:</p>
+<ul>
+<li><p>the length of the average jump is treated as proportional to grain size, but this should of course depend on the flow intensity parameter too</p></li>
+<li><p>Einstein defined T_p (the exchange time) separately from the hop distance L_p (which was assumed to be 100 particle diameters..). This leads to a problem because then the ratio L_p/T_p does not depend on the hydrodynamic conditions (Armanini 2015)</p></li>
+<li><p>Yalin's theory agrees better at high flow conditions because the time scale T_p depends on the shear stress.</p></li>
+</ul>
+<h1 id="zhang-2012">Zhang 2012</h1>
+<h2 id="linking-across-scales">(linking across scales )</h2>
+</body>
+</html>

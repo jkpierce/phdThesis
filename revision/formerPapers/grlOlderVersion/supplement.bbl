@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Arfken}(1985)}]{Arfken1985}
+Arfken, G., \textit{{Mathematical Methods for Physicists}}, Academic Press,
+  Inc., \doi{10.1063/1.3062258}, 1985.
+
+\bibitem[{\textit{Berezhkovskii and Weiss}(2002)}]{Berezhkovskii2002}
+Berezhkovskii, A.~M., and G.~H. Weiss, {Detailed description of a two-state
+  non-Markov system}, \textit{Physica A: Statistical Mechanics and its
+  Applications}, \textit{303}(1-2), 1--12, \doi{10.1016/S0378-4371(01)00431-9},
+  2002.
+
+\bibitem[{\textit{Kittel}(1958)}]{Kittel1958}
+Kittel, C., \textit{{Elementary Statistical Physics}}, R.E. Krieger Pub. Co.,
+  1958.
+
+\bibitem[{\textit{Lajeunesse et~al.}(2018)\textit{Lajeunesse, Devauchelle, and
+  James}}]{Lajeunesse2018}
+Lajeunesse, E., O.~Devauchelle, and F.~James, {Advection and dispersion of bed
+  load tracers}, \textit{Earth Surface Dynamics}, \textit{6}(November),
+  389--399, 2018.
+
+\bibitem[{\textit{Lisle et~al.}(1998)\textit{Lisle, Rose, Hogarth, Hairsine,
+  Sander, and Parlange}}]{Lisle1998}
+Lisle, I.~G., C.~W. Rose, W.~L. Hogarth, P.~B. Hairsine, G.~C. Sander, and
+  J.-Y. Parlange, {Stochastic sediment transport in soil erosion},
+  \textit{Journal of Hydrology}, \textit{204}, 217--230, 1998.
+
+\bibitem[{\textit{Prudnikov et~al.}(1992)\textit{Prudnikov, Brychkov, and
+  Marichev}}]{Prudnikov1992a}
+Prudnikov, A., Y.~A. Brychkov, and O.~Marichev, \textit{{Integrals and Series:
+  Volume 5: Inverse Laplace Transforms}}, Gordon and Breach Science Publishers,
+  1992.
+
+\bibitem[{\textit{Temme}(1996)}]{Temme1996}
+Temme, N.~M., \textit{{Special functions: An introduction to the classical
+  functions of mathematical physics}}, John Wiley {\&} Sons Ltd., 1996.
+
+\bibitem[{\textit{Weeks and Swinney}(1998)}]{Weeks1998}
+Weeks, E.~R., and H.~L. Swinney, {Anomalous diffusion resulting from strongly
+  asymmetric random walks}, \textit{Physical Review E - Statistical Physics,
+  Plasmas, Fluids, and Related Interdisciplinary Topics}, \textit{57}(5),
+  4915--4920, \doi{10.1103/PhysRevE.57.4915}, 1998.
+
+\bibitem[{\textit{Weiss}(1994)}]{Weiss1994}
+Weiss, G.~H., \textit{{Aspects and applications of the random walk}}, North
+  Holland, Amsterdam, 1994.
+
+\bibitem[{\textit{Wu et~al.}(2019)\textit{Wu, Foufoula-Georgiou, Parker, Singh,
+  Fu, and Wang}}]{Wu2019}
+Wu, Z., E.~Foufoula-Georgiou, G.~Parker, A.~Singh, X.~Fu, and G.~Wang,
+  {Analytical solution for anomalous diffusion of bedload tracers gradually
+  undergoing burial}, \textit{Journal of Geophysical Research: Earth Surface},
+  \textit{124}(1), 21--37, \doi{10.1029/2018JF004654}, 2019.
+
+\end{thebibliography}

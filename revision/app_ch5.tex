@@ -1,0 +1,74 @@
+%%!TEX root = diss.tex
+
+
+\chapter{Calculations involved in the Collisional Langevin model}
+
+
+\section{Derivation of Master Equation}
+\label{sec:langmasterderiv}
+To derive the master equation from \ref{eq:langevin}, we temporarily consider the Gaussian white noise (GWN) $\xi(t)$ as a Poisson jump process having rate $r$ and jumps $ \sqrt{2 d} h$ with $h$ distributed as $f(h)$. We will later take a GWN limit on this noise. With this assumption, integrating \ref{eq:langevin} over a small time interval $\delta t$ considering the Ito interpretation for the collision term provides
+\be     
+u(t+\delta t) =
+\begin{cases}
+	u(t) + \gamma \delta t & \text{with probability } 1- r \delta t - \nu \delta t\\
+	u(t) + \sqrt{2 d} h &  \text{with probability } r \delta t \\
+	\ve u(t) &  \text{with probability } \nu \delta t
+\end{cases}
+\ee
+
+Considering the probability $P(u,t+\delta t)$ as a sum over possible paths from $P(u,t)$ develops 
+\begin{align} P(u,t+\delta t) =
+	(1- r \delta t - \nu \delta t)\int_{-\infty}^\infty dw  \delta(u-w-\gamma \delta t) P(w,t)\\ 
+	+  r \delta t \int_{-\infty}^\infty dw \int_{-\infty}^\infty dh f(h) \delta (u - w - \sqrt{2 d}h) P(w,t) \\ 
+	+ \nu \delta t \int_{-\infty}^\infty dw \int_0^1 d\ve \rho(\ve)  \delta(u-w\ve) P(w,t).
+\end{align}
+Evaluating all integrals over $\delta$-functions provides 
+\begin{align} P(u,t+\delta t) = (1-r \delta t - \nu \delta t)P(u-\gamma \delta t, t) \\+ r \delta t\int_{-\infty}^\infty dh f(h) P(u+\sqrt{2d}h) \\+ \nu \delta t \int_0^1 \frac{d\ve}{\ve} \rho(\ve) P\big(\frac{u}{\ve}\big).\end{align}
+Finally, we take $\delta t \rightarrow 0$ and limit the Poisson noise involving $\sqrt{2d}$ to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ \cite{VanDenBroeck1983}. This process finally obtains the master equation (\ref{eq:master}).
+\section{Derivation of Steady-state solution}
+\label{sec:langsteadyderiv}
+Defining $\tilde{P}(s) = \int_{-\infty}^\infty du e^{i u s} P(u) $ as the Fourier transform (FT) of $P(u)$ and taking the FT of \ref{eq:master} develops the recursion relation
+\be \tilde{P}(s) = \frac{\tilde{P}(s\ve)}{q(s)}. \ee
+where
+\be q(z) = \tilde{D} z^2 - i \tilde{\Gamma} z + 1 . \label{eq:q} \ee
+Recursing $N+1$ times provides
+\be \tilde{P}(s) = \frac{\tilde{P}(s \ve^{N+1})}{q(s \ve^0)q(s\ve^1)\dots q(s\ve^N)}.\label{eq:recursion}\ee
+The polynomials $q(z)$ can always be factored as $q(z) = d(z - i\lambda_-)(z - i\lambda_+)$ where
+\be \lambda_\pm = \frac{\tilde{\Gamma}}{2\tilde{D}}\Big[1 \pm \sqrt{ 1 + 4\tilde{D}/\tilde{\Gamma}^2} \Big]. \label{eq:lambdas}\ee
+Using these factors to expand $\tilde{P}(s)$ in partial fractions provides
+\be \tilde{P}(s)  = \tilde{P}(s \ve^{N+1}) \sum_{l=0}^N  \Big[ \frac{R_l^-}{s\ve^l - i\lambda_-} + \frac{R_l^+}{s\ve^l - i\lambda_+} \Big] \ee
+where the coefficients $R_l^\pm$ are the residues (at least up to a constant factor) of the product $[q(s\ve^0)\dots q(s\ve^N)]^{-1}$:
+\be R_l^\pm = \frac{s \ve^{l} - i\lambda_\pm }{q(s\ve^0)\dots q(s \ve^N)} \Big|_{s= i \lambda_\pm \ve^{-l}}.\ee
+The Fourier transform (\ref{eq:recursion}) has a convenient feature as $N\rightarrow \infty$: since $0<\ve <1$, the prefactor $\tilde{P}( s \ve^{N+1})$ becomes the normalization condition $\tilde{P}(0)=1$ for the probability distribution $P(u)$ in the limit.
+Taking this limit and evaluating the residues provides 
+\begin{multline} \tilde{P}(s) = \frac{1}{\tilde{D}(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_- \ve^m)} \sum_{l=0}^\infty \frac{i}{(s\ve^l-i\lambda_-)\prod_{m=1}^l q(i\lambda_- \ve^{-m})} 
+	\\+ \frac{1}{\tilde{D}(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_+ \ve^m)} \sum_{l=0}^\infty \frac{-i}{(s\ve^l-i \lambda_+)\prod_{m=1}^l q(i\lambda_+ \ve^{-m})} \end{multline}
+Finally, inverting the Fourier transforms term by term with contour integration (another use of the integral given in eq. \ref{eq:contour}), and incorporating eq. (\ref{eq:q}), provides the steady-state solution (\ref{eq:steadystate}).
+
+\section{Calculation of the moments}
+\label{sec:langmoments}
+Taking (\ref{eq:master}), multiplying by $u^k$, integrating over all space, and taking account of normalization of $P(u)$ provides a recursion relation for the moments: 
+\be 0 = \tilde{D} k (k-1)\langle u^{k-2} \rangle + \tilde{\Gamma} k \langle u^{k-1} \rangle + (\ve^k-1)\langle u^k \rangle. \ee
+$k=1$ provides the mean (given in eq. \ref{eq:meanu})
+\be \langle u \rangle =  \frac{\tilde{\Gamma}}{1-\ve} = \frac{\Gamma}{\nu(1-\ve)} \ee
+while $k=2$ provides the second moment
+\be \langle u^2 \rangle = 2 \frac{\tilde{D} + \tilde{\Gamma} \langle u \rangle}{1-\ve^2}, \ee
+leading to the velocity variance
+\be \sigma_u^2 = \frac{2\tilde{D} + \tilde{\Gamma}^2}{1-\ve^2}\ee
+given in equation \ref{eq:varu}.
+\section{Weak and strong collision limits}
+\label{sec:langextremes}
+Now I will demonstrate that weak collisions imply a Gaussian-like distribution for sediment velocities. The limit is challenging since the steady-state distribution \ref{eq:steadystate} and the moments above all diverge as $\ve \rightarrow 1$.
+Following \cite{Hall1989}, this divergence suggests normalizing the distribution $P(u)$ using the scaled variable
+\be z = \frac{u - \bra u \ket}{\sigma_u}, \ee
+giving a scaled distribution
+\be Q(z) = \sigma_u P(u).\ee
+The resulting differential equation for $Q(z)$ is well-behaved in the elastic collision limit $\ve \rightarrow 1$.
+Incorporating this transformation into (\ref{eq:master}) provides the ``normalized" master equation
+\begin{multline}(1-\ve^2) \frac{\tilde{D}}{2\tilde{D} + \tilde{\Gamma}} Q''(z) - \frac{\tilde{\Gamma}\sqrt{1-\ve^2}}{\sqrt{2\tilde{D}+\tilde{\Gamma}^2}}Q'(z) - Q(z) \\+ \frac{1}{\ve} Q\Big(z + \Big[\frac{1-\ve}{\ve}z + \frac{\tilde{\Gamma}\sqrt{1-\ve^2}}{\ve\sqrt{2\tilde{D}+\tilde{\Gamma}^2}} \Big]\Big) = 0 \end{multline}
+This equation remains exact and is only a change of variables from (\ref{eq:master}).
+Now I approximate the equation for $\ve \rightarrow 1$ by expanding the final term to second order around $z=0$ before setting $\ve = 1$, obtaining
+\be Q''(z) + z Q'(z) + Q(z) = 0, \ee
+which is the classic Ornstein-Uhlenbeck Fokker-Planck equation whose solution is the standard normal distribution for $Q(z)$ \citep[e.g.][]{Gardiner1983}.
+This solution provides \ref{eq:gaussian} when transformed back to the original variables $P(u)$ and $u$.
+

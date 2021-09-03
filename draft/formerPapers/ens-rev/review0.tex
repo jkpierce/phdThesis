@@ -1,0 +1,513 @@
+\section{Review: birth-death theories of sediment transport}
+
+Birth death processes are a special type of stochastic process. 
+Stochastic processes track the evolution of a set of random variables through time. 
+Birth death processes consider a discrete state space, such as the size of a population. 
+Members of the population are born and die: transitions are allowed between adjacent sites in the discrete state space. 
+
+Within sediment transport, Einstein was the first to consider a model for the bedload flux in terms of stochastic processes. 
+He considered the transport of individual bedload grains to be a random switching between motion and rest states. 
+In this way, supplementing this consideration with empirical reasoning, Einstein developed a formula for the mean transport rate \citep{Einstein1950}. 
+Einstein determined that the bedload transport rate should follow a Poisson distribution. 
+
+Einstein's predecessors have extended his formulations in order to bring them in accord with experimental data and to phrase them in terms of a stronger mathematical foundation drawn stochastic process theory. 
+These extensions probably began with \citet{Lisle1998}. 
+They linked Einstein's theory of tracer dispersion \citep{Einstein1937}, which is contingent on random transitions between states of motion and rest, into Markov process theory, showing that Einstein's tracer dispersion theory was just a two-state Markov process where the states are motion and rest.  
+Then \citet{Ancey2006} went on to rephrase the \citet{Einstein1950} bedload flux derivation in terms of a two-state Markov process, where random transitions between states of motion and rest are included into a Chapman-Kolmogorov equation -- a general mathematical formulation. 
+In this way, they derived a probability distribution for a bedload flux which is based upon underlying randomness in the entrainment and deposition of bedload grains. 
+Taking the mean of their bedload flux probability distribution reproduces an Einstein-like formula for the mean bedload flux. 
+This work is sketched to indicate how Markov process theory can work to describe the bedload flux. 
+
+\subsection{Formalizing Einstein: a foundation in Markov process theory} 
+
+The starting point for the \citet{Ancey2006} work was a set of experiments: the transport of uniform glass beads was measured in a narrow flume using image processsing techniques. 
+Measured fluxes had strong fluctuations: instantaneous fluxes took on values as much as ten times the mean. 
+Therefore, they attempted to describe the probability distribution of the bedload flux by revisiting Einstein's theory \citep{Einstein1950} from a Markov process framework. 
+
+According to Einstein's way of thinking, an individual sediment grain undergoes a random transition from motion to rest states. We can label these two states as $x=0$ and $x=1$. Then, tracking the evolution of the random variable $x$ through time will fully describe the start-stop motion of the individual grain. 
+
+Now we prescribe rates of entrainment and deposition in a small time $dt$. 
+If the particle is in motion ($x=1$) at time $t$, the probability it deposits to the rest state ($x=0$) at time $t+dt$ is modelled as a constant $\tau^{-1}$. 
+Likewise if the particle is at rest ($x=0$) at time $t$, the probability it entrains to the motion state ($x=1$) at time $t+dt$ is modeled as a constant $\sigma^{-1}$. 
+Making the Markov process assumption that the transitions of the particle between $t$ and $t+dt$ are independent of its history, the forward Kolmogorov equations read
+\begin{align} 
+\pi_0(t+dt) = \tau^{-1} dt \pi_1(t) + (1-\sigma^{-1} dt) \pi_0(t) \\
+\pi_1(t+dt) = \sigma^{-1} dt \pi_0(t) + (1-\tau^{-1} dt) \pi_1(t). 
+\end{align} 
+
+Dividing through by $dt$ and taking the limit as $dt \rightarrow 0$ develops the Master equation for the two state process
+\begin{align} \label{eq:anc2006}
+\dot{\pi}_0(t) = \tau^{-1} \pi_1(t) - \sigma^{-1} \pi_0(t) \\
+\dot{\pi}_1(t) = \sigma^{-1} \pi_0(t) - \tau^{-1} \pi_1(t). 
+\end{align} 
+This simple model is called a telegraph process \citep{Cox1965}. 
+
+To solve for the probabilties $\pi_0(t)$ and $\pi_1(t)$, the two equations can be summed to give $\frac{d}{dt} [ \pi_0(t) +\pi_1(t) ] = 0$, meaning $\pi_0(t) + \pi_1(t) = \text{constant}$. Since motion and rest are mutually exclusive and there are no other possibilities for the particle, $\pi_0(t) + \pi_1(t) = 1$: probabilities are conserved. 
+Using this result into \ref{eq:anc2006} gives 
+\begin{align} 
+\pi_0(t) =  \\
+\pi_1(t) = 
+\end{align} 
+where $\pi_0(0)$ and $\pi_1(0)$ are the initial conditions, which we have not specified. 
+
+After a sufficiently long time, the particle forgets its initial conditions and settles into equilibrium transport: 
+\begin{align} 
+\pi_0 = \\
+\pi_1 = 
+\end{align}
+Therefore, the time dependence and initial conditions are forgotten by the Markov process, and it has a set probability $\pi_0$ to be at rest and $\pi_1$ to be in motion.  
+Therefore, the fraction of time the particle spends in motion is $\frac{\tau}{\tau+\sigma} = \xi $, and the fraction of the time it spends in rest is $\frac{\sigma}{\tau+\sigma} = 1-\xi$. 
+The probability that the particle is in motion is a Bernoulli distribution. 
+
+Now consider that on the bed surface within an observation window there are $N$ particles at any time. 
+Each of these particles is undergoing the same random switching between motion and rest states, so that the number of moving particles at any time is 
+\be N_m = \sum_{i=1}^N x_i \ee
+where $x_i=0,1$ is the Bernoulli random variable of the $i$th particle, with the probability of $x_i=0$ being $\pi_0$ and the probability of $x_1=1$ being $\pi_1$. 
+
+Therefore, the probability that there are $N_m =n$ particles in a motion state is a counting problem. If $n$ are in motion then $N-n$ are at rest. The result is 
+\be \text{Prob}(n \text{ in motion}) = {{N} \choose {n}} \xi^n (1-\xi)^{N-n}. \ee 
+In statistics lingo, the sum of Bernoulli trials is a Binomial distribution. 
+This distribution has mean $\xi N$ and variance $\xi(1-\xi)N$. 
+Therefore the probability distribution of the number of moving particles within the observation window can be written 
+\be \text{Prob}(n) = \text{Bi}[ \xi N, \xi(1-\xi)N].  \ee
+
+
+If all particles in motion move at velocity $u_p$ and have volume $\nu_p$, then the bedload flux is a random variable $Q = \frac{u_p \nu_p}{L} N_m $. Therefore Ancey et al calculated the bedload flux probability mass function as 
+\be \text{Prob}(Q) = \text{Bi} [\frac{u_p \nu_p}{L} \xi N, \xi (1-\xi) \frac{u_p^2 \nu_p^2}{L^2}]. \ee
+
+We conclude that the mean transport rate is 
+\be \bar{Q} = \nu_p \frac{N}{L}  \frac{\tau}{\tau+\sigma}   u_p. \ee
+This is conceptually similar to Einstein's formula \citep{1950}, and Ancey et al. explored this connection more carefully than we will here \citep{Ancey2006}. 
+The essential point is that Einstein took a somewhat different perspective.
+The key result of the \citet{Ancey2006} theory is that the mean transport rate is the result of $N$ parallel telegraph processes: each of the $N$ particles on the bed undergoes a switching process between motion and rest states, and the net result is the mean rate $\bar{Q}$ which is governed by a binomial distribution. 
+
+In context of the experiments Ancey et al performed, the formulation just described did not capture the magnitude of the bedload fluctuations, although it described mean behavior quite well.  
+Their experimental bedload fluctuations were much larger than those expressed by this model. 
+Said in a different way, the probability distribution of the experimental bedload transport rate had a heavy tail, while the Binomial distribution of the rate derived from this parallel telegrapher's process theory has a light tail. 
+
+Heavy tails are a hallmark of collective motions in physical systems \citep{Sornette2000}. 
+Of course, if bedload transport is driven by the advection of large turbulent eddies, a perspective supported by many experiments \citep{Nelson1995, Hofland2006, Celik2014, Amir2014, Shih2017}, then bedload motions will not be independent, but they will be coupled collectively to passing turbulent eddies.
+In context of the model just presented, this means the state of each telegraph process at an instant will be coupled to every other. 
+Therefore, coherent turbulence could imply heavy tails in the bedload probability distribution. 
+
+There are other processes which could imply these collective effects as well. One option is entrainment due to particle collisions. 
+Moving particles can impact stationary particles, leading to their entrainment. 
+Essentially, this means the entrainment rate will depend on the number of active particles. 
+This was the extension made by \citet{Ancey2008} in order to capture the large fluctuations seen in their bedload flux experiments. 
+
+\subsection{Capturing fluctuations: The inclusion of collective effects} 
+
+In 2008, Ancey et al took a somewhat different perspective in order to describe the heavy tailed bedload probability distribution their experiments showed \citep{Ancey2008}.
+Instead of considering the motion of every bedload particle as an independent telegrapher's process, they considered the number of particles within a control volume as governed by a collective birth-death process \citep{Gardiner1983, Gillespie1992, VanKampen1992, Cox1965}.  
+Birth of a member of the population is just entrainment. 
+Death is deposition. 
+The population can also immigrate (move in) to the control volume from upstream, and it can emigrate (move out) of the control volume to downstream. 
+Birth, death, immigration, and emigration rates characterize the dynamics of the entire population at once, rather than just the dynamics of independent individuals as the \citet{Ancey2006} work pursued.
+In this way, they managed to include a collective entrainment effect. 
+
+Consider the probability that there are $N=n$ particles in motion at time $t$. 
+This can be denoted $\pi(n,t)$. The random variable $N$ takes on values $0,1,2,/dots$ -- non-negative integers of arbitrary magnitude. Each value has an associated probability $\pi(n,t)$.  The entire population is considered subject to four processes within a small time increment dt. 
+First, entrainment of a single bed paricle (birth) can happen with probability $\lambda_0 + \mu n$. 
+Here a collective entrainment effect has been included. 
+The probability of entrainment in $dt$ grows with the number of particles in motion. 
+This is a crude inclusion of the collective effects we just discussed: the advection of turbulent structures leads to correlations in entrainment rates, and the collision of moving particles with stationary particles can induce entrainment as well. 
+
+Second, deposition of a single bed particle can happen in $dt$ with probability $\sigma n$. 
+The death rate is proportional to the number of individuals in the population. 
+Third, immigration of a particle from upstream into the control volume can happen with probability $\lambda_1$. 
+Fourth, emigration of a particle from the control volume to downstream can happen with probability $\nu$. 
+
+These possible transitions develop a system of equations for the probabilities of finding $n$ moving particles within the control volume: 
+\be \pi_n(t+dt) = \alpha dt (n+1)\pi_{n+1}(t) + [\lambda + (n-1)\mu]dt \pi_{n-1}(t) + [1-dt[\lambda + n\alpha + n\mu]]\pi_n(t) \ee
+As $dt\rightarrow 0$ these develop a system of differential-difference equations for the probabilities $\pi_n(t)$ of finding $n$ particles in the control volume at time $t$: 
+\be \dot{\pi}_n(t) = (n+1) \alpha \pi_{n+1}(t) + (\lambda + (n-1)\mu)\pi_{n-1}(t) - (\lambda +n (\alpha+\mu))\pi_n(t). \label{eq:anc2008} \ee 
+
+This birth-death immigration-emigration model can be solved by introducing a probability generating function $G(z,t) = \sum_{n=0}^\infty z^n \pi_n(t)$ \citep{Gardiner1983, Ancey2008}. 
+Multiplying \ref{eq:anc2008} by $z^n$ and summing over all $n$ gives, after a careful manipulation of the sums in order to form some function of $G(z,t)$ in every term, 
+\be \frac{\partial}{\partial t} G(z,t) = \lambda(z-1)G(z,t) + \{ \sigma + \mu z^2 + \nu - (\mu + \sigma + \nu)z\} \frac{\partial}{\partial z} G(z,t). \ee
+
+This partial differential equation for the probability generating function $G$ can be solved by the method of characteristics \citep{}. 
+If there are initially $N_0$ moving particles within the control volume, the solution is 
+\be G(z,t) + \Big(\frac{\alpha-\mu}{(K-1)\mu z + \alpha - K \mu}\Big)^{n+\lambda/\mu}\Big( \frac{(K\alpha-\mu)z + \alpha(1-K)}{\alpha-\mu}\Big)^n. \ee
+The factor $K$ is the autocorrelation function $K = \exp(-t(\alpha-\mu)).$
+
+This probability generating function generates probabilities via a Taylor expansion around $z=0$: $G(z,t) = \sum_{n=0}^\infty \frac{z^n}{n!}\big(\frac{\partial}{\partial z}\big)^n G(z,t) |_{z=0}$. Comparing this formula with the definition of $G$, $G(z,t) = \sum_{n=0}^\infty z^n \pi_n(t)$, apparently the coefficient of $z^k$ in the power series expansion of $G(z,t)$ is $\pi_k(t)$. 
+
+For times sufficiently large for the system to forget its initial condition and settle into a steady state, the autocorrelations $K(t)\rightarrow 0 $ in the expression of $G$, and the power series expansion of $G(z,t) \rightarrow G(z)$ yields a set of stationary (independent of time) probabilities 
+\be \pi_n = \frac{\Gamma(r+n)}{\Gamma(r)n!} p^r (1-p)^n\text{, }n=0,1,\dots.\ee
+Here $r=\lambda/\mu$ and $p = 1-\mu/\alpha$. $\Gamma(x) = \int_0^\infty z ^{x-1} e^{-z} dz$ is the well known $\Gamma$-function of mathematical physics.  
+
+These stationary probabilities are negative binomial distributions: 
+\be \pi_n = \text{NegBin}(n;r,p).\ee
+This is the generalization of $N$ parallel telegraph processes which was employed in the \citet{Ancey2006} paper. 
+The negative binomial distribution has a heavy tail as a result of collective entrainment $\mu$.
+
+When the collective entrainment process is turned off, $\mu\rightarrow 0$ which recovers the \citet{Ancey2006} result. 
+$\mu\rightarrow 0$ implies $r \rightarrow \infty$ and $p \rightarrow 1$. 
+Within this limit, the generating function G(z) becomes 
+\be G(z) = \exp(-\frac{\lambda}{\alpha}[z-1]).\ee
+This is the generating function of a Poisson process, so the probabilities of the number of active particles become Poisson distributed 
+\be \pi_n = \frac{r'^n}{n!}e^{-r'}\ee
+where the ratio $\lambda/\alpha = r'$ defines $r'$. 
+This is the same scaling behavior for large $n$ as the \citet{Ancey2006} model, since the large $n$ limit of a binomial distribution is a Poisson distribution. 
+
+The Ancey et al 2008 inclusion of collective entrainment develops a Negative Binomial distribution of the bedload flux. 
+Expressing the bedload flux as the number of moving particles within the control volume times their average velocity $u_p$ makes a Negative binomial distribution for bedload flux within the control volume. The mean bedload flux is $ \frac{\lambda}{\alpha-\mu} u_p $ and the variance of the flux is $ \frac{\lambda \alpha}{(\alpha-\mu)^2} u_p^2$: the fluctuations are much wider in the negative binomial distribution, meaning the inclusion of collective entrainment can model the large fluctuations observed in the \citet{Ancey2008} experiments. 
+
+One way to view the bedload flux we just presented: it is the number of moving particles times their velocity. 
+However, since this model explicitly includes downstream emigration from the control volume, there is another way to define the flux: it is the number of emigration events within a unit of time. 
+Counting the number of emigration events expressed from this model within a unit time is not easy. 
+\citet{Ma2014b} explored this approach to calculating the bedload flux, and I will review this in a subsequent section. 
+
+Two key assumptions of this model are worth examining. 
+These set the stage for the subsequent developments in birth-death modelling of the bedload flux which I review next. 
+First, this model assumes that stationary bed particles are in infinite supply. 
+This is an implicit assumption: Nothing prevents the system from entraining particles ad infinitum through the entrainment processes characterized by rates $\lambda_0$ and $\mu$. 
+Second, the model considers sediment transport in an isolated control volume, so the sediment flux is described probabilistically in a locality, but spatial correlations cannot be accounted for: the flux upstream of the control volume is also a fluctuating quantity, implying spatial correlations through immigration events into the control volume considered in this model.
+
+These two observations support two of the more recent developments to the \citet{Ancey2008} birth-death immigration-emigration model: \citet{Turowski2009} generalized this model to finite bed material in order to describe transport within semi-alluvial bedrock environments, where alluvial deposits of limited quantity sit on top of bedrock. When all available particles are entrained and moved away from the control volume, there are none left to entrain, so the entrainment process is turned off. 
+Likewise, \citet{Ancey2010, Ancey2014,Ancey2015} extended the birth-death process within a control volume as I reviewed here to an array of spatially distributed control volumes (cells). 
+They showed that immigration and emigration processes between cells set up a bedload diffusion, and they connected this theory with earlier sediment diffusion theories by deriving an Exner type equation of sediment diffusion. 
+I will now review each of these developments in turn. 
+
+
+Also Heyman 2013 considered that the waiting time distribution need not be exponential. Need more focus on the underlying poisson distributions of these models. 
+
+
+\section{Including sediment availability: Turowski's two species birth death model} 
+
+Semi-alluvial channels, where alluvium sits on top of bedrock, will violate one of the key assumptions of the \citet{Ancey2008} framework. 
+This model implicitly assumes that the bed surface has an infinite number of particles available for entrainment. 
+In reality, this situation will never be satisfied, even in alluvial channels, because there are a wide variety of stabilizing processes acting on bed surfaces \citep{Hassan2008, Venditti2016}. 
+
+Turowski was concerned with bedrock scour due to alluvium. 
+Therefore he extended the Ancey framework. 
+The Ancey framework takes account of one population: the number of moving particles. 
+Turowski's extension included a second population into the framework: the number of particles available for entrainment. 
+He considered that as a particle entrains into a motion state, the number of particles available for entrainment decreases, and likewise as a particle deposits from the motion state, the number of particles available for entrainment increases. 
+Therefore, he considered a probabilisitic population model of two coupled populations: such an inquiry is entirely new in stochastic theory of the bedload flux, although it is commonplace in ecological modeling \citep[e.g.][]{Pielou1977}
+
+Turowski considered a joint probability distribution for the random number $N$ of moving particles and $M$ of particles available for entrainment. 
+This can be written $\pi_{n,m}(t)$. 
+Within a small time interval $dt$ he considered birth, death, immigration, and emigration transitions governing the probabilities $\pi_{n,m}(t)$, similar to \citet{Ancey2008}. 
+Like \citet{Ancey2008}, he also included a collective entrainment contribution, arranging that the model expressed wide Negative Binomial-like fluctuations in the bedload rate. 
+
+Turowski's transition probabilities in $dt$ varied by including the number of available particles $m$ into the entrainment and deposition probabilities. He considered a rate of entrainment $(\lambda_0 + \mu n)m$: when the population of particles available for entrainment is zero ($m=0$), the rate of entrainment is zero. The entrainment process, when it occurs, enacts a change of state $(n,m)\rightarrow(n+1,m-1)$: the number of active particles increases by one, while the number of particles available for entrainment decreases by one. 
+
+Similarly, Turowski's deposition process was generalized from \citet{Ancey2008}.
+Deposition occurs with rate $\sigma n$ in time $dt$, just as in Ancey et al, but when this deposition process occurs it enacts the change $(n,m) \rightarrow (n-1,m+1)$ in the coupled populations. 
+The Kolmogorov equation is 
+\begin{multline}
+P(m,n;t+dt) = P(m,n-1,t)\lambda_0 dt + P(m+1,n-1,t)((m+1)\lambda_1 \\+ (m+1)(n-1)\mu)dt + P(m-1,n+1,t)(n+1)\sigma dt + P(m,n+1,t)(n+1)\nu dt \\+ P(m,n,t)*[1-dt(\lambda_0 + m \lambda_1 + n \nu + n \sigma + mn \mu). \end{multline}
+which in the limit $dt \rightarrow 0 $ becomes a Master equation for the joint probabilities $\pi_{n,m}(t)$: 
+\begin{multline} 
+\frac{d}{dt} P (m,n,t) = \lambda_0 P(m,n-1,t) +\\ ((m+1)\lambda_1 + (m+1)(n-1)\mu)P(m+1,n-1,t) + (n+1)\sigma P(m-1,n+1,t)\\ + (n+1)\nu P(m,n+1,t) - (\lambda_0 + m \lambda_1 + n\nu + n \sigma + mn \mu ) P(m,n,t). 
+\end{multline} 
+
+Again, as a reminder, the number of active particles is $n$ and the number of particles available for entrainment is $m$: this master equation describes a hirearchy of joint probability distributions for these discrete random varaibles. 
+Exact solutions via counting arguments \citep[e.g.][]{Ancey2006} or probability generating functions \citep[e.g.][]{Ancey2008} are evidently no longer tractable. 
+\citet{Turowski2009} resorted to a numerical solution.
+Numerical algorithms for stochastic birth-death models are relatively easy to implement and are well described in a number of references \citep[e.g.][]{Gillespie1977, Gillespie1992}. 
+Turowski pursued one of these algorithms and related his transport rate computations to bedrock erosion and alluvial cover within a bedrock channel. 
+
+Now we briefly describe the stochastic simulation algorithm of Gillespie 1977 ... 
+Then we reproduce Turowski's results using it ... 
+
+We also explore the possibility of an exact solution for the Turowski model.. go harder than he did. 
+
+Turowski's master equation reduces to the Ancey et al result as $m \rightarrow \infty$. As $m$ gets very large, $m-1 \approx m \approx m+1$: effectively, large $m$ makes $m$ constant as far as the master equation perceives. 
+In this limit the probability $P(m,n,t) \approx P(n,t)$, and since $m$ is effectively constant, one can take $m\lambda_1 \rightarrow \lambda_1'$ and $m\mu \rightarrow \mu'.$ 
+With these substitutions the master equation reproduces the \citet{Ancey2008} result. 
+For our purposes, given our concern with alluvial channels as outlined in the introduction, the main takeaway of Turowski's work is that the birth-death modelling approach can be applied to study the stochastic dynamics of multiple populations whose variations are correlated. 
+This is similar to competing species in ecology \citep{Pielou1977} or to multiple reacting chemical species \citep{Gardiner1983}. 
+
+\section{The bedload flux at a point: the counting statistics of emigration events} 
+
+Up to this point, the Markovian approaches to understand a fluctuating bedload rate were based upon analyzing the stochastic number of active particles within a control volume. 
+The bedload flux definition considered for these studies was somewhat unconventional. 
+Typically it is defined as the rate of bedload crossing a vertical plane perpendicular to the flow direction \citep{Ballio2014}. 
+
+The studies of \citet{Heyman2013} and \citet{Ma2014b} demonstrated that the birth-death model of \citet{Ancey2008} can also be used to define a flux at a position in space. 
+Although the birth-death model of \citet{Ancey2008} counts the number of moving particles at each instant of time, it does not count the number of emigration events which contribute to this number. 
+Counting the number of emigration events in an interval of time is a much more difficult problem.
+Ma et al (2014) approached this counting problem using a path integral approach: this approach is essentially outlined in \citet{Ohkubo2009}. 
+The path integral approach draws heavily from the stochastic simulation algorithm of \citet{Gillespie1977}. 
+
+The conventional definition of the bedload flux is an integral of particles through a surface perpendicular to the flow: 
+\be Q_s(t) = \int \int_A dA \textbf{u}_s \cdot \textbf{n}, \ee
+where $\textbf{n}$ is a unit vector perpendicular to the average flow direction and $\textbf{u}_s$ is the velocity of bed load. 
+This instantaneous flux is very difficult to measure, so usually it is averaged over some time interval $\delta t$: 
+\be Q_s(t;\delta t) = \frac{1}{\delta t} \int \int_A \int_t^{t+\delta t} \textbf{u}_s \cdot \textbf{n} d\tau dA = \frac{\delta V_s}{\delta t} = v_s \frac{\delta S(t;\delta t)}{\delta t}. \ee
+$Q_s(t;\delta t)$ is the volume flux averaged over $\delta t$; $\delta V_s$ is the volume of bed load particles passing through $A$ within $\delta t$; $S(t)$ is the cumulative number of particles passing through the cross section since t=0, and $\delta S(t;dt)$ is the number of particles passing through the surface between $t$ and $t+\delta t$, i.e. $\delta S(t; \delta t) = S(t+\delta t) - S(t)$. 
+This equation means the bedload flux at $t$, when viewed in a time-averaged sense, is the number of particles crossing the surface between $t$ and $t+\delta t$. 
+Because volume units can always be multiplied in later, the bedload flux is written 
+\be q_s(t) = \frac{\delta S(t; \delta t}{\delta t}. \ee
+
+This bedload flux is a random variable.
+A fluctuation is defined strictly as $q_s' = q_s - \bra q_s \ket$, and the magnitude of fluctuations is defined without ambiguity by the variance $\bra q_s'^2 \ket$. 
+This $\delta S(t;dt)/\delta t$ is the number of emigration events between $t$ and $t+\delta t$, so if this number could be counted, the bedload flux would be known at the downstream boundary of the control volume: the bedload flux would be known at a point in space. 
+
+The path integral formulation performs this counting problem. 
+For the sake of computation, the time interval t is discretized as $i \Delta t = t$, $i=0,1,2,\dots$.
+In the end, the limit $\Delta t \rightarrow 0$ will be taken. 
+If the increments $\Delta t$ are sufficiently small, Ma et al argued that emigration events during one of these intervals will be approximately Poissonian so that
+\be P[\Delta S_i = n | N_i(t) = N_i] = \exp[-f_3(N_i)\Delta t] \frac{(f_3(N_i) \Delta t)^N}{n!}. \ee
+This equation expresses the probability that $n$ particles emigrate between $t$ and $t+\delta t$ is a Poisson distribution with rate parameter $f_3(N_i)\Delta t$, where $f_3(N_i) = \gamma N_i$ is the emigration rate. 
+
+Now Ma et al argued that because the entrainment rate $f_1 = \lambda + \mu N \~ O(L)$, the deposition rate $f_2 = \sigma N \~ O(L)$, and the emigration rate $f_3 = \gamma N \~ O(1)$, if the observation window is sufficiently large, entrainment and deposition processes dominate, so that the number of moving particles $N$ is perturbed only weakly by emigration. 
+In this limit of sufficiently large observation window size, it then holds that
+\be P(\sum \Delta S_i = n | N_1,N_2, \dots) = \exp[-\sum f_3(N_i)\Delta t]\frac{(f_3(N_i)\Delta t)^n}{n!}, \ee
+which in the continuum limit becomes a path integral counting emigration events: 
+\be P[\delta S = n |N(t): t_0<t<t_0+\delta t] = \exp[-\int f_3(N(\tau))d\tau]\frac{[\int f_3[N(\tau)]d\tau ]^n}{n!}.\ee
+Denoting the integral over the process $f_3(N(\tau))$ as $\alpha = \int_{t_0}^{t_0+\delta t} d\tau f_3[N(\tau)]$, the probability for $n$ emigration events in $\delta t$ is written 
+\be P(\delta S = n) = \int d\alpha \frac{e^{-\alpha}\alpha^n}{n!}P(\alpha,t). \ee
+From this difficult derivation a simple formula emerges: the probability of $n$ emigration events in $\delta t$ is an integral over all possible realizations of the process $N(t)$, where each process is given a weight $e^{-\alpha}\alpha^n/n! P(\alpha,t) d\alpha$. This is called a Cox process. It's a generalized Poisson process where the parameter $\alpha$ is also a random variable. It represents a superposition of a series of Poisson distributions taking every possible path of $N(t)$ into account. 
+This is a stochastic description of the bedload transport flux based on the counting statistics of emigration events. 
+
+Notably, because of the time integral of $N(t)$ involved in this relationship, it has a memory. It is non-Markovian. 
+This character reveals a very interesting fact: the fluctuations of the transport rate depend on the time scale of observation. 
+In fact, Ma et al derived the expression for the variance: 
+\be \delta t \text{var} [q_s(\delta t)] = \gamma^2 \frac{\lambda (\sigma + \gamma)}{(\sigma + \gamma -\mu)^2} 2 t_c [\delta t - t_c (1-e^{-\delta t/t_c}] + \frac{\gamma\lambda}{\sigma + \gamma -\mu}\delta t \label{eq:3regimes} \ee
+
+where $t_c = 1/(\sigma + \gamma - \mu)$ is the autocorrelation time of $N(t)$, representing memory in the system. 
+Apparently, the variance of the bedload flux at a point depends on the observation or averaging time-scale $\delta t$. 
+
+In fact, Ma et al discriminated three regimes of behavior from \ref{eq:3regimes}:   
+\be
+    \delta t \text{var}[q_s(\delta t)] \approx 
+\begin{cases}
+    \frac{\gamma \lambda}{\sigma + \gamma - \mu}, & 0<\delta t \ll t_l \\
+    \delta t \frac{\gamma^2 \lambda(\sigma+\gamma)}{(\sigma+\gamma-\mu)^2}   & t_l<\delta t< t_c \\
+    2 \gamma^2 \frac{\lambda(\sigma+\gamma)}{(\sigma+\gamma-\mu)^2}t_c + \frac{\gamma \lambda}{\sigma + \gamma - \mu}   & t_c \ll \delta t < \infty
+\end{cases}
+\ee
+When this three-regime equation is divided by the mean bedload rate $\text{mean}[q_s(\delta t)]$, the behavior is discriminated by a dimensionless number Ma et al called $Ra$: 
+\be Ra(\delta t) \approx \begin{cases} 1 & 0<delta t \ll t_l \\
+\frac{delta t}{t_l} & t_l < \delta t < t_c \\ 
+\frac{2 t_c}{t_l} + 1 & t_c \ll \delta t < \infty \end{cases} \ee
+
+The essential point is that Ma et al derived three regimes of fluctuations from the \citet{Ancey2008} model. 
+Depending on the sampling interval $\delta t$, three different scaling relations are possible for the magnitude of fluctuations in the bedload flux. 
+These intervals are discriminated by two timescales $t_c$ and $t_l$. 
+There are probably deep consequences of this research which remain to be fully understood. 
+At this stage, it's sufficient to note that fluctuations differ with observation timescale, and that this effect can be discriminated into stages with a dimensionless number $Ra$. 
+
+The origin of the two timescales still needs to be discussed. 
+
+There is another way to get information about the bedload flux at the downstream boundary of the control volume defined by \citet{Ancey2008}, and this was examined by \citet{Heyman2013, Heyman2016}. 
+Rather than actually counting the number of emigration events with the complicated path integral approach, Heyman et al. took a somewhat simpler angle: they examined the waiting time between successive emigration events. 
+
+\section{The waiting time between emigration events: Bedload flux from waiting time statistics} 
+
+These studies are concerned with linking the birth-death formulation, which in the original interpretation deals with transport characteristics within an observation window \citep{Ancey2008}, to the transport characteristics at a point -- the number of particles crossing a plane perpendicular to the flow direction. 
+
+\citet{Heyman2013} was concerned with the statistics of the time interval between successive emigration events, while \citet{Ma2014b} focused on actually counting the number of emigration events in a unit time: that is, they computed the bedload flux over the downstream boundary of the control volume \citet{Ancey2008}. 
+
+The waiting time between successive transport events is significant in a broad range of transport studies. 
+First, there are probabilistic transport rate formulations which use the waiting time distribution as their input \citep{Turowski2010}. 
+Second, the waiting time between successive transport events, as we shall show, reflects back on the underlying entrainment and deposition characteristics, so it provides fundamental information into the somewhat mysterious physics of bedload transport.
+
+The original \citet{Einstein1937,Einstein1950} approach reveals that the waiting time between successive transport events should be an exponentially distributed random variable. 
+However, Heyman et al (2013) demonstrates that the inclusion of collective entrainment due to \citet{Ancey2008} modifies the waiting time distribution in a non-trivial way. 
+The waiting time between successive entrainment events has contributions at two different scales: first, there is a shorter timescale of individual entrainment events, controlled by fluid turbulence and essentially recognized within the \citet{Einstein1937} formalism, and second, there is a longer timescale due to collective entrainment.
+These authors showed that within the \citet{Ancey2008} birth-death model, at low transport rates, when entrainment and motion are highly intermittent, the short timescale and the long timescale are well separated. 
+While at higher transport rates, these two timescales blend together as individual and collective entrainment contributions become indistinguishable. 
+
+I'll now sketch the \citet{Heyman2013} derivation of the statistics of the waiting time between successive emigration events, and show how the two different timescales due to individual and collective entrainment arise. 
+For \citet{Heyman2013} the variable of interest is $S_k = \sum_{i=0}^k T-i$: $S_k$ is the time when the $k$th emigration event occurs. $T_1, T_2, \dots $ are the waiting times: the time from $t=0$ to the first emigration event is $T_1$. The time from $T_1$ to the second emigration event is $T_2$, and so on. 
+For a Markov process such as the \citet{Ancey2008} model, the waiting times are independant and identically distributed. 
+Within the Einstein model we have already seen that the waiting time probability distribution is expoential. 
+However, in the \citet{Ancey2008} formalism there is no reason to expect an exponential distribution. 
+
+Heyman et al define $F_n(t)$ as the probability that there are $n$ particles in motion and no emigration event occurred in time t: 
+\be F_n(t) = Pr(T>t,N(t)=n).\ee
+By extension, the probability that there are any number of particles and no emigration event occurred in time $t$ is 
+\be F(t) = Pr(T>t) = \sum_{n=0}^\infty F_n(t) .\ee 
+
+Now $F(t+\Delta t)$ is equivalent to the probability that any other event but emigration occurs in $\Delta t$. 
+Therefore we can write a master equation for $F(t)$: 
+\be F_n(t+\Delta t) = F_n(t)[1-(\lambda + n(\sigma+\mu+\gamma))\Delta t] + F_{n+1}(t) \sigma(n+1)\Delta t + F_{n-1}(t)\lambda + \mu(n-1)\Delta t + o(\Delta t).\ee
+This equation holds for $n\geq 1$. At $n=0$ deposition and collective entrainment processes are not possible, therefore 
+\be F_0(t+\Delta t) = F_0(t) [ 1-\lambda \Delta t] + F_1(t) \sigma \Delta t + o(\Delta t) \ee 
+Again dividing by $\Delta t$ and taking $\Delta t \rightarrow 0$ gives the differential difference equations
+\begin{align} 
+F_0'(t) &= \lambda F_0(t) + \sigma F_1(t) \\
+F_n'(t) &= -(\lambda + n(\sigma + \mu + \gamma))F_n(t) + \sigma(n+1)F_{n+1}(t) + [\lambda + \mu(n-1)]F_{n-1}(t) \text{ if } n\geq 1 \end{align} 
+for the waiting time distribution. 
+
+Summing all of the terms gives the simple equation 
+\be \sum_{n=0}^\infty F_n'(t) = -\gamma \sum_{n=0}^\infty nF_n(t), \ee
+which, denoting the pdf of waiting times $T$ as $f_T(t)$ gives the simple relationship: 
+\be f_T(t) = -F'(t) = \gamma\bra F_n(t)\ket. \ee
+Therefore the probability distribution function of waiting times between emigration events, $f_T(t)$, is an average of the probability that there are $n$ particles and no emigration event occurred in $t$ over all $n$. 
+
+The general solution of $F_n(t)$ can be obtained from the differential equations with a generating function: 
+\be G(z,t) = \sum_{n=0}^\infty F_n(t) z^n. \ee
+Multipling the differential equation by $z^n$ and summing over all $n$ gives
+\be \frac{\partial G}{\partial t} = (\sigma + \mu z^2 - z(\alpha + \mu) ) \frac{\partial G}{\partial t} + (z-1)\lambda G, \ee
+where the shorthand $\alpha = \gamma + \sigma $ has been introduced. 
+
+This equation can be solved with the method of characteristics, giving a closed form solution for $G(z,t)$. A useful property of generating functions (and the source of their name) is $\bra F_n \ket = \partial G(z,t) /\partial t |_{z=1}$, therefore the probability distribution of waiting times between emigration events in the \citet{Ancey2008} birth-death model of bedload flux is 
+\be f_T(t) = \gamma(z_1-z_2)^{\lambda/\mu} \big( \frac{\alpha-\mu}{A(t)-B(t)} \big)^{\lambda/\mu + 1} e^{-\lambda (1-z_2)t}\big( \frac{\lambda/\mu+1)B(t)}{A(t)-B(t)} [(1-z_2)e^{-(z_1-z_2)t}+z_1-1]+e^{-\mu(z_1-z_2)t}-1 \big)  \ee 
+When collective entrainment is turned off ($\mu=0$), the probability distribution becomes $f_T(t) = \frac{\alpha}{\lambda \gamma} e^{-\alpha t/(\lambda \gamma)}$: the exponential waiting time between emigration events is recovered. 
+
+This probability distribution for waiting times between emigration events in the \citet{Ancey2008} model has, in general, contributions from two timescales. The relatively common individual entrainment process imparts a 'fast' timescale to the probability distribution of emigration waiting time, while the relatively rare collective entrainment process imparts a 'slower' timescale. 
+When collective entrainment is turned off, only the fast timescale is present in the pdf. When the entrainment rate is relatively low, the fast timescale is much shorter than the slow timescale, so that the timescales are well separated and the waiting time distribution is not well approximated by any common distribution in the literature (Gamma, exponential): the behavior of the \citet{Ancey2008} model at low transport rates has defied prediction by any other framework. 
+
+The most significant point of the \citet{Heyman2013} paper is that the probability distribution function of waiting times between emigration events can be used to calibrate the \citet{Ancey2008} birth death model to flume experiments. 
+This is because short emigration times control $\alpha-\mu$ and long emigration times control $\lambda$. 
+The evaluation of waiting times between emigration events supports a calibration of the stochastic birth-death model of \citet{Ancey2008} on flume studies where the transport rate is measured at the outlet of the flume, but the erosion, deposition, or emigration rates are not necessarily measured. 
+In contrast to \citet{Ma2014b} the mathematics are not much beyond the original formulation of the \citet{Ancey2008} model, so this work may be more readily accepted by the research community. 
+
+\section{The diffusion of bedload from a microstructural basis}
+
+
+\citet{Ancey2008} developed a generalized version of \citet{Einstein1950} which took account of a new process to describe the large fluctuations seen in experimental bedload flux signals: collective entrainment. 
+\citet{Turowski2009} generalized this model to finite sediment availability, while \citet{Heyman2013} and \citet{Ma2014} used the \citet{Ancey2008} model in its original form to understand the distribution of waiting times between emigration events and the bedload flux probability distribution at a point in space, respectively. 
+These two works developed new understanding of spatial and temporal aspects of bedload flux: \citet{Heyman2013} demonstrated that the waiting time between successive emigration events expressed contributions from slow and fast timescales related to individual and collective entrainment, respectively. 
+\citet{Ma2014} highlighted the role of observation timescale on the magnitude of flutuations, and discriminated three distinct scaling regimes for bedload fluctuations which are contingent on a dimensionless number $Ra(\delta t)$, where $\delta t$ is the timescale of observation. 
+
+However, up to this point in early 2014, stochastic birth-death models had focused on a single region of space -- a control volume \citep{Einstein1950, Ancey2006, Ancey2008}, or a single point in space -- the downstream end of the control volume, or the plane across which emigration events happen \citep{Heyman2013, Ma2014b}.
+This approach is obviously oversimplified. Variability of sediment transport rates is almost a defining feature of them \citep{Hassan2008, Venditti2016, Nelson2014}. 
+There is a need to take account of spatial differences in entrainment and deposition characteristics in calculating bedload fluxes. 
+Additionally, there are a wide set of issues centered around bedload diffusion-- or the spreading of bedload particles as they are tracked through time and subjected to random entrainment and deposition events \citep{Hassan2016}. Indeed, this study of bedload diffusion was the original research directive of \citet{Einstein1937}. 
+
+Often, bedload diffusion has been understood through deterministic partial differential equation models. These advection diffusion equations have been derived by considering conservation of mass \citep{}, but they were not very well connected to the underlying stochastic dynamics of bedload transport. 
+Generating this connection between a microstructural stochastic model like \citet{Ancey2008} and the continuum diffusion equation treatment of bedload diffusion \citep[e.g.][]{Parker2002} was the directive of the next papers on birth-death modeling \citep{Ancey2014,Ancey2015}. 
+These papers took a conceptually straightforward extension of the \citet{Ancey2008} model which leads to difficult mathematics. 
+
+Rather than considering a single control volume, as in \citet{Ancey2008}, \citet{Ancey2014,Ancey2015} considered an infinite array of adjacent control volumes (cells), indexed by $i=1,2,\dots,M$. 
+Bedload particles can entrain and deposit within each cell, and they can also migrate between cells. 
+Each of these transitions are characterized by probabilities per unit time in generalization of \citet{Ancey2008} across spatial extent. 
+The $i$th cell has a random number of particles $N_i$ in motion within it. 
+Therefore the state of the system at an instant of time is fully characterized by the set of these numbers: $\textbf{n} = (n_1(t), n_2(t), \dots n_M(t))$. 
+
+One target is the grand probability distribution of the number of active particles within each cell at an arbitrary time: $P(\textbf{n};t)$. 
+Another target is the continuum limit: letting the length $\Delta x$ of each cell shrink to zero develops an advection-diffusion equation for bedload diffusion. 
+Ancey et al termed this a "Stochastic interpretation of bedload diffusion": and the latter target has much more fundamental scope.
+It explores the link between microscale stochastic models of bedload transport and mesoscale deterministic models based upon advection-diffusion equations. 
+
+Now I'll sketch the \citet{Ancey2014, Ancey2015} derivation of a birth-death-migration model across an array of cells. 
+There are essentially three transitions to take account of: 
+\begin{enumerate}
+\item Entrainment can occur within each cell ($i$) at probability per unit time $(\lambda_i + \mu_i n_i ) \delta t$
+\item Deposition can occur within each cell ($i$) at probability per unit time $ \sigma_i n_i \delta t$
+\item Migration can occur from cell $i$ to cell $i+1$ (downstream) at probability per unit time $\nu_i$
+\end{enumerate} 
+Now some notation is introduced to write the effect of these transitions on $\textbf{n}$ in shorthand. 
+If the change of state due to one of these transitions is written as $\Delta \textbf{n}$, then the effect of these transitions can be characterized using vectors $\textbf{r}_i^j$ and $\textbf{r}_i^\pm$. The vectors $ \textbf{r}_i^j$ are of the same dimension as $\textbf{n}$ and all but two of their entries are zero: $r_i = 1$, $r_j = -1$, $r_k=0$ for $k\neq i,j$. The vectors $\textbf{r}_i^\pm$ are the same dimension as $\textbf{n}$ and all but their $i$th entry is zero: $r_i = \pm 1$, $r_j = 0$, $j\neq i$. 
+
+Thus the transition probabilities of each process can be written: 
+\begin{enumerate}
+\item $ p_i^3 = \text{Prob}(\textbf{N} = \textbf{n} + \textbf{r}_i^+; t+ \delta t) = (\lambda_i + \mu_i N_i) \delta t $ -- entrainment
+\item $ p_i^2 = \text{Prob}(\textbf{N} = \textbf{n} + \textbf{r}_i^-; t+\delta t) = \sigma_i N_i \delta t $ -- deposition
+\item $ p_i^1 = \text{Prob}(\textbf{N} = \textbf{n} \textbf{n} + \textbf{r}_i^{j-1}; t+ \delta t) = \nu_{i-1}N_{i-1} \delta t $ -- migration
+\end{enumerate} 
+
+These transition probabilities develop a master equation analogous to the one from \citet{Ancey2008}, but generalized to a collection of $M$ cells: 
+\begin{multline} \frac{\partial}{\partial t} P(\textbf{n};t) = \sum_{i=1}^M (n_i+1)[P(\textbf{n}+\textbf{r}_{i+1}^j,t) \nu_i + P(\textbf{n}+\textbf{r}_i^+,t)\sigma_i ]\\
++ P(\textbf{n}+\textbf{r}_i^-,t)(\lambda_i + \mu_i(n_i-1))\\
++ P(\textbf{n}+\textbf{r}_i^{j-1},t)\nu_{i-1}n_{i-1}\\
+- P(\textbf{n},t)(\nu_{i-1} n_{i-1}+\lambda_i + \mu_i n_{i+1} + \nu_i n_i + \sigma_i n_i ) \end{multline} 
+Information about solving this equation is sparse in the literature. 
+The closest approach has been in ecology: these birth/death/migration-type stochastic models have been considered in context of ecological population dynamics since at least the sixties \citep{Bailey1968}. 
+One exact solution of a very similar stochastic model has been attained using path integral approaches borrowed from quantum field theory \citep{Field2010}.
+By any metric, the analytical barrier this multidimensional master equation presents is not trivial, although definitely numerical solutions are possible \citep[e.g.][]{Gillespie1992}. 
+
+In order to link this equation to spatial diffusion, \citet{Ancey2014, Ancey2015} resorted to a Poisson space representation \citep{Gardiner1983}. 
+In effect, the Poisson transformation converts the discrete random variable $\textbf{N}$ to a continuous random variable $\textbf{a}$ (the Poisson rate). 
+The Poisson transform is 
+\be P(\textbf{n},t) = \prod_i\int \frac{e^{-a_i}a_i^n}{n!}f(\textbf{a},t)d\textbf{a}, \ee
+where $\textbf{a} = (a_i) \geq 0$ for $i=1,2,\dots$ and $f(\textbf{a},t)$ is the multivariable probability density of the continuous vector $\textbf{a}$. 
+
+\citet{Ancey2014, Ancey2015} used this transformation to obtain a Langevin equation representation of the dynamics of the random variable $\textbf{a}$.
+That is, they obtained a stochastic differential equation representation of $\textbf{a}$: 
+\be da_i(t) = (\lambda_i - a_i(\sigma_i-\mu_i) + \nu_{i-1} a_{i-1} - \nu_i a_i)dt + \sqrt{2 \mu_i a_i}dW_i(t),\ee
+and the $W_i(t)$ is a white noise term (Wiener Process) on cell $i$. 
+The mean steady state solution of this Langevin equation is 
+\be \bra a \ket_ss = \frac{\lambda}{\sigma-\mu} \ee 
+for all $i$. 
+
+Now \citet{Ancey2014,Ancey2015} sought out to find an advection diffusion equation as the limit of cell size $\Delta x \rightarrow 0$, so they went on to impose this limit on the Langevin equation, thereby obtained an advection diffusion equation. 
+Unfortunately, the limit is more subtle than expected. 
+This did not really work for reasons I need to understand better, and it did not work in ways I need to learn to explain better. 
+More study is needed on spatially varying birth-death models, from me, and from others especially.
+
+\section{Spatial correlations in bedload transport: } 
+
+\citet{Heyman2014} used the \citet{Ancey2014} model to examine a set of experiments resolving spatial correlations of bedload transport. 
+They found a stochastic differential equation for the mean of the poisson rate $\eta$: 
+They related this to a point process framework which allowed them to analyze spatial correlations in the bedload rate and relate this to their birth-death model. 
+Somehow this whole thing is contingent on their two-point spatial correlation process. 
+They state that the whole problem is linear so that it'd be straightforward to extend it to 2d. 
+slowing down ... 
+
+\section{recap} 
+Einstein developed first stochastic theories describing the diffusion and flux of bedload. 
+Ancey 2006, building on earlier work from Lisle 1998 and the many investigators who criticized and revised Einstein, formalized Einstein's assumptions over a foundation in Markov process theory, and extended his work by treating the bedload flux within a control volume as the cooperation of many independent two-state Markov processes: each bed particle within the control volume makes random transitions between motion and rest. 
+Thus he derived a statistical distribution of the bedload rate which reproduces Einstein's result when the mean is taken. 
+However, the magnitude of fluctuations predicted by this model are too small. 
+
+Ancey 2008 extended the Einstein theory by linking the transition rates between particles within the observation window with a collective entrainment term: they prescribed that the transition rate from rest to motion depends on the number of active particles. 
+This is a simple way to include the effects of coherent turbulence and impact-based entrainment: it is an experimental observation that moving particles tend to come in waves \citep{Drake1988}. 
+The Ancey 2008 model was demonstrated capable of describing fluctuations, and all of its parameters have physical meanings, but notably there is no clear suggestion as to how collective and individual entrainment processes can be separated within experiments. 
+Clearly, approaches to derive entrainment probabilities are focused on the individual entrainment rate \citep{Dey2018}, and there have been no developments with regard to computing the collective entrainment rate: there is no clear physical model of collective entrainment yet. 
+
+Turowski 2009 extended the Ancey work to take account of limited supply, in order to describe semi-alluvial channels where alluvial deposits lie on top of bedrock. 
+He continued to work within the Einstein paradigm by describing the transport rate within a control volume, rather than by counting the number of particles leaving the control volume: although the Ancey 2008 work essentially outlines this possibiilty. The transport rate at a point should be considered as the number of emigration events in a unit time. 
+
+Heyman et al 2013 and Ma et al 2014 went on to consider the statistics of emigration: they tried to discern what could be learned about the transport rate at a fixed point from the control volume formalism of Ancey et al and Einstein before that. 
+Heyman et al was concerned with the statistics of the waiting time between successive emigration events. 
+The original Einstein (1937, 1950) assumptions generate an exponential waiting time ditsribution with a timescale related to the entrainment rate.  
+However, Heyman et al (2013) showed that when collective entrainment effects were included there are two timescales: one fast timescale related to the individual entrainment rate, and one slower timescale related to collective entrainment effects. 
+Thus, the distribution of waiting times between successive emigration events, which is a useful concept for alternative stochastic models of the bedload flux distribution \citep[e.g.][]{Turowski2010}, is a more subtle object if collective entrainment occurs. 
+These effects are accentuated at low transport rates, where the fast and slow timescales are more disparate. 
+At high rates, the timescales become comparable and the waiting time between successive emigration events blends into an Einstein-like exponential. 
+
+All of these approaches considered bedload transport within a control volume or at a point, but indeed, a very large set of contemporary river science studies are concerned with the diffusion or spreading of bed material through a downstream reach of river \citep{Hassan2016}. 
+Bedload diffusion is not captured by a model at a single location: often, it has been described using an advection diffusion equation. 
+These advection diffusion equations follow from considerations of mass balance within river channels, but they were not derived from any underlying microstructural model until \citep{Ancey2014}. 
+\citet{Ancey2014} extended the previous control volume model \citep{Ancey2008} to an array of control volumes, where emigration from the $i$th volume is immigration to the $i+1$th volume. 
+
+In an approach widely used in chemical physics \citep{Gardiner1983} and ecology \citep{Bailey1968}, \citet{Ancey2015, Ancey2015} derived an advection diffusion equation from their microstructural model in a limit as the size of each control volume goes to zero while the number becomes infinite. 
+Thus, in their interpretation, bedload diffusion emerges in the continuum limit of coupled birth-death immigration-emigration models. 
+They rederived the famous Exner equation of bedload diffusion. 
+
+Taken together, this research exhibits a coherent progression from the original work of Einstein to a more mathematically and physically based set of more general approaches. 
+Within these approaches the bedload flux is understood as a random quantity. 
+The mean bedload flux and the magnitude of its fluctuations are modelled in an unambiguous way \citep{Ancey2006, Ancey2008} considering no limitations in sediment availability, and it was shown that collective effects are a necessary inclusion to properly describe fluctuations in bedload transport \citep{Ancey2008}. 
+An extension to a more realistic situation of finite supply was developed \citep{Turowski2009}, and the relationships between these control volume based models and the definition of bedload flux as particles crossing a plane perpendicular to the flow were developed \citep{Heyman2013, Ma2014b, Ballio2014}. 
+
+These approaches did not address spatial correlations or variations in bedload fluxes, although the problem of bedload diffusing through a reach of channel is of contemporary significance \citep{Hassan2016}. 
+This extension was the most recent development in birth-death modelling of bedload \citep{Ancey2014, Ancey2015}. 
+By extending the \citet{Ancey2008} model to an array of adjacent control volumes, an advection-diffusion equation describing the concentration of bedload in motion was developed, providing the first connection between a microscale stochastic model of bedload transport with a macroscopic advection-diffusion formulation. 
+\citet{Heyman2014} examined the spatial correlations between local bedload fluxes expressed by the \citet{Ancey2014} model. 
+This is the state of the art of bedload flux models. 
+
+\section{Assumptions, calibraiton problems, and unclear aspects: A criticism of the birth-death approach} 
+
+Now that earlier literature is evaluated the scope for generalization can be outlined. 
+This scope is a necessarily subjective consideration, and I'd like to highlight that nobody knows what the future of stocahstic modeling will hold. 
+First, the various glaring assumptions of the birth-death approaches are highlighted. 
+\begin{enumerate}
+\item Models only consider one particle size, while natural streams exhibit wide distributions of sizes and bedload transport expresses a wide set of effects related to particle size segregation \citep{Wilcock2003, Parker1982, Chen2008}. 
+\item There is no clear means to discriminate collective and individual entrainment processes within experiments. 
+\item There is only a one-way feedback in these models: bedload is considered subordinate to the fluid flow, and the effect of bedload transport back onto the fluid flow is considered negligible. In fact, there are measurable influences of bedload transport on the fluid phase \citep{}; it's not yet clear whether a one-way coupled scheme such as this can actually describe natural streams across a realistic range of conditions. 
+\item Collective entrainment is somewhat of a catch-all term with the physical mechanisms which may contribute to it unresolved. These may include collective entrianment, the formation and disintegration of particle clusters, interactions between the motion of grains of idfferent size, turbulent structure, local avalanche behavior, and bed form migration. 
+\end{enumerate}
+
+\section{Summary: scope for extension} 
+
+From the basis provided in this literature I'll now make a few small extended birth-death models. 
+
+1. diffusion in 2d (horizontal and vertical)
+2. availability of depositional sites on the bed surface
+3. Extension to multiple grains sizes: A formal outline 
+
+
+
+
+
+
+
+

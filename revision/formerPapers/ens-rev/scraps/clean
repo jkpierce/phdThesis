@@ -1,0 +1,7 @@
+#!/bin/bash
+name=src
+rm $name.aux
+rm $name.bbl
+rm $name.blg
+rm $name.log
+rm $name.out

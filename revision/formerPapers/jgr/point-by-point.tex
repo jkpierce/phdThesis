@@ -1,0 +1,199 @@
+\documentclass[11pt]{article}
+% General document formatting
+\usepackage[margin=0.75in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}         % side-by-side figures 
+% Related to math
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{booktabs} % for wrapping tabulars in accord with
+\bibliographystyle{agu}
+\setlength{\droptitle}{-5em}   % This is your set screw
+
+\usepackage{setspace}
+\usepackage{etoolbox} % to make a quote command
+\AtBeginEnvironment{quote}{\singlespace\vspace{-\topsep}\small}
+\AtEndEnvironment{quote}{\vspace{-\topsep}\endsinglespace}
+
+
+\usepackage{xcolor} % provide colored text blocks 
+
+%\usepackage[math]{kurier}
+\newcommand\be{\begin{equation}} % shortcut to start eq envs 
+\newcommand\ee{\end{equation}}   % shortcut to end eq envs
+\begin{document}
+
+\title{Responses to reviewer comments: ``Joint stochastic model of bedload transport and bed elevations: implications for heavy-tailed resting times''}
+\author{James K. Pierce \& Marwan A. Hassan}
+\maketitle
+
+\section*{Response to associate editor:}
+
+I attach a tentative review paper, which will not be published in this form (I was invited by the JHR editor to write a review paper, but my draft paper is too long for their standards, I have to shorten it and split it into two parts). It could give some ideas about the literature review. Note also that Greg Wilson published two related papers that could interest the authors (Acoustic observations of near-bed sediment concentration and flux statistics above migrating sand dunes, Geophysical Research Letters, 43, 6304-6312, 2016. Anomalous Diffusion of Sand Tracer Particles Under Waves, Journal of Geophysical Research: Earth Surface, 123, 3055-3068, 2018.)
+
+\textcolor{blue}{
+Thank you sincerely for your comments and for sharing your work in progress. }
+
+
+\begin{enumerate}
+\item Naively I do not understand how the number of moving and resting particles can be correlated. The fact that there are m = 10 or 10,000 particles in a given control volume should not influence the individual transition probabilities on the number n of moving particles. The authors have made this possible only by using Eq. (1) relating elevation and m. I agree that n should depend on z (probably on its gradient, too, and perhaps on its neighborhood), but I do no see how it can depend on the bed volume or m.
+
+\textcolor{blue}{Only the deviation of bed elevation from the mean value correlates to the number of moving particles in equation (1). This is related to a relative number or volume (area) of particles only, as in $m-m_0$ or $\phi a^2(m-m_0)$. With regard to practically defining these notions, $m_0$ will be contingent on the depth of the control volume measured relative to the mean bed elevation. We hope this is a sufficient clarification.}
+
+\item How the governing equation is solved numerically requires more information, for instance in the form of an electronic supplement (Supporting Information) explaining how the algorithm works, comparing the numerical solutions with analytical ones (when m = 0), etc. Providing the python script and a jupyter notebook is great, but not sufficient. Note also that AGU prefers public data repositories associated with DOIs (see https://copdess.org/enabling-fair-data-project/enabling-fair-data-faqs/).
+
+\textcolor{blue}{Thank you. We have written and included an electronic supplement to address this comment and comment (13) of reviewer \#1.}
+
+\item The authors consider the simplified case with one control volume (or cell) as in my 2008 JFM paper, but the extension to a row of cells shows that there are additional spatial correlations that make the analysis more difficult (see my 2015 JGR paper). Have they tried to consider the extension to a row of cells? Or justify the use of a single cell?
+
+\textcolor{blue}{JKP originally studied a multi-cell model before taking a step back to develop this work, as the interpretation of the multi-cell results proved difficult without a baseline for comparison. Therefore, we present this manuscript as a ``first stab'' at incorporating bed elevation changes in a stochastic model of bedload transport, if we may borrow the quote from your 2010 JGR:ES paper. In the spirit of the simple harmonic oscillator from physics, we present a baseline for comparison and further developments.}
+
+\item The master equation does not admit analytical solutions except for m = 0, but it is possible to obtain approximate analytical solutions (my JGR 2010 and 2015 papers propose some techniques. See the SI of the 2015 paper). The advantage of a Fokker Planck approximation to their master equation is to provide further insights into the behavior of the physical system under consideration.
+
+\textcolor{blue}{response}
+
+\item It will better to split the Discussion into several subsections. This will facilitate the reading, help to structure the contents and remove tangential issues evoked by the reviewers, which distract the reader.
+
+\textcolor{blue}{Thank you. We have split the discussion into sections and also we removed topics we identified as tangential, being motivated by this comment and comment (5) of reviewer \#3.}
+
+
+\end{enumerate}
+
+
+\section*{Response to reviewer \#1:}
+
+\begin{enumerate}
+	
+\item Qualitatively, I agree with what has been presented in paragraph [5] of Voepel et al. (2013), which discusses some general properties of asymptotic bedload transport. An interesting example here is about the virtual velocity: “If residence times have an infinite-mean power law distribution... the virtual velocity will continue to decay as a power law... it implies that all particles will eventually be immobile – an unattractive idea for a non-aggrading bed.” It seems that an asymptotically heavy-tailed resting time distribution contradicts the steady-state (or equilibrium) transport conditions. Instead, I agree with Voepel et al. (2013) that at some timescale this heavy-tailed power-law decay for resting time distribution should transition into a faster thin-tailed decay, as supported by empirical evidences presented in that paper.
+
+\textcolor{blue}{response}
+
+\item I understand that similar with Martin et al. (2014), this work does not consider a hard reflecting boundary but instead an increasing restoring trend when the bed surface drifts away from the mean, as defined in equations (6) and (7). However, I suspect that this is still a case of vertically unbounded bed (contrast to the confined bed where bedrock exists and no deeper elevation fluctuations are possible, for example). The authors may check the vertical domain of the simulated bed (e.g. as depicted by the tails of the Gaussian distribution in figure 3b), to see if it increases as the simulation spans across different timescales. That is, as simulation duration increases, possibly more extreme elevation values will be sampled. It is not clear how this issue will affect the conclusion.
+
+\textcolor{blue}{The vertical domain of the bed does increase with the simulation duration. However, in accord with the Gaussian distribution of bed elevation the probability of an excursion of distance $h$ from equilibrium is strongly suppressed by a factor proportional to $e^{-h^2}$. In practice, our $1500$hr simulations were sufficient to sample the majority of bed configurations anticipated within such an exponentially suppressed interval.}
+
+\item In addition, I think as far as I am aware, Singh et al 2009 did not mention bed elevation distributions to be symmetric (as mentioned in line 137-138); in fact in Singh et al 2012, they showed bed elevation fluctuations to be asymmetric. Even Wong et al. 2007 argue adeviation from Gaussian behavior at the tails. Similarly, Aberle and Nikora 2006 argue for bed elevation fluctuations pdf to be asymmetric specially with increasing armoring discharge. Given, these recent experimental observations of asymmetric pdfs of bed elevation fluctuations, I wonder if the proposed model needs to be modified in order to obtain the realistic results (asymmetric bed elevation pdfs) and perhaps that would also provide better bedload activity predictions.
+
+\textcolor{blue}{It is true that \citet{Singh2009} did not say this. Thank you reviewer \#1 for identifying this error. We have removed this mis-attribution and restructured the sentence by citing other data showing symmetrical bed elevation pdfs.
+With regard to the Singh et al experiments, we performed image analysis on the bed elevation time series plots presented in \citet{Singh2009} and found only a statistically insignificant skew from this analysis, although certainly this methodology is limited. Personal communications with Dr. Singh confirmed the distributions were at only lightly skewed in the 2009 paper. \citet{Singh2012} meanwhile included 15\% sand to the sediment mixture that induced bedform formation and migration. The \citet{Singh2012} distributions are certainly skewed, presumably because of these migrating bedforms. The model we presented must be modified to account for bedforms. This may be a topic for future research. This modification might be possible within a multi-cell approach generalizing \citet{Ancey2015} and mentioned by Associate Editor Ancey in his comments. We mentioned this possibility in our revised discussion. } 
+
+\item I also noticed that the pdfs of bed elevations do not change shape (remain Gaussian; Figure 3), however recent work argue against it, i.e. the pdfs change shape with scale (e.g. Aberle and Nikora 2006; Singh et al 2009; 2012). I wonder what authors need to change in the model to account for this multiscale behavior.
+
+
+\textcolor{blue}{
+	Thank you especially reviewer \#1 for this excellent question. It motivated our careful study of the multifractal formalism developed in turbulence research \citep[e.g.,][]{Frisch1985} and subsequently applied to rainfall \citep[e.g.][]{Over1994,Marani2005} and sediment transport timeseries \citep[e.g.][]{Shang2005,Singh2009,Saletti2015}.
+	Following these works we applied the moment scaling formalism to the bed elevation and bedload transport timeseries of the manuscript and found statistical monoscaling, meaning the shapes of the pdfs of these quantities do not change with observation scale, contrasting with observations by \citet{Aberle2006} and \citet{Singh2009}. Instead, the scaling of the pdf with observation scale is fully characterized by a single Hurst exponent $H$ as in equation (10) from \citet{Singh2009}. Because of this statistical monoscaling, the bed elevation pdf, for example, can remain Gaussian even though changing the observation scale will modify its height and width. We too are left wondering how a model of bedload transport and bed elevations can capture multiscaling. This is a topic that seems not explored yet in research. Both \citet{Aberle2006} and \citet{Singh2009} studied multiple grain sizes, so the source of multiscaling in bed elevation pdfs may lie in differential mobility. Statistical multiscaling is also associated with intermittency or burstiness of a signal. \citet{Singh2012} observed that migrating bedforms introduce intermittency in the bed elevation timeseries. Therefore, we wonder if bedform development and migration may be a source of statistical multiscaling and scale dependent pdfs. We have introduced this perspective to the discussion in the manuscript, and believe a complete statistical characterization of bedload transport and bed elevation signals to be a still emerging topic of research.}
+
+\item Line 225: How is coupling defined? Is this based on linear correlation between bed elevation and bedload activity?
+
+\textcolor{blue}{Coupling is defined by the parameter $l$ that links bed elevations to bedload mobility through equations (6) and (7). As $l\rightarrow \infty$ bed elevations and bedload transport become totally indepedent, since equations (2-7) of the manuscript become independent of the bed elevation. We have clarified this point near line 225.}
+
+\item The current abstract is very brief and does not provide any information about what is expected in the paper. I think it can be improved by adding some more highlights of results as I believe JGR provides more space for details than currently used.
+
+\textcolor{blue}{Thank you. We have carefully reworked the manuscript's abstract to include the key results and some description of how the model works.}
+
+
+\item The title. The heavy-tailed resting times are not “derived” but results of numerical simulations. A different word like “implications” is suggested.
+
+\textcolor{blue}{Thank you for this thoughtful suggestion. We directly replaced ``derivation of'' with ``implications for'' and agree this terminology is more representative of the work.}
+
+\item Line 17. What is “bedload fluctuations”? transport rates?
+
+\textcolor{blue}{Fluctuations in $q_s$ or equivalently $n$. We have clarified this point in the abstract.}
+
+\item Line 68: it is?
+
+\textcolor{blue}{Thanks -- Fixed.}
+
+
+\item Line 70. What about Voepel et al. (2013)? This work also provides evidence of heavy-tailed resting time distributions at some timescales due to burial, as reflected by the empirical results.
+
+\textcolor{blue}{By ``...\citet{Martin2014} have provided the only direct support..'' we mean only Martin et al have clearly and unambiguously resolved burial as the generating mechanism of heavy tailed resting times. Although \citet{Voepel2013} and others (\citep{Martin2014, Pretzlav2016, Olinde2015}) have observed heavy tailed resting times, these experiments did not unambiguously resolve the mechanism generating these heavy tails. In particular, these experiments can not rule out alternative hypotheses that heavy tailed distributions are generated by processes such as stranding on bars \citep[e.g.,][]{Bradley2017} or involvement in stabilizing bedforms or bed structures \citep[e.g.,][]{Church1998,Hassan2008}. We have clarified this point near line 70.}
+
+\item Line 114. ``though'' $\rightarrow$ ``through''?
+
+\textcolor{blue}{Thank you for the careful attention! We corrected this error.}
+
+\item Line 140. Why “anti-symmetrical”?
+
+\textcolor{blue}{Thanks for pointing out this terminology is somewhat confusing. We have rephrased this sentence and avoided ``anti-symmetrical'' altogether.}
+
+\item Line 173. Does this random value mean an equal chance for different types of transitions
+(2) – (7)?
+
+\textcolor{blue}{It does not, but this comment with one of Dr. Ancey have helped us realize the details of the simulation algorithm are not fully clear in the paper. Therefore we have added an electronic supplement on the simulation algorithm and rephrased the sentence in question to make at least this issue more clear.}
+
+\item Line 362. “$a<1$”?
+
+\textcolor{blue}{Your suggestion $a<1$ is correct. Thank you and we have fixed this mistake in the revised manuscript.}
+
+\item Line 369. Why “$t^{3.64+-0.45}$”?
+
+\textcolor{blue}{The analysis of \citet{Weeks1996} and \citet{Weeks1998} provide two possibilities for the variance scaling associated with a heavy-tailed resting time and light-tailed step length distribution.}
+
+\item I think it will be useful for the reader to provide more detailed figure captions (e.g. fig 3).
+
+\textcolor{blue}{response}
+
+
+\end{enumerate}
+
+\section*{Response to reviewer \#2:}
+
+\begin{quote}
+The only hesitation that I may have is regarding the lack of adequate comparison of the results with other findings on the topic available in literature but overall I believe that the manuscript should be published in the present form.
+\end{quote}
+
+\textcolor{blue}{
+Thank you reviewer \#2. We have tried to more carefully compare the results with existing literature in the revised manuscript. In particular, we have added discussion of the (potentially contrasting) the observations of relatively heavy-tailed bed elevation distributions by \citet{Aberle2006} and to the scale dependent and skewed bed elevation distributions identified by \citet{Singh2009} and \citet{Singh2012}. We have also drawn attention to the departures of the bed elevation distributions of \citet{Wong2007} from Gaussian at the tails and highlighted the analysis/discussion of this departure by \citet{Pelosi2014a} and \citet{Pelosi2016}. Finally, we have connected our predictions for the variance scaling of bedload at asymptotically large times to the recent model of \citet{Wu2019} on the dispersion of sediment undergoing burial that predicts $\sigma_x^2 \sim t^\gamma$ with $2\leq \gamma \leq 3$. }
+
+
+\section*{Response to reviewer \#3:}
+
+\begin{enumerate}
+	\item My concern is that while the framework is new, it seems not yielding reasonably novel results. As mentioned in manuscript, the numerical outputs from the theory are mostly known facts (e.g. Martin et al., 2014; Wong et al., 2007) which on one hand confirm the validity of the theory but on the other hand do not generate compelling good stuffs to substantiate its publication at JGR-ES. After all, the evaluation of a new theory is based on how much new results can be brought by it.
+	
+	\textcolor{blue}{We believe the novel contribution of this manuscript is that it jointly describes bedload transport and bed elevations as statistical quantities, meaning with this model we can predict how the statistics of each quantity is contingent on the other. }
+	
+	\item 
+	For example, two highlighted findings in the manuscript are (1) the collapse of T/T0 (1-CDF) at the large time scales and (2) Gaussian like distribution of channel bed elevation. Both are based on the numerical simulations, which is fine, but it is hard to convince the reader how close these results are from the fact. E.g. collapse of T/T0 (1-CDF) may only exist in the numerical outputs and the normalizing T with T0 seems not changing the thickness of tail and thus not changing the nature of anomalous diffusion.
+	
+	\textcolor{blue}{response}
+	
+	
+	\item Moreover, it is still unclear to me how a heavy tailed PDF emerges from this framework, while the title says "Derivation of heavy-tailed resting times". 
+	
+	\textcolor{blue}{Thank you for this constructive comment. We have changed the phrasing `` derivation of'' to ``implications for''.}
+	
+	
+	\item As to the later one, experiments of Wong et al. (2007) and analyses of Pelosi et al. (2014) also suggested relatively heavy tailed distribution of channel bed elevation. The fact that there are inconsistencies between the new model and experiments without proper explanations weakens the Discussion and Conclusion significantly.
+	
+	\textcolor{blue}{Thank you for this comment. \citet{Wong2007} said "Visual inspection suggests a very good agreement [between data and the Gaussian fit] for almost the entire range of potential bed elevation deviation values, with the exception of the extreme tails of the distribution." Looking at their plots, we estimate the departure between theoretical Gaussian distributions and their experimental data at the tails does not exceed $5$\%. Wong et al. did not suggest heavy tailed distributions of bed elevation: rather they highlighted the essential agreement between their results and earlier (Gaussian) conclusions for the bed elevation pdf by \citet{Crickmore1962} and \citet{Pender2001} despite these small departures at the tails. Nor did \citet{Pelosi2014a} present any evidence for heavy tailed bed elevation pdfs. They simply assumed an $\alpha$-stable distribution for the sake of argument. \citet{Pelosi2016} later argued that $\alpha$-stable and Gaussian fits on the \citet{Wong2007} bed elevation data can be ``approximated as identical''. In conclusion, we do not agree that the \citet{Wong2007} or \citet{Pelosi2014} papers support the conclusion of heavy tailed bed elevation pdfs. However, \citet{Aberle2006} have shown heavy tailed bed elevation pdfs from severely degraded beds with multiple grain sizes, and \citet{Singh2012} has demonstrated non-Gaussian bed elevation statistics when bedforms are present. This comment has spurred us to more carefully account for these contrasting observations in the discussion section in the revised manuscript, as we believe these observations suggest important topics for subsequent research. }
+	
+	
+	\item Particularly, many tangent materials that appears in the Discussion (although making sense) seems irrelevant to the essence of the work.
+	
+	\textcolor{blue}{We identified lines 330 to 358 as tangential and removed them entirely. Thank you for this.}
+	
+	
+	\item I recommend a major revision with hope that the authors can dig more compelling results from the model before it is ready for publications. Some suggestions about potential paths forward include (1) showing how this model differs from Martin et al. (2014); (2) a potential explanation of moderately heavy tailed PDF of channel bed elevation from Wong et al (2007).
+	
+	\textcolor{blue}{We present analyses of the co-dependence of bedload fluctuations on bed elevation (and vice versa) as more compelling contributions. We have also included a more careful analysis of the difference between our model and \citet{Martin2014}}
+	
+	
+\end{enumerate}
+	
+	
+
+	
+
+\bibliography{biblio}
+\end{document}
+
+
+
