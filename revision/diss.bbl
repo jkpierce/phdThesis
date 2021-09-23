@@ -1,4 +1,4 @@
-\begin{thebibliography}{349}
+\begin{thebibliography}{358}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{\it Abbott and Francis\/}(1977)}]{Abbott1977}
@@ -107,6 +107,12 @@ Ashworth, P.~J., and R.~I. Ferguson, {Size‐selective entrainment of bed load
 Auton, T.~R., {The lift force on a spherical body in a rotational flow}, {\it
   Journal of Fluid Mechanics\/}, {\it 183\/}, 199--218, 1987.
 
+\bibitem[{{\it Az{\'{e}}ma and Radja{\"{i}}\/}(2012)}]{Azema2012}
+Az{\'{e}}ma, E., and F.~Radja{\"{i}}, {Force chains and contact network
+  topology in sheared packings of elongated particles}, {\it Physical Review E
+  - Statistical, Nonlinear, and Soft Matter Physics\/}, {\it 85\/}, 1--12,
+  2012.
+
 \bibitem[{{\it Bagnold\/}(1954)}]{Bagnold1954}
 Bagnold, R.~A., {Experiments on a gravity-free dispersion of large solid
   spheres in a Newtonian fluid under shear}, {\it Proceedings of the Royal
@@ -154,6 +160,10 @@ Banerjee, T., S.~N. Majumdar, A.~Rosso, and G.~Schehr, {Current fluctuations in
   noninteracting run-and-tumble particles in one dimension}, {\it Physical
   Review E\/}, {\it 101\/}, 1--16, 2020.
 
+\bibitem[{{\it Barabasi and Stanley\/}(1995)}]{Barabasi1995}
+Barabasi, A.-L., and H.~E. Stanley, {\it {Fractal concepts in surface
+  growth}\/}, 1st ed., Cambridge University Press, Cambridge, 1995.
+
 \bibitem[{{\it Barik et~al.\/}(2006){\it Barik, Ghosh, and Ray\/}}]{Barik2006}
 Barik, D., P.~K. Ghosh, and D.~S. Ray, {Langevin dynamics with dichotomous
   noise; Direct simulation and applications}, {\it Journal of Statistical
@@ -172,6 +182,11 @@ Bateman, H., and A.~Erdelyi, {\it {Higher Transcendental Functions}\/},
 \bibitem[{{\it Bathurst\/}(2007)}]{Bathurst2007a}
 Bathurst, J.~C., {Effect of coarse surface layer on bed-load transport}, {\it
   Journal of Hydraulic Engineering\/}, {\it 133\/}, 1192--1205, 2007.
+
+\bibitem[{{\it Bena\/}(2006)}]{Bena2006}
+Bena, I., {Dichotomous Markov noise: Exact results for out-of-equilibrium
+  systems}, {\it International Journal of Modern Physics B\/}, {\it 20\/},
+  2825--2888, 2006.
 
 \bibitem[{{\it Benavides et~al.\/}(2021){\it Benavides, Deal, Rushlow,
   Venditti, Kamrin, and Perron\/}}]{Benavides2021}
@@ -192,6 +207,11 @@ Bennett, C.~H., {Serially deposited amorphous aggregates of hard spheres}, {\it
 Berezhkovskii, A.~M., and G.~H. Weiss, {Detailed description of a two-state
   non-Markov system}, {\it Physica A: Statistical Mechanics and its
   Applications\/}, {\it 303\/}, 1--12, 2002.
+
+\bibitem[{{\it Bialik\/}(2013)}]{Bialik2013}
+Bialik, R.~J., {Numerical study of near-bed turbulence structures influence on
+  the initiation of saltating grains movement}, {\it Journal of Hydrology and
+  Hydromechanics\/}, {\it 61\/}, 202--207, 2013.
 
 \bibitem[{{\it Bialik et~al.\/}(2012){\it Bialik, Nikora, and
   Rowi{\'{n}}ski\/}}]{Bialik2012}
@@ -248,6 +268,12 @@ Bradley, D.~N., G.~E. Tucker, and D.~A. Benson, {Fractional dispersion in a
 \bibitem[{{\it Brilliantov and Poschel\/}(2004)}]{Brilliantov2004}
 Brilliantov, N.~V., and T.~Poschel, {\it {Kinetic theory of granular gases}\/},
   1st ed., Oxford University Press, Oxford, 2004.
+
+\bibitem[{{\it Bunte et~al.\/}(2004){\it Bunte, Abt, Potyondy, and
+  Ryan\/}}]{Bunte2004}
+Bunte, K., S.~R. Abt, J.~P. Potyondy, and S.~E. Ryan, {Measurement of Coarse
+  Gravel and Cobble Transport Using Portable Bedload Traps}, {\it Journal of
+  Hydraulic Engineering\/}, {\it 130\/}, 879--893, 2004.
 
 \bibitem[{{\it Cameron et~al.\/}(2020){\it Cameron, Nikora, and
   Witz\/}}]{Cameron2020}
@@ -366,7 +392,7 @@ Crickmore, M., and G.~Lean, {The measurement of sand transport by the
 
 \bibitem[{{\it Cudden and Hoey\/}(2003)}]{Cudden2003}
 Cudden, J.~R., and T.~B. Hoey, {The causes of bedload pulses in a gravel
-  channel: The implications of bedload grain-size distibutions}, {\it Earth
+  channel: The implications of bedload grain-size distributions}, {\it Earth
   Surface Processes and Landforms\/}, {\it 28\/}, 1411--1428, 2003.
 
 \bibitem[{{\it Cundall and Strack\/}(1979)}]{Cundall1979a}
@@ -610,6 +636,12 @@ Furbish, D.~J., S.~L. Fathel, and M.~W. Schmeeckle, {Particle motions and
   {\it Gravel-Bed Rivers: Process and Disasters\/}, edited by D.~Tsutsumi and
   J.~B. Laronne, 1 ed., chap.~4, pp. 97--120, John Wiley {\&} Sons Ltd., 2017.
 
+\bibitem[{{\it Furbish et~al.\/}(2021){\it Furbish, Roering, Doane, Roth,
+  Williams, and Abbott\/}}]{Furbish2021}
+Furbish, D.~J., J.~J. Roering, T.~H. Doane, D.~L. Roth, S.~G. Williams, and
+  A.~M. Abbott, {Rarefied particle motions on hillslopes - Part 1: Theory},
+  {\it Earth Surface Dynamics\/}, {\it 9\/}, 539--576, 2021.
+
 \bibitem[{{\it Gaeuman et~al.\/}(2017){\it Gaeuman, Stewart, Schmandt, and
   Pryor\/}}]{Gaeuman2017}
 Gaeuman, D., R.~Stewart, B.~Schmandt, and C.~Pryor, {Geomorphic response to
@@ -692,16 +724,16 @@ Hamamori, A., {A theoretical investigation on the fluctuations of bed load
   transport. Technical Report No. R4.}, {\it Tech. rep.\/}, Delft Hydraulics
   Laboratory, 1962.
 
-\bibitem[{{\it Hanggi\/}(1978)}]{Hanggi1978}
-Hanggi, P., {Correlation Functions and Masterequations of Generalized
+\bibitem[{{\it H{\"{a}}nggi\/}(1978)}]{Hanggi1978}
+H{\"{a}}nggi, P., {Correlation Functions and Masterequations of Generalized
   (Non-Markovian) Langevin Equations}, {\it Z. Physik B\/}, {\it 31\/},
   407--416, 1978.
 
-\bibitem[{{\it Hanggi\/}(1984)}]{Hanggi1984a}
-Hanggi, P., {The functional derivative and its use in the description of noisy
-  dynamical systems}, in {\it International School on Stochastic Processes
-  Applied to Physics\/}, edited by L.~Pesquera and M.~A. Rodriguez, pp. 69--94,
-  World Scientific Publishing Company, Santander, Spain, 1984.
+\bibitem[{{\it H{\"{a}}nggi\/}(1984)}]{Hanggi1984a}
+H{\"{a}}nggi, P., {The functional derivative and its use in the description of
+  noisy dynamical systems}, in {\it International School on Stochastic
+  Processes Applied to Physics\/}, edited by L.~Pesquera and M.~A. Rodriguez,
+  pp. 69--94, World Scientific Publishing Company, Santander, Spain, 1984.
 
 \bibitem[{{\it H{\"{a}}nggi and Jung\/}(2007)}]{Hanggi2007}
 H{\"{a}}nggi, P., and P.~Jung, {Colored Noise in Dynamical Systems}, 2007.
@@ -732,13 +764,13 @@ Hassan, M.~A., M.~Church, and A.~P. Schick, {Distance of movement of coarse
   particles in gravel bed streams}, {\it Water Resources Research\/}, {\it
   27\/}, 503--511, 1991.
 
-\bibitem[{{\it Hassan et~al.\/}(2007){\it Hassan, Smith, Hogan, Luzi,
+\bibitem[{{\it Hassan et~al.\/}(2008){\it Hassan, Smith, Hogan, Luzi,
   Zimmermann, and Eaton\/}}]{Hassan2008}
 Hassan, M.~A., B.~J. Smith, D.~L. Hogan, D.~S. Luzi, A.~E. Zimmermann, and
   B.~C. Eaton, {Sediment storage and transport in coarse bed streams: scale
-  considerations}, in {\it Developments in Earth Surface Processes\/}, edited
-  by H.~Habersack, H.~Piegay, and M.~Rinaldi, vol.~11, chap.~18, pp. 473--496,
-  Elsevier B.V, 2007.
+  considerations}, in {\it Gravel-Bed Rivers VI: From Process Understanding to
+  River Restoration\/}, edited by H.~Habersack, H.~Piegay, and M.~Rinaldi,
+  vol.~11, chap.~18, pp. 473--496, Elsevier B.V, 2008.
 
 \bibitem[{{\it Hassan et~al.\/}(2013){\it Hassan, Voepel, Schumer, Parker, and
   Fraccarollo\/}}]{Hassan2013}
@@ -847,6 +879,11 @@ Ismail, K.~A., and W.~J. Stronge, {Impact of viscoplastic bodies: Dissipation
 Iverson, R.~M., {The Physics of Debris Flows}, {\it Reviews of Geophysics\/},
   {\it 35\/}, 245--296, 1997.
 
+\bibitem[{{\it Jenkins and Hanes\/}(1998)}]{Jenkins1998}
+Jenkins, J.~T., and D.~M. Hanes, {Collisional sheet flows of sediment driven by
+  a turbulent fluid}, {\it Journal of Fluid Mechanics\/}, {\it 370\/}, 29--52,
+  1998.
+
 \bibitem[{{\it Jensen\/}(1998)}]{Jensen1998}
 Jensen, H.~J., {\it {Self-Organized Criticality}\/}, Cambridge University
   Press, Cambridge, 1998.
@@ -881,13 +918,21 @@ Joseph, G.~G., R.~Zenit, M.~L. Hunt, and A.~M. Rosenwinkel, {Particle-wall
 Kalinske, A.~A., {Movement of sediment as bed load in rivers}, {\it Eos,
   Transactions American Geophysical Union\/}, {\it 28\/}, 615--620, 1947.
 
+\bibitem[{{\it Kardar\/}(2007)}]{Kardar2007}
+Kardar, M., {\it {Statistical Physics of Fields}\/}, Cambridge University
+  Press, Cambridge, 2007.
+
+\bibitem[{{\it Kawakatsu\/}(2001)}]{Kawakatsu2001}
+Kawakatsu, T., {\it {Statistical Physics of Polymers}\/}, Springer-Verlag, New
+  York, 2001.
+
 \bibitem[{{\it Kim\/}(1998)}]{Kim1998}
 Kim, H.~K., {Advanced Second Order Functional Differential Equations}, Ph.D.
   thesis, Massey University, 1998.
 
-\bibitem[{{\it Kirchener et~al.\/}(1990){\it Kirchener, Dietrich, Iseya, and
+\bibitem[{{\it Kirchner et~al.\/}(1990){\it Kirchner, Dietrich, Iseya, and
   Ikeda\/}}]{Kirchener1990}
-Kirchener, J.~W., W.~E. Dietrich, F.~Iseya, and H.~Ikeda, {The variability of
+Kirchner, J.~W., W.~E. Dietrich, F.~Iseya, and H.~Ikeda, {The variability of
   critical shear stress, friction angle, and grain protrusion in water‐worked
   sediments}, {\it Sedimentology\/}, {\it 37\/}, 647--672, 1990.
 
@@ -997,9 +1042,9 @@ Luczka, J., M.~Niemiec, and E.~Piotrowski, {Linear systems with randomly
   and General\/}, {\it 26\/}, 4849--4861, 1993.
 
 \bibitem[{{\it Luczka et~al.\/}(1995){\it Luczka, Bartussek, and
-  Hanggi\/}}]{Luczka1995}
-Luczka, J., R.~Bartussek, and P.~Hanggi, {White-noise-induced transport in
-  periodic structures.}, {\it Epl\/}, {\it 31\/}, 431--436, 1995.
+  H{\"{a}}nggi\/}}]{Luczka1995}
+Luczka, J., R.~Bartussek, and P.~H{\"{a}}nggi, {White-noise-induced transport
+  in periodic structures.}, {\it Epl\/}, {\it 31\/}, 431--436, 1995.
 
 \bibitem[{{\it Luque and van Beek\/}(1976)}]{Luque1976}
 Luque, R.~F., and R.~van Beek, {Erosion and transport of bed-load sediment},
@@ -1063,6 +1108,11 @@ Martin, Y., and M.~Church, {Re-examination of Bagnold's empirical bedload
   formulae}, {\it Earth Surface Processes and Landforms\/}, {\it 25\/},
   1011--1024, 2000.
 
+\bibitem[{{\it Masoliver\/}(1993)}]{Masoliver1993}
+Masoliver, J., {Second-order dichotomous processes: Damped free motion,
+  critical behavior, and anomalous superdiffusion}, {\it Physical Review E\/},
+  {\it 48\/}, 121--135, 1993.
+
 \bibitem[{{\it Masoliver\/}(2016)}]{Masoliver2016}
 Masoliver, J., {Fractional telegrapher's equation from fractional persistent
   random walks}, {\it Physical Review E\/}, {\it 93\/}, 1--10, 2016.
@@ -1103,11 +1153,6 @@ Maxey, M.~R., and J.~J. Riley, {Equation of motion for a small rigid sphere in
 McDowell, C., and M.~A. Hassan, {The influence of channel morphology on bedload
   path lengths: Insights from a survival process model}, {\it Earth Surface
   Processes and Landforms\/}, {\it 45\/}, 2982--2997, 2020.
-
-\bibitem[{{\it McEwan and Heald\/}(2001)}]{McEwan2001}
-McEwan, I., and J.~Heald, {Discrete particle modeling of entrainment from flat
-  uniformly sized sediment beds}, {\it Journal of Hydraulic Engineering\/},
-  {\it 127\/}, 588--597, 2001.
 
 \bibitem[{{\it Mendes et~al.\/}(2016){\it Mendes, Antico, Sanches, Alegria,
   Aleixo, and Ferreira\/}}]{Mendes2016}
@@ -1420,7 +1465,7 @@ Saletti, M., and M.~A. Hassan, {Width variations control the development of
   and Church\/}}]{Saletti2015}
 Saletti, M., P.~Molnar, A.~Zimmermann, M.~A.~. Hassan, and M.~Church, {Temporal
   variability and memory in sediment transport in an experimental step-pool
-  cahnnel}, {\it Water Resources Research\/}, {\it 51\/}, 9325--3337, 2015.
+  channel}, {\it Water Resources Research\/}, {\it 51\/}, 9325--3337, 2015.
 
 \bibitem[{{\it Santos et~al.\/}(2014){\it Santos, Franca, and
   Ferreira\/}}]{Santos2014}
@@ -1616,12 +1661,6 @@ Tregnaghi, M., A.~Bottacin-Busolin, A.~Marion, and S.~Tait, {Stochastic
   transport stages: 1. Theory}, {\it Journal of Geophysical Research: Earth
   Surface\/}, {\it 117\/}, 1--15, 2012.
 
-\bibitem[{{\it Tsakiris et~al.\/}(2014){\it Tsakiris, Papanicolaou, and
-  Lauth\/}}]{Tsakiris2014}
-Tsakiris, A.~G., A.~N. Papanicolaou, and T.~J. Lauth, {Signature of bedload
-  particle transport mode in the acoustic signal of a geophone}, {\it Journal
-  of Hydraulic Research\/}, {\it 52\/}, 185--204, 2014.
-
 \bibitem[{{\it Tsujimoto\/}(1978)}]{Tsujimoto1978}
 Tsujimoto, T., {Probabilistic model of bed load processes and its application
   to moving bed problem (In Japanese)}, Ph.D. thesis, Kyoto University, 1978.
@@ -1677,6 +1716,11 @@ Voepel, H., R.~Schumer, and M.~A. Hassan, {Sediment residence time
 Vowinckel, B., T.~Kempe, and J.~Fr{\"{o}}hlich, {Fluid-particle interaction in
   turbulent open channel flow with fully-resolved mobile beds}, {\it Advances
   in Water Resources\/}, {\it 72\/}, 32--44, 2014.
+
+\bibitem[{{\it Wachs\/}(2019)}]{Wachs2019}
+Wachs, A., {Particle-scale computational approaches to model dry and saturated
+  granular flows of non-Brownian, non-cohesive, and non-spherical rigid
+  bodies}, {\it Acta Mechanica\/}, {\it 230\/}, 1919--1980, 2019.
 
 \bibitem[{{\it Walther et~al.\/}(2002){\it Walther, Post, Convey, Menzel,
   Parmesank, Beebee, Fromentin, I, and Bairlein\/}}]{Walther2002}

@@ -7,12 +7,12 @@
 
 The Gillespie Stochastic Simulation Algorithm (SSA) generates exact realizations of a Markov random process from a sequence of random numbers.
 It was originally developed for chemical physics by \citet{Gillespie1977} and is reviewed in \citet{Gillespie1991} and \citet{Gillespie2007}.
-The SSA hinges on the defining property of a Markov process. When the transition rates from one state to another are not dependent on the distant past, the process is Markov \citep[e.g.,][]{Cox1965}.
-The following sections demonstrate that the time intervals $\tau$ between subsequent transitions are exponentially distributed within the model of chapter \ref{ch:ch3}. The SSA follows as a consequence of this property.
+The SSA hinges on the defining property of a Markov process. When the transition rates from one state to another are not dependent on the distant past, the process is Markov \citep{Cox1965}.
+The following sections demonstrate that the time intervals $\tau$ between subsequent transitions are exponentially distributed within the model of ch. \ref{ch:ch3}. The SSA follows as a consequence of this property.
 
 \subsection{Times between transitions of any kind}
 The joint description of bedload transport and bed elevation changes is characterized by a set of states $(n,m)$ where $n$ and $m$ are integers.
-The description involves four possible transitions (migration in, entrainment, deposition, migration out) with rates given in equations (\ref{eq:rate1}-\ref{eq:rate4}).
+The description involves four possible transitions (migration in, entrainment, deposition, migration out) with rates given in eqs. (\ref{eq:rate1}-\ref{eq:rate4}).
 
 From the state $(n,m)$, the rate (probability per unit time) for any transition to occur is the sum over all possibilities:
 \begin{multline} A(n,m) = R_{MI}(n+1,m|n,m) + R_E(n+1,m-1|n,m) \\+ R_D(n-1,m+1|n,m) + R_{MO}(n-1,m|n,m).\end{multline}
@@ -24,9 +24,9 @@ This equation demonstrates that the time $\tau$ to the next transition from a st
 
 \subsection{Selection of transitions that occur}
 
-So far, equation \ref{eq:exp} demonstrates how to step the time from one transition to the next, but it remains unclear how to step the state variables $n$ and $m$ at each transition time. There is a need to characterize the type of transition which occurs at a given transition time.
+So far, eq. \ref{eq:exp} demonstrates how to step the time from one transition to the next, but it remains unclear how to step the state variables $n$ and $m$ at each transition time. There is a need to characterize the type of transition which occurs at a given transition time.
 
-Intuitively, this will depend on the relative magnitudes of the rates from equations (\ref{eq:rate1}-\ref{eq:rate4}).
+Intuitively, this will depend on the relative magnitudes of the rates from eqs. \ref{eq:rate1}-\ref{eq:rate4}.
 The transition with the highest rate is most likely to occur.
 This is formalized by generating the ratios
 \begin{multline} S = \Bigg\{\frac{R_{MI}(n+1,m|n,m)}{ A(n,m)},
@@ -36,11 +36,11 @@ This is formalized by generating the ratios
 By construction, $\sum S=1$.
 Forming cumulative sums of the four ratios partitions the unit interval $[0,1]$ into four chunks, each associated with a transition -- either migration in, entrainment, deposition, or migration out. The transitions with the highest rates have the largest associated chunks. Drawing a random number on $[0,1]$ can then select the transition which occurs at a given transition time by querying which chunk it falls within.
 
-In summary, to step the process through a single transition, the SSA draws the time interval to the next transition from the distribution (\ref{eq:exp}), draws a uniform random number from $[0,1]$, then uses this uniform random to select the transition that occurs from the cumulative sum of the ratios in (\ref{eq:rel}). Iterating this random number generation and selection process simulates exact realizations of the stochastic process. These are series of $n$ and $m$ through time from which any statistics of interest can be calculated.
+In summary, to step the process through a single transition, the SSA draws the time interval to the next transition from the distribution (eq. \ref{eq:exp}), draws a uniform random number from $[0,1]$, then uses this uniform random to select the transition that occurs from the cumulative sum of the ratios in eq. \ref{eq:rel}. Iterating this random number generation and selection process simulates exact realizations of the stochastic process. These are series of $n$ and $m$ through time from which any statistics of interest can be calculated.
 
 \subsection{Pseudo code for the Gillespie SSA}
 
-Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model parameters used in equations \ref{eq:rate1}-\ref{eq:rate4}, and the desired simulation duration $t_\text{max}$. The SSA uses these inputs to generate time series of $n$ and $m$ as follows:
+Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model parameters used in eqs. \ref{eq:rate1}-\ref{eq:rate4}, and the desired simulation duration $t_\text{max}$. The SSA uses these inputs to generate time series of $n$ and $m$ as follows:
 
 \rule{\linewidth}{1pt}
 
@@ -51,10 +51,10 @@ Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model
 	
 	\While{$t<t_{\text{max}}$;}{	\Comment{Simulation will go until $t$ surpasses $t_\text{max}$}
 		\State record $(n,m,t)$ \Comment{Build time series of $n$ and $m$}		
-		\State draw $\tau$ from eq. (\ref{eq:exp}) \Comment{Select time to next transition}
+		\State draw $\tau$ from eq. \ref{eq:exp} \Comment{Select time to next transition}
 		\State $t \coloneqq t+\tau$
 		\State draw a random number $r$ in $[0,1]$ \Comment{Select type of transition that occurs}
-		\State compute the ratios $r_1,r_2,r_3,r_4$ in eq. (\ref{eq:rel})
+		\State compute the ratios $r_1,r_2,r_3,r_4$ in eq. \ref{eq:rel}
 		\State form the cumulative sums $r_i = \sum_{1\leq j\leq i}r_j$ 
 		\Comment{Now enact the transition}
 		\If {$0\leq r<r_1$}	\Comment{Migration in}
@@ -76,7 +76,7 @@ Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model
 
 \subsection{Mean field solution of particle activity}
 
-By assuming the dynamics of the particle activity are totally independent of the bed elevation and summing equation \ref{eq:elemaster} over all values of $m$ obtains a mean field equation for the particle activity: 
+By assuming the dynamics of the particle activity are totally independent of the bed elevation and summing eq. \ref{eq:elemaster} over all values of $m$ obtains a mean field equation for the particle activity: 
 \begin{multline} 0 = \nu A(n-1) + [\lambda + \mu(n-1)]A(n-1) + \sigma(n+1)A(n+1) \\
 	+\gamma(n+1)A(n+1)-(\nu  + \lambda + \mu n + \sigma n + \gamma n)A(n).\end{multline}
 This can be solved by introducing the generating function \citep{Cox1965} $G(x) = \sum_n x^n A(n)$, providing
@@ -84,13 +84,13 @@ This can be solved by introducing the generating function \citep{Cox1965} $G(x) 
 which is separable and integrates for 
 \be G(x) = \Bigg( \frac{\gamma + \sigma -\mu}{\gamma + \sigma - \mu x}\Bigg)^{\frac{\nu + \lambda}{\mu}}\ee
 after applying the normalization condition $G(1)=1$.
-From the definition of $G$ it follows that $A(n) = \frac{1}{n!} \frac{d^nG}{dx^n}|_{x=0}$, giving the negative binomial distribution of particle activity demonstrated by \citet{Ancey2008} and stated in equation \ref{eq:ancey} and introduced originally in section \ref{sec:birthdeath}.
+From the definition of $G$ it follows that $A(n) = \frac{1}{n!} \frac{d^nG}{dx^n}|_{x=0}$, giving the negative binomial distribution of particle activity demonstrated by \citet{Ancey2008} and stated in eq. \ref{eq:ancey} and introduced originally in sec. \ref{sec:birthdeath}.
 
 \subsection{Mean field solution of bed elevations}
 
-The negative binomial distribution provides $\langle n |m \rangle = \langle n \rangle$, so equation \ref{eq:elemaster} produces
+The negative binomial distribution provides $\langle n |m \rangle = \langle n \rangle$, so eq. \ref{eq:elemaster} produces
 \begin{multline} 0 = [\lambda + \mu \langle n \rangle][1+\kappa(m+1)]M(m+1) + \sigma \langle n \rangle [1-\kappa(m-1)]M(m-1) \\- \{[\lambda + \mu \langle n \rangle](1+\kappa m) + \sigma \langle n \rangle (1-\kappa m) \}M(m). \end{multline}
-Identifying $E=\lambda + \mu \langle n \rangle$ and $D = \sigma \langle n \rangle$ and incorporating $E=D$ gives equation \ref{eq:ou}:
+Identifying $E=\lambda + \mu \langle n \rangle$ and $D = \sigma \langle n \rangle$ and incorporating $E=D$ gives eq. \ref{eq:ou}:
 \be 0 = [1+\kappa(m+1)]M(m+1) + [1-\kappa(m-1)]M(m-1) - 2M(m).\ee
 
 This can be solved using the Fokker-Planck expansion \citep{Gardiner1983} that effectively converts this discrete Master equation for $m$ into a diffusion equation for the quasi-continuous variable $z=z_1 m$ This works since $z_1$ is small. Introducing $z$ and writing $\overline{\kappa}=\kappa/z_1$ gives
@@ -100,13 +100,13 @@ Expanding the entire first and second terms to second order $z_1$ provides the F
 \be 0 = -2\overline{\kappa}z_1[zM(z)]' + z_1^2 M''(z). \ee
 Taking into account that this distribution should be normalizable, $\lim_{z\rightarrow \pm \infty}M(z) = 0$, the solution is
 \be M = M_0e^{-\kappa (z/z_1)^2}\ee
-as provided in chapter \ref{ch:ch3}.
+as provided in ch. \ref{ch:ch3}.
 
 \subsection{Closure equation approach for bed elevations}
 This section produces an approximate relationship to close
 $\langle n | m \rangle$ in terms of $m$ valid to first order in $\kappa$. Writing 
 \be \langle n | m \rangle \approx \langle n \rangle  - \kappa c m,\ee
-for the mean particle activity conditional to the elevation $m$ into \ref{eq:elemaster}, noting $E=D$, and neglecting terms of $O(\kappa^2)$ provides 
+for the mean particle activity conditional to the elevation $m$ into eq. \ref{eq:elemaster}, noting $E=D$, and neglecting terms of $O(\kappa^2)$ provides 
 \begin{multline} 0 \approx \Big[ 1+\kappa(m+1)\Big\{ 1-\frac{\mu c}{E}\Big\}\Big]M(m+1) + \Big[1-\kappa(m-1)\Big\{1+\frac{\sigma c}{E}\Big\}\Big]\\-\Big[2-\kappa m\Big\{\frac{(\sigma+\mu)c}{E}\Big\}\Big]M(m)
 \end{multline}
 At this point, $c$ is considered an undetermined positive constant that may depend on the entrainment, migration, and deposition rates.
@@ -117,4 +117,4 @@ Finally, integrating, expanding to first order in $\kappa$, and exponentiating t
 \be M(m) = M_0 \exp\Big\{-\kappa m^2 \Big[1 + \frac{(\sigma-\mu)c}{2E}\Big]\Big\}.\ee
 Since the numerical solutions show $\sigma_m^2 = \frac{1}{4\kappa}$, this suggests the closure relation
 \be \langle n | m \rangle = \langle n \rangle\Big( 1-\frac{2\kappa m}{1-\mu/\sigma}\Big) \ee
-corresponding to $c=2E/(\sigma-\mu)$. This is the closure relationship provided in equation \ref{eq:closure} and plotted with the numerical simulations in figure \ref{fig:condmoms}.
+corresponding to $c=2E/(\sigma-\mu)$. This is the closure relationship provided in eq. \ref{eq:closure} and plotted with the numerical simulations in fig. \ref{fig:condmoms}.

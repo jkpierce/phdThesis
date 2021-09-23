@@ -4,7 +4,7 @@
 \chapter{Sediment transport and landscape evolution}
 \label{ch:Introduction}
 
-Landscapes evolve when water, wind, and ice, under the influence of gravity and sunlight, erode along topographic gradients produced by tectonics.
+Landscapes evolve when water, wind, and ice erode along the gradients produced by tectonics.
 Channels initiate along faults and depressions wherever climatic conditions are suitable, incising networks in the landscape and transferring sediments from uplands to lowlands.
 Earth's biota colonize these networks which form conduits for migration, transmitting water, genetic information, and organic material alike, while biota and chemical decomposition convert sediments to soils, staging the joint evolution of life and landscapes which has occurred across geological time.
 
@@ -14,7 +14,8 @@ Research demonstrates unprecedented recent shifts in ancient climatic \citep{Siv
 In this context river geomorphology as a scientific discipline has shifted toward more quantitative methods that enable concrete predictions about the natural world \citep{Church2005,Church2010}.
 Sediment transport in river channels is especially amenable to this quantitative approach since it is mechanistically the result of fluid and granular physics.
 Sediment moves in different modes depending on the relative importance of the fluid forces against the weight of sediment grains \citep{Bagnold1956}.
-When particles are coarse, as in gravel-bed rivers, the fluid forces are relatively weak and particles move as ``bedload", by bouncing, rolling, and sliding along the bed surface \citep{Kalinske1947}. In bedload transport conditions, fluid turbulence and the irregular bed surface adopt particular control over the sediment dynamics \citep{Ferreira2015}.
+When particles are coarse, as in gravel-bed rivers, the fluid forces are relatively weak and particles move as ``bedload", by bouncing, rolling, and sliding along the bed surface \citep{Kalinske1947}.
+In bedload transport conditions, fluid turbulence and the irregular bed surface adopt particular control over the sediment dynamics \citep{Ferreira2015}.
 
 Bedload transport exerts unique influence over channel morphology and stability \citep{Church2006,Recking2016}, in part because the coarsest grains in a river provide a partially-immobile skeleton upon which sedimentary deposits can develop \citep{Hassan2008, Eaton2020}.
 A longstanding problem in river science is therefore to determine the bedload flux, or the rate of coarse sediment movement.
@@ -24,7 +25,8 @@ Given that the problem has been researched intensively for over a century now \c
 Predicting bedload fluxes is challenging because transport is not always well correlated to average characteristics of the flow and bed material. 
 Local fluxes can range through orders of magnitude as details of turbulent fluctuations and bed organization vary, while average characterizations of flow and sediment remain constant \citep{Sumer2003, Charru2004, Hassan2008, Venditti2017}.
 The same turbulence and sediment organization details which correlate with the bedload flux are also modified by it.
-Turbulent impulses drive sediment motion \citep{Valyrakis2010, Celik2014, Amir2014, Shih2017}, but moving sediment affects turbulent flow characteristics \citep{Singh2010, Santos2014, Liu2016}. The surface arrangement and consolidation of grains \citep{Miller1966,Paintal1971,Dwivedi2012} affects sediment mobility, but transport rearranges grains and consolidates the bed \citep{Kirchener1990, Charru2004, Allen2018, Masteller2019, Pretzlav2020}.
+Turbulent impulses drive sediment motion \citep{Valyrakis2010, Celik2014, Amir2014, Shih2017}, but moving sediment affects turbulence characteristics \citep{Singh2010, Santos2014, Liu2016}.
+The surface arrangement and consolidation of grains affects sediment mobility \citep{Miller1966,Paintal1971,Dwivedi2012}, but transport rearranges grains and consolidates the bed \citep{Kirchener1990, Charru2004, Allen2018, Masteller2019, Pretzlav2020}.
 Bedload fluxes are in cyclical feedback with their controls \citep{Jerolmack2005}, and this challenges us to step beyond descriptions based on averaged values \citep{Ancey2020b}.
 
 The approach taken in this thesis is to consider bedload transport as an aggregate result of many individual transported grains whose movements have probabilistic characteristics.
@@ -33,14 +35,14 @@ Because the trajectories of individual grains are governed by Newtonian mechanic
 
 
 To address these complications, I develop in this thesis a handful of new bedload transport models using methods adopted from statistical physics.
-To provide context and motivation, the thesis begins by reviewing earlier approaches to bedload transport which my work is most related to, rephrasing works as necessary during this review to indicate common themes and show continuity with my own developments which follow in subsequent chapters.
+To provide context and motivation, the thesis begins by reviewing earlier approaches to bedload transport which my work is most related to, rephrasing works as necessary during this review to indicate common themes, highlight the shortcomings to be addressed, and show continuity with my own developments which follow in subsequent chapters.
 
 \section{Theories of individual particle movement}
 \label{sec:trajmodels}
 
 A basic problem in sediment transport theory is to predict the downstream movement of individual particles.
 At first glance, this seems an elementary problem in general physics, but numerous challenges appear.
-Particles moving as bedload are driven downstream by a turbulent fluid flow, but precise relationships between the fluid flow and the applied forces remain unknown \citep{Maxey1983,Schmeeckle2007}.
+Particles moving as bedload are driven downstream by a turbulent fluid flow, but relationships between the fluid flow and the applied forces are known only approximately \citep{Michaelides1997a,Schmeeckle2007}.
 Downstream movement is resisted by frictional encounters (skidding, pivoting, colliding) between moving particles and the bed, but since the bed is a granular surface, its geometry is difficult to characterize \citep{Gordon1972}, and the role of bed interactions is challenging to describe \citep{Sekine1992, Nino1998}.
 
 Entrainment and deposition provide an additional layer of complexity.
@@ -49,12 +51,12 @@ These pockets are not permanent shelter because rearrangement of the surrounding
 As a result, particles generally alternate through sequences of entrainment and deposition, but the exact times at which these alternations occur is difficult to characterize \citep{Einstein1937}.
 
 Particles at rest on the bed surface can also become covered by other transported particles \citep{Yang1971}. 
-These buried particles cannot move along the bed surface again until those burying them have been transported away \citep{Nakagawa1981}, generating long periods of relative immobility \citep{Hassan1994,Ferguson2002}.
+These buried particles cannot move appreciably until those burying them have been transported away \citep{Nakagawa1981}, generating long periods of relative immobility \citep{Hassan1994,Ferguson2002}.
 
 Individual trajectories of particles therefore involve a number of contributing processes which occur over different characteristic timescales, from seconds to years \citep{Pretzlav2021}, and each of these processes has so far evaded any exact description.
 
 \citet{Nikora2001,Nikora2002} provided a conceptual framework which helps to organize this complexity.
-Nikora et al divided the downstream tractories of individual particles into three timescales, or ``ranges", termed local, intermediate, and global.
+Nikora et al. divided the downstream tractories of individual particles into three timescales, or ``ranges", termed local, intermediate, and global.
 The local range refers to the period of motion between subsequent interactions with the bed, when the particles accelerate downstream within the turbulent flow.
 The intermediate range reflects particle motions through sequences of bed encounters, when particles alternately accelerate and decelerate. 
 The global range refers to particle trajectories through sequential entrainment and deposition events as they cycle between motion and rest.
@@ -62,6 +64,7 @@ The global range refers to particle trajectories through sequential entrainment 
 This set of timescales -- local, intermediate, global, and geomorphic -- are used below to organize the literature describing trajectories of individual grains.
 
 \subsection{Motivation: tracers and basic understanding}
+
 An early motivation to understand individual particle motions was to predict the efficiency of sediment transport measurements \citep{Ettema2004}, and this motivation still drives a great deal of research into individual particle motions today \citep{Hassan2017,Pretzlav2021}.
 A common technique to estimate sediment transport is to seed a stream with tracer stones and track their progress downstream \citep{Einstein1937, Takayama1965, Pretzlav2021}.
 In principle, tracers provide a proxy for the population of grains in a stream, so one can estimate virtual velocities of tracers, then multiply by an estimate of the number of grains available for motion to calculate the overall sediment flux \citep{Wilcock1997a,Ferguson2002}.
@@ -74,24 +77,24 @@ Watching painted tracers move through a flume, Einstein came to the conclusion t
 
 Einstein's key insight was to represent particle motions as an alternating sequence of movements and rests having random characteristics.
 As his interest was on the global range of particle motion when many motion-rest alternations have occurred, and because the duration of particle motions is usually short compared to rests, Einstein made the approximation that individual motions (between entrainment and deposition) are mathematically instantaneous.
-With this approximation, the downstream movement of sediment becomes an alternate cycle of instantaneous steps of random length, separated by rests of random duration. 
-Implicitly, this picture of sediment trajectories assumes that movement velocities are infinite.
+With this approximation, the downstream movement of sediment becomes an alternate cycle of instantaneous steps of random length and rests of random duration. 
+Implicitly, this concept of sediment trajectories assumes that movement velocities are infinite.
 
-Einstein's experiments indicated that both step lengths and resting times were well-described by exponential distributions, and the focus of his PhD was to find the probability density $P(x,t)$ that a particle had travelled a net distance $x$ after a time $t$ has elapsed. In the course of this research, Einstein formulated an example of what is now called the continuous time random walk, but this was not formalized until much later \citep{Montroll1965}.
+Einstein's experiments indicated that both step lengths and resting times were well-described by exponential distributions, and the focus of his PhD was to find the probability density $P(x,t)$ that a particle had travelled a net distance $x$ after a time $t$ has elapsed. In the course of this research, Einstein formulated an example of what is now called the continuous time random walk, but this approach not formalized until much later \citep{Montroll1965}. In Earth science, random walks have been widely applied to hydrologic problems \citep{Berkowitz2006}, but their application to surface processes remains relatively uncommon \citep[e.g.][]{Schumer2009}.
 
 Einstein's assumptions imply that if the position of a single sediment particle at a given time is $x(t)$, the assumptions of infinite movement velocity, random resting durations, and random movement distances between entrainment and depositon (step lengths) can be written
 \be \dot{x}(t) = \mu(t), \label{eq:einlangevin}\ee
-where $\dot{x} = dx/dt$, and $\mu(t)$ is a white shot noise \citep{VanDenBroeck1983}, which is essentially a sequence of pulses having random heights with mean height $\ell$ (the mean step length), and random locations in time with mean separation $1/k_E$ (the mean resting time, interpreted as the reciprocal of the entrainment rate $k_E$).
+where $\dot{x} = dx/dt$, and $\mu(t)$ is a Poisson pulse noise \citep{VanDenBroeck1983}, which is essentially a sequence of pulses having random heights with mean height $\ell$ (the mean step length), and random locations in time with mean separation $1/k_E$ (the mean resting time, interpreted as the reciprocal of the entrainment rate $k_E$).
 A particular realization of this pulsed noise can be written
 \be \mu(t) = \sum_{i=1}^{N(t)}s_i \delta(t-t_i). \label{eq:einrando} \ee
 Here $N(t)$ is the number of particle entrainments in time $t$ which is  a Poisson random variable, distributed as $P(N) = e^{-k_E t} (k_E t)^N/N!$.
 The $t_i$ are distributed according to $P(t) = k_E\exp(-k_E t)$, and the $s_i$ are step lengths distributed according to $P(s) = \ell^{-1}\exp(-s \ell^{-1}).$
 Figure \ref{fig:einsteinfig} panel (a) sketches the pulsed noise $\mu(t)$, and panel (b) sketches the resulting global range bedload sediment trajectories as a sequence of steps and rests.
 
-Equation \ref{eq:einlangevin} is a kind of dynamical equation representing how the position of a sediment grain evolves through time \citep{Kubo1978}, similar to Newtonian mechanics \citep{Goldstein1997} but with random driving term (equation \ref{eq:einrando}).
+Equation \ref{eq:einlangevin} is a kind of dynamical equation representing how the position of a sediment grain evolves through time \citep{Kubo1978}, similar to Newtonian mechanics \citep{Goldstein1997} but with random driving term (eq. \ref{eq:einrando}).
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/einsteinConcept.pdf}
-	\caption{Panel (a) indicates the representation of Einstein's model as an idealized ``white shot noise", as indicated in eq. \ref{eq:einrando}, while panel (b) shows the ``stairstep" trajectories of sediment particles moving downstream through cycles of steps (which are instantaneous) and rests (which have mean duration $1/k_E$). }
+	\caption{Panel (a) indicates the representation of Einstein's model as an idealized Poisson pulse noise, as indicated in eq. \ref{eq:einrando}, while panel (b) shows the ``stairstep" trajectories of sediment particles moving downstream through cycles of steps (which are instantaneous) and rests (which have mean duration $1/k_E$). }
 	\label{fig:einsteinfig}
 \end{figure}
 
@@ -126,7 +129,7 @@ Studies by \citet{Lisle1998}, and \citet{Lajeunesse2017} generalized the Einstei
 The analogue of Einstein's model equation \ref{eq:einlangevin} with a finite movement velocity $V$ can be written
 \be \dot{x} = V\eta(t), \label{eq:lislelangevin}\ee
 %where the noise is now a ``dichotomous Markov noise" \citep{VanDenBroeck1990,Bena2006}, which is essentially a random switch or telegraph signal that alternates between ``on" ($\eta(t) = 1$, meaning the particle is moving) and ``off" ($\eta(t) = 0$, meaning the particle is resting) \citep{Cox1965,Horsthemke1984, Masoliver1991, Masoliver1996}.
-This noise is displayed in figure \ref{fig:lislefig} panel (a). Some particle trajectories produced by equation \ref{eq:lislelangevin} are displayed in figure \ref{fig:lislefig} panel (b).
+This noise is displayed in fig. \ref{fig:lislefig} panel (a). Some particle trajectories produced by eq. \ref{eq:lislelangevin} are displayed in fig. \ref{fig:lislefig} panel (b).
 
 The governing equation of the position probability distribution $P(x,t) = \langle \delta(x-\int_0^t V\eta(t')dt') \rangle$ becomes \citep{Balakrishnan1993}
 \be \big(\pt^2 + V \px \pt + k_E V \px + k \pt \big) P(x,t) = 0,\label{eq:lislemaster}\ee
@@ -137,7 +140,7 @@ where $k_E$ and $k_D$ are the entrainment and deposition rates, $V$ is the parti
 	\label{fig:lislefig}
 \end{figure}
 
-For the initial condition that particles have a probability $k_E/k$ to start in motion, reflecting steady state conditions as far as alternation between motion and rest are concerned \citep[e.g.][]{Ancey2006}, the solution of equation \ref{eq:lislemaster} is \citep{Lisle1998}
+For the initial condition that particles have a probability $k_E/k$ to start in motion, reflecting steady state conditions as far as alternation between motion and rest are concerned \citep[e.g.][]{Ancey2006}, the solution of eq. \ref{eq:lislemaster} is \citep{Lisle1998}
 \begin{multline}  P(x,t) =  e^{-\chi-\tau} \Big[ \frac{k_E}{V}\delta(\tau) + \frac{k_E}{V} \sqrt{\frac{\chi}{\tau}}\mathcal{I}_1(2\sqrt{\chi\tau}) + \frac{k_D}{V}\mathcal{I}_0(2\sqrt{\chi\tau}) \\
 	+ \frac{k_Ek_D}{kV}\sqrt{\frac{\tau}{\chi}}\mathcal{I}_1(2\sqrt{\chi\tau}) + \frac{k_Ek_D}{kV} \delta(\chi)
 	\Big]\theta(\chi)\theta(\tau), \label{eq:lisledist}
@@ -146,7 +149,7 @@ where $\chi = k_D x/V$ and $\tau = k_E(t-x/V)$ are shorthand notations.
 Incorporating the duration of sediment motion, the mean position of the sediment grain remains linear in time: $\langle x (t) \rangle  = k_E V t/k$, representing movement with an effective velocity $V_\text{eff} = k_E V/k$, which is the fraction of time spent in motion ($k_E/k)$ \citep{Ancey2006} multiplied by the velocity during the motion state. In contrast, the variance develops a two range scaling.
 Computing $\sigma_x^2$ provides
 \be \sigma_x(t)^2 = \frac{2k_Ek_DV^2}{k^3}\Big( t + \frac{1}{k}e^{-k t} - \frac{1}{k}\Big) , \label{eq:lislevar}\ee
-which is a non-trivial result. At short times, for $t\ll 1/k$, equation \ref{eq:lislevar} shows diffusion $\sigma_x^2 \sim t^2$, which is a faster ``ballistic" rate of spreading than the Einstein model predicts \citep{Sokolov2012}. At long times ($t\gg 1/k$), the diffusion becomes normal again ($\sigma_x^2 = 2 D_\text{eff} t$), with an effective diffusion constant $ D_\text{eff} = k_E k_D V^2/k^3$. 
+which is a non-trivial result. At short times, for $t\ll 1/k$, eq. \ref{eq:lislevar} shows diffusion $\sigma_x^2 \sim t^2$, which is a faster ``ballistic" rate of spreading than the Einstein model predicts \citep{Sokolov2012}. At long times ($t\gg 1/k$), the diffusion becomes normal again ($\sigma_x^2 = 2 D_\text{eff} t$), with an effective diffusion constant $ D_\text{eff} = k_E k_D V^2/k^3$. 
 The rapid spreading of particles at short timescales occurs because some are completely stationary while others move with velocity $V$.
 
 The eventual transition to normal diffusion occurs because particles eventually become well-mixed among motion and rest states. An analogous diffusion phenomenon is described in \citet{Taylor1920}.
@@ -155,16 +158,16 @@ In this trajectory model, both intermediate and global ranges are adequately rep
 
 \subsection{The Newtonian approach}
 
-Some authors have modelled local and intermediate ranges of individual particle trajectories by writing approximate Newtonian equations for the dynamics of individual particles and integrating them numerically. Early efforts applied time-averaged fluid forces linked to the logarithmic mean flow velocity profile \citep{Yalin1963,VanRijn1984}, and later efforts included collision models to modify particle velocities upon bed contact \citep{Wiberg1985,Sekine1992,Nino1998}.
+Some authors have modeled local and intermediate ranges of individual particle trajectories by writing approximate Newtonian equations for the dynamics of individual particles and integrating them numerically. Early efforts applied time-averaged fluid forces linked to the logarithmic mean flow velocity profile \citep{Yalin1963,VanRijn1984}, and later efforts included collision models to modify particle velocities upon bed contact \citep{Wiberg1985,Sekine1992,Nino1998}.
 
 Researchers eventually included realistic granular interactions in many-particle simulations of bedload transport using the discrete element method \citep{Cundall1979a, Haff1993}.
 The early works utilizing this approach used a two dimensional domain with a highly simplified ``slab" flow model \citep{Haff1993}, while later works have included synthetic turbulence to drive particles \citep{Schmeeckle2003,Maurin2015} or clever reduced-complexity representations of the flow \citep{Clark2015,Clark2017}.
 
-The state of the art within this category of sediment transport models is to include two-way coupling between particles and the fluid flow. Particle-particle interactions are represented with the discrete element method, where particles are represented as spheres \citep{Cudnall1979} or polytopes \citep{Wachs2019} while forces are phrased as idealized spring-dashpot models.
-The latter is modelled either by large eddy simulation or direct numerical simulation of the Navier-Stokes equations.
-Particles are represented either as spheres coupled to the flow \citep{}, 
- while particles provide the boundary condition for the flow \citep{Schmeeckle2014,Ji2013,Gonzalez2017,Vowinckel2014,Elghannay2017,Yousefi2020}.
-These computational physics models produce impressive insight into the underlying granular and fluid physics mechanisms producing bed load transport \citep{Frey2011}, but analytical models are nevertheless desired for further insight into the problem.
+The state of the art within this category of sediment transport models is to simulate both fluid and particle phases simultaneously.
+Particle-particle interactions are represented with the discrete element method, where particles are represented as spheres \citep{Cudnall1979} or polytopes \citep{Wachs2019} while forces are phrased as idealized spring-dashpot models.
+The fluid flow is modeled either by large eddy simulation or direct numerical simulation of the Navier-Stokes equations.
+A majority of these approaches simulate the fluid without including no-slip boundary conditions on the particles \citep[e.g.][]{Vowinckel2014,Schmeeckle2014,Gonzalez2017}, although works are beginning to include the fluid boundary conditions on individual particles with the immersed boundary method \citep[e.g.][]{Ji2013, Ji2014, Elghannay2017, Yousefi2020}.
+These computational physics models produce impressive insight into the underlying granular and fluid mechanics producing bed load transport \citep{Frey2011}, but analytical models are nevertheless desired for further insight into the problem.
 
 \subsection{Mechanistic-stochastic models for the sediment velocity distribution}
 \label{sec:langevin}
@@ -177,9 +180,9 @@ Experimental studies on bedload velocities have provided two major conclusions f
 \be \dot{u}(t) = -\Delta \text{sgn}(u) + F + \sqrt{2D}\xi(t). \label{eq:fanlangevin}\ee
 This equation drives the particle velocity by a fluid drag $F + \sqrt{2D} \xi(t)$, where $F$ is a constant, $D$ is a diffusivity that characterizes the magnitude of drag fluctuations, and $\xi(t)$ is a Gaussian white noise with unit variance and vanishing mean \citep{Gardiner1983}.
 This drag is resisted by a heuristic particle friction term $-\Delta \text{sgn}(u)$, introduced as a proxy for particle-bed collisions.
-The equation governing the probability distribution $P(u,t)$ of the particle velocity is called a Fokker-Planck equation, and this can be derived from equation \ref{eq:fanlangevin} as \citep{Risken1989,VanKampen2007} 
+The equation governing the probability distribution $P(u,t)$ of the particle velocity is called a Fokker-Planck equation, and this can be derived from eq. \ref{eq:fanlangevin} as \citep{Risken1989,VanKampen2007} 
 \be \frac{\partial}{\partial t} P(u,t) = -\Delta\frac{\partial}{\partial u}\Big[ \text{sgn}(u) P \Big] + D \frac{\partial^2 P}{\partial u^2},\ee
-implying that the steady-state velocity distribution ($\pt P(x,t) = 0$) provided by equation \ref{eq:fanlangevin} is
+implying that the steady-state velocity distribution ($\pt P(x,t) = 0$) provided by eq. \ref{eq:fanlangevin} is
 \be P(u) = \frac{\Delta^2-F^2}{2\Delta D}\exp\Big(-\frac{-\Delta |u| + F u}{D}\Big).\ee
 This is the (two-sided) exponential distribution observed in one subset of experiments.
 
@@ -190,7 +193,7 @@ where $U$ is the mean velocity of particles, $D$ characterizes the magnitude of 
 and the steady state solution becomes
 \be P(u) = \sqrt{\frac{t_r}{2\pi D}} \exp\Big(-\frac{t_r(u-U)^2}{2 D}\Big), \ee
 which is the Gaussian velocity distribution from the other subset of the experiments.
-These two models of bedload velocity distributions are summarized in figure \ref{fig:fanAncey}.
+These two models of bedload velocity distributions are summarized in fig. \ref{fig:fanAncey}.
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/fanAncey.pdf}
 	\caption{Panel (a) demonstrates the trajectory of a particle within the Fan et al model, where Coulomb friction impedes turbulent drag. Panel (b) shows the resulting exponential particle velocity distribution, having relatively large fluctuations with mode at $u=0$.
@@ -198,21 +201,22 @@ These two models of bedload velocity distributions are summarized in figure \ref
 	\label{fig:fanAncey}
 \end{figure}
 Although these descriptions describe two end-member sediment velocity distributions, Gaussian and exponential, the underlying mechanical reason why bedload transport has shown multiple velocity distributions remains an open question, and other distributions have been reported besides exponential and Gaussian \citep[e.g.][]{Houssais2012,Liu2019}.
-A comprehensive model of the full range of bedload transport observations is a desirable target.
+A comprehensive model of the full range of bedload transport observations remains a desirable target.
 
 \subsection{The definition of the flux}
+% for some reason the pdf of this figure does not properly render 
 \begin{figure}[!htbp]
-	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/fluxDefinitions.pdf}
-	\caption{Particle fluxes can be defined with either a control volume $V$ or a control surface $S$. Here, particles are shown moving from time $t-dt$ (faint white particles) to time $t$ (grey particles). Each particle's velocity component $u_i$ in the downstream direction is indicated. At the instant $t$, the surface definition of the flux \ref{eq:surfflux} gives $q = \frac{1}{L}(u_7+u_8).$, while the volume definition \ref{eq:controlflux} gives $\Phi = \frac{1}{L}(u_1+\dots+u_6)$,
+	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/fluxDefinitions.png}
+	\caption{Particle fluxes can be defined with either a control volume $V$ or a control surface $S$. Here, particles are shown moving from time $t-\Delta t$ (faint white particles) to time $t$ (grey particles). Each particle's downstream displacement $\Delta x_i$ is indicated. These displacements define the downstream particle velocities $u_i \approx \Delta x_i/\Delta t.$ At the instant $t$, the surface definition of the flux eq. \ref{eq:surfflux} gives $q = \frac{1}{L}(u_6+u_7).$, while the volume definition eq. \ref{eq:controlflux} gives $\Phi = \frac{1}{L}(u_1+\dots+u_5)$,
 	showing the non-equivalence of these two definitions.}
 	\label{fig:fluxdefs}
 \end{figure}
 Perhaps a surprising summary of bedload transport research is that no one definition of the sediment flux has even been agreed upon despite over a century of research \citep{Ballio2018}.
-Today, there are two main complementary definitions of the bedload flux. 
+Today, there are two main complementary definitions of the bedload flux being applied in stochastic modeling. Other definitions are discussed comprehensively in \citet{Ballio2014,Ballio2018}.
 
-The first definition is reminiscent of continuum mechanics and formulates the flux as a kind of current of sediment across a control surface $S$ \citep{Furbish2012,Heyman2016, Ballio2014}: 
+The first definition is reminiscent of continuum mechanics and formulates the flux as a kind of current of sediment across a control surface $S$ \citep{Furbish2012,Heyman2016,Ballio2014}: 
 \be q = \int_S c(\textbf{x},t)\textbf{u}\cdot d\textbf{S}. \label{eq:surfflux} \ee
-This definition involves the concentration $c$ of particles in space and their velocites at the instant they cross the control surface, which is a somewhat elusive quantity since bedload particles are not a continuous field \citep{Heyman2016}.
+This definition involves the volumetric concentration $c$ of particles and their velocites at the instant they cross the control surface. These quantities require careful interpretation because bedload particles do not constitute a continuous field \citep{Furbish2012a}. Typically one represents the concentration as a sum of indicator or Dirac delta functions \citep[e.g.][]{}.
 
 The second definition formulates the downstream flux in terms of the number of particles moving within a control volume $V$:
 \be \Phi = \frac{1}{L} \sum_{i\in V} u_i. \label{eq:controlflux}\ee
@@ -237,10 +241,9 @@ The difficulties with Bagnold's approach led to many revisions of his theory, of
 \subsection{Einstein's probabilistic approach}
 \label{sec:einflux}
 
-Among these revisions of Bagnold, one category shows a return to the probabilistic ideas of Einstein \citep{Parker2003,Ancey2006}.
-\citet{Einstein1937} formulated his original model of individual particle trajectories in terms of entrainment and deposition rates using the idealization of grains moving downstream through a sequence of instantaneous steps.
-Later, Einstein calculated the sediment flux with these same probabilistic ideas \citep{Einstein1942, Einstein1950}. This formulation of the sediment flux would come back to later provide an alternative to Bagnold's scaling approach.
-The conceptual picture that Einstein considered is depicted in figure \ref{fig:einsteinFluxConcept}.
+Among these revisions of Bagnold, one category shows a return to the probabilistic ideas of Einstein \citep{Parker2003,Ancey2006}. Einstein formulated his original model of individual particle trajectories in terms of entrainment and deposition rates using the idealization of grains moving downstream through a sequence of instantaneous steps \citep{Einstein1937}.
+Later, Einstein calculated the sediment flux with these same probabilistic ideas \citep{Einstein1942, Einstein1950}. This formulation of the sediment flux now provides an alternative to Bagnold's scaling approach.
+The conceptual picture that Einstein considered is depicted in fig. \ref{fig:einsteinFluxConcept}.
  \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch1/yalinDrawing.pdf}
 	\caption{Einstein’s conceptual picture (modified from \citet{Yalin1972}). Particles move in discrete jumps of length $\ell$ from
@@ -262,7 +265,7 @@ The central critique is that there is a distinct difference between \textit{exac
 
 If the entrainment rate of an individual grain is $k_E$ (probability per unit time), then the probability that it entrains \textit{exactly} $n$ times in time $T$, denoted by $p_n$ (distinct from $P_n$) is a Poisson distribution \citep{Cox1965}:
 \be p_n = \frac{(k_E T)^n}{n!}e^{-k_E T}.\ee
-This implies that the probability that it entrains \textit{at least} $n$ times is $P_n = \sum_{i=n}^\infty  \frac{(k_E T)^n}{n!}e^{-k_E T}, $
+This implies that the probability that it entrains \textit{at least} $n$ times is $P_n = \sum_{i=n}^\infty  \frac{(k_E T)^i}{i!}e^{-k_E T}, $
 so Einstein's mean sediment flux across the control surface (eq. \ref{eq:einflux}) becomes
 \be q = \frac{\rho \ell}{T} \sum_{n=1}^\infty \sum_{l=n}^\infty = \frac{\rho \ell}{T}\sum_{n=1}^\infty n \frac{(k_E T)^n}{n!}e^{-k_E T} = \rho k_E \ell.\ee
 Noticing that $\rho k_E$ is the entrainment rate of a single grain multiplied by the density of grains available for entrainment on the bed, we can summarize the Einstein theory as 
@@ -274,7 +277,7 @@ Although Einstein and many followers have attempted to formulate these connectio
 
 \subsection{Fusing Einstein and Bagnold: The erosion-deposition model}
 
-One uniquely successful strategy to relate Einstein's model to flow and sediment characteristics was developed by \citet{Charru2004,Charru2006}. This ``erosion-deposition model" phrases sediment transport as a mass balance within a control volume using Einstein's entrainment rate $E$ and the complementary deposition rate $D$. These model parameters are related to flow and sediment properties using scaling relations obtained from experiments \citep{Charru2004, Charru2006, Lajeunesse2010,Seizilles2014,Lajeunesse2015}, in what can be characterized as a mixture of the Einstein and Bagnold strategies.
+One uniquely successful strategy to relate Einstein's model to flow and sediment characteristics was developed by \citet{Charru2004,Charru2006}. This ``erosion-deposition model" phrases sediment transport as a mass balance within a control volume using Einstein's entrainment rate $E$ and the complementary deposition rate $D$. These model parameters are related to flow and sediment properties using scaling relations obtained from experiments \citep{Charru2004, Charru2006, Lajeunesse2010,Seizilles2014,Lajeunesse2015}. This approach can be characterized as a mixture of the Einstein and Bagnold strategies for its reliance on both probabilistic rates and scaling relations.
 
 The erosion-deposition model is
 \be \pt \gamma +  \px V \gamma = E - D. \label{eq:charru}\ee
@@ -287,7 +290,7 @@ Scaling arguments provide relations for $E$, $D$, and $V$ in terms of the fluid 
 The constant coefficients $\alpha_i$ are calibrated in experiments.
 
 Equation \ref{eq:charru} indicates that the mean flux in steady transport and flow conditions is the implicit solution to the equation $E = D.$
-Using the scaling relations \ref{eq:charru1} and \ref{eq:charru2} provides the mean particle activity
+Using the scaling relations eqs. \ref{eq:charru1} and \ref{eq:charru2} provides the mean particle activity
 \be \gamma = \frac{\alpha_1}{\alpha_2}\frac{\tau-\tau_c}{d^2 V_s^2}.\ee
 Expressing the mean flux as $\Phi = \gamma V$, the relationship between flux and bed shear stress becomes
 \be \Phi = \frac{\alpha_1}{\alpha_2 d^2 V_s^2}\big(\tau-\tau_c\big)\big[\alpha_3 + \alpha_4(\sqrt{\tau}-\sqrt{\tau_c})\big]. \ee
@@ -311,9 +314,9 @@ For a simple example of the Furbish et al formalism, consider that particles mov
 Then the probability density that a particle moves \textit{exactly} a distance $x$ in time $t$ is $f(x,t) = \delta(x-Vt)k_D\exp(-k_D t), $ so the probability that it moves 
 \textit{at least} a distance $x$ in $t$ is
 \be F(x,t) = \int_x^\infty \delta(x-Vt)k_D\exp(-k_D t) dx = \theta(Vt-x)k_D\exp(-k_D t).\ee
-Considering uniform conditions with a density $\rho_s$ of particles available for motion on the bed surface, each having entrainment rate $k_E$, the areal entrainment rate can be expressed as $E=\rho_s k_E$, and equation \ref{eq:furbo} provides a mean flux
+Considering uniform conditions with a density $\rho_s$ of particles available for motion on the bed surface, each having entrainment rate $k_E$, the areal entrainment rate can be expressed as $E=\rho_s k_E$, and eq. \ref{eq:furbo} provides a mean flux
 \be q = \rho_s k_E \int_0^\infty dx' \int_0^\infty dt \theta(Vt-x)k_D\exp(-k_D t) = \rho_s k_E V/k_D. \label{eq:furbflux}\ee
-Since $1/k_D$ is the average time spent in motion, $V/k_D$ is the average step length $\ell$, and equation \ref{eq:furbflux} provides another perspective on Einstein's central result $q= E\ell$, but with the added ability to describe unsteady conditions \citep{Furbish2012}.
+Since $1/k_D$ is the average time spent in motion, $V/k_D$ is the average step length $\ell$, and eq. \ref{eq:furbflux} provides another perspective on Einstein's central result $q= E\ell$, but with the added ability to describe unsteady conditions \citep{Furbish2012}.
 
 \subsection{Channel evolution}
 \label{sec:landscape}
@@ -326,10 +329,10 @@ This equation links the temporal evolution of the land elevation $z$ at a locati
 \citet{Nakagawa1976} and \citet{Tsujimoto1978} developed an alternative statement of the Exner equation using Einstein's entrainment and deposition rates.
 According to their formulation, spatial gradients in the sediment flux arise due to local discrepancies in entrainment and deposition rates:
 \be \partial_x q(x,t) = E - D. \ee 
-In combination with equation \ref{eq:exner}, this expression of the sediment flux gradient implies the relation
+In combination with eq. \ref{eq:exner}, this expression of the sediment flux gradient implies the relation
 \be (1-\phi) \px z(x,t) = D - E\ee
 by which topographic evolution can be described in terms of Einstein's rates.
-In a nonlocal framework, as in equation \ref{eq:furbo}, sediment deposition can be interpreted as the eventual result of entrainment from all upstream locations, giving
+In a nonlocal framework, as in eq. \ref{eq:furbo}, sediment deposition can be interpreted as the eventual result of entrainment from all upstream locations, giving
 \be (1-\phi) \px z(x,t) = \int_0^\infty dx' \int_0^\infty dt' E(x',t')F(x',t') - E(x,t). \ee
 This ``entrainment form of the Exner equation" \citep{Nakagawa1976, Parker2000, Furbish2017} phrases topographic change from a stochastic interpretation of sediment transport.
 
@@ -372,13 +375,13 @@ From eq. \ref{eq:negbin}, the mean number of moving particles is
 \be \langle n \rangle = \lambda/(\alpha-\mu),\ee
  and the variance is
 \be \sigma_n^2 = \frac{\lambda \alpha}{(\alpha-\mu)^2}. \ee
-Owing to the collective entrainment process, particle activity fluctuations can be arbitrarily wide: $\sigma_n/\bra n \ket = \sqrt{\alpha/\lambda}$, whereas in the absence of collective entrainment ($\mu=0$), the strength of fluctuations is always pinned to a fixed value, as the distribution (\ref{eq:negbin}) limits to a Poisson distribution where the mean and variance are equal \citep{Ancey2006}.
+Owing to the collective entrainment process, particle activity fluctuations can be arbitrarily wide: $\sigma_n/\bra n \ket = \sqrt{\alpha/\lambda}$, whereas in the absence of collective entrainment ($\mu=0$), the strength of fluctuations is always pinned to a fixed value, as the distribution eq. \ref{eq:negbin} limits to a Poisson distribution where the mean and variance are equal \citep{Ancey2006}.
 
 The probability distribution of the bedload flux can be computed by the control volume form eq. \ref{eq:controlflux} given the probability distribution of particle velocites $P(u)$ under the assumption that velocity and activity are independent.
-Writing $P_k(u)$ as the probability distribution for the sum of $k$ independent particle velocities ($u=u_1+\dots u_k$), the sediment flux probability distribution $P(\Phi)$ becomes \citep[e.g.][]{Ancey2014}
+Writing $P_k(u)$ as the probability distribution for the sum of $k$ independent particle velocities ($u=u_1+\dots u_k$), the sediment flux probability distribution $P(\Phi)$ becomes \citep{Ancey2014}
 \be P(\Phi) = L \sum_{k=0}^\infty P_k(L\Phi) P(n=k). \ee
 A limitation of this approach is that in reality, entrainment and deposition modify the bed elevation, which in turn modifies the rates of entrainment and deposition \citep{Sawai1987,Wong2007}. 
-This highlights a need to evaluate bed elevation change in statistical sediment transport models.
+This highlights a need to incorporate bed elevation change in statistical sediment transport models.
 
 \subsection{Renewal theories for scale dependence}
 \label{sec:renewal}
@@ -393,12 +396,12 @@ In statistics, the problem of counting probabilistic arrival events is called re
 	\label{fig:ancey}
 \end{figure}
 Earlier studies have considered different arrival time distributions to calculate the probability distribution of the time-averaged sediment flux, but only the simplest exponential case is reviewed here. The exponential inter-arrival time distribution is $P(t) = \Lambda \exp(-\Lambda t),$ so the rate of particle arrivals is $\Lambda$.
-In this case, the flux averaged over a period $T$ can be represented with a Poisson pulse noise, similar to the particle position in the Einstein model of section \ref{sec:einwalk}:
+In this case, the flux averaged over a period $T$ can be represented with a Poisson pulse noise, similar to the particle position in the Einstein model of sec. \ref{sec:einwalk}:
 \be q(T) = \frac{1}{T}\int_0^T dt' \mu(t'). \label{eq:flucflux}\ee
 Here, the noise is 
 \be \mu(t) = \sum_{i=1}^{N(t)}\delta(t-t_i), \label{eq:poissfluxnoise}\ee
-as indicated in figure \ref{fig:ancey} panel (a). In this equation, $N(t)$ is Poisson distributed with rate $\Lambda$. 
-The flux in eq. \ref{eq:flucflux} is a random variable as indicated in figure \ref{fig:ancey} panel (b). Its probability distribution $P(q|T)$, which is contingent on the observation time $T$, can be derived by evaluating $P(q|T) = \bra \delta(q-\int_0^T \mu(t') dt'/T) \ket$.
+as indicated in fig. \ref{fig:ancey} panel (a). In this equation, $N(t)$ is Poisson distributed with rate $\Lambda$. 
+The flux in eq. \ref{eq:flucflux} is a random variable as indicated in fig. \ref{fig:ancey} panel (b). Its probability distribution $P(q|T)$, which is contingent on the observation time $T$, can be derived by evaluating $P(q|T) = \bra \delta(q-\int_0^T \mu(t') dt'/T) \ket$.
 This equation entails an average over all possible realizations of the noise in eq. \ref{eq:poissfluxnoise}, producing \citep{VanKampen2007}
 \be P(q|T) = \sum_{l=0}^\infty \frac{\big(\Lambda T\big)^l}{l!}e^{-\Lambda T}\delta(q-\frac{l}{T}),\ee
 which is a scale-dependent Poisson distribution for the sediment flux across the control surface.
@@ -428,7 +431,7 @@ The original model by \citet{Einstein1937} described particle trajectories as a 
 
 In reality, particle velocities fluctuate during movements due to turbulence and particle-bed collisions, so there is a need to go one step further and account also for velocity fluctuations of moving particles in Einstein-type models.
 
-In addition, although the scale-dependent sediment flux has been calculated from renewal models \citep{Turowski2010,Ancey2020}, these approaches are not based on the dynamics of individual particles in transport, so it remains unclear how the sediment flux distribution and its scale dependence originate from the transport characteristics of individual grains.
+In addition, although the scale-dependent sediment flux has been calculated from renewal models \citep{Turowski2010,Ancey2020a}, these approaches are not based on the dynamics of individual particles in transport, so it remains unclear how the sediment flux distribution and its scale dependence originate from the transport characteristics of individual grains.
 
 Chapter \ref{ch:flux} introduces a new model of individual bedload trajectories that includes velocity fluctuations in the motion state. The chapter also demonstrates how these trajectories can be used to calculate the scale-dependent probability distribution of the bedload flux.
 This joins together and extends studies from \citet{Einstein1937} to \citet{Ancey2020b} to develop new understanding of individual particle motions and the scale-dependent sediment flux.
@@ -443,8 +446,8 @@ Chapter \ref{ch:ch3} generalizes the model of \citet{Ancey2008} to include bed e
 
 \subsection{Problem 3: The effect of sediment burial on downstream transport of sediment tracers}
 
-Modelling sediment transport as an alternating sequence of motion and rest intervals implicitly assumes that particles are either moving or resting on the bed surface. Although this provides a useful description of bedload transport across local and intermediate timescales, it requires modification to describe longer global and geomorphic timescales. 
-At longer timescales, particle burial moderates the downstream movements of grains \citep{Hassan2017}, but burial has not yet been incorporated into Einstein-type models of particle trajectories. 
+Modeling sediment transport as an alternating sequence of motion and rest intervals implicitly assumes that particles are either moving or resting on the bed surface. Although this provides a useful description of bedload transport across local and intermediate timescales, it requires modification to describe longer global and geomorphic timescales. 
+At longer timescales, particle burial moderates the downstream movements of grains \citep{Hassan2017,Bradley2017}, but burial has not yet been incorporated into Einstein-type models of particle trajectories. 
 
 Chapter \ref{ch:downDiff} generalizes the model of \citet{Lisle1998} and \citet{Lajeunesse2017} to incorporate a new sediment burial state as suggested by the observations of \citet{Bradley2017}. The resulting model evaluates sediment trajectories including sediment motion, rest, and burial.
 This provides the first description of sediment trajectories over local, intermediate, global, and geomorphic timescales.
@@ -510,7 +513,7 @@ This introduces questions of the convergence of transport rate measurements \cit
 Fluctuations originate from processes which span a vast range of characteristic timescales.
 These can occur over a matter of seconds, such as differences in the velocities of grains due to a series of collisions \citep{Benavides2021}, to many hundreds of hours, such as the migrations of dunes and bedload sheets \citep{Hammamori1962,Hoey1992,Guala2014} or the cycling between aggradation and degradation in pools \citep{Dhont2018}.
 Such processes introduce temporal correlations into sediment transport signals which control the sampling interval over which measurements of the mean sediment flux converge \citep{Saletti2015,Singh2009,Singh2012}.
-To date, very few modelling works have addressed the observation scale depedence of the bedload flux, whereby measurements of mean fluxes, or statistical moments, shift with observation time \citep{Ancey2020}.
+To date, very few modeling works have addressed the observation scale depedence of the bedload flux, whereby measurements of mean fluxes, or statistical moments, shift with observation time \citep{Ancey2020}.
 
 
 These models produce successful descriptions of disparate experimental results, although their components are not clearly interpretable in terms of physical expecatations. For example, granular interactions were included in the Fan et al model as a Coulomb friction term. While such approximations are common within Earth science models \citep{Kirkby1971}, they are not entirely satisfying given that bedload particles undergo intermittent collisions with the granular bed. Although these motions are sometimes described as ``sliding", bedload particles do not slide in the same sense as a block on a plane, as the granular term in the Fan et al Langevin model indicates.

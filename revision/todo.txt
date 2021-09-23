@@ -1,1 +1,21 @@
-mathcal{I} is not rendering properly in ch4. 
+unify notation
+fix first intro sentence
+read dooge 1986 and incorporate the reference
+add citation to hydrology applications of ctrw 
+trim acknowledgements
+clean discussion of flow in last section
+add limitation of vertical structure in the flow and speculation that it doens't matter when particles stay in the near-bed zone
+incorporate ferreira data in velocity chapter
+fix notation of eq. 5.5 with the wrong I
+check for lowercase d and gamma and make sure they're uppercase with tilde - eq. 5.11 & 5.12
+add index of symbols with units for all quantities
+check for more instances of churchs' nice critism of passive language. Ask mom how to describe this error . . . 
+
+add umlauts to hanggi's name.
+check for empty citation brackets.
+check for occurrences of c.f. and convert them to cf. Further investigate what c.f. means a la church.
+
+fix equation A.9. because you will need it later.
+using the trick of introducing a parameter and integrating over it ... 
+(an integral variation of "Feynman's trick" .. -- add this. 
+Make all equation and section references Eq. (3.12) and so on. Sec. (4.3). 

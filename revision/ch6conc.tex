@@ -5,7 +5,7 @@
 
 This thesis has described bedload transport from the statistical physics of individual grains.
 The work has improved upon earlier descriptions.
-It describes the movements of grains along a wider range of timescales than before, highlights Langevin equations, master equations, and random walks as the common threads of stochastic sediment transport modelling, and provides more realistic descriptions of bedload transport. In particular, I have
+It describes the movements of grains along a wider range of timescales than before, highlights Langevin equations, master equations, and random walks as the common threads of stochastic sediment transport modeling, and provides more realistic descriptions of bedload transport. In particular, I have
 \begin{enumerate}
 	\item developed the linkage between sediment flux probability distributions and individual particle trajectories (ch. \ref{ch:flux}), 
 	\item described particle trajectories alternating through motion and rest with fluctuating velocities (ch. \ref{ch:flux}),
@@ -31,24 +31,25 @@ The same stochastic strategy should be applicable to a wide range of problems in
 
 \subsection{Idealized noises and their combinations}
 
-A major challenge in this research is that only a handful of noises in statistical physics are comprehensively understood \citep{Horsthemke1984}, so the available options in stochastic modelling are constrained.
-The noises used in this thesis include white Gaussian, Poisson (shot), and dichotomous noises, representing erratic fluctuations, sequences of spikes, and random switches respectively \citep{VanDenBroeck1983}.
+A major challenge in this research is that only a handful of noises in statistical physics are comprehensively understood \citep{Horsthemke1984}, so the available options in stochastic modeling are constrained.
+The noises used in this thesis include white Gaussian, Poisson pulse, and dichotomous noises, representing erratic fluctuations, sequences of spikes, and random switches respectively \citep{VanDenBroeck1983}.
 Turbulence was described using Gaussian noise, while instantaneous steps, particle arrivals to a control surface, and particle-bed collisions were described with Poisson noise. Alternation between motion and rest was represented with dichotomous noise.
 Whenever these processes acted in combination, the dynamical equations describing the response variable included multiple sources of idealized noise as required.
 This inclusion of multiple noise sources has not yet to my knowledge been pursued in any earlier stochastic models of sediment transport.
 
-River science offers no guarantee that these idealized white noises which we happen to understand best are sufficient to describe its phenomena.
-White noises are an idealization which is probably never realized in nature \citep{Gardiner1983,Kubo1978}.
-In contrast, colored noises in which fluctuations have favoured frequencies are well-known to occur in many fluid and granular physics phenomena, most famously in fluid turbulence \citep{Kolmogorov1941,Nikora2000} and granular collapse \citep{Bak1987,Jensen1998}.
+River science offers no guarantee that these idealized noise sources which we happen to understand best are sufficient to describe its phenomena.
+White noises in particular are an idealization which is probably never realized in nature \citep{Gardiner1983,Kubo1978}.
+In contrast, colored noises in which fluctuations have favored frequencies are well-known to occur in many fluid and granular physics phenomena, most famously in fluid turbulence \citep{Kolmogorov1941,Nikora2000} and granular collapse \citep{Bak1987,Jensen1998}.
 In river science, many phenomena exhibit colored spectra, like the size distributions of bedforms \citep{Nikora1997,Guala2014}, the fluid forces on bed particles \citep{Dwivedi2011, Amir2014}, the roughness characteristics of gravel beds \citep{Aberle2006,Singh2012}, and sediment flux timeseries \citep{Dhont2018,Chartrand2021}.
-It will be problematic if these phenomena require colored noise for their description. Dynamical equations driven by colored noise can be extremely challenging to solve \citep{Hanggi1978,Luczka2005,Hanggi2007}.
-Even if white noise models like those developed in this thesis are not exactly accurate, they remain necessary as a basis for comparison when formulating and solving colored noise models \citep{Fox1986,Moss1989}.
+It will be problematic if these phenomena require colored noise to be incorporated into dynamical equations for an adequate description.
+Dynamical equations driven by colored noise are extremely challenging to solve \citep{Hanggi1978,Luczka2005,Hanggi2007}.
+Even if white noise models like some of those developed in this thesis are not exactly accurate, they remain necessary as a basis for comparison when formulating and solving colored noise models \citep{Fox1986,Moss1989}.
 
 \section{Key contributions}
 
 \subsection{Calculation of the probability distribution of the sediment flux from micromechanics of particle transport}
 
-The first major contribution of this thesis is in chapter \ref{ch:flux}. Here, I formulated the probability distribution of the sediment flux from the trajectories of individual particles moving downstream. This work unifies the sediment trajectory models originating from Einstein (secs. \ref{sec:einwalk}-\ref{sec:lisle}) with the renewal approach to calculate the sediment flux (sec. \ref{sec:renewal}).
+The first major contribution of this thesis is in ch. \ref{ch:flux}. Here, I formulated the probability distribution of the sediment flux from the trajectories of individual particles moving downstream. This work unifies the sediment trajectory models originating from Einstein (secs. \ref{sec:einwalk}-\ref{sec:lisle}) with the renewal approach to calculate the sediment flux (sec. \ref{sec:renewal}).
 The striking feature of this formulation is that, as a result of the particle dynamics, the mean bedload flux becomes scale-dependent, whereby the expected magnitude of the flux depends on the time-period over which it is observed.
 
 \citet{Ballio2018} explained that scale-dependence originates from individual particle trajectories, but this had not been described in a mathematical model until now.
@@ -57,7 +58,7 @@ This work unifies these two research themes and presents a statistical mechanics
 
 \subsection{Inclusion of velocity fluctuations into Einstein's model of individual particle trajectories}
 
-Second, in chapter \ref{ch:flux} I developed the first analytical description of sediment trajectories through motion and rest including velocity fluctuations within the motion state.
+Second, in ch. \ref{ch:flux} I developed the first analytical description of sediment trajectories through motion and rest including velocity fluctuations within the motion state.
 Einstein originally formulated sediment transport as a sequence of instantaenous steps and rests (sec. \ref{sec:einwalk}), and this was later improved to include the duration of motion (sec. \ref{sec:lisle}).
 Until this thesis, movement velocities in analytical models were considered constant which contrasts with reality. 
 Although some numerical models have described motion/rest cycles with velocity fluctuations \citep{Fan2016,Bialik2012,Schmeeckle2014}, they had not resolved the novel three-range diffusion characteristics these dynamics imply.
@@ -67,23 +68,23 @@ These developments constitute a new understanding of bedload movement across its
 
 \subsection{Quantification of the control of bed elevation fluctuations over sediment transport fluctuations}
 
-Third, chapter \ref{ch:ch3} modified the birth-death description of bedload transport (sec. \ref{sec:birthdeath}) to include feedbacks between the local bed elevation and the entrainment and deposition rates.
+Third, ch. \ref{ch:ch3} modified the birth-death description of bedload transport (sec. \ref{sec:birthdeath}) to include feedbacks between the local bed elevation and the entrainment and deposition rates.
 This allowed for a mathematical investigation of (1) how bed elevation changes affect sediment transport rates and (2) how bed elevation changes control the residence times of particles buried in the bed.
-Sediment transport fluctuations have come under increasing scrutiny with the resurgence of stochastic modelling in sediment transport, while the burial times of particles are crucial for using sediment tracers to predict sediment transport.
+Sediment transport fluctuations have come under increasing scrutiny with the resurgence of stochastic modeling in sediment transport, while the burial times of particles are crucial for using sediment tracers to predict sediment transport.
 Earlier birth-death models had generally considered that entrainment and deposition rates of particles remain constant even though these processes imply bed degradation and aggradation respectively, which are known to modify the entrainment and deposition rates in a negative feedback.
 
 This work demonstrates that this negative feedback buffers bedload transport fluctuations whenever collective entrainment occurs, meaning the magnitude of bedload transport fluctuations depends on the rate of bed elevation change. The residence times of buried particles are random variables that lie on heavy-tailed power-law distributions. These distributions allow for arbitrarily long resting times, which poses challenging implications for researchers attempting to predict the downstream sediment flux in applications by tracking sediment tracer particles. 
 
 \subsection{Characterization of how sediment burial affects the downstream transport of sediment particles}
 
-Fourth, chapter \ref{ch:downDiff} presents a model of sediment trajectories through motion, rest, and burial, describing sediment transport across local, intermediate, global, and geomorphic ranges (sec. \ref{sec:trajmodels}), and producing new understanding of how exactly the distinct spreading characteristics of particles within each of these ranges arise \citep[e.g][]{Pretzlav2021}.
+Fourth, ch. \ref{ch:downDiff} presents a model of sediment trajectories through motion, rest, and burial, describing sediment transport across local, intermediate, global, and geomorphic ranges (sec. \ref{sec:trajmodels}), and producing new understanding of how exactly the distinct spreading characteristics of particles within each of these ranges arise \citep[e.g][]{Pretzlav2021}.
 
 Until this work, the mechanisms which produce the different spreading rates of particles across the scaling ranges identified by Nikora and coworkers had been uncertain for several decades, and earlier works had included what were believed to be the required features without describing three or more scaling ranges. 
 The work ultimately demonstrates that many approaches to describe individual particle motions are reformulations of the continuous time random walk formalism from physics, indicating underlying unity within a diverse body of research and bringing powerful tools from statistical physics to the sediment transport problem.
 
 \subsection{Description of how particle-bed collisions control movement velocities of grains}
 
-Finally, chapter \ref{ch:langevin} displayed a new theoretical model of individual grains saltating downstream in a turbulent flow through a sequence of particle-bed collisions.
+Finally, ch. \ref{ch:langevin} displayed a new theoretical model of individual grains saltating downstream in a turbulent flow through a sequence of particle-bed collisions.
 This work provides the first comprehensive description of all bedload velocity distributions observed in experiments (sec. \ref{sec:langexperimentcomparison}), while earlier works had described only particular end-member distributions (sec. \ref{sec:langevin}).
 
 \section{Limitations and future research directions}
@@ -106,9 +107,9 @@ Future studies might investigate in more depth the linkage between flow hydrauli
 The second major limitation of this work concerns grain size.
 In actuality, sediments in rivers span a range of sizes, and differential mobility based on particle size produces spatial sorting, both vertically as in bed armoring \citep{Parker1982,Wilcock1989,Aberle2006}, and laterally as patch, particle cluster, or riffle development \citep{Nelson2014,Venditti2017}.
 
-There have been a few works on stochastic modelling of sediment transport with multiple grain sizes \citep{Sun2000,Parker2000}, but these approaches are not spatially distributed, so there is as yet no stochastic method to understand sorting processes. 
+There have been a few works on stochastic modeling of sediment transport with multiple grain sizes \citep{Sun2000,Parker2000}, but these approaches are not spatially distributed, so there is as yet no stochastic method to understand sorting processes. 
 
-Future studies should revisit the stochastic framework applied to multiple grain sizes. Simplified experimental geometries based on bimodal sediment beds \citep[e.g.][]{Houssais2012} would be a great context to revisit these issues. Extending the motion-rest model of chapter \ref{ch:ch3} to two grain sizes with a matrix formulation, then calibrating its parameters to experiments would be a nice place to start.
+Future studies should revisit the stochastic framework applied to multiple grain sizes. Simplified experimental geometries based on bimodal sediment beds \citep[e.g.][]{Houssais2012} would be a great context to revisit these issues. Extending the motion-rest model of ch. \ref{ch:ch3} to two grain sizes with a matrix formulation, then calibrating its parameters to experiments would be a nice place to start.
 
 \subsection{The full range of geophysical flows}
 

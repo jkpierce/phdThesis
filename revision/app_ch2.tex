@@ -37,7 +37,8 @@ where $\varphi = k_D/k$ is the probability a particle starts at rest.
 The numerator terms encode the initial conditions. The denominator terms are where the real structure of the solution is contained.
 The numerator terms involving $g$ are easily expressed as first and second derivatives with respect to $x$. The problem, then is to calculate the inverse Fourier integral of the denominator.
 The inverse Fourier transform can be calculated by expanding the denominator of eq. \ref{eq:prev} in partial fractions and applying the contour integral \citep[e.g.][]{Arfken1985}
-\be \int_{-\infty}^\infty \frac{1}{2\pi i} \frac{e^{-i g x}}{g + i c} dg = \theta(x)e^{-c x}. \label{eq:contour}\ee
+\be \int_{-\infty}^\infty \frac{1}{2\pi i} \frac{e^{-i g x}}{g - i c} dg = \sigma(c)\theta(-x\sigma(c))\exp\big(-|c x|\big). \label{eq:contour}\ee
+In this equation $\sigma(c) = \text{sgn}(c)$ is a shorthand for the signum function. The above integral can be obtained with the residue theorem by considering different cases for the signs of $x$ and $c$ and applying square contours around the upper or lower-half regions of the complex plane.
 
 Rearranging the governing equation gives
 \be \tilde{\hat{P}}(g,s) = \frac{\varphi D g^2 - ig V\varphi  + s + k}{D(s+k_E)}\frac{1}{g^2-i\frac{V}{D}g + \frac{s(s+k)}{D(s+k_E)}}\ee
@@ -70,20 +71,20 @@ from \citet{Bateman1953}, pg. 133 (which can be derived by either u-substitution
 \begin{multline}  P(x,t) = \frac{1}{V} e^{-k_E t}  \big[ -\varphi D\px^2 + V\varphi \px + k_D + \delta(t) + \pt \big] \exp\Big[\frac{Vx}{2D}\Big]\\ \times \int_0^t du \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) \\ \times \mathcal{L}^{-1}\Bigg\{ \frac{\exp\Big[ \frac{-V|x|}{2D}\sqrt{a+b s}\Big]}{\sqrt{a + b s}}\Bigg\}(u)  \label{eq:magic}\end{multline}
 where $a = 1 + 4D(k_E-k_E)/(V^2)$ and $b = 4D/V^2$ are shorthands.
 
-Using the trick of introducing a parameter and integrating over it to remove the square root from the denominator, the remaining transform can be evaluated from standard tables \citep{Prudnikov1992a}, eventually giving (after integrating over and setting to $1$ the fake parameter),
+Using the trick of introducing a parameter and integrating over it to remove the square root from the denominator (an integral analogue of "Feynman's trick"), the remaining transform can be evaluated from standard tables \citep{Prudnikov1992a}, eventually giving (after integrating over and setting to $1$ the fake parameter),
 \begin{multline} P(x,t) = \big[-\varphi D\px^2 + V\varphi \px + k + \delta(t)+ \pt \big]\int_0^t \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) e^{-k_E(t-u)} \\ \times \sqrt{ \frac{1}{4\pi D u}} \exp\Big[-k_D u - \frac{(x-Vu)^2}{4Du}\Big] du, \end{multline}
-as reported in equation \ref{eq:monster}.
+as reported in eq. \ref{eq:monster}.
 
 
 \section{Calculation of the scale-dependent rate function $\Lambda(T)$}
 \label{sec:fluxconstant}
-The central object required to calculate the sediment flux probability distribution in equation \ref{eq:flippyflux} is 
+The central object required to calculate the sediment flux probability distribution in eq. \ref{eq:flippyflux} is 
 \be \Lambda(T) = \rho \int_0^\infty dx_i \int_0^\infty dx P(x+x_i,T).\ee
 This represents the rate at which particles start at $x_i$, anywhere to the left of $x=0$, and manage to cross $x=0$ by time $T$.
 
 Again it is easiest to conduct the necessary calculus after Laplace transforming. This gives 
 \be \tilde{\Lambda}(s) = \rho \int_0^\infty dx_i \int_0^\infty dx \tilde{P}(x+x_i,s).\ee
-The Laplace transform of the rate function therefore follows after integrating equation \ref{eq:laplaceapp} twice.
+The Laplace transform of the rate function therefore follows after integrating eq. \ref{eq:laplaceapp} twice.
 
 Noting that $x+x_i$ is always positive,
 The first integration gives
@@ -102,12 +103,12 @@ After some work, using eq. \ref{eq:magic} and tabulated Laplace transform pairs 
 	\Lambda(t) = \rho \int_0^t \mathcal{I}_0\Big(2\sqrt{k_Ek_Du(t-u)}\Big)e^{-k_E(t-u)-k_D u} \\
 	\times \Bigg[\sqrt{\frac{D}{\pi u}}\Big([\cev{\partial_t} + k]u-\frac{k_D}{2 k}\Big)e^{-V^2 u/4D}  \\ + \frac{V}{2}\Big([\cev{\partial_t} + k]u -\frac{k_D}{k}\Big) \erfc\Bigg(-\sqrt{\frac{V^2 u}{4D}}\Bigg)\Bigg] du,
 \end{multline}
-as reported in equation \ref{eq:fluxy}.
+as reported in eq. \ref{eq:fluxy}.
 
 \label{sec:fluxlimits}
-Equation \ref{eq:fluxy} is difficult to work with. To explore the behavior at extreme values of the observation time $T$, one can apply Tauberian theorems \citep[e.g.][]{Weiss1994} to invert the Laplace-transformed rate function of equation \ref{eq:laplacefluxrate} at the opposite extreme of $s$.
+Equation \ref{eq:fluxy} is difficult to work with. To explore the behavior at extreme values of the observation time $T$, one can apply Tauberian theorems \citep{Weiss1994} to invert the Laplace-transformed rate function of eq. \ref{eq:laplacefluxrate} at the opposite extreme of $s$.
 	
-For example, at short times, expanding equation \ref{eq:laplacefluxrate} as $s\rightarrow \infty$ gives
+For example, at short times, expanding eq. \ref{eq:laplacefluxrate} as $s\rightarrow \infty$ gives
 \be \tilde{\Lambda}(s) = \frac{\rho k_E V}{2 k s^2} + \frac{\rho k_E}{k}\sqrt{\frac{D}{4 s^3}} \ee
 which inverts to
 \be \Lambda(t) \sim \frac{\rho k_E V T}{2 k} + \frac{\rho k_E}{k}\sqrt{\frac{D T}{\pi}},\ee
@@ -117,4 +118,4 @@ This has two scaling limits within it. Provided that $T \ll 4D/V^2/\pi < 2 D/V^2
 For large times, taking $s\rightarrow 0 $ gives
 \be \tilde{\Lambda}(s) = \frac{\rho k_E V }{ks^2}, \ee
 and this inverts to $\Lambda(T) = \rho k_E V T/k$ as the long time solution, providing a mean flux equivalent to the Einstein model (sec. \ref{sec:lisle}).
-These limits are summarized in equation \ref{eq:fluccolimitcases}.
+These limits are summarized in eq. \ref{eq:fluccolimitcases}.
