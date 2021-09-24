@@ -16,55 +16,47 @@ A level-1 auxiliary file: app_ch2.aux
 A level-1 auxiliary file: app_ch4.aux
 A level-1 auxiliary file: app_ch3.aux
 A level-1 auxiliary file: app_ch5.aux
-Reallocated field_info (elt_size=4) to 13395 items from 5000.
+Reallocated field_info (elt_size=4) to 13487 items from 5000.
 Database file #1: biblio.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--I didn't find a database entry for "Cudnall1979"
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "Radjai1996"
-Warning--I didn't find a database entry for "Andreotti2013"
-Warning--I didn't find a database entry for "Briliantov2004"
-Warning--I didn't find a database entry for "Williams2020"
-Warning--I didn't find a database entry for "Michalades1997"
-You've used 358 entries,
+You've used 369 entries,
             2789 wiz_defined-function locations,
-            3101 strings with 66848 characters,
-and the built_in function-call counts, 304812 in all, are:
-= -- 39147
-> -- 11129
-< -- 232
-+ -- 6229
-- -- 2677
-* -- 20261
-:= -- 29597
-add.period$ -- 358
-call.type$ -- 358
-change.case$ -- 1952
-chr.to.int$ -- 352
-cite$ -- 1074
-duplicate$ -- 27367
-empty$ -- 14489
-format.name$ -- 3761
-if$ -- 61227
+            3143 strings with 68349 characters,
+and the built_in function-call counts, 314585 in all, are:
+= -- 40372
+> -- 11572
+< -- 236
++ -- 6461
+- -- 2782
+* -- 20953
+:= -- 30569
+add.period$ -- 369
+call.type$ -- 369
+change.case$ -- 2020
+chr.to.int$ -- 363
+cite$ -- 1107
+duplicate$ -- 28188
+empty$ -- 14926
+format.name$ -- 3903
+if$ -- 63190
 int.to.chr$ -- 7
 int.to.str$ -- 1
-missing$ -- 380
-newline$ -- 1078
-num.names$ -- 1440
-pop$ -- 10789
+missing$ -- 392
+newline$ -- 1111
+num.names$ -- 1484
+pop$ -- 11193
 preamble$ -- 1
-purify$ -- 1604
+purify$ -- 1661
 quote$ -- 0
-skip$ -- 21950
+skip$ -- 22590
 stack$ -- 0
-substring$ -- 14505
-swap$ -- 23829
+substring$ -- 14932
+swap$ -- 24535
 text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 3117
+type$ -- 3213
 warning$ -- 0
-while$ -- 1948
+while$ -- 2011
 width$ -- 0
-write$ -- 3931
-(There were 7 warnings)
+write$ -- 4052

@@ -10,7 +10,7 @@ In response, researchers have developed a stochastic concepts of bedload transpo
 Essentially two types of bedload transport model have been developed from this concept.
 The first type provides the probabilistic dynamics of a small population of tracer grains as they transport downstream \citep{Einstein1937,Hubbell1964, Nakagawa1976,Martin2012,Lajeunesse2017,Wu2019}, while the second provides the statistics of the number of moving grains (``the particle activity'') within a control volume \citep{Einstein1950,Ancey2006,Furbish2012a}.
 In the first type, individual displacements are considered to result from alternate step-rest sequences, where step lengths and resting times are random variables following statistical distributions \citep{Einstein1937}. 
-Differences between the random-walk motions of one grain and the next imply a spreading apart of tracer grains as they transport downstream: bedload tracers undergo diffusion.
+Differences between the random-walk motions of one grain and the next imply a spreading apart (i.e., diffusion) of tracer grains as they transport downstream.
 
 Resting time distributions have been carefully studied in relation to these models because the predicted diffusion characteristics are critically dependent on whether the distribution has a light or heavy tail \citep{Bradley2017,Martin2012,Weeks1998}.
 Resting times have puzzled researchers because early experiments showed exponential distributions \citep{Einstein1937,Hubbell1964, Yano1969,Nakagawa1976}, while later experiments showed heavy-tailed power-law distributions \citep{Martin2012,Voepel2013, Olinde2015, Pretzlav2016a, Bradley2017, Liu2019}.
@@ -19,36 +19,36 @@ Conceptually, when grains rest on the surface, material transported from upstrea
 
 \citet{Martin2014} have provided the only direct support for this hypothesis by tracking grains through complete cycles of burial and exhumation in a narrow flume.
 They observed heavy-tailed resting times of buried grains and described their results with a mathematical model similar to an earlier effort by \citet{Voepel2013}.
-Both of these models treat bed elevation changes as a random walk and interpret resting times as return periods from above in the bed elevation time-series \citep{Redner2007}.
-Each describes resting time distributions from different experiments, but they rely on different random walk models, and their treatment of bed elevations as a process independent of sediment transport is questionable at first glance, since bedload transport is the source of bed elevation changes \citep{Wong2007}, while neither model explicitly describes bedload transport.
+Both of these models treat bed elevation changes as a random walk and interpret resting times as return periods from above in the bed elevation timeseries \citep{Redner2007}.
+Each describes resting time distributions from different experiments, but they rely on different random walk models, and their treatment of bed elevations as a process independent of sediment transport is questionable at first glance, since bedload transport is the source of bed elevation changes \citep{Wong2007}, yet neither model explicitly describes bedload transport.
 Models of sedimentary bed evolution incorporating sediment transport processes might enhance understanding of sediment resting times.
 
 The second type of stochastic model prescribes rates (probabilities per unit time) to the erosion and deposition events of individual grains within a control volume to calculate the particle activity \citep{Einstein1950}.
-These approaches aim at a complete statistical characterization of the bedload flux \citep{Furbish2012a,Fathel2015,Furbish2017,Heyman2016}, including probability distributions \citep{Ancey2006,Ancey2008}, spatial and temporal characteristics of its fluctuations \citep{Heyman2014a, Roseberry2012,Dhont2018}, and the dependence of these statistical characteristics on the length and time scales over which they are observed \citep{Singh2009,Singh2012,Saletti2015}.
+These approaches aim at a complete statistical characterization of the bedload flux \citep{Furbish2012a,Fathel2015,Furbish2017,Heyman2016}, including probability distributions \citep{Ancey2006,Ancey2008}, spatial and temporal characteristics of its fluctuations \citep{Heyman2014a, Roseberry2012,Dhont2018}, and the dependence of these statistical characteristics on the length and timescales over which they are observed \citep{Singh2009,Singh2012,Saletti2015}.
 A recent surge in research activity has generated rapid progress in this subject. 
 For example, \citet{Ancey2006} demonstrated that a constant erosion rate as originally proposed by \citet{Einstein1950} was insufficient to develop realistically large particle activity fluctuations, so they added a positive feedback between the particle activity and erosion rate they called ``collective entrainment'' \citep{Ancey2008, Heyman2013,Heyman2014, Lee2018}.
 While this feedback was deemed necessary to model realistic activity fluctuations, the implications of collective entrainment for the bed topography have not been fully explored.
 
 In this work, I present the first stochastic model coupling the erosion and deposition of individual bedload grains to local bed elevation changes.
-This model extends the birth-death model approach reviewed in sec. \ref{sec:birthdeath} to describe the interplay between the bedload flux and the bed elevation within a control volume.
+This model extends the birth-death model approach reviewed in Sec. \ref{sec:birthdeath} to describe the interplay between the bedload flux and the bed elevation within a control volume.
 This new model evaluates the effect of collective entrainment on bed elevation change, and it allows for investigations of the residence times of particles buried under the bed surface.
 The model has two major assumptions: First, bedload erosion and deposition are characterized by probabilities per unit time, or rates \citep{Einstein1950, Ancey2008}; and second, these rates are contingent on the local bed elevation, encoding the property that erosion of sediment is emphasized from regions of exposure, while deposition is emphasized in regions of shelter \citep{Sawai1987, Wong2007}.
 
-Below, sec. \ref{sec:elemodel} introduces the stochastic model and sec. \ref{sec:elesolution} solves it with a mixture of numerical and analytical techniques. Model solutions illustrate several new features of particle activity and bed elevation statistics that result from feedbacks between the erosion and deposition rates with bed elevation change. Sec. \ref{sec:eleresults} present these features, while secs. \ref{sec:elediscussion} and \ref{sec:eleconclusion} conclude with the implications of these features and the suggestions they raise for future research.
+Below, Sec. \ref{sec:elemodel} introduces the stochastic model and Sec. \ref{sec:elesolution} solves it with a mixture of numerical and analytical techniques. Model solutions illustrate several new features of particle activity and bed elevation statistics that result from feedbacks between the erosion and deposition rates with bed elevation change. Sec. \ref{sec:eleresults} present these features, while Secs. \ref{sec:elediscussion} and \ref{sec:eleconclusion} conclude with the implications of these features and the suggestions they raise for future research.
 
-\section{Stochastic model of bedload transport and bed elrefevations}
+\section{Stochastic model of bedload transport and bed elevations}
 \label{sec:elemodel}
 
-The model in this chapter is formulated by considering a volume of downstream length $L$ containing some number $n$ of moving particles in the flow and some number $m$ of stationary particles composing the bed at time $t$, as depicted in fig. \ref{fig:eledefinition}. The value $m$ is defined relative to the mean number of grains within the control volume, so that it can be either positive or negative. $n$ is always a positive integer including $0$.
+The model in this chapter is formulated by considering a volume of downstream length $L$ containing some number $n$ of moving particles in the flow and some number $m$ of stationary particles composing the bed at time $t$, as depicted in Fig. \ref{fig:eledefinition}. The value $m$ is defined relative to the mean number of grains within the control volume, so that it can be either positive or negative. $n$ is always a positive integer including $0$.
 
-All particles are considered approximately spherical with the same diameter $2a$, so their mobility and packing characteristics are consistent.
-Following \citet{Ancey2008}, basically four events can occur at any instant to modify the populations $n$ and $m$. These events are characterized using probabilities per unit time (rates).
+All particles are considered approximately spherical with the same radius $a$, so their mobility and packing characteristics are similar from one particle to the next.
+Following \citet{Ancey2008}, basically four events can occur at any instant to modify the populations $n$ and $m$.
 These events are (1) migration of a moving particle into the volume from upstream ($n \rightarrow n+1$), (2) the entrainment (erosion) of a stationary particle into motion within the volume ($m\rightarrow m-1$ and $n\rightarrow n+1$), (3) the deposition of a moving particle to rest within the volume ($m\rightarrow m+1$ and $n\rightarrow n-1$), and (4) the migration of a moving particle out of the volume to downstream ($n\rightarrow n-1$).
-The four events are depicted as arrows in fig. \ref{fig:eledefinition}.
+The four events are depicted as arrows in Fig. \ref{fig:eledefinition}.
 As the events occur at random intervals, they set up a joint stochastic evolution of the populations $n$ and $m$ characterized by a joint probability distribution $P(n,m,t)$ for the number of particles in motion and rest in the volume at $t$.
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch3/improveddef.png}
-	\caption{Definition sketch of a control volume containing $n$ moving grains and $m$ resting grains. Migration, entrainment, and deposition are represented by arrows, and the instantaneous bed elevation is depicted by dotted lines. The bed is displayed in a degraded state, where $m<0$. The marginal distributions of $n$ and $m$ are indicated in the upper right panel, while the bottom panel is a realized time-series of bed elevations computed from $m$ using eq. \ref{eq:ele}.}
+	\caption{Definition sketch of a control volume containing $n$ moving grains and $m$ resting grains. Migration, entrainment, and deposition are represented by arrows, and the instantaneous bed elevation is depicted by dotted lines. The bed is displayed in a degraded state, where $m<0$. The marginal distributions of $n$ and $m$ are indicated in the upper right, while the bottom panel is a realized timeseries of bed elevations computed from $m$ using Eq. \ref{eq:ele}.}
 	\label{fig:eledefinition}
 \end{figure}
 
@@ -61,11 +61,10 @@ This relationship depends on the packing fraction $\phi$ of grains in the bed \c
 The constant $z_1 = \pi a^2/(\phi L)$ is an important scale in the problem. 
 $z_1$ is the magnitude of bed elevation change in an average sense across the control volume associated with the addition or removal of a single grain.
 
-Bed elevation changes modify the likelihood of entrainment and deposition in a negative feedback \citep{Sawai1987, Wong2007}.
-Aggradation increases the likelihood of entrainment, while degradation increases the likelihood of deposition.
+Bed elevation changes modify the likelihood of entrainment and deposition in a negative feedback \citep{Sawai1987, Wong2007}. Aggradation increases the likelihood of entrainment, while degradation increases the likelihood of deposition.
 \citet{Wong2007} concluded that bed elevation changes induce an exponential variation in entrainment and deposition probabilities, while \citet{Sawai1987} concluded that the variation is linear.
 For simplicity, this chapter utilizes the scaling of \citet{Sawai1987}. This scaling is equivalent to the  \citet{Wong2007} scaling when bed elevation changes are small.
-Because experimental distributions of bed elevations are often symmetrical, \citep{Crickmore1962, Pender2001,Wong2007, Martin2014}, the erosion and deposition feedbacks are considered to have the same strength.
+Because experimental distributions of bed elevations are often symmetrical \citep[e.g.][]{Crickmore1962, Pender2001,Wong2007, Martin2014}, the erosion and deposition feedbacks are considered to have the same strength.
 As bed elevation changes drive up (down) erosion rates, so they drive down (up) deposition rates to the same degree.
 
 Merging these ideas with those of \citet{Ancey2008} produces expressions for the four possible transitions with local bed elevation-dependent entrainment and deposition rates:
@@ -75,14 +74,14 @@ Merging these ideas with those of \citet{Ancey2008} produces expressions for the
 	&R_D(n-1,m+1|n,m)=\sigma n [1- \kappa m ], && &\text{deposition}. \label{eq:rate3} \\
 	&R_{MO}(n-1|n) =\gamma n && &\text{migration out} \label{eq:rate4}.
 \end{align}
-In eqs. \ref{eq:rate2} and \ref{eq:rate3}, $\kappa$ is a coupling constant between bed elevations and the entrainment and deposition rates.
-$\kappa$ is referred to as a coupling constant since it controls the strength of this feedback. I will later demonstrate the relationship
+In Eqs. \ref{eq:rate2} and \ref{eq:rate3}, $\kappa$ is a coupling constant between bed elevations and the entrainment and deposition rates.
+Using this coupling constant, I will later demonstrate the relationship
 \begin{equation}\kappa \approx \big(\frac{z_1}{2l}\big)^2 \label{eq:active}
 \end{equation}
 where $l$ is a characteristic length scale of bed elevation change that can be interpreted as the active layer depth \citep{Wong2007,Church2017}.
 $\nu$ is the rate of migration into the control volume, $\lambda$ is the conventional entrainment rate, $\mu$ is the collective entrainment rate, $\sigma$ is the deposition rate, and $\gamma$ is the rate of migration out of the control volume.
 At $m=0$, these equations reduce to those of the \citet{Ancey2008} model.
-Away from this elevation, entrainment and deposition are alternatively suppressed or enhanced depending on the sign of $m$, constituting a feedback between bed elevations and erosion / deposition.
+Away from this elevation, entrainment and deposition are alternatively suppressed or enhanced depending on the sign of $m$, constituting a feedback between bed elevations and entrainment and deposition.
 
 All four rates are independent of the past history of the populations and depend only on the current populations $(n,m)$. 
 As a result, the model is Markovian \citep{Cox1965, VanKampen2007}, meaning time intervals between any two subsequent transitions are exponentially distributed \citep{Gillespie2007}.
@@ -101,20 +100,20 @@ The master equation for the probability flow can be written using the Komogorov 
 The joint distribution $P(n,m;t)$ that solves this equation fully characterizes the statistics of $n$ and $m$ -- proxies for the bedload flux and local bed elevation.
 
 The average entrainment and deposition rates $E$ and $D$ over all bed elevations are $E = \lambda +\mu \langle n \rangle$ and $D=\sigma \langle n \rangle$.
-The solutions of eq. \ref{eq:elemaster} should be expected to adjust from whatever initial conditions toward a steady-state distribution $P_s(n,m)$ -- independent of time -- if the constant factors in the transition rates are representative of equilibrium transport conditions.
+The solutions of Eq. \ref{eq:elemaster} should be expected to adjust from whatever initial conditions toward a steady-state distribution $P_s(n,m)$ -- independent of time -- if the constant factors in the transition rates are representative of equilibrium transport conditions.
 Equilibrium requires $E=D$, meaning there is no net change in elevation, and $\nu = \gamma \langle n \rangle$, meaning mass is conserved in the control volume (inflow $=$ outflow).
-This Master equation describes a two-species stochastic birth-death model \citep{Cox1965} of a type well-known in population ecology \citep{Pielou1977, Swift2002} and chemical physics \citep{Gardiner1983}.
+This master equation describes a two-species stochastic birth-death model \citep{Cox1965} of a type well-known in population ecology \citep{Pielou1977, Swift2002} and chemical physics \citep{Gardiner1983}.
 In context of this chapter, the two populations are the moving and stationary grains in the control volume.
 
 \section{Model solutions}
 \label{sec:elesolution}
 
-Unfortunately, eq. \ref{eq:elemaster} does not admit an analytical solution unless $\kappa=0$ (but see \citet{Swift2002} for the generating function method which fails in this case).
+Unfortunately, Eq. \ref{eq:elemaster} does not admit an analytical solution unless $\kappa=0$ (but see \citet{Swift2002} for the generating function method which fails in this case).
 The difficulty originates from the product terms between $n$ and $m$ representing the bed elevation dependence of collective entrainment and deposition rates.
 
 Because the model is Markovian, it is nevertheless possible to numerically simulate equation (\ref{eq:elemaster}) with the Gillespie algorithm \citep{Gillespie1977, Gillespie1991, Gillespie2007}. 
 In conditions when the coupling constant $\kappa$ between the entrainment/deposition rates and the bed elevation is weak, it is also possible to solve the master equation approximately with mean field and Fokker-Planck approaches \citep{Haken1978,Gardiner1983}.
-The Gillespie simulation algorithm is described below in sec. \ref{sec:elenumerical}, while these analytical approximations are described in sec. \ref{sec:eleanalytical}.
+The Gillespie simulation algorithm is described below in Sec. \ref{sec:elenumerical}, while these analytical approximations are described in Sec. \ref{sec:eleanalytical}.
 
 \subsection{Numerical study of the joint model}
 \label{sec:elenumerical}
@@ -123,15 +122,15 @@ The Gillespie algorithm takes advantage of the defining property of a Markov pro
 exponentially distributed \citep{Cox1965}.
 
 As a result, to step the Markov process through a single transition, one can draw a first random value from the exponential distribution of transition intervals to determine the time of the next transition,
-then draw a second random value to choose the type of transition that occurs using relative probabilities formed from eqs. \ref{eq:rate1}-\ref{eq:rate4}. The transition is enacted by shifting $t$, $n$ and $m$ by the appropriate values to the type of transition (that is, entrainment is $m\rightarrow m-1$ and $n \rightarrow n+1$, and so on).
+then draw a second random value to choose the type of transition that occurs using relative probabilities formed from Eqs. \ref{eq:rate1}-\ref{eq:rate4}. The transition is enacted by shifting $t$, $n$, and $m$ by the appropriate values to the type of transition (that is, entrainment is $m\rightarrow m-1$ and $n \rightarrow n+1$, and so on).
 This procedure can be iterated to form an exact realization of the stochastic process \citep{Gillespie2007}.
-The appendix chapter \ref{ch:gill} provides additional background on the stochastic simulation method.
+The appendix Secs. \ref{sec:arr}-\ref{sec:crr} provide additional background on the stochastic simulation method.
 
 Using this method, I simulated 4 transport conditions with 13 different values of $l$ taken across a range from $l=a$ (a single radius) to $l=10a$ (10 radii).
-These values include the range exhibited by the available experimental data on bed elevation time series \citep{Wong2007,Singh2009,Martin2014}.
+These values include the range exhibited by the available experimental data on bed elevation timeseries \citep{Wong2007,Singh2009,Martin2014}.
 
 \begin{wraptable}{r}{0.6\textwidth}
-	\caption{Migration, entrainment, and deposition rates at $z(m)=0$ from \citet{Ancey2008}. Units are $s^{-1}$ (probability/time). Bed elevation changes modulate these rates in accord with eqs. \ref{eq:rate1}-\ref{eq:rate4}.}\label{tab:anceyparams}
+	\caption{Migration, entrainment, and deposition rates at $z(m)=0$ from \citet{Ancey2008}. Units are $s^{-1}$ (probability/time). Bed elevation changes modulate these rates in accord with Eqs. \ref{eq:rate1}-\ref{eq:rate4}.}\label{tab:anceyparams}
 	\begin{tabular}{cccccc} \\ 
 		\toprule  
 		flow & $\nu$ & $\lambda$ & $\mu$ & $\sigma$ & $\gamma$ \\
@@ -154,9 +153,9 @@ Each simulation was run for $250$ hours of virtual time, a period selected to en
 \subsection{Approximate solutions of the joint model}
 \label{sec:eleanalytical}
 
-The $n$ and $m$ dynamics in eq. \ref{eq:elemaster} can be approximately decoupled using the inequality $l \gg z_1$ (equivalently $\kappa \ll 1$) which holds for large values of the active layer depth $l$.
-These inequalites mean many entrainment or deposition events are required for an appreciable change in the entrainment or deposition rates.
-Concentrating on steady state conditions $\partial P/\partial t = 0$, one can introduce the exact decomposition $P(n,m) = A(n|m)M(m)$ to eq. \ref{eq:elemaster}, with the new distributions normalized as $\sum_m M(m)=1$ and $\sum_n A(n|m)=1$ \citep[e.g.][]{Haken1978}.
+The $n$ and $m$ dynamics in Eq. \ref{eq:elemaster} can be approximately decoupled using the inequality $l \gg z_1$ (equivalently $\kappa \ll 1$) which holds for large values of the active layer depth $l$.
+These inequalites imply that many entrainment or deposition events are required for an appreciable change in the entrainment or deposition rates.
+Concentrating on steady state conditions $\partial P/\partial t = 0$, one can introduce the exact decomposition $P(n,m) = A(n|m)M(m)$ to Eq. \ref{eq:elemaster}, with the new distributions normalized as $\sum_m M(m)=1$ and $\sum_n A(n|m)=1$ \citep[e.g.][]{Haken1978}.
 This provides the steady state equation
 \begin{multline}
 	0 =  
@@ -174,57 +173,57 @@ Summing this equation over $n$ provides a still exact description of the distrib
 	\{  [\lambda+ \mu \langle n | m\rangle ](1+\kappa m) +  \sigma  \langle n | m\rangle( 1- \kappa m) \}M(m).
 	\label{eq:approxele}
 \end{multline}
-Unforunately, these two equations are no easier to solve than the original master equation, since the amount of coupling between $n$ and $m$ is not reduced in eq. \ref{eq:decomp}.
+Unforunately, these two equations are no easier to solve than the original master equation, since the amount of coupling between $n$ and $m$ is not reduced in Eq. \ref{eq:decomp}.
 
-The simplest approximation to these equations holds that $\kappa$ is so small that the dynamics of $n$ are totally independent of $m$: $A(n|m) = A(n)$. Taking this limit in eq. \ref{eq:decomp}, summing over $m$, and using $\langle m \rangle = 0$ reproduces the \citet{Ancey2008} particle activity model.
-As shown in sec. \ref{sec:birthdeath}, this has solution
+The simplest approximation to these equations holds that $\kappa$ is so small that the dynamics of $n$ are totally independent of $m$: $A(n|m) = A(n)$. Taking this limit in Eq. \ref{eq:decomp}, summing over $m$, and using $\langle m \rangle = 0$ reproduces the \citet{Ancey2008} particle activity model.
+As shown in Sec. \ref{sec:birthdeath}, this has the solution
 \begin{equation} A(n) = \frac{\Gamma(r+n)}{\Gamma(r)n!}p^r(1-p)^n.\label{eq:ancey}\end{equation}
 which is a negative binomial distribution for the particle activity with parameters $r=(\nu+\lambda)/\mu$ and $p=1-\mu/(\sigma+\gamma).$
-This result implies $\langle n | m \rangle = \langle n \rangle$, so with the definitions of $E$ and $D$ and the equilibrium condition $E=D$, eq. \ref{eq:approxele} provides
+This result implies $\langle n | m \rangle = \langle n \rangle$, so with the definitions of $E$ and $D$ and the equilibrium condition $E=D$, Eq. \ref{eq:approxele} provides
 \begin{equation}0 \approx [1+\kappa(m+1)]M(m+1) + [1-\kappa(m-1)]M(m-1)-2M(m). \label{eq:ou} \end{equation}
 This mean field equation matches the discrete Ornstein-Uhlenbeck model of bed elevation changes developed by \citet{Martin2014}.
-The independent bed elevation and particle activity models of \citet{Martin2014} and \citet{Ancey2008} derive from the model eq. \ref{eq:elemaster} in a mean field approximation when $\kappa$ is insignificant.
+The independent bed elevation and particle activity models of \citet{Martin2014} and \citet{Ancey2008} derive from the model Eq. \ref{eq:elemaster} in a mean field approximation when $\kappa$ is insignificant.
 
-In the appendix ch. \ref{ch:gill} I show that the Fokker-Planck approximation \citep{Gardiner1983} formed by expanding $M(m\pm 1)$ to second order in $m$ within eq. \ref{eq:ou} provides the solution $M(m) \propto \exp(-\kappa m^2)$: this is a normal distribution of bed elevations with variance $\sigma_m^2 \propto \frac{1}{2\kappa}$.
-As I will demonstrate in sec. \ref{sec:eleresults}, and as I have already suggested with eq. (\ref{eq:active}), this is a poor approximation to the bed elevation variance. Nevertheless, this approximation does capture the Gaussian shape of the bed elevation distribution.
-The essential issue with this mean field approach is that the conditional mean particle activity $\langle n | m \rangle$ varies significantly with $m$ in actuality, especially when collective entrainment contributes to the mean entrainment rate $E$. I will discuss these points subsequently when developing more refined approximations and presenting numerical results.
+In the appendix Sec. \ref{sec:drr} I show that the Fokker-Planck approximation \citep{Gardiner1983} formed by expanding $M(m\pm 1)$ to second order in $m$ within Eq. \ref{eq:ou} provides the solution $M(m) \propto \exp(-\kappa m^2)$: this is a normal distribution of bed elevations with variance $\sigma_m^2 \propto \frac{1}{2\kappa}$.
+As I will demonstrate in Sec. \ref{sec:eleresults}, and as I have already suggested with Eq. (\ref{eq:active}), this is a poor approximation to the bed elevation variance. Nevertheless, this approximation does capture the Gaussian shape of the bed elevation distribution.
+The essential issue with this mean field approach is that in actuality, the conditional mean particle activity $\langle n | m \rangle$ varies significantly with $m$, especially when collective entrainment contributes to the mean entrainment rate $E$.
 
-A more careful approximate solution to eq. \ref{eq:approxele} can be obtained by prescribing a phenomenological equation for $\langle n | m \rangle$ into eq. \ref{eq:approxele} in order to close the equation for $m$ without solving eq. \ref{eq:decomp}.
-By comparison with the numerical simulations we determine that
+A more careful approximate solution to Eq. \ref{eq:approxele} can be obtained by prescribing a phenomenological equation for $\langle n | m \rangle$ into Eq. \ref{eq:approxele} in order to close the equation for $m$ without solving Eq. \ref{eq:decomp}.
+As explained in appendix Sec. \ref{sec:err}, comparison with the numerical simulations determines that
 \begin{equation}
 	\langle n | m  \rangle \approx \langle n \rangle \Big( 1 - \frac{2\kappa m}{1-\mu/\sigma}\Big) \label{eq:closure}
 \end{equation}
 captures the general features of the conditional mean particle activity.
-As I show in the supplementary information, introducing this closure relation to eq. \ref{eq:approxele}, making the Fokker-Planck approximation, and neglecting terms of $O(\kappa^2)$ provides 
+Introducing this closure relation to Eq. \ref{eq:approxele}, making the Fokker-Planck approximation, and neglecting terms of $O(\kappa^2)$ provides 
 \begin{equation} M(m) \approx M_0 e^{-2\kappa m^2}, \label{eq:ou2}\end{equation}
-representing a Gaussian distribution with variance $\sigma_m^2 = \frac{1}{4\kappa}$ -- smaller than the former mean field theory by a factor of two and in agreement with the result posited in eq. \ref{eq:active}.
+representing a Gaussian distribution with variance $\sigma_m^2 = \frac{1}{4\kappa}$ -- smaller than the former mean field theory by a factor of two and in agreement with the result of Eq. \ref{eq:active}.
 $M_0$ is a normalization constant. 
-This closure equation approach shows good correspondence with numerical solutions of eq. \ref{eq:elemaster}, at least for the flow parameters in tab. \ref{tab:anceyparams}.
+This closure equation approach shows good correspondence with numerical solutions of Eq. \ref{eq:elemaster}, at least for the flow parameters in Tab. \ref{tab:anceyparams}.
 
 \section{Results}
 \label{sec:eleresults}
 
-From the initial conditions, all simulations show a rapid attainment of steady-state stochastic dynamics of $n$ and $m$ which support a time-independent joint distribution $P(n,m)$. The bottom panel of fig. \ref{fig:eledefinition} shows an elevation time-series. In order to describe the implications of coupling bedload transport to bed elevation changes, the numerical and analytical results for the probability distributions of bedload transport and bed elevations are presented in sec. \ref{sec:elepdf} and the statistical moments of these quantities in sec. \ref{sec:elemom}. The effects of collective entrainment on bed elevation changes are studied in sec. \ref{sec:elecolent}, and the resting times of sediment undergoing burial are evaluated in sec. \ref{sec:elertcdf}.
+From the initial conditions, all simulations show a rapid attainment of steady-state stochastic dynamics of $n$ and $m$ which support a time-independent joint distribution $P(n,m)$. The bottom panel of Fig. \ref{fig:eledefinition} shows an elevation timeseries. In order to describe the implications of coupling bedload transport to bed elevation changes, the numerical and analytical results for the probability distributions of bedload transport and bed elevations are presented in Sec. \ref{sec:elepdf} and the statistical moments of these quantities are presented in Sec. \ref{sec:elemom}. The effects of collective entrainment on bed elevation changes are studied in Sec. \ref{sec:elecolent}, and the resting times of sediment undergoing burial are evaluated in Sec. \ref{sec:elertcdf}.
 
 \subsection{Probability distributions of bedload transport and bed elevations}
 \label{sec:elepdf}
 
-The joint distribution is computed numerically by counting occurrences of the states $(n,m)$ in the simulated time series.
+The joint distribution is computed numerically by counting occurrences of the states $(n,m)$ in the simulated timeseries.
 From this joint distribution the marginal distributions $P(n)$ and $P(m)$ are obtained by summing over $m$ and $n$ respectively.
-A representative subset of these marginal distributions is displayed in fig. \ref{fig:pdfs} alongside the approximate results of eqs. \ref{eq:ancey} and \ref{eq:ou2}.
+A representative subset of these marginal distributions is displayed in Fig. \ref{fig:pdfs} alongside the approximate results of Eqs. \ref{eq:ancey} and \ref{eq:ou2}.
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch3/distributions.pdf}
-	\caption{Panel (a) presents the probability distribution of particle activity $n$ and panel (b) presents the probability distribution of the relative number of particles $m$ for a representative subset of simulations. These distributions represent different flows from tab. \ref{tab:anceyparams}, distinguished by color, and different values of the active layer depth $l$ (equivalently the coupling constant $\kappa$), distinguished by the marker style. The mean field theories (mft) of eqs. \ref{eq:ancey} and \ref{eq:ou2} are displayed as solid black lines.}
+	\caption{Panel (a) presents the probability distribution of particle activity $n$ and panel (b) presents the probability distribution of the relative number of particles $m$ for a representative subset of simulations. These distributions represent different flows from Tab. \ref{tab:anceyparams}, distinguished by color, and different values of the active layer depth $l$ (equivalently the coupling constant $\kappa$), distinguished by the marker style. The mean field theories (mft) of Eqs. \ref{eq:ancey} and \ref{eq:ou2} are displayed as solid black lines.}
 	\label{fig:pdfs}
 \end{figure}
-The mean field eq. \ref{eq:ancey} for the particle activity $n$ closely represents the numerical results, and while there are small differences between numerical and analytical results for the relative number $m$ of resting particles, the numerical solutions approximately match eq. \ref{eq:ou2}, having Gaussian profiles consistent with the assumption of a symmetric scaling of erosion and deposition rates with bed elevation changes. 
+The mean field equation for the particle activity $n$ (Eq.  \ref{eq:ancey}) closely represents the numerical results, and while there are small differences between numerical and analytical results for the relative number $m$ of resting particles, the numerical solutions approximately match Eq. \ref{eq:ou2}, having Gaussian profiles consistent with the assumption of a symmetric scaling between erosion and deposition rates and bed elevation changes. 
 
 
 \subsection{Statistical moments of bed elevation and the particle activity}
 \label{sec:elemom}
 
 The moments of $n$ and $m$ are calculated by summing over $P(n,m)$. 
-The $j$th order unconditional moment of the particle activity $n$ derives from
+The $j$th order unconditional moment of the particle activity $n$ is defined as
 \begin{equation} \langle n^j \rangle = \sum_{n}n^jP(n),\end{equation}
 while the $j$th order moment of $n$ held conditional on $m$ is
 \begin{equation} \langle n^j|m \rangle = \sum_{n}n^j P(n,m) .\end{equation}
@@ -233,22 +232,22 @@ The mean elevation is always $\langle m \rangle = 0 $ due to the initial assumpt
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\centering
 	\includegraphics[width=0.5\textwidth,keepaspectratio]{./figures/ch3/variance.pdf}
-	\caption{Data from all simulations demonstrating that the active layer depth $l$ characterizes bed elevation changes as posited in eq. \ref{eq:active}: $\sigma_m^2 \approx (l/z_1)^2$. }
+	\caption{Data from all simulations demonstrating that the active layer depth $l$ characterizes bed elevation changes as described by Eq. \ref{eq:active}: $\sigma_m^2 \approx (l/z_1)^2$. }
 	\label{fig:var}
 \end{wrapfigure}
-Figure \ref{fig:var} demonstrates that the variance of bed elevations is approximately $\sigma_z^2 = z_1^2 \sigma_m^2 = \frac{1}{4\kappa}=l^2$, agreeing with the approximation in eq. \ref{eq:ou2}; this result suggests that $l$ is a characteristic length scale of bed elevation fluctuations.
-The close correspondence between the mean field approximation and the numerical simulations in fig. \ref{fig:pdfs}a suggests the unconditional moments of $n$ correspond closely with the \citet{Ancey2008} result. They appear identical within numerical uncertainty.
+Figure \ref{fig:var} demonstrates that the variance of bed elevations is approximately $\sigma_z^2 = z_1^2 \sigma_m^2 = \frac{1}{4\kappa}=l^2$, agreeing with the approximation in Eq. \ref{eq:ou2}; this result suggests that $l$ is a characteristic length scale of bed elevation fluctuations.
+The close correspondence between the mean field approximation and the numerical simulations in Fig. \ref{fig:pdfs}(a) suggests the unconditional moments of $n$ correspond closely with the \citet{Ancey2008} result. They appear identical within numerical uncertainty.
 
 The coupling between bed elevation changes and the erosion and deposition rates develop a strong dependence of the particle activity on $m$. Fig. \ref{fig:condmoms} displays the mean shift $[\langle n |m \rangle - \langle n \rangle]/\langle n \rangle $ and the variance shift  $[\text{var}(n|m) - \text{var}(n)]/\text{var}(n)$ of the particle activity due to departures of the bed elevation from its mean position.
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch3/momentsuppression.pdf}
-	\caption{The shifts between particle activity moments conditioned on instantaneous elevations and their over-all mean values. Panel (a) indicates the mean particle activity shift versus the bed elevation measured in units of $\sigma_z=l$. This shift displays asymmetric dependence on $m$ at the flow conditions of the \citet{Ancey2008} experiements, and departures of the bedload transport mean can be as much as 60\% when the bed is in a severely degraded state with $z\approx -3l$. The closure equation \ref{eq:closure} is plotted in panel (a) Panel (b) demonstrates a more symmetrical variance shift with some dependence on flow conditions displaying shifts of up to 20\% with bed elevations. These results indicate that bedload statistics measurements on short time scales could be severely biased by departures from the mean bed elevation.}
+	\caption{The shifts between particle activity moments conditioned on instantaneous elevations and their over-all mean values. Panel (a) indicates the mean particle activity shift versus the bed elevation measured in units of $\sigma_z=l$. This shift displays asymmetric dependence on $m$ at the flow conditions of the \citet{Ancey2008} experiements, and departures of the bedload transport mean can be as much as 60\% when the bed is in a severely degraded state with $z\approx -3l$. The closure equation \ref{eq:closure} is plotted in panel (a). Panel (b) demonstrates a more symmetrical variance shift with some dependence on flow conditions displaying shifts of up to 20\% with bed elevations. These results indicate that bedload statistics measurements on short timescales could be severely biased by departures from the mean bed elevation.}
 	\label{fig:condmoms}
 \end{figure}
-Figure \ref{fig:condmoms}a demonstrates that the flow conditions in tab. \ref{tab:anceyparams} support departures of the mean particle activity by as much as 60\% from the overall mean value when the bed is in a degraded state $z\approx -3l$, and the activity can be decreased by 20\% when the bed is in an aggraded state.
-The closure model (eq. \ref{eq:closure}) used to derive the approximate bed elevation distribution (eq. \ref{eq:ou2}) is plotted behind the conditional mean profiles in fig. \ref{fig:condmoms}a, where it appears as a crude approximation since it does not capture the asymmetry.
-Nevertheless, fig. \ref{fig:var} demonstrates the variance $1/(4\kappa)$ derived from this closure equation is representative of the numerical relationship.
-For the parameters of the \citet{Ancey2008} experiments, fig. \ref{fig:condmoms}b displays a variance shift with bed elevation changes that is less severe than the mean shift but is nevertheless appreciable, with bed elevations changing the magnitude of bedload activity fluctuations by as much as 20\%.
+Figure \ref{fig:condmoms}a demonstrates that the flow conditions in Tab. \ref{tab:anceyparams} support departures of the mean particle activity by as much as 60\% from the overall mean value when the bed is in a degraded state $z\approx -3l$, and the activity can be decreased by 20\% when the bed is in an aggraded state.
+The closure model (Eq. \ref{eq:closure}) used to derive the approximate bed elevation distribution (Eq. \ref{eq:ou2}) is plotted behind the conditional mean profiles in Fig. \ref{fig:condmoms}a, where it appears as a crude approximation since it does not capture the asymmetry.
+Nevertheless, Fig. \ref{fig:var} demonstrates the variance $1/(4\kappa)$ derived from this closure equation is representative of the numerical relationship.
+For the parameters of the \citet{Ancey2008} experiments, Fig. \ref{fig:condmoms}b displays a variance shift with bed elevation changes that is less severe than the mean shift but is nevertheless appreciable, with bed elevations changing the magnitude of bedload activity fluctuations by as much as 20\%.
 The summary is that bed elevation changes regulate the first and second particle activity moments, with a moment suppression effect when the bed is aggraded, and a moment enhancement effect when the bed is degraded.
 
 \subsection{Collective entrainment and bedload activity fluctuations}
@@ -257,34 +256,34 @@ Noting that bed elevations regulate the particle activity moments, the next step
 The equilibrium condition $E=D$ implies that the fraction of entrainment due to the collective process is $f = \mu\langle n \rangle/E = \mu/\sigma$. This fraction can be used to hold $E$ constant and modify the prevalence of the collective entrainment process by setting $\lambda = E(1-f)$ and $\mu= \sigma f$. Interpolating $f$ between zero and one interpolates the particle activity component of the master equation \ref{eq:elemaster} from a purely Poissonian model to a negative binomial model, isolating the effect of collective entrainment on the particle activity statistics over a dynamic sedimentary bed.
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch3/colent-suppression.pdf}
-	\caption{The shift of the mean particle activity in panel (a) and its fluctuations in panel (b) with departures of the bed elevation from its mean. All simulations are at flow condition (g) from tab. \ref{tab:anceyparams} except $\lambda$ and $\mu$ are modified to shift the fraction $f=\mu/\sigma$ of the over-all entrainment rate $E$ due to collective entrainment. Clearly, collective entrainment drives strong departures of the bedload statistics away from the mean field model (eq. \ref{eq:ancey}) at large departures from the mean bed elevation. Panel (b) shows particle activity fluctuations suppressed by 90\% when $z\approx -3l$ and collective entrainment is the dominant process. When collective entrainment is absent, meaning $\mu/\sigma=0$, this moment regulation effect vanishes: it is a consequence of collective entrainment.}
+	\caption{The shift of the mean particle activity in panel (a) and its fluctuations in panel (b) with departures of the bed elevation from its mean. All simulations are at flow condition (g) from Tab. \ref{tab:anceyparams} except $\lambda$ and $\mu$ are modified to shift the fraction $f=\mu/\sigma$ of the over-all entrainment rate $E$ due to collective entrainment. Clearly, collective entrainment drives strong departures of the bedload statistics away from the mean field model (Eq. \ref{eq:ancey}) at large departures from the mean bed elevation. Panel (b) shows particle activity fluctuations suppressed by 90\% when $z\approx -3l$ and collective entrainment is the dominant process. When collective entrainment is absent, meaning $\mu/\sigma=0$, this moment regulation effect vanishes: it is a consequence of collective entrainment.}
 	\label{fig:colent}
 \end{figure}
-Figure \ref{fig:colent} depicts the modification of the particle activity mean and variance as the importance of collective entrainment is tuned (through $\lambda$ and $\mu$) with all other parameters fixed. When $f=0$, the bed elevation ceases to influence the particle activity mean or variance, while larger fractions increasingly enable the moment regulation effect identified in sec. \ref{sec:elemom}.
+Figure \ref{fig:colent} depicts the modification of the particle activity mean and variance as the importance of collective entrainment is tuned (through $\lambda$ and $\mu$) with all other parameters fixed. When $f=0$, the bed elevation ceases to influence the particle activity mean or variance, while larger fractions increasingly enable the moment regulation effect identified in Sec. \ref{sec:elemom}.
 
 \subsection{Resting times of sediment undergoing burial}
 \label{sec:elertcdf}
 
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch3/rtcdf.pdf}
-	\caption{Resting time statistics scale differently with transport conditions and the bed elevation variance. Panel (a) shows differing flow conditions at a fixed $l$ value, while panel (c) shows fixed flow conditions at differing $l$. When scaled by $T_0$ (eq. \ref{eq:time}), both types of difference collapse in the tails of the distributions, as shown in panels (b) and (d). In panels (b) and (d), the black dotted lines indicate a power law decay of the collapsed tails having parameter $\alpha\approx1.18$ .}
+	\caption{Resting time statistics scale differently with transport conditions and the bed elevation variance. Panel (a) shows differing flow conditions at a fixed $l$ value, while panel (c) shows fixed flow conditions at differing $l$. When scaled by $T_0$ (Eq. \ref{eq:time}), both types of difference collapse in the tails of the distributions, as shown in panels (b) and (d). In panels (b) and (d), the black dotted lines indicate a power law decay of the collapsed tails having parameter $\alpha\approx1.18$ .}
 	\label{fig:cdfs}
 \end{figure}
 
-Resting times for sediment undergoing burial are obtained from analyzing the return times from above in the time-series of $m$ \citep[e.g.,][]{Redner2007}.
+Resting times for sediment undergoing burial are obtained from analyzing the return times from above in the timeseries of $m$ \citep[e.g.,][]{Redner2007}.
 Following \citet{Voepel2013} and \citet{Martin2014}, we concentrate on a particular bed elevation $m'$, and find all time intervals separating deposition events at $m=m'$ from erosion events at $m=m'+1$.
 These are the return times from above of the sedimentary bed conditional to the elevation $m'$.
 Binning these conditional return times (using logarithmically-spaced bins to reduce computational load) and counting the occurrences in each bin, we obtain an exceedance distribution of return times $t_r$ held conditional to the elevation $m'$: $P(T>t_r|m')$.
-Using the marginal probability distribution of bed elevations $P(m)$ (fig. \ref{fig:pdfs}(b)), we derive the unconditional exceedance distribution of resting times as a sum over all elevations \citep{Yang1971, Nakagawa1980, Voepel2013, Martin2014}: 
+Using the marginal probability distribution of bed elevations $P(m)$ (Fig. \ref{fig:pdfs}(b)), we derive the unconditional exceedance distribution of resting times as a sum over all elevations \citep{Yang1971, Nakagawa1980, Voepel2013, Martin2014}: 
 \begin{equation} P(T>t_r) = \sum_{m'} P(m') P(T>t_r|m') .\end{equation}
 Figure \ref{fig:cdfs} displays a representative subset of these results.
 Comparing panels \ref{fig:cdfs}(a) and \ref{fig:cdfs}(c) shows two separate variations with input parameters: first, the distributions vary with the flow conditions, and second, they vary with the standard deviation of bed elevations ($l$).
 However, as shown in panels \ref{fig:cdfs}(b) and \ref{fig:cdfs}(d), a characteristic time scale $T_0$ is found to collapse away both variations.
 We obtained this $T_0$ heuristically by considering the characteristic speed of bed elevation change.
-Because the mean number of grains leaving the bed per unit time is $E$ and the removal of a single grain changes the bed elevation by $z_1$ (eq. \ref{eq:ele}), bed elevations change with a characteristic speed $v = z_1 E$.
-Since the range of elevation deviations is $l$ (fig. \ref{fig:var}), the time required for the bed to shift through this characteristic distance is $l/v$, or equivalently
+Because the mean number of grains leaving the bed per unit time is $E$ and the removal of a single grain changes the bed elevation by $z_1$ (Eq. \ref{eq:ele}), bed elevations change with a characteristic speed $v = z_1 E$.
+Since the range of elevation deviations is $l$ (Fig. \ref{fig:var}), the time required for the bed to shift through this characteristic distance is $l/v$, or equivalently
 \begin{equation} T_0 = \frac{l}{z_1 E}.\label{eq:time}\end{equation}
-When scaling the resting time by this $T_0$, we obtain the collapse shown in fig. \ref{fig:cdfs}.
+When scaling the resting time by this $T_0$, we obtain the collapse shown in Fig. \ref{fig:cdfs}.
 Using the log-likelihood estimation technique described by \citet{Newman2005}, we estimate the scaled resting time non-exceedance distributions decay as a heavy tailed power law with parameter $\alpha = 1.18 \pm 0.32$ for all return times satisfying $T/T_0 > 10^3$.
 These distributions are sufficiently heavy tailed to violate the central limit theorem and drive anomalous super-diffusion of bedload, a result which supports the earlier conclusions of \citet{Voepel2013} and \citet{Martin2014}.
 
@@ -293,7 +292,7 @@ These distributions are sufficiently heavy tailed to violate the central limit t
 
 \subsection{Context of the research}
 Einstein developed the first stochastic models of bedload tracer diffusion \citep{Einstein1937} and the bedload flux \citep{Einstein1950}, and his ideas can be viewed as the nexus of an entire paradigm of research that extends into the present day \citep[e.g.,][]{Hubbell1964, Nakagawa1976,Hassan1991,Ancey2008, Wu2019}.
-These models aim to predict bedload transport characteristics from stochastic concepts of individual particle motions.
+These approaches aim to predict bedload transport characteristics from stochastic concepts of individual particle motions.
 With some exceptions \citep{Yang1971,Nakagawa1980,Pelosi2016,Wu2019,Wu2019a}, existing descriptions are spatially one-dimensional, concentrating on the motion of grains in the downstream direction without including the vertical dimension wherein local bed elevation changes imply sediment burial \citep{Voepel2013,Martin2014} and change the mobility of surface grains \citep{Yang1971,Nakagawa1980}.
 
 \subsection{New contributions}
@@ -301,16 +300,16 @@ With some exceptions \citep{Yang1971,Nakagawa1980,Pelosi2016,Wu2019,Wu2019a}, ex
 This chapter has modified the birth-death approach to describe sediment transport in a control volume. This model was applied to study the interplay between bedload transport and bed elevation fluctuations and to investigate resting time distributions of sediment undergoing burial.
 This model is the first description of bedload transport and bed elevations as a coupled stochastic population model based on individual grains.
 Numerical solutions and analytical approximations provided negative binomial distributions of bedload activity and normal distributions of bed elevations.
-Although experiments under more natural conditions with segregation processes,  migrating bedforms, or sediment supply perturbations have shown particle activity distributions with heavier tails \citep{Dhont2018,Saletti2015} and non-Gaussian bed elevations \citep{Singh2012,Aberle2006}, our results reproduce the key features of the most controlled bed elevation \citep{Wong2007,Martin2014} and bedload transport \citep{Heyman2016,Ancey2008} experiments in the literature.
+Although experiments under more natural conditions with segregation processes,  migrating bedforms, or sediment supply perturbations have shown particle activity distributions with heavier tails \citep{Dhont2018,Saletti2015} and non-Gaussian bed elevations \citep{Singh2012,Aberle2006}, our results reproduce the key features of the most controlled bed elevation \citep{Wong2007,Martin2014} and bedload transport \citep{Heyman2016,Ancey2008} experiments.
 
 The inclusion of coupling between the bed elevation and entrainment and deposition rates revealed a novel dependence of particle activity on bed elevation changes, highlighting a new consequence of the collective entrainment process \citep{Ancey2008,Lee2018}. This coupling develops a significant variation of the particle activity moments with deviations of the bed from its mean elevation. These particle activity variations with bed elevation changes disappear in the absence of collective entrainment.
 
-Finally, the model allowed resolution of resting times for sediment undergoing burial within the sedimentary bed. These time scales were obtained by analyzing return times from above in the bed elevation time series.
-This analysis produces heavy-tailed power-law resting times with tail parameters sufficient to drive anomalous diffusion of bedload at long time scales.
+Finally, the model allowed resolution of resting times for sediment undergoing burial within the sedimentary bed. These timescales were obtained by analyzing return times from above in the bed elevation timeseries.
+This analysis produces heavy-tailed power-law resting times with tail parameters sufficient to drive anomalous diffusion of bedload at long timescales.
 The power-law tails were found to collapse across flow conditions using a time scale formed from the mean erosion rate and the active layer depth.
 
 As the model in this chapter builds on earlier works describing particle activity and bed elevation changes independently, it also reduces to these works in simplified limits when the coupling between the particle activity and the local bed elevation vanishes.
-With the mean field approach in sec. \ref{sec:eleanalytical}, the \citet{Martin2014} Ornstein-Uhlenbeck model for bed elevations and the \citet{Ancey2008} birth-death model for the particle activity were derived as simplified limits of the coupled model developed in this chapter.
+With the mean field approach in Sec. \ref{sec:eleanalytical}, the \citet{Martin2014} Ornstein-Uhlenbeck model for bed elevations and the \citet{Ancey2008} birth-death model for the particle activity were derived as simplified limits of the coupled model developed in this chapter.
 While the mean field description of bed elevations over-predicts the bed elevation variance by approximately a factor of two, it does capture the Gaussian shape of the bed elevation distribution, and its conclusions on the tail characteristics of resting time distributions for sediment undergoing burial are identical to the model in this chapter within the numerical uncertainty.
 \citet{Martin2014} described a power-law distribution with tail parameter $\alpha \approx 1$ which falls neatly within the estimation $\alpha = 1.18 \pm 0.32$ presented here.
 
@@ -321,9 +320,9 @@ The model presented in this chapter computes statistical characteristics of the 
 Together, these factors may generate spatial correlations in particle activities that models concentrating on a single control volume will be unable to capture. 
 Models chaining multiple control volumes together have shown spatial correlations in the particle activity as a result of collective entrainment \citep{Heyman2014, Ancey2015}, and similar approaches have also been applied to study correlations in turbulent flows \citep{Gardiner1983}. In light of this work, the model presented in this chapter is considered a preliminary step toward a multiple-cell model of particle activities and bed elevation changes with potential to express spatial correlations between longitudinal profile and particle activity statistics.
 
-Like the theory developed by \citet{Martin2014}, the model eq. \ref{eq:elemaster} produces heavy-tailed power-law resting times for sediment undergoing burial by treating bed elevation changes as an unbounded random walk with a mean reverting tendency.
+Like the theory developed by \citet{Martin2014}, the model Eq. \ref{eq:elemaster} produces heavy-tailed power-law resting times for sediment undergoing burial by treating bed elevation changes as an unbounded random walk with a mean reverting tendency.
 This result suggests sediment burial can explain the heavy-tailed rests seen in field data \citep{Olinde2015,Bradley2017,Pretzlav2016a}. 
-The resting time distributions derived in sec. \ref{sec:elertcdf} show a divergent variance and possibily a divergent mean, since this occurs for $\alpha < 1$ \citep{Sornette2006} which is within range of the results.
+The resting time distributions derived in Sec. \ref{sec:elertcdf} show a divergent variance and possibily a divergent mean, since this occurs for $\alpha < 1$ \citep{Sornette2006} which is within range of the results.
 
 Divergent mean resting time distributions present a paradox, since they imply all particles should eventually be immobile, violating the equilibrium transport assumption.
 \citet{Voepel2013} demonstrated that a bounded random walk for bed elevations provides a power-law distribution that eventually transitions to a faster thin-tailed decay, allowing for power-law scaling like our result and \citet{Martin2014} without this divergent mean paradox. 
@@ -334,11 +333,11 @@ We should always expect a maximum depth to which the bed can degrade relative to
 
 Finally, this chapter presented the probability distribution functions and first and second moments of the particle activity and bed elevation, indicating novel coordination between the statistical characteristics of these quantites which deserve experimental testing.
 Some relatively recent particle tracking experiments have demonstrated joint resolution of bed elevations and bedload transport \citep{Martin2014,Heyman2016}.
-A suitably designed experiment using this methodology could test the prediction that bed elevations regulate particle activity statistics, as essentially represented in figs. \ref{fig:condmoms} and \ref{fig:colent}. 
+A suitably designed experiment using this methodology could test the prediction that bed elevations regulate particle activity statistics, as essentially represented in Figs. \ref{fig:condmoms} and \ref{fig:colent}. 
 
 Many other statistical characteristics of bedload transport have been left for future studies. 
-For example, the dependence of bedload transport \citep{Saletti2015,Singh2009} and bed elevation statistics \citep{Aberle2006, Singh2009,Singh2012} on the spatial and temporal scales over which they are observed is an emerging research topic which was previously referenced in sec. \ref{sec:renewal}.
-Whether bed elevation distributions are also scale-dependent like the sediment flux distribution of ch. \ref{ch:flux} is an interesting question for future research.
+For example, the dependence of bedload transport \citep{Saletti2015,Singh2009} and bed elevation statistics \citep{Aberle2006, Singh2009,Singh2012} on the spatial and temporal scales over which they are observed is an emerging research topic which was previously referenced in Sec. \ref{sec:renewal}.
+Whether bed elevation distributions are also scale-dependent like the sediment flux distribution of Ch. \ref{ch:flux} is an interesting question for future research.
 
 \section{Summary}
 \label{sec:eleconclusion}
@@ -350,5 +349,5 @@ The model was analyzed using a mixture of numerical and analytical methods, and 
 	\item Resting times for sediment undergoing burial lie on a heavy-tailed power law distributions with tail parameter $\alpha \approx 1.2$;
 	\item Collective entrainment generates a statistical regulation effect, whereby bed elevation changes modify the mean and variance of the particle activity by as much as 90\%: this effect vanishes when collective entrainment is absent.
 \end{enumerate}
-These results imply measurements of bedload transport statistics could be biased at observation time scales smaller than adjustments of the bed elevation time series when collective entrainment occurs.
+These results imply measurements of bedload transport statistics could be biased at observation timescales smaller than adjustments of the bed elevation timeseries when collective entrainment occurs.
 The next step is to generalize the model in this chapter to a multi-cell framework to study channel morphodynamics in a stochastic framework.

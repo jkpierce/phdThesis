@@ -1,7 +1,7 @@
 %%!TEX root = diss.tex
 
 \chapter{Calculations involved in dynamical sediment flux model}
-\label{sec:appendixA}
+\label{sec:appendixAfluc}
 \section{Derivation of the master equation for particle position}
 \label{sec:appAmaster}
 Here I derive the master equation \ref{eq:flippymaster} for the probability distribution of particle position from the Langevin equation \ref{eq:flippylangevin}. This is closely based off on the approach of \citet{Balakrishnan1993}.
@@ -20,23 +20,23 @@ Now I will take time derivatives in order to apply the so-called Furutsu-Novikov
 \be \pt \bra \eta(t)F[\eta(t)] \ket = \bra \eta \pt F \ket + k \big[\bra \eta \ket \bra F \ket -\bra \eta F \ket \big]  \label{eq:furuti}.\ee
 
 
-Making the shorthands $G = igV-g^2D$ and $F=\exp G\int_0^t \eta(u)du$ and taking a time derivative of eq. \ref{eq:logi} gives
+Making the shorthands $G = igV-g^2D$ and $F=\exp G\int_0^t \eta(u)du$ and taking a time derivative of Eq. \ref{eq:logi} gives
 \be G^{-1}\pt \tilde{P}(g,t) = \bra \eta F\ket. \label{eq:furut}\ee
 Taking a second time derivative opens up the possibility of using the Furutsu-Novikov formula \ref{eq:furuti}: 
 \be G^{-1}\pt \tilde{P}(g,t) = \pt \bra \eta F\ket = G\bra \eta F \ket + k\big[ \bra \eta \ket \tilde{P}(g,t) - G^{-1} \pt \tilde{P}(g,t) \big]. \ee
-Applying eq. \ref{eq:furut} finally gives
+Applying Eq. \ref{eq:furut} finally gives
 \be \pt^2 \tilde{P}(g,t)  = (igV-g^2D-k)\pt  \tilde{P} + k_E (igV-g^2D) \tilde{P},\ee
 and inverse Fourier transforming provides the master equation \ref{eq:flippymaster}.
 
 \section{Solution for the position probability distribution}
 \label{sec:fluccymastersol}
-The position probability distribution can be obtained from eq. \ref{eq:flippymaster} for the initial conditions $P(x,0) = \delta(x)$ and $ \pt P(x,0) = \frac{k_E}{k}\big[D\delta''(x)-V \delta'(x) \big]$ using Fourier transforms in space and Laplace transforms in time. Taking these transforms provides
+The position probability distribution can be obtained from Eq. \ref{eq:flippymaster} for the initial conditions $P(x,0) = \delta(x)$ and $ \pt P(x,0) = \frac{k_E}{k}\big[D\delta''(x)-V \delta'(x) \big]$ using Fourier transforms in space and Laplace transforms in time. Taking these transforms provides
 \be \bar{\tilde{P}}(g,s) = \frac{s + k +\varphi  Dg^2 - i g V \varphi}{s(s+k)+(Dg^2-igV)(s+k_E)},  \label{eq:prev}\ee
 where $\varphi = k_D/k$ is the probability a particle starts at rest.
 
 The numerator terms encode the initial conditions. The denominator terms are where the real structure of the solution is contained.
 The numerator terms involving $g$ are easily expressed as first and second derivatives with respect to $x$. The problem, then is to calculate the inverse Fourier integral of the denominator.
-The inverse Fourier transform can be calculated by expanding the denominator of eq. \ref{eq:prev} in partial fractions and applying the contour integral \citep[e.g.][]{Arfken1985}
+The inverse Fourier transform can be calculated by expanding the denominator of Eq. \ref{eq:prev} in partial fractions and applying the contour integral \citep[e.g.][]{Arfken1985}
 \be \int_{-\infty}^\infty \frac{1}{2\pi i} \frac{e^{-i g x}}{g - i c} dg = \sigma(c)\theta(-x\sigma(c))\exp\big(-|c x|\big). \label{eq:contour}\ee
 In this equation $\sigma(c) = \text{sgn}(c)$ is a shorthand for the signum function. The above integral can be obtained with the residue theorem by considering different cases for the signs of $x$ and $c$ and applying square contours around the upper or lower-half regions of the complex plane.
 
@@ -73,18 +73,18 @@ where $a = 1 + 4D(k_E-k_E)/(V^2)$ and $b = 4D/V^2$ are shorthands.
 
 Using the trick of introducing a parameter and integrating over it to remove the square root from the denominator (an integral analogue of "Feynman's trick"), the remaining transform can be evaluated from standard tables \citep{Prudnikov1992a}, eventually giving (after integrating over and setting to $1$ the fake parameter),
 \begin{multline} P(x,t) = \big[-\varphi D\px^2 + V\varphi \px + k + \delta(t)+ \pt \big]\int_0^t \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) e^{-k_E(t-u)} \\ \times \sqrt{ \frac{1}{4\pi D u}} \exp\Big[-k_D u - \frac{(x-Vu)^2}{4Du}\Big] du, \end{multline}
-as reported in eq. \ref{eq:monster}.
+as reported in Eq. \ref{eq:monster}.
 
 
 \section{Calculation of the scale-dependent rate function $\Lambda(T)$}
 \label{sec:fluxconstant}
-The central object required to calculate the sediment flux probability distribution in eq. \ref{eq:flippyflux} is 
+The central object required to calculate the sediment flux probability distribution in Eq. \ref{eq:flippyflux} is 
 \be \Lambda(T) = \rho \int_0^\infty dx_i \int_0^\infty dx P(x+x_i,T).\ee
 This represents the rate at which particles start at $x_i$, anywhere to the left of $x=0$, and manage to cross $x=0$ by time $T$.
 
 Again it is easiest to conduct the necessary calculus after Laplace transforming. This gives 
 \be \tilde{\Lambda}(s) = \rho \int_0^\infty dx_i \int_0^\infty dx \tilde{P}(x+x_i,s).\ee
-The Laplace transform of the rate function therefore follows after integrating eq. \ref{eq:laplaceapp} twice.
+The Laplace transform of the rate function therefore follows after integrating Eq. \ref{eq:laplaceapp} twice.
 
 Noting that $x+x_i$ is always positive,
 The first integration gives
@@ -98,17 +98,17 @@ Taking the inverse transform, converting the $s$ factor in the numerator of the 
 \be \Lambda(t) = \rho \mathcal{L}^{-1}\Bigg\{ - \frac{\varphi D}{VR_\star s} + \frac{2D\varphi}{VR_\ast(1-R_\star)s} + \frac{4D^2\big( \cev{\pt} + k\big)}{V^3 R_\star(1-R_\star)^2s}\Bigg\}.\ee
 Here the notation $\cev{\pt}$ means the derivative acts from the left on all terms multiplying it (as in $f(t)\cev{\pt} g(t) = \pt [f(t)g(t)]$).
 
-After some work, using eq. \ref{eq:magic} and tabulated Laplace transform pairs \citep[e.g.][]{Arfken1985,Prudnikov1992a} to perform the inverse Laplace transforms, the net result for the rate constant is
+After some work, using Eq. \ref{eq:magic} and tabulated Laplace transform pairs \citep[e.g.][]{Arfken1985,Prudnikov1992a} to perform the inverse Laplace transforms, the net result for the rate constant is
 \begin{multline} 
 	\Lambda(t) = \rho \int_0^t \mathcal{I}_0\Big(2\sqrt{k_Ek_Du(t-u)}\Big)e^{-k_E(t-u)-k_D u} \\
 	\times \Bigg[\sqrt{\frac{D}{\pi u}}\Big([\cev{\partial_t} + k]u-\frac{k_D}{2 k}\Big)e^{-V^2 u/4D}  \\ + \frac{V}{2}\Big([\cev{\partial_t} + k]u -\frac{k_D}{k}\Big) \erfc\Bigg(-\sqrt{\frac{V^2 u}{4D}}\Bigg)\Bigg] du,
 \end{multline}
-as reported in eq. \ref{eq:fluxy}.
+as reported in Eq. \ref{eq:fluxy}.
 
 \label{sec:fluxlimits}
-Equation \ref{eq:fluxy} is difficult to work with. To explore the behavior at extreme values of the observation time $T$, one can apply Tauberian theorems \citep{Weiss1994} to invert the Laplace-transformed rate function of eq. \ref{eq:laplacefluxrate} at the opposite extreme of $s$.
+Equation \ref{eq:fluxy} is difficult to work with. To explore the behavior at extreme values of the observation time $T$, one can apply Tauberian theorems \citep{Weiss1994} to invert the Laplace-transformed rate function of Eq. \ref{eq:laplacefluxrate} at the opposite extreme of $s$.
 	
-For example, at short times, expanding eq. \ref{eq:laplacefluxrate} as $s\rightarrow \infty$ gives
+For example, at short times, expanding Eq. \ref{eq:laplacefluxrate} as $s\rightarrow \infty$ gives
 \be \tilde{\Lambda}(s) = \frac{\rho k_E V}{2 k s^2} + \frac{\rho k_E}{k}\sqrt{\frac{D}{4 s^3}} \ee
 which inverts to
 \be \Lambda(t) \sim \frac{\rho k_E V T}{2 k} + \frac{\rho k_E}{k}\sqrt{\frac{D T}{\pi}},\ee
@@ -117,5 +117,5 @@ This has two scaling limits within it. Provided that $T \ll 4D/V^2/\pi < 2 D/V^2
 
 For large times, taking $s\rightarrow 0 $ gives
 \be \tilde{\Lambda}(s) = \frac{\rho k_E V }{ks^2}, \ee
-and this inverts to $\Lambda(T) = \rho k_E V T/k$ as the long time solution, providing a mean flux equivalent to the Einstein model (sec. \ref{sec:lisle}).
-These limits are summarized in eq. \ref{eq:fluccolimitcases}.
+and this inverts to $\Lambda(T) = \rho k_E V T/k$ as the long time solution, providing a mean flux equivalent to the Einstein model (Sec. \ref{sec:lisle}).
+These limits are summarized in Eq. \ref{eq:fluccolimitcases}.

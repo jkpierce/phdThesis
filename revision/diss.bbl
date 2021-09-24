@@ -1,4 +1,4 @@
-\begin{thebibliography}{358}
+\begin{thebibliography}{369}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{\it Abbott and Francis\/}(1977)}]{Abbott1977}
@@ -70,6 +70,11 @@ Ancey, C., A.~C. Davison, T.~B{\"{o}}hm, M.~Jodeau, and P.~Frey, {Entrainment
 Ancey, C., P.~Bohorquez, and J.~Heyman, {Stochastic interpretation of the
   advection-diffusion}, {\it Journal of Geophysical Research : Earth
   Surface\/}, {\it 120\/}, 325--345, 2015.
+
+\bibitem[{{\it Andreotti et~al.\/}(2013){\it Andreotti, Forterre, and
+  Pouliquen\/}}]{Andreotti2013}
+Andreotti, B., Y.~Forterre, and O.~Pouliquen, {\it {Granular Media; Between
+  Fluid and Solid}\/}, 1st ed., Cambridge University Press, New York, 2013.
 
 \bibitem[{{\it Andrews\/}(1983)}]{Andrews1983}
 Andrews, E.~D., {Entrainment of gravel from naturally sorted riverbed
@@ -208,10 +213,11 @@ Berezhkovskii, A.~M., and G.~H. Weiss, {Detailed description of a two-state
   non-Markov system}, {\it Physica A: Statistical Mechanics and its
   Applications\/}, {\it 303\/}, 1--12, 2002.
 
-\bibitem[{{\it Bialik\/}(2013)}]{Bialik2013}
-Bialik, R.~J., {Numerical study of near-bed turbulence structures influence on
-  the initiation of saltating grains movement}, {\it Journal of Hydrology and
-  Hydromechanics\/}, {\it 61\/}, 202--207, 2013.
+\bibitem[{{\it Berkowitz et~al.\/}(2006){\it Berkowitz, Cortis, Dentz, and
+  Scher\/}}]{Berkowitz2006}
+Berkowitz, B., A.~Cortis, M.~Dentz, and H.~Scher, {Modeling Non-fickian
+  transport in geological formations as a continuous time random walk}, {\it
+  Reviews of Geophysics\/}, {\it 44\/}, 1--49, 2006.
 
 \bibitem[{{\it Bialik et~al.\/}(2012){\it Bialik, Nikora, and
   Rowi{\'{n}}ski\/}}]{Bialik2012}
@@ -285,6 +291,13 @@ Cameron, S.~M., V.~I. Nikora, and M.~J. Witz, {Entrainment of sediment
   Ballio\/}}]{Campagnol2012}
 Campagnol, J., A.~Radice, and F.~Ballio, {Scale-based statistical analysis of
   sediment fluxes}, {\it Acta Geophysica\/}, {\it 60\/}, 1744--1777, 2012.
+
+\bibitem[{{\it Campagnol et~al.\/}(2015){\it Campagnol, Radice, Ballio, and
+  Nikora\/}}]{Campagnol2015}
+Campagnol, J., A.~Radice, F.~Ballio, and V.~Nikora, {Particle motion and
+  diffusion at weak bed load: Accounting for unsteadiness effects of
+  entrainment and disentrainment}, {\it Journal of Hydraulic Research\/}, {\it
+  53\/}, 633--648, 2015.
 
 \bibitem[{{\it Cardy\/}(2008)}]{Cardy2008}
 Cardy, J., {Reaction-diffusion processes}, in {\it Non-equilibrium statistical
@@ -395,7 +408,7 @@ Cudden, J.~R., and T.~B. Hoey, {The causes of bedload pulses in a gravel
   channel: The implications of bedload grain-size distributions}, {\it Earth
   Surface Processes and Landforms\/}, {\it 28\/}, 1411--1428, 2003.
 
-\bibitem[{{\it Cundall and Strack\/}(1979)}]{Cundall1979a}
+\bibitem[{{\it Cundall and Strack\/}(1979)}]{Cundall1979}
 Cundall, P.~A., and O.~D. Strack, {A discrete numerical model for granular
   assemblies}, {\it Geotechnique\/}, {\it 29\/}, 47--65, 1979.
 
@@ -408,6 +421,10 @@ Daly, E., and A.~Porporato, {Probabilistic dynamics of some jump-diffusion
 Daly, E., and A.~Porporato, {Effect of different jump distributions on the
   dynamics of jump processes}, {\it Physical Review E - Statistical, Nonlinear,
   and Soft Matter Physics\/}, {\it 81\/}, 1--10, 2010.
+
+\bibitem[{{\it {De Gennes}\/}(2005)}]{DeGennes2005}
+{De Gennes}, P.~G., {Brownian motion with dry friction}, {\it Journal of
+  Statistical Physics\/}, {\it 119\/}, 953--962, 2005.
 
 \bibitem[{{\it Denisov et~al.\/}(2009){\it Denisov, Horsthemke, and
   H{\"{a}}nggi\/}}]{Denisov2009}
@@ -700,6 +717,11 @@ Gordon, R., J.~B. Carmichael, and F.~J. Isackson, {Saltation of plastic balls
   in a ‘one‐dimensional' flume}, {\it Water Resources Research\/}, {\it
   8\/}, 444--459, 1972.
 
+\bibitem[{{\it Gotoh and Sakai\/}(1997)}]{Gotoh1997}
+Gotoh, H., and T.~Sakai, {Numerical simulation of sheetflow as granular
+  material}, {\it Journal of Waterway, Port, Coastal and Ocean Engineering\/},
+  {\it 123\/}, 329--336, 1997.
+
 \bibitem[{{\it Grass\/}(1970)}]{Grass1970}
 Grass, A., {Initial Instability of Fine Bed Sand}, {\it Journal of the
   Hydraulics Division\/}, {\it 96\/}, 619--632, 1970.
@@ -888,20 +910,25 @@ Jenkins, J.~T., and D.~M. Hanes, {Collisional sheet flows of sediment driven by
 Jensen, H.~J., {\it {Self-Organized Criticality}\/}, Cambridge University
   Press, Cambridge, 1998.
 
-\bibitem[{{\it Jerolmack and Mohrig\/}(2005)}]{Jerolmack2005}
-Jerolmack, D., and D.~Mohrig, {Interactions between bed forms: Topography,
-  turbulence, and transport}, {\it Journal of Geophysical Research: Earth
-  Surface\/}, {\it 110\/}, 2005.
-
 \bibitem[{{\it Jerolmack and Daniels\/}(2019)}]{Jerolmack2019}
 Jerolmack, D.~J., and K.~E. Daniels, {Viewing Earth's surface as a soft-matter
   landscape}, {\it Nature Reviews Physics\/}, {\it 1\/}, 716--730, 2019.
+
+\bibitem[{{\it Jerolmack and Mohrig\/}(2005)}]{Jerolmack2005}
+Jerolmack, D.~J., and D.~Mohrig, {A unified model for subaqueous bed form
+  dynamics}, {\it Water Resources Research\/}, {\it 41\/}, 1--10, 2005.
 
 \bibitem[{{\it Ji et~al.\/}(2013){\it Ji, Munjiza, Avital, Ma, and
   Williams\/}}]{Ji2013}
 Ji, C., A.~Munjiza, E.~Avital, J.~Ma, and J.~J. Williams, {Direct numerical
   simulation of sediment entrainment in turbulent channel flow}, {\it Physics
   of Fluids\/}, {\it 25\/}, 2013.
+
+\bibitem[{{\it Ji et~al.\/}(2014){\it Ji, Munjiza, Avital, Xu, and
+  Williams\/}}]{Ji2014}
+Ji, C., A.~Munjiza, E.~Avital, D.~Xu, and J.~Williams, {Saltation of particles
+  in turbulent channel flow}, {\it Physical Review E - Statistical, Nonlinear,
+  and Soft Matter Physics\/}, {\it 89\/}, 1--14, 2014.
 
 \bibitem[{{\it Jiang and Haff\/}(1993)}]{Haff1993}
 Jiang, Z., and P.~K. Haff, {Multiparticle simulation methods applied to the
@@ -1122,9 +1149,20 @@ Masoliver, J., and K.~Lindenberg, {Continuous time persistent random walk: a
   review and some generalizations}, {\it European Physical Journal B\/}, {\it
   90\/}, 2017.
 
+\bibitem[{{\it Masoliver and Weiss\/}(1991)}]{Masoliver1991}
+Masoliver, J., and G.~H. Weiss, {Transport Equations in Chromatography with a
+  Finite Speed of Signal Propagation}, {\it Separation Science and
+  Technology\/}, {\it 26\/}, 279--289, 1991.
+
 \bibitem[{{\it Masoliver and Weiss\/}(1994)}]{Masoliver1994}
 Masoliver, J., and G.~H. Weiss, {Telegrapher's equations with variable
   propagation speeds}, {\it Physical Review E\/}, {\it 49\/}, 3852--3854, 1994.
+
+\bibitem[{{\it Masoliver et~al.\/}(1996){\it Masoliver, Weiss, Phys, Masoliver,
+  and Weiss\/}}]{Masoliver1996}
+Masoliver, J., G.~H. Weiss, E.~J. Phys, J.~Masoliver, and G.~H. Weiss,
+  {Finite-velocity diffusion}, {\it European Journal of Physics\/}, {\it 17\/},
+  1996.
 
 \bibitem[{{\it Masteller et~al.\/}(2019){\it Masteller, Finnegan, Turowski,
   Yager, and Rickenmann\/}}]{Masteller2019}
@@ -1159,6 +1197,11 @@ McDowell, C., and M.~A. Hassan, {The influence of channel morphology on bedload
 Mendes, L., F.~Antico, P.~Sanches, F.~Alegria, R.~Aleixo, and R.~M. Ferreira,
   {A particle counting system for calculation of bedload fluxes}, {\it
   Measurement Science and Technology\/}, {\it 27\/}, 2016.
+
+\bibitem[{{\it Menzel and Goldenfeld\/}(2011)}]{Menzel2011}
+Menzel, A.~M., and N.~Goldenfeld, {Effect of Coulombic friction on spatial
+  displacement statistics}, {\it Physical Review E - Statistical, Nonlinear,
+  and Soft Matter Physics\/}, {\it 84\/}, 1--9, 2011.
 
 \bibitem[{{\it Metzler and Klafter\/}(2000)}]{Metzler2000}
 Metzler, R., and J.~Klafter, {The random walk's guide to anomalous diffusion: A
@@ -1404,6 +1447,12 @@ Pretzlav, K. L.~G., J.~P.~L. Johnson, and D.~N. Bradley, {Smartrock transport
 Prudnikov, A.~P., I.~A. Brychkov, O.~I. Marichev, and G.~G. Gould, {\it
   {Integrals and Series Vol. 5: Inverse Laplace Transforms}\/}, Gordon and
   Breach Science Publishers, Paris, 1992.
+
+\bibitem[{{\it Radjai et~al.\/}(1996){\it Radjai, Jean, Moreau, and
+  Roux\/}}]{Radjai1996}
+Radjai, F., M.~Jean, J.~J. Moreau, and S.~Roux, {Force distributions in dense
+  Two-Dimensional granular systems}, {\it Physical Review Letters\/}, {\it
+  77\/}, 274--277, 1996.
 
 \bibitem[{{\it Recking et~al.\/}(2012){\it Recking, Li{\'{e}}bault, Peteuil,
   and Jolimet\/}}]{Recking2012}
@@ -1654,6 +1703,12 @@ Temme, N.~M., {\it {Special Functions: An Introduction to the Classical
   Functions of Mathematical Physics}\/}, John Wiley {\&} Sons Ltd., New York,
   1996.
 
+\bibitem[{{\it Touchette et~al.\/}(2010){\it Touchette, {Van Der Straeten}, and
+  Just\/}}]{Touchette2010}
+Touchette, H., E.~{Van Der Straeten}, and W.~Just, {Brownian motion with dry
+  friction: Fokker-Planck approach}, {\it Journal of Physics A: Mathematical
+  and Theoretical\/}, {\it 43\/}, 1--18, 2010.
+
 \bibitem[{{\it Tregnaghi et~al.\/}(2012){\it Tregnaghi, Bottacin-Busolin,
   Marion, and Tait\/}}]{Tregnaghi2012}
 Tregnaghi, M., A.~Bottacin-Busolin, A.~Marion, and S.~Tait, {Stochastic
@@ -1685,6 +1740,10 @@ Valyrakis, M., P.~Diplas, C.~L. Dancey, K.~Greer, and A.~O. Celik, {Role of
 {Van Den Broeck}, C., {On the relation between white shot noise, Gaussian white
   noise, and the dichotomic Markov process}, {\it Journal of Statistical
   Physics\/}, {\it 31\/}, 467--483, 1983.
+
+\bibitem[{{\it {Van den Broeck}\/}(1990)}]{VanDenBroeck1990}
+{Van den Broeck}, C., {Taylor dispersion revisited}, {\it Physica A:
+  Statistical Mechanics and its Applications\/}, {\it 168\/}, 677--696, 1990.
 
 \bibitem[{{\it {Van Kampen}\/}(2007)}]{VanKampen2007}
 {Van Kampen}, N.~G., {\it {Stochastic Processes in Physics and Chemistry}\/},
