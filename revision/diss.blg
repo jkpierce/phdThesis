@@ -13,50 +13,50 @@ A level-1 auxiliary file: ch5langevin.aux
 A level-1 auxiliary file: ch6conc.aux
 The style file: ./agu.bst
 A level-1 auxiliary file: app_ch2.aux
-A level-1 auxiliary file: app_ch4.aux
 A level-1 auxiliary file: app_ch3.aux
+A level-1 auxiliary file: app_ch4.aux
 A level-1 auxiliary file: app_ch5.aux
 Reallocated field_info (elt_size=4) to 13487 items from 5000.
 Database file #1: biblio.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 You've used 369 entries,
             2789 wiz_defined-function locations,
-            3143 strings with 68349 characters,
-and the built_in function-call counts, 314585 in all, are:
-= -- 40372
-> -- 11572
+            3137 strings with 67895 characters,
+and the built_in function-call counts, 315131 in all, are:
+= -- 40447
+> -- 11579
 < -- 236
-+ -- 6461
-- -- 2782
-* -- 20953
-:= -- 30569
++ -- 6466
+- -- 2784
+* -- 20988
+:= -- 30610
 add.period$ -- 369
 call.type$ -- 369
-change.case$ -- 2020
+change.case$ -- 2018
 chr.to.int$ -- 363
 cite$ -- 1107
-duplicate$ -- 28188
-empty$ -- 14926
-format.name$ -- 3903
-if$ -- 63190
+duplicate$ -- 28244
+empty$ -- 14968
+format.name$ -- 3906
+if$ -- 63313
 int.to.chr$ -- 7
 int.to.str$ -- 1
 missing$ -- 392
 newline$ -- 1111
-num.names$ -- 1484
-pop$ -- 11193
+num.names$ -- 1485
+pop$ -- 11204
 preamble$ -- 1
 purify$ -- 1661
 quote$ -- 0
-skip$ -- 22590
+skip$ -- 22640
 stack$ -- 0
-substring$ -- 14932
-swap$ -- 24535
+substring$ -- 14967
+swap$ -- 24590
 text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 3213
 warning$ -- 0
-while$ -- 2011
+while$ -- 2013
 width$ -- 0
-write$ -- 4052
+write$ -- 4057

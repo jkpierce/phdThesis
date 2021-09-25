@@ -215,7 +215,7 @@ Today, there are two main complementary definitions of the bedload flux being ap
 
 The first definition is reminiscent of continuum mechanics and formulates the flux as a current of sediment across a control surface $S$ \citep{Furbish2012,Heyman2016,Ballio2014}: 
 \be q = \int_S c(\textbf{x},t)\textbf{u}\cdot d\textbf{S}. \label{eq:surfflux} \ee
-This definition involves the volumetric concentration $c$ of particles and their velocities at the instant they cross the control surface. These quantities require careful interpretation because bedload particles do not constitute a continuous field \citep{Furbish2012a}. Typically one represents the concentration as a sum of indicator or Dirac delta functions \citep[cf.][Sec. 8.5.1]{Gardiner1983}.
+This definition involves the volumetric concentration $c$ of particles and their velocites at the instant they cross the control surface. These quantities require careful interpretation because bedload particles do not constitute a continuous field \citep{Furbish2012a}. Typically one represents the concentration as a sum of indicator or Dirac delta functions \citep[cf.][Sec. 8.5.1]{Gardiner1983}.
 
 The second definition formulates the downstream flux in terms of the number of particles moving within a control volume $V$:
 \be \Phi = \frac{1}{L} \sum_{i\in V} u_i. \label{eq:controlflux}\ee
@@ -354,7 +354,7 @@ This averaging process in conjunction with transport fluctuations introduces sca
 A fundamental question raised by scale-dependence is how large averaging windows must be for sediment flux measurements to converge.
 To date, very few mathematical models have addressed this issue \citep[e.g.][]{Ancey2020a}.
 
-\subsection{Birth death models for bedload fluctuations}
+\subsection{Birth death models for bedload flucuations}
 \label{sec:birthdeath}
 The prevalence of large bedload fluctuations motivated \citet{Ancey2006,Ancey2008} to revisit Einstein's assumptions to develop a model of the bedload flux as a random process.
 They derived the probability distribution of the flux by counting the number of moving particles in a control volume, considering that this number changes through time as a result of particles migrating into the volume from upstream, entraining, depositing, and migrating out of the volume to downstream.
@@ -377,7 +377,7 @@ From Eq. \ref{eq:negbin}, the mean number of moving particles is
 \be \sigma_n^2 = \frac{\lambda \alpha}{(\alpha-\mu)^2}. \ee
 Owing to the collective entrainment process, particle activity fluctuations can be arbitrarily wide: $\sigma_n^2/\bra n \ket = \alpha/(\alpha-\mu)$, whereas in the absence of collective entrainment ($\mu=0$), the strength of fluctuations is always pinned to $\sigma_n^2/\bra n\ket = 1$, as the distribution Eq. \ref{eq:negbin} limits to a Poisson distribution where the mean and variance are equal \citep[e.g.][]{Ancey2006}.
 
-The probability distribution of the bedload flux can be computed by the control volume form Eq. \ref{eq:controlflux} given the probability distribution of particle velocities $P(u)$ under the assumption that velocity and activity are independent.
+The probability distribution of the bedload flux can be computed by the control volume form Eq. \ref{eq:controlflux} given the probability distribution of particle velocites $P(u)$ under the assumption that velocity and activity are independent.
 Writing $P_k(u)$ as the probability distribution for the sum of $k$ independent particle velocities ($u=u_1+\dots u_k$), the sediment flux probability distribution $P(\Phi)$ becomes \citep{Ancey2020a}
 \be P(\Phi) = L \sum_{k=0}^\infty P_k(L\Phi) P(n=k). \ee
 A limitation of this approach is that in reality, entrainment and deposition modify the bed elevation, which in turn modifies the rates of entrainment and deposition \citep{Sawai1987,Wong2007}. 

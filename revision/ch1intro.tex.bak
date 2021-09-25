@@ -56,7 +56,7 @@ These buried particles cannot move appreciably until those burying them have bee
 Individual trajectories of particles therefore involve a number of contributing processes which occur over different characteristic timescales, from seconds to years \citep{Pretzlav2021}, and each of these processes has so far evaded any exact description.
 
 \citet{Nikora2001,Nikora2002} provided a conceptual framework which helps to organize this complexity.
-Nikora et al. divided the downstream trajectories of individual particles into three timescales, or ``ranges", termed local, intermediate, and global.
+Nikora et al. divided the downstream tractories of individual particles into three timescales, or ``ranges", termed local, intermediate, and global.
 The local range refers to the period of motion between subsequent interactions with the bed, when the particles accelerate downstream within the turbulent flow.
 The intermediate range reflects particle motions through sequences of bed encounters, when particles alternately accelerate and decelerate. 
 The global range refers to particle trajectories through sequential entrainment and deposition events as they cycle between motion and rest.
@@ -80,9 +80,9 @@ As his interest was on the global range of particle motion when many motion-rest
 With this approximation, the downstream movement of sediment becomes an alternate cycle of instantaneous steps of random length and rests of random duration. 
 Implicitly, this concept of sediment trajectories assumes that movement velocities are infinite.
 
-Einstein's experiments indicated that both step lengths and resting times were well-described by exponential distributions, and the focus of his PhD was to find the probability density $P(x,t)$ that a particle had traveled a net distance $x$ after a time $t$ has elapsed. In the course of this research, Einstein formulated an example of what is now called the continuous time random walk, but this approach not formalized until much later \citep{Montroll1965}. In Earth science, random walks have been widely applied to hydrologic problems \citep{Berkowitz2006}, but their application to surface processes remains relatively uncommon \citep[e.g.][]{Schumer2009}.
+Einstein's experiments indicated that both step lengths and resting times were well-described by exponential distributions, and the focus of his PhD was to find the probability density $P(x,t)$ that a particle had travelled a net distance $x$ after a time $t$ has elapsed. In the course of this research, Einstein formulated an example of what is now called the continuous time random walk, but this approach not formalized until much later \citep{Montroll1965}. In Earth science, random walks have been widely applied to hydrologic problems \citep{Berkowitz2006}, but their application to surface processes remains relatively uncommon \citep[e.g.][]{Schumer2009}.
 
-Einstein's assumptions imply that if the position of a single sediment particle at a given time is $x(t)$, the assumptions of infinite movement velocity, random resting durations, and random movement distances between entrainment and deposition (step lengths) can be written
+Einstein's assumptions imply that if the position of a single sediment particle at a given time is $x(t)$, the assumptions of infinite movement velocity, random resting durations, and random movement distances between entrainment and depositon (step lengths) can be written
 \be \dot{x}(t) = \mu(t), \label{eq:einlangevin}\ee
 where $\dot{x} = dx/dt$, and $\mu(t)$ is a Poisson pulse noise \citep{VanDenBroeck1983}, which is essentially a sequence of pulses having random heights with mean height $\ell$ (the mean step length), and random locations in time with mean separation $1/k_E$ (the mean resting time, interpreted as the reciprocal of the entrainment rate $k_E$).
 A particular realization of this pulsed noise can be written
@@ -175,7 +175,7 @@ Another category of models describes bedload particle velocities using Langevin 
 
 Experimental studies on bedload velocities have provided two major conclusions for the shape of the particle velocity distribution. One subset of observations shows that bedload velocities follow exponential distributions \citep{Lajeunesse2010,Furbish2012,Fathel2015}, and another subset shows Gaussian distributions \citep{Martin2012,Ancey2014,Heyman2016}.
 
-\citet{Fan2014} set out to describe exponentially-distributed bedload particle velocities with the Langevin equation
+\citet{Fan2014} set out to describe exponenentially-distributed bedload particle velocities with the Langevin equation
 \be \dot{u}(t) = -\Delta \text{sgn}(u) + F + \sqrt{2D}\xi(t). \label{eq:fanlangevin}\ee
 This equation drives the particle velocity $u$ by a fluid drag $F + \sqrt{2D} \xi(t)$, where $F$ is a constant, $D$ is a diffusivity that characterizes the magnitude of drag fluctuations, and $\xi(t)$ is a Gaussian white noise with unit variance and vanishing mean \citep{Gardiner1983}.
 This drag is resisted by a heuristic Coulomb friction term $-\Delta \text{sgn}(u)$, introduced as a proxy for particle-bed collisions. This model may have been inspired by models of Brownian motion with Coulomb friction in the physics literature \citep[e.g.][]{DeGennes2005,Touchette2010,Menzel2011}.
@@ -185,7 +185,7 @@ implying that the steady-state velocity distribution ($\pt P(x,t) = 0$) provided
 \be P(u) = \frac{\Delta^2-F^2}{2\Delta D}\exp\Big(-\frac{-\Delta |u| + F u}{D}\Big).\ee
 This is the (two-sided) exponential distribution observed in one subset of experiments.
 
-\citet{Ancey2014} formulated a Langevin equation to describe the Gaussian velocity distributions observed in the other subset of experiments. They wrote for the stream-wise velocity 
+\citet{Ancey2014} formulated a Langevin equation to describe the Gaussian velocity distributions observed in the other subset of experiments. They wrote for the streamwise velocity 
 \be t_r \dot{u}(t) = -(U-u) + \sqrt{2D}\xi(t),\ee
 where $U$ represents the mean velocity of particles, $D$ characterizes the magnitude of velocity fluctuations, and $\xi(t)$ is again a Gaussian white noise with vanishing mean and unit variance. The timescale $t_r$ is a relaxation time over which velocity fluctuations decay. This time, the Fokker-Planck equation is
 \be \frac{\partial}{\partial t} P(u,t) = -\frac{\partial}{\partial u}\Big[\frac{U-u}{t_r}P\Big] + \frac{D}{t_r^2}\frac{\partial^2 P}{\partial u^2},\ee 
@@ -215,7 +215,7 @@ Today, there are two main complementary definitions of the bedload flux being ap
 
 The first definition is reminiscent of continuum mechanics and formulates the flux as a current of sediment across a control surface $S$ \citep{Furbish2012,Heyman2016,Ballio2014}: 
 \be q = \int_S c(\textbf{x},t)\textbf{u}\cdot d\textbf{S}. \label{eq:surfflux} \ee
-This definition involves the volumetric concentration $c$ of particles and their velocities at the instant they cross the control surface. These quantities require careful interpretation because bedload particles do not constitute a continuous field \citep{Furbish2012a}. Typically one represents the concentration as a sum of indicator or Dirac delta functions \citep[cf.][Sec. 8.5.1]{Gardiner1983}.
+This definition involves the volumetric concentration $c$ of particles and their velocites at the instant they cross the control surface. These quantities require careful interpretation because bedload particles do not constitute a continuous field \citep{Furbish2012a}. Typically one represents the concentration as a sum of indicator or Dirac delta functions \citep[cf.][Sec. 8.5.1]{Gardiner1983}.
 
 The second definition formulates the downstream flux in terms of the number of particles moving within a control volume $V$:
 \be \Phi = \frac{1}{L} \sum_{i\in V} u_i. \label{eq:controlflux}\ee
@@ -354,7 +354,7 @@ This averaging process in conjunction with transport fluctuations introduces sca
 A fundamental question raised by scale-dependence is how large averaging windows must be for sediment flux measurements to converge.
 To date, very few mathematical models have addressed this issue \citep[e.g.][]{Ancey2020a}.
 
-\subsection{Birth death models for bedload fluctuations}
+\subsection{Birth death models for bedload flucuations}
 \label{sec:birthdeath}
 The prevalence of large bedload fluctuations motivated \citet{Ancey2006,Ancey2008} to revisit Einstein's assumptions to develop a model of the bedload flux as a random process.
 They derived the probability distribution of the flux by counting the number of moving particles in a control volume, considering that this number changes through time as a result of particles migrating into the volume from upstream, entraining, depositing, and migrating out of the volume to downstream.
@@ -377,7 +377,7 @@ From Eq. \ref{eq:negbin}, the mean number of moving particles is
 \be \sigma_n^2 = \frac{\lambda \alpha}{(\alpha-\mu)^2}. \ee
 Owing to the collective entrainment process, particle activity fluctuations can be arbitrarily wide: $\sigma_n^2/\bra n \ket = \alpha/(\alpha-\mu)$, whereas in the absence of collective entrainment ($\mu=0$), the strength of fluctuations is always pinned to $\sigma_n^2/\bra n\ket = 1$, as the distribution Eq. \ref{eq:negbin} limits to a Poisson distribution where the mean and variance are equal \citep[e.g.][]{Ancey2006}.
 
-The probability distribution of the bedload flux can be computed by the control volume form Eq. \ref{eq:controlflux} given the probability distribution of particle velocities $P(u)$ under the assumption that velocity and activity are independent.
+The probability distribution of the bedload flux can be computed by the control volume form Eq. \ref{eq:controlflux} given the probability distribution of particle velocites $P(u)$ under the assumption that velocity and activity are independent.
 Writing $P_k(u)$ as the probability distribution for the sum of $k$ independent particle velocities ($u=u_1+\dots u_k$), the sediment flux probability distribution $P(\Phi)$ becomes \citep{Ancey2020a}
 \be P(\Phi) = L \sum_{k=0}^\infty P_k(L\Phi) P(n=k). \ee
 A limitation of this approach is that in reality, entrainment and deposition modify the bed elevation, which in turn modifies the rates of entrainment and deposition \citep{Sawai1987,Wong2007}. 

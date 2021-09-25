@@ -7,35 +7,33 @@
 \section{Calculation of the distribution function}
 \label{sec:appendixA}
 
-Owing to the convolution structure  of manuscript equations (1-3), their solution is a formidable problem.
+Owing to the convolution structure  of Eqs. \ref{eq:g1} and \ref{eq:g2}, their solution is a formidable problem.
 Luckily, we have the device of Laplace transforms.
-These project integro-differential equations into an alternate space in which convolutions are unraveled \citep[e.g.,][]{Arfken1985}.
+These project integro-differential equations into an alternate space in which convolutions are unraveled \citep[e.g.][]{Arfken1985}.
 The double Laplace transform of a joint probability distribution $p(x,t)$ is defined by 
 \be \tilde{p}(\eta,s) = \int_0^\infty dx e^{-\eta x}\int_0^\infty dt e^{-st} p(x,t). \label{eq:doubletransform}\ee
-The Laplace-transformed moments of $x$ are linked to derivatives of the double transformed distribution (Eq. \ref{eq:doubletransform}) \citep[cf.,][]{Berezhkovskii2002}.
+The Laplace-transformed moments of $x$ are linked to derivatives of the double-transformed distribution Eq. \ref{eq:doubletransform} \citep[cf.][]{Berezhkovskii2002}.
 Eq. (\ref{eq:doubletransform}) implies
 \be \bra \tilde{x}(s)^k \ket = (-)^k\partial_\eta^k \tilde{p}(\eta,s)\Big|_{\eta=0}.\label{eq:momenttrick}\ee
-The operator $\bra \circ \ket$ denotes the ensemble average \citep[e.g.,][]{Kittel1958}.
-This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.,][]{Arfken1985}. This is a powerful tool, since we can use it to derive the positional variance without integrating the distribution in equation (7) of the manuscript.
+This means the variance of position can be derived as as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}.
 
-Double transforming manuscript equations (1-3) using the definition Eq. \ref{eq:doubletransform} gives
-
+Double transforming Eqs. \ref{eq:g1} using the definition Eq. \ref{eq:doubletransform} gives
 \begin{alignat}{2}
-	&\tom_{1T}(\eta,s) &&= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s),\\
-	&\tom_{1F}(\eta,s) &&= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa),\\
-	&\tom_2(\eta,s) &&= \theta_2 \tg_2(\eta,s) + \tom_{1F}(\eta,s)\tg_2(\eta,s).
+	&\tom_{0}(\eta,s) &&= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1}(\eta,s),\\
+	&\tom_{1}(\eta,s) &&= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa),\\
+	&\tom_2(\eta,s) &&= \theta_2 \tg_2(\eta,s) + \tom_{1}(\eta,s)\tg_2(\eta,s).
 \end{alignat}
 This algebraic system solves for 
 \begin{alignat}{2}
-	&\tom_{1T}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\}, \label{eq:A} \\
-	&\tom_{1F}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa),\\
+	&\tom_{0}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\}, \label{eq:A} \\
+	&\tom_{1}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa),\\
 	&\tom_{2}(\eta,s) &&= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s). 
 \end{alignat}
-Double transforming manuscript equations (4-6) gives
+Double transforming Eqs. \ref{eq:g2} gives
 \begin{align}
-	\tp_0(\eta,s) &= \frac{1}{s}\tom_{1T}(\eta,s),\\
+	\tp_0(\eta,s) &= \frac{1}{s}\tom_{0}(\eta,s),\\
 	\tp_1(\eta,s) &= \theta_1 \tG_1(\eta,s) + \tom_2(\eta,s) \tG_1(\eta,s),\\
-	\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1F}(\eta,s)\tG_2(\eta,s).\label{eq:Z}
+	\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1}(\eta,s)\tG_2(\eta,s).\label{eq:Z}
 \end{align}
 The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$. Using Eqs. \ref{eq:A}-\ref{eq:Z} this becomes, in the double Laplace representation, 
 \begin{multline}
@@ -43,77 +41,80 @@ The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$. Using Eqs. \
 	+\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}. \\
 	\label{eq:lap}
 \end{multline}
-Plugging the propagators outlined in manuscript equations (8-9) into Eq. \ref{eq:lap} gives 
+Plugging the propagators outlined in Sec. \ref{sec:solution} into Eq. \ref{eq:lap} gives 
 \be \tilde{p}(\eta,s) = \frac{1}{s}\frac{(s+\kappa + k')s  + \theta_1(s+\kappa )\eta v+ \kappa k_2}{(s+\kappa+k_1)\eta v+(s+\kappa+k')s + \kappa k_2}.\label{eq:nicedist}\ee
-In this equation, $k'=k_1+k_2$, and we have used the normalization requirement of the initial probabilities: $\theta_1 + \theta_2 = 1.$
+In this equation, $k'=k_1+k_2$, and the normalization requirement of the initial probabilities $\theta_1 + \theta_2 = 1$ has been incorporated.
 The double inverse transform of this equation provides the distribution $p(x,t)$.
-We invert the transform over $\eta$ first.
-Using the results 15.103 (transform of exponential), 15.123 (transform of derivative), and 15.141 (transform of Dirac delta function) from \citet{Arfken1985} provides 
+The transform over $\eta$ is inverted first.
+Using the results [15.103] (transform of exponential), [15.123] (transform of derivative), and [15.141] (transform of Dirac delta function) from \citet{Arfken1985} provides 
 \begin{multline} \tp(x,s) = \theta_1 \frac{s+\kappa}{s(s+\kappa + k_1)}\delta(x) + \frac{1}{v} \Big(\frac{(s+\kappa+k')s+\kappa k_2}{s(s+\kappa+k_1)} \\- \frac{\theta_1(s+\kappa)[s(s+\kappa+k_1)+\kappa k_2]}{s(s+\kappa+k_1)^2}\Big)
 	\exp\Big[-\frac{(s+\kappa+k')s+\kappa k_2}{s+\kappa+k_1}\frac{x}{v}\Big].\end{multline}
-Inverting the remaining transform over $s$, applying results 15.152 (substitution), 15.164 (translation), and 15.175 (transform of $te^{kt}$) from \citet{Arfken1985}, and defining the shorthand notations $\tau = k_1(t-x/v)$, $\xi = k_2 x/v$, and $\Omega = (\kappa + k_1)/k_1$, gives the simpler form 
+Inverting the remaining transform over $s$, applying results [15.152] (substitution), [15.164] (translation), and [15.175] (transform of $te^{kt}$) from \citet{Arfken1985}, and defining the shorthand notations $\tau = k_1(t-x/v)$, $\xi = k_2 x/v$, and $\Omega = (\kappa + k_1)/k_1$, gives the simpler form 
 \begin{multline}
 	p(x,t) = \theta_1\Big[1-\frac{k_1}{\kappa + k_1}\big(1-e^{-(\kappa + k_1)t}\big)\Big]\delta(x) + \frac{1}{v}\exp[\Omega \tau - \xi]\\
 	\times \El^{-1}\Big\{\Big( \theta_2 + \frac{\theta_1k_1+\theta_2 k_2}{s}+\frac{\theta_1k_1k_2}{s^2} + \frac{\theta_2\kappa k_2}{s(s-\kappa-k_1)} + \frac{\theta_1\kappa k_1 k_2}{s^2(s-\kappa-k_1)}\Big)\\
 	\times\exp\big[\frac{k_1 \xi}{s}\big];\tau/k_1\Big\}.
 \end{multline}
-Using entries 2.2.2.1, 2.2.2.8, and 1.1.1.13 from \citet{Prudnikov1992a} in conjunction with the definition of the Marcum Q-function $ \mathcal{P}_\mu(x,t)$ \citep{Temme1996}, and inserting the Heaviside functions to account for the fact that grains can neither travel backwards nor at speeds exceeding $v$, we finally arrive at manuscript equation (10) for the joint distribution $p(x,t)$.
+Using entries [2.2.2.1], [2.2.2.8], and [1.1.1.13] from \citet{Prudnikov1992a} in conjunction with the definition of the generalized Marcum Q-function $ \mathcal{Q}_\mu(x,t)$ \citep{Temme1996}, and inserting the Heaviside functions to account for the fact that grains can neither travel backwards nor at speeds exceeding $v$, then finally produces Eq. \ref{eq:pdf} for the joint distribution $p(x,t)$.
 
 \section{Calculation of the moments}
 \label{sec:appendixB}
 
-We compute the first two moments of position $x$ and ultimately its variance using Eq. \ref{eq:momenttrick}. The first two derivatives of the double Laplace transformed distribution Eq. \ref{eq:nicedist} are
+The first two moments of position $x$ and ultimately the variance are computed using Eq. \ref{eq:momenttrick}. The first two derivatives of the double Laplace-transformed distribution Eq. \ref{eq:nicedist} are
 \be \partial_\eta \tp(\eta,s) = -v \frac{1}{s}\frac{[(s+\kappa + k')s + \kappa k_2][\theta_2(s+\kappa) + k_1]}{[\eta v(s+\kappa +k_1) + (s+ \kappa + k')s+\kappa k_2]^2},\ee
 \be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{(s+\kappa+k_1)[(s+\kappa + k')s+\kappa k_2][\theta_2(s+\kappa) + k_1]}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}.\ee
-Evaluating these at $\eta=0$ and applying Eq. \ref{eq:momenttrick} provides the Laplace transformed moments
+Evaluating these at $\eta=0$ and applying Eq. \ref{eq:momenttrick} provides the Laplace-transformed moments
 \be  \frac{\bra\tilde{x}(s)\ket} {v} = \frac{1}{s}\frac{\theta_2(s+\kappa)+k_1}{(s+\kappa+k')s+\kappa k_2} = \frac{1}{s} \frac{\theta_2(s+\kappa)+k_1}{(s+a+b)(s+a-b)}\label{eq:lapmean},\ee
-\be \frac{\bra \tilde{x}^2(s) \ket}{2v^2} = \frac{1}{s} \frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{[(s+\kappa+k')s+\kappa k_2]^2}=  \frac{1}{s}\frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{(s+a+b)^2(s+a-b)^2}.\label{eq:lapsecondmom}\ee
+\begin{multline} \frac{\bra \tilde{x}^2(s) \ket}{2v^2} = \frac{1}{s} \frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{[(s+\kappa+k')s+\kappa k_2]^2} \\=  \frac{1}{s}\frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{(s+a+b)^2(s+a-b)^2}.\label{eq:lapsecondmom}\end{multline}
 The parameters $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ were introduced to factorize the denominators.
-These equations can be inverted using the properties 15.164 (translation), 15.11.1 (integration), and 15.123 (differentiation) from  \citet{Arfken1985} after expansion in partial fractions.
+These equations can be inverted using the properties [15.164] (translation), [15.11.1] (integration), and [15.123] (differentiation) from  \citet{Arfken1985} after expansion in partial fractions.
 For the mean, the calculation is
 \begin{align}
+\begin{split}
 	\frac{2b}{v}\bra x \ket &= \big[\theta_2 + (k_1+\theta_2 \kappa)\int_0^t dt\big]\El^{-1}\Big\{ \frac{1}{s+a-b}-\frac{1}{s+a+b};t\Big\}\\
-	&= \Big[\theta_2 + \frac{k_1+\theta_2\kappa}{b-a}\Big]e^{(b-a)t} - \Big[\theta_2 - \frac{k_1+\theta_2\kappa}{a+b}\Big]e^{-(a+b)t} - \Big[\frac{k_1+\theta_2\kappa}{b-a} + \frac{k_1+\theta_2\kappa}{a+b}\Big].
+	&= \Big[\theta_2 + \frac{k_1+\theta_2\kappa}{b-a}\Big]e^{(b-a)t} - \Big[\theta_2 - \frac{k_1+\theta_2\kappa}{a+b}\Big]e^{-(a+b)t} \\
+ & \hspace{1cm}- \Big[\frac{k_1+\theta_2\kappa}{b-a} + \frac{k_1+\theta_2\kappa}{a+b}\Big].
+\end{split}
 \end{align}
-This equation rearranges to manuscript equation (11).
+This equation rearranges to Eq. \ref{eq:mean}.
 The second moment (Eq. \ref{eq:lapsecondmom}) is 
 \begin{multline}
-	\frac{2b^2}{v^2}\bra x^2 \ket = \Big[\theta_2(\delta(t) + \partial_t) + (\theta_2(2\kappa + k_1)+k_1) + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^t dt \Big] \\
-	\times \El^{-1}\Big\{ \frac{1}{(s+a-b)^2} + \frac{1}{(s+a+b)^2}-\frac{1}{b(s+a-b)}+\frac{1}{b(s+a+b)};t\Big\}.
+	\frac{2b^2}{v^2}\bra x^2 \ket = \Big[\theta_2(\delta(t) + \partial_t) + (\theta_2(2\kappa + k_1)+k_1) \\ + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^t dt \Big] \\
+	\times \El^{-1}\Big\{ \frac{1}{(s+a-b)^2} + \frac{1}{(s+a+b)^2} \\-\frac{1}{b(s+a-b)}+\frac{1}{b(s+a+b)};t\Big\}.
 \end{multline}
 This becomes 
 \begin{multline}
 	\frac{2b^3}{v^2}\bra x^2 \ket = \Big[\theta_2\partial_t + [\theta_2(2\kappa+k_1)+k_1] + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^tdt\Big]\\
 	\times \Big((bt-1)e^{(b-a)t}+(bt+1)e^{-(a+b)t}\Big)
 \end{multline}
-which evaluates to manuscript equation (12).
-Finally, $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2$ derives the variance in manuscript equation (13).
+which evaluates to Eq. \ref{eq:second}.
+Finally, $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2$ derives the variance in Eq. \ref{eq:var}.
 
 
 \section{Limiting behavior of the moments}
 \label{sec:appendixC}
 
-We determine the diffusion exponents $\gamma$ in the local, intermediate, and global ranges using the two limiting cases described in the discussion of the manuscript.
-Limit (1) is $\kappa \rightarrow 0$. We take this limit in Eqs. \ref{eq:lapmean} and \ref{eq:lapsecondmom} with initial condition $\theta_1=1$ to obtain
+The diffusion exponents $\gamma$ in the local, intermediate, and global ranges using the two limiting cases described in Sec. \ref{sec:amidonenow}.
+Limit (1) is $\kappa \rightarrow 0$. Taking this limit in Eqs. \ref{eq:lapmean} and \ref{eq:lapsecondmom} with initial condition $\theta_1=1$ obtains
 \begin{align}
 	\bra \tilde{x} \ket &= vk_1 \frac{1 }{s^2(s+k')}, \label{eq:li1}\\
 	\bra \tilde{x}^2 \ket &= 2v^2k_1 \frac{s+k_1}{s^3(s+k')^2}. \label{eq:li2}
 \end{align}
-Inverting these equations provides the variance
+Laplace inverting and combining these equations provides the variance
 \be \sigma_x^2 = 2v^2\frac{k_1}{k'^4}\Big(k_1\big[\frac{1}{2} - k'te^{-k't} - \frac{1}{2} e^{-2k't}\big] + k_2\big[-2+k't + (2+k't)e^{-k't}\big]\Big).\label{eq:li}\ee
 This result encodes two ranges of diffusion and can also be derived from the governing equations of the \citet{Lisle1998} and \citet{Lajeunesse2017} models.
 Expanding for small $t$ provides $\sigma_x^2(t) = v^2k_1t^3/3$ -- local range super-diffusion.
 Expanding for large $t$ provides $\sigma_x^2(t) = 2v^2k_1k_2t/k'^3$ -- intermediate range normal diffusion.
 
-We further investigate limit (1) for arbitrary initial conditions.
-By applying Tauberian theorems, we assert the $ t \rightarrow 0$ variance is determined by the $s\rightarrow \infty$ limits of Eqs. \ref{eq:lapmean} and \ref{eq:lapsecondmom} \citep[e.g.,][]{Weiss1994, Weeks1998}.  
+Limit (1) can be further investigated for arbitrary initial conditions.
+By applying Tauberian theorems, the $ t \rightarrow 0$ variance can be determined from the $s\rightarrow \infty$ limits of Eqs. \ref{eq:lapmean} and \ref{eq:lapsecondmom} \citep[e.g.][]{Weiss1994, Weeks1998}.  
 Expanding these equations in powers of $1/s$ and inverting the resulting transforms gives
 \begin{align} \bra x \ket &= v \theta_2 t + \frac{1}{2}v(\theta_1k_1-\theta_2k_2)t^2 + O(t^3),\\
 	\bra x^2 \ket &= v^2\theta_2 t^2 + \frac{1}{3}v^2(\theta_1k_1-2\theta_2k_2)t^3+ O(t^4).
 \end{align}
 This equation highlights the effect of initial conditions on the diffusion characteristics of the local range:
 \be \sigma_x^2(t) \sim v^2\theta_1\theta_2t^2 + \frac{1}{3}v^2(\theta_1k_1+\theta_2k_2)t^3.\label{eq:init}\ee
-We have taken only leading order terms for any option of $\theta_1$ and $\theta_2$.
+This equation includes only leading order terms for any option of $\theta_1$ and $\theta_2$.
 Eq. \ref{eq:init} shows local range exponent $\gamma=2$ when initial conditions are mixed (both are non-zero) and $\gamma=3$ when initial conditions are pure (one is zero).
 
 Limit (2) is $1/k_2 \rightarrow 0$ and $v\rightarrow \infty$ while $v/k_2 = l$. Under this limit, Eqs. \ref{eq:lapmean} and \ref{eq:lapsecondmom} provide
@@ -125,5 +126,5 @@ Inverting these equations and introducing the variables $c=lk_1$ (an effective v
 \be \sigma_x^2(t) = \frac{2D_d(1-e^{-\kappa t})}{\kappa} + \frac{(1-e^{-2\kappa t}-2e^{-\kappa t}\kappa t)c^2}{\kappa^2}. \label{eq:wuvar}\ee
 This is mathematically identical to the key result of \citet{Wu2019}.
 Expanding for small $t$ provides $\sigma_x^2(t) = 2D_d t$ -- intermediate range normal diffusion, while sending $t\rightarrow \infty$ provides $\sigma_x^2 = (2D_d\kappa + c^2)/\kappa^2$ -- a constant variance in the geomorphic range.
-The global range is characterized by competition between terms in Eq. \ref{eq:wuvar} and shows $2 \leq \gamma \leq 3$ depending on the ratio $k_1/\kappa$ \citep[cf.,][]{Wu2019}.
+The global range is characterized by competition between terms in Eq. \ref{eq:wuvar} and shows $2 \leq \gamma \leq 3$ depending on the ratio $k_1/\kappa$ \citep[cf.][]{Wu2019}.
 Finally, both Eqs. \ref{eq:li} and \ref{eq:wuvar} reduce to the Einstein result $\sigma_x^2(t) = 2D_d t$ in further simplified limits.

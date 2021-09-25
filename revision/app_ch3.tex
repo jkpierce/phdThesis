@@ -5,14 +5,14 @@
 \label{ch:gill}
 \section{Numerical simulation algorithm}
 \label{sec:arr}
-The Gillespie Stochastic Simulation Algorithm (SSA) generates exact realizations of a Markov random process from a sequence of random numbers.
+The Gillespie stochastic simulation algorithm (SSA) generates exact realizations of a Markov random process from a sequence of random numbers.
 It was originally developed for chemical physics by \citet{Gillespie1977} and is reviewed in \citet{Gillespie1991} and \citet{Gillespie2007}.
 The SSA hinges on the defining property of a Markov process. When the transition rates from one state to another are not dependent on the distant past, the process is Markov \citep{Cox1965}.
 The following sections demonstrate that the time intervals $\tau$ between subsequent transitions are exponentially distributed within the model of Ch. \ref{ch:ch3}. The SSA follows as a consequence of this property.
 
 \subsection{Times between transitions of any kind}
 The joint description of bedload transport and bed elevation changes is characterized by a set of states $(n,m)$ where $n$ and $m$ are integers.
-The description involves four possible transitions (migration in, entrainment, deposition, migration out) with rates given in Eqs. (\ref{eq:rate1}-\ref{eq:rate4}).
+The description involves four possible transitions (migration in, entrainment, deposition, migration out) with rates given in Eqs. \ref{eq:rate1}-\ref{eq:rate4}.
 
 From the state $(n,m)$, the rate (probability per unit time) for any transition to occur is the sum over all possibilities:
 \begin{multline} A(n,m) = R_{MI}(n+1,m|n,m) + R_E(n+1,m-1|n,m) \\+ R_D(n-1,m+1|n,m) + R_{MO}(n-1,m|n,m).\end{multline}
@@ -20,7 +20,7 @@ Using this, the probability that no transition occurs from the state $(n,m)$ in 
 \be Q(\tau+\delta \tau|n,m) = \big[1-A(n,m)\delta \tau\big]Q(\tau|n,m).\ee
 Taking $\delta\tau \rightarrow 0 $ produces a master equation $\frac{d}{d\tau}Q(\tau|n,m) = -A(n,m)Q(\tau|n,m)$, from which it follows that the time $\tau$ between subsequent transitions is distributed as 
 \be Q(\tau|n,m) = A(n,m)e^{-A(n,m)\tau}. \label{eq:exp}\ee
-This equation demonstrates that the time $\tau$ to the next transition from a state $(n,m)$ is exponentially distributed with mean value $\bar{\tau} = 1/A(n,m).$ This means if the stochastic process transitioned to the state $(n,m)$ at a time $t$, the next transition will occur at a time $t+\tau$ with $\tau$ a random variable drawn from the exponential distribution \ref{eq:exp}.
+This equation demonstrates that the time $\tau$ to the next transition from a state $(n,m)$ is exponentially distributed with mean value $\bar{\tau} = 1/A(n,m).$ This means if the stochastic process transitioned to the state $(n,m)$ at a time $t$, the next transition will occur at a time $t+\tau$ with $\tau$ a random variable drawn from the exponential distribution in Eq. \ref{eq:exp}.
 
 \subsection{Selection of transitions that occur}
 \label{sec:brr}
@@ -38,7 +38,7 @@ Forming cumulative sums of the four ratios partitions the unit interval $[0,1]$ 
 
 In summary, to step the process through a single transition, the SSA draws the time interval to the next transition from the distribution (Eq. \ref{eq:exp}), draws a uniform random number from $[0,1]$, then uses this uniform random to select the transition that occurs from the cumulative sum of the ratios in Eq. \ref{eq:rel}. Iterating this random number generation and selection process simulates exact realizations of the stochastic process. These are series of $n$ and $m$ through time from which any statistics of interest can be calculated.
 
-\subsection{Pseudo code for the Gillespie SSA}
+\subsection{Pseudo-code for the Gillespie SSA}
 \label{sec:crr}
 Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model parameters used in Eqs. \ref{eq:rate1}-\ref{eq:rate4}, and the desired simulation duration $t_\text{max}$. The SSA uses these inputs to generate timeseries of $n$ and $m$ as follows:
 
@@ -72,7 +72,7 @@ Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model
 	\EndWhile
 \end{algorithmic}
 
-\section{Approximate solutions of the Master equation}
+\section{Approximate solutions of the master equation}
 
 \subsection{Mean field solution of particle activity}
 
@@ -84,7 +84,7 @@ This can be solved by introducing the generating function \citep{Cox1965} $G(x) 
 which is separable and integrates for 
 \be G(x) = \Bigg( \frac{\gamma + \sigma -\mu}{\gamma + \sigma - \mu x}\Bigg)^{\frac{\nu + \lambda}{\mu}}\ee
 after applying the normalization condition $G(1)=1$.
-From the definition of $G$ it follows that $A(n) = \frac{1}{n!} \frac{d^nG}{dx^n}|_{x=0}$, giving the negative binomial distribution of particle activity demonstrated by \citet{Ancey2008} and stated in Eq. \ref{eq:ancey} and introduced originally in Sec. \ref{sec:birthdeath}.
+From the definition of $G$ it follows that $A(n) = \frac{1}{n!} \frac{d^nG}{dx^n}|_{x=0}$, giving the negative binomial distribution of particle activity demonstrated by \citet{Ancey2008}, stated in Eq. \ref{eq:ancey}, and introduced originally in Sec. \ref{sec:birthdeath}.
 
 \subsection{Mean field solution of bed elevations}
 \label{sec:drr}
@@ -93,12 +93,12 @@ The negative binomial distribution provides $\langle n |m \rangle = \langle n \r
 Identifying $E=\lambda + \mu \langle n \rangle$ and $D = \sigma \langle n \rangle$ and incorporating $E=D$ gives Eq. \ref{eq:ou}:
 \be 0 = [1+\kappa(m+1)]M(m+1) + [1-\kappa(m-1)]M(m-1) - 2M(m).\ee
 
-This can be solved using the Fokker-Planck expansion \citep{Gardiner1983} that effectively converts this discrete Master equation for $m$ into a diffusion equation for the quasi-continuous variable $z=z_1 m$. This works since $z_1$ is small. Introducing $z$ and writing $\overline{\kappa}=\kappa/z_1$ gives
+This can be solved using the Fokker-Planck expansion \citep{Gardiner1983} that effectively converts this discrete master equation for $m$ into a diffusion equation for the quasi-continuous variable $z=z_1 m$. This works since $z_1$ is small. Introducing $z$ and writing $\overline{\kappa}=\kappa/z_1$ gives
 \be 0 = [1+\overline{\kappa}(z+z_1)]M(z+z_1) + [1-\overline{\kappa}(z-z_1)]M(z-z_1) - 2M(z).\ee
 $\overline{\kappa}$ should not depend on $z_1$ since the magnitude of the feedbacks between bed elevations and entrainment and deposition rates depends on elevation changes, and not on the size of grains or the length of the control volume.
 Expanding the entire first and second terms to second order $z_1$ provides the Fokker-Planck equation
 \be 0 = -2\overline{\kappa}z_1[zM(z)]' + z_1^2 M''(z). \ee
-Taking into account that this distribution should be normalizable, $\lim_{z\rightarrow \pm \infty}M(z) = 0$, the solution is
+Taking into account that this distribution should be normalizable, \newline $\lim_{z\rightarrow \pm \infty}M(z) = 0$, the solution is
 \be M = M_0e^{-\kappa (z/z_1)^2}\ee
 as provided in Ch. \ref{ch:ch3}.
 

@@ -5,7 +5,7 @@
 
 Many environmental problems including channel morphology \citep{Hassan2017}, contaminant transport \citep{Macklin2006}, and aquatic habitat restoration \citep{Gaeuman2017} rely on our ability to predict the diffusion characteristics of coarse sediment tracers in river channels.
 Diffusion is quantified by the time dependence of the positional variance $\sigma_x^2$ of a group of tracers.
-With the scaling $\sigma_x^2 \propto t$, the diffusion is said to be normal, since this is found in the classic problems \citep{Taylor1920}.
+With the scaling $\sigma_x^2 \propto t$, the diffusion is said to be normal, since this is found in the classic problems \citep{Einstein1905}.
 However, with the scaling $\sigma_x^2 \propto t^\gamma$ with $\gamma \neq 1$, the diffusion is said to be anomalous \citep{Sokolov2012}, with $\gamma>1$ defining super-diffusion and $\gamma<1$ defining sub-diffusion \citep{Metzler2000}.
 \citet{Einstein1937} developed one of the earliest models of bedload diffusion to describe a series of flume experiments \citep{Ettema2004}.
 Interpreting individual bedload trajectories as a sequence of random steps and rests, Einstein originally concluded that a group of bedload tracers undergoes normal diffusion.
@@ -20,12 +20,12 @@ Experiments support the Nikora et al. conclusion of multiple scaling ranges \cit
 This lack of consensus probably stems from resolution issues.
 For example, experiments have tracked only moving grains, resolving the local range \citep{Furbish2012,Furbish2017,Fathel2016}; grains resting on the bed surface between movements, resolving the intermediate range \citep{Einstein1937,Yano1969,Nakagawa1976}; grains either moving or resting on the bed surface, likely resolving local and intermediate ranges \citep{Martin2012}; or grains resting on the surface after floods, likely resolving the global range \citep{Phillips2013,Bradley2017}. 
 At long timescales, a significant fraction of tracers become buried under the bed surface \citep{Hassan1991,Hassan2013,Ferguson2002a,Haschenburger2013,Papangelakis2016}, meaning burial dominates long term diffusion characteristics \citep{Bradley2017,Martin2014,Voepel2013}, possibly at global or even longer ``geomorphic'' timescales \citep{Hassan2017} than Nikora et al. originally considered.
-As a result, three diffusion ranges can be identified by patching together multiple datasets \citep{Zhang2012,Nikora2002}, but they are not resolved by any one dataset.
+As a result, three diffusion ranges can be identified by patching together multiple data-sets \citep{Zhang2012,Nikora2002}, but they are not resolved by any one data-set.
 
 Newtonian bedload trajectory models also show multiple diffusion ranges, although they also do not provide consensus on the expected number of ranges or their scaling properties. 
 The majority of these models predict two ranges of diffusion (local and intermediate) without predicting a global range.
 Among these, \citet{Nikora2001a} used synthetic turbulence \citep{Kraichnan1970} with a discrete element method for the granular phase \citep{Cundall1979}; \citet{Bialik2012} used synthetic turbulence with a random collision model \citep{Sekine1992}; and \citet{Fan2016} used a Langevin equation with probabilistic rests.
-To our knowledge, only \citet{Bialik2015} have claimed to capture all three ranges from a Newtonian approach.
+To my knowledge, only \citet{Bialik2015} have claimed to capture all three ranges from a Newtonian approach.
 They incorporated a second resting mechanism into their earlier model \citep{Bialik2012}, implicitly suggesting that three diffusion ranges could result from two distinct timescales of sediment rest.
 However, Newtonian approaches have not evaluated the effect of sediment burial on tracer diffusion, probably due to the long simulation timescales required. 
 
@@ -46,10 +46,10 @@ Below, I develop and solve the model in Sec. \ref{sec:model}. Then, I discuss th
 \label{sec:model}
 \subsection{Assumptions of the burial model}
 \label{sec:assumptions}
-Particle trajectories are formulated as a three-state random walk where the states are motion, surface rest, and burial. These states are labelled as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
+Particle trajectories are formulated as a three-state random walk where the states are motion, surface rest, and burial. These states are labeled as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
 The target is the probability distribution $p(x,t)$ to find a grain at position $x$ and time $t$ if it is known to have started with the initial distribution $p(x,0)=\delta(x)$.
 Times spent moving or resting on the surface are characterized by exponential distributions $\psi_M(t)=k_2e^{-k_2 t}$ and $\psi_1(t) = k_1e^{-k_1t}$, since numerous experiments show thin-tailed distributions for these quantities \citep{Fathel2015,Roseberry2012,Einstein1937,Ancey2006,Martin2012}. The end results will not be contingent on the specific distributions chosen, since all thin-tailed distributions provide similar diffusion characteristics in random walks \citep{Weiss1994,Weeks1998}.
-Grains in motion are considered to have a characteristic velocity $V$ \citep{Lisle1998,Lajeunesse2017}, and burial is modeled as long lasting enough to be effectively permanent \citep{Wu2019}, with grains resting on the surface having a probability per unit time $\kappa$ to become buried.
+Grains in motion are considered to have a characteristic velocity $v$ \citep{Lisle1998,Lajeunesse2017}, and burial is modeled as long lasting enough to be effectively permanent \citep{Wu2019}, with grains resting on the surface having a probability per unit time $\kappa$ to become buried.
 This means $\Phi(t) = e^{-\kappa t}$ represents the probability that a grain is not buried after resting for a time $t$, while $1-\Phi(t)$ represents the probability that it is buried.
 The initial conditions are specified with probabilities $\theta_1$ and $\theta_2$ to be in rest or motion at $t=0$. Normalization requires $\theta_1+\theta_2=1$.
 
@@ -60,8 +60,8 @@ Denoting by $g_{ij}(x,t)$ the probability for a particle to move a distance $x$ 
 Defining another set of probabilities $G_i(x,t)$ that a particle moves by a distance $x$ in a time $t$ within the state $i$ and possibly remains within the state, a similar sums over paths for the probabilities to be in the state $i$ at $x$, $t$ produces: 
 \be p_i(x,t) = \theta_i G_i(x,t) + \sum_{k=0}^2 \int_0^x dx' \int_0^t dt' \om_{ki}(x',t')G_i(x-x',t-t').\label{eq:g2}\ee
 Finally, the overall probability to be at position $x$ at time $t$ is
-\be p(x,t) = \sum_{k=0}^2 p_k(x,t) \ee
-This joint density is completely determined from the solutions of Eqs. \ref{eq:g1}-\ref{eq:g2} given specification of the distributions $g_{ij}$ and $G_i$.
+\be p(x,t) = \sum_{k=0}^2 p_k(x,t). \ee
+This joint density is completely determined from the solutions of Eqs. \ref{eq:g1} and \ref{eq:g2} given specification of the distributions $g_{ij}$ and $G_i$.
 
 
 \subsection{Joint probability distribution of particle position with burial}
@@ -73,10 +73,10 @@ Since burial is quasi-permanent, all other $g_{ij} = 0$.
 The $G_i$ are constructed in the same way except using the cumulative probabilities $\int_t^\infty dt'\psi_i(t) = e^{-k_i t}$, since these characterize motions and rests that are ongoing \citep{Weiss1994}.
 Using the cumulative probabilities provides $G_1(x,t) = \delta(x)e^{-k_1t}$ and $G_2(x,t) = \delta(x-vt)e^{-k_2 t}$.
 
-Equations \ref{eq:g1}-\ref{eq:g2} with these $g_{ij}$ and $G_i$ are solved using Laplace transforms in space and time $(x,t \rightarrow 
+Eqs. \ref{eq:g1} and \ref{eq:g2} with these $g_{ij}$ and $G_i$ are solved using Laplace transforms in space and time $(x,t \rightarrow 
 \eta,s).$ This method, similar to \citet{Weeks1998}, unravels the convolution structure of these equations, eventually producing
 \be \tilde{p}(\eta,s) = \frac{1}{s}\frac{(s+\kappa + k')s  + \theta_1(s+\kappa )\eta v+ \kappa k_2}{(s+\kappa+k_1)\eta v+(s+\kappa+k')s + \kappa k_2}, \label{eq:diffnicedist}\ee
-where $k' = k_1 + k_2$. Inverting this result using known Laplace transforms \citep{Prudnikov1992a,Arfken1985} obtains
+where $k' = k_1 + k_2$. As explained in appendix Sec. \ref{sec:appendixA}, inverting this result using known Laplace transforms \citep{Prudnikov1992a,Arfken1985} obtains
 \begin{align}
 	\begin{split}
 		p(x,t) = \theta_1&\Big[1-\frac{k_1}{\kappa+k_1}\Big(1-e^{-(\kappa+k_1)t}\Big)\Big]\delta(x) \\ &+ \frac{1}{v}e^{-\Omega \tau - \xi}\Big(\theta_1\Big[k_1\mathcal{I}_0\big(2\sqrt{\xi\tau}\big) + k_2\sqrt{\frac{\tau}{\xi}}\mathcal{I}_1\big(2\sqrt{\xi\tau}\big)\Big] \\ 
@@ -93,11 +93,11 @@ Because resting grains can become buried with an exponential probability, while 
 
 \begin{figure}[!htbp]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch4/pdf-plot.png}
-	\caption{Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta_1=1$, $\theta_2=0$). The solid lines are the analytical distribution in Eq. \ref{eq:pdf}), while the points are numerically simulated, showing the correctness of our derivations. Colors pertain to different times. Units are unspecified, since the aim is to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa=0$ -- no burial. In this case, the joint distribution tends toward Gaussian at large times \citep{Einstein1937,Lisle1998}. Panel (b) shows the case when grains have rate $\kappa = 0.01$ to become buried while resting. Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian.
+	\caption{Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta_1=1$, $\theta_2=0$). The solid lines are the analytical distribution in Eq. \ref{eq:pdf}), while the points are numerically simulated, showing the correctness of the derivations. Colors pertain to different times. Units are unspecified, since the aim is to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa=0$ -- no burial. In this case, the joint distribution tends toward Gaussian at large times \citep{Einstein1937,Lisle1998}. Panel (b) shows the case when grains have rate $\kappa = 0.01$ to become buried while resting. Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian.
 		\label{fig:diffpdfs}}
 \end{figure}
 
-Figure \ref{fig:diffpdfs} depicts the distribution (Eq. \ref{eq:pdf}) alongside simulations generated by a direct method based on evaluating the cumulative transition probabilities between states on a small timestep \citep{Barik2006}.
+Fig. \ref{fig:diffpdfs} depicts the distribution Eq. \ref{eq:pdf} alongside simulations generated by a direct method based on evaluating the cumulative transition probabilities between states on a small time-step \citep{Barik2006}.
 When grains do not become buried, as in panel (a) of Fig. \ref{fig:diffpdfs}, the distribution becomes Gaussian-like at relatively large observation times, exemplifying normal diffusion and satisfying the central limit theorem.
 When grains become buried, as in panel (b) of Fig. \ref{fig:diffpdfs},  the Q-function terms prevent the distribution from approaching a Gaussian at large timescales, exemplifying anomalous diffusion \citep{Weeks1998} and violating the central limit theorem \citep{Metzler2000,Schumer2009}.
 
@@ -142,7 +142,7 @@ In these equations, $a = (\kappa + k_1+k_2)/2$ and $b = \sqrt{a^2-\kappa k_2}$ a
 	%\end{wraptable}
 	\vspace{-0.5cm}
 \end{table}
-The positional variance (Eq. \ref{eq:var}) is plotted in Fig. \ref{fig:diffvar} for conditions $\theta_1=1$ and $k_2\gg k_1 \gg \kappa$.
+The positional variance Eq. \ref{eq:var} is plotted in Fig. \ref{fig:diffvar} for conditions $\theta_1=1$ and $k_2\gg k_1 \gg \kappa$.
 The notation ``$\gg$'' is interpreted in this context to mean ``of at least an order of magnitude greater''.
 These conditions are most relevant to tracers in gravel-bed rivers, since they represent that grains are initially at rest \citep{Hassan1991,Wu2019}, motions are typically much shorter than rests \citep{Einstein1937,Hubbell1964}, and burial requires a much longer time than typical rests  \citep{Ferguson2002,Hassan1994,Haschenburger2013}.
 Figure \ref{fig:diffvar} demonstrates that under these conditions the variance (Eq. \ref{eq:var}) shows three diffusion ranges with approximate power law scaling ($\sigma_x^2 \propto t^\gamma$) that are identified as the local, intermediate, and global ranges proposed by Nikora et al., followed by a fourth range of no diffusion ($\sigma_x^2 = \text{const}$) stemming from the burial of all tracers. 
@@ -150,12 +150,13 @@ Following \citet{Hassan2017} I suggest to call the fourth range "geomorphic", si
 
 \begin{figure}[!htbp]	
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/ch4/diffusion.png}
-	\caption{Panel (a) sketches conceptual trajectories of three grains, while panel (b) depicts the variance (Eq. \ref{eq:var}) with mean motion time $1.5$ s, resting time $30.0$ s, and movement velocity $0.1$ m/s -- values comparable to laboratory experiments transporting small ($5$ mm) gravels \citep{Lajeunesse2010,Martin2012}. The burial timescale is $7200.0$s (two hours), and grains start from rest ($\theta_1=1$). The solid line is Eq. \ref{eq:var}, and the points are numerically simulated. Panel (b) demonstrates four distinct scaling ranges of $\sigma_x^2$: local, intermediate, global, and geomorphic. The first three are diffusive. Three crossover times $\tau_L$, $\tau_I$, and $\tau_G$ divide the ranges. Within each range, a slope key demonstrates the scaling $\sigma_x^2 \propto t^\gamma$. Panel (a) demonstrates that different mixtures of motion, rest, and burial states generate the ranges. At local timescales, grains usually either rest or move; at intermediate timescales, they transition between rest and motion; at global timescales, they transition between rest, motion, and burial; and at geomorphic timescales, all grains bury. Additional slope keys in the local and global ranges of panel (b) illustrate the effect of initial conditions and rest/burial timescales on the diffusion, while the additional slope key within the geomorphic range demonstrates the expected scaling when burial is not permanent, as discussed in Sec. \ref{sec:discussion}.
+	\caption{Panel (a) sketches conceptual trajectories of grains, while panel (b) depicts Eq. \ref{eq:var} with mean motion time $1.5$ s, rest time $30.0$ s, and velocity $0.1$ m/s. The burial timescale is $7200$ s (two hours), and grains start from rest ($\theta_1=1$). The solid line is Eq. \ref{eq:var} and points are numerically simulated. Panel (b) demonstrates four distinct scaling ranges of $\sigma_x^2$: local, intermediate, global, and geomorphic. The first three are diffusive. Crossover times $\tau_L$, $\tau_I$, and $\tau_G$ divide the ranges. Slope keys demonstrate the scaling $\sigma_x^2 \propto t^\gamma$ in each range. Panel (a) demonstrates that different mixtures of motion, rest, and burial states generate the ranges. At local timescales, grains usually either rest or move; at intermediate timescales, they transition between rest and motion; at global timescales, they transition between rest, motion, and burial; and at geomorphic timescales, all grains become buried.
 	}
 	\label{fig:diffvar}
 \end{figure}
 
-\subsection{Diffusion exponents and three range scaling}
+\subsection{Diffusion exponents and three-range scaling}
+\label{sec:amidonenow}
 
 Two limiting cases of Eq. \ref{eq:var} provide the scaling exponents $\gamma$ of the diffusion $\sigma_x^2 \propto t^\gamma$ in each range. Limit (1) represents times so short that a negligible amount of sediment burial has occurred, $t\ll 1/\kappa$, while limit (2) represents times so long motion intervals appear as instantaneous steps of mean length $l=v/k_2$, $1/k_2 \rightarrow 0$ while $v/k_2 = \text{constant}$.
 Limit (1) provides local exponent $2 \leq \gamma \leq 3$ depending on the initial conditions $\theta_i$, and intermediate exponent $\gamma=1$.
@@ -175,7 +176,7 @@ Finally, the burial of all tracers generates a geomorphic range of no diffusion.
 
 \subsection{Local and intermediate ranges with comparison to earlier work}
 
-This chapter has extended \citet{Einstein1937} by including motion, rest, and burial processes in a multi-state random walk \citep{Weiss1994,Weeks1998} to demonstrate that a group of bedload tracers moving downstream while gradually becoming buried will generate a super-diffusive local range \citep{Martin2012,Fathel2016,Witz2018}, a normal-diffusive intermediate range \citep{Nakagawa1976,Yano1969}, and a super-diffusive global range \citep{Bradley2017, Bradley2010}, before the diffusion eventually terminates in a geomorphic range \citep{Hassan2017}.
+This chapter has extended \citet{Einstein1937} by including motion, rest, and burial processes in a multi-state random walk \citep{Weiss1994,Weeks1998} to demonstrate that a group of bedload tracers moving downstream while gradually becoming buried will generate a super-diffusive local range \citep{Martin2012,Fathel2016,Witz2018}, a normal-diffusive intermediate range \citep{Nakagawa1976,Yano1969}, and a super-diffusive global range \citep{Bradley2017, Bradley2010} before the diffusion eventually terminates in a geomorphic range \citep{Hassan2017}.
 \citet{Nikora2002} highlighted the need for such a physical description, although they suggested to use a two-state random walk between motion and rest states with heavy-tailed resting times, and they did not discuss sediment burial.
 However, other works have demonstrated that a two-state walk with heavy-tailed rests provides two diffusion ranges -- not three \citep{Weeks1996,Fan2016}, and although heavy-tailed resting times have been documented for surface particles \citep{Liu2019,Fraccarollo2019}, they are more often associated with buried particles \citep{Martin2012,Martin2014,Voepel2013,Olinde2015,Pelosi2016, Pierce2020a}, while surface particles retain light-tailed resting times \citep{Einstein1937,Yano1969,Ancey2006,Nakagawa1976}.
 Accordingly, I developed a random walk model of bedload trajectories with light-tailed surface resting times that incorporates sediment burial.
@@ -205,9 +206,8 @@ I believe further developing the linkage between existing bedload models and ran
 \section{Summary}
 \label{sec:conclusion}
 In this chapter, I developed a random walk model to describe sediment tracers transporting through a river channel as they gradually become buried, providing a physical description of the local, intermediate, and global diffusion ranges identified by \citet{Nikora2002}.
-Pushing their ideas somewhat further, I followed \citet{Hassan2017} to propose a geomorphic range to describe diffusion characteristics at timescales larger than the global range when burial and exhumation both moderate downstream transport.
+Pushing their ideas somewhat further, I followed \citet{Hassan2017} to propose a geomorphic range describing particle diffusion characteristics at timescales larger than the global range when burial and exhumation both moderate downstream transport.
 At base level, this work demonstrates that (1) durations of sediment motions, (2) durations of sediment rest, and (3) the sediment burial process are sufficient to develop three diffusion ranges that terminate when all tracers become buried.
-This work provides a complementary perspective on the three range diffusion exhibited in Ch. \ref{ch:flux}.
 A next step is to incorporate exhumation to better understand the geomorphic range.
 Ultimately, the multi-state random walk formalism used in this chapter has been demonstrated to implicitly underlie most existing bedload diffusion models.
 The random walk formalism is an alternative perspective on the Langevin approaches used elsewhere in this thesis, and it provides a powerful tool for researchers targeting landscape-scale understanding from statistical concepts of the underlying grain-scale dynamics.

@@ -14,18 +14,18 @@ It describes the movements of grains along a wider range of timescales than befo
 	\item incorporated the process of sediment burial in a description of downstream particle movement (Ch. \ref{ch:downDiff}), and
 	\item formulated the velocity distributions of sediment particles including episodic particle-bed collisions (Ch. \ref{ch:langevin}).
 \end{enumerate}
-These developments improve understanding of sediment transport in streams.
+These developments bring us closer to a comprehensive mathematical description of sediment transport in streams.
 
 \section{Overall methodology of the thesis}
 
 \subsection{Langevin and master equations}
 
 The overarching strategy in all of these developments has been to identify control and response variables, represent control variables by idealized noises (entrainment and deposition events, particle burial events, turbulent forces, or particle-bed collisions), and then formulate dynamical equations relating the response variables to these stochastic control variables.
-This strategy phrases sedimentary dynamics in terms of Langevin-like equations, stochastic analogues of Newton's $F=ma$, where the acceleration $a$ is swapped for the response variable of interest in the problem and the force $F$ is a stochastic combination of the control variables. 
+This strategy phrases sedimentary dynamics in terms of Langevin-like equations, stochastic and phenomenological analogues of Newton's $F=ma$, where the acceleration $a$ is swapped for the response variable of interest in the problem and the force $F$ is a stochastic combination of the control variables. 
 
 Once the stochastic dynamical equations were written for a given problem, its solutions were averaged over realizations of the control variables to produce a master equation, an integro-differential equation governing the probability distributions of the response variables.
 
-The solutions of the master equation in a given problem produce the probability distribution for the response variable of interest, which in the thesis has included at different points the bedload particle position (Chs. \ref{ch:flux} and \ref{ch:downDiff}), the particle velocity (Ch. \ref{ch:langevin}), the bed elevation (Ch. \ref{ch:ch3}), and the sediment transport rate (Ch. \ref{ch:flux}).
+The solutions of the master equation in a given problem provide the probability distribution for the response variable of interest, which in the thesis has included at different points the bedload particle position (Chs. \ref{ch:flux} and \ref{ch:downDiff}), the particle velocity (Ch. \ref{ch:langevin}), the bed elevation (Ch. \ref{ch:ch3}), and the sediment transport rate (Ch. \ref{ch:flux}).
 The same stochastic strategy should be applicable to a wide range of problems in geomorphology where phenomena can be built up from component parts with apparently noisy characteristics.
 
 
@@ -33,7 +33,7 @@ The same stochastic strategy should be applicable to a wide range of problems in
 
 A major challenge in this research is that only a handful of noises in statistical physics are comprehensively understood \citep{Horsthemke1984}, so the available options in stochastic modeling are constrained.
 The noises used in this thesis include Gaussian white noise, Poisson pulse noise, and dichotomous noise, representing erratic fluctuations, sequences of spikes, and random switches respectively \citep{VanDenBroeck1983}.
-Turbulence was described using Gaussian white noise, while instantaneous steps, particle arrivals to a control surface, and particle-bed collisions were described with Poisson noise. Alternation between motion and rest was represented with dichotomous noise.
+Turbulence was described using Gaussian white noise, while instantaneous steps, particle arrivals to a control surface, and particle-bed collisions were described with Poisson noise. Alternation between motion and rest was represented by dichotomous noise.
 Whenever these processes acted in combination, the dynamical equations describing the response variable included multiple sources of idealized noise as required.
 This inclusion of multiple noise sources has not yet to my knowledge been pursued in any earlier stochastic models of sediment transport.
 
@@ -41,58 +41,59 @@ River science offers no guarantee that these idealized noise sources which we ha
 White noises in particular are an idealization which is probably never realized in nature \citep{Gardiner1983,Kubo1978}.
 In contrast, colored noises in which fluctuations have favored frequencies are well-known to occur in many fluid and granular physics phenomena, most famously in fluid turbulence \citep{Kolmogorov1941,Nikora2000} and granular collapse \citep{Bak1987,Jensen1998}.
 In river science, many phenomena exhibit colored spectra, including the size distributions of bedforms \citep{Nikora1997,Guala2014}, the fluid forces on bed particles \citep{Dwivedi2011, Amir2014}, the roughness characteristics of gravel beds \citep{Aberle2006,Singh2012}, and sediment flux timeseries \citep{Dhont2018,Chartrand2021}.
-Unfortunately, dynamical equations driven by colored noise are extremely challenging to solve \citep{Hanggi1978,Luczka2005,Hanggi2007}.
-In this context, even if the idealized noise models developed in this thesis are not exactly accurate, their development remains necessary as a basis for comparison when formulating and solving colored noise models \citep[e.g.][]{Fox1986,Moss1989}.
+Unfortunately, dynamical equations driven by colored noise are extremely challenging to solve, so progress has been mainly limited to dichotomous and Ornstein-Uhlenbeck noises \citep{Hanggi1978,Luczka2005,Hanggi2007}. 
+In this context, even if the idealized noise models developed in this thesis are not exactly accurate, their development remains necessary as a basis for comparison when formulating and solving more challenging colored noise models \citep[e.g.][]{Fox1986,Moss1989}.
 
 \section{Key contributions}
 
-\subsection{Calculation of the probability distribution of the sediment flux from micromechanics of particle transport}
+\subsection{Calculation of the probability distribution of the sediment flux from micro-mechanics of particle transport}
 
-The first major contribution of this thesis is in Ch. \ref{ch:flux}. Here, I formulated the probability distribution of the sediment flux from the trajectories of individual particles moving downstream. This work unifies the sediment trajectory models originating from Einstein (Secs. \ref{sec:einwalk}-\ref{sec:lisle}) with the renewal approach to calculate the sediment flux (Sec. \ref{sec:renewal}).
-The striking feature of this formulation is that, as a result of the particle dynamics, the mean bedload flux becomes scale-dependent, whereby the expected magnitude of the flux depends on the time-period over which it is observed.
+The first major contribution of this thesis is in Ch. \ref{ch:flux}. Here, I formulated the probability distribution of the sediment flux from the trajectories of individual particles moving downstream. This work unifies the sediment trajectory models originating from Einstein (Secs. \ref{sec:einwalk} and \ref{sec:lisle}) with the renewal approach to calculate the sediment flux (Sec. \ref{sec:renewal}).
+The striking feature of this formulation is that, as a result of the particle dynamics, the mean bedload flux becomes scale-dependent, whereby the expected magnitude of the flux depends on the timescale over which it is observed.
 
 \citet{Ballio2018} explained that scale-dependence originates from individual particle trajectories, but this had not been described in a mathematical model until now.
-Descriptions of the mean sediment flux from the movement characteristics of individual grains have existed now for a long time (Sec. \ref{sec:einflux}), and an emerging body of research has produced the full probability distribution of the flux without referencing individual movement characteristics (Secs. \ref{sec:birthdeath}-\ref{sec:renewal}). 
-This work unifies these two research themes and presents a statistical mechanics formulation of the bed load sediment flux probability distribution based on individual particle trajectories.
+Descriptions of the mean sediment flux from the movement characteristics of individual grains have existed now for a long time (Sec. \ref{sec:einflux}), and an emerging body of research has produced the full probability distribution of the flux without referencing individual movement characteristics (Secs. \ref{sec:birthdeath} and \ref{sec:renewal}). 
+This work unifies these two research themes and provides a statistical mechanics formulation of the bed load sediment flux probability distribution based on individual particle trajectories.
 
 \subsection{Inclusion of velocity fluctuations into Einstein's model of individual particle trajectories}
 
 Second, in Ch. \ref{ch:flux} I developed the first analytical description of sediment trajectories through motion and rest including velocity fluctuations within the motion state.
-Einstein originally formulated sediment transport as a sequence of instantaenous steps and rests (Sec. \ref{sec:einwalk}), and this was later improved to include the duration of motion (Sec. \ref{sec:lisle}).
-Until this thesis, movement velocities in analytical models were considered constant, which contrasts with reality. 
+Einstein originally formulated sediment transport as a sequence of instantaneous steps and rests (Sec. \ref{sec:einwalk}), and this was later improved to include the duration of motion (Sec. \ref{sec:lisle}).
+Until this thesis, movement velocities in analytical models were considered constant, an unrealistic assumption.
 Although some numerical models have described motion/rest cycles with velocity fluctuations \citep{Fan2016,Bialik2012,Schmeeckle2014}, they had not resolved the novel three-range diffusion characteristics these dynamics imply.
 
 This description predicts multiple-range diffusion across local, intermediate, and global scales as a result of particle velocity fluctuations within the motion state; it introduces a dimensionless P\'{e}clet number as an important characteristic of bedload sediment transport; and it relates the timescales at which transitions between local, intermediate, and global timescales occur to the movement characteristics of individual grains.
-These developments constitute a new understanding of bedload movement across its timescales and invite generalizations aimed at pushing the approach further to including interactions between particles.
+These developments constitute a new understanding of bedload movement across its timescales and invite generalizations aimed at pushing the approach further to include interactions between particles and temporal correlations in bedload movement velocities.
 
 \subsection{Quantification of the control of bed elevation fluctuations over sediment transport fluctuations}
 
 Third, Ch. \ref{ch:ch3} modified the birth-death description of bedload transport (Sec. \ref{sec:birthdeath}) to include feedbacks between the local bed elevation and the entrainment and deposition rates.
 This allowed for a mathematical investigation of (1) how bed elevation changes affect sediment transport rates and (2) how bed elevation changes control the residence times of particles buried in the bed.
+
 Sediment transport fluctuations have come under increasing scrutiny with the resurgence of stochastic modeling in sediment transport, while the burial times of particles are crucial for using sediment tracers to predict sediment transport.
 Earlier birth-death models had generally considered that entrainment and deposition rates of particles remain constant even though these processes imply bed degradation and aggradation respectively, which are known to modify the entrainment and deposition rates in a negative feedback.
 
-This work demonstrates that this negative feedback buffers bedload transport fluctuations whenever collective entrainment occurs, meaning the magnitude of bedload transport fluctuations depends on the rate of bed elevation change. The residence times of buried particles are random variables that lie on heavy-tailed power-law distributions. These distributions allow for arbitrarily long resting times, which poses challenging implications for researchers attempting to predict the downstream sediment flux in applications by tracking sediment tracer particles. 
+This work demonstrates that this negative feedback buffers bedload transport fluctuations whenever collective entrainment occurs, meaning the magnitude of bedload transport fluctuations depends on the relative bed elevation. The residence times of buried particles are random variables that lie on heavy-tailed power-law distributions. These distributions allow for arbitrarily long resting times, which poses challenging implications for researchers attempting to determine the downstream sediment flux for applications by tracking sediment tracer particles. 
 
 \subsection{Characterization of how sediment burial affects the downstream transport of sediment particles}
 
 Fourth, Ch. \ref{ch:downDiff} presents a model of sediment trajectories through motion, rest, and burial, describing sediment transport across local, intermediate, global, and geomorphic ranges (Sec. \ref{sec:trajmodels}), and producing new understanding of how exactly the distinct spreading characteristics of particles within each of these ranges arise \citep[e.g][]{Pretzlav2021}.
 
-Until this work, the mechanisms which produce the different spreading rates of particles across the scaling ranges identified by Nikora and coworkers had been uncertain for several decades, and earlier works had included what were believed to be the required features without describing three or more scaling ranges. 
-The work ultimately demonstrates that many approaches to describe individual particle motions are reformulations of the continuous time random walk formalism from physics, indicating underlying unity within a diverse body of research and bringing powerful tools from statistical physics to the sediment transport problem.
+Until this work, the mechanisms which produce the different spreading rates of particles across the scaling ranges identified by Nikora and coworkers had been uncertain for several decades, and earlier works had included what were believed to be the required features without describing three or more scaling ranges.
+Ch. \ref{ch:downDiff} brings some closure to these studies and demonstrates that many approaches to describe individual particle motions are reformulations of the continuous time random walk formalism from physics, indicating unity within a diverse body of research and bringing powerful tools from statistical physics to the sediment transport problem.
 
 \subsection{Description of how particle-bed collisions control movement velocities of grains}
 
 Finally, Ch. \ref{ch:langevin} displayed a new theoretical model of individual grains saltating downstream in a turbulent flow through a sequence of particle-bed collisions.
-This work provides the first comprehensive description of all bedload velocity distributions observed in experiments to the present time (Sec. \ref{sec:langexperimentcomparison}), while earlier works had described only particular end-member distributions (Sec. \ref{sec:langevin}).
-This work incorporates ideas from the kinetic theory of granular gases into the description of weak bedload transport and invites generalizations that explicitly include the geometry of particle-particle collisions. 
+This work provides the first comprehensive description of all bedload velocity distributions sar far observed in experiments (Sec. \ref{sec:langexperimentcomparison}), while earlier works had described only particular end-member distributions (Sec. \ref{sec:langevin}).
+This work incorporates ideas from the kinetic theory of granular gases into the description of weak bedload transport and invites generalizations that explicitly include the geometry of particle-particle collisions and more realistic particle height and slip velocity-dependent fluid forces.
 
 \section{Limitations and future research directions}
 
 This thesis has produced new understanding of how to describe bedload transport using statistical physics, but the developments introduce many limitations deserving of future research attention.
-In some cases these are specific to the models produced in the thesis, but in others, they are shared in common with a majority of models in the stochastic sediment transport research paradigm \citep{Ancey2020,Furbish2021a}.
+In some cases these are specific to the models produced in the thesis, but in others, they are shared in common with a majority of models in the stochastic sediment transport research paradigm \citep[e.g.][]{Ancey2020,Furbish2021a}.
 
-\subsection{Channel dynamics and morphology}
+\subsection{Channel morphodynamics}
 
 The first limitation concerns the assumption, implicit in every chapter of this thesis, that sediment transport characteristics are steady and uniform in time and space.
 This assumption contrasts with conditions in real gravel-bed rivers, where riffles, bars, and steps coordinate the movements of individual grains \citep{Ashmore1998,McDowell2020}, sediment is supplied in episodic bursts from mass movements \citep{Benda1990, Muller2018}, woody debris directs sediment accumulation \citep{Eaton2012,Reid2019}, and variable flow conditions modify bed texture and sediment availability \citep{Mao2012,Phillips2018}.
@@ -104,18 +105,18 @@ Future studies might investigate in more depth the linkage between flow hydrauli
 
 \subsection{Grain size distributions}
 
-The second major limitation of this work concerns grain size.
-In actuality, sediments in rivers span a range of sizes, and differential mobility based on particle size produces spatial sorting, both vertically as in bed armoring \citep{Parker1982,Wilcock1989,Aberle2006}, and laterally as patch, particle cluster, or riffle development \citep{Nelson2014,Venditti2017}.
+The second limitation of this work concerns grain size.
+Sediments in rivers span a range of sizes, and differential mobility based on particle size produces spatial sorting, both vertically as in bed armoring \citep{Parker1982,Wilcock1989,Aberle2006}, and laterally as patch, particle cluster, or riffle development \citep{Nelson2014,Venditti2017}.
 
-There have been a few works on stochastic modeling of sediment transport with multiple grain sizes \citep{Sun2000,Parker2000}, but these approaches are not spatially distributed, so there is as yet no stochastic method to understand sorting processes. 
+Only a few works on stochastic modeling of sediment transport involve multiple grain sizes \citep{Sun2000,Parker2000}, but these approaches are not spatially distributed, so there is as yet no stochastic method to understand sorting processes \citep[cf.][]{Ancey2020b}.
 
-Future studies should revisit the stochastic framework applied to multiple grain sizes. Simplified experimental geometries based on bimodal sediment beds \citep[e.g.][]{Houssais2012} would be a great context to revisit these issues. Extending the motion-rest model of Ch. \ref{ch:ch3} to two grain sizes with a matrix formulation, then calibrating its parameters to experiments would be a nice place to start.
+Future studies should revisit the stochastic framework applied to multiple grain sizes. Simplified experimental geometries based on bimodal sediment beds \citep[e.g.][]{Houssais2012} would be a great context to revisit these issues. Extending the motion-rest model of Ch. \ref{ch:ch3} to two grain sizes with a matrix formulation, then calibrating its parameters to experiments would be a nice starting point.
 
 \subsection{The full range of geophysical flows}
 
 The final limitation I will mention is that all of the efforts in this thesis were concentrated on weak bedload transport, where densities of moving particles are low enough that they may interact with the static bed but never with each other. This assumption is justified insofar as weak bedload transport conditions are common within gravel-bed rivers \citep{Ashworth1989,Warburton1992}, but it is nonetheless a limitation given the diversity of processes which move sediment over Earth's surface.
 
-Earth's landforms are shaped by numerous transport phenomena from booming debris flows \citep{Iverson1997} to barely perceptible hillslope creep \citep{Deshpande2021}.
+Earth's landforms are shaped by numerous transport phenomena from catastrophic debris flows \citep{Iverson1997} to barely perceptible hillslope creep \citep{Deshpande2021}.
 Different transport phenomena are basically distinguished by the relative importance of fluid, granular, and gravitational forces in sustaining them \citep{Jerolmack2019}.
 
 Weak bedload transport is characterized by fluid forces small in comparison to gravity, and collision forces comparable to gravity.
@@ -126,9 +127,9 @@ Future studies should continue the effort \citep[e.g.][]{Furbish2021a} to descri
 
 This thesis has described the movements of individual grains along streambeds using probabilistic methods.
 The research relates the overall sediment transport rate to the movements of individual grains.
-At base level, the thesis embraces variability as an intrinsic part of Earth surface dynamics, and it produces descriptions which predict mean values as well as the magnitude of their fluctuations.
+At base level, the thesis embraces variability as an intrinsic part of Earth surface dynamics, and it produces descriptions of sediment transport which predict mean values as well as the magnitude of their fluctuations.
 
-The founders of process geomorphology always acknowledged the role of variability in landscape evolution \citep{Horton1945,Strahler1952,Langbein1964}, although their main efforts were to develop strategies to describe landscales without including variability in models, like averaged shear stresses to avoid fluid turbulence \citep{MeyerPeter1948,Bagnold1954}, competent conditions to replace climatic fluctuations \citep{Wolman1959,Wolman1978}, and representative grain sizes to avoid evolving surface grain size distributions \citep{Parker1982,Andrews1983}.
+The founders of process geomorphology always acknowledged the role of variability in landscape evolution \citep{Horton1945,Strahler1952,Langbein1964}, although their main efforts were to develop strategies to describe landscapes without including variability, like averaged shear stresses to avoid fluid turbulence \citep{MeyerPeter1948,Bagnold1954}, competent conditions to replace climatic fluctuations \citep{Wolman1959,Wolman1978}, and representative grain sizes to avoid evolving surface grain size distributions \citep{Parker1982,Andrews1983}.
 
-The stochastic descriptions of sediment transport developed in this thesis show a methodology to step beyond averaged descriptions of landscape evolution, propagate noises through the equations governing landscape change, and revisit the old question in geomorphology: How does variability shape Earth's surface?
+The stochastic descriptions of sediment transport developed in this thesis show a methodology we can use to step beyond averaged descriptions of landscape evolution, propagate noises through the equations governing landscape change, and revisit the old question in geomorphology: How does variability shape Earth's surface?
 
