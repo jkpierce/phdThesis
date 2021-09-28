@@ -6,7 +6,9 @@
 
 \section{Derivation of master equation}
 \label{sec:langmasterderiv}
-To derive the master equation from Eq. \ref{eq:langevin}, I temporarily consider the Gaussian white noise (GWN) $\xi(t)$ as a Poisson jump process having rate $r$ and jumps $ \sqrt{2 \tilde{D}} h$ with $h$ distributed as $f(h)$. I will later take a GWN limit from this noise. With this assumption, integrating Eq. \ref{eq:langevin} over a small time interval $\delta t$ and incorporating the It\^{o} interpretation for the collision term provides
+To derive the master equation from Eq. \ref{eq:langevin}, I temporarily consider the Gaussian white noise (GWN) $\xi(t)$ as a Poisson jump process having rate $r$ and jumps $ \sqrt{2 \tilde{D}} h$ with $h$ distributed as $f(h)$. I will later take a GWN limit from this noise. Similar derivations are available in some references \citep[e.g.][]{Kanazawa2017,Suweis2011}, and the precise connection between GWN and Poisson noise is discussed in \citet{VanDenBroeck1983}.
+
+From this starting point, integrating Eq. \ref{eq:langevin} over a small time interval $\delta t$ under the It\^{o} interpretation for the collision term provides
 \be     
 u(t+\delta t) =
 \begin{cases}
@@ -31,7 +33,7 @@ Evaluating all integrals over $\delta$-functions provides
  P(u,t+\delta t) = \hspace{4pt}&(1-r \delta t - \nu \delta t)P(u-\tilde{\Gamma} \delta t, t) \\&+ r \delta t\int_{-\infty}^\infty dh f(h) P(u+\sqrt{2 \tilde{D}}h) \\&+ \nu \delta t \int_0^1 \frac{ \tilde{D}\ve}{\ve} \rho(\ve) P\big(\frac{u}{\ve}\big).
 \end{split}
 \end{align}
-Finally, taking $\delta t \rightarrow 0$ and limiting the Poisson noise involving $\sqrt{2 \tilde{D}}$ to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ obtains the master equation \ref{eq:master} \cite[e.g.][]{VanDenBroeck1983}.
+Finally, taking $\delta t \rightarrow 0$ and limiting the Poisson noise involving $\sqrt{2 \tilde{D}}$ to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ obtains the master equation \ref{eq:master}.
 \section{Derivation of steady-state solution}
 \label{sec:langsteadyderiv}
 Defining $\tilde{P}(s) = \int_{-\infty}^\infty du e^{i u s} P(u) $ as the Fourier transform (FT) of $P(u)$ and taking the FT of Eq. \ref{eq:master} develops the recursion relation
@@ -44,7 +46,7 @@ The polynomials $q(z)$ can always be factored as $q(z) = \tilde{D}(z - i\lambda_
 \be \lambda_\pm = \frac{\tilde{\Gamma}}{2\tilde{D}}\Big[1 \pm \sqrt{ 1 + 4\tilde{D}/\tilde{\Gamma}^2} \Big]. \label{eq:lambdas}\ee
 Using these factors to expand $\tilde{P}(s)$ in partial fractions provides
 \be \tilde{P}(s)  = \tilde{P}(s \ve^{N+1}) \sum_{l=0}^N  \Big[ \frac{R_l^-}{s\ve^l - i\lambda_-} + \frac{R_l^+}{s\ve^l - i\lambda_+} \Big] ,\ee
-where the coefficients $R_l^\pm$ are the residues (at least up to a constant factor) of the product $[q(s\ve^0)\dots q(s\ve^N)]^{-1}$:
+where the coefficients $R_l^\pm$ are the residues (up to constant factors) of the product $[q(s\ve^0)\dots q(s\ve^N)]^{-1}$:
 \be R_l^\pm = \frac{s \ve^{l} - i\lambda_\pm }{q(s\ve^0)\dots q(s \ve^N)} \Big|_{s= i \lambda_\pm \ve^{-l}}.\ee
 The Fourier-transformed Eq. \ref{eq:recursion} has a convenient feature as $N\rightarrow \infty$: since $0<\ve <1$, the prefactor $\tilde{P}( s \ve^{N+1})$ becomes the normalization condition $\tilde{P}(0)=1$ for the probability distribution $P(u)$.
 Taking this limit and evaluating the residues provides 

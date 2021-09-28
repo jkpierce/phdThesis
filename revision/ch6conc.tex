@@ -4,8 +4,7 @@
 \label{ch:conc}
 
 This thesis has described bedload transport from the statistical physics of individual grains.
-The work has improved upon earlier descriptions.
-It describes the movements of grains along a wider range of timescales than before, highlights Langevin equations, master equations, and random walks as the common threads of stochastic sediment transport modeling, and provides more realistic descriptions of bedload transport. In particular, I have
+This work describes the movements of grains along a wider range of timescales than before, highlights Langevin equations, master equations, and random walks as the common threads of stochastic sediment transport modeling, and provides more realistic descriptions of bedload transport. In particular, within the thesis I have
 \begin{enumerate}
 	\item developed the linkage between sediment flux probability distributions and individual particle trajectories (Ch. \ref{ch:flux}), 
 	\item described particle trajectories alternating through motion and rest with fluctuating velocities (Ch. \ref{ch:flux}),
@@ -14,7 +13,7 @@ It describes the movements of grains along a wider range of timescales than befo
 	\item incorporated the process of sediment burial in a description of downstream particle movement (Ch. \ref{ch:downDiff}), and
 	\item formulated the velocity distributions of sediment particles including episodic particle-bed collisions (Ch. \ref{ch:langevin}).
 \end{enumerate}
-These developments bring us closer to a comprehensive mathematical description of sediment transport in streams.
+These developments bring us closer to a comprehensive mathematical description of sediment transport in streams and bring powerful physics and mathematics tools to longstanding problems in river science.
 
 \section{Overall methodology of the thesis}
 
@@ -23,7 +22,7 @@ These developments bring us closer to a comprehensive mathematical description o
 The overarching strategy in all of these developments has been to identify control and response variables, represent control variables by idealized noises (entrainment and deposition events, particle burial events, turbulent forces, or particle-bed collisions), and then formulate dynamical equations relating the response variables to these stochastic control variables.
 This strategy phrases sedimentary dynamics in terms of Langevin-like equations, stochastic and phenomenological analogues of Newton's $F=ma$, where the acceleration $a$ is swapped for the response variable of interest in the problem and the force $F$ is a stochastic combination of the control variables. 
 
-Once the stochastic dynamical equations were written for a given problem, its solutions were averaged over realizations of the control variables to produce a master equation, an integro-differential equation governing the probability distributions of the response variables.
+Once the stochastic dynamical equations were written for a given problem, its solutions were averaged over realizations of the control variables to produce a master equation for the problem, an integro-differential equation governing the probability distributions of the response variables.
 
 The solutions of the master equation in a given problem provide the probability distribution for the response variable of interest, which in the thesis has included at different points the bedload particle position (Chs. \ref{ch:flux} and \ref{ch:downDiff}), the particle velocity (Ch. \ref{ch:langevin}), the bed elevation (Ch. \ref{ch:ch3}), and the sediment transport rate (Ch. \ref{ch:flux}).
 The same stochastic strategy should be applicable to a wide range of problems in geomorphology where phenomena can be built up from component parts with apparently noisy characteristics.
@@ -46,7 +45,7 @@ In this context, even if the idealized noise models developed in this thesis are
 
 \section{Key contributions}
 
-\subsection{Calculation of the probability distribution of the sediment flux from micro-mechanics of particle transport}
+\subsection{Calculation of the probability distribution of the sediment flux from individual particle trajectories}
 
 The first major contribution of this thesis is in Ch. \ref{ch:flux}. Here, I formulated the probability distribution of the sediment flux from the trajectories of individual particles moving downstream. This work unifies the sediment trajectory models originating from Einstein (Secs. \ref{sec:einwalk} and \ref{sec:lisle}) with the renewal approach to calculate the sediment flux (Sec. \ref{sec:renewal}).
 The striking feature of this formulation is that, as a result of the particle dynamics, the mean bedload flux becomes scale-dependent, whereby the expected magnitude of the flux depends on the timescale over which it is observed.
@@ -63,7 +62,7 @@ Until this thesis, movement velocities in analytical models were considered cons
 Although some numerical models have described motion/rest cycles with velocity fluctuations \citep{Fan2016,Bialik2012,Schmeeckle2014}, they had not resolved the novel three-range diffusion characteristics these dynamics imply.
 
 This description predicts multiple-range diffusion across local, intermediate, and global scales as a result of particle velocity fluctuations within the motion state; it introduces a dimensionless P\'{e}clet number as an important characteristic of bedload sediment transport; and it relates the timescales at which transitions between local, intermediate, and global timescales occur to the movement characteristics of individual grains.
-These developments constitute a new understanding of bedload movement across its timescales and invite generalizations aimed at pushing the approach further to include interactions between particles and temporal correlations in bedload movement velocities.
+These developments constitute new understanding of bedload movement across its timescales and invite generalizations that include interactions between particles and temporal correlations to bedload movement velocities.
 
 \subsection{Quantification of the control of bed elevation fluctuations over sediment transport fluctuations}
 
@@ -73,14 +72,14 @@ This allowed for a mathematical investigation of (1) how bed elevation changes a
 Sediment transport fluctuations have come under increasing scrutiny with the resurgence of stochastic modeling in sediment transport, while the burial times of particles are crucial for using sediment tracers to predict sediment transport.
 Earlier birth-death models had generally considered that entrainment and deposition rates of particles remain constant even though these processes imply bed degradation and aggradation respectively, which are known to modify the entrainment and deposition rates in a negative feedback.
 
-This work demonstrates that this negative feedback buffers bedload transport fluctuations whenever collective entrainment occurs, meaning the magnitude of bedload transport fluctuations depends on the relative bed elevation. The residence times of buried particles are random variables that lie on heavy-tailed power-law distributions. These distributions allow for arbitrarily long resting times, which poses challenging implications for researchers attempting to determine the downstream sediment flux for applications by tracking sediment tracer particles. 
+This work demonstrates that this negative feedback buffers bedload transport fluctuations whenever collective entrainment occurs, meaning the magnitude of bedload transport fluctuations depends on the relative bed elevation. The residence times of buried particles are random variables that lie on heavy-tailed power-law distributions. These distributions allow for arbitrarily long resting times, which poses challenging implications for researchers attempting to determine downstream sediment fluxes from sediment tracer data. 
 
-\subsection{Characterization of how sediment burial affects the downstream transport of sediment particles}
+\subsection{Characterization of sediment burial controls on the downstream transport of sediment particles}
 
 Fourth, Ch. \ref{ch:downDiff} presents a model of sediment trajectories through motion, rest, and burial, describing sediment transport across local, intermediate, global, and geomorphic ranges (Sec. \ref{sec:trajmodels}), and producing new understanding of how exactly the distinct spreading characteristics of particles within each of these ranges arise \citep[e.g][]{Pretzlav2021}.
 
 Until this work, the mechanisms which produce the different spreading rates of particles across the scaling ranges identified by Nikora and coworkers had been uncertain for several decades, and earlier works had included what were believed to be the required features without describing three or more scaling ranges.
-Ch. \ref{ch:downDiff} brings some closure to these studies and demonstrates that many approaches to describe individual particle motions are reformulations of the continuous time random walk formalism from physics, indicating unity within a diverse body of research and bringing powerful tools from statistical physics to the sediment transport problem.
+Ch. \ref{ch:downDiff} brings some closure to these studies and demonstrates that many approaches to describe individual particle motions are particular adaptations of the continuous time random walk formalism from physics, indicating unity within a diverse body of research and bringing powerful tools from statistical physics to the sediment transport problem.
 
 \subsection{Description of how particle-bed collisions control movement velocities of grains}
 
@@ -131,5 +130,5 @@ At base level, the thesis embraces variability as an intrinsic part of Earth sur
 
 The founders of process geomorphology always acknowledged the role of variability in landscape evolution \citep{Horton1945,Strahler1952,Langbein1964}, although their main efforts were to develop strategies to describe landscapes without including variability, like averaged shear stresses to avoid fluid turbulence \citep{MeyerPeter1948,Bagnold1954}, competent conditions to replace climatic fluctuations \citep{Wolman1959,Wolman1978}, and representative grain sizes to avoid evolving surface grain size distributions \citep{Parker1982,Andrews1983}.
 
-The stochastic descriptions of sediment transport developed in this thesis show a methodology we can use to step beyond averaged descriptions of landscape evolution, propagate noises through the equations governing landscape change, and revisit the old question in geomorphology: How does variability shape Earth's surface?
+The stochastic descriptions of sediment transport developed in this thesis show a methodology we can use to step beyond averaged descriptions of geomorphic change, propagate noises through the equations governing landscape change, and revisit the old question in geomorphology: How does variability shape Earth's surface?
 

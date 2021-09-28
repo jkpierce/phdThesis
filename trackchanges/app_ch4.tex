@@ -1,0 +1,186 @@
+%%!TEX root = diss.tex
+
+
+\chapter{Calculations involved in the sediment burial model}
+
+
+\section{Calculation of the distribution function}
+\label{sec:appendixA}
+
+Owing to the convolution structure  of \DIFdelbegin \DIFdel{manuscript equations (1-3)}\DIFdelend \DIFaddbegin \DIFadd{Eqs. \ref{eq:g1} and \ref{eq:g2}}\DIFaddend , their solution is a formidable problem.
+Luckily, we have the device of Laplace transforms.
+These project integro-differential equations into an alternate space in which convolutions are unraveled \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep[e.g.,][]{Arfken1985}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep[e.g.][]{Arfken1985}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend .
+The double Laplace transform of a joint probability distribution $p(x,t)$ is defined by 
+\be \tilde{p}(\eta,s) = \int_0^\infty dx e^{-\eta x}\int_0^\infty dt e^{-st} p(x,t). \label{eq:doubletransform}\ee
+The Laplace-transformed moments of $x$ are linked to derivatives of the \DIFdelbegin \DIFdel{double transformed distribution (\ref{eq:doubletransform} ) \mbox{%DIFAUXCMD
+\citep[cf.,][]{Berezhkovskii2002}}\hspace{0pt}%DIFAUXCMD
+. Equation }\DIFdelend \DIFaddbegin \DIFadd{double-transformed distribution Eq. \ref{eq:doubletransform} \mbox{%DIFAUXCMD
+\citep[cf.][]{Berezhkovskii2002}}\hspace{0pt}%DIFAUXCMD
+.
+Eq. }\DIFaddend (\ref{eq:doubletransform}) implies
+\be \bra \tilde{x}(s)^k \ket = (-)^k\partial_\eta^k \tilde{p}(\eta,s)\Big|_{\eta=0}.\label{eq:momenttrick}\ee
+\DIFdelbegin \DIFdel{The operator $\bra \circ \ket$ denotes the ensemble average \mbox{%DIFAUXCMD
+\citep[e.g.,][]{Kittel1958}}\hspace{0pt}%DIFAUXCMD
+.
+This means we can compute }\DIFdelend \DIFaddbegin \DIFadd{This means }\DIFaddend the variance of position \DIFaddbegin \DIFadd{can be derived as }\DIFaddend as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep[e.g.,][]{Arfken1985}}\hspace{0pt}%DIFAUXCMD
+. This is a powerful tool, since we can use it to derive the positional variance without integrating the distribution in equation (7) of the manuscript}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep[e.g.][]{Arfken1985}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend .
+
+Double transforming \DIFdelbegin \DIFdel{manuscript equations (1-3) }\DIFdelend \DIFaddbegin \DIFadd{Eqs. \ref{eq:g1} }\DIFaddend using the definition \DIFdelbegin \DIFdel{(\ref{eq:doubletransform} ) gives
+}%DIFDELCMD < 
+
+%DIFDELCMD < \begin{alignat}{2}
+%DIFDELCMD < 	&\tom_{1T}(\eta,s) &&= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s),\\
+%DIFDELCMD < 	&\tom_{1F}(\eta,s) &&= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa),\\
+%DIFDELCMD < 	&\tom_2(\eta,s) &&= \theta_2 \tg_2(\eta,s) + \tom_{1F}(\eta,s)\tg_2(\eta,s).
+%DIFDELCMD < \end{alignat}%%%
+\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:doubletransform} gives
+}\begin{alignat}{2}
+	&\tom_{0}(\eta,s) &&= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1}(\eta,s),\\
+	&\tom_{1}(\eta,s) &&= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa),\\
+	&\tom_2(\eta,s) &&= \theta_2 \tg_2(\eta,s) + \tom_{1}(\eta,s)\tg_2(\eta,s).
+\end{alignat}\DIFaddend 
+This algebraic system solves for 
+\DIFdelbegin %DIFDELCMD < \begin{alignat}{2}
+%DIFDELCMD < 	&\tom_{1T}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\}, \label{eq:A} \\
+%DIFDELCMD < 	&\tom_{1F}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa),\\
+%DIFDELCMD < 	&\tom_{2}(\eta,s) &&= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s). 
+%DIFDELCMD < \end{alignat}%%%
+\DIFdelend \DIFaddbegin \begin{alignat}{2}
+	&\tom_{0}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\}, \label{eq:A} \\
+	&\tom_{1}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa),\\
+	&\tom_{2}(\eta,s) &&= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s). 
+\end{alignat}\DIFaddend 
+Double transforming \DIFdelbegin \DIFdel{manuscript equations (4-6) gives
+}%DIFDELCMD < \begin{align}
+%DIFDELCMD < 	\tp_0(\eta,s) &= \frac{1}{s}\tom_{1T}(\eta,s),\\
+%DIFDELCMD < 	\tp_1(\eta,s) &= \theta_1 \tG_1(\eta,s) + \tom_2(\eta,s) \tG_1(\eta,s),\\
+%DIFDELCMD < 	\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1F}(\eta,s)\tG_2(\eta,s).\label{eq:Z}
+%DIFDELCMD < \end{align}%%%
+\DIFdelend \DIFaddbegin \DIFadd{Eqs. \ref{eq:g2} gives
+}\begin{align}
+	\tp_0(\eta,s) &= \frac{1}{s}\tom_{0}(\eta,s),\\
+	\tp_1(\eta,s) &= \theta_1 \tG_1(\eta,s) + \tom_2(\eta,s) \tG_1(\eta,s),\\
+	\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1}(\eta,s)\tG_2(\eta,s).\label{eq:Z}
+\end{align}\DIFaddend 
+The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$. Using \DIFdelbegin \DIFdel{equations (}\DIFdelend \DIFaddbegin \DIFadd{Eqs. }\DIFaddend \ref{eq:A}-\ref{eq:Z} \DIFdelbegin \DIFdel{) }\DIFdelend this becomes, in the double Laplace representation, 
+\begin{multline}
+	\tp(\eta,s) = \frac{1}{s}\frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
+	+\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}. \\
+	\label{eq:lap}
+\end{multline}
+Plugging the propagators outlined in \DIFdelbegin \DIFdel{manuscript equations (8-9) into equation (\ref{eq:lap} ) }\DIFdelend \DIFaddbegin \DIFadd{Sec. \ref{sec:solution} into Eq. \ref{eq:lap} }\DIFaddend gives 
+\be \tilde{p}(\eta,s) = \frac{1}{s}\frac{(s+\kappa + k')s  + \theta_1(s+\kappa )\eta v+ \kappa k_2}{(s+\kappa+k_1)\eta v+(s+\kappa+k')s + \kappa k_2}.\label{eq:nicedist}\ee
+In this equation, $k'=k_1+k_2$, and \DIFdelbegin \DIFdel{we have used }\DIFdelend the normalization requirement of the initial probabilities \DIFdelbegin \DIFdel{: $\theta_1 + \theta_2 = 1.$
+}\DIFdelend \DIFaddbegin \DIFadd{$\theta_1 + \theta_2 = 1$ has been incorporated.
+}\DIFaddend The double inverse transform of this equation provides the distribution $p(x,t)$.
+\DIFdelbegin \DIFdel{We invert the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend transform over $\eta$ \DIFaddbegin \DIFadd{is inverted }\DIFaddend first.
+Using the results \DIFaddbegin [\DIFaddend 15.103\DIFaddbegin ] \DIFaddend (transform of exponential), \DIFaddbegin [\DIFaddend 15.123\DIFaddbegin ] \DIFaddend (transform of derivative), and \DIFaddbegin [\DIFaddend 15.141\DIFaddbegin ] \DIFaddend (transform of Dirac delta function) from \citet{Arfken1985} provides 
+\begin{multline} \tp(x,s) = \theta_1 \frac{s+\kappa}{s(s+\kappa + k_1)}\delta(x) + \frac{1}{v} \Big(\frac{(s+\kappa+k')s+\kappa k_2}{s(s+\kappa+k_1)} \\- \frac{\theta_1(s+\kappa)[s(s+\kappa+k_1)+\kappa k_2]}{s(s+\kappa+k_1)^2}\Big)
+	\exp\Big[-\frac{(s+\kappa+k')s+\kappa k_2}{s+\kappa+k_1}\frac{x}{v}\Big].\end{multline}
+Inverting the remaining transform over $s$, applying results \DIFaddbegin [\DIFaddend 15.152\DIFaddbegin ] \DIFaddend (substitution), \DIFaddbegin [\DIFaddend 15.164\DIFaddbegin ] \DIFaddend (translation), and \DIFaddbegin [\DIFaddend 15.175\DIFaddbegin ] \DIFaddend (transform of $te^{kt}$) from \citet{Arfken1985}, and defining the shorthand notations $\tau = k_1(t-x/v)$, $\xi = k_2 x/v$, and $\Omega = (\kappa + k_1)/k_1$, gives the simpler form 
+\begin{multline}
+	p(x,t) = \theta_1\Big[1-\frac{k_1}{\kappa + k_1}\big(1-e^{-(\kappa + k_1)t}\big)\Big]\delta(x) + \frac{1}{v}\exp[\Omega \tau - \xi]\\
+	\times \El^{-1}\Big\{\Big( \theta_2 + \frac{\theta_1k_1+\theta_2 k_2}{s}+\frac{\theta_1k_1k_2}{s^2} + \frac{\theta_2\kappa k_2}{s(s-\kappa-k_1)} + \frac{\theta_1\kappa k_1 k_2}{s^2(s-\kappa-k_1)}\Big)\\
+	\times\exp\big[\frac{k_1 \xi}{s}\big];\tau/k_1\Big\}.
+\end{multline}
+Using entries \DIFaddbegin [\DIFaddend 2.2.2.1\DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin ]\DIFadd{, }[\DIFaddend 2.2.2.8\DIFdelbegin \DIFdel{, and }\DIFdelend \DIFaddbegin ]\DIFadd{, and }[\DIFaddend 1.1.1.13\DIFaddbegin ] \DIFaddend from \citet{Prudnikov1992a} in conjunction with the definition of the \DIFaddbegin \DIFadd{generalized }\DIFaddend Marcum Q-function \DIFdelbegin \DIFdel{$ \mathcal{P}_\mu(x,t)$ \mbox{%DIFAUXCMD
+\citep[e.g.,][]{Temme1996}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{$ \mathcal{Q}_\mu(x,t)$ \mbox{%DIFAUXCMD
+\citep{Temme1996}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend , and inserting the Heaviside functions to account for the fact that grains can neither travel backwards nor at speeds exceeding $v$, \DIFdelbegin \DIFdel{we finally arrive at manuscript equation (10) }\DIFdelend \DIFaddbegin \DIFadd{then finally produces Eq. \ref{eq:pdf} }\DIFaddend for the joint distribution $p(x,t)$.
+
+\section{Calculation of the moments}
+\label{sec:appendixB}
+
+\DIFdelbegin \DIFdel{We compute the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend first two moments of position $x$ and ultimately \DIFdelbegin \DIFdel{its variance using equation (\ref{eq:momenttrick})}\DIFdelend \DIFaddbegin \DIFadd{the variance are computed using Eq. \ref{eq:momenttrick}}\DIFaddend . The first two derivatives of the double \DIFdelbegin \DIFdel{Laplace transformed distribution (\ref{eq:nicedist} ) }\DIFdelend \DIFaddbegin \DIFadd{Laplace-transformed distribution Eq. \ref{eq:nicedist} }\DIFaddend are
+\be \partial_\eta \tp(\eta,s) = -v \frac{1}{s}\frac{[(s+\kappa + k')s + \kappa k_2][\theta_2(s+\kappa) + k_1]}{[\eta v(s+\kappa +k_1) + (s+ \kappa + k')s+\kappa k_2]^2},\ee
+\be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{(s+\kappa+k_1)[(s+\kappa + k')s+\kappa k_2][\theta_2(s+\kappa) + k_1]}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}.\ee
+Evaluating these at $\eta=0$ and applying \DIFdelbegin \DIFdel{equation (\ref{eq:momenttrick} ) provides the Laplace transformed }\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:momenttrick} provides the Laplace-transformed }\DIFaddend moments
+\be  \frac{\bra\tilde{x}(s)\ket} {v} = \frac{1}{s}\frac{\theta_2(s+\kappa)+k_1}{(s+\kappa+k')s+\kappa k_2} = \frac{1}{s} \frac{\theta_2(s+\kappa)+k_1}{(s+a+b)(s+a-b)}\label{eq:lapmean},\ee
+\DIFaddbegin \begin{multline} \frac{\bra \tilde{x}^2(s) \ket}{2v^2} = \frac{1}{s} \frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{[(s+\kappa+k')s+\kappa k_2]^2} \\=  \frac{1}{s}\frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{(s+a+b)^2(s+a-b)^2}.\label{eq:lapsecondmom}\end{multline}
+\DIFaddend The parameters $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ were introduced to factorize the denominators.
+These equations can be inverted using the properties \DIFaddbegin [\DIFaddend 15.164\DIFaddbegin ] \DIFaddend (translation), \DIFaddbegin [\DIFaddend 15.11.1\DIFaddbegin ] \DIFaddend (integration), and \DIFaddbegin [\DIFaddend 15.123\DIFaddbegin ] \DIFaddend (differentiation) from  \citet{Arfken1985} after expansion in partial fractions.
+For the mean, the calculation is
+\DIFdelbegin %DIFDELCMD < \begin{align}
+%DIFDELCMD < 	\frac{2b}{v}\bra x \ket &= \big[\theta_2 + (k_1+\theta_2 \kappa)\int_0^t dt\big]\El^{-1}\Big\{ \frac{1}{s+a-b}-\frac{1}{s+a+b};t\Big\}\\
+%DIFDELCMD < 	&= \Big[\theta_2 + \frac{k_1+\theta_2\kappa}{b-a}\Big]e^{(b-a)t} - \Big[\theta_2 - \frac{k_1+\theta_2\kappa}{a+b}\Big]e^{-(a+b)t} - \Big[\frac{k_1+\theta_2\kappa}{b-a} + \frac{k_1+\theta_2\kappa}{a+b}\Big].
+%DIFDELCMD < \end{align}%%%
+\DIFdelend \DIFaddbegin \begin{align}
+\begin{split}
+	\frac{2b}{v}\bra x \ket &= \big[\theta_2 + (k_1+\theta_2 \kappa)\int_0^t dt\big]\El^{-1}\Big\{ \frac{1}{s+a-b}-\frac{1}{s+a+b};t\Big\}\\
+	&= \Big[\theta_2 + \frac{k_1+\theta_2\kappa}{b-a}\Big]e^{(b-a)t} - \Big[\theta_2 - \frac{k_1+\theta_2\kappa}{a+b}\Big]e^{-(a+b)t} \\
+ & \hspace{1cm}- \Big[\frac{k_1+\theta_2\kappa}{b-a} + \frac{k_1+\theta_2\kappa}{a+b}\Big].
+\end{split}
+\end{align}\DIFaddend 
+This equation rearranges to \DIFdelbegin \DIFdel{manuscript equation (11)}\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:mean}}\DIFaddend .
+The second moment (\DIFaddbegin \DIFadd{Eq. }\DIFaddend \ref{eq:lapsecondmom}) is 
+\DIFdelbegin %DIFDELCMD < \begin{multline}
+%DIFDELCMD < 	\frac{2b^2}{v^2}\bra x^2 \ket = \Big[\theta_2(\delta(t) + \partial_t) + (\theta_2(2\kappa + k_1)+k_1) + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^t dt \Big] \\
+%DIFDELCMD < 	\times \El^{-1}\Big\{ \frac{1}{(s+a-b)^2} + \frac{1}{(s+a+b)^2}-\frac{1}{b(s+a-b)}+\frac{1}{b(s+a+b)};t\Big\}.
+%DIFDELCMD < \end{multline}%%%
+\DIFdelend \DIFaddbegin \begin{multline}
+	\frac{2b^2}{v^2}\bra x^2 \ket = \Big[\theta_2(\delta(t) + \partial_t) + (\theta_2(2\kappa + k_1)+k_1) \\ + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^t dt \Big] \\
+	\times \El^{-1}\Big\{ \frac{1}{(s+a-b)^2} + \frac{1}{(s+a+b)^2} \\-\frac{1}{b(s+a-b)}+\frac{1}{b(s+a+b)};t\Big\}.
+\end{multline}\DIFaddend 
+This becomes 
+\begin{multline}
+	\frac{2b^3}{v^2}\bra x^2 \ket = \Big[\theta_2\partial_t + [\theta_2(2\kappa+k_1)+k_1] + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^tdt\Big]\\
+	\times \Big((bt-1)e^{(b-a)t}+(bt+1)e^{-(a+b)t}\Big)
+\end{multline}
+which evaluates to \DIFdelbegin \DIFdel{manuscript equation (12)}\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:second}}\DIFaddend .
+Finally, $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2$ derives the variance in \DIFdelbegin \DIFdel{manuscript equation (13)}\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:var}}\DIFaddend .
+
+
+\section{Limiting behavior of the moments}
+\label{sec:appendixC}
+
+\DIFdelbegin \DIFdel{We determine the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend diffusion exponents $\gamma$ in the local, intermediate, and global ranges using the two limiting cases described in \DIFdelbegin \DIFdel{the discussion of the manuscript}\DIFdelend \DIFaddbegin \DIFadd{Sec. \ref{sec:amidonenow}}\DIFaddend .
+Limit (1) is $\kappa \rightarrow 0$. \DIFdelbegin \DIFdel{We take }\DIFdelend \DIFaddbegin \DIFadd{Taking }\DIFaddend this limit in \DIFdelbegin \DIFdel{equations (\ref{eq:lapmean} ) and (\ref{eq:lapsecondmom} ) }\DIFdelend \DIFaddbegin \DIFadd{Eqs. \ref{eq:lapmean} and \ref{eq:lapsecondmom} }\DIFaddend with initial condition $\theta_1=1$ \DIFdelbegin \DIFdel{to obtain
+}\DIFdelend \DIFaddbegin \DIFadd{obtains
+}\DIFaddend \begin{align}
+	\bra \tilde{x} \ket &= vk_1 \frac{1 }{s^2(s+k')}, \label{eq:li1}\\
+	\bra \tilde{x}^2 \ket &= 2v^2k_1 \frac{s+k_1}{s^3(s+k')^2}. \label{eq:li2}
+\end{align}
+\DIFdelbegin \DIFdel{Inverting }\DIFdelend \DIFaddbegin \DIFadd{Laplace inverting and combining }\DIFaddend these equations provides the variance
+\be \sigma_x^2 = 2v^2\frac{k_1}{k'^4}\Big(k_1\big[\frac{1}{2} - k'te^{-k't} - \frac{1}{2} e^{-2k't}\big] + k_2\big[-2+k't + (2+k't)e^{-k't}\big]\Big).\label{eq:li}\ee
+This result encodes two ranges of diffusion and can also be derived from the governing equations of the \citet{Lisle1998} and \citet{Lajeunesse2017} models.
+Expanding for small $t$ provides $\sigma_x^2(t) = v^2k_1t^3/3$ -- local range super-diffusion.
+Expanding for large $t$ provides $\sigma_x^2(t) = 2v^2k_1k_2t/k'^3$ -- intermediate range normal diffusion.
+
+\DIFdelbegin \DIFdel{We further investigate limit }\DIFdelend \DIFaddbegin \DIFadd{Limit }\DIFaddend (1) \DIFaddbegin \DIFadd{can be further investigated }\DIFaddend for arbitrary initial conditions.
+By applying Tauberian theorems, \DIFdelbegin \DIFdel{we assert }\DIFdelend the $ t \rightarrow 0$ variance \DIFdelbegin \DIFdel{is determined by }\DIFdelend \DIFaddbegin \DIFadd{can be determined from }\DIFaddend the $s\rightarrow \infty$ limits of \DIFdelbegin \DIFdel{(\ref{eq:lapmean} ) and (\ref{eq:lapsecondmom} ) \mbox{%DIFAUXCMD
+\citep[e.g.,][]{Weiss1994, Weeks1998}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{Eqs. \ref{eq:lapmean} and \ref{eq:lapsecondmom} \mbox{%DIFAUXCMD
+\citep[e.g.][]{Weiss1994, Weeks1998}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend .  
+Expanding these equations in powers of $1/s$ and inverting the resulting transforms gives
+\begin{align} \bra x \ket &= v \theta_2 t + \frac{1}{2}v(\theta_1k_1-\theta_2k_2)t^2 + O(t^3),\\
+	\bra x^2 \ket &= v^2\theta_2 t^2 + \frac{1}{3}v^2(\theta_1k_1-2\theta_2k_2)t^3+ O(t^4).
+\end{align}
+This equation highlights the effect of initial conditions on the diffusion characteristics of the local range:
+\be \sigma_x^2(t) \sim v^2\theta_1\theta_2t^2 + \frac{1}{3}v^2(\theta_1k_1+\theta_2k_2)t^3.\label{eq:init}\ee
+\DIFdelbegin \DIFdel{We have taken }\DIFdelend \DIFaddbegin \DIFadd{This equation includes }\DIFaddend only leading order terms for any option of $\theta_1$ and $\theta_2$.
+\DIFdelbegin \DIFdel{Equation (\ref{eq:init} ) }\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:init} }\DIFaddend shows local range exponent $\gamma=2$ when initial conditions are mixed (both are non-zero) and $\gamma=3$ when initial conditions are pure (one is zero).
+
+Limit (2) is $1/k_2 \rightarrow 0$ and $v\rightarrow \infty$ while $v/k_2 = l$. Under this limit, \DIFdelbegin \DIFdel{equations (\ref{eq:lapmean} ) and (\ref{eq:lapsecondmom} ) }\DIFdelend \DIFaddbegin \DIFadd{Eqs. \ref{eq:lapmean} and \ref{eq:lapsecondmom} }\DIFaddend provide
+\begin{align}
+	\bra \tilde{x} \ket &= k_1l\frac{1}{s(s+\kappa)},\\
+	\bra \tilde{x}^2 \ket &= 2l^2k_1 \frac{s+\kappa+k_1}{s(s+\kappa)^2}.
+\end{align}
+Inverting these equations and introducing the variables $c=lk_1$ (an effective velocity) and $D_d = l^2k_1$ (a diffusivity) provides positional variance
+\be \sigma_x^2(t) = \frac{2D_d(1-e^{-\kappa t})}{\kappa} + \frac{(1-e^{-2\kappa t}-2e^{-\kappa t}\kappa t)c^2}{\kappa^2}. \label{eq:wuvar}\ee
+This is mathematically identical to the key result of \citet{Wu2019}.
+Expanding for small $t$ provides $\sigma_x^2(t) = 2D_d t$ -- intermediate range normal diffusion, while sending $t\rightarrow \infty$ provides $\sigma_x^2 = (2D_d\kappa + c^2)/\kappa^2$ -- a constant variance in the geomorphic range.
+The global range is characterized by competition between terms in \DIFdelbegin \DIFdel{equation (\ref{eq:wuvar} ), }\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:wuvar} }\DIFaddend and shows $2 \leq \gamma \leq 3$ depending on the ratio $k_1/\kappa$ \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep[cf.,][]{Wu2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep[cf.][]{Wu2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend .
+Finally, both \DIFdelbegin \DIFdel{equations (\ref{eq:li} ) and (\ref{eq:wuvar} ) }\DIFdelend \DIFaddbegin \DIFadd{Eqs. \ref{eq:li} and \ref{eq:wuvar} }\DIFaddend reduce to the Einstein result $\sigma_x^2(t) = 2D_d t$ in further simplified limits.

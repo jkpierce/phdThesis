@@ -20,7 +20,7 @@ Now I will take time derivatives in order to apply the so-called Furutsu-Novikov
 \be \pt \bra \eta(t)F[\eta(t)] \ket = \bra \eta \pt F \ket + k \big[\bra \eta \ket \bra F \ket -\bra \eta F \ket \big]  \label{eq:furuti}.\ee
 
 
-Making the short-hands $G = igV-g^2D$ and $F=\exp G\int_0^t \eta(u)du$ and taking a time derivative of Eq. \ref{eq:logi} gives
+Making the shorthands $G = igV-g^2D$ and $F=\exp G\int_0^t \eta(u)du$ and taking a time derivative of Eq. \ref{eq:logi} gives
 \be G^{-1}\pt \tilde{P}(g,t) = \bra \eta F\ket. \label{eq:furut}\ee
 Taking a second time derivative opens up the possibility of using the Furutsu-Novikov formula \ref{eq:furuti}: 
 \be G^{-1}\pt \tilde{P}(g,t) = \pt \bra \eta F\ket = G\bra \eta F \ket + k\big[ \bra \eta \ket \tilde{P}(g,t) - G^{-1} \pt \tilde{P}(g,t) \big]. \ee
@@ -72,7 +72,7 @@ Finally, using the identity
 \ee
 from \citet{Bateman1953}, pg. 133 (which can be derived by either u-substitution or series expansion in powers of $a$) provides
 \begin{multline}  P(x,t) = \frac{1}{V} e^{-k_E t}  \big[ -\varphi D\px^2 + V\varphi \px + k_D + \delta(t) + \pt \big] \exp\Big[\frac{Vx}{2D}\Big]\\ \times \int_0^t du \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) \\ \times \mathcal{L}^{-1}\Bigg\{ \frac{\exp\Big[ \frac{-V|x|}{2D}\sqrt{a+b s}\Big]}{\sqrt{a + b s}}\Bigg\}(u) , \label{eq:magic}\end{multline}
-where $a = 1 + 4D(k_E-k_E)/(V^2)$ and $b = 4D/V^2$ are short-hands.
+where $a = 1 + 4D(k_E-k_E)/(V^2)$ and $b = 4D/V^2$ are shorthands.
 
 Using the trick of introducing a parameter and integrating over it to remove the square root from the denominator (an integral analogue of "Feynman's trick"), the remaining transform can be evaluated from standard tables \citep{Prudnikov1992a}, eventually giving (after integrating over and setting to $1$ the fake parameter),
 \begin{multline} P(x,t) = \big[-\varphi D\px^2 + V\varphi \px + k + \delta(t)+ \pt \big]\int_0^t \mathcal{I}_0\Big( 2 \sqrt{k_Ek_D u(t-u)}\Big) e^{-k_E(t-u)} \\ \times \sqrt{ \frac{1}{4\pi D u}} \exp\Big[-k_D u - \frac{(x-Vu)^2}{4Du}\Big] du, \end{multline}
@@ -108,6 +108,7 @@ After some work, using Eq. \ref{eq:magic} and tabulated Laplace transform pairs 
 \end{multline}
 as reported in Eq. \ref{eq:fluxy}.
 
+\section{Asymptotic limits of the flux rate function}
 \label{sec:fluxlimits}
 Eq. \ref{eq:fluxy} is difficult to work with. To explore the behavior at extreme values of the observation time $T$, one can apply Tauberian theorems \citep{Weiss1994} to invert the Laplace-transformed rate function of Eq. \ref{eq:laplacefluxrate} at the opposite extreme of $s$.
 	

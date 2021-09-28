@@ -38,7 +38,7 @@ Forming cumulative sums of the four ratios partitions the unit interval $[0,1]$ 
 
 In summary, to step the process through a single transition, the SSA draws the time interval to the next transition from the distribution (Eq. \ref{eq:exp}), draws a uniform random number from $[0,1]$, then uses this uniform random to select the transition that occurs from the cumulative sum of the ratios in Eq. \ref{eq:rel}. Iterating this random number generation and selection process simulates exact realizations of the stochastic process. These are series of $n$ and $m$ through time from which any statistics of interest can be calculated.
 
-\subsection{Pseudo-code for the Gillespie SSA}
+\subsection{Pseudocode for the Gillespie SSA}
 \label{sec:crr}
 Simulations are initialized by the initial conditions $n_0$ and $m_0$, the model parameters used in Eqs. \ref{eq:rate1}-\ref{eq:rate4}, and the desired simulation duration $t_\text{max}$. The SSA uses these inputs to generate timeseries of $n$ and $m$ as follows:
 

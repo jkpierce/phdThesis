@@ -1,0 +1,108 @@
+%%!TEX root = diss.tex
+
+
+\chapter{Calculations involved in the \DIFdelbegin \DIFdel{Collisional }\DIFdelend \DIFaddbegin \DIFadd{collisional }\DIFaddend Langevin model}
+
+
+\section{Derivation of \DIFdelbegin \DIFdel{Master Equation}\DIFdelend \DIFaddbegin \DIFadd{master equation}\DIFaddend }
+\label{sec:langmasterderiv}
+To derive the master equation from \DIFdelbegin \DIFdel{\ref{eq:langevin}, we }\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:langevin}, I }\DIFaddend temporarily consider the Gaussian white noise (GWN) $\xi(t)$ as a Poisson jump process having rate $r$ and jumps \DIFdelbegin \DIFdel{$ \sqrt{2 d} h$ }\DIFdelend \DIFaddbegin \DIFadd{$ \sqrt{2 \tilde{D}} h$ }\DIFaddend with $h$ distributed as $f(h)$. \DIFdelbegin \DIFdel{We }\DIFdelend \DIFaddbegin \DIFadd{I }\DIFaddend will later take a GWN limit \DIFdelbegin \DIFdel{on }\DIFdelend \DIFaddbegin \DIFadd{from }\DIFaddend this noise. \DIFdelbegin \DIFdel{With this assumption, integrating }\DIFdelend \DIFaddbegin \DIFadd{Similar derivations are available in some references \mbox{%DIFAUXCMD
+\citep[e.g.][]{Kanazawa2017,Suweis2011}}\hspace{0pt}%DIFAUXCMD
+, and the precise connection between GWN and Poisson noise is discussed in \mbox{%DIFAUXCMD
+\citet{VanDenBroeck1983}}\hspace{0pt}%DIFAUXCMD
+.
+}
+
+\DIFadd{From this starting point, integrating Eq. }\DIFaddend \ref{eq:langevin} over a small time interval $\delta t$ \DIFdelbegin \DIFdel{considering the Ito }\DIFdelend \DIFaddbegin \DIFadd{under the It\^{o} }\DIFaddend interpretation for the collision term provides
+\be     
+u(t+\delta t) =
+\DIFdelbegin %DIFDELCMD < \begin{cases}
+%DIFDELCMD < 	u(t) + \gamma \delta t & \text{with probability } 1- r \delta t - \nu \delta t\\
+%DIFDELCMD < 	u(t) + \sqrt{2 d} h &  \text{with probability } r \delta t \\
+%DIFDELCMD < 	\ve u(t) &  \text{with probability } \nu \delta t
+%DIFDELCMD < \end{cases}%%%
+\DIFdelend \DIFaddbegin \begin{cases}
+	u(t) + \tilde{\Gamma} \delta t & \text{with probability } 1- r \delta t - \nu \delta t\\
+	u(t) + \sqrt{2 \tilde{D}} h &  \text{with probability } r \delta t \\
+	\ve u(t) &  \text{with probability } \nu \delta t
+\end{cases}\DIFaddend \DIFaddbegin \DIFadd{.
+}\DIFaddend \ee
+
+Considering the probability \DIFdelbegin \DIFdel{$P(u,t+\delta)$ as }\DIFdelend \DIFaddbegin \DIFadd{$P(u,t+\delta t)$ as a }\DIFaddend sum over possible paths from $P(u,t)$ develops 
+\DIFdelbegin %DIFDELCMD < \begin{align} P(u,t+\delta t) =
+%DIFDELCMD < 	(1- r \delta t - \nu \delta t)\int_{-\infty}^\infty dw  \delta(u-w-\gamma \delta t) P(w,t)\\ 
+%DIFDELCMD < 	+  r \delta t \int_{-\infty}^\infty dw \int_{-\infty}^\infty dh f(h) \delta (u - w - \sqrt{2 d}h) P(w,t) \\ 
+%DIFDELCMD < 	+ \nu \delta t \int_{-\infty}^\infty dw \int_0^1 d\ve \rho(\ve)  \delta(u-w\ve) P(w,t).
+%DIFDELCMD < \end{align}%%%
+\DIFdelend \DIFaddbegin \begin{align} 
+\begin{split}
+P(u,t+\delta t) =
+	\hspace{4pt}&(1- r \delta t - \nu \delta t)\int_{-\infty}^\infty dw  \delta(u-w-\tilde{\Gamma} \delta t) P(w,t)\\ 
+	&+  r \delta t \int_{-\infty}^\infty dw \int_{-\infty}^\infty dh f(h) \delta (u - w - \sqrt{2 \tilde{D}}h) P(w,t) \\ 
+	&+ \nu \delta t \int_{-\infty}^\infty dw \int_0^1 d\ve \rho(\ve)  \delta(u-w\ve) P(w,t).
+\end{split}
+\end{align}\DIFaddend 
+Evaluating all integrals over $\delta$-functions provides 
+\DIFdelbegin %DIFDELCMD < \begin{align} P(u,t+\delta t) = (1-r \delta t - \nu \delta t)P(u-\gamma \delta t, t) \\+ r \delta t\int_{-\infty}^\infty dh f(h) P(u+\sqrt{2d}h) \\+ \nu \delta t \int_0^1 \frac{d\ve}{\ve} \rho(\ve) P\big(\frac{u}{\ve}\big).\end{align}%%%
+\DIFdelend \DIFaddbegin \begin{align}
+\begin{split}
+ P(u,t+\delta t) = \hspace{4pt}&(1-r \delta t - \nu \delta t)P(u-\tilde{\Gamma} \delta t, t) \\&+ r \delta t\int_{-\infty}^\infty dh f(h) P(u+\sqrt{2 \tilde{D}}h) \\&+ \nu \delta t \int_0^1 \frac{ \tilde{D}\ve}{\ve} \rho(\ve) P\big(\frac{u}{\ve}\big).
+\end{split}
+\end{align}\DIFaddend 
+Finally, \DIFdelbegin \DIFdel{we take }\DIFdelend \DIFaddbegin \DIFadd{taking }\DIFaddend $\delta t \rightarrow 0$ and \DIFdelbegin \DIFdel{limit }\DIFdelend \DIFaddbegin \DIFadd{limiting }\DIFaddend the Poisson noise involving \DIFdelbegin \DIFdel{$\sqrt{2d}$ }\DIFdelend \DIFaddbegin \DIFadd{$\sqrt{2 \tilde{D}}$ }\DIFaddend to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{VanDenBroeck1983}}\hspace{0pt}%DIFAUXCMD
+. This process finally }\DIFdelend obtains the master equation \DIFdelbegin \DIFdel{(\ref{eq:master}).
+}\DIFdelend \DIFaddbegin \DIFadd{\ref{eq:master}.
+}\DIFaddend \section{Derivation of \DIFdelbegin \DIFdel{Steady-state }\DIFdelend \DIFaddbegin \DIFadd{steady-state }\DIFaddend solution}
+\label{sec:langsteadyderiv}
+Defining $\tilde{P}(s) = \int_{-\infty}^\infty du e^{i u s} P(u) $ as the Fourier transform (FT) of $P(u)$ and taking the FT of \DIFaddbegin \DIFadd{Eq. }\DIFaddend \ref{eq:master} develops the recursion relation
+\be \tilde{P}(s) = \frac{\tilde{P}(s\ve)}{q(s)}. \ee
+where
+\be q(z) = \tilde{D} z^2 - i \tilde{\Gamma} z + 1 . \label{eq:q} \ee
+Recursing $N+1$ times provides
+\be \tilde{P}(s) = \frac{\tilde{P}(s \ve^{N+1})}{q(s \ve^0)q(s\ve^1)\dots q(s\ve^N)}.\label{eq:recursion}\ee
+The polynomials $q(z)$ can always be factored as \DIFdelbegin \DIFdel{$q(z) = d(z - i\lambda_-)(z - i\lambda_+)$ }\DIFdelend \DIFaddbegin \DIFadd{$q(z) = \tilde{D}(z - i\lambda_-)(z - i\lambda_+)$ }\DIFaddend where
+\be \lambda_\pm = \frac{\tilde{\Gamma}}{2\tilde{D}}\Big[1 \pm \sqrt{ 1 + 4\tilde{D}/\tilde{\Gamma}^2} \Big]. \label{eq:lambdas}\ee
+Using these factors to expand $\tilde{P}(s)$ in partial fractions provides
+\be \tilde{P}(s)  = \tilde{P}(s \ve^{N+1}) \sum_{l=0}^N  \Big[ \frac{R_l^-}{s\ve^l - i\lambda_-} + \frac{R_l^+}{s\ve^l - i\lambda_+} \Big] \DIFaddbegin \DIFadd{,}\DIFaddend \ee
+where the coefficients $R_l^\pm$ are the residues (at least up to a constant factor) of the product $[q(s\ve^0)\dots q(s\ve^N)]^{-1}$:
+\be R_l^\pm = \frac{s \ve^{l} - i\lambda_\pm }{q(s\ve^0)\dots q(s \ve^N)} \Big|_{s= i \lambda_\pm \ve^{-l}}.\ee
+The \DIFdelbegin \DIFdel{Fourier transform (\ref{eq:recursion} ) }\DIFdelend \DIFaddbegin \DIFadd{Fourier-transformed Eq. \ref{eq:recursion} }\DIFaddend has a convenient feature as $N\rightarrow \infty$: since $0<\ve <1$, the prefactor $\tilde{P}( s \ve^{N+1})$ becomes the normalization condition $\tilde{P}(0)=1$ for the probability distribution $P(u)$\DIFdelbegin \DIFdel{in the limit}\DIFdelend .
+Taking this limit and evaluating the residues provides 
+\DIFdelbegin %DIFDELCMD < \begin{multline} \tilde{P}(s) = \frac{1}{\tilde{D}(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_- \ve^m)} \sum_{l=0}^\infty \frac{i}{(s\ve^l-i\lambda_-)\prod_{m=1}^l q(i\lambda_- \ve^{-m})} 
+%DIFDELCMD < 	\\+ \frac{1}{\tilde{D}(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_+ \ve^m)} \sum_{l=0}^\infty \frac{-i}{(s\ve^l-i \lambda_+)\prod_{m=1}^l q(i\lambda_+ \ve^{-m})} \end{multline}%%%
+\DIFdelend \DIFaddbegin \begin{multline} \tilde{P}(s) = \frac{1}{\tilde{D}(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_- \ve^m)} \sum_{l=0}^\infty \frac{i}{(s\ve^l-i\lambda_-)\prod_{m=1}^l q(i\lambda_- \ve^{-m})} 
+	\\+ \frac{1}{\tilde{D}(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_+ \ve^m)} \sum_{l=0}^\infty \frac{-i}{(s\ve^l-i \lambda_+)\prod_{m=1}^l q(i\lambda_+ \ve^{-m})}. \end{multline}\DIFaddend 
+Finally, \DIFdelbegin \DIFdel{inverting }\DIFdelend the Fourier transforms \DIFaddbegin \DIFadd{are inverted }\DIFaddend term by term with contour integration (another use of the integral given in \DIFdelbegin \DIFdel{eq}\DIFdelend \DIFaddbegin \DIFadd{Eq}\DIFaddend . \ref{eq:contour}), and \DIFdelbegin \DIFdel{incorporating eq. (\ref{eq:q} ), provides }\DIFdelend \DIFaddbegin \DIFadd{the definition of $q(z)$ from Eq. \ref{eq:q} is incorporated to obtain }\DIFaddend the steady-state solution \DIFdelbegin \DIFdel{(\ref{eq:steadystate})}\DIFdelend \DIFaddbegin \DIFadd{quoted in Eq. \ref{eq:steadystate}}\DIFaddend .
+
+\section{Calculation of the moments}
+\label{sec:langmoments}
+Taking \DIFdelbegin \DIFdel{(\ref{eq:master})}\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:master}}\DIFaddend , multiplying by $u^k$, integrating over all space, and taking account of normalization of $P(u)$ provides a recursion relation for the moments: 
+\be 0 = \tilde{D} k (k-1)\langle u^{k-2} \rangle + \tilde{\Gamma} k \langle u^{k-1} \rangle + (\ve^k-1)\langle u^k \rangle. \ee
+$k=1$ provides the mean (given in \DIFdelbegin \DIFdel{eq}\DIFdelend \DIFaddbegin \DIFadd{Eq}\DIFaddend . \ref{eq:meanu})
+\be \langle u \rangle =  \DIFdelbegin \DIFdel{\frac{\tilde{\Gamma}}{\nu(1-\ve)} = \frac{\tilde{\Gamma}}{1-\ve} }\DIFdelend \DIFaddbegin \DIFadd{\frac{\tilde{\Gamma}}{1-\ve} = \frac{\Gamma}{\nu(1-\ve)}, }\DIFaddend \ee
+while $k=2$ provides the second moment
+\be \langle u^2 \rangle = 2 \frac{\tilde{D} + \tilde{\Gamma} \langle u \rangle}{1-\ve^2}, \ee
+leading to the velocity variance
+\be \sigma_u^2 = \frac{2\tilde{D} + \tilde{\Gamma}^2}{1-\ve^2}\ee
+given in \DIFdelbegin \DIFdel{equation \ref{eq:varu}.
+}\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:varu}.
+}\DIFaddend \section{\DIFdelbegin \DIFdel{Weak and strong }\DIFdelend \DIFaddbegin \DIFadd{The weak }\DIFaddend collision \DIFdelbegin \DIFdel{limits}\DIFdelend \DIFaddbegin \DIFadd{limit}\DIFaddend }
+\label{sec:langextremes}
+Now I \DIFaddbegin \DIFadd{will }\DIFaddend demonstrate that weak collisions imply a Gaussian-like distribution for sediment velocities. The limit is challenging since the steady-state distribution \DIFaddbegin \DIFadd{Eq. }\DIFaddend \ref{eq:steadystate} and the moments above all diverge as $\ve \rightarrow 1$.
+Following \cite{Hall1989}, this \DIFaddbegin \DIFadd{divergence }\DIFaddend suggests normalizing the distribution $P(u)$ using the scaled \DIFdelbegin \DIFdel{variables
+}\DIFdelend \DIFaddbegin \DIFadd{variable
+}\DIFaddend \be z = \frac{u - \bra u \ket}{\sigma_u}, \ee
+\DIFdelbegin \DIFdel{and
+}\DIFdelend \DIFaddbegin \DIFadd{giving a scaled distribution
+}\DIFaddend \be Q(z) = \sigma_u P(u).\ee
+\DIFdelbegin \DIFdel{This produces a }\DIFdelend \DIFaddbegin \DIFadd{The resulting }\DIFaddend differential equation for $Q(z)$ \DIFdelbegin \DIFdel{which }\DIFdelend is well-behaved in the elastic collision limit $\ve \rightarrow 1$.
+Incorporating this transformation into \DIFdelbegin \DIFdel{(\ref{eq:master} ) provides a }\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:master} provides the }\DIFaddend ``normalized" master equation
+\DIFdelbegin %DIFDELCMD < \begin{multline}(1-\ve^2) \frac{\tilde{D}}{2\tilde{D} + \tilde{\Gamma}} Q''(z) - \frac{\tilde{\Gamma}\sqrt{1-\ve^2}}{\sqrt{2\tilde{D}+\tilde{\Gamma}^2}}Q'(z) - Q(z) \\+ \frac{1}{\ve} Q\Big(z + \Big[\frac{1-\ve}{\ve}z + \frac{\tilde{\Gamma}\sqrt{1-\ve^2}}{\ve\sqrt{2\tilde{D}+\tilde{\Gamma}^2}} \Big]\Big) = 0 \end{multline}%%%
+\DIFdelend \DIFaddbegin \begin{multline}(1-\ve^2) \frac{\tilde{D}}{2\tilde{D} + \tilde{\Gamma}} Q''(z) - \frac{\tilde{\Gamma}\sqrt{1-\ve^2}}{\sqrt{2\tilde{D}+\tilde{\Gamma}^2}}Q'(z) - Q(z) \\+ \frac{1}{\ve} Q\Big(z + \Big[\frac{1-\ve}{\ve}z + \frac{\tilde{\Gamma}\sqrt{1-\ve^2}}{\ve\sqrt{2\tilde{D}+\tilde{\Gamma}^2}} \Big]\Big) = 0 .\end{multline}\DIFaddend 
+This equation remains exact and is only a change of variables from \DIFdelbegin \DIFdel{(\ref{eq:master})}\DIFdelend \DIFaddbegin \DIFadd{Eq. \ref{eq:master}}\DIFaddend .
+Now I approximate the equation for $\ve \rightarrow 1$ by expanding the final term to second order around $z=0$ before setting $\ve = 1$, obtaining
+\be Q''(z) + z Q'(z) + Q(z) = 0, \ee
+which is the classic Ornstein-Uhlenbeck Fokker-Planck equation whose solution is the standard normal distribution for $Q(z)$ \citep[e.g.][]{Gardiner1983}.
+This solution provides \DIFaddbegin \DIFadd{Eq. }\DIFaddend \ref{eq:gaussian} when transformed back to the original variables $P(u)$ and $u$.
+

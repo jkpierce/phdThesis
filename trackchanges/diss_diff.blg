@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: diss_diff.aux
+A level-1 auxiliary file: abs.aux
+A level-1 auxiliary file: laySum.aux
+A level-1 auxiliary file: pref.aux
+A level-1 auxiliary file: ack.aux
+A level-1 auxiliary file: ch1intro.aux
+A level-1 auxiliary file: ch2flipFlop.aux
+A level-1 auxiliary file: ch3bedEle.aux
+A level-1 auxiliary file: ch4downDiff.aux
+A level-1 auxiliary file: ch5langevin.aux
+A level-1 auxiliary file: ch6conc.aux
+The style file: ./agu.bst
+A level-1 auxiliary file: app_ch2.aux
+A level-1 auxiliary file: app_ch3.aux
+A level-1 auxiliary file: app_ch4.aux
+A level-1 auxiliary file: app_ch5.aux
+Reallocated field_info (elt_size=4) to 13648 items from 5000.
+Database file #1: biblio.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--I didn't find a database entry for "Cundall1979a"
+Warning--I didn't find a database entry for ""
+You've used 374 entries,
+            2789 wiz_defined-function locations,
+            3165 strings with 68675 characters,
+and the built_in function-call counts, 318140 in all, are:
+= -- 40796
+> -- 11702
+< -- 239
++ -- 6528
+- -- 2814
+* -- 21216
+:= -- 30950
+add.period$ -- 374
+call.type$ -- 374
+change.case$ -- 2043
+chr.to.int$ -- 368
+cite$ -- 1122
+duplicate$ -- 28489
+empty$ -- 15135
+format.name$ -- 3949
+if$ -- 63911
+int.to.chr$ -- 7
+int.to.str$ -- 1
+missing$ -- 397
+newline$ -- 1126
+num.names$ -- 1505
+pop$ -- 11319
+preamble$ -- 1
+purify$ -- 1681
+quote$ -- 0
+skip$ -- 22816
+stack$ -- 0
+substring$ -- 15080
+swap$ -- 24774
+text.length$ -- 22
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 3255
+warning$ -- 0
+while$ -- 2034
+width$ -- 0
+write$ -- 4112
+(There were 2 warnings)
