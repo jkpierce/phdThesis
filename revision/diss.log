@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.2)  27 SEP 2021 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.2)  28 SEP 2021 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,22 +578,22 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 )
 \openout1 = `diss.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 374.
-LaTeX Font Info:    ... okay on input line 374.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count307
@@ -625,9 +625,9 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package backref Info: ** backref set up for natbib ** on input line 374.
+Package backref Info: ** backref set up for natbib ** on input line 371.
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 374.
+Package hyperref Info: Link coloring OFF on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -640,9 +640,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 374.
-LaTeX Info: Redefining \pageref on input line 374.
-LaTeX Info: Redefining \nameref on input line 374.
+LaTeX Info: Redefining \ref on input line 371.
+LaTeX Info: Redefining \pageref on input line 371.
+LaTeX Info: Redefining \nameref on input line 371.
 
 (./diss.out) (./diss.out)
 \@outlinefile=\write4
@@ -652,7 +652,19 @@ LaTeX Info: Redefining \nameref on input line 374.
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (11.75294pt too wide) in paragraph at lines 375--375
+\OT1/cmr/m/n/10.95 Rui Fer-reira, As-so-ciate Pro-fes-sor, Civil En-gi-neer-ing
+, In-sti-tuto Su-pe-rior T^^Secnico 
+ []
+
+
+Overfull \hbox (15.90479pt too wide) in paragraph at lines 375--375
+\OT1/cmr/m/n/10.95 Michael Church, Pro-fes-sor Emer-i-tus, Ge-og-ra-phy, Uni-ve
+r-sity of British Columbia 
+ []
+
+[2]
 \openout2 = `abs.aux'.
 
  (./abs.tex [3
@@ -871,34 +883,8 @@ cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m \OT1/cmr/m/n/10.95 + 1)]\OML/cmm/m/it/10.9
 \OT1/cmr/m/n/10.95 )$ 
  []
 
-[60] [61]
-Underfull \hbox (badness 1360) in paragraph at lines 148--152
-\OT1/cmr/m/n/10.95 train-ment, and de-po-si-tion
- []
-
-
-Overfull \hbox (3.12068pt too wide) in paragraph at lines 148--152
-\OT1/cmr/m/n/10.95 pa-ram-e-ters rep-re-sent-ing bed-
- []
-
-
-Underfull \hbox (badness 6493) in paragraph at lines 148--152
-\OT1/cmr/m/n/10.95 con-di-tion $(\OML/cmm/m/it/10.95 ^^W; ^^U; ^^V; ^^[; ^^M\OT
-1/cmr/m/n/10.95 )$, I
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 148--152
-\OT1/cmr/m/n/10.95 used the val-ues mea-sured
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 148--152
-\OT1/cmr/m/n/10.95 a se-ries of flume ex-per-i-
- []
-
-[62] [63] [64]
-Overfull \hbox (9.72017pt too wide) in paragraph at lines 206--207
+[60] [61] [62] [63] [64]
+Overfull \hbox (9.72017pt too wide) in paragraph at lines 207--208
 \OT1/cmr/m/n/10.95 steady-state stochas-tic dy-nam-ics of $\OML/cmm/m/it/10.95 
 n$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 m$ \OT1/cmr/m/n/10.95 which sup-
 port a time-independent
@@ -908,51 +894,36 @@ port a time-independent
 File: ./figures/ch3/distributions.pdf Graphic file (type pdf)
 <use ./figures/ch3/distributions.pdf>
 Package pdftex.def Info: ./figures/ch3/distributions.pdf  used on input line 21
-5.
+6.
 (pdftex.def)             Requested size: 360.0pt x 150.00839pt.
 [65] [66 <./figures/ch3/distributions.pdf>]
-<./figures/ch3/variance.pdf, id=3758, 198.7425pt x 198.7425pt>
-File: ./figures/ch3/variance.pdf Graphic file (type pdf)
-<use ./figures/ch3/variance.pdf>
-Package pdftex.def Info: ./figures/ch3/variance.pdf  used on input line 237.
-(pdftex.def)             Requested size: 180.0pt x 180.00682pt.
+<./figures/ch3/newvariance.pdf, id=3756, 397.485pt x 144.54pt>
+File: ./figures/ch3/newvariance.pdf Graphic file (type pdf)
+<use ./figures/ch3/newvariance.pdf>
+Package pdftex.def Info: ./figures/ch3/newvariance.pdf  used on input line 235.
 
-Underfull \hbox (badness 1102) in paragraph at lines 238--238
-[] []|\OT1/cmr/m/n/10.95 Data from all sim-u-la-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--240
-\OT1/cmr/m/n/10.95 tu-a-tions.
- []
-
-
-Underfull \hbox (badness 1303) in paragraph at lines 240--242
-[][]\OT1/cmr/m/n/10.95 The close cor-re-spon-dence be-
- []
-
+(pdftex.def)             Requested size: 397.48402pt x 144.53963pt.
 <./figures/ch3/momentsuppression.pdf, id=3765, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/momentsuppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/momentsuppression.pdf>
 Package pdftex.def Info: ./figures/ch3/momentsuppression.pdf  used on input lin
 e 245.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
-[67 <./figures/ch3/variance.pdf>]
-<./figures/ch3/colent-suppression.pdf, id=3807, 398.9304pt x 189.96686pt>
+ [67 <./figures/ch3/newvariance.pdf>] [68 <./figures/ch3/momentsuppression.pdf>
+]
+<./figures/ch3/colent-suppression.pdf, id=3871, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/colent-suppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/colent-suppression.pdf>
 Package pdftex.def Info: ./figures/ch3/colent-suppression.pdf  used on input li
 ne 260.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
- [68 <./figures/ch3/momentsuppression.pdf>]
-<./figures/ch3/rtcdf.pdf, id=3872, 398.9304pt x 306.86955pt>
+<./figures/ch3/rtcdf.pdf, id=3876, 398.9304pt x 306.86955pt>
 File: ./figures/ch3/rtcdf.pdf Graphic file (type pdf)
 <use ./figures/ch3/rtcdf.pdf>
 Package pdftex.def Info: ./figures/ch3/rtcdf.pdf  used on input line 270.
 (pdftex.def)             Requested size: 360.0pt x 276.93858pt.
-
-[69] [70 <./figures/ch3/colent-suppression.pdf>] [71 <./figures/ch3/rtcdf.pdf>]
-[72] [73] [74] [75]
+ [69] [70 <./figures/ch3/colent-suppression.pdf>] [71 <./figures/ch3/rtcdf.pdf>
+] [72] [73] [74] [75]
 Overfull \hbox (1.5938pt too wide) in paragraph at lines 352--353
 []\OT1/cmr/m/n/10.95 Collective en-train-ment gen-er-ates a sta-tis-ti-cal reg-
 u-la-tion ef-fect, whereby
@@ -981,7 +952,7 @@ Overfull \hbox (2.45276pt too wide) in paragraph at lines 25--31
  []
 
 [78] [79] [80] [81] [82]
-<./figures/ch4/pdf-plot.png, id=4390, 385.9218pt x 164.5347pt>
+<./figures/ch4/pdf-plot.png, id=4394, 385.9218pt x 164.5347pt>
 File: ./figures/ch4/pdf-plot.png Graphic file (type png)
 <use ./figures/ch4/pdf-plot.png>
 Package pdftex.def Info: ./figures/ch4/pdf-plot.png  used on input line 95.
@@ -995,7 +966,7 @@ Overfull \hbox (63.39835pt too wide) in paragraph at lines 125--144
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [84]
-<./figures/ch4/diffusion.png, id=4469, 380.98335pt x 308.71335pt>
+<./figures/ch4/diffusion.png, id=4473, 380.98335pt x 308.71335pt>
 File: ./figures/ch4/diffusion.png Graphic file (type png)
 <use ./figures/ch4/diffusion.png>
 Package pdftex.def Info: ./figures/ch4/diffusion.png  used on input line 152.
@@ -1011,7 +982,7 @@ Chapter 5.
 
 
 ] [93] [94] [95]
-<./figures/ch5/Fig1Concept.png, id=4852, 361.35pt x 162.6075pt>
+<./figures/ch5/Fig1Concept.png, id=4856, 361.35pt x 162.6075pt>
 File: ./figures/ch5/Fig1Concept.png Graphic file (type png)
 <use ./figures/ch5/Fig1Concept.png>
 Package pdftex.def Info: ./figures/ch5/Fig1Concept.png  used on input line 67.
@@ -1023,12 +994,12 @@ a-tional mo-men-tum, partly
  []
 
 [96] [97 <./figures/ch5/Fig1Concept.png>] [98] [99] [100] [101] [102] [103]
-<./figures/ch5/Fig2pdfs.png, id=5081, 319.37317pt x 232.89008pt>
+<./figures/ch5/Fig2pdfs.png, id=5085, 319.37317pt x 232.89008pt>
 File: ./figures/ch5/Fig2pdfs.png Graphic file (type png)
 <use ./figures/ch5/Fig2pdfs.png>
 Package pdftex.def Info: ./figures/ch5/Fig2pdfs.png  used on input line 181.
 (pdftex.def)             Requested size: 319.37238pt x 232.8895pt.
-<./figures/ch5/Fig3asymptotic.png, id=5092, 312.50752pt x 122.91922pt>
+<./figures/ch5/Fig3asymptotic.png, id=5096, 312.50752pt x 122.91922pt>
 File: ./figures/ch5/Fig3asymptotic.png Graphic file (type png)
 <use ./figures/ch5/Fig3asymptotic.png>
 Package pdftex.def Info: ./figures/ch5/Fig3asymptotic.png  used on input line 1
@@ -1041,7 +1012,7 @@ Overfull \hbox (33.43335pt too wide) in paragraph at lines 227--237
  [] 
  []
 
-<./figures/ch5/Fig4expComparison.png, id=5140, 388.99327pt x 203.19914pt>
+<./figures/ch5/Fig4expComparison.png, id=5144, 388.99327pt x 203.19914pt>
 File: ./figures/ch5/Fig4expComparison.png Graphic file (type png)
 <use ./figures/ch5/Fig4expComparison.png>
 Package pdftex.def Info: ./figures/ch5/Fig4expComparison.png  used on input lin
@@ -1165,25 +1136,25 @@ Appendix D.
 
 
 ] [180] [181] [182]) [183]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
  (./diss.aux (./abs.aux) (./laySum.aux)
 (./pref.aux) (./ack.aux) (./ch1intro.aux) (./ch2flipFlop.aux) (./ch3bedEle.aux)
 (./ch4downDiff.aux) (./ch5langevin.aux) (./ch6conc.aux) (./app_ch2.aux)
 (./app_ch3.aux) (./app_ch4.aux) (./app_ch5.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
 Package rerunfilecheck Info: File `diss.out' has not changed.
 (rerunfilecheck)             Checksum: 77FFD3495365A264EDF69AA5D9FA4EC1;11457.
 Package rerunfilecheck Info: File `diss.brf' has not changed.
-(rerunfilecheck)             Checksum: 760E216772F3617FACABBD66FDFB725E;54282.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
+(rerunfilecheck)             Checksum: C67B3C60DF603656E3496378F187E272;54282.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 432.
  ) 
 Here is how much of TeX's memory you used:
- 16753 strings out of 483107
- 254670 string characters out of 5964631
- 603011 words of memory out of 5000000
- 30449 multiletter control sequences out of 15000+600000
+ 16751 strings out of 483107
+ 254645 string characters out of 5964631
+ 604252 words of memory out of 5000000
+ 30447 multiletter control sequences out of 15000+600000
  542069 words of font info for 57 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  47i,20n,46p,1517b,1954s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1204,10 +1175,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on diss.pdf (208 pages, 4841739 bytes).
+Output written on diss.pdf (208 pages, 4843287 bytes).
 PDF statistics:
- 7234 PDF objects out of 7423 (max. 8388607)
- 6372 compressed objects within 64 object streams
+ 7240 PDF objects out of 7423 (max. 8388607)
+ 6375 compressed objects within 64 object streams
  945 named destinations out of 1000 (max. 500000)
  1103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

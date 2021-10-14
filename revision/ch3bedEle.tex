@@ -129,22 +129,23 @@ The appendix Secs. \ref{sec:arr}-\ref{sec:crr} provide additional background on 
 Using this method, I simulated 4 transport conditions with 13 different values of $l$ taken across a range from $l=a$ (a single radius) to $l=10a$ (10 radii).
 These values include the range exhibited by the available experimental data on bed elevation timeseries \citep{Wong2007,Singh2009,Martin2014}.
 
-\begin{wraptable}{r}{0.6\textwidth}
-	\caption{Migration, entrainment, and deposition rates at $z(m)=0$ are tabulated from \citet{Ancey2008}. Units are $s^{-1}$ (probability/time). Bed elevation changes modulate these rates in accord with Eqs. \ref{eq:rate1}-\ref{eq:rate4}.}\label{tab:anceyparams}
-	\begin{tabular}{cccccc} \\ 
+\begin{table}
+	\begin{center}
+	\def~{\hphantom{0}}
+	\begin{tabular}{c|ccccc} 
 		\toprule  
 		flow & $\nu$ & $\lambda$ & $\mu$ & $\sigma$ & $\gamma$ \\
 		\midrule
 		(a) & 5.45  & 6.59  & 3.74 & 4.67 & 0.77 \\
-		\midrule
 		(g) & 7.74  & 8.42  & 4.34 & 4.95 & 0.56 \\
-		\midrule
 		(i) & 15.56 & 22.07 & 3.56 & 4.52 & 0.68 \\
-		\midrule
 		(l) & 15.52 & 14.64 & 4.32 & 4.77 & 0.48 \\
-		\bottomrule
 	\end{tabular}
-\end{wraptable}
+	\caption{Migration, entrainment, and deposition rates at $z(m)=0$ are tabulated from \citet{Ancey2008}. Units are $s^{-1}$ (probability/time). Bed elevation changes modulate these rates in accord with Eqs. \ref{eq:rate1}-\ref{eq:rate4}.}
+	\label{tab:anceyparams}
+	\end{center}
+\end{table}
+
 For the migration, entrainment, and deposition parameters representing bedload transport at each flow condition $(\nu, \lambda, \mu, \sigma, \gamma)$, I used the values measured by \citet{Ancey2008} in a series of flume experiments: these are summarized in Tab. \ref{tab:anceyparams}.
 Flow conditions are labeled (a), (g), (i), and (l), roughly in order of increasing bedload flux (see \citet{Ancey2008} for more details). 
 In all simulations, I took the packing fraction $\phi = 0.6$ -- a typical value for a pile of spheres \citep[e.g.][]{Bennett1972}, and I set $L = 22.5$cm and $a = 0.3$cm, values from the original \citet{Ancey2008} experiments.
@@ -230,15 +231,14 @@ while the $j$th order moment of $n$ held conditional on $m$ is
 The moments of $m$ show no dependence on the value of $n$. 
 The mean elevation is always $\langle m \rangle = 0 $ due to the initial assumption of symmetry in the entrainment and deposition rate scaling with $m$. 
 
-
-Fig. \ref{fig:var} demonstrates that the variance of bed elevations is approximately $\sigma_z^2 = z_1^2 \sigma_m^2 = \frac{1}{4\kappa}=l^2$, agreeing with the approximation in Eq. \ref{eq:ou2}; this result suggests that $l$ is a characteristic length scale of bed elevation fluctuations.
-\begin{wrapfigure}{r}{0.5\textwidth}
-	\centering
-	\includegraphics[width=0.5\textwidth,keepaspectratio]{./figures/ch3/variance.pdf}
-	\caption{Data from all simulations demonstrates that the active layer depth $l$ characterizes bed elevation changes as described by Eq. \ref{eq:active}: $\sigma_m^2 \approx (l/z_1)^2$. }
+\begin{figure}
+	\centerline{\includegraphics{./figures/ch3/newvariance.pdf}}
+	\caption{Data from all simulations demonstrates that the active layer depth $l$ characterizes bed elevation changes as described by Eq. \ref{eq:active}: $\sigma_m^2 \approx (l/z_1)^2$.}
 	\label{fig:var}
-\end{wrapfigure}
-\indent The close correspondence between the mean field approximation and the numerical simulations in Fig. \ref{fig:pdfs} panel (a) suggests the unconditional moments of $n$ correspond closely with the \citet{Ancey2008} result. They appear identical within numerical uncertainty.
+\end{figure}
+
+Fig. \ref{fig:var} demonstrates that the variance of bed elevations is approximately $\sigma_z^2 = z_1^2 \sigma_m^2 = \frac{1}{4\kappa}=l^2$, agreeing with the approximation in Eq. \ref{eq:ou2}; this result indicates that $l$ is a characteristic length scale of bed elevation fluctuations.
+The close correspondence between the mean field approximation and the numerical simulations in Fig. \ref{fig:pdfs} panel (a) suggests the unconditional moments of $n$ correspond closely with the \citet{Ancey2008} result. They appear identical within numerical uncertainty.
 
 The coupling between bed elevation changes and the erosion and deposition rates develop a strong dependence of the particle activity on $m$. Fig. \ref{fig:condmoms} displays the mean shift $[\langle n |m \rangle - \langle n \rangle]/\langle n \rangle $ and the variance shift  $[\text{var}(n|m) - \text{var}(n)]/\text{var}(n)$ of the particle activity due to departures of the bed elevation from its mean position.
 \begin{figure}[!htbp]

@@ -298,7 +298,7 @@
 	\textbf{\@author}
     in partial fulfillment of the requirements for the degree of
 	\textbf{\@degreetitle}
-    in the
+    in 
 	\textbf{\ifx\dep@rtment\empty\f@culty\else\dep@rtment\fi}.%
     \par\bigskip%
     \noindent\textbf{Examining Committee:}%
