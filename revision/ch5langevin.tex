@@ -281,7 +281,7 @@ Because the elasticity $\ve$ lumps together collision geometry and dissipation e
 Yet this would be consistent with experiments of idealized particle collisions in viscous fluids. These demonstrate that momentum dissipation varies sharply with particle size, being more elastic for large particles, and less elastic for small particles \citep{Joseph2001,Yang2006,Schmeeckle2001}, exactly like the trend in the table.
 A definite conclusion that particle size controls the shape of the bedload velocity distribution requires additional experimental and theoretical study. This work nevertheless produces suggestive ideas.
 
-\section{Summary}
+\section{Conclusion}
 \label{sec:langconclusion}
 This chapter has presented a Langevin description of individual bedload particles saltating downstream through episodic collisions.
 The model suggests that episodic particle-bed collisions control the shape of the particle velocity distribution, and it is the first model to describe the range of bedload velocity distributions which have to date been reported in experimental studies.
@@ -289,4 +289,84 @@ The model suggests that episodic particle-bed collisions control the shape of th
 This work suggests that particle-bed collisions may be a leading order control over the velocity distributions of bedload particles, although future study is required for a definite conclusion.
 The next steps are to build up the episodic collision model presented in this chapter to include the geometric details of particle-bed collisions and to introduce slip velocity dependence and vertical structure into the flow forces acting on moving particles.
 These efforts would produce additional insight into the controls of fluid turbulence and transverse, vertical, and rotational movements on the downstream velocities of individual bedload grains.
+
+
+
+\section{Derivation of master equation}
+\label{sec:langmasterderiv}
+To derive the master equation from Eq. \ref{eq:langevin}, I temporarily consider the Gaussian white noise (GWN) $\xi(t)$ as a Poisson jump process having rate $r$ and jumps $ \sqrt{2 \tilde{D}} h$ with $h$ distributed as $f(h)$. I will later take a GWN limit from this noise. Similar derivations are available in some references \citep[e.g.][]{Kanazawa2017,Suweis2011}, and the precise connection between GWN and Poisson noise is discussed in \citet{VanDenBroeck1983}.
+
+From this starting point, integrating Eq. \ref{eq:langevin} over a small time interval $\delta t$ under the It\^{o} interpretation for the collision term provides
+\be     
+u(t+\delta t) =
+\begin{cases}
+	u(t) + \tilde{\Gamma} \delta t & \text{with probability } 1- r \delta t - \nu \delta t\\
+	u(t) + \sqrt{2 \tilde{D}} h &  \text{with probability } r \delta t \\
+	\ve u(t) &  \text{with probability } \nu \delta t
+\end{cases}.
+\ee
+
+Considering the probability $P(u,t+\delta t)$ as a sum over possible paths from $P(u,t)$ develops 
+\begin{align} 
+\begin{split}
+P(u,t+\delta t) =
+	\hspace{4pt}&(1- r \delta t - \nu \delta t)\int_{-\infty}^\infty dw  \delta(u-w-\tilde{\Gamma} \delta t) P(w,t)\\ 
+	&+  r \delta t \int_{-\infty}^\infty dw \int_{-\infty}^\infty dh f(h) \delta (u - w - \sqrt{2 \tilde{D}}h) P(w,t) \\ 
+	&+ \nu \delta t \int_{-\infty}^\infty dw \int_0^1 d\ve \rho(\ve)  \delta(u-w\ve) P(w,t).
+\end{split}
+\end{align}
+Evaluating all integrals over $\delta$-functions provides 
+\begin{align}
+\begin{split}
+ P(u,t+\delta t) = \hspace{4pt}&(1-r \delta t - \nu \delta t)P(u-\tilde{\Gamma} \delta t, t) \\&+ r \delta t\int_{-\infty}^\infty dh f(h) P(u+\sqrt{2 \tilde{D}}h) \\&+ \nu \delta t \int_0^1 \frac{ \tilde{D}\ve}{\ve} \rho(\ve) P\big(\frac{u}{\ve}\big).
+\end{split}
+\end{align}
+Finally, taking $\delta t \rightarrow 0$ and limiting the Poisson noise involving $\sqrt{2 \tilde{D}}$ to a Gaussian white noise by taking $r \rightarrow \infty$ as $h \rightarrow 0$ such that $h^2 r = 1$ obtains the master equation \ref{eq:master}.
+\section{Derivation of steady-state solution}
+\label{sec:langsteadyderiv}
+Defining $\tilde{P}(s) = \int_{-\infty}^\infty du e^{i u s} P(u) $ as the Fourier transform (FT) of $P(u)$ and taking the FT of Eq. \ref{eq:master} develops the recursion relation
+\be \tilde{P}(s) = \frac{\tilde{P}(s\ve)}{q(s)}. \ee
+where
+\be q(z) = \tilde{D} z^2 - i \tilde{\Gamma} z + 1 . \label{eq:q} \ee
+Recursing $N+1$ times provides
+\be \tilde{P}(s) = \frac{\tilde{P}(s \ve^{N+1})}{q(s \ve^0)q(s\ve^1)\dots q(s\ve^N)}.\label{eq:recursion}\ee
+The polynomials $q(z)$ can always be factored as $q(z) = \tilde{D}(z - i\lambda_-)(z - i\lambda_+)$ where
+\be \lambda_\pm = \frac{\tilde{\Gamma}}{2\tilde{D}}\Big[1 \pm \sqrt{ 1 + 4\tilde{D}/\tilde{\Gamma}^2} \Big]. \label{eq:lambdas}\ee
+Using these factors to expand $\tilde{P}(s)$ in partial fractions provides
+\be \tilde{P}(s)  = \tilde{P}(s \ve^{N+1}) \sum_{l=0}^N  \Big[ \frac{R_l^-}{s\ve^l - i\lambda_-} + \frac{R_l^+}{s\ve^l - i\lambda_+} \Big] ,\ee
+where the coefficients $R_l^\pm$ are the residues (up to constant factors) of the product $[q(s\ve^0)\dots q(s\ve^N)]^{-1}$:
+\be R_l^\pm = \frac{s \ve^{l} - i\lambda_\pm }{q(s\ve^0)\dots q(s \ve^N)} \Big|_{s= i \lambda_\pm \ve^{-l}}.\ee
+The Fourier-transformed Eq. \ref{eq:recursion} has a convenient feature as $N\rightarrow \infty$: since $0<\ve <1$, the prefactor $\tilde{P}( s \ve^{N+1})$ becomes the normalization condition $\tilde{P}(0)=1$ for the probability distribution $P(u)$.
+Taking this limit and evaluating the residues provides 
+\begin{multline} \tilde{P}(s) = \frac{1}{\tilde{D}(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_- \ve^m)} \sum_{l=0}^\infty \frac{i}{(s\ve^l-i\lambda_-)\prod_{m=1}^l q(i\lambda_- \ve^{-m})} 
+	\\+ \frac{1}{\tilde{D}(\lambda_+ - \lambda_-) \prod_{m=1}^\infty q(i \lambda_+ \ve^m)} \sum_{l=0}^\infty \frac{-i}{(s\ve^l-i \lambda_+)\prod_{m=1}^l q(i\lambda_+ \ve^{-m})}. \end{multline}
+Finally, the Fourier transforms are inverted term by term with contour integration (another use of the integral given in Eq. \ref{eq:contour}), and the definition of $q(z)$ from Eq. \ref{eq:q} is incorporated to obtain the steady-state solution quoted in Eq. \ref{eq:steadystate}.
+
+\section{Calculation of the moments}
+\label{sec:langmoments}
+Taking Eq. \ref{eq:master}, multiplying by $u^k$, integrating over all space, and taking account of normalization of $P(u)$ provides a recursion relation for the moments: 
+\be 0 = \tilde{D} k (k-1)\langle u^{k-2} \rangle + \tilde{\Gamma} k \langle u^{k-1} \rangle + (\ve^k-1)\langle u^k \rangle. \ee
+$k=1$ provides the mean (given in Eq. \ref{eq:meanu})
+\be \langle u \rangle =  \frac{\tilde{\Gamma}}{1-\ve} = \frac{\Gamma}{\nu(1-\ve)}, \ee
+while $k=2$ provides the second moment
+\be \langle u^2 \rangle = 2 \frac{\tilde{D} + \tilde{\Gamma} \langle u \rangle}{1-\ve^2}, \ee
+leading to the velocity variance
+\be \sigma_u^2 = \frac{2\tilde{D} + \tilde{\Gamma}^2}{1-\ve^2}\ee
+given in Eq. \ref{eq:varu}.
+\section{The weak collision limit}
+\label{sec:langextremes}
+Now I will demonstrate that weak collisions imply a Gaussian-like distribution for sediment velocities. The limit is challenging since the steady-state distribution Eq. \ref{eq:steadystate} and the moments above all diverge as $\ve \rightarrow 1$.
+Following \cite{Hall1989}, this divergence suggests normalizing the distribution $P(u)$ using the scaled variable
+\be z = \frac{u - \bra u \ket}{\sigma_u}, \ee
+giving a scaled distribution
+\be Q(z) = \sigma_u P(u).\ee
+The resulting differential equation for $Q(z)$ is well-behaved in the elastic collision limit $\ve \rightarrow 1$.
+Incorporating this transformation into Eq. \ref{eq:master} provides the ``normalized" master equation
+\begin{multline}(1-\ve^2) \frac{\tilde{D}}{2\tilde{D} + \tilde{\Gamma}} Q''(z) - \frac{\tilde{\Gamma}\sqrt{1-\ve^2}}{\sqrt{2\tilde{D}+\tilde{\Gamma}^2}}Q'(z) - Q(z) \\+ \frac{1}{\ve} Q\Big(z + \Big[\frac{1-\ve}{\ve}z + \frac{\tilde{\Gamma}\sqrt{1-\ve^2}}{\ve\sqrt{2\tilde{D}+\tilde{\Gamma}^2}} \Big]\Big) = 0 .\end{multline}
+This equation remains exact and is only a change of variables from Eq. \ref{eq:master}.
+Now I approximate the equation for $\ve \rightarrow 1$ by expanding the final term to second order around $z=0$ before setting $\ve = 1$, obtaining
+\be Q''(z) + z Q'(z) + Q(z) = 0, \ee
+which is the classic Ornstein-Uhlenbeck Fokker-Planck equation whose solution is the standard normal distribution for $Q(z)$ \citep[e.g.][]{Gardiner1983}.
+This solution provides Eq. \ref{eq:gaussian} when transformed back to the original variables $P(u)$ and $u$.
+
 
