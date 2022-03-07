@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.2)  28 SEP 2021 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.14)  13 DEC 2021 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,8 +574,29 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 )
 (./diss.aux (./abs.aux) (./laySum.aux) (./pref.aux) (./ack.aux) (./ch1intro.aux
 ) (./ch2flipFlop.aux) (./ch3bedEle.aux) (./ch4downDiff.aux) (./ch5langevin.aux)
-(./ch6conc.aux) (./app_ch2.aux) (./app_ch3.aux) (./app_ch4.aux) (./app_ch5.aux)
-)
+(./ch6conc.aux) (./app_ch2.aux) (./app_ch3.aux) (./app_ch4.aux) (./app_ch5.aux
+
+LaTeX Warning: Label `sec:langmasterderiv' multiply defined.
+
+
+LaTeX Warning: Label `sec:langsteadyderiv' multiply defined.
+
+
+LaTeX Warning: Label `eq:q' multiply defined.
+
+
+LaTeX Warning: Label `eq:recursion' multiply defined.
+
+
+LaTeX Warning: Label `eq:lambdas' multiply defined.
+
+
+LaTeX Warning: Label `sec:langmoments' multiply defined.
+
+
+LaTeX Warning: Label `sec:langextremes' multiply defined.
+
+))
 \openout1 = `diss.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 371.
@@ -693,7 +714,7 @@ r-sity of British Columbia
 
 
 ] [8] [9] [10]
-Overfull \hbox (2.93219pt too wide) in paragraph at lines 96--96
+Overfull \hbox (2.93219pt too wide) in paragraph at lines 100--100
  [][] []\OT1/cmr/m/n/10.95 Description of how particle-bed col-li-sions con-tro
 l move- 
  []
@@ -746,14 +767,14 @@ Chapter 1.
 
 
 ] [2] [3] [4] [5] [6]
-<./figures/ch1/einsteinConcept.pdf, id=1159, 397.485pt x 130.086pt>
+<./figures/ch1/einsteinConcept.pdf, id=1179, 397.485pt x 130.086pt>
 File: ./figures/ch1/einsteinConcept.pdf Graphic file (type pdf)
 <use ./figures/ch1/einsteinConcept.pdf>
 Package pdftex.def Info: ./figures/ch1/einsteinConcept.pdf  used on input line 
 95.
 (pdftex.def)             Requested size: 360.0pt x 117.82263pt.
  [7 <./figures/ch1/einsteinConcept.pdf>] [8] [9]
-<./figures/ch1/lisleConcept.pdf, id=1297, 397.485pt x 130.086pt>
+<./figures/ch1/lisleConcept.pdf, id=1317, 397.485pt x 130.086pt>
 File: ./figures/ch1/lisleConcept.pdf Graphic file (type pdf)
 <use ./figures/ch1/lisleConcept.pdf>
 Package pdftex.def Info: ./figures/ch1/lisleConcept.pdf  used on input line 137
@@ -761,12 +782,12 @@ Package pdftex.def Info: ./figures/ch1/lisleConcept.pdf  used on input line 137
 (pdftex.def)             Requested size: 360.0pt x 117.82263pt.
 
 [10 <./figures/ch1/lisleConcept.pdf>] [11] [12] [13]
-<./figures/ch1/fanAncey.pdf, id=1475, 397.485pt x 216.81pt>
+<./figures/ch1/fanAncey.pdf, id=1495, 397.485pt x 216.81pt>
 File: ./figures/ch1/fanAncey.pdf Graphic file (type pdf)
 <use ./figures/ch1/fanAncey.pdf>
 Package pdftex.def Info: ./figures/ch1/fanAncey.pdf  used on input line 196.
 (pdftex.def)             Requested size: 360.0pt x 196.3711pt.
-<./figures/ch1/fluxDefinitions.png, id=1480, 397.485pt x 137.313pt>
+<./figures/ch1/fluxDefinitions.png, id=1500, 397.485pt x 137.313pt>
 File: ./figures/ch1/fluxDefinitions.png Graphic file (type png)
 <use ./figures/ch1/fluxDefinitions.png>
 Package pdftex.def Info: ./figures/ch1/fluxDefinitions.png  used on input line 
@@ -774,7 +795,7 @@ Package pdftex.def Info: ./figures/ch1/fluxDefinitions.png  used on input line
 (pdftex.def)             Requested size: 360.0pt x 124.36835pt.
  [14] [15 <./figures/ch1/fanAncey.pdf>] [16 <./figures/ch1/fluxdefinitions.png>
 ]
-<./figures/ch1/yalinDrawing.pdf, id=1610, 397.485pt x 126.4725pt>
+<./figures/ch1/yalinDrawing.pdf, id=1630, 397.485pt x 126.4725pt>
 File: ./figures/ch1/yalinDrawing.pdf Graphic file (type pdf)
 <use ./figures/ch1/yalinDrawing.pdf>
 Package pdftex.def Info: ./figures/ch1/yalinDrawing.pdf  used on input line 247
@@ -788,7 +809,7 @@ and Southard[]\OT1/cmr/m/n/10.95 ,
  []
 
 [24] [25] [26]
-<./figures/ch1/anceyRenewal.pdf, id=1952, 397.485pt x 130.086pt>
+<./figures/ch1/anceyRenewal.pdf, id=1972, 397.485pt x 130.086pt>
 File: ./figures/ch1/anceyRenewal.pdf Graphic file (type pdf)
 <use ./figures/ch1/anceyRenewal.pdf>
 Package pdftex.def Info: ./figures/ch1/anceyRenewal.pdf  used on input line 393
@@ -810,19 +831,19 @@ Chapter 2.
 
 
 ] [34] [35]
-<./figures/ch2/fig0mod.pdf, id=2160, 397.485pt x 130.086pt>
+<./figures/ch2/fig0mod.pdf, id=2180, 397.485pt x 130.086pt>
 File: ./figures/ch2/fig0mod.pdf Graphic file (type pdf)
 <use ./figures/ch2/fig0mod.pdf>
 Package pdftex.def Info: ./figures/ch2/fig0mod.pdf  used on input line 48.
 (pdftex.def)             Requested size: 397.48402pt x 130.08566pt.
  [36 <./figures/ch2/fig0mod.pdf>] [37] [38]
-<./figures/ch2/figure1.pdf, id=2304, 397.485pt x 198.7425pt>
+<./figures/ch2/figure1.pdf, id=2324, 397.485pt x 198.7425pt>
 File: ./figures/ch2/figure1.pdf Graphic file (type pdf)
 <use ./figures/ch2/figure1.pdf>
 Package pdftex.def Info: ./figures/ch2/figure1.pdf  used on input line 95.
 (pdftex.def)             Requested size: 397.48402pt x 198.742pt.
  [39] [40 <./figures/ch2/figure1.pdf>] [41]
-<figures/ch2/figure2_slopeKey.pdf, id=2366, 397.485pt x 137.313pt>
+<figures/ch2/figure2_slopeKey.pdf, id=2386, 397.485pt x 137.313pt>
 File: figures/ch2/figure2_slopeKey.pdf Graphic file (type pdf)
 <use figures/ch2/figure2_slopeKey.pdf>
 Package pdftex.def Info: figures/ch2/figure2_slopeKey.pdf  used on input line 1
@@ -835,7 +856,7 @@ ion phe-nomenon, whereby
  []
 
 [45]
-<figures/ch2/figure3_slopeKey.pdf, id=2789, 180.675pt x 126.4725pt>
+<figures/ch2/figure3_slopeKey.pdf, id=2809, 180.675pt x 126.4725pt>
 File: figures/ch2/figure3_slopeKey.pdf Graphic file (type pdf)
 <use figures/ch2/figure3_slopeKey.pdf>
 Package pdftex.def Info: figures/ch2/figure3_slopeKey.pdf  used on input line 2
@@ -863,7 +884,7 @@ Chapter 3.
 
 
 ] [55] [56]
-<./figures/ch3/improveddef.png, id=3472, 383.9946pt x 227.6505pt>
+<./figures/ch3/improveddef.png, id=3493, 383.9946pt x 227.6505pt>
 File: ./figures/ch3/improveddef.png Graphic file (type png)
 <use ./figures/ch3/improveddef.png>
 Package pdftex.def Info: ./figures/ch3/improveddef.png  used on input line 50.
@@ -890,20 +911,20 @@ n$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 m$ \OT1/cmr/m/n/10.95 which sup-
 port a time-independent
  []
 
-<./figures/ch3/distributions.pdf, id=3681, 398.9304pt x 166.22101pt>
+<./figures/ch3/distributions.pdf, id=3701, 398.9304pt x 166.22101pt>
 File: ./figures/ch3/distributions.pdf Graphic file (type pdf)
 <use ./figures/ch3/distributions.pdf>
 Package pdftex.def Info: ./figures/ch3/distributions.pdf  used on input line 21
 6.
 (pdftex.def)             Requested size: 360.0pt x 150.00839pt.
 [65] [66 <./figures/ch3/distributions.pdf>]
-<./figures/ch3/newvariance.pdf, id=3756, 397.485pt x 144.54pt>
+<./figures/ch3/newvariance.pdf, id=3776, 397.485pt x 144.54pt>
 File: ./figures/ch3/newvariance.pdf Graphic file (type pdf)
 <use ./figures/ch3/newvariance.pdf>
 Package pdftex.def Info: ./figures/ch3/newvariance.pdf  used on input line 235.
 
 (pdftex.def)             Requested size: 397.48402pt x 144.53963pt.
-<./figures/ch3/momentsuppression.pdf, id=3765, 398.9304pt x 189.96686pt>
+<./figures/ch3/momentsuppression.pdf, id=3785, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/momentsuppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/momentsuppression.pdf>
 Package pdftex.def Info: ./figures/ch3/momentsuppression.pdf  used on input lin
@@ -911,13 +932,13 @@ e 245.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
  [67 <./figures/ch3/newvariance.pdf>] [68 <./figures/ch3/momentsuppression.pdf>
 ]
-<./figures/ch3/colent-suppression.pdf, id=3871, 398.9304pt x 189.96686pt>
+<./figures/ch3/colent-suppression.pdf, id=3891, 398.9304pt x 189.96686pt>
 File: ./figures/ch3/colent-suppression.pdf Graphic file (type pdf)
 <use ./figures/ch3/colent-suppression.pdf>
 Package pdftex.def Info: ./figures/ch3/colent-suppression.pdf  used on input li
 ne 260.
 (pdftex.def)             Requested size: 360.0pt x 171.43816pt.
-<./figures/ch3/rtcdf.pdf, id=3876, 398.9304pt x 306.86955pt>
+<./figures/ch3/rtcdf.pdf, id=3896, 398.9304pt x 306.86955pt>
 File: ./figures/ch3/rtcdf.pdf Graphic file (type pdf)
 <use ./figures/ch3/rtcdf.pdf>
 Package pdftex.def Info: ./figures/ch3/rtcdf.pdf  used on input line 270.
@@ -952,7 +973,7 @@ Overfull \hbox (2.45276pt too wide) in paragraph at lines 25--31
  []
 
 [78] [79] [80] [81] [82]
-<./figures/ch4/pdf-plot.png, id=4394, 385.9218pt x 164.5347pt>
+<./figures/ch4/pdf-plot.png, id=4414, 385.9218pt x 164.5347pt>
 File: ./figures/ch4/pdf-plot.png Graphic file (type png)
 <use ./figures/ch4/pdf-plot.png>
 Package pdftex.def Info: ./figures/ch4/pdf-plot.png  used on input line 95.
@@ -966,7 +987,7 @@ Overfull \hbox (63.39835pt too wide) in paragraph at lines 125--144
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [84]
-<./figures/ch4/diffusion.png, id=4473, 380.98335pt x 308.71335pt>
+<./figures/ch4/diffusion.png, id=4493, 380.98335pt x 308.71335pt>
 File: ./figures/ch4/diffusion.png Graphic file (type png)
 <use ./figures/ch4/diffusion.png>
 Package pdftex.def Info: ./figures/ch4/diffusion.png  used on input line 152.
@@ -982,7 +1003,7 @@ Chapter 5.
 
 
 ] [93] [94] [95]
-<./figures/ch5/Fig1Concept.png, id=4856, 361.35pt x 162.6075pt>
+<./figures/ch5/Fig1Concept.png, id=4877, 361.35pt x 162.6075pt>
 File: ./figures/ch5/Fig1Concept.png Graphic file (type png)
 <use ./figures/ch5/Fig1Concept.png>
 Package pdftex.def Info: ./figures/ch5/Fig1Concept.png  used on input line 67.
@@ -994,12 +1015,12 @@ a-tional mo-men-tum, partly
  []
 
 [96] [97 <./figures/ch5/Fig1Concept.png>] [98] [99] [100] [101] [102] [103]
-<./figures/ch5/Fig2pdfs.png, id=5085, 319.37317pt x 232.89008pt>
+<./figures/ch5/Fig2pdfs.png, id=5106, 319.37317pt x 232.89008pt>
 File: ./figures/ch5/Fig2pdfs.png Graphic file (type png)
 <use ./figures/ch5/Fig2pdfs.png>
 Package pdftex.def Info: ./figures/ch5/Fig2pdfs.png  used on input line 181.
 (pdftex.def)             Requested size: 319.37238pt x 232.8895pt.
-<./figures/ch5/Fig3asymptotic.png, id=5096, 312.50752pt x 122.91922pt>
+<./figures/ch5/Fig3asymptotic.png, id=5117, 312.50752pt x 122.91922pt>
 File: ./figures/ch5/Fig3asymptotic.png Graphic file (type png)
 <use ./figures/ch5/Fig3asymptotic.png>
 Package pdftex.def Info: ./figures/ch5/Fig3asymptotic.png  used on input line 1
@@ -1012,50 +1033,50 @@ Overfull \hbox (33.43335pt too wide) in paragraph at lines 227--237
  [] 
  []
 
-<./figures/ch5/Fig4expComparison.png, id=5144, 388.99327pt x 203.19914pt>
+<./figures/ch5/Fig4expComparison.png, id=5164, 388.99327pt x 203.19914pt>
 File: ./figures/ch5/Fig4expComparison.png Graphic file (type png)
 <use ./figures/ch5/Fig4expComparison.png>
 Package pdftex.def Info: ./figures/ch5/Fig4expComparison.png  used on input lin
 e 243.
 (pdftex.def)             Requested size: 388.99231pt x 203.19864pt.
-[107] [108 <./figures/ch5/Fig4expComparison.png>] [109] [110]) [111] [112]
+[107] [108 <./figures/ch5/Fig4expComparison.png>] [109] [110] [111] [112]
+[113] [114]) [115]
 \openout2 = `ch6conc.aux'.
 
-
-(./ch6conc.tex
+ (./ch6conc.tex
 Chapter 6.
-[113
+[116
 
 
 
-] [114] [115] [116] [117] [118] [119] [120]
+] [117] [118] [119] [120] [121] [122] [123]
 Overfull \hbox (5.94334pt too wide) in paragraph at lines 127--130
 \OT1/cmr/m/n/10.95 This the-sis has de-scribed the move-ments of in-di-vid-ual 
 grains along streambeds
  []
 
-) [121] (./diss.bbl (./diss.brf)
+) [124] (./diss.bbl (./diss.brf)
 \tf@brf=\write8
 \openout8 = `diss.brf'.
 
- [122
+ [125
 
 
 ]
 Overfull \hbox (3.47964pt too wide) in paragraph at lines 67--67
 []\OT1/cmr/m/n/10.95 xiii[], []xix[], []17[], []25[], []31[], []35[], []49[], [
 ]56[], []57[], []58[], []59[], []60[], []62[], []63[], []64[], []67[], []68[], 
-[]72[], []73[], []74[], []169[][]  
+[]72[], []73[], []74[], []172[][]  
  []
 
-[123] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133] [134]
-[135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145] [146]
-[147] [148] [149] [150] [151] [152] [153] [154] [155]) [156]
+[126] [127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137]
+[138] [139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149]
+[150] [151] [152] [153] [154] [155] [156] [157] [158]) [159]
 \openout2 = `app_ch2.aux'.
 
  (./app_ch2.tex
 Appendix A.
-[157
+[160
 
 
 ]
@@ -1064,7 +1085,7 @@ Overfull \hbox (0.10338pt too wide) in paragraph at lines 24--26
 y of us-ing the Furutsu-
  []
 
-[158] [159] [160] [161]
+[161] [162] [163] [164]
 Overfull \hbox (3.55617pt too wide) detected at line 78
  []$[]  \OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; t\OT1/c
 mr/m/n/10.95 ) = [] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 'D@[] \OT1/cmr/
@@ -1086,12 +1107,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 82.
 
-[162] [163]) [164]
+[165] [166]) [167]
 \openout2 = `app_ch3.aux'.
 
  (./app_ch3.tex
 Appendix B.
-[165
+[168
 
 
 
@@ -1106,12 +1127,12 @@ m/n/10.95 (\OML/cmm/m/it/10.95 n; m\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 Q\OT
 5 n; m\OT1/cmr/m/n/10.95 )$,
  []
 
-[166]
+[169]
 Overfull \hbox (17.0pt too wide) in paragraph at lines 45--46
 [][] 
  []
 
-[167] [168] [169] [170]) [171]
+[170] [171] [172] [173]) [174]
 \openout2 = `app_ch4.aux'.
 
  (./app_ch4.tex
@@ -1122,20 +1143,20 @@ Overfull \hbox (1.97658pt too wide) in paragraph at lines 14--17
 /cmr/m/it/10.95 Berezhkovskii and Weiss[]\OT1/cmr/m/n/10.95 , []2002[]).
  []
 
-[172
+[175
 
 
 
-] [173] [174] [175] [176]) [177] [178]
+] [176] [177] [178] [179]) [180] [181]
 \openout2 = `app_ch5.aux'.
 
  (./app_ch5.tex
 Appendix D.
-[179
+[182
 
 
 
-] [180] [181] [182]) [183]
+] [183] [184] [185]) [186]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
  (./diss.aux (./abs.aux) (./laySum.aux)
@@ -1145,40 +1166,45 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: 77FFD3495365A264EDF69AA5D9FA4EC1;11457.
+(rerunfilecheck)             Checksum: F7EA8246C3ED48A47E21E28F9F1FA67A;11782.
 Package rerunfilecheck Info: File `diss.brf' has not changed.
-(rerunfilecheck)             Checksum: C67B3C60DF603656E3496378F187E272;54282.
+(rerunfilecheck)             Checksum: D1A23117981A3171EDE313223210545B;54534.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 432.
  ) 
 Here is how much of TeX's memory you used:
- 16751 strings out of 483107
- 254645 string characters out of 5964631
- 604252 words of memory out of 5000000
- 30447 multiletter control sequences out of 15000+600000
+ 16780 strings out of 483107
+ 255035 string characters out of 5964629
+ 604755 words of memory out of 5000000
+ 30451 multiletter control sequences out of 15000+600000
  542069 words of font info for 57 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  47i,20n,46p,1517b,1954s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/kp/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on diss.pdf (208 pages, 4843287 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
+200.pfb>
+Output written on diss.pdf (211 pages, 4856421 bytes).
 PDF statistics:
- 7240 PDF objects out of 7423 (max. 8388607)
- 6375 compressed objects within 64 object streams
- 945 named destinations out of 1000 (max. 500000)
- 1103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 7326 PDF objects out of 7423 (max. 8388607)
+ 6457 compressed objects within 65 object streams
+ 970 named destinations out of 1000 (max. 500000)
+ 1135 words of extra memory for PDF output out of 10000 (max. 10000000)
 
